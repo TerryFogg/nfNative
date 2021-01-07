@@ -1,0 +1,12 @@
+[submodule "ExternalRepositories/x-cube-azrtos-h7"]
+	path = ExternalRepositories/x-cube-azrtos-h7
+	url = https://github.com/STMicroelectronics/x-cube-azrtos-h7.git
+[submodule "ExternalRepositories/azure-rtos/threadx"]
+	path = ExternalRepositories/azure-rtos/threadx
+	url = https://github.com/azure-rtos/threadx.git
+[submodule "ExternalRepositories/nf-interpreter"]
+	path = ExternalRepositories/nf-interpreter
+	url = http://github.com/nanoframework/nf-interpreter
+[submodule "ExternalRepositories/STM32CubeH7"]
+	path = ExternalRepositories/STM32CubeH7
+	url = https://github.com/STMicroelectronics/STM32CubeH7.git
