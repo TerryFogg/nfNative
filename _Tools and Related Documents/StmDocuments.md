@@ -3,6 +3,10 @@
 ###### Cortex-M7
 [ARM Cortex-M7 Processor Technical Reference Manual](https://developer.arm.com/documentation/ddi0489/c)
 
+[ARM®
+v7-M Architecture
+Reference Manual](https://static.docs.arm.com/ddi0403/e/DDI0403E_B_armv7m_arm.pdf)
+
  ###### Data Sheets               
 * [UM2569 Discovery kit with STM32H7B3LI MCU](https://www.st.com/resource/en/user_manual/dm00610478-discovery-kit-with-stm32h7b3li-mcu-stmicroelectronics.pdf)
 * [STM32H730, STM32H750 & STM32H7B0 High-performance value lines 1.0](https://www.st.com/resource/en/brochure/brstm32h7vl.pdf)

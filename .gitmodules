@@ -10,3 +10,15 @@
 [submodule "ExternalRepositories/STM32CubeH7"]
 	path = ExternalRepositories/STM32CubeH7
 	url = https://github.com/STMicroelectronics/STM32CubeH7.git
+[submodule "ExternalRepositories/ChibiOS"]
+	path = ExternalRepositories/ChibiOS
+	url = https://github.com/ChibiOS/ChibiOS.git
+[submodule "ExternalRepositories/mbedtls"]
+	path = ExternalRepositories/mbedtls
+	url = https://github.com/nanoframework/mbedtls
+[submodule "ExternalRepositories/lwip"]
+	path = ExternalRepositories/lwip
+	url = https://git.savannah.nongnu.org/git/lwip.git
+[submodule "ExternalRepositories/fatfs"]
+	path = ExternalRepositories/fatfs
+	url = https://github.com/abbrev/fatfs.git

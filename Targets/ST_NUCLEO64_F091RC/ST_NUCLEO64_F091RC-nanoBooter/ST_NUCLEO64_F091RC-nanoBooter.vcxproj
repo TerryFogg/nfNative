@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C7B9DDB3-F32E-4A51-91DA-AAB9A94871E2}</ProjectGuid>
+    <BSP_ID>com.visualgdb.bsp.in-place</BSP_ID>
+    <BSP_VERSION>1.0</BSP_VERSION>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>9.3.1/9.2.0/r2</ToolchainVersion>
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>CPP11</CPPLanguageStandard>
+      <AdditionalIncludeDirectories>..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;C:\Users\Terry\source\repos\TerryFogg\nfNative\ST_NUCLEO64_F091RC-nanoBooter;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\TinyPrintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication;..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\nanoFramework.Hardware.Stm32;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\Windows.Devices.Gpio;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\Windows.Devices.I2c;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\Windows.Devices.Pwm;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\Windows.Devices.SerialCommunication;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoCLR\Windows.Devices.Spi;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\common\ext\CMSIS\TI\STM32F0xx;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\common\startup\ARMCMx\devices\STM32F0xx;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\boards\ST_NUCLEO64_F091RC;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\dummy_includes;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_crc;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_flash;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_fsmc;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_onewire;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_qspi;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv1;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\common;..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter;..\..\..\ExternalRepositories\nf-interpreter\targets-community\CMSIS-OS\ChibiOS\nf-overlay\os\hal\boards\ST_NUCLEO64_F091RC;..\..\..\ExternalRepositories\chibios\os;..\..\..\ExternalRepositories\chibios\os\common\abstractions\cmsis_os;..\..\..\ExternalRepositories\chibios\os\common\ext\ARM\CMSIS\Core\Include;..\..\..\ExternalRepositories\chibios\os\common\ext\CMSIS\include;..\..\..\ExternalRepositories\chibios\os\common\ext\CMSIS\ST\STM32F0xx;..\..\..\ExternalRepositories\chibios\os\common\ext\ST\STM32F0xx;..\..\..\ExternalRepositories\chibios\os\common\portability\GCC;..\..\..\ExternalRepositories\chibios\os\common\ports\ARMCMx;..\..\..\ExternalRepositories\chibios\os\common\ports\ARMCMx\compilers\GCC;..\..\..\ExternalRepositories\chibios\os\common\startup\ARMCMx\compilers\GCC;..\..\..\ExternalRepositories\chibios\os\common\startup\ARMCMx\devices\STM32F0xx;..\..\..\ExternalRepositories\chibios\os\hal\boards\ST_NUCLEO64_F091RC;..\..\..\ExternalRepositories\chibios\os\hal\include;..\..\..\ExternalRepositories\chibios\os\hal\osal\rt-nil;..\..\..\ExternalRepositories\chibios\os\hal\ports\common\ARMCMx;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\ADCv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\CANv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\DACv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\DMAv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\EXTIv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\GPIOv2;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\I2Cv2;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\RTCv2;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\SPIv2;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\TIMv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\USARTv2;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\USBv1;..\..\..\ExternalRepositories\chibios\os\hal\ports\STM32\LLD\xWDGv1;..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx;..\..\..\ExternalRepositories\chibios\os\license;..\..\..\ExternalRepositories\chibios\os\oslib\include;..\..\..\ExternalRepositories\chibios\os\rt\include;..\..\..\ExternalRepositories\nf-interpreter\targets\CMSIS-OS\common\Include;..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TARGET_HAS_NANOBOOTER;PLATFORM_ARM;HAL_USE_COMMUNITY;TRACE_MASK=0;WP_IMPLEMENTS_CRC32;NANOCLR_ENABLE_SOURCELEVELDEBUGGING;RUNTIME_MEMORY_PROFILE__extrasmall=1;CORTEX_USE_FPU=FALSE;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Og</Optimization>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <OmitFramePointer>
+      </OmitFramePointer>
+      <InlineFunctions>
+      </InlineFunctions>
+      <LinkTimeOptimization>
+      </LinkTimeOptimization>
+      <DeleteNullPointerChecks>
+      </DeleteNullPointerChecks>
+      <ConserveStack>
+      </ConserveStack>
+      <DebugInformationFormat>GDB</DebugInformationFormat>
+      <SupportRTTI />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript>STM32F091xC_booter.ld</LinkerScript>
+      <AdditionalIncludeDirectoriesForLinkerScript>%(AdditionalIncludeDirectoriesForLinkerScript)</AdditionalIncludeDirectoriesForLinkerScript>
+      <AdditionalOptions />
+      <PrintMemoryUsage>true</PrintMemoryUsage>
+      <PreprocessLinkerScript>true</PreprocessLinkerScript>
+      <GenerateMapFile>true</GenerateMapFile>
+      <CustomPostLinkTool>$(SolutionDir)_Tools and Related Documents\postbuild.bat</CustomPostLinkTool>
+      <CustomPostLinkArguments>%(OutputFile) $(OutputPath)</CustomPostLinkArguments>
+    </Link>
+    <ToolchainSettingsContainer>
+      <InstructionSet>THUMB</InstructionSet>
+    </ToolchainSettingsContainer>
+    <ToolchainSettingsContainer>
+      <FloatABI>soft</FloatABI>
+    </ToolchainSettingsContainer>
+    <ToolchainSettingsContainer>
+      <ARMCPU>cortex-m0</ARMCPU>
+    </ToolchainSettingsContainer>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CPPLanguageStandard>GNUPP1Z</CPPLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_v6m.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\compilers\GCC\chcoreasm_v6m.S" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_v6m.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_adc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoPackStruct.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoSupport.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoVersion.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoWeak.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nf_errors_exceptions.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_App_Interface.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_Message.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Network.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Power.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Spi.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Time.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Types.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_v2.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Watchdog.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_GPIO_decl.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_SPI_decl.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_COM.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Events.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_GPIO.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Network.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Sockets.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Time.h" />
+    <ClInclude Include="target_board.h" />
+    <ClInclude Include="target_common.h" />
+    <ClInclude Include="target_os.h" />
+    <ClInclude Include="target_platform.h" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt0_v6m.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt1.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\vectors.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv1\stm32_dma.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_st_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\hal_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\stm32_isr.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_buffers.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_crypto.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_gpt.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_icu.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_mac.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_pal.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_queues.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_rtc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sdc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial_usb.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sio.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_st.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_trng.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_uart.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_usb.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_wdg.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chfactory.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmboxes.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemcore.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemheaps.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmempools.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chpipes.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chcond.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdebug.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdynamic.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chevents.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmsg.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmtx.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chregistry.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chschd.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsem.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chstats.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsys.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chthreads.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtm.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtrace.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chvt.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\various\syscalls.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger.cpp" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Messaging\Messaging.cpp" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Messaging\Messaging_stub.cpp" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_Message.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_ConfigurationManager.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\LaunchCLR.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\nanoSupport_CRC32.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\platform_BlockStorage.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\platform_heap.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\targetHAL.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\targetHAL_Time.cpp" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\Target_BlockStorage_STM32FlashDriver.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter\WireProtocol_MonitorCommands.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv1\flash_lld.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\hal_community.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_crc\hal_stm32_crc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_flash\hal_stm32_flash.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\board.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\common\Device_BlockStorage-DEBUG.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\main.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\target_BlockStorage.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\target_common.c" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_timer.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\compilers\GCC\chtypes.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\devices\STM32F0xx\cmparams.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_buffers.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_can.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_channels.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_crypto.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_files.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_gpt.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_i2s.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_icu.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_ioblock.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mac.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mii.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmcsd.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmc_spi.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_objects.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pal.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_persistent.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pwm.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_queues.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_rtc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_sdc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial_usb.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_sio.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_spi.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_st.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_streams.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_trng.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_uart.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_usb.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wdg.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wspi.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\cache.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv1\stm32_dma.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\stm32_gpio.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_st_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\stm32_tim.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\hal_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\stm32_isr.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\stm32_rcc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F0xx\stm32_registry.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chcustomer.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chlicense.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chversion.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chbsem.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chfactory.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chlib.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmboxes.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemcore.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemheaps.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmempools.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chobjfifos.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chpipes.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\ch.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chalign.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chchecks.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chcond.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdebug.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdynamic.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chevents.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmsg.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmtx.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chregistry.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chrestrictions.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chschd.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsem.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chstats.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsys.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsystypes.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chthreads.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtime.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtm.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtrace.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chvt.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_BlockStorage.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\CLR_Startup_Thread.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\LaunchCLR.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\platform_target_capabilities.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Power.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Time.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Watchdog.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetPAL.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\TargetPAL_BlockStorage.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetPAL_Time.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\Target_BlockStorage_STM32FlashDriver.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\vectors.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_crc\hal_stm32_crc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_qspi\hal_stm32_qspi.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng\hal_stm32_rng.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv1\flash_lld.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\board.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\common\serialcfg.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\chconf.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\halconf.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\halconf_nf.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\mcuconf.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\mcuconf_nf.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_NUCLEO64_F091RC\target_BlockStorage.h" />
+    <None Include="..\..\..\VisualGDB\Debug\ST_NUCLEO64_F091RC-nanoBooter.lst" />
+    <None Include="..\..\..\VisualGDB\Debug\ST_NUCLEO64_F091RC-nanoBooter.map" />
+    <None Include="..\..\..\VisualGDB\Debug\ST_NUCLEO64_F091RC-nanoBooter.size" />
+    <None Include="ST_NUCLEO64_F091RC-nanoBooter-Debug.vgdbsettings" />
+    <None Include="ST_NUCLEO64_F091RC-nanoBooter-Release.vgdbsettings" />
+    <None Include="stm32.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="rules_code.ld" />
+    <LinkerScript Include="rules_data.ld" />
+    <LinkerScript Include="rules_stacks.ld" />
+    <LinkerScript Include="STM32F091xC_booter.ld" />
+    <LinkerScript Include="memory_constants.ld" />
+  </ItemGroup>
+</Project>
