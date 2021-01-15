@@ -52,8 +52,6 @@ void BoardInit()
 
     LedsAndBoardInit();
 
-    bool wireProtocolResult = InitWireProtocolCommunications();
-
     // System_IniRtc();
 
     // config CRC32 unit
@@ -80,28 +78,27 @@ void LedsAndBoardInit()
 
 __attribute__((noreturn));
 void nanoBooterStatus(uint32_t nanoBooterState) {
-    tx_thread_sleep(500);
-
+    
     switch ((eBooterStatus)nanoBooterState)
     {
     case ok:
         HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);  // Off
         while (true) {
             HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_RESET);
-            tx_thread_sleep(500);
+            tx_thread_sleep(50);
 
             HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);
-            tx_thread_sleep(500);
+            tx_thread_sleep(50);
         }
         break;
     case communications_failure:
         HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);  // Off
         while (true) {
             HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_RESET);
-            tx_thread_sleep(200);
+            tx_thread_sleep(50);
 
             HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);
-            tx_thread_sleep(200);
+            tx_thread_sleep(50);
         }
         break;
     }

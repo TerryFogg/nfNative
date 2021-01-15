@@ -21,12 +21,8 @@ void ReceiverThread_entry(uint32_t parameter)
     {
         WP_Message_Initialize(&inboundMessage);
         WP_Message_PrepareReception(&inboundMessage);
-
         WP_Message_Process(&inboundMessage);
 
-        // pass control to the OS
-        tx_thread_relinquish();
+        tx_thread_sleep(50);   // Relinquish control to lower priority nanBooter status display.
     }
-
-    // this function never returns
 }

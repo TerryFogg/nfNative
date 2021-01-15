@@ -14,11 +14,8 @@
 #include <LaunchCLR.h>
 #include <cmsis_utils.h>
 
-
-
 int main(void)
 {
-
     BoardInit();
 
     InitBootClipboard();

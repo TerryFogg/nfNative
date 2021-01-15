@@ -412,6 +412,7 @@
     <ClCompile Include="Platform\Initialize\tx_initialize_low_level.S" />
     <ClCompile Include="Platform\Startup\hard_fault_handler.c" />
     <ClCompile Include="Platform\Startup\LaunchCLR.c" />
+    <ClCompile Include="Platform\Startup\nanoFramework_Threads.c" />
     <ClCompile Include="Platform\Startup\nanoSupport_CRC32.c" />
     <ClCompile Include="Platform\Startup\platform_heap.c" />
     <ClCompile Include="Platform\Startup\ST_Hal_Gpio_Helpers.c" />
@@ -657,15 +658,6 @@
     <None Include="STM32H7B3_DK_nanoBooter-Debug.vgdbsettings" />
     <None Include="STM32H7B3_DK_nanoBooter-Release.vgdbsettings" />
     <None Include="stm32.xml" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld" />

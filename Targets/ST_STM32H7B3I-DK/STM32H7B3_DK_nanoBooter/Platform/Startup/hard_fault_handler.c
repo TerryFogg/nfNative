@@ -6,6 +6,12 @@
 #include <nanoCLR_Headers.h>
 #include <stm32h7xx_hal.h>
 
+// hard fault handler for Cortex-M, except M0
+
+// dev note: on all the following the variables need to be declared as volatile so they don't get optimized out by the linker
+// dev note: the pragma below is to ignore the warning because the variables aren't actually being used despite needing to remain there for debug
+
+
 //See http://infocenter.arm.com/help/topic/com.arm.doc.dui0552a/BABBGBEC.html
 typedef enum {
     Reset = 1,
@@ -15,7 +21,6 @@ typedef enum {
     BusFault = 5,
     UsageFault = 6,
 } FaultType;
-
 // Generic ARM register
 typedef void *regarm_t;
 
@@ -34,18 +39,6 @@ struct port_extctx {
 void NMI_Handler(void) {
     while(1);
 }
-
-// dev note: on all the following the variables need to be declared as volatile so they don't get optimized out by the linker
-// dev note: the pragma below is to ignore the warning because the variables aren't actually being used despite needing to remain there for debug
-
-#ifdef __GNUC__
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wunused-variable"
-#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
-#endif
-
-// hard fault handler for Cortex-M3 & M4
-
 void BusFault_Handler (void) __attribute__((alias("HardFault_Handler")));
 void HardFault_Handler(void) {
 
@@ -135,7 +128,6 @@ void HardFault_Handler(void) {
     // If no debugger connected, just reset the board
     NVIC_SystemReset();
 }
-
 void UsageFault_Handler(void) {
 
     //Copy to local variables (not pointers) to allow GDB "i loc" to directly show the info
@@ -169,7 +161,6 @@ void UsageFault_Handler(void) {
     // If no debugger connected, just reset the board
     NVIC_SystemReset();
 }
-
 void MemManage_Handler(void) {
 
     //Copy to local variables (not pointers) to allow GDB "i loc" to directly show the info
@@ -204,20 +195,4 @@ void MemManage_Handler(void) {
 
     // If no debugger connected, just reset the board
     NVIC_SystemReset();
-}
-
-#ifdef __GNUC__
-#pragma GCC diagnostic pop
-#endif
-
-///////////////////////////////////////////////////////////////////////////////////////////
-// Hard Fault test code.
-// Call this to cause a hard fault by accessing a nonexistent memory address @ 0xCCCCCCCC.
-void HardFaultTest()
-{
-    volatile uint32_t*p;
-    uint32_t n;
-    p = (uint32_t*)0xCCCCCCCC;
-    n = *p;
-    (void)n;
 }

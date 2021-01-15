@@ -41,6 +41,7 @@ struct PacketsReceived
 		int Overrun_error;
 		int DMA_transfer_error;
 		int Receiver_Timeout_error;
+		int None;
 	} CommsErrors;
 	struct {
 		uint32_t Sequence;
@@ -65,7 +66,7 @@ GPIO_InitTypeDef  GPIO_InitStruct;
 bool InitWireProtocolCommunications()
 {
 	// Use USART as defined in the header file
-	UartHandle.Instance = USARTx;
+	UartHandle.Instance = USARTwp;
 	UartHandle.Init.BaudRate = 921600;
 	UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
 	UartHandle.Init.StopBits = UART_STOPBITS_1;
@@ -83,16 +84,15 @@ bool InitWireProtocolCommunications()
 		HAL_AssertEx();
 	}
 
-	HAL_UART_Abort(&UartHandle);  // Cancel any outstanding reads/writes in place
+	//HAL_UART_Abort(&UartHandle);  // Cancel any outstanding reads/writes in place
 
-	CurrentReadPacketState = ReadNotSet;
-	CurrentWritePacketState = WriteNotSet;
+	//CurrentReadPacketState = ReadNotSet;
+	//CurrentWritePacketState = WriteNotSet;
 
-	printf("Queue the first Read after init \n");
-	if (HAL_UART_Receive_DMA(&UartHandle, (uint8_t*)aRxBuffer, RXBUFFER) != HAL_OK)
-	{
-		HAL_AssertEx();
-	}
+	//if (HAL_UART_Receive_DMA(&UartHandle, (uint8_t*)aRxBuffer, RXBUFFER) != HAL_OK)
+	//{
+	//	HAL_AssertEx();
+	//}
 
 	CurrentReadPacketState = Listening;
 
@@ -119,10 +119,9 @@ bool WritePacket(uint8_t* ptr, uint16_t size)
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef* UartHandle)
 {
-	printf("HAL_UART_RxCpltCallback\n");
 
 	// Completion occurs when a complete packet is read
-	if (UartHandle->Instance == USART1)
+	if (UartHandle->Instance == USARTwp)
 	{
 		SCB_InvalidateDCache_by_Addr((uint32_t*)aRxBuffer, sizeof(aRxBuffer)); // Tricky one
 
@@ -141,7 +140,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef* UartHandle)
 	}
 }
 
-
 bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 {
 	//debugCounter++;
@@ -150,13 +148,10 @@ bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 		switch (UartHandle.RxState)
 		{
 		case  HAL_UART_STATE_READY:
-			printf("ReadNextPacket: HAL UART RxState (%s)\n", "HAL_UART_STATE_READY");
 			break;
 		case HAL_UART_STATE_BUSY_RX:
-			printf("ReadNextPacket: HAL UART RxState (%s)\n", "HAL_UART_STATE_BUSY_RX");
 			break;
 		default:
-			printf("ReadNextPacket: other state (%d)\n", UartHandle.RxState);
 			break;
 		}
 	//}
@@ -175,7 +170,6 @@ bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 			}
 			if (UartHandle.RxState == HAL_UART_STATE_READY)
 			{
-				printf("Queue Read\n");
 				if (HAL_UART_Receive_DMA(&UartHandle, (uint8_t*)aRxBuffer, RXBUFFER) != HAL_OK)
 				{
 					HAL_AssertEx();
@@ -204,27 +198,22 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef* huart)
 		switch (huart->ErrorCode)
 		{
 		case  HAL_UART_ERROR_PE:
-			printf("Parity Error\n");
+			CircularBuffer.CommsErrors.Parity_error++;
 			break;
 		case  HAL_UART_ERROR_NE:
 			CircularBuffer.CommsErrors.Noise_error++;
-			printf("Noise Error\n");
 			break;
 		case  HAL_UART_ERROR_FE:
 			CircularBuffer.CommsErrors.Frame_error++;
-			printf("Frame Error\n");
 			break;
 		case  HAL_UART_ERROR_ORE:
 			CircularBuffer.CommsErrors.Overrun_error++;
-			printf("Overrun Error\n");
 			break;
 		case  HAL_UART_ERROR_DMA:
 			CircularBuffer.CommsErrors.DMA_transfer_error++;
-			printf("DMA Transfer Error\n");
 			break;
 		case  HAL_UART_ERROR_RTO:
 			CircularBuffer.CommsErrors.Receiver_Timeout_error++;
-			printf("Receiver Timeout Error\n");
 			break;
 		}
 
@@ -233,7 +222,6 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef* huart)
 		HAL_DMA_Abort(huart->hdmarx);
 		if (huart->RxState == HAL_UART_STATE_READY)
 		{
-			printf("Queue Read\n");
 			if (HAL_UART_Receive_DMA(huart, (uint8_t*)aRxBuffer, RXBUFFER) != HAL_OK)
 			{
 				HAL_AssertEx();
@@ -242,7 +230,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef* huart)
 	}
 	else
 	{
-		printf("Error None");
+		CircularBuffer.CommsErrors.None++;
 	}
 }
 

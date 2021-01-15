@@ -34,8 +34,11 @@ int WP_ReceiveBytes(uint8_t *ptr, uint16_t *size)
             // wait for event
             tx_event_flags_get(&wpUartEvent, 0xFFFF, TX_OR_CLEAR, &receivedBytes, 100);
 
-            ptr += receivedBytes;
-            *size -= receivedBytes;
+            if (receivedBytes != 0)
+            {
+                ptr += receivedBytes;
+                *size -= receivedBytes;
+            }
         }
 
         // abort any ongoing UART operation
