@@ -9,7 +9,7 @@
 #include <nanoPAL_BlockStorage.h>
 #include <targetHAL.h>
 #include <stm32h7xx_hal.h>
-#include "WireProtocol_communications.h"
+#include "wpUSART_Communications.h"
 #include "BoardInit.h"
 #include <LaunchCLR.h>
 #include <cmsis_utils.h>

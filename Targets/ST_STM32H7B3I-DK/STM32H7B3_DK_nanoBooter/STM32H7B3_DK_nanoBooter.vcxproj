@@ -41,7 +41,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Platform\BlockStorage;Platform\Configuration;Platform\Initialize;Platform\Startup;Platform\WireProtocol;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;.\STM32H7B3_DK_nanoBooter;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\STM32H7B3_DK_nanoBooter;Platform\BlockStorage;Platform\Configuration;Platform\Initialize;Platform\Startup;Platform\WireProtocol;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;STM32H7B3xxQ;I_AM_NANOBOOTER;PLATFORM_ARM;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <CLanguageStandard>C11</CLanguageStandard>
     </ClCompile>
@@ -421,7 +421,7 @@
     <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c" />
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_Communications.c" />
+    <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_ReceiverThread.c" />
     <ClCompile Include="Platform\main.c" />
     <ClInclude Include="..\..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_api.h" />
@@ -460,7 +460,7 @@
     <ClInclude Include="Platform\Startup\targetHAL_Time.h" />
     <ClInclude Include="Platform\Startup\targetPAL.h" />
     <ClInclude Include="Platform\Startup\targetPAL_Time.h" />
-    <ClInclude Include="Platform\WireProtocol\WireProtocol_Communications.h" />
+    <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h" />
     <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h" />
     <None Include="stm32.props" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger\Debugger.h" />
@@ -665,7 +665,6 @@
     <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_HAL_Interface.c.txt" />
     <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt" />
   </ItemGroup>
 </Project>

@@ -1,13 +1,14 @@
 //
 // Copyright (c) .NET Foundation and Contributors
-// Portions Copyright (c) 2017 STMicroelectronics.  All rights reserved.
+// Portions Copyright (c) 2021 STMicroelectronics.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
+
 
 #include <nanoCLR_Headers.h>
 #include <stm32h7xx_hal.h>
 #include <BoardInit.h>
-#include <WireProtocol_Communications.h>
+#include <wpUSART_Communications.h>
 #include <nanoHAL_v2.h>
 
 #define RTC_ASYNCH_PREDIV 0x7F      // LSE as RTC clock
@@ -44,7 +45,7 @@ void System_IniRtc(void)
 
 void BoardInit()
 {
-    
+
     HAL_Init();            // STM32H7xx HAL library initialization
     SCB_EnableICache();    // Enable I-Cache
     SCB_EnableDCache();    // Enable D-Cache
@@ -76,31 +77,35 @@ void LedsAndBoardInit()
     HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStructure);
 }
 
-__attribute__((noreturn));
-void nanoBooterStatus(uint32_t nanoBooterState) {
-    
-    switch ((eBooterStatus)nanoBooterState)
+__attribute__((noreturn))
+void nanoBooterStatus(uint32_t nanoBooterState)
+{
+    while (true)
     {
-    case ok:
-        HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);  // Off
-        while (true) {
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_RESET);
-            tx_thread_sleep(50);
+        switch ((eBooterStatus)nanoBooterState)
+        {
+        case ok:
+            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);  // Off
+            while (true)
+            {
+                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_RESET);
+                tx_thread_sleep(50);
 
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);
-            tx_thread_sleep(50);
-        }
-        break;
-    case communications_failure:
-        HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);  // Off
-        while (true) {
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_RESET);
-            tx_thread_sleep(50);
+                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);
+                tx_thread_sleep(50);
+            }
+            break;
+        case communications_failure:
+            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);  // Off
+            while (true)
+            {
+                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_RESET);
+                tx_thread_sleep(50);
 
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);
-            tx_thread_sleep(50);
+                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);
+                tx_thread_sleep(50);
+            }
+            break;
         }
-        break;
     }
-
 }

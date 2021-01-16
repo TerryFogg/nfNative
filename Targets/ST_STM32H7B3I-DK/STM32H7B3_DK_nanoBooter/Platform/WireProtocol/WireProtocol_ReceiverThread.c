@@ -23,6 +23,6 @@ void ReceiverThread_entry(uint32_t parameter)
         WP_Message_PrepareReception(&inboundMessage);
         WP_Message_Process(&inboundMessage);
 
-        tx_thread_sleep(50);   // Relinquish control to lower priority nanBooter status display.
+        tx_thread_sleep(50);   // Relinquish control and allow some time for the lower priority nanBooter status display.
     }
 }

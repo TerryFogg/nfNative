@@ -1097,9 +1097,6 @@
     <ClInclude Include="..\..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_api.h">
       <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
     </ClInclude>
-    <ClInclude Include="Platform\WireProtocol\WireProtocol_Communications.h">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClInclude>
     <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h">
       <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
@@ -1171,6 +1168,9 @@
     </ClInclude>
     <ClInclude Include="Platform\Startup\targetPAL_Time.h">
       <Filter>Platform\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h">
+      <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1795,9 +1795,6 @@
     <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c">
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_Communications.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\WireProtocol\WireProtocol_ReceiverThread.c">
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
@@ -1846,9 +1843,6 @@
     <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c">
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\Startup\hard_fault_handler.c">
       <Filter>Platform\Startup</Filter>
     </ClCompile>
@@ -1873,6 +1867,12 @@
     <ClCompile Include="Platform\Startup\nanoFramework_Threads.c">
       <Filter>Platform\Startup</Filter>
     </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld">
@@ -1886,9 +1886,6 @@
     </LinkerScript>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_HAL_Interface.c.txt">
-      <Filter>Platform\WireProtocol</Filter>
-    </Text>
     <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt">
       <Filter>Platform\WireProtocol</Filter>
     </Text>
