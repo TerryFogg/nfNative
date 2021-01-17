@@ -16968,6 +16968,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_htmresc", "_htmresc", "{4D
 		ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\_htmresc\st_logo.png = ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\_htmresc\st_logo.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grapholite", "Grapholite", "{DD8C6A1D-551A-47C4-8FF6-FCF89F810080}"
+	ProjectSection(SolutionItems) = preProject
+		_Tools and Related Documents\Grapholite\nanoFrameworkArchitecture.grl = _Tools and Related Documents\Grapholite\nanoFrameworkArchitecture.grl
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "STM32", "STM32", "{0D475FAF-810C-49F8-A196-1ABDE6698B9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datasheets", "Datasheets", "{CF5C285D-D650-4DE6-B9F1-8DFA5C84188E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Notes", "Application Notes", "{3A5302C7-AB64-439B-A38E-951C9E80D4FC}"
+	ProjectSection(SolutionItems) = preProject
+		_Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf = _Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf
+		_Tools and Related Documents\Application Notes\STM32 using the LTDC display controller.pdf = _Tools and Related Documents\Application Notes\STM32 using the LTDC display controller.pdf
+		_Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf = _Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -19015,6 +19031,10 @@ Global
 		{A57864E5-B7D5-4B6E-B305-57A35F694B7F} = {EA26628C-BDD4-472C-99A6-2D72D7259BC4}
 		{6C8F6CE2-10A8-4545-A61C-05D0D2919C20} = {0E8D4110-1611-481C-B960-2E2CB3398100}
 		{4D8DBD58-BE1F-4F4B-BF1C-CE8494E77B5C} = {0E8D4110-1611-481C-B960-2E2CB3398100}
+		{DD8C6A1D-551A-47C4-8FF6-FCF89F810080} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
+		{0D475FAF-810C-49F8-A196-1ABDE6698B9A} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
+		{CF5C285D-D650-4DE6-B9F1-8DFA5C84188E} = {0D475FAF-810C-49F8-A196-1ABDE6698B9A}
+		{3A5302C7-AB64-439B-A38E-951C9E80D4FC} = {0D475FAF-810C-49F8-A196-1ABDE6698B9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A66BD7CD-C93A-47C4-8DD8-F2C392511FC6}

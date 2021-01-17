@@ -34,7 +34,7 @@ TX_EVENT_FLAGS_GROUP wpUartEvent;
 //********************************************
 
 // This function handles external lines 15 to 10 interrupt request.
-void EXTI15_10_IRQHandler(void)             
+void EXTI15_10_IRQHandler(void)
 {
     HAL_GPIO_EXTI_IRQHandler(BUTTON_USER_PIN);
 }
@@ -54,6 +54,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef* UartHandle)
 //  Wire protocol receive
 void DMA2_Stream1_IRQHandler(void)
 {
+    // DMA2_Stream1 -- is linked to USART
     HAL_DMA_IRQHandler(wpUartHandle.hdmarx);
 }
 //  Wire protocol transmit

@@ -41,7 +41,7 @@ eBooterStatus nanoBooterState;
 #define wpUSART                  USART1
 #define wpBAUD_RATE              921600
 #define wpUSART_CLK_ENABLE()     __HAL_RCC_USART1_CLK_ENABLE()
-#define DMAwp_CLK_ENABLE()       __HAL_RCC_DMA2_CLK_ENABLE()
+#define wpDMA_CLK_ENABLE()       __HAL_RCC_DMA2_CLK_ENABLE()
                                 
 #define wpUSART_FORCE_RESET()    __HAL_RCC_USART1_FORCE_RESET()
 #define wpUSART_RELEASE_RESET()  __HAL_RCC_USART1_RELEASE_RESET()

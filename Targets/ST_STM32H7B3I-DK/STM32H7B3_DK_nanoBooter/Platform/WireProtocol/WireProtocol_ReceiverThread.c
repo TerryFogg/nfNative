@@ -5,6 +5,8 @@
 
 #include <stm32h7xx_hal.h>
 #include <WireProtocol_Message.h>
+#include "wpUSART_Communications.h"
+#include "BoardInit.h"
 #include <tx_api.h>
 
 extern WP_Message inboundMessage;
@@ -13,6 +15,15 @@ __attribute__((noreturn))
 void ReceiverThread_entry(uint32_t parameter)
 {
     (void)parameter;
+
+    if (InitWireProtocolCommunications() == true)  // NOTE: Don't call  Scheduler type calls in this module
+    {
+        nanoBooterState = ok;
+    }
+    else
+    {
+        nanoBooterState = communications_failure;
+    }
 
     tx_thread_sleep(50);
 
