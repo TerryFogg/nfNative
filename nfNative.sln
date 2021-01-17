@@ -16979,8 +16979,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datasheets", "Datasheets", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Notes", "Application Notes", "{3A5302C7-AB64-439B-A38E-951C9E80D4FC}"
 	ProjectSection(SolutionItems) = preProject
+		_Tools and Related Documents\Application Notes\Digital camera interface (DCMI) for STM32 MCUs.pdf = _Tools and Related Documents\Application Notes\Digital camera interface (DCMI) for STM32 MCUs.pdf
+		_Tools and Related Documents\Application Notes\Digital signal processing for STM32 microcontrollers using CMSIS.pdf = _Tools and Related Documents\Application Notes\Digital signal processing for STM32 microcontrollers using CMSIS.pdf
+		_Tools and Related Documents\Application Notes\Error correction code ECC management for internal memories protection on STM32H7.pdf = _Tools and Related Documents\Application Notes\Error correction code ECC management for internal memories protection on STM32H7.pdf
+		_Tools and Related Documents\Application Notes\Extending the DAC performance of STM32 microcontrollers.pdf = _Tools and Related Documents\Application Notes\Extending the DAC performance of STM32 microcontrollers.pdf
+		_Tools and Related Documents\Application Notes\FDCAN peripheral on STM32 devices.pdf = _Tools and Related Documents\Application Notes\FDCAN peripheral on STM32 devices.pdf
+		_Tools and Related Documents\Application Notes\Getting started with STM32H7 Series SDMMC host controller.pdf = _Tools and Related Documents\Application Notes\Getting started with STM32H7 Series SDMMC host controller.pdf
+		_Tools and Related Documents\Application Notes\Getting started with STM32H7A3_7B3 line and STM32H7B0 Value line.pdf = _Tools and Related Documents\Application Notes\Getting started with STM32H7A3_7B3 line and STM32H7B0 Value line.pdf
+		_Tools and Related Documents\Application Notes\Hardware JPEG codec peripheral in STM32H7 etc.pdf = _Tools and Related Documents\Application Notes\Hardware JPEG codec peripheral in STM32H7 etc.pdf
+		_Tools and Related Documents\Application Notes\How to get the best ADC accuracy on STM32.pdf = _Tools and Related Documents\Application Notes\How to get the best ADC accuracy on STM32.pdf
+		_Tools and Related Documents\Application Notes\How to use OTFDEC for encryptiondecryption in trusted environment.pdf = _Tools and Related Documents\Application Notes\How to use OTFDEC for encryptiondecryption in trusted environment.pdf
+		_Tools and Related Documents\Application Notes\Introduction to STM32 microcontrollers security.pdf = _Tools and Related Documents\Application Notes\Introduction to STM32 microcontrollers security.pdf
+		_Tools and Related Documents\Application Notes\LCD-TFT display controller on STM32 MCUs.pdf = _Tools and Related Documents\Application Notes\LCD-TFT display controller on STM32 MCUs.pdf
+		_Tools and Related Documents\Application Notes\Octo-SPI interface on STM32 microcontrollers.pdf = _Tools and Related Documents\Application Notes\Octo-SPI interface on STM32 microcontrollers.pdf
+		_Tools and Related Documents\Application Notes\Overview secure firmware install.pdf = _Tools and Related Documents\Application Notes\Overview secure firmware install.pdf
 		_Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf = _Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf
+		_Tools and Related Documents\Application Notes\STM32 DMAMUX the DMA request router.pdf = _Tools and Related Documents\Application Notes\STM32 DMAMUX the DMA request router.pdf
+		_Tools and Related Documents\Application Notes\STM32 GPIO configuration for hardware settings.pdf = _Tools and Related Documents\Application Notes\STM32 GPIO configuration for hardware settings.pdf
+		_Tools and Related Documents\Application Notes\STM32 microcontroller system memory boot mode.pdf = _Tools and Related Documents\Application Notes\STM32 microcontroller system memory boot mode.pdf
+		_Tools and Related Documents\Application Notes\STM32 USART automatic baud rate detection.pdf = _Tools and Related Documents\Application Notes\STM32 USART automatic baud rate detection.pdf
 		_Tools and Related Documents\Application Notes\STM32 using the LTDC display controller.pdf = _Tools and Related Documents\Application Notes\STM32 using the LTDC display controller.pdf
+		_Tools and Related Documents\Application Notes\STM32Cube MCU Package examples for STM32H7 Series.pdf = _Tools and Related Documents\Application Notes\STM32Cube MCU Package examples for STM32H7 Series.pdf
+		_Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf = _Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf
+		_Tools and Related Documents\Application Notes\USB DFU protocol used in the STM32 bootloader.pdf = _Tools and Related Documents\Application Notes\USB DFU protocol used in the STM32 bootloader.pdf
 		_Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf = _Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf
 	EndProjectSection
 EndProject
