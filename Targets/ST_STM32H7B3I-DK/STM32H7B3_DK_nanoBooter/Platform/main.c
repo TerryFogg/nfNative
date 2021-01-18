@@ -16,6 +16,7 @@
 
 int main(void)
 {
+    printf("Started");
     BoardInit();
 
     InitBootClipboard();

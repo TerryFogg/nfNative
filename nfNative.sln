@@ -13181,14 +13181,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ST_NUCLEO64_F091RC-nanoCLR"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Tools and Related Documents", "_Tools and Related Documents", "{D218DB76-E812-4C72-A4A6-A64F3B87B87D}"
 	ProjectSection(SolutionItems) = preProject
-		azure-rtos.md = azure-rtos.md
-		Core-M7.md = Core-M7.md
-		_Tools and Related Documents\nanoCLRGraphics.md = _Tools and Related Documents\nanoCLRGraphics.md
-		_Tools and Related Documents\Optimising.md = _Tools and Related Documents\Optimising.md
-		_Tools and Related Documents\postbuild.bat = _Tools and Related Documents\postbuild.bat
-		_Tools and Related Documents\SensorTypes.md = _Tools and Related Documents\SensorTypes.md
-		_Tools and Related Documents\Setup.md = _Tools and Related Documents\Setup.md
-		_Tools and Related Documents\SignatureIdea.md = _Tools and Related Documents\SignatureIdea.md
+		_Tools and Related Documents\STM32H7B-7A native code setup for nanoFramework.md = _Tools and Related Documents\STM32H7B-7A native code setup for nanoFramework.md
 		_Tools and Related Documents\StmDocuments.md = _Tools and Related Documents\StmDocuments.md
 	EndProjectSection
 EndProject
@@ -16975,7 +16968,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grapholite", "Grapholite", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "STM32", "STM32", "{0D475FAF-810C-49F8-A196-1ABDE6698B9A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datasheets", "Datasheets", "{CF5C285D-D650-4DE6-B9F1-8DFA5C84188E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datasheets and Reference", "Datasheets and Reference", "{CF5C285D-D650-4DE6-B9F1-8DFA5C84188E}"
+	ProjectSection(SolutionItems) = preProject
+		_Tools and Related Documents\Application Notes\Getting started with STM32H7 Series SDMMC host controller.pdf = _Tools and Related Documents\Application Notes\Getting started with STM32H7 Series SDMMC host controller.pdf
+		_Tools and Related Documents\Application Notes\Getting started with STM32H7A3_7B3 line and STM32H7B0 Value line.pdf = _Tools and Related Documents\Application Notes\Getting started with STM32H7A3_7B3 line and STM32H7B0 Value line.pdf
+		_Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf = _Tools and Related Documents\Application Notes\Reference manual STM32H7A3_7B3 (RM0455).pdf
+		_Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf = _Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Notes", "Application Notes", "{3A5302C7-AB64-439B-A38E-951C9E80D4FC}"
 	ProjectSection(SolutionItems) = preProject
@@ -17003,6 +17002,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Notes", "Applic
 		_Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf = _Tools and Related Documents\Application Notes\STM32H7 Series lifetime estimates.pdf
 		_Tools and Related Documents\Application Notes\USB DFU protocol used in the STM32 bootloader.pdf = _Tools and Related Documents\Application Notes\USB DFU protocol used in the STM32 bootloader.pdf
 		_Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf = _Tools and Related Documents\Application Notes\USB Type-C Power Delivery using STM32 MCUs and MPUs.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{A6AE73ED-45C3-45E5-9514-F26C6950FEE8}"
+	ProjectSection(SolutionItems) = preProject
+		azure-rtos.md = azure-rtos.md
+		_Tools and Related Documents\How to add and update Git Submodules.md = _Tools and Related Documents\How to add and update Git Submodules.md
+		_Tools and Related Documents\nanoCLRGraphics.md = _Tools and Related Documents\nanoCLRGraphics.md
+		_Tools and Related Documents\Optimising.md = _Tools and Related Documents\Optimising.md
+		_Tools and Related Documents\SensorTypes.md = _Tools and Related Documents\SensorTypes.md
+		_Tools and Related Documents\Setup.md = _Tools and Related Documents\Setup.md
+		_Tools and Related Documents\SignatureIdea.md = _Tools and Related Documents\SignatureIdea.md
 	EndProjectSection
 EndProject
 Global
@@ -19056,6 +19066,7 @@ Global
 		{0D475FAF-810C-49F8-A196-1ABDE6698B9A} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
 		{CF5C285D-D650-4DE6-B9F1-8DFA5C84188E} = {0D475FAF-810C-49F8-A196-1ABDE6698B9A}
 		{3A5302C7-AB64-439B-A38E-951C9E80D4FC} = {0D475FAF-810C-49F8-A196-1ABDE6698B9A}
+		{A6AE73ED-45C3-45E5-9514-F26C6950FEE8} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A66BD7CD-C93A-47C4-8DD8-F2C392511FC6}

@@ -3,8 +3,8 @@
 // See LICENSE file in the project root for full license information.
 */
 
-__nanoImage_start__     = ORIGIN(flash0);
-__nanoImage_size__      = LENGTH(flash0);
+__nanoImage_start__     = ORIGIN(FLASH);
+__nanoImage_size__      = LENGTH(FLASH);
 __nanoImage_end__       = __nanoImage_start__ + __nanoImage_size__;
 __nanoConfig_start__    = ORIGIN(config);
 __nanoConfig_size__     = LENGTH(config);

@@ -29,10 +29,10 @@ Board: STM32H7B3I-DK
 UART_HandleTypeDef wpUartHandle;
 ReadPacketState CurrentReadPacketState;
 WritePacketState CurrentWritePacketState;
-//__attribute__((aligned(32))) uint8_t aTxBuffer[TXBUFFERSIZE];
-//__attribute__((aligned(32))) uint8_t aRxBuffer[RXBUFFER];
-uint8_t aTxBuffer[TXBUFFERSIZE];
-uint8_t aRxBuffer[RXBUFFER];
+
+// Place buffers used in DMA transfers in memory regions accessible by the DMA hardware.
+uint8_t aTxBuffer[TXBUFFERSIZE]  __attribute__((section(".DMA2_RAM"))) __attribute__((aligned(4)));
+uint8_t aRxBuffer[RXBUFFER] __attribute__((section(".DMA2_RAM"))) __attribute__((aligned(4)));
 
 struct PacketsReceived
 {
@@ -146,7 +146,7 @@ bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 }
 void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 {
-    SCB_InvalidateDCache_by_Addr(aRxBuffer, sizeof(aRxBuffer)); // Tricky one
+    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer)); // Tricky one
 
     CircularBuffer.TotalPackets++;
     CircularBuffer.NumberNotProcessed++;

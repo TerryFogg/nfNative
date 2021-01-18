@@ -7,6 +7,7 @@
 #include <stm32h7xx_hal.h>
 #include <tx_api.h>
 #include <BoardInit.h>
+#include <targetHAL.h>
 
 extern UART_HandleTypeDef wpUartHandle;
 static DMA_HandleTypeDef hdma_tx;
