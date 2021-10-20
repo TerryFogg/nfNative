@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/Targets/ST_STM32H7B3I-DK/STM32H7B3_DK_nanoBooter/.visualgdb/CodeDB/STM32H7B3_DK_nanoBooter-Debug-VisualGDB
