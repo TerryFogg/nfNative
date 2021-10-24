@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{a72d32cc-3f6c-4456-8b07-533a9fd39591}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_native.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_USB\usb.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_USB\USB_decl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_USB\usb_def.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_WP\TinySupport.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetMF_WP\WireProtocol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)USART.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol\wpUSART_Communications.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol\wp_hal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_fastcompile.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_native.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbStream.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\spot_hardware_usb_stub.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\STM32F4_usb_functions.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\usb.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\usb_config.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\usb_config_SAM9RL64_EK.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_USB\usb_stubs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_WP\Compression.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetMF_WP\WireProtocol.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\WireProtocol_App_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\WireProtocol_MonitorCommands.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\wpUSART_Communications.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)NetMF_USB\UsbClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt" />
+  </ItemGroup>
+</Project>

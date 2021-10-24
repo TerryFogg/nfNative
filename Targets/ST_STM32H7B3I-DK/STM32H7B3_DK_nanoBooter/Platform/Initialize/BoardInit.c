@@ -18,6 +18,7 @@
 RTC_HandleTypeDef RtcHandle;
 #endif
 
+eBooterStatus nanoBooterState;
 CRC_HandleTypeDef CrcHandle;
 UART_HandleTypeDef WProtocolUart;
 DMA_HandleTypeDef s_DMAHandle;

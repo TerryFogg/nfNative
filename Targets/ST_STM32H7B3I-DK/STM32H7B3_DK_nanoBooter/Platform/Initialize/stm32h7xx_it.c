@@ -42,15 +42,6 @@ void EXTI15_10_IRQHandler(void)
 //*******************************
 //  Wire protocol UART handlers
 //*******************************
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef* UartHandle)
-{
-    if (UartHandle->Instance == wpUSART)
-    {
-        ReadNextComplete(UartHandle);
-    }
-}
-
 //  Wire protocol receive
 void DMA2_Stream1_IRQHandler(void)
 {
@@ -63,6 +54,38 @@ void DMA2_Stream7_IRQHandler(void)
     HAL_DMA_IRQHandler(wpUartHandle.hdmatx);
 }
 
+
+//void USART1_IRQHandler(void)
+//{
+//    if (((&wpUartHandle)->Instance->ISR & UART_FLAG_IDLE) != 0   && ((&wpUartHandle)->Instance->CR1 & USART_CR1_IDLEIE) != 0) 
+//    {
+//        __HAL_UART_CLEAR_IDLEFLAG(&wpUartHandle);
+//        HAL_UART_RxCpltCallback(&wpUartHandle);
+//    }
+//    // pass the work to HAL function
+//    HAL_UART_IRQHandler(&wpUartHandle);
+//}
+//
+//void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+//    UART_RX_Check(&hdma_usart1_rx);
+//}
+//
+//void HAL_UART_RxHalfCpltCallback(UART_HandleTypeDef *huart) {
+//    UART_RX_Check(&hdma_usart1_rx);
+//}
+
+
+
+
+
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef* UartHandle)
+{
+    if (UartHandle->Instance == wpUSART)
+    {
+        ReadNextComplete(UartHandle);
+    }
+}
 //  Configured for wire protocol on USART1
 void USART1_IRQHandler(void)
 {

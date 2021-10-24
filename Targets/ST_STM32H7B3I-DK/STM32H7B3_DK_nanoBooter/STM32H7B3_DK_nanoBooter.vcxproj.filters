@@ -40,14 +40,8 @@
     <Filter Include="Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx">
       <UniqueIdentifier>{86c73a17-04e0-4d1a-bac4-3deada54cf54}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Inc">
-      <UniqueIdentifier>{04797398-f61e-4fdd-91db-23d8927d5de5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Platform\Memory">
       <UniqueIdentifier>{8438f779-2463-438f-abd1-0d09408c3f69}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\WireProtocol">
-      <UniqueIdentifier>{2a25cf6e-2309-48a2-a1ca-347b45e85645}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\nf-interpreter">
       <UniqueIdentifier>{ace8be4a-19c2-41a8-8faa-2a2a8a502de4}</UniqueIdentifier>
@@ -85,36 +79,6 @@
     <Filter Include="Platform\nf-interpreter\src\PAL\Include">
       <UniqueIdentifier>{c758330a-e515-47fe-bb28-67c54cd66e70}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\azure-rtos">
-      <UniqueIdentifier>{a6f18eac-43bb-44e8-ac84-f5bcaf0b1e18}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx">
-      <UniqueIdentifier>{a0e0536b-1f96-43df-b527-463c26859458}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\common">
-      <UniqueIdentifier>{1c4c247d-26dc-40ac-a022-5e96d79e8126}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\common\src">
-      <UniqueIdentifier>{3a7e7959-b8f5-4ce1-b329-68785f7b7583}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\common\inc">
-      <UniqueIdentifier>{3bb836f5-3992-4d5f-ba62-dc32a1097eac}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\ports">
-      <UniqueIdentifier>{128d31d0-964e-40d9-9714-196457669fc5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\ports\cortex_m7">
-      <UniqueIdentifier>{3dcaa06c-3754-460f-a4f5-b0faec7f3ebf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\ports\cortex_m7\gnu">
-      <UniqueIdentifier>{86c07574-14f1-4802-a54e-28ab6702206c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\ports\cortex_m7\gnu\inc">
-      <UniqueIdentifier>{37807f0f-2ca3-4e61-b9f3-c7a72def307b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src">
-      <UniqueIdentifier>{18c92333-5ba4-4034-8f9a-d9301a0aa252}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Platform\Configuration">
       <UniqueIdentifier>{6a6e7105-42cb-446a-9241-8b321410f89f}</UniqueIdentifier>
     </Filter>
@@ -132,6 +96,42 @@
     </Filter>
     <Filter Include="Device-specific files\Semihosting/Profiler">
       <UniqueIdentifier>{dacba017-d268-49f8-b43a-eb0c60ed60a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\WireProtocol">
+      <UniqueIdentifier>{d2488af7-8942-405d-bfd2-b99c598ce6b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS">
+      <UniqueIdentifier>{e4090af3-799a-4a9a-9e03-76ca2078d384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx">
+      <UniqueIdentifier>{998aa879-d10e-4cab-8d0a-7f8687829c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\common">
+      <UniqueIdentifier>{7d5d0824-d976-4911-be7a-230c303d3be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\common\src">
+      <UniqueIdentifier>{c79fdd9b-33f4-418f-85f5-9fa75593af1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\common\inc">
+      <UniqueIdentifier>{4207ec7b-a7cf-45e7-8836-0056f97ee909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include">
+      <UniqueIdentifier>{35b6e7f5-fdd6-4b9f-9be4-d549f132cb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\ports">
+      <UniqueIdentifier>{128d31d0-964e-40d9-9714-196457669fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\ports\cortex_m7">
+      <UniqueIdentifier>{3dcaa06c-3754-460f-a4f5-b0faec7f3ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\ports\cortex_m7\gnu">
+      <UniqueIdentifier>{86c07574-14f1-4802-a54e-28ab6702206c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\ports\cortex_m7\gnu\inc">
+      <UniqueIdentifier>{37807f0f-2ca3-4e61-b9f3-c7a72def307b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Azure-RTOS\threadx\ports\cortex_m7\gnu\src">
+      <UniqueIdentifier>{18c92333-5ba4-4034-8f9a-d9301a0aa252}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -162,12 +162,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cryp_ex.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dac.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dac_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dcmi.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
@@ -192,16 +186,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dts.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_fdcan.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c">
@@ -246,12 +231,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2s_ex.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_irda.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_iwdg.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
@@ -280,12 +259,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_nor.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_opamp.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_opamp_ex.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ospi.c">
@@ -333,28 +306,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sai.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sai_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smartcard.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smartcard_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_smbus.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spdifrx.c">
@@ -391,99 +343,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_bdma.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_comp.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_cordic.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crs.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dac.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma2d.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_exti.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmac.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_gpio.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_hrtim.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_i2c.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lptim.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lpuart.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_mdma.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_opamp.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_pwr.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rcc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rng.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rtc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_spi.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_swpmi.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_tim.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usart.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h">
@@ -609,6 +468,39 @@
     <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClCompile>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
       <Filter>Device-specific files</Filter>
     </ClInclude>
@@ -654,292 +546,7 @@
     <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stack_macros.h">
       <Filter>Device-specific files</Filter>
     </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stream_buffer.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\task.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\timers.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cec.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_comp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cordic.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma2d.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dsi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dts.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fmac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gfxmmu.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hrtim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hsem.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_iwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_jpeg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_lptim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdios.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nand.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nor.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ospi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_otfdec.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pssi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ramecc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spdifrx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sram.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_swpmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_wwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
       <Filter>Device-specific files</Filter>
     </ClInclude>
     <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
@@ -1005,138 +612,6 @@
     <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv8.h">
       <Filter>Device-specific files</Filter>
     </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\tz_context.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h730xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7xx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
@@ -1144,6 +619,9 @@
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
@@ -1158,12 +636,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cec.h">
@@ -1188,12 +660,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp_ex.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h">
@@ -1230,9 +696,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h">
@@ -1370,12 +833,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
@@ -1383,15 +840,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spdifrx.h">
@@ -1428,120 +876,6 @@
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_wwdg.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
@@ -1610,56 +944,8 @@
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\tz_context.h">
       <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
-      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h">
-      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
-      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_block_pool.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_byte_pool.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_event_flags.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_initialize.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_mutex.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_queue.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_semaphore.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_thread.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_timer.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_trace.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_user_sample.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc\tx_api.h">
-      <Filter>Platform\azure-rtos\threadx\common\inc</Filter>
-    </ClInclude>
-    <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h">
-      <Filter>Platform\WireProtocol</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\inc</Filter>
     </ClInclude>
     <ClInclude Include="Platform\Configuration\nanoFrameworkConfiguration.h">
       <Filter>Platform\Configuration</Filter>
@@ -1733,6 +1019,255 @@
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h">
       <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_byte_pool.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_event_flags.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_initialize.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_mutex.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_queue.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_semaphore.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_thread.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_timer.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_trace.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_user_sample.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_conf_template.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
+      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h723xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h725xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xxq.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h733xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h735xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h742xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h745xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h747xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h753xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h755xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h757xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
+      <Filter>Platform\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
+      <Filter>Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props" />
@@ -1756,593 +1291,32 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c">
-      <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cec.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_comp.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_allocate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_pool_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_block_release.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_allocate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_pool_search.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_byte_release.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_set.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_event_flags_set_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_initialize_high_level.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_initialize_kernel_enter.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_initialize_kernel_setup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_misra.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_priority_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_mutex_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_flush.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_front_send.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_receive.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_send.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_queue_send_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_ceiling_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_cleanup.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_semaphore_put_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_entry_exit_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_identify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_preemption_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_priority_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_relinquish.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_reset.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_resume.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_shell_entry.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_sleep.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_stack_analyze.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_stack_error_handler.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_stack_error_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_suspend.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_system_preempt_check.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_system_resume.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_system_suspend.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_terminate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_time_slice.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_time_slice_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_timeout.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_thread_wait_abort.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_time_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_time_set.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_activate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_deactivate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_expiration_process.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_performance_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_performance_system_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_system_activate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_system_deactivate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_timer_thread_entry.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_buffer_full_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_disable.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_enable.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_event_filter.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_event_unfilter.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_initialize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_interrupt_control.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_isr_enter_insert.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_isr_exit_insert.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_object_register.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_object_unregister.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_allocate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_pool_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_pool_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_pool_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_pool_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_block_release.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_allocate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_pool_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_pool_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_pool_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_pool_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_byte_release.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_set.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_event_flags_set_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_mutex_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_flush.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_front_send.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_receive.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_send.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_queue_send_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_ceiling_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_prioritize.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_put.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_semaphore_put_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_entry_exit_notify.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_preemption_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_priority_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_relinquish.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_reset.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_resume.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_suspend.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_terminate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_time_slice_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_thread_wait_abort.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_activate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_change.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_create.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_deactivate.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_delete.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\common\src\txe_timer_info_get.c">
-      <Filter>Platform\azure-rtos\threadx\common\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_timer_interrupt.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_restore.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_save.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_interrupt_control.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_schedule.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_stack_build.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_system_return.S">
-      <Filter>Platform\azure-rtos\threadx\ports\cortex_m7\gnu\src</Filter>
+      <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
       <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
@@ -2352,12 +1326,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
       <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_ReceiverThread.c">
-      <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="Platform\BlockStorage\Device_BlockStorage.c">
       <Filter>Platform\BlockStorage</Filter>
@@ -2401,9 +1369,6 @@
     <ClCompile Include="Platform\main.c">
       <Filter>Platform</Filter>
     </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\Startup\hard_fault_handler.c">
       <Filter>Platform\Startup</Filter>
     </ClCompile>
@@ -2428,11 +1393,566 @@
     <ClCompile Include="Platform\Startup\nanoFramework_Threads.c">
       <Filter>Platform\Startup</Filter>
     </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c">
       <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_release.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_allocate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_release.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_flush.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_front_send.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_receive.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_ceiling_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_entry_exit_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_preemption_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_priority_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_relinquish.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_reset.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_resume.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_suspend.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_terminate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_time_slice_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_wait_abort.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_activate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_deactivate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_allocate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_release.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_allocate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_search.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_release.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_high_level.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_enter.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_setup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_misra.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_priority_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_flush.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_front_send.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_receive.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_ceiling_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_cleanup.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_prioritize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_entry_exit_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_identify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_preemption_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_priority_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_relinquish.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_reset.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_resume.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_shell_entry.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_sleep.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_analyze.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_handler.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_suspend.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_preempt_check.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_resume.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_suspend.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_terminate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_timeout.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_wait_abort.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_activate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_change.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_create.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_deactivate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_delete.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_expiration_process.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_system_info_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_activate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_deactivate.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_thread_entry.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_get.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_set.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_buffer_full_notify.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_disable.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_enable.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_filter.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_unfilter.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_initialize.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_interrupt_control.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_enter_insert.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_exit_insert.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_register.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_unregister.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c">
+      <Filter>Azure-RTOS\threadx\common\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2445,10 +1965,5 @@
     <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt">
-      <Filter>Platform\WireProtocol</Filter>
-    </Text>
   </ItemGroup>
 </Project>

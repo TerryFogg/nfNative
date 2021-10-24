@@ -4,7 +4,7 @@
 //
 
 #include <nanoHAL_v2.h>
-#include <nanoHAL_Boot.h>
+#include <nanoHAL_Boot.h>                                                                          
 #include <nanoHAL_Capabilites.h>
 #include <nanoPAL_BlockStorage.h>
 #include <targetHAL.h>
@@ -28,14 +28,14 @@ int main(void)
     BlockStorage_AddDevices();
     ConfigurationManager_Initialize();
 
-    //if (InitWireProtocolCommunications() == true)  // NOTE: Don't call  Scheduler type calls in this module
-    //{
-    //    nanoBooterState = ok;
-    //}
-    //else
-    //{
-    //    nanoBooterState = communications_failure;
-    //}
+    if (InitWireProtocolCommunications() == true)  // NOTE: Don't call  Scheduler type calls in this module
+    {
+        nanoBooterState = ok;
+    }
+    else
+    {
+        nanoBooterState = communications_failure;
+    }
 
     // report successfull nanoBooter execution
     ReportSuccessfullNanoBooter();

@@ -163,3 +163,56 @@ void ReadNextComplete(UART_HandleTypeDef* UartHandle)
     }
 
 }
+
+
+//----------------------------------------------
+
+#define DMA_BUFFER_MAX 16
+ char rx_buffer[DMA_BUFFER_MAX] = { 0 };
+
+
+#define UART_BUFFER_MAX   64
+char uart_buffer[UART_BUFFER_MAX] = { 0 };
+
+
+size_t uart_buffer_idx = 0;
+char uart_new_string = 0;
+
+
+
+//void UART_RX_Process(const void *data, size_t len) {
+//    for (int i = 0; i < len; i++) {
+//        char c = ((char*) data)[i];
+//        if (uart_buffer_idx < UART_BUFFER_MAX - 2) {
+//            uart_buffer[uart_buffer_idx++] = c;
+//            uart_buffer[uart_buffer_idx] = '\0';
+//        }
+//        if (c == '\n') {
+//            uart_buffer_idx = 0;
+//            uart_new_string = 1;
+//        }
+//    }
+//}
+//
+//void UART_RX_Check(DMA_HandleTypeDef *hdma) {
+//    static size_t old_pos = 0;
+//    size_t rx_pos = DMA_BUFFER_MAX - hdma->Instance->CNDTR;
+//    if (rx_pos != old_pos) {
+//        // new data
+//  if(rx_pos > old_pos) {
+//            // no overflow
+//    UART_RX_Process(&rx_buffer[old_pos], rx_pos - old_pos);
+//        } else {
+//            // overflow
+//  UART_RX_Process(&rx_buffer[old_pos], DMA_BUFFER_MAX - old_pos);
+//            if (rx_pos > 0) {
+//                // run up
+//  UART_RX_Process(&rx_buffer[old_pos], rx_pos);
+//            }
+//        }
+//        old_pos = rx_pos;
+//    }
+//}
+//
+//
+// -------------------------------------------------------

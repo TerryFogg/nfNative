@@ -1,3 +1,9 @@
+## This doco was taken from QML.
+
+#### Looks like an interesting way to create classes that abstract the actual sensor type interface underneath
+
+
+
 QML Sensor Types
 
 These types represent specific types of sensors.

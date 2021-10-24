@@ -17,7 +17,7 @@ void nanoBooterStatus(uint32_t nanoBooterState);
 void Startup_Rtos();
 void SystemClock_Config(void);
 
-eBooterStatus nanoBooterState;
+extern eBooterStatus nanoBooterState;
 
 // ========================
 // STM32H7B3I-DK board Leds
