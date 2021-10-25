@@ -97,9 +97,6 @@
     <Filter Include="Device-specific files\Semihosting/Profiler">
       <UniqueIdentifier>{dacba017-d268-49f8-b43a-eb0c60ed60a2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\WireProtocol">
-      <UniqueIdentifier>{d2488af7-8942-405d-bfd2-b99c598ce6b7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Azure-RTOS">
       <UniqueIdentifier>{e4090af3-799a-4a9a-9e03-76ca2078d384}</UniqueIdentifier>
     </Filter>
@@ -132,6 +129,9 @@
     </Filter>
     <Filter Include="Azure-RTOS\threadx\ports\cortex_m7\gnu\src">
       <UniqueIdentifier>{18c92333-5ba4-4034-8f9a-d9301a0aa252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\WireProtocol">
+      <UniqueIdentifier>{3ce4c23a-33db-4b36-a1c5-ad3a9ab3f15f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -1016,9 +1016,6 @@
     <ClInclude Include="Platform\Startup\targetPAL_Time.h">
       <Filter>Platform\Startup</Filter>
     </ClInclude>
-    <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h">
       <Filter>Azure-RTOS\threadx\common\inc</Filter>
     </ClInclude>
@@ -1268,6 +1265,9 @@
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
       <Filter>Azure-RTOS\threadx\common\inc</Filter>
     </ClInclude>
+    <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props" />
@@ -1392,12 +1392,6 @@
     </ClCompile>
     <ClCompile Include="Platform\Startup\nanoFramework_Threads.c">
       <Filter>Platform\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\WireProtocol.c">
-      <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c">
       <Filter>Azure-RTOS\threadx\common\src</Filter>
@@ -1953,6 +1947,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c">
       <Filter>Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c">
+      <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -370,7 +370,6 @@
     <ClCompile Include="Platform\Startup\targetHAL.c" />
     <ClCompile Include="Platform\Startup\targetHAL_Time.cpp" />
     <ClCompile Include="Platform\main.c" />
-    <ClCompile Include="Platform\WireProtocol\WireProtocol.c" />
     <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h" />

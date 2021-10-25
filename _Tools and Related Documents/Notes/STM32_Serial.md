@@ -1,3 +1,5 @@
+https://deepbluembedded.com/stm32-usart-uart-tutorial/
+
 ## STM32 USART
 
 ________________________________________

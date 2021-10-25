@@ -84,11 +84,11 @@ bool InitWireProtocolCommunications()
     wpUartHandle.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
 
     if (HAL_UART_Init(&wpUartHandle) != HAL_OK)  // HAL_UART_INIT calls HAL_UART_MspInit(...) in stm32h7xx_hal_msp.c
-    {
-        HAL_AssertEx();
-    }
+        {
+            HAL_AssertEx();
+        }
     // ?????????????????
-    if (HAL_UARTEx_SetTxFifoThreshold(&wpUartHandle, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+    if(HAL_UARTEx_SetTxFifoThreshold(&wpUartHandle, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
     {
         HAL_AssertEx();
     }
@@ -146,7 +146,7 @@ bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 }
 void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 {
-    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer)); // Tricky one
+    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer));    // Tricky one
 
     CircularBuffer.TotalPackets++;
     CircularBuffer.NumberNotProcessed++;
@@ -180,39 +180,38 @@ char uart_new_string = 0;
 
 
 
-//void UART_RX_Process(const void *data, size_t len) {
-//    for (int i = 0; i < len; i++) {
-//        char c = ((char*) data)[i];
-//        if (uart_buffer_idx < UART_BUFFER_MAX - 2) {
-//            uart_buffer[uart_buffer_idx++] = c;
-//            uart_buffer[uart_buffer_idx] = '\0';
-//        }
-//        if (c == '\n') {
-//            uart_buffer_idx = 0;
-//            uart_new_string = 1;
-//        }
-//    }
-//}
-//
-//void UART_RX_Check(DMA_HandleTypeDef *hdma) {
-//    static size_t old_pos = 0;
-//    size_t rx_pos = DMA_BUFFER_MAX - hdma->Instance->CNDTR;
-//    if (rx_pos != old_pos) {
-//        // new data
-//  if(rx_pos > old_pos) {
-//            // no overflow
-//    UART_RX_Process(&rx_buffer[old_pos], rx_pos - old_pos);
-//        } else {
-//            // overflow
-//  UART_RX_Process(&rx_buffer[old_pos], DMA_BUFFER_MAX - old_pos);
-//            if (rx_pos > 0) {
-//                // run up
-//  UART_RX_Process(&rx_buffer[old_pos], rx_pos);
-//            }
-//        }
-//        old_pos = rx_pos;
-//    }
-//}
-//
-//
-// -------------------------------------------------------
+void UART_RX_Process(const void *data, size_t len) {
+    for (int i = 0; i < len; i++) {
+        char c = ((char*) data)[i];
+        if (uart_buffer_idx < UART_BUFFER_MAX - 2) {
+            uart_buffer[uart_buffer_idx++] = c;
+            uart_buffer[uart_buffer_idx] = '\0';
+        }
+        if (c == '\n') {
+            uart_buffer_idx = 0;
+            uart_new_string = 1;
+        }
+    }
+}
+
+void UART_RX_Check(DMA_HandleTypeDef *hdma) 
+{
+    static size_t old_pos = 0;
+    size_t rx_pos = DMA_BUFFER_MAX - hdma->Instance->CNDTR;
+    if (rx_pos != old_pos) 
+    {
+        if (rx_pos > old_pos)        // new data
+            {
+                UART_RX_Process(&rx_buffer[old_pos], rx_pos - old_pos);   // no overflow
+            } 
+        else 
+        {
+            UART_RX_Process(&rx_buffer[old_pos], DMA_BUFFER_MAX - old_pos);   // overflow
+            if(rx_pos > 0) 
+            {
+                UART_RX_Process(&rx_buffer[old_pos], rx_pos);          // run up
+            }
+        }
+        old_pos = rx_pos;
+    }
+}

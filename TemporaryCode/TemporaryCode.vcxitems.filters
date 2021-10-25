@@ -32,6 +32,9 @@
       <Filter>WireProtocol</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)USART.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoBooter\Platform\WireProtocol\wpUSART_Communications.h">
+      <Filter>TempStore\WireProtocol</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="NetMF_USB">
@@ -42,6 +45,12 @@
     </Filter>
     <Filter Include="WireProtocol">
       <UniqueIdentifier>{992d40cf-9ddb-4f15-af78-a4b3601140c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TempStore">
+      <UniqueIdentifier>{00ae9330-5453-4350-9f31-2c260871f49c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TempStore\WireProtocol">
+      <UniqueIdentifier>{b67516d4-b2fd-433f-94f5-071736118533}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +104,12 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol\wpUSART_Communications.c">
       <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoBooter\Platform\WireProtocol\WireProtocol.c">
+      <Filter>TempStore\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoBooter\Platform\WireProtocol\wpUSART_Communications.c">
+      <Filter>TempStore\WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
