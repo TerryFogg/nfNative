@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ThreadX">
+      <UniqueIdentifier>{bedea303-bb9a-40b3-93e7-5094a52188e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common">
+      <UniqueIdentifier>{932d3f37-8fa7-4d61-9457-1c142925428a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common\src">
+      <UniqueIdentifier>{264c4c65-c2ad-4fcf-b819-bb27f77f0245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common\inc">
+      <UniqueIdentifier>{87226f41-4a99-4f9b-8e33-112c293358e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules">
+      <UniqueIdentifier>{e5232457-a369-4100-a3b6-fcea5cf6eb52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports">
+      <UniqueIdentifier>{4a8de841-30ce-4823-88a9-5f726ce86eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\inc">
+      <UniqueIdentifier>{fb386152-0eef-4cc0-9653-8d9196c47d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\module_lib">
+      <UniqueIdentifier>{00737844-940b-4868-bad0-2fcb9700477f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\module_manager">
+      <UniqueIdentifier>{0de2cbeb-69ff-44cf-98ce-d3c1128cd4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\module_lib\src">
+      <UniqueIdentifier>{dacc3ff7-7819-47c0-af27-ee0fd805a569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\module_manager\inc">
+      <UniqueIdentifier>{05514a04-08f3-493d-951d-112b66130d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_modules\module_manager\src">
+      <UniqueIdentifier>{8fd32381-b553-4d34-997c-a12a5801f648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\cortex_m7">
+      <UniqueIdentifier>{4f892c20-3a71-4128-b288-b5332c248d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\cortex_m7\gnu">
+      <UniqueIdentifier>{96f16841-efb9-4a72-b1fa-97478d450350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\cortex_m7\gnu\example_build">
+      <UniqueIdentifier>{6da94f24-81e1-4ab5-8b0e-f73fe842b357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\cortex_m7\gnu\inc">
+      <UniqueIdentifier>{5023990d-e95f-4204-900e-d212c984e230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\cortex_m7\gnu\src">
+      <UniqueIdentifier>{f068d1b0-25d5-4326-aba4-9c6618c1c95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module">
+      <UniqueIdentifier>{5b443337-d2f9-403d-bee2-cd0e901f5961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7">
+      <UniqueIdentifier>{524be16a-bc94-4d03-a365-06ad22f7f58f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu">
+      <UniqueIdentifier>{5259427f-0089-416d-b503-43a022e6f623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\example_build">
+      <UniqueIdentifier>{a8a1f513-2d46-40ef-ad75-83da8b29974d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\inc">
+      <UniqueIdentifier>{f6284f0e-879c-4602-b010-b7afa1b7e9af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\module_lib">
+      <UniqueIdentifier>{b9a9430e-d865-4b71-8256-2ea50d44bb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\module_lib\src">
+      <UniqueIdentifier>{de9ca337-bfe8-4351-813d-79bcfa66a41b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\module_manager">
+      <UniqueIdentifier>{656460a8-f646-45fa-afb1-e0d903b8e36a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_module\cortex-m7\gnu\module_manager\src">
+      <UniqueIdentifier>{c41bf579-3773-4b7c-98c8-7f3824a0058c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_smp">
+      <UniqueIdentifier>{d72b0064-717c-4ee3-aa4a-e35db15207a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\docs">
+      <UniqueIdentifier>{2e4cab1d-fd04-4bcc-ba90-bd454a4a1d43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility">
+      <UniqueIdentifier>{87cef029-148b-416d-b951-f0095ad26160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\samples">
+      <UniqueIdentifier>{0dfa4bd8-f18a-4fe3-9aa6-756f19ed2b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports_smp">
+      <UniqueIdentifier>{b0940580-5618-4b6a-a254-882be3a1fea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_smp\inc">
+      <UniqueIdentifier>{2bf551e0-868c-42eb-825b-4c227cb89eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\common_smp\src">
+      <UniqueIdentifier>{6d56615a-ab11-4a7b-9cdb-31121db5a47a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\coretex_m0">
+      <UniqueIdentifier>{36607da2-d60e-4ec5-b5e8-c3b7efe947e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\coretex_m0\gnu">
+      <UniqueIdentifier>{7f16c6e8-1860-492c-98e2-90c9fe2f577b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\coretex_m0\gnu\inc">
+      <UniqueIdentifier>{2ee779c8-dead-4258-a47a-73d030d3cd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\coretex_m0\gnu\src">
+      <UniqueIdentifier>{d1b8b22a-5739-4ca0-88da-675d90c377af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\ports\coretex_m0\gnu\example_build">
+      <UniqueIdentifier>{87138173-2c16-4141-8437-bad8fd17dc48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\benchmarks">
+      <UniqueIdentifier>{9ddd10fc-8c64-4b06-b235-236bd6e99578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\execution_profile_kit">
+      <UniqueIdentifier>{9ab6f47f-a6eb-461d-ba28-3b25a4c3e25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\low_power">
+      <UniqueIdentifier>{9920f317-f3f3-49df-b1e0-d90b04795619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\rtos_compatibility_layers">
+      <UniqueIdentifier>{2386390b-6a2c-412e-879f-8c5f45e48a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\benchmarks\thread_metric">
+      <UniqueIdentifier>{f75900f8-6433-441f-9ee6-a8fcfa59b80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\benchmarks\thread_metric\threadx_example">
+      <UniqueIdentifier>{60494e87-4457-46ba-9da3-8521e978c30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\rtos_compatibility_layers\FreeRTOS">
+      <UniqueIdentifier>{aac01c50-f3dd-4ac5-875a-631fa6c87a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\rtos_compatibility_layers\OSEK">
+      <UniqueIdentifier>{77dce5ee-be62-4aec-9fce-7f66974e6947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\rtos_compatibility_layers\FreeRTOS\config_template">
+      <UniqueIdentifier>{3a071588-42e0-486b-ba23-72640128c8e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThreadX\utility\rtos_compatibility_layers\posix">
+      <UniqueIdentifier>{7c29178d-64e7-47ab-9836-65e312db2d77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_allocate.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_prioritize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_release.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_allocate.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_prioritize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_search.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_release.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set_notify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_high_level.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_enter.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_setup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_misra.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_prioritize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_priority_change.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_put.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_flush.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_front_send.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_prioritize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_receive.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send_notify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_ceiling_put.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_cleanup.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_prioritize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put_notify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_create.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_delete.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_entry_exit_notify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_identify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_initialize.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_system_info_get.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_preemption_change.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_priority_change.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_relinquish.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_reset.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_resume.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_shell_entry.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_sleep.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_analyze.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_handler.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_notify.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_suspend.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_preempt_check.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_resume.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_suspend.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_terminate.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice.c">
+      <Filter>ThreadX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_flush.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_front_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_receive.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_ceiling_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_entry_exit_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_preemption_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_priority_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_relinquish.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_resume.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_terminate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_time_slice_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_wait_abort.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_timeout.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_wait_abort.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_expiration_process.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_thread_entry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_buffer_full_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_disable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_enable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_filter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_unfilter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_interrupt_control.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_enter_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_exit_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_register.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_unregister.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_block_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_byte_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_event_flags_set_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_application_request.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_callback_request_thread_entry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_object_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_object_deallocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_object_pointer_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_object_pointer_get_extended.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_module_thread_system_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_mutex_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_flush.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_front_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_receive.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_queue_send_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_ceiling_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_semaphore_put_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_entry_exit_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_identify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_interrupt_control.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_preemption_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_priority_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_relinquish.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_resume.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_sleep.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_stack_error_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_terminate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_time_slice_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_thread_wait_abort.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_timer_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_time_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_time_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_buffer_full_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_disable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_enable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_event_filter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_event_unfilter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_interrupt_control.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_isr_enter_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_isr_exit_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_lib\src\txm_trace_user_event_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_absolute_load.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_application_request.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_callback_request.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_event_flags_notify_trampoline.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_file_load.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_internal_load.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_in_place_load.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_kernel_dispatch.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_maximum_module_priority_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_memory_load.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_object_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_object_deallocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_object_pointer_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_object_pointer_get_extended.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_object_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_properties_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_queue_notify_trampoline.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_semaphore_notify_trampoline.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_start.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_stop.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_thread_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_thread_notify_trampoline.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_thread_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_timer_notify_trampoline.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_unload.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\src\txm_module_manager_util.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_block_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_byte_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_event_flags_set_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_mutex_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_flush.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_front_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_receive.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_queue_send_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_ceiling_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_semaphore_put_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_entry_exit_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_preemption_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_priority_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_relinquish.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_resume.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_terminate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_time_slice_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_thread_wait_abort.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\txe_timer_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_block_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_pool_search.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_byte_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_event_flags_set_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_initialize_high_level.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_initialize_kernel_enter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_initialize_kernel_setup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_misra.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_priority_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_mutex_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_flush.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_front_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_receive.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_queue_send_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_ceiling_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_cleanup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_prioritize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_put.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_semaphore_put_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_entry_exit_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_identify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_preemption_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_priority_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_relinquish.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_resume.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_shell_entry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_sleep.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_core_exclude.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_core_exclude_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_current_state_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_debug_entry_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_high_level_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_rebalance_execute_list.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_smp_utilities.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_stack_analyze.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_stack_error_handler.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_stack_error_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_system_preempt_check.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_system_resume.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_system_suspend.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_terminate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_timeout.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_time_slice.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_time_slice_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_thread_wait_abort.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_change.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_expiration_process.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_performance_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_performance_system_info_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_smp_core_exclude.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_smp_core_exclude_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_system_activate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_system_deactivate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_timer_thread_entry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_time_get.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_time_set.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_buffer_full_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_disable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_enable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_event_filter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_event_unfilter.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_interrupt_control.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_isr_enter_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_isr_exit_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_object_register.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_object_unregister.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\src\tx_trace_user_event_insert.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\sample_threadx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\sample_threadx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\sample_threadx_module.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\sample_threadx_module_manager.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_lib\src\txm_module_thread_shell_entry.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_alignment_adjust.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_external_memory_enable.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_memory_fault_handler.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_memory_fault_notify.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_mm_register_setup.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\samples\demo_threadx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_basic_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_cooperative_scheduling_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_interrupt_preemption_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_interrupt_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_memory_allocation_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_message_processing_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_preemptive_scheduling_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\threadx_tm_synchronization_test_example.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\threadx_example\tm_porting_layer_threadx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_basic_processing_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_cooperative_scheduling_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_interrupt_preemption_processing_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_interrupt_processing_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_memory_allocation_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_message_processing_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_porting_layer_template.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_preemptive_scheduling_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_synchronization_processing_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\execution_profile_kit\tx_execution_profile.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\low_power\tx_low_power.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\tx_freertos.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\OSEK\demo_osek.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\OSEK\tx_osek.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_demo.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_nested_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_resume_thread_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_self_send_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_sigmask_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_sigwait_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\posix_signal_suspended_thread_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_abs_time_to_rel_ticks.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_clock_getres.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_clock_gettime.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_clock_settime.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_broadcast.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_destroy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_signal.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_timedwait.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_cond_wait.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_error.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_internal_signal_dispatch.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_in_thread_context.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_memory_allocate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_memory_release.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_arrange_msg.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_attr_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_close.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_find_queue.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_get_new_queue.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_get_queue_desc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_open.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_priority_search.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_putback_queue.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_queue_delete.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_queue_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_receive.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_reset_queue.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_send.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mq_unlink.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_destroy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_getprotocol.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_getpshared.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_gettype.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_initi.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_setprotocol.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_setpshared.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_attr_settype.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_destroy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_lock.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_set_default_mutexattr.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_timedlock.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_trylock.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_mx_unlock.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_nanosleep.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_destroy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getdetachstate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getinheritsched.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getschedparam.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getschedpolicy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getstack.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getstackaddr.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_getstacksize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setdetachstate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setinheritsched.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setschedparam.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setschedpolicyl.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setstack.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setstackaddr.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_attr_setstacksize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_cancel.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_create.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_detach.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_equal.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_exit.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_getcanceltype.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_getschedparam.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_join.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_kill.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_once.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_self.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_setcancelstate.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_setcanceltype.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_setschedparam.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_set_default_pthread_attr.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_sigmask.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_testcancel.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_pth_yield.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_px_initialize.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sched_get_prio.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sched_yield.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_close.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_destroy.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_find_sem.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_getvalue.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_get_new_sem.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_open.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_post.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_reset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_set_sem_name.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_trywait.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_unlink.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sem_wait.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_addset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_delset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_emptyset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_fillset.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_signal.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sig_wait.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_sleep.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_system_manager.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_byte_pool.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_event_flags.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_initialize.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_mutex.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_queue.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_semaphore.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_thread.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_timer.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_trace.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_user_sample.h">
+      <Filter>ThreadX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\inc\txm_module.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\inc\txm_module_user.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\inc\txm_module_manager_dispatch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_modules\module_manager\inc\txm_module_manager_util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_api.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_block_pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_byte_pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_event_flags.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_initialize.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_queue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_semaphore.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_thread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_timer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_trace.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common_smp\inc\tx_user_sample.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc\tx_port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\inc\txm_module_port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\inc\tx_port.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_api.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\tm_porting_layer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\execution_profile_kit\tx_execution_profile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\low_power\tx_low_power.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\config_template\FreeRTOSConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\event_groups.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\FreeRTOS.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\queue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\semphr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\task.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\timers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\OSEK\os.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\OSEK\osek_user.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\errno.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\fcntl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\pthread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\px_int.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\sched.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\signal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\time.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\tx_posix.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\tx_px_time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\readme_threadx.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\benchmarks\thread_metric\thread_metric_readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\revision_history.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\OSEK\threadx_osek_readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\readme_release_history.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\posix\readme_threadx_posix.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\build_threadx.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\build_threadx_sample.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\cortexm0_crt0.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\sample_threadx.ld" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\tx_initialize_low_level.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\tx_vectors.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_context_restore.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_context_save.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_control.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_disable.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_restore.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_schedule.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_stack_build.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_system_return.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_timer_interrupt.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\build_threadx.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\build_threadx_sample.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\cortexm7_crt0.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\sample_threadx.ld" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\tx_initialize_low_level.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\tx_simulator_startup.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_restore.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_save.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_interrupt_control.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_schedule.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_stack_build.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_system_return.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_timer_interrupt.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\build_all.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\build_threadx.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\build_threadx_module_library.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\build_threadx_module_manager_sample.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\build_threadx_module_sample.bat" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\cortexm_crt0.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\gcc_setup.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\sample_threadx.ld" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\sample_threadx_module.ld" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\txm_module_preamble.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\tx_initialize_low_level.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\example_build\tx_simulator_startup.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\txm_module_manager_thread_stack_build.s" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_context_restore.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_context_save.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_interrupt_control.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_schedule.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_stack_build.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_thread_system_return.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports_module\cortex-m7\gnu\module_manager\src\tx_timer_interrupt.S" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\low_power\low_power.md" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\utility\rtos_compatibility_layers\FreeRTOS\readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\example_build\libgcc.a" />
+    <Library Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\example_build\libc.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\docs\deps.png" />
+  </ItemGroup>
+</Project>

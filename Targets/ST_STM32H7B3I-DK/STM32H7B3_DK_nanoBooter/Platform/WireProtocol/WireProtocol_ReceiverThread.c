@@ -37,3 +37,9 @@ void ReceiverThread_entry(uint32_t parameter)
         tx_thread_sleep(50);   // Relinquish control and allow some time for the lower priority nanBooter status display.
     }
 }
+
+void WP_Message_PrepareReception_Platform()
+{
+    // empty on purpose, nothing to configure
+}
+

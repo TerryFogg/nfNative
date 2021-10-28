@@ -28,7 +28,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared" />
+  <ImportGroup Label="Shared">
+    <Import Project="..\..\..\SharedCode\STM32_CommonCode\STM32_CommonCode.vcxitems" Label="Shared" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <GNUConfigurationType>Debug</GNUConfigurationType>
@@ -41,7 +43,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Platform\Initialize;Platform\Configuration;Platform\BlockStorage;Platform\Startup;Platform\WireProtocol;.\STM32H7B3_DK_nanoBooter;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\EmbeddedEFPs\Profiler;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\STM32H7B3_DK_nanoBooter;Platform\BlockStorage;Platform\Startup;Platform\WireProtocol;Platform\Initialize;Platform\Configuration;..\..\StrangeStuff;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc;..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\EmbeddedEFPs\Profiler;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;STM32H7B3xxQ;I_AM_NANOBOOTER;PLATFORM_ARM;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <CLanguageStandard>C11</CLanguageStandard>
     </ClCompile>
@@ -254,11 +256,8 @@
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_register.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_unregister.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c" />
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -369,7 +368,13 @@
     <ClCompile Include="Platform\Startup\ST_Hal_Gpio_Helpers.c" />
     <ClCompile Include="Platform\Startup\targetHAL.c" />
     <ClCompile Include="Platform\Startup\targetHAL_Time.cpp" />
-    <ClCompile Include="Platform\main.c" />
+    <ClCompile Include="Platform\main.c">
+      <FileType>CppClass</FileType>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c" />
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c" />
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_ReceiverThread.c" />
     <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h" />
@@ -454,7 +459,17 @@
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\portmacro.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h" />
+    <ClInclude Include="..\..\StrangeStuff\FreeRTOS.h" />
+    <ClInclude Include="..\..\StrangeStuff\FreeRTOSConfig.h" />
     <ClInclude Include="Platform\BlockStorage\TargetPAL_BlockStorage.h" />
     <ClInclude Include="Platform\BlockStorage\target_BlockStorage.h" />
     <ClInclude Include="Platform\BlockStorage\Target_BlockStorage_STM32FlashDriver.h" />
@@ -478,6 +493,7 @@
     <ClInclude Include="Platform\Startup\targetHAL_Time.h" />
     <ClInclude Include="Platform\Startup\targetPAL.h" />
     <ClInclude Include="Platform\Startup\targetPAL_Time.h" />
+    <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h" />
     <None Include="stm32.props" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger\Debugger.h" />
@@ -639,5 +655,8 @@
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld" />
     <LinkerScript Include="Platform\Memory\rules_code.ld" />
     <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt" />
   </ItemGroup>
 </Project>

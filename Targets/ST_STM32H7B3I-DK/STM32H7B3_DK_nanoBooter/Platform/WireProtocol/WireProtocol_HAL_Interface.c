@@ -17,13 +17,12 @@ static bool Initialized = false;
 
 
 #include <stdio.h>
-int WP_ReceiveBytes(uint8_t* ptr, uint16_t* size)
+void WP_ReceiveBytes(uint8_t **ptr, uint32_t *size)
 {
-	bool result = ReadNextPacket(ptr, size);
-	return (result == true ? 1 : 0);
+	ReadNextPacket(ptr, size);
 }
 
-int WP_TransmitMessage(WP_Message* message)
+uint8_t WP_TransmitMessage(WP_Message* message)
 {
 	bool result = WritePacket((uint8_t*)&message->m_header, sizeof(message->m_header));
 	return (result == true ? 1 : 0);

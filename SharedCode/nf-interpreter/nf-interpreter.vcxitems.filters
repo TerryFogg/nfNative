@@ -1,0 +1,2006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a39d9127-9461-49a2-a622-16b6b9cb2c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR">
+      <UniqueIdentifier>{8e397b40-3688-4d56-8a9b-f3f53316d354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core">
+      <UniqueIdentifier>{276a7c13-a495-4f44-90df-eb6e4cb0d82b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core\Hardware">
+      <UniqueIdentifier>{d28f1a1b-cc59-4513-ab2f-86621cc9aaed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core\InterruptHandler">
+      <UniqueIdentifier>{d6cbf8d0-4680-45db-af21-a6458d0fc5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core\NativeEventDispatcher">
+      <UniqueIdentifier>{1c5586dd-ae61-4ead-931f-2922e2293356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core\RPC">
+      <UniqueIdentifier>{edb321d1-4230-4761-874a-945ffdbc7f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Core\Serialization">
+      <UniqueIdentifier>{7d25ffa3-953c-4714-931c-77c373e4e707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\CoreLib">
+      <UniqueIdentifier>{c68c08fb-a2dc-43ba-a2ce-ca0e8ae351d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Debugger">
+      <UniqueIdentifier>{47465aa2-6211-4915-9192-a6a0c7748811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Diagnostics">
+      <UniqueIdentifier>{325585b8-d4a6-4e40-93be-d29bddedb306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Helpers">
+      <UniqueIdentifier>{c948dafc-8de1-4e5e-8b39-3d2ea2d250d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Helpers\Base64">
+      <UniqueIdentifier>{7452a96d-8de4-44e1-adfa-471138aaf10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Helpers\nanoprintf">
+      <UniqueIdentifier>{63bb0a6a-6e51-41ad-8f6e-839495f1d13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Include">
+      <UniqueIdentifier>{a53009db-9974-4597-9814-d7f0d1105254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Messaging">
+      <UniqueIdentifier>{bf87a1a8-a3ec-490f-a64d-3a91f3c5ccae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\Startup">
+      <UniqueIdentifier>{c083790e-582c-418a-b55c-b366c557f291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\WireProtocol">
+      <UniqueIdentifier>{b7f9cc19-bea7-4675-b4eb-9e08a9b0920b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\CLR\System.Math">
+      <UniqueIdentifier>{7f2c86f9-a521-4781-bf60-32c793a4dfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceInterfaces">
+      <UniqueIdentifier>{93a1f56c-9554-44a4-ac58-d9745d5770e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceInterfaces\Network">
+      <UniqueIdentifier>{5b22299e-7805-4c50-b248-3b4e6c91c6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceInterfaces\Network\Enc28j60">
+      <UniqueIdentifier>{b250ca5b-b23a-40be-99c2-6f56f6094926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceInterfaces\Networking.Sntp">
+      <UniqueIdentifier>{7628173f-ea23-4008-9a09-ed8461be82eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DeviceInterfaces\System.Net">
+      <UniqueIdentifier>{afc869f5-c4c3-4c0b-bd8b-31a18b27bde5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HAL">
+      <UniqueIdentifier>{62e3c707-f66a-4ef3-8dcf-79d1baaf3043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HAL\Include">
+      <UniqueIdentifier>{1f8ffedb-cdb6-49ca-b840-76be9b27b03c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Devices.Can">
+      <UniqueIdentifier>{492faf7b-f32a-4096-a0b1-9903dcfe5323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Devices.OneWire">
+      <UniqueIdentifier>{19df742d-9dde-4f78-9b1e-02640f265a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics">
+      <UniqueIdentifier>{2d603eba-5820-4f04-a2e8-107e54d0afce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics">
+      <UniqueIdentifier>{3b3c3464-0f69-41e8-9431-2310b824a4a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core">
+      <UniqueIdentifier>{94a3296b-2abe-4252-be80-de5e158ed636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support">
+      <UniqueIdentifier>{fe9dbd27-cb6b-4ac2-ae1b-4d212d954a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Bmp">
+      <UniqueIdentifier>{22cae28a-b563-4430-b7c0-370c486d283a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Fonts">
+      <UniqueIdentifier>{3db91222-3570-4ee8-9190-23d23d3dbfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts">
+      <UniqueIdentifier>{4ade74fe-1e3a-4807-bfef-9fc60e872dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Gif">
+      <UniqueIdentifier>{f30f8467-36de-4416-aa2c-1e0370366bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg">
+      <UniqueIdentifier>{ea063ca5-e0fc-4b1a-a522-fb0d6527f60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Displays">
+      <UniqueIdentifier>{3c7761d8-3ef6-47e2-a081-32bb810e658e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\Graphics\Native">
+      <UniqueIdentifier>{10670b0d-5a59-4e3c-b7d2-a5fd920f3c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\TouchPanel">
+      <UniqueIdentifier>{d573ea0b-4662-4de8-8ac4-603dd74a8099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\TouchPanel\Core">
+      <UniqueIdentifier>{95091621-bbd7-4cf9-90dc-3aea5fbc64d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Graphics\TouchPanel\Devices">
+      <UniqueIdentifier>{f725e5ca-376f-4e60-941e-fd54e5425cfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.ResourceManager">
+      <UniqueIdentifier>{86aa6f27-fd67-4804-ae8c-ebe75afcf077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Runtime.Events">
+      <UniqueIdentifier>{0a31d10d-8f61-4834-8898-b83c49aaf4b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{5248f096-03e5-46bc-a019-d38016e58b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.System.Collections">
+      <UniqueIdentifier>{2d26979a-ed53-4e0c-86a4-8b4b27dfecc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nanoFramework.System.Text">
+      <UniqueIdentifier>{5ad86839-dc1f-4c72-9e0c-2d83b2ff04fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL">
+      <UniqueIdentifier>{2e6fdbdf-e036-4023-b113-a6afa6eb64d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\AsyncProcCall">
+      <UniqueIdentifier>{7b7d1bf0-943f-4bc1-b583-dc8110ac3b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\BlockStorage">
+      <UniqueIdentifier>{d66708b3-3ad8-451f-845c-490c5a042a7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\COM">
+      <UniqueIdentifier>{0b20ece2-03df-42fe-906c-e53124224297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\COM\sockets">
+      <UniqueIdentifier>{8e193c54-0212-4a3a-b459-b8d370234ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\COM\sockets\ssl">
+      <UniqueIdentifier>{12551a71-9125-422c-a43b-bbecd4970142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\COM\sockets\ssl\mbedTLS">
+      <UniqueIdentifier>{63e726a6-ca1a-4e32-a148-8c174422fabc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\Double">
+      <UniqueIdentifier>{329471fa-bc7c-4272-b556-5bc35bd67f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\Events">
+      <UniqueIdentifier>{f2ec8dc7-02e1-42c8-8fbc-c8c624952ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\Include">
+      <UniqueIdentifier>{ac35a342-f803-4da3-a6e6-93c79834722d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\Lwip">
+      <UniqueIdentifier>{a0d0b064-2f9d-42b6-ab0d-20c1422cc4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\Profiler">
+      <UniqueIdentifier>{849ec6bc-8caf-44d5-b02b-1579ef856f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.Dac">
+      <UniqueIdentifier>{3e60472b-1d03-457f-8ce0-da38e14c1483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.Gpio">
+      <UniqueIdentifier>{1e59304f-3b3d-4357-a778-c052902d22bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.I2c">
+      <UniqueIdentifier>{11c0cbbe-eb9c-4f61-bf2d-fd860cda43aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.IO.FileSystem">
+      <UniqueIdentifier>{209879a7-9d44-44b9-9f3e-e6a0600caff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Storage">
+      <UniqueIdentifier>{505af91e-7ec9-44d9-9406-fa9dff42ca4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.Adc">
+      <UniqueIdentifier>{fb2d9259-5613-454d-9bff-54113d90d31c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.I2c">
+      <UniqueIdentifier>{b5de296a-f974-4b1e-a8af-af44ff320b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.Pwm">
+      <UniqueIdentifier>{fedcdde0-0188-4f0f-826d-88dec6184f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{2d8776b7-b6af-4770-a587-e7fff50fc21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.Spi">
+      <UniqueIdentifier>{0e775e12-8dd0-4c83-ad2e-4aa5010eb500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.Wifi">
+      <UniqueIdentifier>{3ca0a13f-3724-4881-9178-b23cce0ecde9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Windows.Devices.Gpio">
+      <UniqueIdentifier>{2dcf3ca2-64d0-45e8-b0ff-d65c37cd6f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.Pwm">
+      <UniqueIdentifier>{6aeb1d7a-4e89-481e-afe5-1cc409b4fbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.Spi">
+      <UniqueIdentifier>{aca5140c-c068-4713-9507-f13d3a8699b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.IO.Ports">
+      <UniqueIdentifier>{9d5db4a7-b84f-44e5-ad50-192b86a4e241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets">
+      <UniqueIdentifier>{228d1cb5-d464-4595-8c0f-9c6fafcba49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS">
+      <UniqueIdentifier>{942edf8d-96ff-4e19-9a90-86b21cefd46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_common">
+      <UniqueIdentifier>{35873858-516a-4d94-98bf-24d1e7d5dca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_FatFS">
+      <UniqueIdentifier>{19e6ea5e-fe4a-462d-a15e-f578655b9353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_include">
+      <UniqueIdentifier>{d405a2ed-eac7-458d-adab-7333392858ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoBooter">
+      <UniqueIdentifier>{2fb2b37b-589a-4a5c-a64d-e584970ff43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR">
+      <UniqueIdentifier>{e48642b5-6b42-4d99-a557-fbc9c44d35ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can">
+      <UniqueIdentifier>{26043b4a-7018-44f6-808a-9587c17632b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire">
+      <UniqueIdentifier>{56ebcd87-fcdb-40b9-b0fe-7b3d7704e7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32">
+      <UniqueIdentifier>{e2666ced-6741-4fbc-aff0-ffb2ed069410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{970358ba-434f-446f-bbac-cfeb4ebd8174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Storage">
+      <UniqueIdentifier>{36311d9b-c98d-424e-ac42-1f654d28149d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.Device.Dac">
+      <UniqueIdentifier>{da714122-556d-4822-9a8a-f046071b3a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.Device.I2c">
+      <UniqueIdentifier>{710ea70b-3845-4922-a04a-453e40a3050c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.Device.Pwm">
+      <UniqueIdentifier>{fea93f60-92af-4643-b435-c9f5eaed809d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.Device.Spi">
+      <UniqueIdentifier>{17dcb383-2b2e-4bd1-ad0d-cc7bd651256b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.IO.Ports">
+      <UniqueIdentifier>{ad660256-cdff-4ee4-bdbb-e4422ef3a973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Adc">
+      <UniqueIdentifier>{c16943b7-182b-4523-8ac1-c7bfd26ed6fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio">
+      <UniqueIdentifier>{881cef5d-be2e-422d-aab3-b430a09694a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.I2c">
+      <UniqueIdentifier>{b53308a0-eea2-4ffb-ad66-da140286fc1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm">
+      <UniqueIdentifier>{b564a4ad-7252-4dc9-b33a-b02638473d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{5db833ab-51c0-463c-ad67-203b92101999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Spi">
+      <UniqueIdentifier>{f46ab52f-102d-43c1-a6fe-420c9166a971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\System.Device.Gpio">
+      <UniqueIdentifier>{0b74b79e-9604-447e-ac90-82e33617a1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target-community">
+      <UniqueIdentifier>{b6b6648b-8099-48d1-bf83-97d818b74d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target-community\CMSIS-OS">
+      <UniqueIdentifier>{8a7d29ff-b6a0-4f7c-820c-c25d87b032dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target-community\CMSIS-OS\ChibiOS">
+      <UniqueIdentifier>{50b27880-c380-45c7-b5b5-7113d8d39c51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Hardware\Hardware.cpp">
+      <Filter>src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Hardware\Hardware_stub.cpp">
+      <Filter>src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\InterruptHandler\InterruptHandler.cpp">
+      <Filter>src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\InterruptHandler\InterruptHandler_stub.cpp">
+      <Filter>src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\NativeEventDispatcher\NativeEventDispatcher.cpp">
+      <Filter>src\CLR\Core\NativeEventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\NativeEventDispatcher\NativeEventDispatcher_stub.cpp">
+      <Filter>src\CLR\Core\NativeEventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\RPC\CLR_RT_HeapBlock_EndPoint.cpp">
+      <Filter>src\CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\RPC\RPC_stub.cpp">
+      <Filter>src\CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Serialization\BinaryFormatter.cpp">
+      <Filter>src\CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Serialization\BinaryFormatter_stub.cpp">
+      <Filter>src\CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Cache.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Checks.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_DblLinkedList.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Array.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_ArrayList.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_BinaryBlob.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate_List.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Finalizer.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Lock.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_LockRequest.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Node.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Queue.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Stack.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_String.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Timer.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_WaitForObject.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapCluster.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_Interop.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_Memory.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Destination.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Source.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_RuntimeMemory.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_StackFrame.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_SystemAssembliesTable.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_UnicodeHelper.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Execution.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_Compaction.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_ComputeReachabilityGraph.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_Info.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Interpreter.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\nanoSupport_CRC32.c">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Random.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Streams.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\StringTable.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\StringTableData.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Thread.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\TypeSystem.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\TypeSystemLookup.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Various.cpp">
+      <Filter>src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_AppDomain.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Array.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Attribute.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_BitConverter.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Collections_ArrayList.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Convert.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_DateTime.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Delegate.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debug.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debugger.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Double.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Enum.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Exception.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_GC.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_CultureInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_DateTimeFormat.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Guid.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MarshalByRefObject.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MathInternal.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MulticastDelegate.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Number.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Object.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Random.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Assembly.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Binder.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_ConstructorInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_FieldInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MemberInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MethodBase.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_PropertyInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeFieldInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeMethodInfo.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_CompilerServices_RuntimeHelpers.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_Remoting_RemotingServices.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_RuntimeType.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_String.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_AutoResetEvent.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Interlocked.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_ManualResetEvent.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Monitor.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Thread.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Timer.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_WaitHandle.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_TimeSpan.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Type.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_ValueType.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_WeakReference.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger.cpp">
+      <Filter>src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger_full.cpp">
+      <Filter>src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger_minimal.cpp">
+      <Filter>src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger_stub.cpp">
+      <Filter>src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Diagnostics_stub.cpp">
+      <Filter>src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Info.cpp">
+      <Filter>src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Profile.cpp">
+      <Filter>src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Profiler.cpp">
+      <Filter>src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64\base64.c">
+      <Filter>src\CLR\Helpers\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging.cpp">
+      <Filter>src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging_stub.cpp">
+      <Filter>src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup\CLRStartup.cpp">
+      <Filter>src\CLR\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math.cpp">
+      <Filter>src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math_System_Math.cpp">
+      <Filter>src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\targetHAL_time.cpp">
+      <Filter>src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
+      <Filter>src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_Message.c">
+      <Filter>src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
+      <Filter>src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60\enc28j60_lwip.cpp">
+      <Filter>src\DeviceInterfaces\Network\Enc28j60</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60\enc28j60_lwip_config_stubs.cpp">
+      <Filter>src\DeviceInterfaces\Network\Enc28j60</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60\enc28j60_lwip_driver.cpp">
+      <Filter>src\DeviceInterfaces\Network\Enc28j60</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager_stubs.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemEvents.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemInformation.cpp">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Time.cpp">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Watchdog.c">
+      <Filter>src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\nanoPAL_Network_stubs.cpp">
+      <Filter>src\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\Async_stubs.cpp">
+      <Filter>src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncCompletions.cpp">
+      <Filter>src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncContinuations.cpp">
+      <Filter>src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
+      <Filter>src\PAL\BlockStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_accept_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_add_cert_auth_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_close_socket_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_connect_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_decode_private_key_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_exit_context_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic_init_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_initialize_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_parse_certificate_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_pending_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_read_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_uninitialize_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_write_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl.cpp">
+      <Filter>src\PAL\COM\sockets\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl_stubs.cpp">
+      <Filter>src\PAL\COM\sockets\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\Sockets_debugger.cpp">
+      <Filter>src\PAL\COM\sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\sockets_lwip.cpp">
+      <Filter>src\PAL\COM\sockets</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\COM_stubs.c">
+      <Filter>src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\ComDirector.cpp">
+      <Filter>src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stubs.c">
+      <Filter>src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Double\nanoPAL_NativeDouble.cpp">
+      <Filter>src\PAL\Double</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events.cpp">
+      <Filter>src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_driver.cpp">
+      <Filter>src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_functions.cpp">
+      <Filter>src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip\lwIP_Sockets.cpp">
+      <Filter>src\PAL\Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip\lwIP_Sockets_functions.cpp">
+      <Filter>src\PAL\Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Profiler\nanoPAL_PerformanceCounters_stubs.cpp">
+      <Filter>src\PAL\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.cpp">
+      <Filter>src\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.cpp">
+      <Filter>src\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Adc\win_dev_adc_native.cpp">
+      <Filter>src\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native.cpp">
+      <Filter>src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioController.cpp">
+      <Filter>src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioPin.cpp">
+      <Filter>src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c\win_dev_i2c_native.cpp">
+      <Filter>src\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm\win_dev_pwm_native.cpp">
+      <Filter>src\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication\win_dev_serial_native.cpp">
+      <Filter>src\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Wifi\win_dev_wifi_native.cpp">
+      <Filter>src\Windows.Devices.Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text.cpp">
+      <Filter>src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Decoder.cpp">
+      <Filter>src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Encoding.cpp">
+      <Filter>src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections.cpp">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Queue.cpp">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Stack.cpp">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Hardware_SystemInfo.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_ExecutionConstraint.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_GC.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Power.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc_stubs.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.cpp">
+      <Filter>src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_EventSink.cpp">
+      <Filter>src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_NativeEventDispatcher.cpp">
+      <Filter>src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_WeakDelegate.cpp">
+      <Filter>src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.cpp">
+      <Filter>src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_nanoFramework_Runtime_Native_ResourceUtility.cpp">
+      <Filter>src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_System_Resources_ResourceManager.cpp">
+      <Filter>src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp\Bitmap_Decoder.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\Font.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\Gif.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\GifDecoder.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jbytearraydatasrc.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapimin.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapistd.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccoefct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccolor.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcdctmgr.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcinit.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmainct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmarker.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmaster.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcomapi.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcparam.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcphuff.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcprepct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcsample.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jctrans.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapimin.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapistd.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcoefct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcolor.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jddctmgr.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdinput.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmainct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmarker.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmaster.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmerge.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdphuff.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdpostct.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdsample.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdtrans.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctflt.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctfst.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctflt.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctfst.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctred.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemmgr.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemnanoclr.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\Jpeg.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant1.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant2.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jutils.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mfint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\miint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\pfint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\piint.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.c">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsDriver.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ILI9341_240x320_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\Otm8009a_DSI_Video_Mode.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\Spi_To_Display.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\SSD1306_128x64.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\SSD1331_94x64_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7789V_240x320_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Bitmap.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_DisplayControl.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Font.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Ink.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchCollectorConfiguration.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchEventProcessor.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchPanel.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Gestures.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Ink.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\ft6x06_I2C.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\XPT2046.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can\nf_devices_can_native.cpp">
+      <Filter>src\nanoFramework.Devices.Can</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire\nf_devices_onewire_native.cpp">
+      <Filter>src\nanoFramework.Devices.OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_SpinWait.cpp">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.c">
+      <Filter>src\CLR\Helpers\nanoprintf</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp.cpp">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp_nanoFramework_Networking_Sntp.cpp">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp_nanoFramework_Networking_Sntp_stubs.cpp">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_IPAddress_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_IPGlobalProperties.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_IPGlobalProperties_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_NetworkInterface.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_NetworkInterface_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_Wireless80211Configuration.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_Wireless80211Configuration_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_WirelessAPConfiguration.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_WirelessAPConfiguration_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_CertificateManager.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_CertificateManager_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_SslNative.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_SslNative_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Sockets_NativeSocket.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Sockets_NativeSocket_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate2.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate2_stubs.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_IPAddress.cpp">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ILI9342_320x240_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7735S_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController_stubs.cpp">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin_stubs.cpp">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.cpp">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.cpp">
+      <Filter>src\System.Device.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiBusInfo.cpp">
+      <Filter>src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiDevice.cpp">
+      <Filter>src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp">
+      <Filter>src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.cpp">
+      <Filter>src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_nanoFramework_System_IO_FileSystem_SDCard.cpp">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_Directory.cpp">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_File.cpp">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_FileStream.cpp">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem.cpp">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort_stubs.cpp">
+      <Filter>src\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.cpp">
+      <Filter>src\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort__.cpp">
+      <Filter>src\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native.cpp">
+      <Filter>src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiBusInfo.cpp">
+      <Filter>src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiController.cpp">
+      <Filter>src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiDevice.cpp">
+      <Filter>src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native.cpp">
+      <Filter>src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native_Windows_Storage_Devices_SDCard_stubs.cpp">
+      <Filter>src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native_Windows_Storage_FileIO_stubs.cpp">
+      <Filter>src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native_Windows_Storage_StorageFile_stubs.cpp">
+      <Filter>src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder_stubs.cpp">
+      <Filter>src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\hard_fault_handler.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\LaunchCLR.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\nanoSupport_CRC32.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_BlockStorage.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_heap.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\swo.cpp">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\syscalls.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\Target_BlockStorage_STM32FlashDriver.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\Target_Network.cpp">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\Target_Windows_Storage.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_ConfigurationManager.cpp">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_Network.cpp">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_Time.cpp">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\WireProtocol_HAL_Interface.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\WireProtocol_ReceiverThread.c">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_FatFS\fatfs_diskio.c">
+      <Filter>targets\ChibiOS\_FatFS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoBooter\WireProtocol_App_Interface.c">
+      <Filter>targets\ChibiOS\_nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoBooter\WireProtocol_MonitorCommands.c">
+      <Filter>targets\ChibiOS\_nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\CLR_Startup_Thread.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\mbedtls_entropy_hardware_pool.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Memory.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoCRT.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Power.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Time.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Watchdog.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL_Events.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL_Time.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetRandom.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\WireProtocol_MonitorCommands.c">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can\nf_devices_can_native_nanoFramework_Devices_Can_CanController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_nanoFramework_Devices_OneWire_OneWireController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_BackupMemory.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_Power.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_RTC.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_Utilities.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacChannel.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_System_Device_I2c_I2cDevice.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Pwm\sys_dev_pwm_native_System_Device_Pwm_PwmChannel.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Spi\cpu_spi.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcChannel.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioChangeCounter.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\cpu_gpio.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2c_I2cController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2C_I2cDevice.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmController.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmPin.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_Windows_Devices_SerialCommunication_SerialDevice.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi\cpu_spi.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_Devices_SDCard.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_FileIO.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFile.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder.cpp">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">
+      <Filter>src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\corhdr_private.h">
+      <Filter>src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\CorLib.h">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.h">
+      <Filter>src\CLR\CoreLib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger.h">
+      <Filter>src\CLR\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Diagnostics.h">
+      <Filter>src\CLR\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64\base64.h">
+      <Filter>src\CLR\Helpers\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Application.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Checks.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Debugging.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ErrorCodes.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Hardware.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Interop.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Messaging.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ParseOptions.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_PlatformDef.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Profiling.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__HeapBlock.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__Serialization.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Types.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Win32.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoPackStruct.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoSupport.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoVersion.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoWeak.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nf_errors_exceptions.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\stdafx.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_Message.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup\CLRStartup.h">
+      <Filter>src\CLR\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math.h">
+      <Filter>src\CLR\System.Math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60\enc28j60_lwip.h">
+      <Filter>src\DeviceInterfaces\Network\Enc28j60</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60\enc28j60_lwip_driver.h">
+      <Filter>src\DeviceInterfaces\Network\Enc28j60</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Graphics.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Network.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Power.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Spi.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Time.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Types.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_v2.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Watchdog.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
+      <Filter>src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\mbedtls.h">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\nf_mbedtls_config.h">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl.h">
+      <Filter>src\PAL\COM\sockets\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl_functions.h">
+      <Filter>src\PAL\COM\sockets\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl_types.h">
+      <Filter>src\PAL\COM\sockets\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\sockets_lwip.h">
+      <Filter>src\PAL\COM\sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_GPIO_decl.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_SPI_decl.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoCRT.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_BlockStorage.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_COM.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Events.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_GPIO.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_NativeDouble.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Network.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Sockets.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Time.h">
+      <Filter>src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip\lwIP_Sockets.h">
+      <Filter>src\PAL\Lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.h">
+      <Filter>src\System.Device.Dac</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.h">
+      <Filter>src\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Adc\win_dev_adc_native.h">
+      <Filter>src\Windows.Devices.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native.h">
+      <Filter>src\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c\win_dev_i2c_native.h">
+      <Filter>src\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm\win_dev_pwm_native.h">
+      <Filter>src\Windows.Devices.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication\win_dev_serial_native.h">
+      <Filter>src\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Wifi\win_dev_wifi_native.h">
+      <Filter>src\Windows.Devices.Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text.h">
+      <Filter>src\nanoFramework.System.Text</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections.h">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.h">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.h">
+      <Filter>src\nanoFramework.Runtime.Events</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.h">
+      <Filter>src\nanoFramework.ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\gif.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\giffile.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzw.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwutil.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jconfig.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdct.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jinclude.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemsys.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmorecfg.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpegint.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpeglib.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jversion.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\Display.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\DisplayInterface.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Gestures.h">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Ink.h">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.h">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice.h">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface.h">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can\nf_devices_can_native.h">
+      <Filter>src\nanoFramework.Devices.Can</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire\nf_devices_onewire_native.h">
+      <Filter>src\nanoFramework.Devices.OneWire</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.h">
+      <Filter>src\CLR\Helpers\nanoprintf</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_lwipopts_sntp.h">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp.h">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\lwip_sntp_default_options.h">
+      <Filter>src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native.h">
+      <Filter>src\DeviceInterfaces\System.Net</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h">
+      <Filter>src\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.h">
+      <Filter>src\System.Device.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h">
+      <Filter>src\System.Device.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem.h">
+      <Filter>src\System.IO.FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.h">
+      <Filter>src\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native.h">
+      <Filter>src\Windows.Devices.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage\win_storage_native.h">
+      <Filter>src\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\CLR_Startup_Thread.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\LaunchCLR.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\lwipopts.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\platform_target_capabilities.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\Target_Windows_Storage.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Power.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\TargetHAL_Spi.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Time.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Watchdog.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetPAL.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\TargetPAL_BlockStorage.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetPAL_Time.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\vectors.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\WireProtocol_ReceiverThread.h">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can\nf_devices_can_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native.h">
+      <Filter>targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Gpio\sys_dev_gpio_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Spi\sys_dev_spi_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports\sys_io_ser_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi\win_dev_spi_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
+      <Filter>src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_target.h">
+      <Filter>targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
+      <Filter>src\CLR\Include</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
+      <Filter>src\nanoFramework.Graphics</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts\NinaB.tinyfnt">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts\small.tinyfnt">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\System.IO.Ports.filters">
+      <Filter>src\System.IO.Ports</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\System.IO.Ports.vcxproj">
+      <Filter>src\System.IO.Ports</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_bootclipboard.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_clr.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_code.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_data.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_graphics.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_memory.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\rules_stacks.ld">
+      <Filter>targets\ChibiOS\_common</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\swo.h.in">
+      <Filter>targets\ChibiOS\_include</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\target_platform.h.in">
+      <Filter>targets\ChibiOS\_nanoCLR</Filter>
+    </None>
+  </ItemGroup>
+</Project>

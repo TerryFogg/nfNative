@@ -133,6 +133,9 @@
     <Filter Include="Platform\WireProtocol">
       <UniqueIdentifier>{3ce4c23a-33db-4b36-a1c5-ad3a9ab3f15f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="StrangeStuff">
+      <UniqueIdentifier>{6ae2146b-6b1c-466c-bc58-3ae258119dbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoBooter-Debug.vgdbsettings">
@@ -500,117 +503,6 @@
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\croutine.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\deprecated_definitions.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\event_groups.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\FreeRTOS.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\list.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\message_buffer.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_prototypes.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_wrappers.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\portable.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\projdefs.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\queue.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\semphr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\StackMacros.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stack_macros.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armclang.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_compiler.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_gcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_iccarm.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_version.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mbl.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mml.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0plus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm1.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm23.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm3.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm33.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm4.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm7.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc000.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc300.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv7.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv8.h">
-      <Filter>Device-specific files</Filter>
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
@@ -1268,6 +1160,39 @@
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h">
       <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
+    <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\StrangeStuff\FreeRTOSConfig.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\StrangeStuff\FreeRTOS.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\portmacro.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h">
+      <Filter>StrangeStuff</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props" />
@@ -1318,10 +1243,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_system_return.S">
       <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
-      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
       <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
@@ -1951,6 +1873,21 @@
     <ClCompile Include="Platform\WireProtocol\wpUSART_Communications.c">
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_ReceiverThread.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
+      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c">
+      <Filter>Platform\WireProtocol</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld">
@@ -1962,5 +1899,10 @@
     <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt">
+      <Filter>Platform\WireProtocol</Filter>
+    </Text>
   </ItemGroup>
 </Project>
