@@ -28,9 +28,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared">
-    <Import Project="..\..\..\SharedCode\STM32_CommonCode\STM32_CommonCode.vcxitems" Label="Shared" />
-  </ImportGroup>
+  <ImportGroup Label="Shared" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <GNUConfigurationType>Debug</GNUConfigurationType>
@@ -43,8 +41,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.\STM32H7B3_DK_nanoBooter;Platform\BlockStorage;Platform\Startup;Platform\WireProtocol;Platform\Initialize;Platform\Configuration;..\..\StrangeStuff;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc;..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\EmbeddedEFPs\Profiler;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DEBUG=1;STM32H7B3xxQ;I_AM_NANOBOOTER;PLATFORM_ARM;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Platform\BlockStorage;Platform\Startup;Platform\WireProtocol;Platform\Initialize;Platform\Configuration;..\..\StrangeStuff;..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\\nf-interpreter\src\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc;.\STM32H7B3_DK_nanoBooter;..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\EmbeddedEFPs\Profiler;..\..\..\SharedCode\STM32_CommonCode;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;STM32H7B3xxQ;I_AM_NANOBOOTER;PLATFORM_ARM;USE_FULL_LL_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <CLanguageStandard>C11</CLanguageStandard>
     </ClCompile>
     <ToolchainSettingsContainer>
@@ -265,6 +263,37 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">$(InputDir)\$(IntDir)</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_bdma.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_comp.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_cordic.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crs.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dac.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma2d.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_exti.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmac.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_gpio.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_hrtim.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_i2c.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lptim.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lpuart.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_mdma.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_opamp.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_pwr.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rcc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rng.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rtc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_spi.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_swpmi.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_tim.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usart.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_restore.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_context_save.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_interrupt_control.S" />
@@ -347,6 +376,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c" />
+    <ClCompile Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.c" />
     <ClCompile Include="Platform\BlockStorage\Device_BlockStorage.c" />
     <ClCompile Include="Platform\BlockStorage\platform_BlockStorage.c" />
     <ClCompile Include="Platform\BlockStorage\targetHAL_ConfigurationManager.cpp" />
@@ -369,7 +399,7 @@
     <ClCompile Include="Platform\Startup\targetHAL.c" />
     <ClCompile Include="Platform\Startup\targetHAL_Time.cpp" />
     <ClCompile Include="Platform\main.c">
-      <FileType>CppClass</FileType>
+      <FileType>CppCode</FileType>
     </ClCompile>
     <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c" />
@@ -468,6 +498,7 @@
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h" />
+    <ClInclude Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.h" />
     <ClInclude Include="..\..\StrangeStuff\FreeRTOS.h" />
     <ClInclude Include="..\..\StrangeStuff\FreeRTOSConfig.h" />
     <ClInclude Include="Platform\BlockStorage\TargetPAL_BlockStorage.h" />
@@ -495,6 +526,7 @@
     <ClInclude Include="Platform\Startup\targetPAL_Time.h" />
     <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h" />
+    <ClInclude Include="stm32h7xx_Usart.h" />
     <None Include="stm32.props" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger\Debugger.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h" />
@@ -655,8 +687,5 @@
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld" />
     <LinkerScript Include="Platform\Memory\rules_code.ld" />
     <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Platform\WireProtocol\KEEP_WireProtocol_MonitorCommands.c.txt" />
   </ItemGroup>
 </Project>

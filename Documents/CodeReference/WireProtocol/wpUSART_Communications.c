@@ -6,6 +6,9 @@
 #include <nanoHAL_v2.h>
 #include <wpUSART_Communications.h>
 #include "WireProtocol_Message.h"
+
+#include <stm32h7xx_Usart.h>
+
 #include <stm32h7xx.h>
 #include <stm32h7xx_hal.h>
 #include <stm32h7xx_hal_def.h>

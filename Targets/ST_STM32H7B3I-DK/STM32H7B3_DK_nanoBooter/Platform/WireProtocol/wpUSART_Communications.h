@@ -6,8 +6,6 @@
 #pragma once
 
 
-#define USE_FULL_LL_DRIVER
-
 
 #include <stdbool.h>
 

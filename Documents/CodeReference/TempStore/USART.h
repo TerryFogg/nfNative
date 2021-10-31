@@ -277,8 +277,8 @@ Bit 8 LBCL: Last bit clock pulse
             format selected by the M bit in the USART_CR1 register.
             This bit can only be written when the USART is disabled (UE = 0)
  */
-#define USART_LAST_BIT_CLOCK_PULSE(USART)  CLEAR_BIT(USART->CR2, USART_CR2_LBCL_Pos);       
-#define USART_LAST_BIT_CLOCK_PULSE(USART)  SET_BIT  (USART->CR2, USART_CR2_LBCL_Pos);
+#define USART_LAST_BIT_CLOCK_PULSE_EXCLUDE(USART)  CLEAR_BIT(USART->CR2, USART_CR2_LBCL_Pos);       
+#define USART_LAST_BIT_CLOCK_PULSE_PRESENT(USART)  SET_BIT  (USART->CR2, USART_CR2_LBCL_Pos);
 /*
 Bit 9 CPHA: Clock phase
     This bit is used to select the phase of the clock output on the SCLK pin in synchronous mode. It 
