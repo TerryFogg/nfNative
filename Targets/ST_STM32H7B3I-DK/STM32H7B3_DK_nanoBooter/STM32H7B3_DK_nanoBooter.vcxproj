@@ -526,7 +526,6 @@
     <ClInclude Include="Platform\Startup\targetPAL_Time.h" />
     <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h" />
-    <ClInclude Include="stm32h7xx_Usart.h" />
     <None Include="stm32.props" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger\Debugger.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h" />

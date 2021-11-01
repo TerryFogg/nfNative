@@ -103,9 +103,6 @@
     <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Fonts">
       <UniqueIdentifier>{3db91222-3570-4ee8-9190-23d23d3dbfb7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts">
-      <UniqueIdentifier>{4ade74fe-1e3a-4807-bfef-9fc60e872dee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\nanoFramework.Graphics\Graphics\Core\Support\Gif">
       <UniqueIdentifier>{f30f8467-36de-4416-aa2c-1e0370366bfe}</UniqueIdentifier>
     </Filter>
@@ -303,6 +300,267 @@
     </Filter>
     <Filter Include="target-community\CMSIS-OS\ChibiOS">
       <UniqueIdentifier>{50b27880-c380-45c7-b5b5-7113d8d39c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32">
+      <UniqueIdentifier>{3c726d8a-e34b-4656-b025-c8fd0921bf3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS">
+      <UniqueIdentifier>{0cbe3fb7-8f3a-4e20-9023-7d44cff713a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\TI_SimpleLink">
+      <UniqueIdentifier>{055fe882-5ca4-44da-9dda-f86380b59412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32">
+      <UniqueIdentifier>{5c43f994-963c-4569-9d9d-9ad6beb775f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_common">
+      <UniqueIdentifier>{aeab2a34-7aa7-406d-b37a-a7359fa2675b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_IDF">
+      <UniqueIdentifier>{0a163bfb-c012-40ea-b424-4df989470308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_Include">
+      <UniqueIdentifier>{7abe7c89-92b8-43f6-9257-4c5797f0fca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_lwIP">
+      <UniqueIdentifier>{caec7c07-0e84-4c4d-9b06-3cc68dd22c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoBooter">
+      <UniqueIdentifier>{3b52b641-c35d-46b7-bca0-32ad965c6b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR">
+      <UniqueIdentifier>{faa2c6e7-96cb-4630-99fb-22d5dd642431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_Network">
+      <UniqueIdentifier>{1ba74ec5-ae2c-444d-9559-01f2efbcdb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_IDF\ESP32">
+      <UniqueIdentifier>{41ae13dc-b01e-46c8-8176-3b830c35aaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_IDF\ESP32_S2">
+      <UniqueIdentifier>{46ec4dde-a102-44d7-96f0-47e3321cc479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\nanoFramework.Devices.OneWire">
+      <UniqueIdentifier>{7d003bb2-e01f-4f88-a9d4-d739bd6be616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32">
+      <UniqueIdentifier>{97d0d848-cea3-4253-b2e2-8d6bdd7026fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble">
+      <UniqueIdentifier>{5a3292f4-cd6b-4c0b-8a5d-d9e11190acd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt">
+      <UniqueIdentifier>{00b47aa4-a9fa-4cb4-bac0-b4c0c5ae6f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{afab4f6d-03bc-4e50-bb06-00b963e99400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Storage">
+      <UniqueIdentifier>{02bb573a-74da-4b38-a2db-b9c1a0ac9061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.Dac">
+      <UniqueIdentifier>{73ffbcce-cfb9-4034-8751-83edf60d0259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.Adc">
+      <UniqueIdentifier>{12c23efd-ceab-4a41-af7b-5ee8fc1ffe2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.Gpio">
+      <UniqueIdentifier>{ef4b1940-5689-4589-a33e-8751c81ec4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.I2c">
+      <UniqueIdentifier>{ebf5912a-30a4-4a8d-a4a2-dbca31577164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.Pwm">
+      <UniqueIdentifier>{2bf870c4-91d4-4fa7-a106-f46f09731b4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.Device.Spi">
+      <UniqueIdentifier>{8d7ef975-46dd-4b7b-859b-9f4d2165daf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.IO.FileSystem">
+      <UniqueIdentifier>{02a53e5e-fb62-4ba3-af1f-4019f19bc674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\System.IO.Ports">
+      <UniqueIdentifier>{9818265c-d7ec-4a88-8d12-d7a601b0a661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.Adc">
+      <UniqueIdentifier>{c3c2bd3b-408d-4482-ae85-c8638cc829eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.Gpio">
+      <UniqueIdentifier>{8987a8d0-1521-4ee9-8722-97e15365290b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.I2c">
+      <UniqueIdentifier>{29f9a739-5b55-47e0-9d7e-b4be40ac60ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.Pwm">
+      <UniqueIdentifier>{35d79a99-eef8-428c-a5b2-40aec670ae4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{b414c834-dafe-40f4-a12a-00c70f396186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.Spi">
+      <UniqueIdentifier>{29dcf587-5993-4641-a3be-6ed84c45fed5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\_nanoCLR\Windows.Devices.Wifi">
+      <UniqueIdentifier>{0f9a6788-ed61-4628-a729-040d3375b84f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32">
+      <UniqueIdentifier>{4587a1e2-372e-49ca-8e52-be2cea071350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32_S2">
+      <UniqueIdentifier>{8b6ce318-ba00-4400-a448-f7c1465320d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32\common">
+      <UniqueIdentifier>{d0d2fe7c-8cd9-438e-9572-43ad80d9a457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32\nanoCLR">
+      <UniqueIdentifier>{58b08629-0458-46d6-b5b0-6494374d05ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32_S2\common">
+      <UniqueIdentifier>{61ff07af-5246-4c1d-ab92-88489182c56f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32_S2\nanoCLR">
+      <UniqueIdentifier>{fc3aacb9-fa7b-4225-9c3e-2e549e6dafa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32_S2\nanoCLR\nanoFramework.Graphics">
+      <UniqueIdentifier>{b9e60224-aee2-4760-8d63-6025094bd2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32_S2\nanoCLR\System.Device.Pwm">
+      <UniqueIdentifier>{2b19fb91-2b2b-4ec3-aa00-17897ec97c0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32\nanoCLR\nanoFramework.Graphics">
+      <UniqueIdentifier>{9be34e80-596a-47b1-831a-78a50d9e0470}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ESP32\ESP32\nanoCLR\System.Device.Pwm">
+      <UniqueIdentifier>{cafb5d78-91c1-4965-a160-4ef0d008bb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32\Include">
+      <UniqueIdentifier>{d2bcb13d-d613-4d47-9474-64c9b9688897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32\msvc_redist">
+      <UniqueIdentifier>{aa2ce820-cf92-44c5-90ae-ff1726000978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32\nanoCLR">
+      <UniqueIdentifier>{541de074-31c1-40f9-a303-c80a2527b953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32\nanoCLR\Generated">
+      <UniqueIdentifier>{0d45221b-34c8-4b1d-8804-17a898a99173}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\win32\nanoCLR\PAL">
+      <UniqueIdentifier>{71f12fc8-cfe2-4e7e-90c9-169db83765b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\_common">
+      <UniqueIdentifier>{430b65ea-f018-47bd-a053-baae52968459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP">
+      <UniqueIdentifier>{052975d6-13cb-4070-b0e1-a665102bdb45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\_common\include">
+      <UniqueIdentifier>{4e1b8e72-ff5e-49e9-a614-6a9b86b5fb9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\_common\nanoCLR">
+      <UniqueIdentifier>{33a46579-9d4a-47cb-9a6a-29e72946ebe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common">
+      <UniqueIdentifier>{fcfc65ff-d929-4b61-945c-92377efa83c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_fatfs">
+      <UniqueIdentifier>{a6066b52-27d9-4f12-9894-eb557badaaaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_include">
+      <UniqueIdentifier>{02f3bc5b-d839-4042-85b4-466ffeffeeff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_LwIP">
+      <UniqueIdentifier>{e59663f2-1437-45a2-afd1-86c8b08fbef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoBooter">
+      <UniqueIdentifier>{38ba2b79-7642-4978-8aa5-1b6be0666472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR">
+      <UniqueIdentifier>{7d82d267-634d-4f9c-98be-58208c0bd32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK">
+      <UniqueIdentifier>{a1c56ce9-7a8f-4926-86ea-7720f3a14b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\board">
+      <UniqueIdentifier>{e5f96779-204b-4c49-8271-4e0ae1369e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\component">
+      <UniqueIdentifier>{b79d944f-23e6-4a11-bc00-3e2965a65515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\device">
+      <UniqueIdentifier>{fce17aeb-1201-404f-b50e-1baf72c1cbe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\drivers">
+      <UniqueIdentifier>{653a8444-5f05-4ab5-8d72-afb8db1b0bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\sdmmc">
+      <UniqueIdentifier>{570a3a2f-eb9a-46bc-8bb4-b9597c32e208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\xip">
+      <UniqueIdentifier>{75bf8265-5d0c-44b0-998d-69dc05ccb41e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\utilities">
+      <UniqueIdentifier>{df4a7271-ed74-4988-9124-e6514dd32da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\startup">
+      <UniqueIdentifier>{d250f89e-1574-47cc-956e-60c451ee40c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\component\serial_manager">
+      <UniqueIdentifier>{a588b28d-5e45-4890-9e40-d5b7f5342081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\component\uart">
+      <UniqueIdentifier>{885fe79d-a5fd-49fa-bbe0-63bf263952d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\drivers\freertos">
+      <UniqueIdentifier>{c4359b24-4eeb-4b29-98d9-f68fd82968cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\sdmmc\inc">
+      <UniqueIdentifier>{1295f685-c346-49a0-befd-a784d357b7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\sdmmc\src">
+      <UniqueIdentifier>{2cb250b4-eb54-41b5-877c-854a0ed4232a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_common\sdmmc\port">
+      <UniqueIdentifier>{c59b9554-2638-4fbb-a535-acc47b3b01a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_LwIP\arch">
+      <UniqueIdentifier>{f8dda190-c955-4dad-8a6d-81746a23bcf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{fd3b0cbe-582b-4276-8852-b9be618f87b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage">
+      <UniqueIdentifier>{3c68ccee-5cfe-4ddc-a9c7-bfb0864f7dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio">
+      <UniqueIdentifier>{682160c9-c814-403d-9c1b-7e9f04961bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\System.Device.I2c">
+      <UniqueIdentifier>{ab190b46-f354-4335-91af-4cf8003086f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\System.Device.Gpio">
+      <UniqueIdentifier>{b1c9c986-9349-4b95-8310-9a32afc53ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\System.IO.Ports">
+      <UniqueIdentifier>{6bd08f5a-1e75-493e-83ee-435b9e95420e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c">
+      <UniqueIdentifier>{ed4459a0-b291-45d5-8f17-9b5b27de1bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{94067465-1b0b-4978-8e5e-7edc3a2d4e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\common">
+      <UniqueIdentifier>{75cc4521-ae5e-4258-93bd-945707f7b5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter">
+      <UniqueIdentifier>{873662ca-4c35-49ab-a29d-199d0b8a3566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR">
+      <UniqueIdentifier>{9b32add5-c4fe-484a-92e5-3e1646a506ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System.Device.Adc">
+      <UniqueIdentifier>{6eca1ec1-131a-4c10-add7-239879fda805}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -1107,9 +1365,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchPanel.cpp">
       <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Gestures.cpp">
-      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Ink.cpp">
       <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
     </ClCompile>
@@ -1473,6 +1728,711 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder.cpp">
       <Filter>targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\Device_BlockStorage.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\ESP32_DeviceMapping.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\ESP32_S2_DeviceMapping.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\FEATHER_S2_DeviceMapping.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\GenericPort_Write.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\platform_BlockStorage.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\platform_heap.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\Target_BlockStorage_ESP32FlashDriver.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\Target_Network.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\Target_Windows_Storage.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\targetHAL.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\targetHAL_ConfigStorageSPIFFS.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\targetHAL_ConfigurationManager.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\targetHAL_Network.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\targetHAL_Time.cpp">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\WireProtocol_HAL_Interface.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\WireProtocol_ReceiverThread.c">
+      <Filter>targets\ESP32\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\dummy.c">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32\app_main.c">
+      <Filter>targets\ESP32\_IDF\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32s2\app_main.c">
+      <Filter>targets\ESP32\_IDF\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_lwIP\nf_api_msg.c">
+      <Filter>targets\ESP32\_lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_lwIP\nf_sockets.c">
+      <Filter>targets\ESP32\_lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_lwIP\nf_sys_arch.c">
+      <Filter>targets\ESP32\_lwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\CLR_Startup_Thread.c">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Memory.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoCRT.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoHAL.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetHAL.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetHAL_Power.c">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetHAL_Time.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetPAL.c">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetPAL_Events.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetPAL_Time.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\targetRandom.cpp">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\WireProtocol_MonitorCommands.c">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_nanoFramework_Devices_OneWire_OneWireController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native_Hardware_Esp32_Configuration.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native_Hardware_Esp32_HighResTimer.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native_Hardware_Esp32_Logging.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native_Hardware_Esp32_NativeMemory.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native_Hardware_Esp32_Sleep.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble\gatt_svr.c">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble\nanoFramework_hardware_esp32_ble.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble\nanoFramework_hardware_esp32_ble_native.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt\nanoFramework_hardware_esp32_rmt_native_nanoFramework_Hardware_Esp32_Rmt_ReceiverChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt\nanoFramework_hardware_esp32_rmt_native_nanoFramework_Hardware_Esp32_Rmt_RmtChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt\nanoFramework_hardware_esp32_rmt_native_nanoFramework_Hardware_Esp32_Rmt_TransmitterChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt\nanoFramework_hardware_esp32_rmt_native.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc.cpp">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Adc\sys_dev_adc_native_System_Device_Adc_AdcController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Adc\sys_dev_adc_native_System_Device_Adc_AdcChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_System_Device_I2c_I2cDevice.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Pwm\sys_dev_pwm_native_System_Device_Pwm_PwmChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Spi\cpu_spi.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_Directory.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_File.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_FileStream.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.FileSystem\nf_sys_io_filesystem_nanoFramework_System_IO_FileSystem_SDCard.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort.cpp">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcChannel.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioChangeCounter.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Gpio\cpu_gpio.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2c_I2cController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2C_I2cDevice.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmController.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmPin.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_Windows_Devices_SerialCommunication_SerialDevice.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Spi\cpu_spi.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Wifi\win_dev_wifi_native_Windows_Devices_WIFI_WifiAdapter.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Wifi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFile.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_Devices_SDCard.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_FileIO.cpp">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Network\NF_ESP32_Ethernet_Lan8720.cpp">
+      <Filter>targets\ESP32\_Network</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Network\NF_ESP32_SmartConfig.cpp">
+      <Filter>targets\ESP32\_Network</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Network\NF_ESP32_Wireless.cpp">
+      <Filter>targets\ESP32\_Network</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\nanoCLR\nanoHAL.cpp">
+      <Filter>targets\ESP32\ESP32_S2\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\nanoCLR\nanoFramework.Graphics\Graphics_Memory.cpp">
+      <Filter>targets\ESP32\ESP32_S2\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\nanoCLR\nanoFramework.Graphics\Spi_To_TouchPanel.cpp">
+      <Filter>targets\ESP32\ESP32_S2\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\nanoCLR\System.Device.Pwm\sys_dev_pwm_native_System_Device_Pwm_PwmChannel.cpp">
+      <Filter>targets\ESP32\ESP32_S2\nanoCLR\System.Device.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\nanoCLR\nanoFramework.Graphics\Graphics_Memory.cpp">
+      <Filter>targets\ESP32\ESP32\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\nanoCLR\nanoFramework.Graphics\Spi_To_TouchPanel.cpp">
+      <Filter>targets\ESP32\ESP32\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\nanoCLR\System.Device.Pwm\sys_dev_pwm_native_System_Device_Pwm_PwmChannel.cpp">
+      <Filter>targets\ESP32\ESP32\nanoCLR\System.Device.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\nanoCLR\nanoHAL.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_BlockStorage.c">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_common.c">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_nf_devices_onewire_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_device_adc_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_device_dac_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_device_i2c_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_device_spi_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_devices_dac_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_system_io_ports_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_windows_devices_adc_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_windows_devices_i2c_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_windows_devices_spi_config.cpp">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_BlockStorage.c">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_common.c">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_nf_devices_onewire_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_device_adc_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_device_dac_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_device_i2c_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_device_spi_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_devices_dac_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_system_io_ports_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_windows_devices_adc_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_windows_devices_i2c_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_windows_devices_spi_config.cpp">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\Generated\CLR_RT_InteropAssembliesTable.cpp">
+      <Filter>targets\win32\nanoCLR\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\blockstorageList_stubs.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\COMDirector_stubs.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\ConfigHelper_stubs.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\Target_BlockStorage.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\time_stubs.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\PAL\Watchdog_stubs.cpp">
+      <Filter>targets\win32\nanoCLR\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\base64.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\CLRStartup.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\FileStore_Win32.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\main.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\Memory.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\ParseOptions_Win32.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\platform_heap.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\stdafx.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\Target_BlockStorage.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\targetHAL_Time.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\targetPAL_Events.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\targetPAL_Time.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\targetRandom.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\Various.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\WatchDog.cpp">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\hardfault.c">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\platform_heap.c">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\targetHAL.c">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\targetHAL_Time.cpp">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\WireProtocol_ReceiverThread.c">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\CLR_Startup_Thread.c">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\nanoCRT.cpp">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\targetPAL_Events.cpp">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\targetPAL_Time.cpp">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\Device_BlockStorage.c">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\platform_BlockStorage.c">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\Target_BlockStorage_iMXRTFlashDriver.c">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\Target_Windows_Storage.c">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\targetHAL_ConfigurationManager.cpp">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\WireProtocol_HAL_Interface.c">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\board.c">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\clock_config.c">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\fsl_phy.c">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\peripherals.c">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\pin_mux.c">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\serial_manager\serial_manager.c">
+      <Filter>targets\FreeRTOS\NXP\_common\component\serial_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\serial_manager\serial_port_uart.c">
+      <Filter>targets\FreeRTOS\NXP\_common\component\serial_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\uart\lpuart_adapter.c">
+      <Filter>targets\FreeRTOS\NXP\_common\component\uart</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\device\system_MIMXRT1062.c">
+      <Filter>targets\FreeRTOS\NXP\_common\device</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\freertos\fsl_lpuart_freertos.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_cache.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_clock.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_common.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_dmamux.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_edma.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_enet.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_flexspi.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_gpio.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_gpio_ext.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpi2c.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpuart.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpuart_edma.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_semc.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_snvs_lp.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_trng.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_usdhc.c">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\port\fsl_sdmmc_event.c">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\port</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\port\fsl_sdmmc_host.c">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\port</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\src\fsl_sdmmc_common.c">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\src\fsl_sd.c">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\startup\startup_mimxrt1062.c">
+      <Filter>targets\FreeRTOS\NXP\_common\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\flexspi_nor_flash_ops.c">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\fsl_debug_console.c">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\fsl_str.c">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\xip\fsl_flexspi_nor_boot.c">
+      <Filter>targets\FreeRTOS\NXP\_common\xip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\xip\evkmimxrt1060_flexspi_nor_config.c">
+      <Filter>targets\FreeRTOS\NXP\_common\xip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_fatfs\diskio.c">
+      <Filter>targets\FreeRTOS\NXP\_fatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_fatfs\ffsystem.c">
+      <Filter>targets\FreeRTOS\NXP\_fatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_fatfs\fsl_sd_disk.c">
+      <Filter>targets\FreeRTOS\NXP\_fatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\ethernetif.c">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\nf_api_msg.c">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\nf_lwipthread.c">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\nf_sockets.c">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\nf_sys_arch.c">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoBooter\WireProtocol_App_Interface.c">
+      <Filter>targets\FreeRTOS\NXP\_nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoBooter\WireProtocol_MonitorCommands.c">
+      <Filter>targets\FreeRTOS\NXP\_nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Memory.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\nanoHAL.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Target_Network.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetHAL.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetHAL_Network.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetHAL_Power.c">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetHAL_Time.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetRandom.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_System_Device_I2c_I2cDevice.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioChangeCounter.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio\cpu_gpio.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2c_I2cController.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2C_I2cDevice.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_Windows_Devices_SerialCommunication_SerialDevice.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_FileIO.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFile.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_Devices_SDCard.cpp">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_BlockStorage.c">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_common.c">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_system_device_i2c_config.cpp">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_system_devices_dac_config.cpp">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_system_io_ports_config.cpp">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_windows_devices_i2c_config.cpp">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter\main.c">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\main.c">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native_System_Device_Adc_AdcChannel_stubs.cpp">
+      <Filter>src\System.Device.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native_System_Device_Adc_AdcController_stubs.cpp">
+      <Filter>src\System.Device.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native.cpp">
+      <Filter>src\System.Device.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\font8x8.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ILI9488_320x480_SPI.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7789_240x240.cpp">
+      <Filter>src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT6236_I2C.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice_NULL.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface_NULL.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">
@@ -1799,9 +2759,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.h">
       <Filter>src\nanoFramework.Graphics\Graphics\Native</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Gestures.h">
-      <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Ink.h">
       <Filter>src\nanoFramework.Graphics\TouchPanel\Core</Filter>
     </ClInclude>
@@ -1952,6 +2909,453 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_target.h">
       <Filter>targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\CLR_Startup_Thread.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\Esp32_DeviceMapping.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\esp32_idf.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\LaunchCLR.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\lwipopts.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\NF_ESP32_Network.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\platform_target_capabilities.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\Target_BlockStorage_Esp32FlashDriver.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\Target_Windows_Storage.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetHAL.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetHAL_ConfigStorage.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetHAL_Power.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\TargetHAL_Spi.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetHAL_Time.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetPAL.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\TargetPAL_BlockStorage.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\targetPAL_Time.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\WireProtocol_ReceiverThread.h">
+      <Filter>targets\ESP32\_Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32\nanoFramework_hardware_esp32_native.h">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble\nanoFramework_hardware_esp32_ble_native.h">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble\blehr_sens.h">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Ble</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt\nanoFramework_hardware_esp32_rmt_native.h">
+      <Filter>targets\ESP32\_nanoCLR\nanoFramework.Hardware.Esp32.Rmt</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Adc\sys_dev_adc_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Dac\sys_dev_dac_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Dac</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Gpio\sys_dev_gpio_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.Device.Spi\sys_dev_spi_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.Device.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\System.IO.Ports\sys_io_ser_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Spi\win_dev_spi_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Devices.Wifi\win_dev_wifi_native.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Devices.Wifi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\Windows.Storage\win_storage_native_target.h">
+      <Filter>targets\ESP32\_nanoCLR\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\ffconf.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\mbedtls_config.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_BlockStorage.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_lwip_sntp_opts.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_lwipopts.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_nf_devices_onewire_config.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_windows_storage_config.h">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\ffconf.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\mbedtls_config.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_BlockStorage.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_lwip_sntp_opts.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_lwipopts.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_nf_devices_onewire_config.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_windows_storage_config.h">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\EnumFlags.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\nanoHAL_Boot.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\nanoHAL_Capabilites.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\target_BlockStorage.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\target_board.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\target_common.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\target_os.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\target_platform.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\Target_Windows_Storage.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\targetHAL.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\targetHAL_Power.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\TargetHAL_Spi.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\targetHAL_Time.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\TargetPAL_BlockStorage.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\targetPAL_time.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\Include\Win32TimerQueue.h">
+      <Filter>targets\win32\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\platform_selector.h">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\stdafx.h">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\targetver.h">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\lwipopts.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\targetHAL.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\TargetHAL_Spi.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\targetHAL_Time.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\TargetPAL_BlockStorage.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\targetPAL_Time.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\include\WireProtocol_ReceiverThread.h">
+      <Filter>targets\FreeRTOS\_common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\CLR_Startup_Thread.h">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\targetPAL_Time.h">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\board.h">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\clock_config.h">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\fsl_phy.h">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\peripherals.h">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\board\pin_mux.h">
+      <Filter>targets\FreeRTOS\NXP\_common\board</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\serial_manager\serial_manager.h">
+      <Filter>targets\FreeRTOS\NXP\_common\component\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\serial_manager\serial_port_uart.h">
+      <Filter>targets\FreeRTOS\NXP\_common\component\serial_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\component\uart\uart.h">
+      <Filter>targets\FreeRTOS\NXP\_common\component\uart</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\device\fsl_device_registers.h">
+      <Filter>targets\FreeRTOS\NXP\_common\device</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\device\MIMXRT1062.h">
+      <Filter>targets\FreeRTOS\NXP\_common\device</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\device\MIMXRT1062_features.h">
+      <Filter>targets\FreeRTOS\NXP\_common\device</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\device\system_MIMXRT1062.h">
+      <Filter>targets\FreeRTOS\NXP\_common\device</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\freertos\fsl_lpuart_freertos.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers\freertos</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_cache.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_clock.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_common.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_dmamux.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_edma.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_enet.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_flexspi.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_gpio.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_gpio_ext.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_iomuxc.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpi2c.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpuart.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_lpuart_edma.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_semc.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_snvs_lp.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_trng.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\drivers\fsl_usdhc.h">
+      <Filter>targets\FreeRTOS\NXP\_common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\inc\fsl_sd.h">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\inc\fsl_sdmmc_common.h">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\inc\fsl_sdmmc_host.h">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\inc\fsl_sdmmc_spec.h">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\sdmmc\port\fsl_sdmmc_event.h">
+      <Filter>targets\FreeRTOS\NXP\_common\sdmmc\port</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\flexspi_nor_flash_ops.h">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\fsl_debug_console.h">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\fsl_debug_console_conf.h">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\utilities\fsl_str.h">
+      <Filter>targets\FreeRTOS\NXP\_common\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\xip\evkmimxrt1060_flexspi_nor_config.h">
+      <Filter>targets\FreeRTOS\NXP\_common\xip</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\xip\fsl_flexspi_nor_boot.h">
+      <Filter>targets\FreeRTOS\NXP\_common\xip</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_fatfs\ffconf.h">
+      <Filter>targets\FreeRTOS\NXP\_fatfs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_fatfs\fsl_sd_disk.h">
+      <Filter>targets\FreeRTOS\NXP\_fatfs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_include\platform_target_capabilities.h">
+      <Filter>targets\FreeRTOS\NXP\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_include\Target_BlockStorage_iMXRTFlashDriver.h">
+      <Filter>targets\FreeRTOS\NXP\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_include\Target_Windows_Storage.h">
+      <Filter>targets\FreeRTOS\NXP\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_include\targetPAL.h">
+      <Filter>targets\FreeRTOS\NXP\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\arch\cc.h">
+      <Filter>targets\FreeRTOS\NXP\_LwIP\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\arch\perf.h">
+      <Filter>targets\FreeRTOS\NXP\_LwIP\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\arch\sys_arch.h">
+      <Filter>targets\FreeRTOS\NXP\_LwIP\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\ethernetif.h">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_LwIP\nf_lwipthread.h">
+      <Filter>targets\FreeRTOS\NXP\_LwIP</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\targetHAL_Time.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\System.Device.Gpio\sys_dev_gpio_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\System.IO.Ports\sys_io_ser_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage\win_storage_native_target.h">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\FreeRTOSConfig.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_BlockStorage.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_lwip_sntp_opts.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_lwipopts.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_system_io_ports_config.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_windows_devices_serialcommunication_config.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_windows_storage_config.h">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native.h">
+      <Filter>src\System.Device.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\InternalFont.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Debug_To_Display.h">
+      <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
@@ -1959,12 +3363,6 @@
     </None>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
       <Filter>src\nanoFramework.Graphics</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts\NinaB.tinyfnt">
-      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts\small.tinyfnt">
-      <Filter>src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\TinyFonts</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\System.IO.Ports.filters">
       <Filter>src\System.IO.Ports</Filter>
@@ -2002,5 +3400,208 @@
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\target_platform.h.in">
       <Filter>targets\ChibiOS\_nanoCLR</Filter>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default.esp32s2">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_ble _rev3.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_ble.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_nopsram.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_nopsram_rev3.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_pico">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\sdkconfig.default_rev3.esp32">
+      <Filter>targets\ESP32\_IDF</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32\partitions_nanoclr_2mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32\partitions_nanoclr_4mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32\partitions_nanoclr_8mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32\partitions_nanoclr_16mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32s2\partitions_nanoclr_4mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32s2\partitions_nanoclr_8mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_IDF\esp32s2\partitions_nanoclr_16mb.csv">
+      <Filter>targets\ESP32\_IDF\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoBooter\readme.md">
+      <Filter>targets\ESP32\_nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\target_platform.h.in">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Network\esp32_ethernet_options.h.in">
+      <Filter>targets\ESP32\_Network</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\nanoCLR\target_board.h.in">
+      <Filter>targets\ESP32\ESP32_S2\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\nanoCLR\target_board.h.in">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\cmake-variants.json">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\launch.json">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\README.md">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\target_common.h.in">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\cmake-variants.json">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\launch.json">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\README.md">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\target_common.h.in">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\msvc_redist\vcruntime140.dll">
+      <Filter>targets\win32\msvc_redist</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\nanoCLR.vcxproj">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\nanoCLR.vcxproj.filters">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR.sln">
+      <Filter>targets\win32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoFramework.nanoCLR.Win32.nuspec">
+      <Filter>targets\win32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\README.md">
+      <Filter>targets\win32</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\target_platform.h.in">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\cmake-variants.json">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\launch.json">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\README.md">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\target_common.h.in">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter\MIMXRT10xx.ld">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter\MIMXRT10xx-DEBUG.ld">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter\target_board.h.in">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\MIMXRT10xx.ld">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\MIMXRT10xx-DEBUG.ld">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\target_board.h.in">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\CMakeLists.txt">
+      <Filter>targets\ESP32\_common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Include\CMakeLists.txt">
+      <Filter>targets\ESP32\_Include</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_nanoCLR\CMakeLists.txt">
+      <Filter>targets\ESP32\_nanoCLR</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_Network\CMakeLists.txt">
+      <Filter>targets\ESP32\_Network</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\CMakeLists.txt">
+      <Filter>targets\ESP32</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\common\CMakeLists.txt">
+      <Filter>targets\ESP32\ESP32\common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\common\CMakeLists.txt">
+      <Filter>targets\ESP32\ESP32_S2\common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32_S2\CMakeLists.txt">
+      <Filter>targets\ESP32\ESP32_S2</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\ESP32\CMakeLists.txt">
+      <Filter>targets\ESP32\ESP32</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\win32\nanoCLR\README.txt">
+      <Filter>targets\win32\nanoCLR</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\_common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\_common\nanoCLR\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\_common\nanoCLR</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_common\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\_common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_include\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\_include</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoBooter\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\_nanoBooter</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\_nanoCLR\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\_nanoCLR</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\common\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\common</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoBooter</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\CMakeLists.txt">
+      <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </Text>
   </ItemGroup>
 </Project>

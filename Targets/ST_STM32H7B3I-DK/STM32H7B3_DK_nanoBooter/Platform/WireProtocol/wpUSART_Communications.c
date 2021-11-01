@@ -1,3 +1,4 @@
+#include <lwrb.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -27,6 +28,10 @@ WritePacketState CurrentWritePacketState;
 uint8_t aTxBuffer[TXBUFFERSIZE]  __attribute__((section(".DMA2_RAM"))) __attribute__((aligned(4)));
 uint8_t aRxBuffer[RXBUFFER] __attribute__((section(".DMA2_RAM"))) __attribute__((aligned(4)));
 
+
+static DMA_HandleTypeDef hdma_tx;
+static DMA_HandleTypeDef hdma_rx;
+
 struct PacketsReceived
 {
     long CurrentIndex;
@@ -50,8 +55,11 @@ struct PacketsReceived
     } Packets[NUMBER_PACKETS];
 } CircularBuffer;
 
+
+
 bool InitWireProtocolCommunications()
 {
+        
     // Select SysClk as source of USART1 clocks
     // TODO: Check what these 3 code line do and if correct
     RCC_PeriphCLKInitTypeDef RCC_PeriphClkInit = { 0 };
@@ -59,11 +67,69 @@ bool InitWireProtocolCommunications()
     RCC_PeriphClkInit.Usart16ClockSelection = RCC_USART16CLKSOURCE_D2PCLK2;
     HAL_RCCEx_PeriphCLKConfig(&RCC_PeriphClkInit);
 
-    //-------------------------------------
-    // Setup the USART - Clocks, Pins, Mode
-    //-------------------------------------
+    GPIO_InitTypeDef GPIO_InitStruct = { 0 };
+    
+    // Enable the clock for the selected USART and DMA
+    
+    wpUSART_CLK_ENABLE();                     // SET_BIT(RCC->APB2ENR, RCC_APB2ENR_USART1EN)     - __HAL_RCC_USART1_CLK_ENABLE()
+    wpUSART_GPIO_CLK_ENABLE();                // SET_BIT(RCC->AHB4ENR, RCC_AHB4ENR_GPIOAEN);     - __HAL_RCC_GPIOA_CLK_ENABLE()
+    wpDMA_CLK_ENABLE();                       // SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_DMA2EN)       - DMA2
+        
+    // UART TX/RX GPIO pin configuration and clock
+    GPIO_InitStruct.Pin = wpUSART_TX_PIN | wpUSART_RX_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_InitStruct.Alternate = wpUSART_AF;
+    HAL_GPIO_Init(wpUSART_GPIO_PORT, &GPIO_InitStruct);
 
-    // Use USART as defined in the header file
+    
+    // Receive DMA configuration
+    hdma_rx.Instance = wpUSART_RX_DMA_STREAM;
+    hdma_rx.Init.Request = wpUSART_RX_DMA_REQUEST;
+    hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_rx.Init.Mode = DMA_CIRCULAR;
+    hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_rx))
+    {
+        HAL_AssertEx();
+    }
+    __HAL_LINKDMA(&wpUartHandle, hdmarx, hdma_rx);           // Associate the DMA handle to the the USART
+
+    // Transmit DMA configuration
+    hdma_tx.Instance = wpUSART_TX_DMA_STREAM;
+    hdma_tx.Init.Request = wpUSART_TX_DMA_REQUEST;
+    hdma_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;
+    hdma_tx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_tx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_tx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_tx.Init.Mode = DMA_NORMAL;
+    hdma_tx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_tx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&hdma_tx))
+    {
+        HAL_AssertEx();
+    }
+    __HAL_LINKDMA(&wpUartHandle, hdmatx, hdma_tx);           // Associate the DMA handle to the the USART
+
+    //NVIC configuration for DMA transfer complete interrupt (USART1_RX)
+    HAL_NVIC_SetPriority(wpUSART_DMA_RX_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(wpUSART_DMA_RX_IRQn);
+
+    // NVIC configuration for DMA transfer complete interrupt (USART1_TX)
+    HAL_NVIC_SetPriority(wpUSART_DMA_TX_IRQn, 0, 1);
+    HAL_NVIC_EnableIRQ(wpUSART_DMA_TX_IRQn);
+
+    // NVIC for USART interrupt
+    HAL_NVIC_SetPriority(wpUSART_IRQn, 0, 1);
+    HAL_NVIC_EnableIRQ(wpUSART_IRQn);
+
     wpUartHandle.Instance = wpUSART;
     wpUartHandle.Init.BaudRate = wpBAUD_RATE;
     wpUartHandle.Init.WordLength = UART_WORDLENGTH_8B;
@@ -72,7 +138,6 @@ bool InitWireProtocolCommunications()
     wpUartHandle.Init.Mode = UART_MODE_TX_RX;
     wpUartHandle.Init.HwFlowCtl = UART_HWCONTROL_NONE;
     wpUartHandle.Init.OverSampling = UART_OVERSAMPLING_16;
-    wpUartHandle.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
     wpUartHandle.Init.ClockPrescaler = UART_PRESCALER_DIV1;
     wpUartHandle.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
 
@@ -80,24 +145,30 @@ bool InitWireProtocolCommunications()
         {
             HAL_AssertEx();
         }
-    // ?????????????????
-    if(HAL_UARTEx_SetTxFifoThreshold(&wpUartHandle, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+    if (HAL_UARTEx_SetTxFifoThreshold(&wpUartHandle, UART_TXFIFO_THRESHOLD_7_8) != HAL_OK)
     {
         HAL_AssertEx();
     }
-    if (HAL_UARTEx_SetRxFifoThreshold(&wpUartHandle, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+    if (HAL_UARTEx_SetRxFifoThreshold(&wpUartHandle, UART_RXFIFO_THRESHOLD_7_8) != HAL_OK)
     {
         HAL_AssertEx();
     }
-    if (HAL_UARTEx_DisableFifoMode(&wpUartHandle) != HAL_OK)
+    if (HAL_UARTEx_EnableFifoMode(&wpUartHandle) != HAL_OK)
     {
         HAL_AssertEx();
     }
-    // ?????????????????????
 
+    // Enable USART and DMA RX
+    __HAL_DMA_ENABLE(&hdma_rx);
+    __HAL_UART_ENABLE(&wpUartHandle);
+    
     return true;
 }
-bool WritePacket(uint8_t* ptr, uint32_t size)
+
+
+
+
+bool WritePacket(uint8_t* ptr, uint16_t size)
 {
     memcpy(aTxBuffer, ptr, size);
 
@@ -106,7 +177,7 @@ bool WritePacket(uint8_t* ptr, uint32_t size)
         HAL_AssertEx();
     }
 }
-bool ReadNextPacket(uint8_t** ptr, uint32_t* size)
+bool ReadNextPacket(uint8_t* ptr, uint16_t* size)
 {
     if (wpUartHandle.RxState == HAL_UART_STATE_READY)
     {
@@ -120,7 +191,7 @@ bool ReadNextPacket(uint8_t** ptr, uint32_t* size)
     {
         if (CircularBuffer.NumberNotProcessed > 0)
         {
-            memcpy(*ptr, CircularBuffer.Packets[CircularBuffer.ProcessedIndex].Data, sizeof(aRxBuffer));
+            memcpy(ptr, CircularBuffer.Packets[CircularBuffer.ProcessedIndex].Data, sizeof(aRxBuffer));
             *size = 0;
             CircularBuffer.NumberNotProcessed--;
             CircularBuffer.ProcessedIndex++;
@@ -139,7 +210,7 @@ bool ReadNextPacket(uint8_t** ptr, uint32_t* size)
 }
 void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 {
-    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer));    // Tricky one
+    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer));           // Tricky one
 
     CircularBuffer.TotalPackets++;
     CircularBuffer.NumberNotProcessed++;
@@ -157,46 +228,55 @@ void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 
 }
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//+++++++++++++++++++++
+#define ARRAY_LEN(x)            (sizeof(x) / sizeof((x)[0]))
+uint8_t  usart_rx_dma_buffer[64];
+lwrb_t  usart_rx_rb;         // Ring buffer instance for TX data
+uint8_t usart_rx_rb_data[128];      // Ring buffer data array for RX DMA
+lwrb_t  usart_tx_rb;          // Ring buffer instance for TX data
+uint8_t usart_tx_rb_data[128];        // Ring buffer data array for TX DMA
+volatile size_t usart_tx_dma_current_len;           //  Length of currently active TX DMA transfer
 
 
-// For this specific example, all variables are by default configured in D1 RAM. This is configured in linker script
-uint8_t usart_rx_dma_buffer[64];
-lwrb_t  usart_rx_rb;             // Ring buffer instance for RX data
-uint8_t usart_rx_rb_data[128];   //Ring buffer data array for RX DMA
-lwrb_t   usart_tx_rb;            // Ring buffer instance for TX data
-uint8_t usart_tx_rb_data[128];   // Ring buffer data array for TX DMA
+void WP_DMA_Receive_half_complete()
+{
+    __HAL_DMA_CLEAR_FLAG(&hdma_rx, wpCLEAR_HALF_TRANSFER_COMPLETE); /* Clear half-transfer complete flag */
+    usart_rx_check(); /* Check for data to process */
+}
 
-volatile size_t usart_tx_dma_current_len;                 // Length of currently active TX DMA transfer
+void WP_DMA_Receive_complete()
+{
+    __HAL_DMA_CLEAR_FLAG(&hdma_rx, wpCLEAR_HALF_TRANSFER_COMPLETE); /* Clear half-transfer complete flag */
+    usart_rx_check(); /* Check for data to process */
+}
+
+void WP_DMA_Transfer_complete()
+{
+   
+    __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_HALF_TRANSFER_COMPLETE); /* Clear half-transfer complete flag */
+
+    lwrb_skip(&usart_tx_rb, usart_tx_dma_current_len); /* Skip sent data, mark as read */
+    usart_tx_dma_current_len = 0; /* Clear length variable */
+    usart_start_tx_dma_transfer(); /* Start sending more data */
+}
+
+void WP_USART_Interrupt()
+{
+    __HAL_USART_CLEAR_IDLEFLAG(&wpUartHandle);
+    usart_rx_check(); /* Check for data to process */
+}
 
 
-
-/**
- * \brief           Check for new data received with DMA
- *
- * User must select context to call this function from:
- * - Only interrupts (DMA HT, DMA TC, UART IDLE) with same preemption priority level
- * - Only thread context (outside interrupts)
- *
- * If called from both context-es, exclusive access protection must be implemented
- * This mode is not advised as it usually means architecture design problems
- *
- * When IDLE interrupt is not present, application must rely only on thread context,
- * by manually calling function as quickly as possible, to make sure data are read from raw buffer and processed.
- *
- * Not doing reads fast enough may cause DMA to overflow unread received bytes, hence application will lost useful data.
- *
- * Solutions to this are:
- * - Improve architecture design to achieve faster reads
- * - Increase raw buffer size and allow DMA to write more data before this function is called
- */
-void
-usart_rx_check(void) {
+void usart_rx_check(void) 
+{
     static size_t old_pos;
     size_t pos;
+    
+    size_t SpaceRemaining = __HAL_DMA_GET_COUNTER(&hdma_rx);
 
     /* Calculate current position in buffer and check for new data available */
-    pos = ARRAY_LEN(usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA1, LL_DMA_STREAM_0);
+    pos = ARRAY_LEN(usart_rx_dma_buffer) - SpaceRemaining;
     if (pos != old_pos) {
         /* Check change in received data */
         if (pos > old_pos) {
@@ -245,16 +325,20 @@ usart_rx_check(void) {
     }
 }
 
-/**
- * \brief           Check if DMA is active and if not try to send data
- *
- * This function can be called either by application to start data transfer
- * or from DMA TX interrupt after previous transfer just finished
- *
- * \return          `1` if transfer just started, `0` if on-going or no data to transmit
- */
-uint8_t
-usart_start_tx_dma_transfer(void) {
+
+void usart_process_data(const void* data, size_t len) 
+{
+    lwrb_write(&usart_rx_rb, data, len); /* Write data to receive buffer */
+}
+
+
+void usart_send_string(const char* str) {
+    lwrb_write(&usart_tx_rb, str, strlen(str)); /* Write data to transmit buffer */
+    usart_start_tx_dma_transfer();
+}
+
+uint8_t usart_start_tx_dma_transfer(void)
+{
     uint32_t primask;
     uint8_t started = 0;
 
@@ -286,359 +370,104 @@ usart_start_tx_dma_transfer(void) {
      * hence interrupts are disabled prior every check
      */
     primask = __get_PRIMASK();
-    __disable_irq();
-    if (usart_tx_dma_current_len == 0
-            && (usart_tx_dma_current_len = lwrb_get_linear_block_read_length(&usart_tx_rb)) > 0) {
+    
+    __disable_interrupts();
+    if (usart_tx_dma_current_len == 0 && (usart_tx_dma_current_len = lwrb_get_linear_block_read_length(&usart_tx_rb)) > 0) {
+        
         /* Disable channel if enabled */
-        LL_DMA_DisableStream(DMA1, LL_DMA_STREAM_1);
 
-        /* Clear all flags */
-        LL_DMA_ClearFlag_TC1(DMA1);
-        LL_DMA_ClearFlag_HT1(DMA1);
-        LL_DMA_ClearFlag_TE1(DMA1);
-        LL_DMA_ClearFlag_DME1(DMA1);
-        LL_DMA_ClearFlag_FE1(DMA1);
+        __HAL_DMA_DISABLE(&hdma_tx);
 
-        /* Prepare DMA data and length */
-        LL_DMA_SetDataLength(DMA1, LL_DMA_STREAM_1, usart_tx_dma_current_len);
-        LL_DMA_SetMemoryAddress(DMA1, LL_DMA_STREAM_1, (uint32_t)lwrb_get_linear_block_read_address(&usart_tx_rb));
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_COMPLETE);        // Clear transfer complete flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_HALF_TRANSFER_COMPLETE);        // Clear half transfer flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_ERROR);        // Clear transfer error flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_DIRECT_MODE_ERROR);       // Clear direct mode error flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_FIFO_ERROR);        // Clear FIFO error flag.
 
-        /* Start transfer */
-        LL_DMA_EnableStream(DMA1, LL_DMA_STREAM_1);
-        started = 1;
+        
+    if(HAL_UART_Transmit_DMA(&wpUartHandle, (uint8_t)lwrb_get_linear_block_read_address(&usart_tx_rb), usart_tx_dma_current_len) != HAL_OK)
+        {
+            
+        }
     }
-    __set_PRIMASK(primask);
+    __enable_interrupts();
     return started;
 }
 
-/**
- * \brief           Process received data over UART
- * Data are written to RX ringbuffer for application processing at latter stage
- * \param[in]       data: Data to process
- * \param[in]       len: Length in units of bytes
- */
-void
-usart_process_data(const void* data, size_t len) {
-    lwrb_write(&usart_rx_rb, data, len); /* Write data to receive buffer */
-}
 
-/**
- * \brief           Send string over USART
- * \param[in]       str: String to send
- */
-void
-usart_send_string(const char* str) {
-    lwrb_write(&usart_tx_rb, str, strlen(str)); /* Write data to transmit buffer */
-    usart_start_tx_dma_transfer();
-}
+void Test()
+{
+    int state = 0;
+    while (1) {
+        uint8_t b;
 
-/**
- * \brief           USART3 Initialization Function
- */
-void
-usart_init(void) {
-    LL_USART_InitTypeDef USART_InitStruct = { 0 };
-    LL_GPIO_InitTypeDef GPIO_InitStruct = { 0 };
+        /* Process RX ringbuffer */
 
-    /* Peripheral clock enable */
-    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART3);
-    LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_GPIOD);
-    LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_DMA1);
+        /* Packet format: START_BYTE, CMD, LEN[, DATA[0], DATA[len - 1]], STOP BYTE */
+        /* DATA bytes are included only if LEN > 0 */
+        /* An example, send sequence of these bytes: 0x55, 0x01, 0x01, 0xFF, 0xAA */
 
-    /*
-     * USART3 GPIO Configuration
-     *
-     * PD8   ------> USART3_TX
-     * PD9   ------> USART3_RX
-     */
-    GPIO_InitStruct.Pin = LL_GPIO_PIN_8 | LL_GPIO_PIN_9;
-    GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
-    GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
-    GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-    GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-    GPIO_InitStruct.Alternate = LL_GPIO_AF_7;
-    LL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+        /* Read byte by byte */
 
-    /* USART3_RX Init */
-    LL_DMA_SetPeriphRequest(DMA1, LL_DMA_STREAM_0, LL_DMAMUX1_REQ_USART3_RX);
-    LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_STREAM_0, LL_DMA_DIRECTION_PERIPH_TO_MEMORY);
-    LL_DMA_SetStreamPriorityLevel(DMA1, LL_DMA_STREAM_0, LL_DMA_PRIORITY_LOW);
-    LL_DMA_SetMode(DMA1, LL_DMA_STREAM_0, LL_DMA_MODE_CIRCULAR);
-    LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_STREAM_0, LL_DMA_PERIPH_NOINCREMENT);
-    LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_STREAM_0, LL_DMA_MEMORY_INCREMENT);
-    LL_DMA_SetPeriphSize(DMA1, LL_DMA_STREAM_0, LL_DMA_PDATAALIGN_BYTE);
-    LL_DMA_SetMemorySize(DMA1, LL_DMA_STREAM_0, LL_DMA_MDATAALIGN_BYTE);
-    LL_DMA_DisableFifoMode(DMA1, LL_DMA_STREAM_0);
-    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_STREAM_0, LL_USART_DMA_GetRegAddr(USART3, LL_USART_DMA_REG_DATA_RECEIVE));
-    LL_DMA_SetMemoryAddress(DMA1, LL_DMA_STREAM_0, (uint32_t)usart_rx_dma_buffer);
-    LL_DMA_SetDataLength(DMA1, LL_DMA_STREAM_0, ARRAY_LEN(usart_rx_dma_buffer));
+        if (lwrb_read(&usart_rx_rb, &b, 1) == 1) {
+            lwrb_write(&usart_tx_rb, &b, 1); /* Write data to transmit buffer */
+            usart_start_tx_dma_transfer();
+            switch (state) {
+            case 0: {
+                    /* Wait for start byte */
+                    if (b == 0x55) {
+                        ++state;
+                    }
+                    break;
+                }
+            case 1: {
+                    /* Check packet command */
+                    cmd = b;
+                    ++state;
+                    break;
+                }
+            case 2: {
+                    /* Packet data length */
+                    len = b;
+                    ++state;
+                    if (len == 0) {
+                        ++state; /* Ignore data part if len = 0 */
+                    }
+                    break;
+                }
+            case 3: {
+                    /* Data for command */
+                    --len; /* Decrease for received character */
+                    if (len == 0) {
+                        ++state;
+                    }
+                    break;
+                }
+            case 4: {
+                    /* End of packet */
+                    if (b == 0xAA) {
+                        /* Packet is valid */
 
-    /* USART3_TX Init */
-    LL_DMA_SetPeriphRequest(DMA1, LL_DMA_STREAM_1, LL_DMAMUX1_REQ_USART3_TX);
-    LL_DMA_SetDataTransferDirection(DMA1, LL_DMA_STREAM_1, LL_DMA_DIRECTION_MEMORY_TO_PERIPH);
-    LL_DMA_SetStreamPriorityLevel(DMA1, LL_DMA_STREAM_1, LL_DMA_PRIORITY_LOW);
-    LL_DMA_SetMode(DMA1, LL_DMA_STREAM_1, LL_DMA_MODE_NORMAL);
-    LL_DMA_SetPeriphIncMode(DMA1, LL_DMA_STREAM_1, LL_DMA_PERIPH_NOINCREMENT);
-    LL_DMA_SetMemoryIncMode(DMA1, LL_DMA_STREAM_1, LL_DMA_MEMORY_INCREMENT);
-    LL_DMA_SetPeriphSize(DMA1, LL_DMA_STREAM_1, LL_DMA_PDATAALIGN_BYTE);
-    LL_DMA_SetMemorySize(DMA1, LL_DMA_STREAM_1, LL_DMA_MDATAALIGN_BYTE);
-    LL_DMA_DisableFifoMode(DMA1, LL_DMA_STREAM_1);
-    LL_DMA_SetPeriphAddress(DMA1, LL_DMA_STREAM_1, LL_USART_DMA_GetRegAddr(USART3, LL_USART_DMA_REG_DATA_TRANSMIT));
+                        /* Send out response with CMD = 0xFF */
+                        b = 0x55; /* Start byte */
+                        lwrb_write(&usart_tx_rb, &b, 1);
+                        cmd = 0xFF; /* Command = 0xFF = OK response */
+                        lwrb_write(&usart_tx_rb, &cmd, 1);
+                        b = 0x00; /* Len = 0 */
+                        lwrb_write(&usart_tx_rb, &b, 1);
+                        b = 0xAA; /* Stop byte */
+                        lwrb_write(&usart_tx_rb, &b, 1);
 
-    /* Enable DMA RX HT & TC interrupts */
-    LL_DMA_EnableIT_HT(DMA1, LL_DMA_STREAM_0);
-    LL_DMA_EnableIT_TC(DMA1, LL_DMA_STREAM_0);
-    /* Enable DMA TX TC interrupts */
-    LL_DMA_EnableIT_TC(DMA1, LL_DMA_STREAM_1);
+                        /* Flush everything */
+                        usart_start_tx_dma_transfer();
+                    }
+                    state = 0;
+                    break;
+                }
+            }
+        }
 
-    /* DMA interrupt init */
-    NVIC_SetPriority(DMA1_Stream0_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
-    NVIC_EnableIRQ(DMA1_Stream0_IRQn);
-    NVIC_SetPriority(DMA1_Stream1_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
-    NVIC_EnableIRQ(DMA1_Stream1_IRQn);
-
-    /* Configure USART3 */
-    USART_InitStruct.PrescalerValue = LL_USART_PRESCALER_DIV1;
-    USART_InitStruct.BaudRate = 115200;
-    USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
-    USART_InitStruct.StopBits = LL_USART_STOPBITS_1;
-    USART_InitStruct.Parity = LL_USART_PARITY_NONE;
-    USART_InitStruct.TransferDirection = LL_USART_DIRECTION_TX_RX;
-    USART_InitStruct.HardwareFlowControl = LL_USART_HWCONTROL_NONE;
-    USART_InitStruct.OverSampling = LL_USART_OVERSAMPLING_16;
-    LL_USART_Init(USART3, &USART_InitStruct);
-    LL_USART_SetTXFIFOThreshold(USART3, LL_USART_FIFOTHRESHOLD_7_8);
-    LL_USART_SetRXFIFOThreshold(USART3, LL_USART_FIFOTHRESHOLD_7_8);
-    LL_USART_EnableFIFO(USART3);
-    LL_USART_ConfigAsyncMode(USART3);
-    LL_USART_EnableDMAReq_RX(USART3);
-    LL_USART_EnableDMAReq_TX(USART3);
-    LL_USART_EnableIT_IDLE(USART3);
-
-    /* USART interrupt, same priority as DMA channel */
-    NVIC_SetPriority(USART3_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), 0, 0));
-    NVIC_EnableIRQ(USART3_IRQn);
-
-    /* Enable USART and DMA RX */
-    LL_DMA_EnableStream(DMA1, LL_DMA_STREAM_0);
-    LL_USART_Enable(USART3);
-
-    /* Polling USART3 initialization */
-    while (!LL_USART_IsActiveFlag_TEACK(USART3) || !LL_USART_IsActiveFlag_REACK(USART3)) {}
-}
-
-/* Interrupt handlers here */
-
-/**
- * \brief           DMA1 stream1 interrupt handler for USART3 RX
- */
-void
-DMA1_Stream0_IRQHandler(void) {
-    /* Check half-transfer complete interrupt */
-    if (LL_DMA_IsEnabledIT_HT(DMA1, LL_DMA_STREAM_0) && LL_DMA_IsActiveFlag_HT0(DMA1)) {
-        LL_DMA_ClearFlag_HT0(DMA1); /* Clear half-transfer complete flag */
-        usart_rx_check(); /* Check for data to process */
+        /* Do other tasks ... */
     }
-
-    /* Check transfer-complete interrupt */
-    if (LL_DMA_IsEnabledIT_TC(DMA1, LL_DMA_STREAM_0) && LL_DMA_IsActiveFlag_TC0(DMA1)) {
-        LL_DMA_ClearFlag_TC0(DMA1); /* Clear transfer complete flag */
-        usart_rx_check(); /* Check for data to process */
-    }
-
-    /* Implement other events when needed */
+    
 }
-
-/**
- * \brief           DMA1 stream1 interrupt handler for USART3 TX
- */
-void
-DMA1_Stream1_IRQHandler(void) {
-    /* Check transfer complete */
-    if (LL_DMA_IsEnabledIT_TC(DMA1, LL_DMA_STREAM_1) && LL_DMA_IsActiveFlag_TC1(DMA1)) {
-        LL_DMA_ClearFlag_TC1(DMA1); /* Clear transfer complete flag */
-        lwrb_skip(&usart_tx_rb, usart_tx_dma_current_len); /* Skip sent data, mark as read */
-        usart_tx_dma_current_len = 0; /* Clear length variable */
-        usart_start_tx_dma_transfer(); /* Start sending more data */
-    }
-
-    /* Implement other events when needed */
-}
-
-/**
- * \brief           USART3 global interrupt handler
- */
-void
-USART3_IRQHandler(void) {
-    /* Check for IDLE line interrupt */
-    if (LL_USART_IsEnabledIT_IDLE(USART3) && LL_USART_IsActiveFlag_IDLE(USART3)) {
-        LL_USART_ClearFlag_IDLE(USART3); /* Clear IDLE line flag */
-        usart_rx_check(); /* Check for data to process */
-    }
-
-    /* Implement other events when needed */
-}
-
-/**
- * \brief           System Clock Configuration
- */
-//void SystemClock_Config(void) {
-//    /* Configure flash latency */
-//    LL_FLASH_SetLatency(LL_FLASH_LATENCY_4);
-//    if (LL_FLASH_GetLatency() != LL_FLASH_LATENCY_4) {
-//        while (1) {}
-//    }
-
-    /* Configure power supply and voltage scale */
-//    LL_PWR_ConfigSupply(LL_PWR_LDO_SUPPLY);
-//    LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE0);
-//
-//    /* Uncomment if used on STM32H745/H755 Nucleo */
-//    /* Dual-Core Nucleo board used external SMPS instead of LDO */
-//    /* Manually enable it */
-//    //PWR->CR3 |= 1 << 2;
-//
-//    /* Configure HSE */
-//    LL_RCC_HSE_EnableBypass();
-//    LL_RCC_HSE_Enable();
-//    while (!LL_RCC_HSE_IsReady()) {}
-//
-//    /* Configure PLL */
-//    LL_RCC_PLL_SetSource(LL_RCC_PLLSOURCE_HSE);
-//    LL_RCC_PLL1P_Enable();
-//    LL_RCC_PLL1Q_Enable();
-//    LL_RCC_PLL1_SetVCOInputRange(LL_RCC_PLLINPUTRANGE_8_16);
-//    LL_RCC_PLL1_SetVCOOutputRange(LL_RCC_PLLVCORANGE_WIDE);
-//    LL_RCC_PLL1_SetM(1);
-//    LL_RCC_PLL1_SetN(120);
-//    LL_RCC_PLL1_SetP(2);
-//    LL_RCC_PLL1_SetQ(20);
-//    LL_RCC_PLL1_SetR(2);
-//    LL_RCC_PLL1_Enable();
-//    while (!LL_RCC_PLL1_IsReady()) {}
-//
-//    /* Intermediate AHB prescaler 2 when target frequency clock is higher than 80 MHz */
-//    LL_RCC_SetAHBPrescaler(LL_RCC_AHB_DIV_2);
-//    LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL1);
-//    LL_RCC_SetSysPrescaler(LL_RCC_SYSCLK_DIV_1);
-//    LL_RCC_SetAHBPrescaler(LL_RCC_AHB_DIV_2);
-//    LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_2);
-//    LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_2);
-//    LL_RCC_SetAPB3Prescaler(LL_RCC_APB3_DIV_2);
-//    LL_RCC_SetAPB4Prescaler(LL_RCC_APB4_DIV_2);
-//
-//    /* Configure systick */
-//    LL_Init1msTick(480000000);
-//    LL_SYSTICK_SetClkSource(LL_SYSTICK_CLKSOURCE_HCLK);
-//    LL_SetSystemCoreClock(480000000);
-//    LL_RCC_SetUSARTClockSource(LL_RCC_USART234578_CLKSOURCE_PCLK1);
-//}
-
-
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-
-
-//main(void) {
-//    uint8_t state, cmd, len;
-//
-//    /* MCU Configuration */
-//    //    SCB_DisableDCache();
-//    //    SCB_DisableICache();
-//
-//        /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-//        LL_APB4_GRP1_EnableClock(LL_APB4_GRP1_PERIPH_SYSCFG);
-//
-//    /* Configure the system clock */
-//    SystemClock_Config();
-//
-//    /* Initialize ringbuff for TX & RX */
-//    lwrb_init(&usart_tx_rb, usart_tx_rb_data, sizeof(usart_tx_rb_data));
-//    lwrb_init(&usart_rx_rb, usart_rx_rb_data, sizeof(usart_rx_rb_data));
-//
-//    /* Initialize all configured peripherals */
-//    usart_init();
-//    usart_send_string("USART DMA example: DMA HT & TC + USART IDLE LINE interrupts\r\n");
-//    usart_send_string("Start sending data to STM32\r\n");
-//
-//    /* After this point, do not use usart_send_string function anymore */
-//    /* Send packet data over UART from PC (or other STM32 device) */
-//
-//    /* Infinite loop */
-//    state = 0;
-//    while (1) {
-//        uint8_t b;
-//
-//        /* Process RX ringbuffer */
-//
-//        /* Packet format: START_BYTE, CMD, LEN[, DATA[0], DATA[len - 1]], STOP BYTE */
-//        /* DATA bytes are included only if LEN > 0 */
-//        /* An example, send sequence of these bytes: 0x55, 0x01, 0x01, 0xFF, 0xAA */
-//
-//        /* Read byte by byte */
-//
-//        if (lwrb_read(&usart_rx_rb, &b, 1) == 1) {
-//            lwrb_write(&usart_tx_rb, &b, 1); /* Write data to transmit buffer */
-//            usart_start_tx_dma_transfer();
-//            switch (state) {
-//            case 0: {
-//                    /* Wait for start byte */
-//                    if (b == 0x55) {
-//                        ++state;
-//                    }
-//                    break;
-//                }
-//            case 1: {
-//                    /* Check packet command */
-//                    cmd = b;
-//                    ++state;
-//                    break;
-//                }
-//            case 2: {
-//                    /* Packet data length */
-//                    len = b;
-//                    ++state;
-//                    if (len == 0) {
-//                        ++state; /* Ignore data part if len = 0 */
-//                    }
-//                    break;
-//                }
-//            case 3: {
-//                    /* Data for command */
-//                    --len; /* Decrease for received character */
-//                    if (len == 0) {
-//                        ++state;
-//                    }
-//                    break;
-//                }
-//            case 4: {
-//                    /* End of packet */
-//                    if (b == 0xAA) {
-//                        /* Packet is valid */
-//
-//                        /* Send out response with CMD = 0xFF */
-//                        b = 0x55; /* Start byte */
-//                        lwrb_write(&usart_tx_rb, &b, 1);
-//                        cmd = 0xFF; /* Command = 0xFF = OK response */
-//                        lwrb_write(&usart_tx_rb, &cmd, 1);
-//                        b = 0x00; /* Len = 0 */
-//                        lwrb_write(&usart_tx_rb, &b, 1);
-//                        b = 0xAA; /* Stop byte */
-//                        lwrb_write(&usart_tx_rb, &b, 1);
-//
-//                        /* Flush everything */
-//                        usart_start_tx_dma_transfer();
-//                    }
-//                    state = 0;
-//                    break;
-//                }
-//            }
-//        }
-//
-//        /* Do other tasks ... */
-//    }
-//}
-//
-//

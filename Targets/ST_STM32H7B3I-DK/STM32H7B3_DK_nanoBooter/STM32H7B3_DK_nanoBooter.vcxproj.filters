@@ -1196,9 +1196,6 @@
     <ClInclude Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.h">
       <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
-    <ClInclude Include="stm32h7xx_Usart.h">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props" />

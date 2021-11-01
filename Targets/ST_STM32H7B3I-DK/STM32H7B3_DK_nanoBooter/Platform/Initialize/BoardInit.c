@@ -18,10 +18,11 @@
 RTC_HandleTypeDef RtcHandle;
 #endif
 
-eBooterStatus nanoBooterState;
 CRC_HandleTypeDef CrcHandle;
 UART_HandleTypeDef WProtocolUart;
 DMA_HandleTypeDef s_DMAHandle;
+
+eBooterStatus nanoBooterState;
 
 #ifdef HAL_RTC_MODULE_ENABLED
 void System_IniRtc(void)
@@ -37,7 +38,7 @@ void System_IniRtc(void)
     if (HAL_RTC_Init(&RtcHandle) != HAL_OK)
     {
         // Initialization Error
-        while (1)
+        while(1)
         {
         }
     }
@@ -47,10 +48,10 @@ void System_IniRtc(void)
 void BoardInit()
 {
 
-    HAL_Init();            // STM32H7xx HAL library initialization
-    SCB_EnableICache();    // Enable I-Cache
-    SCB_EnableDCache();    // Enable D-Cache
-    SystemClock_Config();  // To review: Do we need to configure the system clock from default??
+    HAL_Init();             // STM32H7xx HAL library initialization
+    SCB_EnableICache();     // Enable I-Cache
+    SCB_EnableDCache();     // Enable D-Cache
+    SystemClock_Config();   // To review: Do we need to configure the system clock from default??
 
     LedsAndBoardInit();
 
@@ -86,8 +87,8 @@ void nanoBooterStatus(uint32_t nanoBooterState)
         switch ((eBooterStatus)nanoBooterState)
         {
         case ok:
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);  // Off
-            while (true)
+            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);   // Off
+            while(true)
             {
                 HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_RESET);
                 tx_thread_sleep(50);
@@ -97,8 +98,8 @@ void nanoBooterStatus(uint32_t nanoBooterState)
             }
             break;
         case communications_failure:
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);  // Off
-            while (true)
+            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);   // Off
+            while(true)
             {
                 HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_RESET);
                 tx_thread_sleep(50);
