@@ -43,42 +43,6 @@
     <Filter Include="Platform\Memory">
       <UniqueIdentifier>{8438f779-2463-438f-abd1-0d09408c3f69}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\nf-interpreter">
-      <UniqueIdentifier>{ace8be4a-19c2-41a8-8faa-2a2a8a502de4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src">
-      <UniqueIdentifier>{0e20e5f8-ef4c-4e67-9ad1-f6cfdf577167}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\CLR">
-      <UniqueIdentifier>{8eef149c-eca0-43f3-aaba-55a3b27c30d9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\CLR\Core">
-      <UniqueIdentifier>{0c8db256-b679-4ed0-8a76-0bcc6f21ef24}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\CLR\WireProtocol">
-      <UniqueIdentifier>{f7481372-b55d-49b9-a4ec-1fa69193c4f3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\CLR\Include">
-      <UniqueIdentifier>{57f5dec6-a49f-4c5b-8db9-6e687cb52985}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\CLR\Debugger">
-      <UniqueIdentifier>{74f839e9-cdf0-4c95-9c8a-4b5f57dd3248}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\HAL">
-      <UniqueIdentifier>{d136254d-5e54-4131-8fde-f67e11601c4a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\HAL\Include">
-      <UniqueIdentifier>{0cf7adb4-ac3f-4b72-bf60-048f727e9cdb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\PAL">
-      <UniqueIdentifier>{3b01245b-254c-403d-8422-ecc01be34a56}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\PAL\BlockStorage">
-      <UniqueIdentifier>{c8061881-fea8-4ccf-8243-409dde6bdcfa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\nf-interpreter\src\PAL\Include">
-      <UniqueIdentifier>{c758330a-e515-47fe-bb28-67c54cd66e70}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Platform\Configuration">
       <UniqueIdentifier>{6a6e7105-42cb-446a-9241-8b321410f89f}</UniqueIdentifier>
     </Filter>
@@ -90,12 +54,6 @@
     </Filter>
     <Filter Include="Platform\Startup">
       <UniqueIdentifier>{ac192e37-9c28-434b-a565-971e0eefdc2a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Device-specific files">
-      <UniqueIdentifier>{f6bf054f-dbdf-4492-8dfe-cb7cf2803441}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Device-specific files\Semihosting/Profiler">
-      <UniqueIdentifier>{dacba017-d268-49f8-b43a-eb0c60ed60a2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Azure-RTOS">
       <UniqueIdentifier>{e4090af3-799a-4a9a-9e03-76ca2078d384}</UniqueIdentifier>
@@ -135,6 +93,48 @@
     </Filter>
     <Filter Include="StrangeStuff">
       <UniqueIdentifier>{6ae2146b-6b1c-466c-bc58-3ae258119dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter">
+      <UniqueIdentifier>{ace8be4a-19c2-41a8-8faa-2a2a8a502de4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src">
+      <UniqueIdentifier>{0e20e5f8-ef4c-4e67-9ad1-f6cfdf577167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR">
+      <UniqueIdentifier>{8eef149c-eca0-43f3-aaba-55a3b27c30d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core">
+      <UniqueIdentifier>{0c8db256-b679-4ed0-8a76-0bcc6f21ef24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\WireProtocol">
+      <UniqueIdentifier>{f7481372-b55d-49b9-a4ec-1fa69193c4f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Include">
+      <UniqueIdentifier>{57f5dec6-a49f-4c5b-8db9-6e687cb52985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Debugger">
+      <UniqueIdentifier>{74f839e9-cdf0-4c95-9c8a-4b5f57dd3248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL">
+      <UniqueIdentifier>{d136254d-5e54-4131-8fde-f67e11601c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL\Include">
+      <UniqueIdentifier>{0cf7adb4-ac3f-4b72-bf60-048f727e9cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL">
+      <UniqueIdentifier>{3b01245b-254c-403d-8422-ecc01be34a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\BlockStorage">
+      <UniqueIdentifier>{c8061881-fea8-4ccf-8243-409dde6bdcfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Include">
+      <UniqueIdentifier>{c758330a-e515-47fe-bb28-67c54cd66e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Semihosting/Profiler">
+      <UniqueIdentifier>{dacba017-d268-49f8-b43a-eb0c60ed60a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Messaging">
+      <UniqueIdentifier>{879b1e43-373c-4ad2-abbb-537fe7010916}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -348,130 +348,112 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\WireProtocol.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\WireProtocol_Message.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoPackStruct.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoSupport.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoVersion.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nanoWeak.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Include\nf_errors_exceptions.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\CLR\Debugger\Debugger.h">
-      <Filter>Platform\nf-interpreter\src\CLR\Debugger</Filter>
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\HAL\Include\nanoHAL_Types.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Network.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Power.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Spi.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Time.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_v2.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\Include\nanoHAL_Watchdog.h">
-      <Filter>Platform\nf-interpreter\src\HAL\Include</Filter>
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\PAL\Include\nanoPAL_BlockStorage.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_COM.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_Events.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_GPIO.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_Network.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_Sockets.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\nanoPAL_Time.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\CPU_GPIO_decl.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\nf-interpreter\src\PAL\Include\CPU_SPI_decl.h">
-      <Filter>Platform\nf-interpreter\src\PAL\Include</Filter>
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
     </ClInclude>
     <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClCompile>
     <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClCompile>
     <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClCompile>
     <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClCompile>
     <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
@@ -479,6 +461,9 @@
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClInclude>
     <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
@@ -504,24 +489,9 @@
     <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32_assert_template.h">
@@ -1196,25 +1166,106 @@
     <ClInclude Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.h">
       <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Application.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Checks.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Debugging.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ErrorCodes.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Hardware.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Interop.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Messaging.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ParseOptions.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_PlatformDef.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Profiling.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__HeapBlock.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__Serialization.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Types.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Win32.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoPackStruct.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoSupport.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoVersion.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoWeak.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nf_errors_exceptions.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\stdafx.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_Message.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_Message.c">
-      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\nanoHAL_Boot.c">
-      <Filter>Platform\nf-interpreter\src\HAL</Filter>
+      <Filter>nf-interpreter\src\HAL</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
-      <Filter>Platform\nf-interpreter\src\HAL</Filter>
+      <Filter>nf-interpreter\src\HAL</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
-      <Filter>Platform\nf-interpreter\src\HAL</Filter>
+      <Filter>nf-interpreter\src\HAL</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\nf-Interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
-      <Filter>Platform\nf-interpreter\src\PAL\BlockStorage</Filter>
+      <Filter>nf-interpreter\src\PAL\BlockStorage</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
@@ -1247,10 +1298,10 @@
       <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
-      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="Platform\BlockStorage\Device_BlockStorage.c">
       <Filter>Platform\BlockStorage</Filter>
@@ -1883,7 +1934,7 @@
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
-      <Filter>Platform\nf-interpreter\src\CLR\WireProtocol</Filter>
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c">
       <Filter>Platform\WireProtocol</Filter>
@@ -1986,6 +2037,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c">
       <Filter>Platform\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging.cpp">
+      <Filter>nf-interpreter\src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Messaging</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -157,9 +157,6 @@
     <Filter Include="src\PAL\COM\sockets\ssl">
       <UniqueIdentifier>{12551a71-9125-422c-a43b-bbecd4970142}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\PAL\COM\sockets\ssl\mbedTLS">
-      <UniqueIdentifier>{63e726a6-ca1a-4e32-a148-8c174422fabc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\PAL\Double">
       <UniqueIdentifier>{329471fa-bc7c-4272-b556-5bc35bd67f28}</UniqueIdentifier>
     </Filter>
@@ -561,6 +558,9 @@
     </Filter>
     <Filter Include="src\System.Device.Adc">
       <UniqueIdentifier>{6eca1ec1-131a-4c10-add7-239879fda805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PAL\COM\sockets\ssl\mbedTLS">
+      <UniqueIdentifier>{a9566919-7036-43e9-8577-b7d2e53e4913}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -971,48 +971,6 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
       <Filter>src\PAL\BlockStorage</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_accept_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_add_cert_auth_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_close_socket_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_connect_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_decode_private_key_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_exit_context_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic_init_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_initialize_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_parse_certificate_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_pending_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_read_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_uninitialize_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_write_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl.cpp">
       <Filter>src\PAL\COM\sockets\ssl</Filter>
@@ -2433,6 +2391,48 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface_NULL.cpp">
       <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_accept_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_add_cert_auth_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_close_socket_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_connect_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_decode_private_key_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_exit_context_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic_init_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_initialize_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_parse_certificate_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_pending_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_read_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_uninitialize_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_write_internal.cpp">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">
@@ -2587,12 +2587,6 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
       <Filter>src\HAL\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\mbedtls.h">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\nf_mbedtls_config.h">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\ssl.h">
       <Filter>src\PAL\COM\sockets\ssl</Filter>
@@ -3355,6 +3349,12 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Debug_To_Display.h">
       <Filter>src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\mbedtls.h">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\nf_mbedtls_config.h">
+      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

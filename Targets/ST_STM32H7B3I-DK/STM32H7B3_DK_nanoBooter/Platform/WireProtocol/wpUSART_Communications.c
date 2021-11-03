@@ -385,7 +385,7 @@ uint8_t usart_start_tx_dma_transfer(void)
         __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_FIFO_ERROR);        // Clear FIFO error flag.
 
         
-    if(HAL_UART_Transmit_DMA(&wpUartHandle, (uint8_t)lwrb_get_linear_block_read_address(&usart_tx_rb), usart_tx_dma_current_len) != HAL_OK)
+    if(HAL_UART_Transmit_DMA(&wpUartHandle, (uint8_t *)lwrb_get_linear_block_read_address(&usart_tx_rb), usart_tx_dma_current_len) != HAL_OK)
         {
             
         }
@@ -397,7 +397,7 @@ uint8_t usart_start_tx_dma_transfer(void)
 
 void Test()
 {
-    int state = 0;
+    uint8_t state, cmd, len;
     while (1) {
         uint8_t b;
 
