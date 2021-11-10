@@ -22,3 +22,9 @@
 [submodule "ExternalRepositories/fatfs"]
 	path = ExternalRepositories/fatfs
 	url = https://github.com/abbrev/fatfs.git
+[submodule "ExternalRepositories/azure-rtos/filex"]
+	path = ExternalRepositories/azure-rtos/filex
+	url = https://github.com/azure-rtos/filex.git
+[submodule "ExternalRepositories/azure-rtos/usbx"]
+	path = ExternalRepositories/azure-rtos/usbx
+	url = https://github.com/azure-rtos/usbx.git
