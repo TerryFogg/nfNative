@@ -4,12 +4,9 @@
 // See LICENSE file in the project root for full license information.
 //
 
-
-#include <nanoCLR_Headers.h>
-#include <stm32h7xx_hal.h>
 #include <BoardInit.h>
-#include <wpUSART_Communications.h>
-#include <nanoHAL_v2.h>
+#include "stm32h7b3i_discovery_lcd.h"
+#include "stm32h7b3i_discovery_sdram.h"
 
 #define RTC_ASYNCH_PREDIV 0x7F      // LSE as RTC clock
 #define RTC_SYNCH_PREDIV 0x00FF     // LSE as RTC clock
@@ -18,11 +15,12 @@
 RTC_HandleTypeDef RtcHandle;
 #endif
 
-CRC_HandleTypeDef CrcHandle;
 UART_HandleTypeDef WProtocolUart;
 DMA_HandleTypeDef s_DMAHandle;
 
-eBooterStatus nanoBooterState;
+
+CRC_HandleTypeDef CrcHandle;
+
 
 #ifdef HAL_RTC_MODULE_ENABLED
 void System_IniRtc(void)
@@ -48,23 +46,24 @@ void System_IniRtc(void)
 void BoardInit()
 {
 
-    HAL_Init();             // STM32H7xx HAL library initialization
-    SCB_EnableICache();     // Enable I-Cache
-    SCB_EnableDCache();     // Enable D-Cache
-    SystemClock_Config();   // To review: Do we need to configure the system clock from default??
-
+    HAL_Init();              // STM32H7xx HAL library initialization
+    SCB_EnableICache();      // Enable I-Cache
+    SCB_EnableDCache();      // Enable D-Cache
+    SystemClock_Config();    // To review: Do we need to configure the system clock from default??
     LedsAndBoardInit();
-
     // System_IniRtc();
-
-    // config CRC32 unit
-    CrcHandle.Instance = CRC;
-    CrcHandle.Init.DefaultPolynomialUse = DEFAULT_POLYNOMIAL_ENABLE;
-    CrcHandle.Init.InputDataInversionMode = CRC_INPUTDATA_INVERSION_NONE;
-    CrcHandle.Init.OutputDataInversionMode = CRC_OUTPUTDATA_INVERSION_DISABLE;
-    CrcHandle.InputDataFormat = CRC_INPUTDATA_FORMAT_BYTES;
-
-    HAL_CRC_Init(&CrcHandle);
+    ConfigureCRC();
+    
+    /* Initialized SDRAM */
+    if (BSP_SDRAM_Init(0) != BSP_ERROR_NONE)      /* Initialize the SDRAM */
+    {
+        while (true) ;
+    }
+    
+    
+    InitializeGraphics();
+    
+    
 }
 
 // LEDs and user button of the STM32H7B3I-DK board
@@ -78,36 +77,13 @@ void LedsAndBoardInit()
     GPIO_InitStructure.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStructure);
 }
-
-__attribute__((noreturn))
-void nanoBooterStatus(uint32_t nanoBooterState)
+void ConfigureCRC()
 {
-    while (true)
-    {
-        switch ((eBooterStatus)nanoBooterState)
-        {
-        case ok:
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);   // Off
-            while(true)
-            {
-                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_RESET);
-                tx_thread_sleep(50);
-
-                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);
-                tx_thread_sleep(50);
-            }
-            break;
-        case communications_failure:
-            HAL_GPIO_WritePin(LED_GPIO_PORT, LED_BLUE, GPIO_PIN_SET);   // Off
-            while(true)
-            {
-                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_RESET);
-                tx_thread_sleep(50);
-
-                HAL_GPIO_WritePin(LED_GPIO_PORT, LED_RED, GPIO_PIN_SET);
-                tx_thread_sleep(50);
-            }
-            break;
-        }
-    }
+    CrcHandle.Instance = CRC;
+    CrcHandle.Init.DefaultPolynomialUse = DEFAULT_POLYNOMIAL_ENABLE;
+    CrcHandle.Init.InputDataInversionMode = CRC_INPUTDATA_INVERSION_NONE;
+    CrcHandle.Init.OutputDataInversionMode = CRC_OUTPUTDATA_INVERSION_DISABLE;
+    CrcHandle.InputDataFormat = CRC_INPUTDATA_FORMAT_BYTES;
+    HAL_CRC_Init(&CrcHandle);
 }
+

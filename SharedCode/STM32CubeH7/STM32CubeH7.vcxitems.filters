@@ -256,6 +256,27 @@
     <Filter Include="Middlewares\Third_Party\FreeRTOS\Source\Include">
       <UniqueIdentifier>{f4058d84-d6cd-42eb-a59f-bfd50b1dbecc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Projects\STM32H7B3I-DK\Example\LTDC">
+      <UniqueIdentifier>{1f18e8a4-cd9f-48ea-99b2-1c4edec2f957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers">
+      <UniqueIdentifier>{ac546f27-614b-4bd7-a5f6-402afa81f9b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H7B3I-DK\Example\LTDC\LTDC_ColorKeying_FromOSPI">
+      <UniqueIdentifier>{835302d3-0029-4343-a706-b47006df6b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc">
+      <UniqueIdentifier>{5a7171a4-3bc9-419f-8a45-2d075215d419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Src">
+      <UniqueIdentifier>{bdddbab1-f6e8-4b96-b213-65584e24ab9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\Common">
+      <UniqueIdentifier>{d82eaf1b-d487-4882-a33b-bd050d610c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\is42s16800j">
+      <UniqueIdentifier>{d5b4cdfb-c593-469a-879a-838dd22bfd94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Documentation\STM32CubeH7GettingStarted.pdf">
@@ -1015,6 +1036,21 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\ResourcesManager\res_mgr.c">
       <Filter>Utilities\ResourceManager</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\main.c">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\stm32h7xx_hal_msp.c">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\stm32h7xx_it.c">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\system_stm32h7xx.c">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.c">
+      <Filter>Drivers\BSP\Components\is42s16800j</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK\stm32h7b3i_discovery.h">
@@ -1706,6 +1742,75 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h">
       <Filter>Middlewares\Third_Party\FreeRTOS\Source\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\ft5336_conf.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\is42s16800j_conf.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\L8_320x240.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\main.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\RGB565_320x240.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7b3i_discovery_conf.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7xx_hal_conf.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7xx_it.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\audio.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\camera.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\dpredriver.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\env_sensor.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\epd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\idd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\io.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\lcd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\motion_sensor.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\pwrmon.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\ts.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\usbtypecswitch.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.h">
+      <Filter>Drivers\BSP\Components\is42s16800j</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j_conf_template.h">
+      <Filter>Drivers\BSP\Components\is42s16800j</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoCLR\Platform\Graphics\is42s16800j_conf.h">
+      <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

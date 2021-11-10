@@ -95,6 +95,7 @@
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06_reg.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\otm8009a\otm8009a.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\otm8009a\otm8009a_reg.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\STM32H735G-DK\stm32h735g_discovery.c" />
@@ -259,6 +260,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_desc_template.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\main.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\stm32h7xx_hal_msp.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\stm32h7xx_it.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Src\system_stm32h7xx.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\CPU\cpu_utils.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\Fonts\font12.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\Fonts\font16.c" />
@@ -271,9 +276,23 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\ResourcesManager\res_mgr.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\audio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\dpredriver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\env_sensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\epd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\idd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\io.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\lcd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\motion_sensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\pwrmon.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\ts.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\usbtypecswitch.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06_conf_template.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06_reg.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j_conf_template.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\otm8009a\otm8009a.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\otm8009a\otm8009a_reg.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\STM32H735G-DK\stm32h735g_discovery.h" />
@@ -492,6 +511,14 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc\FreeRTOSConfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\ft5336_conf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\is42s16800j_conf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\L8_320x240.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\main.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\RGB565_320x240.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7b3i_discovery_conf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7xx_hal_conf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H7B3I-DK\Examples\LTDC\LTDC_Display_2Layers\Inc\stm32h7xx_it.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\Common\utilities_conf_template.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\CPU\cpu_utils.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\Fonts\fonts.h" />
@@ -501,6 +528,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\Lcd_Trace\lcd_trace.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\ResourcesManager\res_mgr.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\ResourcesManager\res_mgr_conf_stm32h7_template.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoCLR\Platform\Graphics\is42s16800j_conf.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STemWin\readme.txt" />

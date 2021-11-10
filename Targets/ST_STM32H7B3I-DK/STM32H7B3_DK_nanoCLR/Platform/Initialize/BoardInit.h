@@ -6,25 +6,25 @@
 // See LICENSE file in the project root for full license information.
 //
 
-
-#include <nanoCLR_Headers.h>
 #include <stm32h7xx_hal.h>
 #include <stm32h7xx_hal_def.h>
 #include <stm32h7xx_hal_uart.h>
 #include <stm32h7xx_hal_usart.h>
 #include <stm32h7xx_hal_dma.h>
 
-enum nanoBooterStatusTypes { ok = 0, communications_failure = 1 }
-;
-typedef enum nanoBooterStatusTypes eBooterStatus;
+#include <nanoHAL_v2.h>
+#include <nanoCLR_Headers.h>
+#include <nanoHAL_Graphics.h>
 
 void BoardInit();
 void LedsAndBoardInit();
-void nanoBooterStatus(uint32_t nanoBooterState);
+void ConfigureCRC();
+
+
 void Startup_Rtos();
 void SystemClock_Config(void);
 
-extern eBooterStatus nanoBooterState;
+void InitializeGraphics(void);
 
 // ========================
 // STM32H7B3I-DK board Leds

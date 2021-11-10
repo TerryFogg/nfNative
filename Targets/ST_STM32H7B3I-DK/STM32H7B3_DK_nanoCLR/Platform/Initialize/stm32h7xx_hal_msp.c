@@ -131,7 +131,3 @@ void HAL_RNG_MspDeInit(RNG_HandleTypeDef* hrng)
 }
 
 #endif // HAL_RNG_MODULE_ENABLED
-uint32_t HAL_GetTick(void)
-{
-    return tx_time_get() * 10;
-}

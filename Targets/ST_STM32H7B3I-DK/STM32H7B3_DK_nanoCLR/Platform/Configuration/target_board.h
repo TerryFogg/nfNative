@@ -14,5 +14,7 @@
 #include <target_common.h>
 
 #define OEMSYSTEMINFOSTRING "nanoBooter running STM32H7B3I-DK"
+#define NANOCLR_GRAPHICS TRUE
+#define NANOCLR_GRAPHICS_USING_SPI TRUE
 
 #endif /* _TARGET_BOARD_NANOBOOTER_H_ */

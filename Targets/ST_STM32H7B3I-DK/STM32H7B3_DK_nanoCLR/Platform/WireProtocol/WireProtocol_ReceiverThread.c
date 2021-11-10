@@ -18,11 +18,11 @@ void ReceiverThread_entry(uint32_t parameter)
 
     if (InitWireProtocolCommunications() == true)  // NOTE: Don't call  Scheduler type calls in this module
     {
-        nanoBooterState = ok;
+        //
     }
     else
     {
-        nanoBooterState = communications_failure;
+        //
     }
 
     tx_thread_sleep(50);
