@@ -97,35 +97,6 @@ This enables Azure RTOS ThreadX to place memory protection (via MPU or MMU) arou
 
 # STM32H7B3 #
 
-  Address    | Item                   | Size               |Total       
-:------------|:----------------------:|--------------------:|-----|--|
-0XD0000000   | SDRAM Bank 2 (4x64MB)  |256M                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0XC0000000   | SDRAM Bank 1 (4x64MB)  |256M                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X90000000   | OCTOSPI1               |256M                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X70000000   | OCTOSPI2               |256M                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X38800000   | Backup SRAM            |  4K                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X38000000   | SRD RAM                |  32k                |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X30010000<br>0X30000000|AHB SRAM2<br>AHB SRAM1|64K<br>64K  |128K |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X240A0000<br>0X24040000<br>0X24000000|AXI SRAM3<br>AXI SRAM2<br>AXI SRAM1|384K<br>384K<br>256k| 1024K |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X20000000   | DTCM SRAM              |  128k               |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X1FF10000<br>0X1FF00000|Sys Bank 2<br>Sys Bank 1|64k<br>64k|128k |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X81000000<br>0X80000000|Flash Bank 2<br>Flash Bank 1|1024K<br>1024K|2048K|  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X8FFF8000   | Flash STM Read         |  512                |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X38000000   | Flash User OTP         |  1K                 |     |  |
-0XC0000000<br>0XC0000000 |                        |                     |     |  |
-0X38000000   | ITCM RAM               |  64k                |     |  |
-0X37FFFFFF<br>0X00000000|                        |                     |     |  |
--------------|------------------------|---------------------|-----|--|
-</div>
+
+
+<img src="C:\repos\nfNative\Documents\Notes\nanoFrameworkArchitecture.svg">
