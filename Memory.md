@@ -64,39 +64,8 @@ This enables Azure RTOS ThreadX to place memory protection (via MPU or MMU) arou
 
 
 
-<style>
-.heatMap th {
-
-}
-
-.heatMap tr:nth-child(1)  { background: cyan; height:80px}
-.heatMap tr:nth-child(2)  { background: white; height:10px}
-.heatMap tr:nth-child(3)  { background: cyan; height:120px}
-.heatMap tr:nth-child(4)  { background: white; height:110px}
-.heatMap tr:nth-child(5)  { background: cyan; height:120px}
-.heatMap tr:nth-child(6)  { background: cyan; height:120px}
-.heatMap tr:nth-child(7)  { background: cyan; height:80px}
-.heatMap tr:nth-child(8)  { background: cyan; height:80px}
-.heatMap tr:nth-child(9)  { background: yellow; height:80px}
-.heatMap tr:nth-child(10) { background: salmon; height:80px}
-.heatMap tr:nth-child(11) { background: salmon; height:80px}
-.heatMap tr:nth-child(12) { background: salmon; height:80px}
-.heatMap tr:nth-child(13) { background: yellow; height:80px}
-.heatMap tr:nth-child(14) { background: yellow; height:80px}
-.heatMap tr:nth-child(15) { background: yellow; height:280px}
-.heatMap tr:nth-child(16) { background: yellow; height:280px}
-.heatMap tr:nth-child(17) { background: yellow; height:80px}
-.heatMap tr:nth-child(18) { background: yellow; height:80px}
-.heatMap tr:nth-child(19) { background: red; height:20px}
-.heatMap tr:nth-child(20) { background: lightsteelblue; height:180px}
-.heatMap tr:nth-child(21) { background: lightsteelblue; height:180px}
-
-</style>
-
-<div class="heatMap">
-
 # STM32H7B3 #
 
 
 
-<img src="C:\repos\nfNative\Documents\Notes\nanoFrameworkArchitecture.svg">
+<img src=".\\Documents\Notes\nanoFrameworkArchitecture.svg">
