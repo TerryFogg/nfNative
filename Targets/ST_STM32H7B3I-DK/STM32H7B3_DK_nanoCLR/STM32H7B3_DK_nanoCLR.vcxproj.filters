@@ -283,6 +283,9 @@
     <Filter Include="Platform\STM32CubeH7\BSP\Components\rk043fn48h">
       <UniqueIdentifier>{5e1a6974-aa07-4356-a429-a53f7ca4775a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\CommonCode">
+      <UniqueIdentifier>{635fd1e2-a214-4ec7-a0cf-a1fda15ff561}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
@@ -512,9 +515,6 @@
     </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics</Filter>
-    </None>
-    <None Include="Platform\Memory\rules_clr.ld">
-      <Filter>Platform\Memory</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -1530,6 +1530,9 @@
     </ClInclude>
     <ClInclude Include="Platform\STM32CubeH7\BSP\Components\rk043fn48h\rk043fn48h.h">
       <Filter>Platform\STM32CubeH7\BSP\Components\rk043fn48h</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Graphics\RGB565_320x240.h">
+      <Filter>Platform\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2838,9 +2841,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.c">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\Otm8009a_DSI_Video_Mode.cpp">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.cpp">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
     </ClCompile>
@@ -2991,9 +2991,6 @@
     <ClCompile Include="Platform\BlockStorage\Target_BlockStorage_STM32FlashDriver.c">
       <Filter>Platform\BlockStorage</Filter>
     </ClCompile>
-    <ClCompile Include="LTDC_To_Display.cpp">
-      <Filter>Platform\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\PAL\targetPAL_Time.cpp">
       <Filter>Platform\PAL</Filter>
     </ClCompile>
@@ -3045,18 +3042,24 @@
     <ClCompile Include="Platform\Graphics\I2c_To_TouchPanel.cpp">
       <Filter>Platform\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="LTDC_DMA2D_To_Video.cpp">
+      <Filter>Platform\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Graphics\RK043FN48H_VideoMode.cpp">
+      <Filter>Platform\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <LinkerScript Include="Platform\Memory\STM32H7B3I-DK.ld">
+      <Filter>Platform\Memory</Filter>
+    </LinkerScript>
     <LinkerScript Include="Platform\Memory\rules_bootclipboard.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
+    <LinkerScript Include="Platform\Memory\rules_clr.ld">
+      <Filter>Platform\Memory</Filter>
+    </LinkerScript>
     <LinkerScript Include="Platform\Memory\rules_code.ld">
-      <Filter>Platform\Memory</Filter>
-    </LinkerScript>
-    <LinkerScript Include="Platform\Memory\STM32H7B3xx_CLR.ld">
-      <Filter>Platform\Memory</Filter>
-    </LinkerScript>
-    <LinkerScript Include="Platform\Memory\rules_stack.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
     <LinkerScript Include="Platform\Memory\rules_data.ld">
@@ -3065,13 +3068,7 @@
     <LinkerScript Include="Platform\Memory\rules_graphics.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
-    <LinkerScript Include="Platform\Memory\temp.ld">
-      <Filter>Platform\Memory</Filter>
-    </LinkerScript>
-    <LinkerScript Include="Platform\Memory\regions.ld">
-      <Filter>Platform\Memory</Filter>
-    </LinkerScript>
-    <LinkerScript Include="Platform\Memory\DeviceMemoryLayout.ld">
+    <LinkerScript Include="Platform\Memory\rules_stack.ld">
       <Filter>Platform\Memory</Filter>
     </LinkerScript>
   </ItemGroup>

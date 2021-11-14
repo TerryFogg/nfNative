@@ -172,21 +172,6 @@
     <Filter Include="Projects\STM32H7B3I-DK">
       <UniqueIdentifier>{1f6baebd-6ec5-4214-8782-8000e7ee579f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Projects\STM32H750B-DK">
-      <UniqueIdentifier>{55c8385d-67c4-4014-b9d7-596fc3d95e8b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Projects\STM32H750B-DK\Applications">
-      <UniqueIdentifier>{dbc9add7-c9b7-4adf-94c0-a3e8ddd2a216}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Projects\STM32H750B-DK\Demonstrations">
-      <UniqueIdentifier>{0aae4a74-702b-4bb3-b01d-df6acde006f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Projects\STM32H750B-DK\Examples">
-      <UniqueIdentifier>{45631878-66d5-4cb8-81a8-356a0d5184e5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Projects\STM32H750B-DK\Templates">
-      <UniqueIdentifier>{56532a27-aa94-4a7c-a4a1-64a565e99c5a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Projects\STM32H7B3I-DK\Applications">
       <UniqueIdentifier>{487d3dd0-4841-4519-8f6f-65da1b2dc11e}</UniqueIdentifier>
     </Filter>
@@ -276,6 +261,21 @@
     </Filter>
     <Filter Include="Drivers\BSP\Components\is42s16800j">
       <UniqueIdentifier>{d5b4cdfb-c593-469a-879a-838dd22bfd94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H735G-DK">
+      <UniqueIdentifier>{55c8385d-67c4-4014-b9d7-596fc3d95e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H735G-DK\Applications">
+      <UniqueIdentifier>{dbc9add7-c9b7-4adf-94c0-a3e8ddd2a216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H735G-DK\Demonstrations">
+      <UniqueIdentifier>{0aae4a74-702b-4bb3-b01d-df6acde006f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H735G-DK\Examples">
+      <UniqueIdentifier>{45631878-66d5-4cb8-81a8-356a0d5184e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32H735G-DK\Templates">
+      <UniqueIdentifier>{56532a27-aa94-4a7c-a4a1-64a565e99c5a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

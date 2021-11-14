@@ -4932,6 +4932,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\samples\demo_threadx.c">
       <Filter>ThreadX\samples</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)nanoFrameworkAdaptionLayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">

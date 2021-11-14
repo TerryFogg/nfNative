@@ -18,6 +18,7 @@ extern CLR_UINT32 GraphicsHeapEnd;
 
 bool GraphicsMemory::GraphicsHeapLocation(CLR_UINT32 requested, CLR_UINT8 * &graphicsStartingAddress, CLR_UINT8 * &graphicsEndingAddress)
 {
+    (void)requested; // Not used return what has been defined in the memory script
     graphicsStartingAddress = (CLR_UINT8*)&GraphicsHeapBegin;
     graphicsEndingAddress = (CLR_UINT8*)&GraphicsHeapEnd;
     return true;

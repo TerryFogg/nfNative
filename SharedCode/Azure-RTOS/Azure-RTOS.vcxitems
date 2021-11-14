@@ -1567,6 +1567,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\usbx\common\usbx_pictbridge\src\ux_pictbridge_xml_function_root_output.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\usbx\common\usbx_pictbridge\src\ux_pictbridge_xml_function_root_xml.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\usbx\samples\demo_usbx.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)nanoFrameworkAdaptionLayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_api.h" />
