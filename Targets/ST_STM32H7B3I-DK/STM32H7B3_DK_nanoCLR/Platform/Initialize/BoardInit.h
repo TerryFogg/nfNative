@@ -17,14 +17,15 @@
 #include <nanoHAL_Graphics.h>
 
 void BoardInit();
-void LedsAndBoardInit();
+void Board_LED_Initialization();
 void ConfigureCRC();
-
-
+void Initialize_OPSPI_Hyperam();
+void System_IniRtc(void);
+void SystemClock_Config();
+void CPU_CACHE_Enable(void);
 void Startup_Rtos();
-void SystemClock_Config(void);
-
 void InitializeGraphics(void);
+
 
 // ========================
 // STM32H7B3I-DK board Leds

@@ -67,7 +67,7 @@
     ret = HAL_RCC_OscConfig(&RCC_OscInitStruct);
     if (ret != HAL_OK)
     {
-        while (1) {};
+        HAL_AssertEx();
     }
 
     /* Select PLL as system clock source and configure  bus clocks dividers */
@@ -84,7 +84,7 @@
     ret = HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_6);
     if (ret != HAL_OK)
     {
-        while (1) {};
+        HAL_AssertEx();
     }
 }
 

@@ -17,10 +17,7 @@
 #include "DisplayInterface.h"
 #include <nanoCLR_Interop.h>
 
-#include "stm32h7b3i_discovery.h"
 #include "stm32h7b3i_discovery_lcd.h"
-#include "stm32h7b3i_discovery_sdram.h"
-#include "stm32h7xx_ll_bus.h"
 #include "stm32h7xx_ll_dma2d.h"
 
 
@@ -37,7 +34,6 @@ CLR_UINT32 lcd_y_size = 272;
 
 /* Timer handler declaration */
 static TIM_HandleTypeDef hlcd_tim;
-BSP_LCD_Ctx_t       Lcd_Ctx;
 
 
 uint32_t Width;
@@ -49,36 +45,31 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
     Width = config.VideoDisplay.width;
     Height = config.VideoDisplay.height;
 
-    /* Store pixel format, xsize and ysize information */
-    Lcd_Ctx.BppFactor = 2U;
-    Lcd_Ctx.PixelFormat = ltdc_pixel_format;
-    Lcd_Ctx.XSize  = Width;
-    Lcd_Ctx.YSize  = Height;
 
-    /* Enable GPIOs clock */
+    // Enable GPIOs clock
+    __HAL_RCC_GPIOI_CLK_ENABLE();
+    __HAL_RCC_GPIOJ_CLK_ENABLE();
+    __HAL_RCC_GPIOK_CLK_ENABLE();
 
-    /*** LTDC Pins configuration ***/
-    /* GPIO I configuration */
+    // LTDC Pins configuration
+    // GPIO I configuration
     GPIO_InitTypeDef  gpio_init_structure;
-
-    gpio_init_structure.Pin       = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
     gpio_init_structure.Mode      = GPIO_MODE_AF_PP;
     gpio_init_structure.Pull      = GPIO_NOPULL;
     gpio_init_structure.Speed     = GPIO_SPEED_FREQ_HIGH;
+
+    gpio_init_structure.Pin       = GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15;
     gpio_init_structure.Alternate = GPIO_AF14_LTDC;
-    __HAL_RCC_GPIOI_CLK_ENABLE();
     HAL_GPIO_Init(GPIOI, &gpio_init_structure);
 
     /* GPIO J configuration */
     gpio_init_structure.Pin       = GPIO_PIN_All;
     gpio_init_structure.Alternate = GPIO_AF14_LTDC;
-    __HAL_RCC_GPIOJ_CLK_ENABLE();
     HAL_GPIO_Init(GPIOJ, &gpio_init_structure);
     
     /* GPIO K configuration */
     gpio_init_structure.Pin       = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7;
     gpio_init_structure.Alternate = GPIO_AF14_LTDC;
-    __HAL_RCC_GPIOK_CLK_ENABLE();
     HAL_GPIO_Init(GPIOK, &gpio_init_structure);
 
 
@@ -224,8 +215,6 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
     /* Start PWM Timer channel */
     (void)HAL_TIM_PWM_Start(&hlcd_tim, LCD_TIMx_CHANNEL);
     
-    /* By default the reload is activated and executed immediately */
-    Lcd_Ctx.ReloadEnable = 1U;
 
     return;
 }
@@ -288,7 +277,6 @@ void DisplayInterface::SendCommand(CLR_UINT8 NbrParams, ...)
 int32_t BSP_LCD_SetBrightness(uint32_t Instance, uint32_t Brightness)
 {
     __HAL_TIM_SET_COMPARE(&hlcd_tim, LCD_TIMx_CHANNEL, 2U*Brightness);
-    Lcd_Ctx.Brightness = Brightness;
     return BSP_ERROR_NONE;
 }
 
@@ -300,46 +288,6 @@ int32_t BSP_LCD_SetBrightness(uint32_t Instance, uint32_t Brightness)
   */
 int32_t BSP_LCD_GetBrightness(uint32_t Instance, uint32_t *Brightness)
 {
-    *Brightness = Lcd_Ctx.Brightness;
     return BSP_ERROR_NONE;
 }
 
-
-
-//int32_t BSP_LCD_DisplayOn(uint32_t Instance)
-//{
-//    GPIO_InitTypeDef gpio_init_structure;
-//
-//    __HAL_LTDC_ENABLE(&hlcd_ltdc);
-//
-//    /* Assert LCD_DISP_EN pin */
-//    HAL_GPIO_WritePin(LCD_DISP_CTRL_GPIO_PORT, LCD_DISP_CTRL_PIN, GPIO_PIN_SET);
-//    /* Assert LCD_BL_CTRL pin */
-//    HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_PORT, LCD_BL_CTRL_PIN, GPIO_PIN_SET);
-//
-//    gpio_init_structure.Mode      = GPIO_MODE_AF_PP;
-//    gpio_init_structure.Pull      = GPIO_NOPULL;
-//    gpio_init_structure.Speed     = GPIO_SPEED_FREQ_MEDIUM;
-//    gpio_init_structure.Alternate = LCD_TIMx_CHANNEL_AF;
-//    gpio_init_structure.Pin       = LCD_BL_CTRL_PIN; /* BL_CTRL */
-//    HAL_GPIO_Init(LCD_BL_CTRL_GPIO_PORT, &gpio_init_structure);
-//
-//    return BSP_ERROR_NONE;
-//}
-//int32_t BSP_LCD_DisplayOff(uint32_t Instance)
-//{
-//    GPIO_InitTypeDef gpio_init_structure;
-//    __HAL_LTDC_DISABLE(&hlcd_ltdc);
-//    gpio_init_structure.Mode      = GPIO_MODE_OUTPUT_PP;
-//    gpio_init_structure.Pull      = GPIO_NOPULL;
-//    gpio_init_structure.Speed     = GPIO_SPEED_FREQ_MEDIUM;
-//    gpio_init_structure.Pin       = LCD_BL_CTRL_PIN; /* BL_CTRL */
-//    HAL_GPIO_Init(LCD_BL_CTRL_GPIO_PORT, &gpio_init_structure);
-//
-//    /* Assert LCD_DISP_EN pin */
-//    HAL_GPIO_WritePin(LCD_DISP_CTRL_GPIO_PORT, LCD_DISP_CTRL_PIN, GPIO_PIN_RESET);
-//    /* Assert LCD_BL_CTRL pin */
-//    HAL_GPIO_WritePin(LCD_BL_CTRL_GPIO_PORT, LCD_BL_CTRL_PIN, GPIO_PIN_RESET);
-//
-//    return BSP_ERROR_NONE;
-//}

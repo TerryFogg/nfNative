@@ -10,45 +10,64 @@
 #include <target_board.h>
 #include <nanoHAL_Graphics.h>
 #include "Debug_To_Display.h"
-#include "stm32h7xx_hal_gpio.h"
+
+#define TS_INT_PIN                   GPIO_PIN_2
 
 extern "C"
 {
     void InitializeGraphics()
     {
-        g_GraphicsMemoryHeap.Initialize(0);    // Initialize graphics ram heap size to all available as defined in the memory map
-        
-        
-        
-        DisplayInterfaceConfig config; 
-        config.VideoDisplay.width = 480; //g_DisplayDriver.Attributes.LongerSide;
-        config.VideoDisplay.height = 272; // g_DisplayDriver.Attributes.ShorterSide; 
-        config.VideoDisplay.Frequency_Divider = 5;
-        config.VideoDisplay.enable = GPIO_PIN_7;
-        config.VideoDisplay.control = GPIO_PIN_2;
-        config.VideoDisplay.backlight = GPIO_PIN_1;
-        config.VideoDisplay.Horizontal_synchronization = 41;
-        config.VideoDisplay.Horizontal_back_porch = 13;
-        config.VideoDisplay.Horizontal_front_porch = 32;
-        config.VideoDisplay.Vertical_synchronization = 10;
-        config.VideoDisplay.Vertical_back_porch = 2;
-        config.VideoDisplay.Vertical_front_porch = 2;
-        g_DisplayInterface.Initialize(config);
-        
+        g_GraphicsMemoryHeap.Initialize(0);       // Initialize graphics ram heap size to all available as defined in the memory map
+
+        DisplayInterfaceConfig display_config; 
+        display_config.VideoDisplay.width = 480;    //g_DisplayDriver.Attributes.LongerSide;
+        display_config.VideoDisplay.height = 272;    // g_DisplayDriver.Attributes.ShorterSide; 
+        display_config.VideoDisplay.Frequency_Divider = 5;
+        display_config.VideoDisplay.enable = GPIO_PIN_7;
+        display_config.VideoDisplay.control = GPIO_PIN_2;
+        display_config.VideoDisplay.backlight = GPIO_PIN_1;
+        display_config.VideoDisplay.Horizontal_synchronization = 41;
+        display_config.VideoDisplay.Horizontal_back_porch = 13;
+        display_config.VideoDisplay.Horizontal_front_porch = 32;
+        display_config.VideoDisplay.Vertical_synchronization = 10;
+        display_config.VideoDisplay.Vertical_back_porch = 2;
+        display_config.VideoDisplay.Vertical_front_porch = 2;
+        g_DisplayInterface.Initialize(display_config);
         g_DisplayDriver.Initialize();
         
         
-        TouchInterfaceConfig empty;
-        g_TouchInterface.Initialize(empty);
         
-        //g_TouchDevice.Initialize(TouchInterruptPin);
-        //g_GestureDriver.Initialize();
-        //g_InkDriver.Initialize();
-        //g_TouchPanelDriver.Initialize();
+        TouchInterfaceConfig touch_config;
+        touch_config.i2c_touch_screen_bus_initialize = NULL;
+        touch_config.Address = 0x0070;
+        touch_config.I2c_bus_number =  0;
+        g_TouchInterface.Initialize(touch_config);
+        g_TouchDevice.Initialize(TS_INT_PIN);
+        g_TouchPanelDriver.Initialize();
+        
+        
+      /*  
+        
+        CLR_INT16 x1 = 0;
+        CLR_INT16 y1 = 0;
+        CLR_INT16 x2 = 0;
+        CLR_INT16 y2 = 0;
+        Gesture gesture =  Gesture::NoGesture;
 
-        lcd_printf("\n\nGraphics Initialization: Finished\n");
+        
+        while (1)
+        {
+            CLR_INT32 numberOfTouchPoints = g_TouchDevice.GetPoint(&x1, &y1, &x2, &y2);
+            bool ContactInProgress = (numberOfTouchPoints >= 1);
+            if (ContactInProgress)
+            {
+                lcd_printf("[%d,%d]\n", x1, y1);
+            }
+        }
+        
+        */
     }
-
 }
 
 #endif //_INITIALIZE_GRAPHICS_H_
+

@@ -254,6 +254,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchPanel.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\Ink.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT5336_I2C.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT6236_I2C.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\ft6x06_I2C.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice_NULL.cpp" />
@@ -297,7 +298,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_generic_init_internal.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_initialize_internal.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_parse_certificate_internal.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_pending_internal.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_read_internal.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_uninitialize_internal.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_write_internal.cpp" />
@@ -321,7 +321,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin_stubs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiBusInfo.cpp" />
@@ -356,7 +355,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\nanoSupport_CRC32.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_BlockStorage.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_heap.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\swo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\swo.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\syscalls.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_ConfigurationManager.cpp" />
@@ -757,7 +756,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.h" />

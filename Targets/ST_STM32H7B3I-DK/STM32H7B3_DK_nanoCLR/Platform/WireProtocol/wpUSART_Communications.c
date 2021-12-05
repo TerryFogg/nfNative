@@ -71,9 +71,9 @@ bool InitWireProtocolCommunications()
     
     // Enable the clock for the selected USART and DMA
     
-    wpUSART_CLK_ENABLE();                      // SET_BIT(RCC->APB2ENR, RCC_APB2ENR_USART1EN)     - __HAL_RCC_USART1_CLK_ENABLE()
-    wpUSART_GPIO_CLK_ENABLE();                 // SET_BIT(RCC->AHB4ENR, RCC_AHB4ENR_GPIOAEN);     - __HAL_RCC_GPIOA_CLK_ENABLE()
-    wpDMA_CLK_ENABLE();                        // SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_DMA2EN)       - DMA2
+    wpUSART_CLK_ENABLE();                              // SET_BIT(RCC->APB2ENR, RCC_APB2ENR_USART1EN)     - __HAL_RCC_USART1_CLK_ENABLE()
+    wpUSART_GPIO_CLK_ENABLE();                         // SET_BIT(RCC->AHB4ENR, RCC_AHB4ENR_GPIOAEN);     - __HAL_RCC_GPIOA_CLK_ENABLE()
+    wpDMA_CLK_ENABLE();                                // SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_DMA2EN)       - DMA2
         
     // UART TX/RX GPIO pin configuration and clock
     GPIO_InitStruct.Pin = wpUSART_TX_PIN | wpUSART_RX_PIN;
@@ -99,7 +99,7 @@ bool InitWireProtocolCommunications()
     {
         HAL_AssertEx();
     }
-    __HAL_LINKDMA(&wpUartHandle, hdmarx, hdma_rx);            // Associate the DMA handle to the the USART
+    __HAL_LINKDMA(&wpUartHandle, hdmarx, hdma_rx);                    // Associate the DMA handle to the the USART
 
     // Transmit DMA configuration
     hdma_tx.Instance = wpUSART_TX_DMA_STREAM;
@@ -116,7 +116,7 @@ bool InitWireProtocolCommunications()
     {
         HAL_AssertEx();
     }
-    __HAL_LINKDMA(&wpUartHandle, hdmatx, hdma_tx);            // Associate the DMA handle to the the USART
+    __HAL_LINKDMA(&wpUartHandle, hdmatx, hdma_tx);                    // Associate the DMA handle to the the USART
 
     //NVIC configuration for DMA transfer complete interrupt (USART1_RX)
     HAL_NVIC_SetPriority(wpUSART_DMA_RX_IRQn, 0, 0);
@@ -210,7 +210,7 @@ bool ReadNextPacket(uint8_t** ptr, uint32_t* size)
 }
 void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 {
-    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer));            // Tricky one
+    SCB_InvalidateDCache_by_Addr((uint32_t *)aRxBuffer, sizeof(aRxBuffer));                    // Tricky one
 
     CircularBuffer.TotalPackets++;
     CircularBuffer.NumberNotProcessed++;
@@ -232,11 +232,11 @@ void ReadNextComplete(UART_HandleTypeDef* UartHandle)
 //+++++++++++++++++++++
 #define ARRAY_LEN(x)            (sizeof(x) / sizeof((x)[0]))
 uint8_t  usart_rx_dma_buffer[64];
-lwrb_t  usart_rx_rb;          // Ring buffer instance for TX data
-uint8_t usart_rx_rb_data[128];       // Ring buffer data array for RX DMA
-lwrb_t  usart_tx_rb;           // Ring buffer instance for TX data
-uint8_t usart_tx_rb_data[128];         // Ring buffer data array for TX DMA
-volatile size_t usart_tx_dma_current_len;            //  Length of currently active TX DMA transfer
+lwrb_t  usart_rx_rb;                  // Ring buffer instance for TX data
+uint8_t usart_rx_rb_data[128];               // Ring buffer data array for RX DMA
+lwrb_t  usart_tx_rb;                   // Ring buffer instance for TX data
+uint8_t usart_tx_rb_data[128];                 // Ring buffer data array for TX DMA
+volatile size_t usart_tx_dma_current_len;                    //  Length of currently active TX DMA transfer
 
 
 void WP_DMA_Receive_half_complete()
@@ -272,56 +272,23 @@ void usart_rx_check(void)
 {
     static size_t old_pos;
     size_t pos;
-    
     size_t SpaceRemaining = __HAL_DMA_GET_COUNTER(&hdma_rx);
-
-    /* Calculate current position in buffer and check for new data available */
-    pos = ARRAY_LEN(usart_rx_dma_buffer) - SpaceRemaining;
-    if (pos != old_pos) {
-        /* Check change in received data */
-        if (pos > old_pos) {
-            /* Current position is over previous one */
-            /*
-             * Processing is done in "linear" mode.
-             *
-             * Application processing is fast with single data block,
-             * length is simply calculated by subtracting pointers
-             *
-             * [   0   ]
-             * [   1   ] <- old_pos |------------------------------------|
-             * [   2   ]            |                                    |
-             * [   3   ]            | Single block (len = pos - old_pos) |
-             * [   4   ]            |                                    |
-             * [   5   ]            |------------------------------------|
-             * [   6   ] <- pos
-             * [   7   ]
-             * [ N - 1 ]
-             */
-            usart_process_data(&usart_rx_dma_buffer[old_pos], pos - old_pos);
-        }
-        else {
-            /*
-             * Processing is done in "overflow" mode..
-             *
-             * Application must process data twice,
-             * since there are 2 linear memory blocks to handle
-             *
-             * [   0   ]            |---------------------------------|
-             * [   1   ]            | Second block (len = pos)        |
-             * [   2   ]            |---------------------------------|
-             * [   3   ] <- pos
-             * [   4   ] <- old_pos |---------------------------------|
-             * [   5   ]            |                                 |
-             * [   6   ]            | First block (len = N - old_pos) |
-             * [   7   ]            |                                 |
-             * [ N - 1 ]            |---------------------------------|
-             */
-            usart_process_data(&usart_rx_dma_buffer[old_pos], ARRAY_LEN(usart_rx_dma_buffer) - old_pos);
-            if (pos > 0) {
-                usart_process_data(&usart_rx_dma_buffer[0], pos);
+    pos = ARRAY_LEN(usart_rx_dma_buffer) - SpaceRemaining;                  // Calculate current position in buffer and check for new data available
+    if(pos != old_pos) 
+    {
+        if (pos > old_pos)   // One linear block to copy
+            {  
+                usart_process_data(&usart_rx_dma_buffer[old_pos], pos - old_pos);
             }
-        }
-        old_pos = pos; /* Save current position as old for next transfers */
+        else // Wrap around end of buffer, two blocks to copy
+            {
+                usart_process_data(&usart_rx_dma_buffer[old_pos], ARRAY_LEN(usart_rx_dma_buffer) - old_pos);
+                if (pos > 0)
+                {
+                    usart_process_data(&usart_rx_dma_buffer[0], pos);
+                }
+            }
+        old_pos = pos;    // Save current position as old for next transfers
     }
 }
 
@@ -372,17 +339,18 @@ uint8_t usart_start_tx_dma_transfer(void)
     primask = __get_PRIMASK();
     
     __disable_interrupts();
-    if (usart_tx_dma_current_len == 0 && (usart_tx_dma_current_len = lwrb_get_linear_block_read_length(&usart_tx_rb)) > 0) {
+    if (usart_tx_dma_current_len == 0 && (usart_tx_dma_current_len = lwrb_get_linear_block_read_length(&usart_tx_rb)) > 0) 
+    {
         
         /* Disable channel if enabled */
 
         __HAL_DMA_DISABLE(&hdma_tx);
 
-        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_COMPLETE);         // Clear transfer complete flag.
-        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_HALF_TRANSFER_COMPLETE);         // Clear half transfer flag.
-        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_ERROR);         // Clear transfer error flag.
-        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_DIRECT_MODE_ERROR);        // Clear direct mode error flag.
-        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_FIFO_ERROR);         // Clear FIFO error flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_COMPLETE);                 // Clear transfer complete flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_HALF_TRANSFER_COMPLETE);                 // Clear half transfer flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_TRANSFER_ERROR);                 // Clear transfer error flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_DIRECT_MODE_ERROR);                // Clear direct mode error flag.
+        __HAL_DMA_CLEAR_FLAG(&hdma_tx, wpCLEAR_FIFO_ERROR);                 // Clear FIFO error flag.
 
         
     if(HAL_UART_Transmit_DMA(&wpUartHandle, (uint8_t *)lwrb_get_linear_block_read_address(&usart_tx_rb), usart_tx_dma_current_len) != HAL_OK)
@@ -398,7 +366,8 @@ uint8_t usart_start_tx_dma_transfer(void)
 void Test()
 {
     uint8_t state, cmd, len;
-    while (1) {
+    while (1) 
+    {
         uint8_t b;
 
         /* Process RX ringbuffer */
@@ -409,24 +378,29 @@ void Test()
 
         /* Read byte by byte */
 
-        if (lwrb_read(&usart_rx_rb, &b, 1) == 1) {
+        if (lwrb_read(&usart_rx_rb, &b, 1) == 1) 
+        {
             lwrb_write(&usart_tx_rb, &b, 1); /* Write data to transmit buffer */
             usart_start_tx_dma_transfer();
-            switch (state) {
-            case 0: {
+            switch (state) 
+            {
+            case 0: 
+                {
                     /* Wait for start byte */
                     if (b == 0x55) {
                         ++state;
                     }
                     break;
                 }
-            case 1: {
+            case 1: 
+                {
                     /* Check packet command */
                     cmd = b;
                     ++state;
                     break;
                 }
-            case 2: {
+            case 2:
+                {
                     /* Packet data length */
                     len = b;
                     ++state;
@@ -435,7 +409,8 @@ void Test()
                     }
                     break;
                 }
-            case 3: {
+            case 3: 
+                {
                     /* Data for command */
                     --len; /* Decrease for received character */
                     if (len == 0) {
@@ -443,7 +418,8 @@ void Test()
                     }
                     break;
                 }
-            case 4: {
+            case 4: 
+                {
                     /* End of packet */
                     if (b == 0xAA) {
                         /* Packet is valid */

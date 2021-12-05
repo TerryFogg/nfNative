@@ -3,17 +3,17 @@
   <Memories>
     <MemoryUtilization>
       <MemoryName>FLASH</MemoryName>
-      <Used>553248</Used>
+      <Used>554660</Used>
       <Total>2097152</Total>
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>SRAM</MemoryName>
-      <Used>1146976</Used>
+      <Used>40452</Used>
       <Total>1048576</Total>
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>DTCMRAM</MemoryName>
-      <Used>3120</Used>
+      <Used>0</Used>
       <Total>131072</Total>
     </MemoryUtilization>
     <MemoryUtilization>
@@ -23,7 +23,7 @@
     </MemoryUtilization>
     <MemoryUtilization>
       <MemoryName>Unknown</MemoryName>
-      <Used>16777216</Used>
+      <Used>8649728</Used>
       <Total>0</Total>
     </MemoryUtilization>
   </Memories>

@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{26916def-4728-4062-90e8-7966ac4b4515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers">
+      <UniqueIdentifier>{d654ce10-653d-4286-a717-d550b579a697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP">
+      <UniqueIdentifier>{28fcfae6-7990-4055-927c-6c1c6eae0527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS">
+      <UniqueIdentifier>{ff6956f6-257e-451b-9d31-c764f0d4a4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\STM32F7xx_HAL_Driver">
+      <UniqueIdentifier>{8c3e8fcb-5b15-4c20-9834-effcb373eca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares">
+      <UniqueIdentifier>{689b0d7d-ec55-40de-8a22-8a68957bf92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\Third_Party">
+      <UniqueIdentifier>{8b17d049-624c-4a80-be29-48618f67b832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects">
+      <UniqueIdentifier>{7e0e748c-418f-4684-ba74-108742e1389d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{349fd24b-6cd8-453c-a55b-d9d8ce851f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\STM32F769I-Discovery">
+      <UniqueIdentifier>{65280fd5-a178-4bc6-ac58-ab622269b792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components">
+      <UniqueIdentifier>{9b718573-d7da-4ce7-9e95-0eb2ec1e1d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\otm8009a">
+      <UniqueIdentifier>{8ac42de0-660b-4d7b-9e3b-b1a1eddda8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\rk043fn48h">
+      <UniqueIdentifier>{2e7ed71b-3d2d-4d1a-b148-9f764c8bb1f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\ft5336">
+      <UniqueIdentifier>{0b38f39f-f693-4540-aace-2a00a0bf210e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\BSP\Components\Common">
+      <UniqueIdentifier>{ae24601f-c205-43d4-95ba-8957425477f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Core">
+      <UniqueIdentifier>{bae5cb69-c5fd-49cb-a124-fea2ba24805c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Core\Include">
+      <UniqueIdentifier>{53bd7e86-53b4-43c0-a052-cbc3ffa58010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Core\Template">
+      <UniqueIdentifier>{b46377e4-9976-485f-a5d5-a041b82d576e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Core\Template\ARMv8-M">
+      <UniqueIdentifier>{7802906b-a31f-4cfa-8cd7-d8762ae9351e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device">
+      <UniqueIdentifier>{9208ad9d-cd89-4b44-be4d-19a204a0ebae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST">
+      <UniqueIdentifier>{dbcacb93-4a7f-4af8-9d4c-41d860aa449a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST\STM32F7xx">
+      <UniqueIdentifier>{2ca27d86-9c7a-424d-b6ec-b9d07aec53af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST\STM32F7xx\Include">
+      <UniqueIdentifier>{e8371a2b-5d4e-44b0-801d-abf4bf532929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST\STM32F7xx\Source">
+      <UniqueIdentifier>{dde3ee5f-c7df-4dc0-845c-6f992c535bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates">
+      <UniqueIdentifier>{e886a9af-aabc-462f-b5ce-08e0a70ee452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc">
+      <UniqueIdentifier>{d1cb7848-ad83-41e9-b703-84218e1c4254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\STM32F7xx_HAL_Driver\Inc">
+      <UniqueIdentifier>{6768c1d7-08f7-4635-a73f-2bf8c84f4cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drivers\STM32F7xx_HAL_Driver\Src">
+      <UniqueIdentifier>{b3c75111-aea4-4a24-9322-a498a82183ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\ST">
+      <UniqueIdentifier>{addb4ac9-349c-46c0-bd59-05da963f2ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\ST\STM32_USB_Host_Library">
+      <UniqueIdentifier>{5de2754a-5d32-46b7-a327-5b3ac34be50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\ST\STemWin">
+      <UniqueIdentifier>{1efc1598-d678-499f-a536-d35e754ea04d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\ST\STM32_Audio">
+      <UniqueIdentifier>{f94e92b8-9619-46c1-83db-6d3f31db8764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\ST\STM32_USB_Device_Library">
+      <UniqueIdentifier>{0265abb4-0028-45d6-b0e3-2f01296bff87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\Third_Party\FreeRTOS">
+      <UniqueIdentifier>{de4acdd6-c701-4d99-b344-cd3631bd773a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\Third_Party\FreeRTOS\Source">
+      <UniqueIdentifier>{3ac6d579-2c7e-414a-8152-45211f74287d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middlewares\Third_Party\FreeRTOS\Source\Include">
+      <UniqueIdentifier>{1c578705-2bab-4ed1-8aca-446ca450415e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery">
+      <UniqueIdentifier>{5e33c13f-7bbb-4534-9161-d837d851784b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications">
+      <UniqueIdentifier>{d0bc9f47-3de6-4550-ab86-112e40451e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Demonstrations">
+      <UniqueIdentifier>{307ca6af-1e98-4876-b821-18702a534bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Examples">
+      <UniqueIdentifier>{b8ef90ef-891a-4f86-b27f-4457a8607f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Templates">
+      <UniqueIdentifier>{af44637a-1d63-43a8-abc9-d587fb193f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Templates_LL">
+      <UniqueIdentifier>{6ecb758f-408b-41d1-a1a2-5061ed3781cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications\Audio">
+      <UniqueIdentifier>{46f758b3-e88c-4e52-8aa8-59320b79a7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications\Display">
+      <UniqueIdentifier>{1ead17b1-740d-40b2-9609-26df7416874a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications\FreeRTOS">
+      <UniqueIdentifier>{2622e5e0-3321-42f8-9886-d052078f2620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications\FreeRTOS\FreeRTOS_ThreadCreation">
+      <UniqueIdentifier>{98107106-32ff-4428-8883-f72fd40313de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Projects\STM32F769I-Discovery\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc">
+      <UniqueIdentifier>{1f206412-ca2b-40bc-b8b0-4a54f71c5a89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Documentation\STM32CubeF7GettingStarted.pdf">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f722xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f723xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f730xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f732xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f733xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f745xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f746xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f750xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f756xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f765xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f767xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f769xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f777xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc\startup_stm32f779xx.s">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\gcc</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\License.md">
+      <Filter>Drivers\STM32F7xx_HAL_Driver</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\README.md">
+      <Filter>Drivers\STM32F7xx_HAL_Driver</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Release_Notes.html">
+      <Filter>Drivers\STM32F7xx_HAL_Driver</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_audio.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_eeprom.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_lcd.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_qspi.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_sd.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_sdram.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_ts.c">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\otm8009a\otm8009a.c">
+      <Filter>Drivers\BSP\Components\otm8009a</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.c">
+      <Filter>Drivers\BSP\Components\ft5336</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Template\ARMv8-M\main_s.c">
+      <Filter>Drivers\CMSIS\Core\Template\ARMv8-M</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Template\ARMv8-M\tz_context.c">
+      <Filter>Drivers\CMSIS\Core\Template\ARMv8-M</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates\system_stm32f7xx.c">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Source\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_adc_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_can.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cec.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_crc_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cryp.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cryp_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dac_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dcmi_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dfsdm.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma2d.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dsi.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_eth.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_exti.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hash.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hash_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_hcd.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2s.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_irda.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_iwdg.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_jpeg.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_lptim.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_ltdc_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_mdios.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_mmc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_msp_template.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_nand.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_nor.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pcd_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_qspi.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rng.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sai_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sd.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sdram.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_smartcard.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_smartcard_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_smbus.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spdifrx.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_sram.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_timebase_rtc_alarm_template.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_timebase_rtc_wakeup_template.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_timebase_tim_template.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart_ex.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_usart.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_wwdg.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_adc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_crc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_dac.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_dma.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_dma2d.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_exti.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_fmc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_gpio.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_i2c.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_lptim.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_pwr.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_rcc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_rng.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_rtc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_sdmmc.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_spi.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_tim.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_usart.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_usb.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_ll_utils.c">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_audio.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_eeprom.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_lcd.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_qspi.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_sd.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_sdram.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\STM32F769I-Discovery\stm32f769i_discovery_ts.h">
+      <Filter>Drivers\BSP\STM32F769I-Discovery</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\otm8009a\otm8009a.h">
+      <Filter>Drivers\BSP\Components\otm8009a</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\rk043fn48h\rk043fn48h.h">
+      <Filter>Drivers\BSP\Components\rk043fn48h</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.h">
+      <Filter>Drivers\BSP\Components\ft5336</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\camera.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\epd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\gyro.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\idd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\io.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\lcd.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\magneto.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\ts.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\tsensor.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\accelero.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\Common\audio.h">
+      <Filter>Drivers\BSP\Components\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_armcc.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_armclang.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_compiler.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_gcc.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_iccarm.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\cmsis_version.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_armv8mbl.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_armv8mml.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm0.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm0plus.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm1.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm3.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm4.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm7.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm23.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_cm33.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_sc000.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\core_sc300.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\mpu_armv7.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\mpu_armv8.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Core\Include\tz_context.h">
+      <Filter>Drivers\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f722xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f723xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f730xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f732xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f733xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f745xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f746xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f750xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f756xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f765xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f769xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f777xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f779xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h">
+      <Filter>Drivers\CMSIS\Device\ST\STM32F7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32_assert_template.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_adc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_adc_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_can.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cec.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_conf_template.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cortex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_crc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_crc_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cryp.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cryp_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dac.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dac_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dcmi.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dcmi_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dfsdm.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma2d.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dsi.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_eth.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_exti.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_flash.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_flash_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hash.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hash_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_hcd.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2c.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2c_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_i2s.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_irda.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_irda_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_iwdg.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_jpeg.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_lptim.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_ltdc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_ltdc_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mdios.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_mmc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_nand.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_nor.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pcd.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pcd_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_qspi.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rng.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rtc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rtc_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sai.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sai_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sd.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sdram.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smartcard.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smartcard_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smbus.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_spdifrx.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_spi.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_spi_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_sram.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_tim.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_tim_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_uart.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_uart_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_usart.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_usart_ex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_wwdg.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_adc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_bus.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_cortex.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_crc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_dac.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_dma.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_dma2d.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_exti.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_fmc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_gpio.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_i2c.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_iwdg.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_lptim.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_pwr.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_rcc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_rng.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_rtc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_sdmmc.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_spi.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_system.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_tim.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_usart.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_usb.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_utils.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_wwdg.h">
+      <Filter>Drivers\STM32F7xx_HAL_Driver\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h">
+      <Filter>Middlewares\Third_Party\FreeRTOS\Source\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Projects\STM32F769I-Discovery\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc\FreeRTOSConfig.h">
+      <Filter>Projects\STM32F769I-Discovery\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1440,9 +1440,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp">
       <Filter>src\System.Device.Gpio</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.cpp">
-      <Filter>src\System.Device.Pwm</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiBusInfo.cpp">
       <Filter>src\System.Device.Spi</Filter>
     </ClCompile>
@@ -1521,7 +1518,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_heap.c">
       <Filter>targets\ChibiOS\_common</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\swo.cpp">
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\swo.cpp">
       <Filter>targets\ChibiOS\_common</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\syscalls.c">
@@ -2421,9 +2418,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_parse_certificate_internal.cpp">
       <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_pending_internal.cpp">
-      <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_read_internal.cpp">
       <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClCompile>
@@ -2432,6 +2426,9 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\ssl_write_internal.cpp">
       <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT5336_I2C.cpp">
+      <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2788,9 +2785,6 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h">
       <Filter>src\System.Device.Gpio</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm\sys_dev_pwm_native.h">
-      <Filter>src\System.Device.Pwm</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h">
       <Filter>src\System.Device.Spi</Filter>

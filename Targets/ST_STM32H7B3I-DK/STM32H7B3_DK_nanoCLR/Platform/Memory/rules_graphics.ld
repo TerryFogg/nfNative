@@ -6,6 +6,7 @@
 //
 */
 
+
 SECTIONS
 {
     /* nanoFramework graphics managed heap section at the specified RAM section.*/

@@ -1,0 +1,48 @@
+#
+# Copyright (c) .NET Foundation and Contributors
+# See LICENSE file in the project root for full license information.
+#
+
+---
+# BasedOnStyle: Microsoft
+AlignAfterOpenBracket: AlwaysBreak
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakTemplateDeclarations: MultiLine
+BinPackArguments: false
+BinPackParameters: false
+BraceWrapping:
+  AfterClass: true
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterObjCDeclaration: true
+  AfterStruct: true
+  AfterExternBlock: true
+  BeforeCatch: true
+  BeforeElse: true
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Custom
+ColumnLimit: 120
+Cpp11BracedListStyle: true
+ExperimentalAutoDetectBinPacking: true
+FixNamespaceComments: true
+  - foreach
+  - Q_FOREACH
+  - BOOST_FOREACH
+IndentCaseLabels: true
+IndentWidth: 4
+IndentWrappedFunctionNames: true
+PenaltyReturnTypeOnItsOwnLine: 1000
+SortIncludes: false
+SpaceBeforeParens: ControlStatements
+Standard: Latest
+  - Q_UNUSED
+  - QT_REQUIRE_VERSION
+TabWidth: 4
+BasedOnStyle: gnu
+...

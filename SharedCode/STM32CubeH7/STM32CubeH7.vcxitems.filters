@@ -277,6 +277,9 @@
     <Filter Include="Projects\STM32H735G-DK\Templates">
       <UniqueIdentifier>{56532a27-aa94-4a7c-a4a1-64a565e99c5a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Drivers\BSP\Components\ft5336">
+      <UniqueIdentifier>{47cb27e5-c87f-44ee-acf4-a50cc529dc05}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Documentation\STM32CubeH7GettingStarted.pdf">
@@ -1051,6 +1054,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.c">
       <Filter>Drivers\BSP\Components\is42s16800j</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.c">
+      <Filter>Drivers\BSP\Components\ft5336</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\STM32H7B3I-DK\stm32h7b3i_discovery.h">
@@ -1811,6 +1817,9 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Targets\ST_STM32H7B3I-DK\STM32H7B3_DK_nanoCLR\Platform\Graphics\is42s16800j_conf.h">
       <Filter>Projects\STM32H7B3I-DK\Example\LTDC\LTDC_Display_2Layers\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.h">
+      <Filter>Drivers\BSP\Components\ft5336</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

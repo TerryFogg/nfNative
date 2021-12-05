@@ -5,7 +5,6 @@
 //
 
 #include <BoardInit.h>
-#include "stm32h7b3i_discovery_lcd.h"
 #include "stm32h7b3i_discovery_sdram.h"
 
 #define RTC_ASYNCH_PREDIV 0x7F      // LSE as RTC clock
@@ -46,28 +45,27 @@ void System_IniRtc(void)
 void BoardInit()
 {
 
+    CPU_CACHE_Enable();
     HAL_Init();              // STM32H7xx HAL library initialization
-    SCB_EnableICache();      // Enable I-Cache
-    SCB_EnableDCache();      // Enable D-Cache
     SystemClock_Config();    // To review: Do we need to configure the system clock from default??
-    LedsAndBoardInit();
-    // System_IniRtc();
+    Board_LED_Initialization();
+    
+    BSP_SDRAM_Init(0);      // Initialized SDRAM
+
+        // System_IniRtc();
     ConfigureCRC();
-    
-    /* Initialized SDRAM */
-    if (BSP_SDRAM_Init(0) != BSP_ERROR_NONE)      /* Initialize the SDRAM */
-    {
-        while (true) ;
-    }
-    
-    
     InitializeGraphics();
-    
-    
 }
 
+void CPU_CACHE_Enable(void)
+{
+    SCB_EnableICache();         // Enable I-Cache
+    SCB_EnableDCache();         // Enable D-Cache
+}
+
+
 // LEDs and user button of the STM32H7B3I-DK board
-void LedsAndBoardInit()
+void Board_LED_Initialization()
 {
     __GPIOG_CLK_ENABLE();
     GPIO_InitTypeDef GPIO_InitStructure;

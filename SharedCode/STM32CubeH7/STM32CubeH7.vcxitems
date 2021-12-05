@@ -93,6 +93,7 @@
     <Image Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Middlewares\ST\STM32_Audio\Addons\PDM\_htmresc\st_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\ft6x06\ft6x06_reg.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\is42s16800j\is42s16800j.c" />
@@ -276,6 +277,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Utilities\ResourcesManager\res_mgr.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeF7\Drivers\BSP\Components\ft5336\ft5336.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\audio.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\camera.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\STM32CubeH7\Drivers\BSP\Components\Common\dpredriver.h" />
