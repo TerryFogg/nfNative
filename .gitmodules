@@ -28,3 +28,6 @@
 [submodule "ExternalRepositories/azure-rtos/usbx"]
 	path = ExternalRepositories/azure-rtos/usbx
 	url = https://github.com/azure-rtos/usbx.git
+[submodule "ExternalRepositories/STM32CubeF7"]
+	path = ExternalRepositories/STM32CubeF7
+	url = https://github.com/STMicroelectronics/STM32CubeF7.git
