@@ -1,0 +1,2900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{5996eb81-ca3c-411f-803a-34174c9a8e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios">
+      <UniqueIdentifier>{79ecd30a-977d-48d7-8879-b9d4916578d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{1e343ba3-c495-465f-a259-3298a892c104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter">
+      <UniqueIdentifier>{7da096aa-a351-4ba2-9945-c7755359dec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets">
+      <UniqueIdentifier>{87e196c2-1077-4f5e-adb5-ebf23590c4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets">
+      <UniqueIdentifier>{66db0939-73f3-4ece-a474-66ee338de4ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS">
+      <UniqueIdentifier>{98688292-9781-4073-83a4-4184e335ed40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_common">
+      <UniqueIdentifier>{489a7303-2066-4f71-add9-e62710e837b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay">
+      <UniqueIdentifier>{dd7bf25c-c3d4-490e-9d7d-0c258a58b98e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os">
+      <UniqueIdentifier>{f2d101e0-0fbd-4726-aaae-c6616763bb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal">
+      <UniqueIdentifier>{7956ad97-88e7-4446-9c30-97e452ab4a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports">
+      <UniqueIdentifier>{8510e133-7741-4e16-8c29-fa39d2813bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32">
+      <UniqueIdentifier>{c54308ba-c42c-4bec-a6f8-291e17529113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD">
+      <UniqueIdentifier>{38b9277c-ad07-476d-a533-e6fb865aa4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1">
+      <UniqueIdentifier>{8d84d2e2-5a84-42a9-9624-01eb4fc0a349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src">
+      <UniqueIdentifier>{e774c6cc-af89-4fa4-adf6-4e42faf7963d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc">
+      <UniqueIdentifier>{54614631-454f-4db3-ad56-09028b14b264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng">
+      <UniqueIdentifier>{0c0aa07f-eb12-4a34-97c0-68177e271865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash">
+      <UniqueIdentifier>{d7a7b83b-dd93-4c0c-893f-5fb861db9eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include">
+      <UniqueIdentifier>{0c239565-d137-4d7c-b507-14b9b2ed0f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc">
+      <UniqueIdentifier>{f226699e-e644-46ce-8d00-c0a2efe48b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng">
+      <UniqueIdentifier>{3baa826f-739a-4f56-89ca-d565f6589380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1">
+      <UniqueIdentifier>{085d7ecc-ae44-4325-95da-b982975de333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY">
+      <UniqueIdentifier>{f1790412-ee3c-4302-8b57-4522607be47a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common">
+      <UniqueIdentifier>{23cf29a2-1d13-400f-83b5-91a15b61a3ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash">
+      <UniqueIdentifier>{19869fef-4d76-4b74-90c8-f1a2904f00f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\dummy_include">
+      <UniqueIdentifier>{eed6aeb9-a462-4a80-a2b2-e4d381c4da2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2">
+      <UniqueIdentifier>{d8a5da8a-9f1f-473e-a553-53a957a1cfca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os">
+      <UniqueIdentifier>{49d2a588-2b92-47f1-b8f5-4fd429410e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common">
+      <UniqueIdentifier>{431c08bc-a95a-4cf7-9683-68ed6160321e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\abstractions">
+      <UniqueIdentifier>{00803fe8-1b5f-4428-be4f-47e822593d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\abstractions\cmsis_os">
+      <UniqueIdentifier>{a4e188b2-440f-4b90-a140-eb717b1f70d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports">
+      <UniqueIdentifier>{3c800928-4131-4f72-b9fa-6387436edb52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup">
+      <UniqueIdentifier>{6ec15a81-bfc4-4d69-9cf8-df30da2f3649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx">
+      <UniqueIdentifier>{16d5956b-246f-4d08-abe7-fbed7621e606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\compilers">
+      <UniqueIdentifier>{9fcbc576-aaa7-4b9f-9eab-4660dff6e96a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\compilers\GCC">
+      <UniqueIdentifier>{d108b467-57c4-4f9e-806f-2c967a56ef83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\devices">
+      <UniqueIdentifier>{7acae4a5-4114-4819-898b-2f858afcbaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\devices\STM32F7xx">
+      <UniqueIdentifier>{fc1a4a1e-a771-4660-9d42-2f00a5da0549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext">
+      <UniqueIdentifier>{5ad6e4bd-7c03-42f9-9c18-7b62c3a7687b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM">
+      <UniqueIdentifier>{967a08df-bcf1-4e84-8e4e-8d650a471e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS">
+      <UniqueIdentifier>{f5da6cc8-5230-4464-a051-bb6f75e32468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS\Core">
+      <UniqueIdentifier>{905172cf-4b7c-4c8f-ad41-e0d11b79aadb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS\Core\Include">
+      <UniqueIdentifier>{cf1f9e98-3dc5-4063-8c25-5f1652d43ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ST">
+      <UniqueIdentifier>{5dbee1b4-41af-451c-8b93-e0d0bfc58357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ST\STM32F7xx">
+      <UniqueIdentifier>{c2127ac3-3314-4089-b62e-3711e8e68b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal">
+      <UniqueIdentifier>{5a9eb584-96d2-4e49-9a00-22b849443738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\include">
+      <UniqueIdentifier>{49d30e61-87b3-4711-870e-ed18340313cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports">
+      <UniqueIdentifier>{4aaea013-0520-45f9-8717-928fb60c004b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\common">
+      <UniqueIdentifier>{b9a73499-c38c-4bfd-9cdf-9bd89a4f1ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\common\ARMCMx">
+      <UniqueIdentifier>{1d7f2299-434f-4a47-93ed-3b52e4c762f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32">
+      <UniqueIdentifier>{7534dacf-9720-440f-9e84-df13ed07a434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD">
+      <UniqueIdentifier>{b540d0ee-e4b9-4177-ab52-f28aed5f260c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\GPIOv2">
+      <UniqueIdentifier>{8555d05f-0789-469f-8019-46955db67c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\RTCv2">
+      <UniqueIdentifier>{a5085267-208a-40a0-a98a-877a8b1124a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\TIMv1">
+      <UniqueIdentifier>{7621fc69-6005-46b2-b435-1a939ce515d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\USARTv2">
+      <UniqueIdentifier>{6a26ee6b-aabc-4f88-ab8b-2513a7e6ead5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\CRYPv1">
+      <UniqueIdentifier>{b7216463-2cd3-440d-8973-525e336d30da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\DACv1">
+      <UniqueIdentifier>{680f4810-5d23-4172-a35f-8e488adf4813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\CANv1">
+      <UniqueIdentifier>{220eb516-5498-433c-b5fd-a44668765e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\SPIv2">
+      <UniqueIdentifier>{2f3da0fd-1af7-46a5-b8aa-44e605540f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\RNGv1">
+      <UniqueIdentifier>{5ca64fed-4477-422a-be72-2ade0241e954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\OTGv1">
+      <UniqueIdentifier>{4a2f6282-3b13-44fa-b932-de4873ff2f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\xWDGv1">
+      <UniqueIdentifier>{6324c94a-c2eb-4b4f-b6eb-0b6ae4eb02d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\DMAv2">
+      <UniqueIdentifier>{0f3b0096-ce3a-4a81-82b2-e0d217d2b801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\EXTIv1">
+      <UniqueIdentifier>{c838eac3-ab1f-4cc0-9e86-6ff3fc6f52e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\STM32F7xx">
+      <UniqueIdentifier>{8f9977d6-3966-47e1-8559-a8e539bf4a72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\src">
+      <UniqueIdentifier>{450fd3ca-cafc-4bd1-8883-b79267eb84cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\osal">
+      <UniqueIdentifier>{beb3b31f-3c27-4dc6-a9d2-ad5b1c90474f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\license">
+      <UniqueIdentifier>{1f9c435b-44b7-43c7-98f5-b4dcea9dafa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt">
+      <UniqueIdentifier>{02cb9684-23d5-4a60-96f8-72d3c4164896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt\include">
+      <UniqueIdentifier>{4434632d-4ead-4f78-bdff-16bdc754dead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt\src">
+      <UniqueIdentifier>{ce75fa52-9a9c-437b-8330-cc04e4ad81b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib">
+      <UniqueIdentifier>{478408b7-084c-4c0f-a079-1d727dbb77e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib\include">
+      <UniqueIdentifier>{d54bf34a-50ea-437f-98bc-6a4da3bc6d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib\src">
+      <UniqueIdentifier>{44383e0d-62a5-4e45-9bf2-823f9d32f291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR">
+      <UniqueIdentifier>{e313b62f-d1ec-424a-8d36-af2a7782e42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR">
+      <UniqueIdentifier>{6aad9a4f-23bf-42aa-b813-8ed64a0a44c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src">
+      <UniqueIdentifier>{08f19492-5681-4c41-951c-fb63cd8a6913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR">
+      <UniqueIdentifier>{ff6b9b2e-c9ac-478e-a729-fdd32f319cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core">
+      <UniqueIdentifier>{c2e4efe2-0622-4706-93e5-e196b856424e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core\Hardware">
+      <UniqueIdentifier>{26d412f1-17a8-45f8-a20f-76753c196840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core\InterruptHandler">
+      <UniqueIdentifier>{1f23450c-0f62-4c02-9e0d-323aea203eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core\NativeEventDispatcher">
+      <UniqueIdentifier>{5be5efcc-940e-4de7-964c-8e0f3b26cf8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core\Serialization">
+      <UniqueIdentifier>{d838a4a0-089b-40d0-a8f9-ee3400b9e903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core\RPC">
+      <UniqueIdentifier>{da972a7f-3974-4a9a-aac9-36728a3af2ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\CorLib">
+      <UniqueIdentifier>{82270f52-0d5b-478d-8164-cefce98c8e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Debugger">
+      <UniqueIdentifier>{8e6348ff-ec13-4099-9589-8ef7fa57ed93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Diagnostics">
+      <UniqueIdentifier>{03142687-240c-467b-b492-c450944aca05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Helpers">
+      <UniqueIdentifier>{181a6e95-145f-4fe3-9d6e-3d1d58b6d4c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Helpers\Base64">
+      <UniqueIdentifier>{a232d421-bd26-4d76-a058-7dfe0cbd263b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Helpers\TinyPrintf">
+      <UniqueIdentifier>{d827c88c-5303-4f08-96d2-68e194a26a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Include">
+      <UniqueIdentifier>{da0dc0f7-2052-45b7-b8d6-cfd00f82d53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Messaging">
+      <UniqueIdentifier>{018ed01d-282a-45aa-9a1b-eeefc8ed5fe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\System.Math">
+      <UniqueIdentifier>{fce433a1-766e-4d10-877d-336224262e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\WireProtocol">
+      <UniqueIdentifier>{57f9de47-4b5f-4245-96f4-0b3cd6a8da57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Startup">
+      <UniqueIdentifier>{1fb925d2-84b5-4ed3-adc3-5ef71eea7d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\DeviceInterfaces">
+      <UniqueIdentifier>{1be6e775-edc7-4f0b-92a1-2b4a0e257699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\DeviceInterfaces\System.Net">
+      <UniqueIdentifier>{9a053129-05a1-4619-b46c-df98ba1b970d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL">
+      <UniqueIdentifier>{6f0931aa-6bcb-4cea-bbdd-247fe616e6dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL\Include">
+      <UniqueIdentifier>{b0cf4bc1-72cc-4b62-886e-b3d35b20b234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Devices.Can">
+      <UniqueIdentifier>{7b8d7d08-72e5-41f6-8e42-73df12c01ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Devices.OneWire">
+      <UniqueIdentifier>{450b6605-bbf9-4e03-a7de-8bc3768cc33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.ResourceManager">
+      <UniqueIdentifier>{52477bc7-b4a2-470b-8a87-7793be3a8f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Runtime.Events">
+      <UniqueIdentifier>{4462a7e8-eb3e-4600-88e7-901ff1a8ce83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{0da6f308-c3aa-4fbb-9da1-11253f0a2cd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.System.Collections">
+      <UniqueIdentifier>{18c5a707-d6f4-4443-aea8-a44c3410f851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL">
+      <UniqueIdentifier>{875b0be9-ea5f-4abd-9612-195c509f71e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\AsyncProcCall">
+      <UniqueIdentifier>{87bcabfe-8018-41ed-8a36-5aded64dfe29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\BlockStorage">
+      <UniqueIdentifier>{497e1b54-ec77-4384-a266-c96bfff7af72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\COM">
+      <UniqueIdentifier>{595466a1-81f6-4787-8547-cccfc84607f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Double">
+      <UniqueIdentifier>{b39eb2ff-9e9c-4608-95da-9810a4d56f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Events">
+      <UniqueIdentifier>{90c62451-820e-4121-80a6-c42100cf6965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Include">
+      <UniqueIdentifier>{c8d01699-eee8-4874-8cc1-42d5f6a24678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Profiler">
+      <UniqueIdentifier>{05939bc0-c424-4eb2-a405-c649fabb2f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{6ec30ad2-86d3-4eb5-be0e-7fb80502f01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.Pwm">
+      <UniqueIdentifier>{eca98cd8-e7ea-4180-b73e-459a0b60c4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.Spi">
+      <UniqueIdentifier>{ad52764b-37d6-4410-9a8c-c5b29d8d2e2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Storage">
+      <UniqueIdentifier>{187233c5-dfd2-4e01-b7c8-fb58e6971dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\ext">
+      <UniqueIdentifier>{da177a48-f3d5-4437-8280-c20275df8fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\various">
+      <UniqueIdentifier>{5e804ef1-d852-4213-91c1-0cdb57fb3a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1">
+      <UniqueIdentifier>{17869c0d-90e2-4bd8-a6c8-38b351c69a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1">
+      <UniqueIdentifier>{d99c8afc-fd40-43ca-8527-fdb4c187d227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\QUADSPIv1">
+      <UniqueIdentifier>{127de13e-6fbf-4e8f-8774-9535b073de1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1">
+      <UniqueIdentifier>{b6ee7c0f-6cc0-49e6-b48c-f564f0b1f33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\DeviceInterfaces\Networking.Sntp">
+      <UniqueIdentifier>{071005a4-da24-4a51-a6cb-9d704e7acf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.System.Text">
+      <UniqueIdentifier>{1ba0c7aa-9352-4b10-8d80-cbc13a3134ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\ADCv2">
+      <UniqueIdentifier>{8cae7423-5583-4366-a019-3fd8781a39db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\I2Cv2">
+      <UniqueIdentifier>{82aa3b64-3e8c-4ab6-b2b2-b7b451e08736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\MACv1">
+      <UniqueIdentifier>{a4d34ee0-e4c7-4950-b041-4d8c5f0795ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\SDMMCv1">
+      <UniqueIdentifier>{74690953-81fc-4ef2-b53f-e43aecba4e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc">
+      <UniqueIdentifier>{d4ad30c5-bf61-4e1c-99cb-acec2da16505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire">
+      <UniqueIdentifier>{5dc77b39-8c0e-4065-b506-652a1dc3fe42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi">
+      <UniqueIdentifier>{172d92bd-4ff8-490e-a9b7-2729de1e4344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc">
+      <UniqueIdentifier>{ef355f0a-5531-40ee-b1d5-cf881954194e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire">
+      <UniqueIdentifier>{83db88bb-a2a1-4ef7-83f6-ebd33e77f5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi">
+      <UniqueIdentifier>{32d8b3c0-add3-4286-9013-d86b8f00d9f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics">
+      <UniqueIdentifier>{80549453-e45e-48f2-80d6-51aff3df6f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics">
+      <UniqueIdentifier>{79a81db2-55ac-4687-84c6-4f27edae19c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core">
+      <UniqueIdentifier>{bbd6734b-ba62-42d8-bc9f-8aceabdf0b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support">
+      <UniqueIdentifier>{103334bf-48ad-4291-a8ba-e22d870431d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp">
+      <UniqueIdentifier>{c5296fef-1110-4397-aaef-2b2d9b2d6090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts">
+      <UniqueIdentifier>{95cc8bc0-8549-45c0-a208-2b58cfe2de2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif">
+      <UniqueIdentifier>{497a34c3-e53d-46e5-8550-acd68ee9ada7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg">
+      <UniqueIdentifier>{14c7fab0-05a7-4598-af36-35d99df9814e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays">
+      <UniqueIdentifier>{328cc1ea-6d22-4383-ac2d-946c60a1abdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\Graphics\Native">
+      <UniqueIdentifier>{580a695f-dcdb-40cd-ae65-bc7c63e7255b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\TouchPanel">
+      <UniqueIdentifier>{1cf55cc6-9048-494e-9abe-a1610f52c0d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics">
+      <UniqueIdentifier>{5131ef39-6227-4d96-89ab-a2cacde87ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core">
+      <UniqueIdentifier>{9c6f1b48-be1e-42f6-885c-c56d6a3348f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices">
+      <UniqueIdentifier>{f13e4d13-6914-4785-bd74-c508df573386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm-none-eabi">
+      <UniqueIdentifier>{6dda4946-aabf-47a6-ad30-c7a287ae52f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm-none-eabi\include">
+      <UniqueIdentifier>{0afdfbf1-beac-4b9a-8c5d-db5686ea8592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.Device.Dac">
+      <UniqueIdentifier>{3ddf2f9b-513d-4038-a776-d60a4482f85b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\osal\rt-nil">
+      <UniqueIdentifier>{4a3b7ad2-e813-4dff-be48-161d5ea9cd52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.Device.Gpio">
+      <UniqueIdentifier>{713da378-6b47-43d6-8440-7c0d12f8df69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.Device.I2c">
+      <UniqueIdentifier>{e4e40345-30cb-44f6-92c1-be30a642bc1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Gpio">
+      <UniqueIdentifier>{00e79e90-3cda-4c2a-b922-9f61f8b23541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio">
+      <UniqueIdentifier>{973ab0d7-ce7e-4538-b1cc-45e661f65a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_include">
+      <UniqueIdentifier>{c25fa07d-414e-4d61-b053-16124c79fd54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_spiffs">
+      <UniqueIdentifier>{e60c903c-6a3a-4811-a5e3-feea5eb358b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\Include">
+      <UniqueIdentifier>{2e10c1a6-b41a-40aa-a070-eff708dd5233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers">
+      <UniqueIdentifier>{22470066-f350-4c73-a1f4-8a313fd9ab91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARM-common">
+      <UniqueIdentifier>{d036340c-792c-4beb-b7ab-bd29e42f4689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMv7-M">
+      <UniqueIdentifier>{36eda937-d059-4c13-ab00-5f72c590733f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMv7-M\compilers">
+      <UniqueIdentifier>{b47a1902-501b-4d6a-bf91-ceb10158df94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMv7-M\compilers\GCC">
+      <UniqueIdentifier>{707a1ad5-be53-4eca-9071-95cb812c4687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\SYSTICKv1">
+      <UniqueIdentifier>{4aee4eb0-3c59-4d34-8100-a12c113a4ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.Device.Spi">
+      <UniqueIdentifier>{3c6fb5d6-c768-4d99-ab6d-ded3ac57e63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Spi">
+      <UniqueIdentifier>{62103b9a-ba62-4d34-9c91-83b617c275ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\various\fatfs_bindings">
+      <UniqueIdentifier>{f274ea3d-e9a3-443f-b81d-67c34d7bc47f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\ext\fatfs">
+      <UniqueIdentifier>{f1bd3748-0dd6-462c-92df-049579c4e49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\ext\fatfs\source">
+      <UniqueIdentifier>{acaf6cba-26e2-4e32-b101-7cd38da2fe41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.IO.FileSystem">
+      <UniqueIdentifier>{ab4f5dce-f3ff-4928-b156-fb222f9764bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\System.IO.Ports">
+      <UniqueIdentifier>{2e745dac-a6c3-4354-90f0-b465b6fe53be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.Adc">
+      <UniqueIdentifier>{65d315a1-c722-4bd6-b68e-dac9cd6d14ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.Gpio">
+      <UniqueIdentifier>{1889079a-b4f2-4b4c-bc16-7b38615498b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\Windows.Devices.I2c">
+      <UniqueIdentifier>{57289514-fdb2-481e-ac4d-e42152c5ba90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can">
+      <UniqueIdentifier>{d408740b-6bfb-4c3f-a8a2-4a8c414c1389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire">
+      <UniqueIdentifier>{e6306739-278b-4154-b5d0-b303c664a034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32">
+      <UniqueIdentifier>{d916c877-d37f-4a95-91db-e715cda2d4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{7be07d70-a5a8-4c09-afe2-4f2bcc4b60ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac">
+      <UniqueIdentifier>{0b503f64-1a97-45ed-8b97-b10856aaa528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c">
+      <UniqueIdentifier>{ec23ceea-17f8-4f77-b5fa-b286c2703b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports">
+      <UniqueIdentifier>{c8c89df4-1381-45ab-a067-d3f749303ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc">
+      <UniqueIdentifier>{d6f1e6b8-3442-4721-be26-85080b1209d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c">
+      <UniqueIdentifier>{819c3e8f-3ade-462c-a438-39d9668ac8fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm">
+      <UniqueIdentifier>{69e7e145-e55f-4412-a3df-3e10e9362d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{284c9210-2fcc-4465-a2d9-1bc4d234729a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi">
+      <UniqueIdentifier>{a743ec83-780e-4357-92a3-ca24a2dba03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage">
+      <UniqueIdentifier>{357b03bf-ca70-415d-b723-61cb6e6146c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ST_STM32F769I_DISCOVERY-nanoBooter-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="ST_STM32F769I_DISCOVERY-nanoBooter-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\opcode.def">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Readme.md">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\.clang-format" />
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\README.md">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\README.md">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\swo.h.in">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\README.md">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\stm32-internal-flash-driver.md">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers\README.md">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers\STM32F769I_DISCOVERY.Adc.cs">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.c">
+      <Filter>Chibios\os\common\abstractions\cmsis_os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt1.c">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMv7-M\compilers\GCC\chcoreasm.S">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.c">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RTCv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CRYPv1\hal_crypto_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CRYPv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DACv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RNGv1\hal_trng_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DMAv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\hal_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_isr.c">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_dac.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_buffers.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_crypto.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_gpt.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_icu.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_mac.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_pal.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_queues.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_rtc.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial_usb.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sio.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_st.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_trng.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_uart.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_usb.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_wdg.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chfactory.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmboxes.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemcore.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemheaps.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmempools.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chpipes.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Cache.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Checks.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_DblLinkedList.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Array.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_ArrayList.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_BinaryBlob.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate_List.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Finalizer.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Lock.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_LockRequest.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Node.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Queue.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Stack.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_String.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_Timer.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapBlock_WaitForObject.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_HeapCluster.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_Interop.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_Memory.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Destination.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Source.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_RuntimeMemory.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_StackFrame.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_SystemAssembliesTable.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\CLR_RT_UnicodeHelper.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Core.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Execution.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\GarbageCollector.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\GarbageCollector_Compaction.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\GarbageCollector_ComputeReachabilityGraph.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\GarbageCollector_Info.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Interpreter.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\nanoSupport_CRC32.c">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Random.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Streams.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\StringTable.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\StringTableData.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Thread.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\TypeSystem.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\TypeSystemLookup.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Various.cpp">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Hardware\Hardware.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\InterruptHandler\InterruptHandler.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\NativeEventDispatcher\NativeEventDispatcher.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\NativeEventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Serialization\BinaryFormatter.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger.cpp">
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger_full.cpp">
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Diagnostics\Diagnostics_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Diagnostics\Info.cpp">
+      <Filter>nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Diagnostics\Profile.cpp">
+      <Filter>nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Diagnostics\Profiler.cpp">
+      <Filter>nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Messaging\Messaging.cpp">
+      <Filter>nf-interpreter\src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Messaging\Messaging_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\System.Math\nf_native_system_math.cpp">
+      <Filter>nf-interpreter\src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\System.Math\nf_native_system_math_System_Math.cpp">
+      <Filter>nf-interpreter\src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_Message.c">
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Startup\CLRStartup.cpp">
+      <Filter>nf-interpreter\src\CLR\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_NetworkInterface.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_Wireless80211Configuration.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_NetworkInformation_WirelessAPConfiguration.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_CertificateManager.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Security_SslNative.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Net_Sockets_NativeSocket.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate2.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_SystemInformation.cpp">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_Time.cpp">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_Watchdog.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_nanoFramework_Runtime_Native_ResourceUtility.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_System_Resources_ResourceManager.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_EventSink.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_NativeEventDispatcher.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_WeakDelegate.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Hardware_SystemInfo.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_ExecutionConstraint.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_GC.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Power.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc_stubs.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Collections\nf_system_collections.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Queue.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Stack.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\nanoPAL_Network_stubs.cpp">
+      <Filter>nf-interpreter\src\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\AsyncProcCall\AsyncCompletions.cpp">
+      <Filter>nf-interpreter\src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\AsyncProcCall\AsyncContinuations.cpp">
+      <Filter>nf-interpreter\src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\AsyncProcCall\Async_stubs.cpp">
+      <Filter>nf-interpreter\src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
+      <Filter>nf-interpreter\src\PAL\BlockStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\COM\COM_stubs.c">
+      <Filter>nf-interpreter\src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\COM\GenericPort_stubs.c">
+      <Filter>nf-interpreter\src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Double\nanoPAL_NativeDouble.cpp">
+      <Filter>nf-interpreter\src\PAL\Double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Profiler\nanoPAL_PerformanceCounters_stubs.cpp">
+      <Filter>nf-interpreter\src\PAL\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.SerialCommunication\win_dev_serial_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.Pwm\win_dev_pwm_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.Adc\win_dev_adc_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_adc.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_can.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_i2c.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_i2s.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_pwm.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_spi.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_wspi.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\xWDGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\QUADSPIv1\hal_wspi_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\QUADSPIv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\OTGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\EXTIv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp_nanoFramework_Networking_Sntp.cpp">
+      <Filter>nf-interpreter\src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Decoder.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Encoding.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Text\nf_system_text.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\ADCv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\I2Cv2\hal_i2c_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\I2Cv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_i2s_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_spi_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\MACv1\hal_mac_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\MACv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_mmcsd.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_mmc_spi.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsDriver.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp\Bitmap_Decoder.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\GifDecoder.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\Gif.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccolor.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcdctmgr.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcinit.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmainct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmarker.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmaster.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcomapi.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcparam.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcphuff.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcprepct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcsample.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jctrans.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapimin.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapistd.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcoefct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcolor.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jddctmgr.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdinput.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmainct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmarker.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmaster.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmerge.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdphuff.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdpostct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdsample.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdtrans.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctflt.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctfst.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctflt.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctfst.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctred.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemmgr.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemnanoclr.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\Jpeg.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant1.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant2.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jutils.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mfint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\miint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\pfint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\piint.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jbytearraydatasrc.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapimin.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapistd.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccoefct.c">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Displays\Otm8009a_DSI_Video_Mode.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Bitmap.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_DisplayControl.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Font.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_TouchPanel.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Events\nanoPAL_Events_driver.cpp">
+      <Filter>nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.cpp">
+      <Filter>nf-interpreter\src\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events.cpp">
+      <Filter>nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemEvents.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.c">
+      <Filter>Chibios\os\hal\osal\rt-nil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Devices.Can\nf_devices_can_native.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Devices.Can</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.cpp">
+      <Filter>nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp">
+      <Filter>nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp">
+      <Filter>nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.cpp">
+      <Filter>nf-interpreter\src\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Storage\win_storage_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioController.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioPin.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chdelegates.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_nand_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sdram_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sram_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc\hal_stm32_crc.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi\hal_stm32_qspi.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash\hal_stm32_flash.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng\hal_stm32_rng.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc\hal_stm32_fsmc.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1\qspi_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\board.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\CLR_Startup_Thread.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\DSI_To_Display_Video_Mode.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\Graphics_Memory.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\LaunchCLR.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\main.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoHAL.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_BlockStorage.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_external_memory.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetRandom.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\cpu_gpio.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\hal_community.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_Windows_Devices_Gpio_GpioChangeCounter.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\ChibiOS\_common\targetHAL.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\WireProtocol_ReceiverThread.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\WireProtocol_HAL_Interface.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_BlockStorage.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\platform_heap.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\Target_BlockStorage_STM32FlashDriver.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\targetHAL_ConfigurationManager.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_common.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_ConfigurationManager.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\targetHAL_Time.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL_Events.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL_Time.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetPAL.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Time.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Memory.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoCRT.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\hard_fault_handler.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\Initialize_Graphics.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMv7-M\compilers\GCC\chcoreasm.S">
+      <Filter>Chibios\os\common\ports\ARMv7-M\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMv7-M\chcore.c">
+      <Filter>Chibios\os\common\ports\ARMv7-M\compilers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SYSTICKv1\hal_st_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SYSTICKv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chcond.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdebug.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdynamic.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chevents.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chinstances.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmsg.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmtx.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chregistry.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chrfcu.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chschd.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsem.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chstats.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsys.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chthreads.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtm.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtrace.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chvt.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration\CLR_RT_InteropAssembliesTable.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.c">
+      <Filter>nf-interpreter\src\CLR\Helpers\TinyPrintf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64\base64.c">
+      <Filter>nf-interpreter\src\CLR\Helpers\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\Font.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\font8x8.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_functions.cpp">
+      <Filter>nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Power.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_AppDomain.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Array.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Attribute.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_BitConverter.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Collections_ArrayList.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Convert.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_DateTime.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Delegate.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debug.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debugger.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Double.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Enum.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Exception.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_GC.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_CultureInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_DateTimeFormat.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Guid.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MarshalByRefObject.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MathInternal.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MulticastDelegate.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Number.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Object.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Random.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Assembly.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Binder.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_ConstructorInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_FieldInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MemberInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MethodBase.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_PropertyInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeFieldInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeMethodInfo.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_CompilerServices_RuntimeHelpers.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_Remoting_RemotingServices.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_RuntimeType.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_String.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_AutoResetEvent.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Interlocked.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_ManualResetEvent.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Monitor.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_SpinWait.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Thread.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Timer.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_WaitHandle.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_TimeSpan.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Type.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_ValueType.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_WeakReference.cpp">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SDMMCv2\hal_sdc_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SDMMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sdc.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chobjcaches.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\various\fatfs_bindings\fatfs_syscall.c">
+      <Filter>Chibios\os\various\fatfs_bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\various\syscalls.c">
+      <Filter>Chibios\os\various</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\ext\fatfs\source\ff.c">
+      <Filter>Chibios\ext\fatfs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\ext\fatfs\source\ffunicode.c">
+      <Filter>Chibios\ext\fatfs\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire\nf_devices_onewire_native.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Devices.OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice_NULL.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface_NULL.cpp">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp">
+      <Filter>nf-interpreter\src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.cpp">
+      <Filter>nf-interpreter\src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiBusInfo.cpp">
+      <Filter>nf-interpreter\src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native_System_Device_Spi_SpiDevice.cpp">
+      <Filter>nf-interpreter\src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem.cpp">
+      <Filter>nf-interpreter\src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_Directory.cpp">
+      <Filter>nf-interpreter\src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_File.cpp">
+      <Filter>nf-interpreter\src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem_System_IO_FileStream.cpp">
+      <Filter>nf-interpreter\src\System.IO.FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.cpp">
+      <Filter>nf-interpreter\src\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c\win_dev_i2c_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiBusInfo.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiController.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native_Windows_Devices_Spi_SpiDevice.cpp">
+      <Filter>nf-interpreter\src\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\nanoSupport_CRC32.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_common\Target_Windows_Storage.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\targetHAL_Watchdog.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can\nf_devices_can_native_nanoFramework_Devices_Can_CanController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_nanoFramework_Devices_OneWire_OneWireController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_BackupMemory.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_Power.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_RTC.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native_nanoFramework_Hardware_Stm32_Utilities.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacChannel.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_System_Device_Dac_DacController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_System_Device_I2c_I2cDevice.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports\sys_io_ser_native_System_IO_Ports_SerialPort.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcChannel.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_Windows_Devices_Adc_AdcController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2c_I2cController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_Windows_Devices_I2C_I2cDevice.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmController.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_Windows_Devices_Pwm_PwmPin.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_Windows_Devices_SerialCommunication_SerialDevice.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\Windows.Devices.SerialCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi\cpu_spi.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_Devices_SDCard.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_FileIO.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFile.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_Windows_Storage_StorageFolder.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\WireProtocol_MonitorCommands.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1\onewire_lld.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire\hal_stm32_onewire.c">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\Device_BlockStorage-DEBUG.c">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_can_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_onewire_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_adc_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_dac_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_i2c_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_spi_config.cpp">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt0_v7m.S">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\vectors.S">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Hardware\Hardware_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\InterruptHandler\InterruptHandler_stub.cpp">
+      <Filter>nf-interpreter\src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.h">
+      <Filter>Chibios\os\common\abstractions\cmsis_os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\devices\STM32F7xx\cmparams.h">
+      <Filter>Chibios\os\common\startup\ARMCMx\devices\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_armcc.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_armclang.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_compiler.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_gcc.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_iccarm.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_version.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\core_cm7.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\mpu_armv7.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\system_stm32f7xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\stm32f7xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\stm32f769xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_adc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_buffers.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_can.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_channels.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_crypto.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_dac.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_files.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_gpt.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_i2c.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_i2s.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_icu.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_ioblock.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mac.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mii.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmcsd.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmc_spi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_objects.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pal.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_persistent.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pwm.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_queues.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_rtc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial_usb.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_sio.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_spi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_st.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_streams.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_trng.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_uart.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_usb.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wdg.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wspi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_usb_cdc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\cache.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\mpu_v7m.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\stm32_gpio.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RTCv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CRYPv1\hal_crypto_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CRYPv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DACv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CANv1\hal_can_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CANv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_i2s_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_spi_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RNGv1\hal_trng_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\OTGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\xWDGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DMAv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\EXTIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\OTGv1\stm32_otg.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\EXTIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\hal_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_isr.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_rcc.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_registry.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chcustomer.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chlicense.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chversion.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chbsem.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chfactory.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chlib.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmboxes.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemcore.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemheaps.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmempools.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chobjfifos.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chpipes.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\Core.h">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Core\corhdr_private.h">
+      <Filter>nf-interpreter\src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger.h">
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Diagnostics\Diagnostics.h">
+      <Filter>nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Helpers\Base64\base64.h">
+      <Filter>nf-interpreter\src\CLR\Helpers\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Application.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Checks.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Debugging.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_ErrorCodes.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Hardware.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Interop.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Messaging.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_ParseOptions.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_PlatformDef.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Profiling.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Runtime.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Runtime__HeapBlock.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Runtime__Serialization.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Types.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoPackStruct.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoSupport.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoWeak.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nf_errors_exceptions.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\stdafx.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\System.Math\nf_native_system_math.h">
+      <Filter>nf-interpreter\src\CLR\System.Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Startup\CLRStartup.h">
+      <Filter>nf-interpreter\src\CLR\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\System.Net\sys_net_native.h">
+      <Filter>nf-interpreter\src\DeviceInterfaces\System.Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Network.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Power.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Time.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Types.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_v2.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Watchdog.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Spi.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Devices.Can\nf_devices_can_native.h">
+      <Filter>nf-interpreter\src\nanoFramework.Devices.Can</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.h">
+      <Filter>nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.h">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.h">
+      <Filter>nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Collections\nf_system_collections.h">
+      <Filter>nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\CPU_GPIO_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoCRT.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_BlockStorage.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_COM.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Events.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_GPIO.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_NativeDouble.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Network.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Sockets.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Time.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\CPU_SPI_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.SerialCommunication\win_dev_serial_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.Pwm\win_dev_pwm_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Devices.Adc\win_dev_adc_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\Windows.Storage\win_storage_native.h">
+      <Filter>nf-interpreter\src\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\QUADSPIv1\hal_wspi_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\QUADSPIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\DeviceInterfaces\Networking.Sntp\nf_networking_sntp.h">
+      <Filter>nf-interpreter\src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.System.Text\nf_system_text.h">
+      <Filter>nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\ADCv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\I2Cv2\hal_i2c_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\I2Cv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\MACv1\hal_mac_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\MACv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_Message.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\giffile.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzw.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwutil.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\gif.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jconfig.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdct.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jinclude.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemsys.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmorecfg.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpegint.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpeglib.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jversion.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Displays\Display.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Displays\DisplayInterface.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\ctype.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\dirent.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\fcntl.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\grp.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\limits.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\pwd.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\setjmp.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\signal.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\stdint.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\stdio_ext.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\stdlib.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\string.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\time.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\unistd.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\utmp.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\..\SysGCC\arm-eabi\arm-none-eabi\include\_ansi.h">
+      <Filter>arm-none-eabi\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.h">
+      <Filter>nf-interpreter\src\System.Device.Dac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.h">
+      <Filter>Chibios\os\hal\osal\rt-nil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h">
+      <Filter>nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.h">
+      <Filter>nf-interpreter\src\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Gpio\sys_dev_gpio_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio\win_dev_gpio_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Graphics.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chdelegates.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_nand_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sdram_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sram_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1\qspi_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\board.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\chconf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\CLR_Startup_Thread.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\LaunchCLR.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\TargetHAL_Spi.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Time.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\TargetPAL_BlockStorage.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetPAL_Time.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\WireProtocol_ReceiverThread.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\ffconf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\dummy_includes\hal_community.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\dummy_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\hal_nf_community.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\mcuconf_nf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\mcuconf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\stm32f7xx_hal_conf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_BlockStorage.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio\win_dev_gpio_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Watchdog.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetPAL.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\platform_target_capabilities.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\targetHAL_Power.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_include\vectors.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc\hal_stm32_crc.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash\hal_stm32_flash.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc\hal_stm32_fsmc.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi\hal_stm32_qspi.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng\hal_stm32_rng.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\Include\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>nf-interpreter\targets\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\serialcfg.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\halconf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\halconf_nf.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARM-common\chtypes.h">
+      <Filter>Chibios\os\common\ports\ARM-common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMv7-M\chcore.h">
+      <Filter>Chibios\os\common\ports\ARMv7-M\compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMv7-M\mpu.h">
+      <Filter>Chibios\os\common\ports\ARMv7-M\compilers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SYSTICKv1\hal_st_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SYSTICKv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\stm32_tim.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\ch.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chalign.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chchecks.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chcond.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdebug.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdynamic.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chevents.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chinstances.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmsg.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmtx.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chregistry.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chrestrictions.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chrfcu.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chschd.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsem.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chstats.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsys.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsystypes.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chthreads.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtime.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtm.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtrace.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chvt.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\swo.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\target_board.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\target_common.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\target_os.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\target_platform.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.h">
+      <Filter>nf-interpreter\src\CLR\Helpers\TinyPrintf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\InternalFont.h">
+      <Filter>nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration\ffconf.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\CorLib.h">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.h">
+      <Filter>nf-interpreter\src\CLR\CorLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SDMMCv2\hal_sdc_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SDMMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire\nf_devices_onewire_native.h">
+      <Filter>nf-interpreter\src\nanoFramework.Devices.OneWire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h">
+      <Filter>nf-interpreter\src\System.Device.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem\nf_sys_io_filesystem.h">
+      <Filter>nf-interpreter\src\System.IO.FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.h">
+      <Filter>nf-interpreter\src\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c\win_dev_i2c_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi\win_dev_spi_native.h">
+      <Filter>nf-interpreter\src\Windows.Devices.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can\nf_devices_can_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.Can</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire\nf_devices_onewire_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Devices.OneWire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32\nf_hardware_stm32_native.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\nanoFramework.Hardware.Stm32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac\sys_dev_dac_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.Dac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c\sys_dev_i2c_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports\sys_io_ser_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\System.IO.Ports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc\win_dev_adc_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Adc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c\win_dev_i2c_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\win_dev_pwm_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication\win_dev_serial_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm\Windows.Devices.SerialCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi\win_dev_spi_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Devices.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage\win_storage_native_target.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nanoCLR\Windows.Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire\hal_stm32_onewire.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1\onewire_lld.h">
+      <Filter>nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_can_config.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_onewire_config.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_serialcommunication_config.h">
+      <Filter>nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp\nf_lwipopts_sntp.h">
+      <Filter>nf-interpreter\src\DeviceInterfaces\Networking.Sntp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="Configuration\memory_constants.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_clr.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_code.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_data.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_graphics.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_memory.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_stacks.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\STM32F76xx_CLR-nanoCLR.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="Configuration\rules_bootclipboard.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+  </ItemGroup>
+</Project>

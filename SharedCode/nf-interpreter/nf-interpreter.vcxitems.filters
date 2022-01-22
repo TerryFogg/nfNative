@@ -280,9 +280,6 @@
     <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Pwm">
       <UniqueIdentifier>{b564a4ad-7252-4dc9-b33a-b02638473d2d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication">
-      <UniqueIdentifier>{5db833ab-51c0-463c-ad67-203b92101999}</UniqueIdentifier>
-    </Filter>
     <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.Spi">
       <UniqueIdentifier>{f46ab52f-102d-43c1-a6fe-420c9166a971}</UniqueIdentifier>
     </Filter>
@@ -561,6 +558,132 @@
     </Filter>
     <Filter Include="src\PAL\COM\sockets\ssl\mbedTLS">
       <UniqueIdentifier>{a9566919-7036-43e9-8577-b7d2e53e4913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nanoCLR\Windows.Devices.SerialCommunication">
+      <UniqueIdentifier>{5db833ab-51c0-463c-ad67-203b92101999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay">
+      <UniqueIdentifier>{029251e8-ae39-40a4-ae47-a35c1bc04880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os">
+      <UniqueIdentifier>{d7e4b612-2f71-40e5-b1d8-f782c0aaa983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal">
+      <UniqueIdentifier>{71998d68-ca1c-4e05-8280-43c234bdc33d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports">
+      <UniqueIdentifier>{cb8e7b7a-cd3e-4e5b-b99a-39d1b6d5cd92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32">
+      <UniqueIdentifier>{7ba90a6a-ee00-4d12-9a06-d4277103fd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD">
+      <UniqueIdentifier>{102c81eb-6f81-46f7-9ee5-468f1f7ea35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1">
+      <UniqueIdentifier>{5606551d-39c5-4868-8c05-d78d96ea59b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1">
+      <UniqueIdentifier>{fb109dfd-1d4c-4d93-b7cc-47ce626e9245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2">
+      <UniqueIdentifier>{73895b5c-8d84-4822-abc8-5c4d9ebea64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1">
+      <UniqueIdentifier>{1ea2460a-99f2-466e-a4ea-211e429ff7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1">
+      <UniqueIdentifier>{732de171-d08a-4151-9199-de6977c9a25e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1">
+      <UniqueIdentifier>{2942e9ae-7df2-43e8-90f8-247d581dc59d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src">
+      <UniqueIdentifier>{b4830252-8a3d-4620-bc2a-f8b49689d2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc">
+      <UniqueIdentifier>{ddfe9edb-68e7-46e5-88af-a400bd360915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng">
+      <UniqueIdentifier>{2fce7592-6611-4801-8645-8fcfc94bf358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash">
+      <UniqueIdentifier>{9e36e7a5-dc03-4978-9e5c-c83d3310b22b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc">
+      <UniqueIdentifier>{e258b8fe-800e-4394-b2ad-f99ff6d0cf97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire">
+      <UniqueIdentifier>{cbebf73c-1355-471f-b24b-4dfeb6fcffb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi">
+      <UniqueIdentifier>{77e3e59b-a318-4517-ad97-cea05d82eefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include">
+      <UniqueIdentifier>{ca6b781c-4103-4c3c-aabd-ea008b14ec3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc">
+      <UniqueIdentifier>{8c758117-72db-4c54-a931-f004437a3139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng">
+      <UniqueIdentifier>{118cfbe9-2d7d-427f-ba6e-ed5841884ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash">
+      <UniqueIdentifier>{f105d8f3-6f18-4e95-a383-e844d109d9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\dummy_include">
+      <UniqueIdentifier>{0f3a34a2-a441-45cf-819e-64345907076a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc">
+      <UniqueIdentifier>{0bbbbf80-baf2-4b35-a624-b2aa4aca0f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire">
+      <UniqueIdentifier>{831ee854-34a2-4757-b822-f89348174a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi">
+      <UniqueIdentifier>{a3cd9ccb-fabc-4e6d-a573-35de652db8ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY">
+      <UniqueIdentifier>{00319d9f-b004-4914-8362-5f33f21f6d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY\common">
+      <UniqueIdentifier>{52f57eb3-8057-4cdd-b17f-0692503b6191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers">
+      <UniqueIdentifier>{999305cc-0aee-4ff8-b779-1404313212fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter">
+      <UniqueIdentifier>{1f28f170-ce8d-4f4a-af3a-6848a41f4734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR">
+      <UniqueIdentifier>{5bd24ba0-7431-40da-8120-d9efaf3b8016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_NUCLEO64_F091RC">
+      <UniqueIdentifier>{ec9db169-fe24-406d-ba01-29fec21ba09c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_NUCLEO64_F091RC\common">
+      <UniqueIdentifier>{d8ee63c1-95be-4940-b8ff-de663c72b7a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter">
+      <UniqueIdentifier>{af3d3b7d-fd9b-4561-9f14-27d290ec1752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR">
+      <UniqueIdentifier>{05472f06-ef7c-4eee-b1b5-67f3c81649d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics">
+      <UniqueIdentifier>{22cdf069-f871-4ee3-9f9a-b51b35c0117c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_spiffs">
+      <UniqueIdentifier>{27428be9-1150-4552-b3fa-0f9e22389282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\Include">
+      <UniqueIdentifier>{1c566bb0-7127-4009-9d84-d3b448db599d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_Lwip">
+      <UniqueIdentifier>{4320b09b-4cec-4bae-8d65-1c59d9bdf63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="targets\ChibiOS\_Lwip\arch">
+      <UniqueIdentifier>{5c8b24a9-6c59-44d7-a48e-a391a7436f1e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -2430,6 +2553,186 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT5336_I2C.cpp">
       <Filter>src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_nand_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sdram_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sram_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1\qspi_lld.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\hal_community.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc\hal_stm32_crc.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_crc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng\hal_stm32_rng.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_rng</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash\hal_stm32_flash.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_flash</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc\hal_stm32_fsmc.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_fsmc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi\hal_stm32_qspi.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_qspi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire\hal_stm32_onewire.c">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\src\stm32_onewire</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\board.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_BlockStorage.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_common.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_system_device_i2c_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_system_device_spi_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_system_devices_dac_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_system_io_ports_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_windows_devices_i2c_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_windows_devices_spi_config.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\common\Device_BlockStorage.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\common\Device_BlockStorage-DEBUG.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\main.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\main.c">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\nanoHAL.cpp">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\Device_BlockStorage.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\Device_BlockStorage-DEBUG.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\targetHAL_ConfigurationManager.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\main.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\main.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoHAL.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\DSI_To_Display_Video_Mode.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\Graphics_Memory.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\I2C_To_TouchPanel.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics\Initialize_Graphics.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\nanoFramework.Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_spiffs\hal_spiffs.c">
+      <Filter>targets\ChibiOS\_spiffs</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\nf_api_msg.c">
+      <Filter>targets\ChibiOS\_Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\nf_lwipthread.c">
+      <Filter>targets\ChibiOS\_Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\nf_sockets.c">
+      <Filter>targets\ChibiOS\_Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\nf_sys_arch.c">
+      <Filter>targets\ChibiOS\_Lwip</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\board.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_BlockStorage.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_common.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_external_memory.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_can_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_onewire_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_spiffs.c">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_adc_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_dac_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_i2c_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_device_spi_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_io_ports_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_adc_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_i2c_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_serialcommunication_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_spi_config.cpp">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">
@@ -3350,6 +3653,189 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS\nf_mbedtls_config.h">
       <Filter>src\PAL\COM\sockets\ssl\mbedTLS</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_nand_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sdram_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1\fsmc_sram_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FSMCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1\qspi_lld.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\QSPIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\hal_nf_community.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc\hal_stm32_crc.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_crc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng\hal_stm32_rng.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_rng</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash\hal_stm32_flash.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_flash</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\dummy_includes\hal_community.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\dummy_include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc\hal_stm32_fsmc.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_fsmc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi\hal_stm32_qspi.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_qspi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire\hal_stm32_onewire.h">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\include\stm32_onewire</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\board.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_BlockStorage.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_system_io_ports_config.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_windows_devices_serialcommunication_config.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\common\serialcfg.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\chconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\halconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\halconf_nf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\mcuconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\mcuconf_nf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\chconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\halconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\halconf_nf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\mcuconf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\mcuconf_nf.h">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\common\serialcfg.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\chconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\halconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\halconf_nf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\mcuconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\mcuconf_nf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\chconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\halconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\halconf_nf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\mcuconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\mcuconf_nf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_spiffs\hal_spiffs.h">
+      <Filter>targets\ChibiOS\_spiffs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\Include\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>targets\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\nf_lwipthread.h">
+      <Filter>targets\ChibiOS\_Lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\arch\cc.h">
+      <Filter>targets\ChibiOS\_Lwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\arch\perf.h">
+      <Filter>targets\ChibiOS\_Lwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_Lwip\arch\sys_arch.h">
+      <Filter>targets\ChibiOS\_Lwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\board.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\ffconf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\mbedtls_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\spiffs_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\stm32f7xx_hal_conf.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_BlockStorage.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_lwip_sntp_opts.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_lwipopts.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_can_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_nf_devices_onewire_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_spiffs.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_system_io_ports_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_serialcommunication_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_storage_config.h">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
@@ -3532,6 +4018,90 @@
     <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\target_board.h.in">
       <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\README.md">
+      <Filter>targets\ChibiOS\_nf-overlay</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\stm32-internal-flash-driver.md">
+      <Filter>targets\ChibiOS\_nf-overlay</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1\README.md">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\README.md">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1\README.md">
+      <Filter>targets\ChibiOS\_nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\cmake-variants.json">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\launch.json">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\README.md">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\target_common.h.in">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\STM32F091xC_booter.ld">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\STM32F091xC_booter-DEBUG.ld">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\target_board.h.in">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\STM32F091xC_CLR.ld">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\STM32F091xC_CLR-DEBUG.ld">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR\target_board.h.in">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers\STM32F769I_DISCOVERY.Adc.cs">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers\package.nuspec">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers\README.md">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\managed_helpers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\STM32F76xx_booter.ld">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\STM32F76xx_booter-DEBUG.ld">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter\target_board.h.in">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoBooter</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\STM32F76xx_CLR.ld">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\STM32F76xx_CLR-DEBUG.ld">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR\target_board.h.in">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY\nanoCLR</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\cmake-variants.json">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\launch.json">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\README.md">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_common.h.in">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ESP32\_common\CMakeLists.txt">
@@ -3596,6 +4166,15 @@
     </Text>
     <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR\CMakeLists.txt">
       <Filter>targets\FreeRTOS\NXP\NXP_MIMXRT1060_EVK\nanoCLR</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\CMakeLists.txt">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter\CMakeLists.txt">
+      <Filter>targets\ChibiOS\ST_NUCLEO64_F091RC\nanoBooter</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\CMakeLists.txt">
+      <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
     </Text>
   </ItemGroup>
 </Project>

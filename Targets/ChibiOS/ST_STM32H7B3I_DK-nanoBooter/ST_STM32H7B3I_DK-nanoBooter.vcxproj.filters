@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{5996eb81-ca3c-411f-803a-34174c9a8e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios">
+      <UniqueIdentifier>{79ecd30a-977d-48d7-8879-b9d4916578d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{1e343ba3-c495-465f-a259-3298a892c104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter">
+      <UniqueIdentifier>{7da096aa-a351-4ba2-9945-c7755359dec2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os">
+      <UniqueIdentifier>{0c6adfe7-4306-42fc-8ba6-f942270b1609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common">
+      <UniqueIdentifier>{16baf3be-38f7-4cf6-8fa6-77832d4c5c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\abstractions">
+      <UniqueIdentifier>{8095fb7f-1cd9-470c-9ef8-81ff175c1656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\abstractions\cmsis_os">
+      <UniqueIdentifier>{a46d1585-d293-4cfb-9f5b-6aea4bddc929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports">
+      <UniqueIdentifier>{a191bc1f-0eea-4743-88d8-3fb94564aafa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMCMx">
+      <UniqueIdentifier>{58b432b7-6d17-4f3b-85f1-1b81eed144fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMCMx\compilers">
+      <UniqueIdentifier>{b6947ba7-55ba-48ce-83bc-5601c3680ae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ports\ARMCMx\compilers\GCC">
+      <UniqueIdentifier>{e1f0e756-c0bf-46f9-9cf8-6f219d991800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup">
+      <UniqueIdentifier>{dfee5fd2-eb40-491f-86ef-2e44286a29a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx">
+      <UniqueIdentifier>{c65ea160-dc4a-4d53-9150-75b40867cdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\compilers">
+      <UniqueIdentifier>{ee421a02-b088-48eb-89a6-c6b8e158ca64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\compilers\GCC">
+      <UniqueIdentifier>{8ae7699d-9779-43c5-91c9-843bd5c3d68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\devices">
+      <UniqueIdentifier>{796b6ceb-0a41-4c4c-86f7-99c820164836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal">
+      <UniqueIdentifier>{bf737d49-084a-4bf3-b91c-b432d0cb15fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\include">
+      <UniqueIdentifier>{d37c5982-10b8-41e4-8248-9afed2167f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports">
+      <UniqueIdentifier>{39aa9e74-0d37-41eb-b7eb-384fc9d73b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\common">
+      <UniqueIdentifier>{bb2c5165-124f-4354-919c-0afc82f7defe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\common\ARMCMx">
+      <UniqueIdentifier>{6cbaecdc-e4a1-42a4-b6bf-c66fd5f7809f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32">
+      <UniqueIdentifier>{79a2a158-00ee-4b4c-98ce-ddcda1cea346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD">
+      <UniqueIdentifier>{2df7aef6-4c73-4cba-8ab3-86b9a2bf9d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\GPIOv2">
+      <UniqueIdentifier>{d8b57154-4271-4717-bec6-c408e48f2e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\RTCv2">
+      <UniqueIdentifier>{97ba2011-2c16-42ab-8909-005a7843b8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\TIMv1">
+      <UniqueIdentifier>{2364f9d1-5d0d-427c-bc77-929d06b76f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\USARTv2">
+      <UniqueIdentifier>{11463c57-413d-46b9-855f-11c7c3cc3c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\src">
+      <UniqueIdentifier>{562ae9b8-3ac2-46be-91c1-700579382136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\osal">
+      <UniqueIdentifier>{14d1d5b3-9cc3-46a9-96c4-37f6288025d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\license">
+      <UniqueIdentifier>{7c938461-f2f9-47fa-88ca-ae81a3b045bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt">
+      <UniqueIdentifier>{1c7781ba-aa44-4353-8708-842269612129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt\include">
+      <UniqueIdentifier>{f5a0b2a1-bbe0-43a4-8be8-935f020ed633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt\src">
+      <UniqueIdentifier>{34f2eeea-1af0-45ee-8d03-037f0dca2bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\rt\various">
+      <UniqueIdentifier>{9a1ca599-75a7-48b5-a304-b5892e506742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib">
+      <UniqueIdentifier>{478c52b6-943f-4ae8-ae9a-c7d426a1e1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib\include">
+      <UniqueIdentifier>{aa49498e-15f5-41f0-81d1-9ae149a3abc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\oslib\src">
+      <UniqueIdentifier>{1bf12da5-7fa5-433c-ae25-3103e03fcbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src">
+      <UniqueIdentifier>{febf0dd6-d73f-4e4c-bc09-fb88c24d0065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR">
+      <UniqueIdentifier>{ab6bfa92-ebdd-4b27-b374-e00ba061f557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Core">
+      <UniqueIdentifier>{26adcd20-5615-4716-93be-a57245566a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\WireProtocol">
+      <UniqueIdentifier>{77e30a28-e436-4baa-a3cf-39e39b7da4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL">
+      <UniqueIdentifier>{777e2f99-f07d-4e7f-81be-09948c6d93d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\BlockStorage">
+      <UniqueIdentifier>{b658c1ca-7f10-4b78-8d89-7f28fecaae28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\PAL\Include">
+      <UniqueIdentifier>{72b9f24b-ddad-4605-93b0-219bcb03f5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL">
+      <UniqueIdentifier>{e64dca69-c5ac-44ca-9dc9-ee418ec0d021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\HAL\Include">
+      <UniqueIdentifier>{2982c57e-b221-45a9-9bfa-2c55e22690c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets">
+      <UniqueIdentifier>{8b456b01-234f-48a0-a467-857437d99b63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS">
+      <UniqueIdentifier>{8053f204-81a7-46ec-b342-5f62ba484f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS">
+      <UniqueIdentifier>{66641a5c-4aa5-4e1c-8745-5bf610119eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\common">
+      <UniqueIdentifier>{eba17987-a9e7-4433-8c02-de22ebf50a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\Include">
+      <UniqueIdentifier>{a2d64734-1766-4fe7-8ed8-01b52ce94fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter">
+      <UniqueIdentifier>{afc7f9ef-f9a0-497a-8cfd-cadee47eff04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay">
+      <UniqueIdentifier>{b8dc8dec-b797-47b0-a3eb-ea9c37186379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os">
+      <UniqueIdentifier>{27b8ded5-767b-40e3-ae6c-42978b1c7567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal">
+      <UniqueIdentifier>{c0c52299-5ae6-4f43-899e-1b2ec59d1c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports">
+      <UniqueIdentifier>{f6f756d4-c4b1-4008-8972-7c80c4f6e7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32">
+      <UniqueIdentifier>{f5de52a7-a4ec-462c-947c-9f1be3131a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD">
+      <UniqueIdentifier>{b4830736-8eeb-4a64-bca4-00478d5b807c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1">
+      <UniqueIdentifier>{c08f9233-b888-4f9f-964a-9f16581858f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src">
+      <UniqueIdentifier>{a6152d90-5835-4c4f-b030-301a75357765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_crc">
+      <UniqueIdentifier>{eeede680-f6c1-4b68-846c-f4b709f61162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_flash">
+      <UniqueIdentifier>{388418aa-1853-4fda-89be-f5d0462df4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include">
+      <UniqueIdentifier>{24a30484-534e-4cab-a621-f39bca4632e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_crc">
+      <UniqueIdentifier>{1e0411bd-fb81-4164-bab2-3249bab7f3f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_qspi">
+      <UniqueIdentifier>{b081364c-5dcf-427c-8327-cb5779fe5c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng">
+      <UniqueIdentifier>{49438d53-04b1-4b4c-9551-27eb9d348341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\common">
+      <UniqueIdentifier>{6d826325-abd3-4e93-8ec0-408183298c0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\common\Include">
+      <UniqueIdentifier>{19ebb8b4-e70f-4824-a580-ebece5994fa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\startup\ARMCMx\devices\STM32F7xx">
+      <UniqueIdentifier>{45b0785a-5468-4769-a936-45d254a96132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\STM32F7xx">
+      <UniqueIdentifier>{92d3910c-5305-48a8-a8a4-1a7f3be04028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK">
+      <UniqueIdentifier>{fbc2c0dc-f999-4723-adb6-ed799efc4d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\common">
+      <UniqueIdentifier>{153b0145-f744-472c-9b02-40521f533a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter">
+      <UniqueIdentifier>{c875de21-145f-4e17-8218-69a34fda7301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\CRYPv1">
+      <UniqueIdentifier>{ce299e28-28bb-409f-a835-209a8d887e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\DACv1">
+      <UniqueIdentifier>{aba0e3a8-38b4-40f4-97a0-0b0ca11c7993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext">
+      <UniqueIdentifier>{429c6166-3844-492c-bca9-8df49077cc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM">
+      <UniqueIdentifier>{f282a85e-8ef6-4083-9b80-ddc9f2d22fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS">
+      <UniqueIdentifier>{ededbaf4-13df-4ced-9489-ceb108496c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS\Core">
+      <UniqueIdentifier>{833abf1e-3046-4b81-97dd-18241e69d54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ARM\CMSIS\Core\Include">
+      <UniqueIdentifier>{400c7f52-e04f-4989-83f7-5376161ccda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\CANv1">
+      <UniqueIdentifier>{99c9b923-2e67-4aa9-bfa8-443dd77654a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\SPIv2">
+      <UniqueIdentifier>{70582f4b-9a58-4f08-bf5a-4b040716efcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2">
+      <UniqueIdentifier>{ceefd4de-b700-4b3b-8ed0-4beaa3c2e93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ST">
+      <UniqueIdentifier>{009f649c-3f20-4189-9dcf-bce2e0976d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\common\ext\ST\STM32F7xx">
+      <UniqueIdentifier>{51f87215-7995-4271-9a39-b6fced672286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Debugger">
+      <UniqueIdentifier>{6022ce3d-cdfb-4739-8ada-e0f6f71e9552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\RNGv1">
+      <UniqueIdentifier>{5d792978-4689-4b3e-be2b-8faf23525bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\RNGv1">
+      <UniqueIdentifier>{f53e3ca8-833a-4f64-a6e2-58db22c27ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\dummy_include">
+      <UniqueIdentifier>{27b9ec63-cf49-473d-9593-190b7ad0fff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1">
+      <UniqueIdentifier>{934f3415-0115-41b7-aedd-9edc79a6d4c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\src\CLR\Include">
+      <UniqueIdentifier>{f958f148-cfa7-44f2-9ea6-8cdbc0f54f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\OTGv1">
+      <UniqueIdentifier>{28578570-facd-4342-9082-72206f46cd90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\xWDGv1">
+      <UniqueIdentifier>{5d465f42-c26b-4721-9342-e5aa316585da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\DMAv2">
+      <UniqueIdentifier>{407da166-81ea-4ff3-96e2-f4704ff67492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\EXTIv1">
+      <UniqueIdentifier>{3634c02f-a6d7-4fa0-b2ad-95dc1f1159f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_flash">
+      <UniqueIdentifier>{cb175415-7fe9-4df9-8891-707807aad72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_fsmc">
+      <UniqueIdentifier>{a8d7091f-523a-44f4-bd5d-711ac1e545e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_onewire">
+      <UniqueIdentifier>{253b37b5-8259-48de-a9fe-bf34b752d915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\STM32">
+      <UniqueIdentifier>{182880f3-bbe8-4cf3-8910-4dcec5e5c869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\STM32\LLD">
+      <UniqueIdentifier>{057338b8-f4ca-4fae-b616-66f648e790f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\STM32\LLD\GPIOv2">
+      <UniqueIdentifier>{36e86ee3-74dc-4657-9a43-2fafd1174a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\ports\STM32\LLD\ADCv2">
+      <UniqueIdentifier>{6f0af316-f35c-49ed-b6e7-a8c766c341e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chibios\os\hal\osal\rt-nil">
+      <UniqueIdentifier>{789165ae-a8e1-4c43-8596-c49ca3299c22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ST_STM32H7B3I_DK-nanoBooter-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="ST_STM32H7B3I_DK-nanoBooter-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\README.md">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\opcode.def">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="memory_constants.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="rules_clr.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="rules_code.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="rules_data.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="rules_stacks.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+    <LinkerScript Include="STM32F76xx_nanoBooter.ld">
+      <Filter>Configuration</Filter>
+    </LinkerScript>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.c">
+      <Filter>Chibios\os\common\abstractions\cmsis_os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt1.c">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\vectors.S">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.c">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RTCv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_st_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_buffers.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_crypto.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_gpt.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_icu.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_mac.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_pal.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_queues.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_rtc.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sdc.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_serial_usb.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_sio.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_st.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_trng.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_uart.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_usb.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_wdg.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chcond.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdebug.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chdynamic.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chevents.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmsg.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chmtx.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chregistry.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chschd.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsem.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chstats.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chsys.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chthreads.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtm.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chtrace.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\src\chvt.c">
+      <Filter>Chibios\os\rt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\various\syscalls.c">
+      <Filter>Chibios\os\rt\various</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chfactory.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmboxes.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemcore.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmemheaps.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chmempools.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\src\chpipes.c">
+      <Filter>Chibios\os\oslib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\WireProtocol\WireProtocol_Message.c">
+      <Filter>nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
+      <Filter>nf-interpreter\src\PAL\BlockStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\LaunchCLR.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\nanoSupport_CRC32.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\platform_BlockStorage.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\platform_heap.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\targetHAL.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\targetHAL_Time.cpp">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\Target_BlockStorage_STM32FlashDriver.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\WireProtocol_HAL_Interface.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\WireProtocol_ReceiverThread.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter\WireProtocol_App_Interface.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter\WireProtocol_MonitorCommands.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\hal_community.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_crc\hal_stm32_crc.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_crc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_flash\hal_stm32_flash.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_v7m.c">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\hal_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_isr.c">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\common\Device_BlockStorage-DEBUG.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\main.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\board.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\target_BlockStorage.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\target_common.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore.c">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CRYPv1\hal_crypto_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CRYPv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DACv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\src\hal_dac.c">
+      <Filter>Chibios\os\hal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\compilers\GCC\chcoreasm_v7m.S">
+      <Filter>Chibios\os\common\ports\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\compilers\GCC\crt0_v7m.S">
+      <Filter>Chibios\os\common\startup\ARMCMx\compilers\GCC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\common\swo.cpp">
+      <Filter>nf-interpreter\targets\CMSIS-OS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\common\targetHAL_ConfigurationManager.cpp">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\src\stm32_rng\hal_stm32_rng.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RNGv1\hal_trng_lld.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.c">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.c">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DMAv2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.c">
+      <Filter>Chibios\os\hal\osal\rt-nil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
+      <Filter>nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\abstractions\cmsis_os\cmsis_os.h">
+      <Filter>Chibios\os\common\abstractions\cmsis_os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore.h">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_timer.h">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\compilers\GCC\chtypes.h">
+      <Filter>Chibios\os\common\ports\ARMCMx\compilers\GCC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_buffers.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_can.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_channels.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_crypto.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_files.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_gpt.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_i2s.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_icu.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_ioblock.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mac.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mii.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmcsd.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_mmc_spi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_objects.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pal.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_persistent.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_pwm.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_queues.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_rtc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_sdc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_serial_usb.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_sio.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_spi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_st.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_streams.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_trng.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_uart.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_usb.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wdg.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_wspi.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\cache.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\nvic.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\GPIOv2\stm32_gpio.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\GPIOv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RTCv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_st_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\stm32_tim.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_serial_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\USARTv2\hal_uart_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\USARTv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chcustomer.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chlicense.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\license\chversion.h">
+      <Filter>Chibios\os\license</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\ch.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chalign.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chchecks.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chcond.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdebug.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chdynamic.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chevents.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmsg.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chmtx.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chregistry.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chrestrictions.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chschd.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsem.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chstats.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsys.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chsystypes.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chthreads.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtime.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtm.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chtrace.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\rt\include\chvt.h">
+      <Filter>Chibios\os\rt\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chbsem.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chfactory.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chlib.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmboxes.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemcore.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmemheaps.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chmempools.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chobjfifos.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\oslib\include\chpipes.h">
+      <Filter>Chibios\os\oslib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_BlockStorage.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\CLR_Startup_Thread.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\LaunchCLR.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\platform_target_capabilities.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Power.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Time.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetHAL_Watchdog.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetPAL.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\TargetPAL_BlockStorage.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\targetPAL_Time.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\vectors.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\WireProtocol_ReceiverThread.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1\crc_lld.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\CRCv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_crc\hal_stm32_crc.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_crc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_qspi\hal_stm32_qspi.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_qspi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng\hal_stm32_rng.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_rng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\chcore_v7m.h">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\startup\ARMCMx\devices\STM32F7xx\cmparams.h">
+      <Filter>Chibios\os\common\startup\ARMCMx\devices\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\hal_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_isr.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_rcc.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\STM32F7xx\stm32_registry.h">
+      <Filter>Chibios\os\hal\ports\STM32\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\common\serialcfg.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\chconf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\halconf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\halconf_nf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\mcuconf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter\mcuconf_nf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\nanoBooter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\board.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\target_BlockStorage.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CRYPv1\hal_crypto_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CRYPv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DACv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_armcc.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_armclang.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_compiler.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_gcc.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_iccarm.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\cmsis_version.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\core_cm7.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ARM\CMSIS\Core\Include\mpu_armv7.h">
+      <Filter>Chibios\os\common\ext\ARM\CMSIS\Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_adc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_dac.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_i2c.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ports\ARMCMx\mpu.h">
+      <Filter>Chibios\os\common\ports\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_i2s_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\SPIv2\hal_spi_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\SPIv2</Filter>
+    </ClInclude>
+    <ClInclude Include="target_platform.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\hal_nf_community.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2\flash_lld.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\FLASHv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\system_stm32f7xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\common\ARMCMx\mpu_v7m.h">
+      <Filter>Chibios\os\hal\ports\common\ARMCMx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\CPU_GPIO_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\CPU_SPI_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Debugger\Debugger.h">
+      <Filter>nf-interpreter\src\CLR\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\CANv1\hal_can_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\CANv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\RNGv1\hal_trng_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\RNGv1\rng_lld.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\RNGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\dummy_includes\hal_community.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\dummy_include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1\onewire_lld.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\ports\STM32\LLD\ONEWIREv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ST_STM32H7B3I_DK-nanoCLR\swo.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_Message.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\WireProtocol.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_PlatformDef.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoCLR_Types.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Network.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Power.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Time.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Types.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_v2.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Watchdog.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\HAL\Include\nanoHAL_Spi.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_COM.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Events.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_GPIO.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Network.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Sockets.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL_Time.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\PAL\Include\nanoPAL.h">
+      <Filter>nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoSupport.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoPackStruct.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nanoWeak.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\TIMv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\include\hal_usb_cdc.h">
+      <Filter>Chibios\os\hal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\OTGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\xWDGv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\DMAv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\EXTIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\OTGv1\stm32_otg.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\EXTIv1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\stm32f7xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\common\ext\ST\STM32F7xx\stm32f769xx.h">
+      <Filter>Chibios\os\common\ext\ST\STM32F7xx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_flash\hal_stm32_flash.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_fsmc\hal_stm32_fsmc.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_fsmc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_onewire\hal_stm32_onewire.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\nf-overlay\os\hal\include\stm32_onewire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK\stm32f7xx_hal_conf.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\ST_STM32H7B3I_DK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\lwipopts.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\Target_Windows_Storage.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\targets\CMSIS-OS\ChibiOS\Include\TargetHAL_Spi.h">
+      <Filter>nf-interpreter\targets\CMSIS-OS\ChibiOS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-Interpreter\src\CLR\Include\nf_errors_exceptions.h">
+      <Filter>nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="target_board.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="target_common.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="target_os.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.h">
+      <Filter>Chibios\os\hal\ports\STM32\LLD\ADCv2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\ChibiOS\os\hal\osal\rt-nil\osal.h">
+      <Filter>Chibios\os\hal\osal\rt-nil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
+      <Filter>nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
