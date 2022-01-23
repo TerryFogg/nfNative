@@ -6,11 +6,11 @@
 //
 
 /* Includes ------------------------------------------------------------------*/
-#include <stdbool.h>
 #include "stm32h7xx_ll_bus.h"
 #include "stm32h7xx_ll_dma.h"
 #include "stm32h7xx_ll_gpio.h"
 #include "stm32h7xx_ll_usart.h"
+#include <stdbool.h>
 
 #include "BoardInit.h"
 
@@ -18,14 +18,13 @@
 
 #define BUF_MIN(x, y) ((x) < (y) ? (x) : (y))
 #define BUF_MAX(x, y) ((x) > (y) ? (x) : (y))
-#define ARRAY_LEN(x)  (sizeof(x) / sizeof((x)[0]))
+#define ARRAY_LEN(x) (sizeof(x) / sizeof((x)[0]))
 
-typedef struct CircularBuffer
-{
-    uint8_t *buffer;
-    size_t size;
-    size_t r;
-    size_t w;
+typedef struct CircularBuffer {
+  uint8_t *buffer;
+  size_t size;
+  size_t r;
+  size_t w;
 } CircularBuffer_t;
 
 bool InitWireProtocolCommunications();
@@ -35,7 +34,8 @@ void ReadNextComplete(UART_HandleTypeDef *UartHandle);
 void wp_InitializeUsart(void);
 void wp_UsartDataReceived(void);
 uint8_t wp_UsartStartTxDmaTransfer(void);
-uint8_t wp_InitializeBuffer(CircularBuffer_t *buff, void *buffdata, size_t size);
+uint8_t wp_InitializeBuffer(CircularBuffer_t *buff, void *buffdata,
+                            size_t size);
 size_t wp_WriteBuffer(CircularBuffer_t *buff, const void *data, size_t btw);
 size_t wp_ReadBuffer(CircularBuffer_t *buff, void *data, size_t btr);
 size_t wp_BufferBytesWaiting(CircularBuffer_t *buff);

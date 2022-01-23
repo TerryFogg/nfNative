@@ -1,45 +1,27 @@
+#include <tx_api.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
-#include "BoardInit.h"
-#include "stm32h7xx.h"
-#include "stm32h7xx_ll_bus.h"
-#include "stm32h7xx_ll_cortex.h"
-#include "stm32h7xx_ll_dma.h"
-#include "stm32h7xx_ll_exti.h"
-#include "stm32h7xx_ll_gpio.h"
-#include "stm32h7xx_ll_pwr.h"
-#include "stm32h7xx_ll_rcc.h"
-#include "stm32h7xx_ll_system.h"
-#include "stm32h7xx_ll_usart.h"
-#include "stm32h7xx_ll_utils.h"
-//#include <lwrb.h>
-
 #include "wpUSART_Communications.h"
-
-
-UART_HandleTypeDef wpUartHandle;
-
-static DMA_HandleTypeDef hdma_tx;
-static DMA_HandleTypeDef hdma_rx;
 
 // USART receive buffer for DMA - make sure it is in RAM accessible by the DMA controller used.
 // Also, check alignment
-__attribute__((section(".DMA1_RAM"))) __attribute__((aligned(32))) uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
+__attribute__((section(".DMA1_RAM"))) __attribute__((aligned(32)))
+uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
 
-circular_buffer_t receive_circular_buffer;  // Circular buffer instance for Transmit data
-uint8_t receive_circular_buffer_data[1024]; // Circular buffer data array for Receive DMA
+CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for Transmit data
+uint8_t wp_ReceiveData[1024];                    // Circular buffer data array for Receive DMA
 
-circular_buffer_t transmit_circular_buffer;  // Circular buffer instance for Transmit data
-uint8_t transmit_circular_buffer_data[1024]; // Circular buffer data array for Transmit DMA
+CircularBuffer_t wp_UsartTransmitCircularBuffer; // Circular buffer instance for Transmit data
+uint8_t wp_TransmitData[1024];                    // Circular buffer data array for Transmit DMA
 
 volatile size_t usart_tx_dma_current_len; //  Length of currently active TX DMA transfer
 
 TX_EVENT_FLAGS_GROUP wpUartReceivedBytesEvent;
 
-void initialize_usart(void)
+void wp_InitializeUsart(void)
 {
     LL_USART_InitTypeDef USART_InitStruct = {0};
     LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -134,79 +116,37 @@ void initialize_usart(void)
     // Create event based data synchronization
     tx_event_flags_create(&wpUartReceivedBytesEvent, "wpUart event");
 }
-
 bool InitWireProtocolCommunications()
 {
-    circular_buffer_initialize(
-        &transmit_circular_buffer,
-        transmit_circular_buffer_data,
-        sizeof(transmit_circular_buffer_data)); // Initialize ringbuffer for TX
-    circular_buffer_initialize(
-        &receive_circular_buffer,
-        receive_circular_buffer_data,
-        sizeof(receive_circular_buffer_data)); // Initialize ringbuffer for RX
-    initialize_usart();
+    wp_InitializeBuffer(
+        &wp_UsartTransmitCircularBuffer,
+        wp_TransmitData,
+        sizeof(wp_TransmitData)); // Initialize ringbuffer for TX
+    wp_InitializeBuffer(
+        &wp_UsartReceiveCircularBuffer,
+        wp_ReceiveData,
+        sizeof(wp_ReceiveData)); // Initialize ringbuffer for RX
+    wp_InitializeUsart();
     return true;
 }
-bool WritePacket(uint8_t *ptr, uint16_t size)
+bool wp_WriteToUsartBuffer(uint8_t *ptr, uint16_t size)
 {
-    circular_buffer_write(&transmit_circular_buffer, ptr, size); // Write data to transmit buffer
-    usart_start_tx_dma_transfer();
+    wp_WriteBuffer(&wp_UsartTransmitCircularBuffer, ptr, size); // Write data to transmit buffer
+    wp_UsartStartTxDmaTransfer();
     return true;
 }
-int ReadNextPacket(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
+int wp_ReadFromUsartBuffer(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
 {
     ULONG actual_flags;
     uint32_t requestedSize = *size;
     tx_event_flags_get(&wpUartReceivedBytesEvent, 0x1, TX_OR_CLEAR, &actual_flags, wait_time);
-    ULONG read =
-        circular_buffer_read(&receive_circular_buffer, *ptr, requestedSize); // Bytes have arrived try to read what was requested
+    ULONG read = wp_ReadBuffer(
+        &wp_UsartReceiveCircularBuffer,
+        *ptr,
+        requestedSize); // Bytes have arrived try to read what was requested
     return read;
 }
-void DMA1_Stream0_IRQHandler(void)
-{
-    // Check half-transfer complete interrupt
-    if (LL_DMA_IsEnabledIT_HT(wpDMA, wpDMA_ReceiveStream) && LL_DMA_IsActiveFlag_HT0(wpDMA))
-    {
-        LL_DMA_ClearFlag_HT0(wpDMA); // Clear half-transfer complete flag
-        usart_rx_check();            // Check for data to process
-    }
-
-    // Check transfer-complete interrupt
-    if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_ReceiveStream) && LL_DMA_IsActiveFlag_TC0(wpDMA))
-    {
-        LL_DMA_ClearFlag_TC0(wpDMA); // Clear transfer complete flag
-        usart_rx_check();            // Check for data to process
-    }
-}
-void DMA1_Stream1_IRQHandler(void)
-{
-    if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_TransmitStream) && LL_DMA_IsActiveFlag_TC1(wpDMA))
-    {
-        LL_DMA_ClearFlag_TC1(wpDMA); // Clear transfer complete flag
-        size_t number_bytes_waiting = circular_buffer_bytes_waiting(&transmit_circular_buffer);
-        transmit_circular_buffer.r +=
-            BUF_MIN(usart_tx_dma_current_len, number_bytes_waiting);
-        if (transmit_circular_buffer.r >= transmit_circular_buffer.size)
-        {
-            transmit_circular_buffer.r -= transmit_circular_buffer.size;
-        }
-//        lwrb_skip(&usart_tx_rb, usart_tx_dma_current_len); // Skip sent data, mark as read
-        usart_tx_dma_current_len = 0;                      // Clear length variable
-        usart_start_tx_dma_transfer();                     // Start sending more data
-    }
-}
-#define wpUSART_IRQHANDLER() void USART3_IRQHandler(void)
-wpUSART_IRQHANDLER()
-// void USART3_IRQHandler(void)
-{
-    if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
-    {
-        LL_USART_ClearFlag_IDLE(wpUSART); // Clear IDLE line flag
-        usart_rx_check();                 // Check for data to process
-    }
-}
-void usart_rx_check(void)
+void wp_UsartDataReceived(void)
 {
     static size_t old_position;
 
@@ -218,26 +158,32 @@ void usart_rx_check(void)
     {
         if (position > old_position)
         {
-            usart_process_data(&wpUSART_DMA_Receive_Buffer[old_position], position - old_position);
+            wp_WriteBuffer(
+                &wp_UsartReceiveCircularBuffer,
+                &wpUSART_DMA_Receive_Buffer[old_position],
+                position - old_position); /* Write data to receive buffer */
         }
         else
         {
             // Processing is done in "overflow" mode..
-            usart_process_data(&wpUSART_DMA_Receive_Buffer[old_position], ARRAY_LEN(wpUSART_DMA_Receive_Buffer) - old_position);
+            wp_WriteBuffer(
+                &wp_UsartReceiveCircularBuffer,
+                &wpUSART_DMA_Receive_Buffer[old_position],
+                ARRAY_LEN(wpUSART_DMA_Receive_Buffer) - old_position); /* Write data to receive buffer */
+
             if (position > 0)
             {
-                usart_process_data(&wpUSART_DMA_Receive_Buffer[0], position);
+                wp_WriteBuffer(
+                    &wp_UsartReceiveCircularBuffer,
+                    &wpUSART_DMA_Receive_Buffer[0],
+                    position); /* Write data to receive buffer */
             }
         }
         old_position = position;
+        tx_event_flags_set(&wpUartReceivedBytesEvent, 0x1, TX_OR);
     }
 }
-void usart_process_data(const void *data, size_t len)
-{
-    circular_buffer_write(&receive_circular_buffer, data, len); /* Write data to receive buffer */
-    tx_event_flags_set(&wpUartReceivedBytesEvent, 0x1, TX_OR);
-}
-uint8_t usart_start_tx_dma_transfer(void)
+uint8_t wp_UsartStartTxDmaTransfer(void)
 {
     /*
      * First check if transfer is currently in-active, by examining the value of
@@ -266,10 +212,26 @@ uint8_t usart_start_tx_dma_transfer(void)
      * prior every check
      */
     uint8_t started = 0;
+    size_t length;
     uint32_t primask = __get_PRIMASK();
     __disable_irq();
-    if (usart_tx_dma_current_len == 0 &&
-        (usart_tx_dma_current_len = lwrb_get_linear_block_read_length(&transmit_circular_buffer)) > 0)
+    /* Use temporary values in case they are changed during operations */
+    size_t w = wp_UsartTransmitCircularBuffer.w;
+    size_t r = wp_UsartTransmitCircularBuffer.r;
+    if (w > r)
+    {
+        length = w - r;
+    }
+    else if (r > w)
+    {
+        length = wp_UsartTransmitCircularBuffer.size - r;
+    }
+    else
+    {
+        length = 0;
+    }
+
+    if (usart_tx_dma_current_len == 0 && (usart_tx_dma_current_len = length) > 0)
     {
         // Disable channel if enabled
         LL_DMA_DisableStream(wpDMA, wpDMA_TransmitStream);
@@ -283,7 +245,10 @@ uint8_t usart_start_tx_dma_transfer(void)
 
         // Prepare DMA data and length
         LL_DMA_SetDataLength(wpDMA, wpDMA_TransmitStream, usart_tx_dma_current_len);
-        LL_DMA_SetMemoryAddress(wpDMA, wpDMA_TransmitStream, (uint32_t)&transmit_circular_buffer.buffer[transmit_circular_buffer.r]);
+        LL_DMA_SetMemoryAddress(
+            wpDMA,
+            wpDMA_TransmitStream,
+            (uint32_t)&wp_UsartTransmitCircularBuffer.buffer[wp_UsartTransmitCircularBuffer.r]);
 
         LL_DMA_EnableStream(wpDMA, wpDMA_TransmitStream);
         started = 1;
@@ -291,8 +256,7 @@ uint8_t usart_start_tx_dma_transfer(void)
     __set_PRIMASK(primask);
     return started;
 }
-
-uint8_t circular_buffer_initialize(circular_buffer_t *buffer, void *data, size_t size)
+uint8_t wp_InitializeBuffer(CircularBuffer_t *buffer, void *data, size_t size)
 {
     if (buffer == NULL || data == NULL || size == 0)
     {
@@ -303,10 +267,11 @@ uint8_t circular_buffer_initialize(circular_buffer_t *buffer, void *data, size_t
     buffer->buffer = data;
     return 1;
 }
-size_t circular_buffer_write(circular_buffer_t *buffer, const void *data, size_t btw)
+size_t wp_WriteBuffer(CircularBuffer_t *buffer, const void *data, size_t btw)
 {
     size_t tocopy;
     size_t free;
+    size_t size;
     const uint8_t *d = data;
 
     if (data == NULL || btw == 0)
@@ -315,7 +280,24 @@ size_t circular_buffer_write(circular_buffer_t *buffer, const void *data, size_t
     }
 
     /* Calculate maximum number of bytes available to write */
-    free = circular_buffer_bytes_available(buffer);
+    /* Use temporary values in case they are changed during operations */
+    size_t w = buffer->w;
+    size_t r = buffer->r;
+    if (w == r)
+    {
+        size = buffer->size;
+    }
+    else if (r > w)
+    {
+        size = r - w;
+    }
+    else
+    {
+        size = buffer->size - (w - r);
+    }
+    /* buffer free size is always 1 less than actual size */
+    free = size - 1;
+
     btw = BUF_MIN(free, btw);
     if (btw == 0)
     {
@@ -342,7 +324,7 @@ size_t circular_buffer_write(circular_buffer_t *buffer, const void *data, size_t
     }
     return tocopy + btw;
 }
-size_t circular_buffer_read(circular_buffer_t *buffer, void *data, size_t btr)
+size_t wp_ReadBuffer(CircularBuffer_t *buffer, void *data, size_t btr)
 {
     size_t tocopy;
     size_t full;
@@ -354,7 +336,7 @@ size_t circular_buffer_read(circular_buffer_t *buffer, void *data, size_t btr)
     }
 
     /* Calculate maximum number of bytes available to read */
-    full = circular_buffer_bytes_waiting(buffer);
+    full = wp_BufferBytesWaiting(buffer);
     btr = BUF_MIN(full, btr);
     if (btr == 0)
     {
@@ -381,30 +363,7 @@ size_t circular_buffer_read(circular_buffer_t *buffer, void *data, size_t btr)
     }
     return tocopy + btr;
 }
-size_t circular_buffer_bytes_available(circular_buffer_t *buffer)
-{
-    size_t size;
-    size_t w;
-    size_t r;
-    /* Use temporary values in case they are changed during operations */
-    w = buffer->w;
-    r = buffer->r;
-    if (w == r)
-    {
-        size = buffer->size;
-    }
-    else if (r > w)
-    {
-        size = r - w;
-    }
-    else
-    {
-        size = buffer->size - (w - r);
-    }
-    /* buffer free size is always 1 less than actual size */
-    return size - 1;
-}
-size_t circular_buffer_bytes_waiting(circular_buffer_t *buffer)
+size_t wp_BufferBytesWaiting(CircularBuffer_t *buffer)
 {
     size_t size;
 
@@ -425,33 +384,42 @@ size_t circular_buffer_bytes_waiting(circular_buffer_t *buffer)
     }
     return size;
 }
-size_t lwrb_get_linear_block_read_length(circular_buffer_t *buffer)
-{
-    size_t len;
-    /* Use temporary values in case they are changed during operations */
-    size_t w = buffer->w;
-    size_t r = buffer->r;
-    if (w > r)
-    {
-        len = w - r;
-    }
-    else if (r > w)
-    {
-        len = buffer->size - r;
-    }
-    else
-    {
-        len = 0;
-    }
-    return len;
+
+wpDMA_ReceiveStream_IRQHandler() {
+  // Check half-transfer complete interrupt
+  if (LL_DMA_IsEnabledIT_HT(wpDMA, wpDMA_ReceiveStream) &&
+      LL_DMA_IsActiveFlag_HT0(wpDMA)) {
+    LL_DMA_ClearFlag_HT0(wpDMA); // Clear half-transfer complete flag
+    wp_UsartDataReceived();      // Check for data to process
+  }
+
+  // Check transfer-complete interrupt
+  if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_ReceiveStream) &&
+      LL_DMA_IsActiveFlag_TC0(wpDMA)) {
+    LL_DMA_ClearFlag_TC0(wpDMA); // Clear transfer complete flag
+    wp_UsartDataReceived();      // Check for data to process
+  }
 }
-//size_t lwrb_skip(circular_buffer_t *buffer, size_t len)
-//{
-//    size_t full = circular_buffer_bytes_waiting(buffer);
-//    buffer->r += BUF_MIN(len, full);
-//    if (buffer->r >= buffer->size)
-//    {
-//        buffer->r -= buffer->size;
-//    }
-//    return len;
-//}
+wpDMA_TransmitStream_IRQHandler() {
+  if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_TransmitStream) &&
+      LL_DMA_IsActiveFlag_TC1(wpDMA)) {
+    LL_DMA_ClearFlag_TC1(wpDMA); // Clear transfer complete flag
+    size_t number_bytes_waiting =
+        wp_BufferBytesWaiting(&wp_UsartTransmitCircularBuffer);
+    wp_UsartTransmitCircularBuffer.r +=
+        BUF_MIN(usart_tx_dma_current_len, number_bytes_waiting);
+    if (wp_UsartTransmitCircularBuffer.r >=
+        wp_UsartTransmitCircularBuffer.size) {
+      wp_UsartTransmitCircularBuffer.r -= wp_UsartTransmitCircularBuffer.size;
+    }
+    usart_tx_dma_current_len = 0; // Clear length variable
+    wp_UsartStartTxDmaTransfer(); // Start sending more data
+  }
+}
+wpUSART_IRQHANDLER() {
+  if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
+  {
+    LL_USART_ClearFlag_IDLE(wpUSART); // Clear IDLE line flag
+    wp_UsartDataReceived();           // Check for data to process
+  }
+}
