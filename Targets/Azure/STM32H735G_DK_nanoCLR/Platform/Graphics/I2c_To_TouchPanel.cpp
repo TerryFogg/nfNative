@@ -354,7 +354,7 @@ bool TouchInterface::Initialize(TouchInterfaceConfig config)
     ts_i2c.Instance->CR1 = (ts_i2c.Init.GeneralCallMode | ts_i2c.Init.NoStretchMode);     // Configure I2Cx: Generalcall and NoStretch mode
     __HAL_I2C_ENABLE(&ts_i2c);
 
-    lcd_printf("TOUCH: Touch Interface initialized\n");
+//    lcd_printf("TOUCH: Touch Interface initialized\n");
     return true;
 }
 

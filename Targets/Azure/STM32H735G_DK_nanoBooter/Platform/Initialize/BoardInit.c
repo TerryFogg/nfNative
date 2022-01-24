@@ -20,33 +20,7 @@ OSPI_HandleTypeDef A_hospi;
 
 #define RTC_ASYNCH_PREDIV 0x7F      // LSE as RTC clock
 #define RTC_SYNCH_PREDIV 0x00FF     // LSE as RTC clock
-
-#ifdef HAL_RTC_MODULE_ENABLED
-RTC_HandleTypeDef RtcHandle;
-#endif
 eBooterStatus nanoBooterState;
-
-
-#ifdef HAL_RTC_MODULE_ENABLED
-void System_IniRtc(void)
-{
-    RtcHandle.Instance = RTC;
-    RtcHandle.Init.HourFormat = RTC_HOURFORMAT_24;
-    RtcHandle.Init.AsynchPrediv = RTC_ASYNCH_PREDIV;
-    RtcHandle.Init.SynchPrediv = RTC_SYNCH_PREDIV;
-    RtcHandle.Init.OutPut = RTC_OUTPUT_DISABLE;
-    RtcHandle.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
-    RtcHandle.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
-
-    if (HAL_RTC_Init(&RtcHandle) != HAL_OK)
-    {
-        // Initialization Error
-        while(1)
-        {
-        }
-    }
-}
-#endif // HAL_RTC_MODULE_ENABLED
 
 void BoardInit()
 {
@@ -65,9 +39,6 @@ void BoardInit()
     // Can we use the following code in an update to flash only?
     HAL_FLASH_Unlock();
 
-    
-    
-    
 }
 
 void CPU_CACHE_Enable(void)
@@ -87,6 +58,7 @@ void Board_LED_Initialization()
     GPIO_InitStructure.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStructure);
 }
+
 void Initialize_OPSPI_Hyperam()
 {
     int32_t ret;

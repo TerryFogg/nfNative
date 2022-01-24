@@ -1,4 +1,3 @@
-#include <FastSemihosting.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
@@ -8,7 +7,6 @@
 #include <nanoPAL_BlockStorage.h>
 #include "wpUSART_Communications.h"
 #include "BoardInit.h"
-#include <stdio.h>
 
 int main(void)
 {
@@ -22,9 +20,5 @@ int main(void)
     BlockStorageList_Initialize();
     BlockStorage_AddDevices();
     ConfigurationManager_Initialize();
-
-
     Startup_Rtos();
 }
-
-

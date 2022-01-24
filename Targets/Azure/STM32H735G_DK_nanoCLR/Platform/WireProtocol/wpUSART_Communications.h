@@ -1,60 +1,41 @@
+#pragma once
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
-#pragma once
-
-#include <stdbool.h>
 
 /* Includes ------------------------------------------------------------------*/
-#include <nanoHAL_v2.h>
-#include "stm32h7xx_hal.h"
-#include "WireProtocol_Message.h"
-#include <stm32h7xx.h>
-#include <stm32h7xx_hal.h>
-#include <stm32h7xx_hal_def.h>
-#include <stm32h7xx_hal_uart.h>
-#include <stm32h7xx_hal_usart.h>
-#include <stm32h7xx_hal_dma.h>
-#include <BoardInit.h>
+#include <stdbool.h>
+#include "stm32h7xx_ll_bus.h"
+#include "stm32h7xx_ll_dma.h"
+#include "stm32h7xx_ll_gpio.h"
+#include "stm32h7xx_ll_usart.h"
 
-// Receive buffer for DMA copy from peripheral USART
-#define RXBUFFER        128
+#include "BoardInit.h"
 
-// Transmit buffer
-#define TXBUFFERSIZE    128
+#define wpUSART_DMA_Receive_Buffer_size 2000
 
-#define NUMBER_PACKETS  4
+#define BUF_MIN(x, y) ((x) < (y) ? (x) : (y))
+#define BUF_MAX(x, y) ((x) > (y) ? (x) : (y))
+#define ARRAY_LEN(x)  (sizeof(x) / sizeof((x)[0]))
 
-
-/* Exported macro ------------------------------------------------------------*/
-#define COUNTOF(__BUFFER__)   (sizeof(__BUFFER__) / sizeof(*(__BUFFER__)))
-/* Exported functions ------------------------------------------------------- */
-
-typedef enum PacketReadStates { ReadNotSet, Listening, ReadFull, ReadPartial } ReadPacketState;
-typedef enum PacketWriteStates { WriteNotSet, Writing, SentFull, SentPartial } WritePacketState;
+typedef struct CircularBuffer
+{
+    uint8_t *buffer;
+    size_t size;
+    size_t r;
+    size_t w;
+} CircularBuffer_t;
 
 bool InitWireProtocolCommunications();
-bool WritePacket(uint8_t* ptr, uint16_t size);
-bool ReadNextPacket(uint8_t** ptr, uint32_t* size);
+bool wp_WriteToUsartBuffer(uint8_t *ptr, uint16_t size);
+int wp_ReadFromUsartBuffer(uint8_t **ptr, uint32_t *size, uint32_t wait_time);
 void ReadNextComplete(UART_HandleTypeDef* UartHandle);
-
-void WP_DMA_Receive_half_complete();
-void WP_DMA_Receive_complete();
-void WP_DMA_Transfer_complete();
-void WP_USART_Interrupt();
-
-void usart_rx_check(void);
-
-
-void    usart_process_data(const void* data, size_t len);
-void    usart_send_string(const char* str);
-uint8_t usart_start_tx_dma_transfer(void);
-
-
-void DMA1_Stream0_IRQHandler(void);
-void DMA1_Stream1_IRQHandler(void);
-
-
-
+void wp_InitializeUsart(void);
+void wp_UsartDataReceived(void);
+uint8_t wp_UsartStartTxDmaTransfer(void);
+uint8_t wp_InitializeBuffer(CircularBuffer_t *buff, void *buffdata, size_t size);
+size_t wp_WriteBuffer(CircularBuffer_t *buff, const void *data, size_t btw);
+size_t wp_ReadBuffer(CircularBuffer_t *buff, void *data, size_t btr);
+size_t wp_BufferBytesWaiting(CircularBuffer_t *buff);

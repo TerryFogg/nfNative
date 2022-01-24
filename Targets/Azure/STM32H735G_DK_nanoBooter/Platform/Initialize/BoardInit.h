@@ -133,9 +133,6 @@ extern eBooterStatus nanoBooterState;
 #define OSPI2_DQS_PIN       GPIO_PIN_12
 #define OSPI2_DQS_GPIO_PORT GPIOF
 
-/* Exported macro ------------------------------------------------------------*/
-/* Exported functions ------------------------------------------------------- */
-
 /* Definition for OCTOSPI2 clock resources */
 #define OSPI2_CLK_ENABLE()            __HAL_RCC_OSPI2_CLK_ENABLE()
 #define OSPI2_CLK_DISABLE()           __HAL_RCC_OSPI2_CLK_DISABLE()

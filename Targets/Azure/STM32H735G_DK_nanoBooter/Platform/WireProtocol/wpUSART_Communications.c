@@ -1,9 +1,9 @@
-#include <tx_api.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
+#include <tx_api.h>
 #include "wpUSART_Communications.h"
 
 // USART receive buffer for DMA - make sure it is in RAM accessible by the DMA controller used.
@@ -12,10 +12,10 @@ __attribute__((section(".DMA1_RAM"))) __attribute__((aligned(32)))
 uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
 
 CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for Transmit data
-uint8_t wp_ReceiveData[1024];                    // Circular buffer data array for Receive DMA
+uint8_t wp_ReceiveData[1024];                   // Circular buffer data array for Receive DMA
 
 CircularBuffer_t wp_UsartTransmitCircularBuffer; // Circular buffer instance for Transmit data
-uint8_t wp_TransmitData[1024];                    // Circular buffer data array for Transmit DMA
+uint8_t wp_TransmitData[1024];                   // Circular buffer data array for Transmit DMA
 
 volatile size_t usart_tx_dma_current_len; //  Length of currently active TX DMA transfer
 
@@ -385,41 +385,42 @@ size_t wp_BufferBytesWaiting(CircularBuffer_t *buffer)
     return size;
 }
 
-wpDMA_ReceiveStream_IRQHandler() {
-  // Check half-transfer complete interrupt
-  if (LL_DMA_IsEnabledIT_HT(wpDMA, wpDMA_ReceiveStream) &&
-      LL_DMA_IsActiveFlag_HT0(wpDMA)) {
-    LL_DMA_ClearFlag_HT0(wpDMA); // Clear half-transfer complete flag
-    wp_UsartDataReceived();      // Check for data to process
-  }
-
-  // Check transfer-complete interrupt
-  if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_ReceiveStream) &&
-      LL_DMA_IsActiveFlag_TC0(wpDMA)) {
-    LL_DMA_ClearFlag_TC0(wpDMA); // Clear transfer complete flag
-    wp_UsartDataReceived();      // Check for data to process
-  }
-}
-wpDMA_TransmitStream_IRQHandler() {
-  if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_TransmitStream) &&
-      LL_DMA_IsActiveFlag_TC1(wpDMA)) {
-    LL_DMA_ClearFlag_TC1(wpDMA); // Clear transfer complete flag
-    size_t number_bytes_waiting =
-        wp_BufferBytesWaiting(&wp_UsartTransmitCircularBuffer);
-    wp_UsartTransmitCircularBuffer.r +=
-        BUF_MIN(usart_tx_dma_current_len, number_bytes_waiting);
-    if (wp_UsartTransmitCircularBuffer.r >=
-        wp_UsartTransmitCircularBuffer.size) {
-      wp_UsartTransmitCircularBuffer.r -= wp_UsartTransmitCircularBuffer.size;
+wpDMA_ReceiveStream_IRQHandler()
+{
+    // Check half-transfer complete interrupt
+    if (LL_DMA_IsEnabledIT_HT(wpDMA, wpDMA_ReceiveStream) && LL_DMA_IsActiveFlag_HT0(wpDMA))
+    {
+        LL_DMA_ClearFlag_HT0(wpDMA); // Clear half-transfer complete flag
+        wp_UsartDataReceived();      // Check for data to process
     }
-    usart_tx_dma_current_len = 0; // Clear length variable
-    wp_UsartStartTxDmaTransfer(); // Start sending more data
-  }
+
+    // Check transfer-complete interrupt
+    if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_ReceiveStream) && LL_DMA_IsActiveFlag_TC0(wpDMA))
+    {
+        LL_DMA_ClearFlag_TC0(wpDMA); // Clear transfer complete flag
+        wp_UsartDataReceived();      // Check for data to process
+    }
 }
-wpUSART_IRQHANDLER() {
-  if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
-  {
-    LL_USART_ClearFlag_IDLE(wpUSART); // Clear IDLE line flag
-    wp_UsartDataReceived();           // Check for data to process
-  }
+wpDMA_TransmitStream_IRQHandler()
+{
+    if (LL_DMA_IsEnabledIT_TC(wpDMA, wpDMA_TransmitStream) && LL_DMA_IsActiveFlag_TC1(wpDMA))
+    {
+        LL_DMA_ClearFlag_TC1(wpDMA); // Clear transfer complete flag
+        size_t number_bytes_waiting = wp_BufferBytesWaiting(&wp_UsartTransmitCircularBuffer);
+        wp_UsartTransmitCircularBuffer.r += BUF_MIN(usart_tx_dma_current_len, number_bytes_waiting);
+        if (wp_UsartTransmitCircularBuffer.r >= wp_UsartTransmitCircularBuffer.size)
+        {
+            wp_UsartTransmitCircularBuffer.r -= wp_UsartTransmitCircularBuffer.size;
+        }
+        usart_tx_dma_current_len = 0; // Clear length variable
+        wp_UsartStartTxDmaTransfer(); // Start sending more data
+    }
+}
+wpUSART_IRQHANDLER()
+{
+    if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
+    {
+        LL_USART_ClearFlag_IDLE(wpUSART); // Clear IDLE line flag
+        wp_UsartDataReceived();           // Check for data to process
+    }
 }

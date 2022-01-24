@@ -22,5 +22,3 @@ int main(void)
     ConfigurationManager_Initialize();
     Startup_Rtos();
 }
-
-

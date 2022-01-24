@@ -2,10 +2,5 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)Logo.h" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)wpUSART_Communications.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_HAL_Interface.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)wpUSART_Communications.h" />
   </ItemGroup>
 </Project>
