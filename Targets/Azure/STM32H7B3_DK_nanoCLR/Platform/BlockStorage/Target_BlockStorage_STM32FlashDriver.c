@@ -8,7 +8,6 @@
 
 #define FLASH_ERASED_WORD ((uint32_t)0xFFFFFFFF)
 
-
 bool STM32FlashDriver_InitializeDevice(void *context)
 {
     (void)context;
@@ -59,8 +58,6 @@ bool STM32FlashDriver_Write(
     (void)context;
     (void)readModifyWrite;
 
-
-
     return true;
 }
 
@@ -89,7 +86,6 @@ bool STM32FlashDriver_IsBlockErased(void *context, ByteAddress blockAddress, uns
 bool STM32FlashDriver_EraseBlock(void *context, ByteAddress address)
 {
     (void)context;
-
 
     return true;
 }

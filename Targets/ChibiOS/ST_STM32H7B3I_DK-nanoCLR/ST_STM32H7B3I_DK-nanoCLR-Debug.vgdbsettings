@@ -7,11 +7,14 @@
       <PathStyle>MinGWUnixSlash</PathStyle>
       <LocalDirForAbsolutePaths>$(ToolchainDir)</LocalDirForAbsolutePaths>
     </CustomSourceDirectories>
+    <AutoProgramSPIFFSPartition>true</AutoProgramSPIFFSPartition>
     <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
     <ExportAdvancedBuildVariables>false</ExportAdvancedBuildVariables>
     <EmbeddedProfileFile>stm32.xml</EmbeddedProfileFile>
+    <MemoryListSource>DeviceDefinition</MemoryListSource>
   </Project>
   <Build xsi:type="com.visualgdb.build.msbuild">
+    <BuildLogMode xsi:nil="true" />
     <ToolchainID>
       <ID>5ad4f18e-9b08-4835-9493-da261eda4649</ID>
       <Version>
@@ -23,9 +26,11 @@
     <ProjectFile>ST_STM32H7B3I_DK-nanoCLR-nanoBooter.vcxproj</ProjectFile>
     <RemoteBuildEnvironment>
       <Records />
+      <EnvironmentSetupFiles />
     </RemoteBuildEnvironment>
     <ParallelJobCount>1</ParallelJobCount>
     <SuppressDirectoryChangeMessages>true</SuppressDirectoryChangeMessages>
+    <BuildAsRoot>false</BuildAsRoot>
   </Build>
   <CustomBuild>
     <PreSyncActions />
@@ -56,6 +61,22 @@
         <SearchInProjectDir>true</SearchInProjectDir>
         <SearchInSourceDirs>true</SearchInSourceDirs>
         <SearchInIncludeSubdirs>true</SearchInIncludeSubdirs>
+        <IgnoredDirs>
+          <string>C:\repos\nfNative\externalrepositories\chibios\demos\avr\nil-arduino-mega\cfg</string>
+          <string>C:\repos\nfNative\externalrepositories\chibios\demos\avr\nil-arduino-mini\cfg</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\chibios\orgpal_palthree</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\chibios\_include</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\azurertos\st\orgpal_palthree</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\chibios\st_stm32f769i_discovery</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\esp32\esp32</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\esp32\esp32_s2</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\freertos\nxp\nxp_mimxrt1060_evk</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\azurertos\maxim\max78000_fthr</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\azurertos\maxim\_include</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets\azurertos\raspberrypi\_include</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets-community\cmsis-os\chibios\st_nucleo144_f439zi</string>
+          <string>C:\repos\nfNative\externalrepositories\nf-interpreter\targets-community\cmsis-os\chibios\st_nucleo144_f746zg</string>
+        </IgnoredDirs>
       </DiscoverySettings>
       <CheckForClangFormatFiles>true</CheckForClangFormatFiles>
       <FormattingEngine>ClangFormat</FormattingEngine>
@@ -146,6 +167,7 @@
       <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
       <EnableNonStopMode>false</EnableNonStopMode>
       <MaxBreakpointLimit>0</MaxBreakpointLimit>
+      <EnableVerboseMode>true</EnableVerboseMode>
     </AdditionalGDBSettings>
     <DebugMethod>
       <ID>com.sysprogs.arm.openocd</ID>
@@ -184,6 +206,7 @@
     <EndOfStackSymbol>_estack</EndOfStackSymbol>
     <TimestampProviderTicksPerSecond>0</TimestampProviderTicksPerSecond>
     <KeepConsoleAfterExit>false</KeepConsoleAfterExit>
+    <UnusedStackFillPattern xsi:nil="true" />
     <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
   </Debug>
 </VisualGDBProjectSettings2>

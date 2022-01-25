@@ -42,7 +42,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <AdditionalIncludeDirectories>Platform\Configuration;Platform\Graphics;Platform\HAL;Platform\Initialize;Platform\PAL;Platform\Startup;Platform\STM32CubeH7\Components\ft5336;Platform\STM32CubeH7\BSP\Components\common;Platform\STM32CubeH7\BSP\Components\rk043fn48h;Platform\Support;Platform\WireProtocol;..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\EmbeddedEFPs\Profiler;..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\inc; ..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\NativeEventDispatcher;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem;..\..\..\ExternalRepositories\nf-interpreter\src\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Wifi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS;..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\include;..\..\..\ExternalRepositories\STM32CubeH7\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1;..\..\..\ExternalRepositories\STM32CubeH7\Projects\STM32H735G-DK\Applications\FreeRTOS\FreeRTOS_ThreadCreation\Inc;..\..\..\SharedCode\STM32_CommonCode;Platform/STM32CubeH7/Components/common;Platform\BlockStorage;Platform/STM32CubeH7/STM32H7B3I-DK;Platform\STM32CubeH7\Components\mx25lm51245g;../../../ExternalRepositories/STM32CubeH7/Projects/STM32H735G-DK/Applications/ExtMem_CodeExecution/ExtMem_Boot/Inc;Platform\STM32CubeH7\Components\s70kl1281;../../../ExternalRepositories/STM32CubeH7/Drivers/BSP/STM32H735G-DK;../../../ExternalRepositories/STM32CubeF7/Drivers/STM32F7xx_HAL_Driver/Inc;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>DEBUG=1;STM32H735xx;PLATFORM_ARM;USE_FULL_LL_DRIVER,USE_HAL_DRIVER;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG=1;STM32H735xx;PLATFORM_ARM;USE_FULL_LL_DRIVER,USE_HAL_DRIVER;I_AM_NANOCLR;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <CLanguageStandard>C11</CLanguageStandard>
       <AdditionalOptions />
       <CPPLanguageStandard />
@@ -594,7 +594,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c" />
-    <ClCompile Include="ll.cpp" />
     <ClCompile Include="LTDC_DMA2D_To_Video.cpp" />
     <ClCompile Include="Platform\BlockStorage\Device_BlockStorage.c" />
     <ClCompile Include="Platform\BlockStorage\platform_BlockStorage.c" />
@@ -642,7 +641,6 @@
     <ClCompile Include="Platform\Support\nanoCRT.cpp" />
     <ClCompile Include="Platform\Support\nanoSupport_CRC32.c" />
     <ClCompile Include="Platform\Support\ST_Hal_Gpio_Helpers.c" />
-    <ClCompile Include="Platform\WireProtocol\lwrb.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_App_Interface.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_HAL_Interface.c" />
     <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c" />
@@ -758,26 +756,7 @@
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Sockets.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Time.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h723xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h725xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xxq.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h733xx.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h735xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h742xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h745xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h747xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h753xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h755xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h757xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xx.h" />
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h" />
@@ -873,7 +852,6 @@
     <ClInclude Include="Platform\STM32CubeH7\STM32H735-DK\stm32h735g_discovery_ts.h" />
     <ClInclude Include="Platform\STM32CubeH7\STM32H735-DK\stm32h735xx.h" />
     <ClInclude Include="Platform\Support\ST_Hal_Gpio_Helpers.h" />
-    <ClInclude Include="Platform\WireProtocol\lwrb.h" />
     <ClInclude Include="Platform\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="Platform\WireProtocol\wpUSART_Communications.h" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
@@ -987,15 +965,6 @@
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings" />
     <None Include="STM32H7B3_DK_nanoCLR-Release.vgdbsettings" />
     <None Include="stm32.xml" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Platform\Memory\rules.ld" />

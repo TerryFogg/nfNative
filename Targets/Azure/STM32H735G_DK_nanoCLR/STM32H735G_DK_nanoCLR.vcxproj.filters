@@ -58,9 +58,6 @@
     <Filter Include="Platform\WireProtocol">
       <UniqueIdentifier>{3ce4c23a-33db-4b36-a1c5-ad3a9ab3f15f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\Semihosting/Profiler">
-      <UniqueIdentifier>{dacba017-d268-49f8-b43a-eb0c60ed60a2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Platform\Support">
       <UniqueIdentifier>{4f5fb099-5328-4c94-9ea7-a9a0b3a7521a}</UniqueIdentifier>
     </Filter>
@@ -497,15 +494,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c">
       <Filter>External\STM32CubeH7\STM32H7xx_HAL_Driver\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
-      <Filter>Platform\Semihosting/Profiler</Filter>
     </ClCompile>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
       <Filter>nf-interpreter\src\CLR\Include</Filter>
@@ -1055,67 +1043,10 @@
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
       <Filter>External\STM32CubeH7\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h">
       <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h723xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h725xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h730xxq.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h733xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h735xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h742xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h745xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h747xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h753xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h755xx.h">
-      <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h757xx.h">
       <Filter>External\STM32CubeH7\CMSIS\Device\ST\STM32H7xx\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
@@ -1457,24 +1388,6 @@
     <ClInclude Include="Platform\Configuration\target_platform.h">
       <Filter>Platform\Configuration</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Platform\Semihosting/Profiler</Filter>
-    </ClInclude>
     <ClInclude Include="Platform\STM32CubeH7\Components\ft5336\ft5336.h">
       <Filter>Platform\STM32CubeH7\Components\ft5336</Filter>
     </ClInclude>
@@ -1564,9 +1477,6 @@
     </ClInclude>
     <ClInclude Include="Platform\STM32CubeH7\STM32H735-DK\stm32h735xx.h">
       <Filter>Platform\STM32CubeH7\STM32H735G-DK</Filter>
-    </ClInclude>
-    <ClInclude Include="Platform\WireProtocol\lwrb.h">
-      <Filter>Platform\WireProtocol</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -3055,9 +2965,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\FT5336_I2C.cpp">
       <Filter>nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
     </ClCompile>
-    <ClCompile Include="ll.cpp">
-      <Filter>Platform\Graphics</Filter>
-    </ClCompile>
     <ClCompile Include="Platform\Initialize\startup_stm32h735igkx.s">
       <Filter>Platform\Initialize</Filter>
     </ClCompile>
@@ -3081,9 +2988,6 @@
     </ClCompile>
     <ClCompile Include="Platform\STM32CubeH7\STM32H735-DK\stm32h735g_discovery_ospi.c">
       <Filter>Platform\STM32CubeH7\STM32H735G-DK</Filter>
-    </ClCompile>
-    <ClCompile Include="Platform\WireProtocol\lwrb.c">
-      <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="Platform\Configuration\CLR_RT_InteropAssembliesTable.cpp">
       <Filter>Platform\Configuration</Filter>

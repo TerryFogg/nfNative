@@ -6,12 +6,7 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include <stm32h7xx_hal.h>
-#include <stm32h7xx_hal_def.h>
-#include <stm32h7xx_hal_uart.h>
-#include <stm32h7xx_hal_usart.h>
-#include <stm32h7xx_hal_dma.h>
-#include "stm32h7xx_hal_tim.h"
+#include "stm32h7xx_ll_gpio.h"
 
 #include <nanoHAL_v2.h>
 #include <nanoCLR_Headers.h>
@@ -28,6 +23,14 @@ void BoardInit();
 void CPU_CACHE_Enable(void);
 void MPU_Config(void);
 void SystemClock_Config();
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+    void LTDCClock_Config(void);
+#ifdef __cplusplus
+}
+#endif
 void USBD_Clock_Config(void);
 
 void Board_LED_Initialization();
@@ -68,10 +71,10 @@ void Startup_Rtos();
 //----------------------------------------------------------------------------------------------
 #define wpBAUD_RATE 921600
 
-#define wpUSART                              USART3
-#define wpUSART_IRQn                         USART3_IRQn
-#define wpUSART_IRQHANDLER()                 void USART3_IRQHandler(void)
-#define wpUSART_PERIPHERAL_CLOCK_ENABLE      LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART3)
+#define wpUSART                         USART3
+#define wpUSART_IRQn                    USART3_IRQn
+#define wpUSART_IRQHANDLER()            void USART3_IRQHandler(void)
+#define wpUSART_PERIPHERAL_CLOCK_ENABLE LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_USART3)
 
 #define wpUSART_GPIO_PORT                    GPIOD
 #define wpUSART_RX_PIN                       GPIO_PIN_9
@@ -83,9 +86,9 @@ void Startup_Rtos();
 #define wpDMA_TransmitStreamInterrupt       DMA1_Stream1_IRQn
 #define wpUSART_DMA_PERIPHERAL_CLOCK_ENABLE LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_DMA1)
 
-#define wpDMA_ReceiveStream                 LL_DMA_STREAM_0
-#define wpDMA_ReceiveMux                    LL_DMAMUX1_REQ_USART3_RX
-#define wpDMA_ReceiveStream_IRQHandler()    void DMA1_Stream0_IRQHandler(void)
+#define wpDMA_ReceiveStream              LL_DMA_STREAM_0
+#define wpDMA_ReceiveMux                 LL_DMAMUX1_REQ_USART3_RX
+#define wpDMA_ReceiveStream_IRQHandler() void DMA1_Stream0_IRQHandler(void)
 
 #define wpDMA_TransmitStream              LL_DMA_STREAM_1
 #define wpDMA_TransmitMux                 LL_DMAMUX1_REQ_USART3_TX
@@ -100,14 +103,14 @@ void Startup_Rtos();
 #define OSPI_HYPERRAM_SIZE      24
 #define OSPI_HYPERRAM_INCR_SIZE 256
 
-/* Timing of the HyperRAM */
+// Timing of the HyperRAM
 #define OSPI_HYPERRAM_RW_REC_TIME 3
 #define OSPI_HYPERRAM_LATENCY     6
 
-/* End address of the OSPI memory */
+// End address of the OSPI memory
 #define OSPI_HYPERRAM_END_ADDR (1 << OSPI_HYPERRAM_SIZE)
 
-/* Definition for OCTOSPI2 Pins */
+// Definition for OCTOSPI2 Pins
 #define OSPI2_CS_PIN       GPIO_PIN_12
 #define OSPI2_CS_GPIO_PORT GPIOG
 
@@ -141,7 +144,8 @@ void Startup_Rtos();
 #define OSPI2_DQS_PIN       GPIO_PIN_12
 #define OSPI2_DQS_GPIO_PORT GPIOF
 
-/* Definition for OCTOSPI2 clock resources */
+// Definition for OCTOSPI2 clock resources
+
 #define OSPI2_CLK_ENABLE()            __HAL_RCC_OSPI2_CLK_ENABLE()
 #define OSPI2_CLK_DISABLE()           __HAL_RCC_OSPI2_CLK_DISABLE()
 #define OSPI2_CS_GPIO_CLK_ENABLE()    __HAL_RCC_GPIOG_CLK_ENABLE()
@@ -158,3 +162,7 @@ void Startup_Rtos();
 
 #define OSP2_FORCE_RESET()   __HAL_RCC_OSPI2_FORCE_RESET()
 #define OSP2_RELEASE_RESET() __HAL_RCC_OSPI2_RELEASE_RESET()
+
+// Definition for Graphics on the board
+
+#define TS_INT_PIN GPIO_PIN_2

@@ -7,12 +7,10 @@
 #define _INITIALIZE_GRAPHICS_H_ 1
 
 #include <nanoCLR_Headers.h>
-#include <target_board.h>
+#include "target_board.h"
 #include <nanoHAL_Graphics.h>
 #include "Debug_To_Display.h"
-#include "stm32h7xx_hal_gpio.h"
-#include "stm32h735g_discovery_ts.h"
-#include "stm32h735g_discovery_bus.h"
+#include "BoardInit.h"
 
 extern "C"
 {
@@ -45,11 +43,11 @@ extern "C"
         g_TouchPanelDriver.Initialize();
         
         
-//        CLR_INT16 x1 = 0;
-//        CLR_INT16 y1 = 0;
-//        CLR_INT16 x2 = 0;
-//        CLR_INT16 y2 = 0;
-//        Gesture gesture =  Gesture::NoGesture;
+        CLR_INT16 x1 = 0;
+        CLR_INT16 y1 = 0;
+        CLR_INT16 x2 = 0;
+        CLR_INT16 y2 = 0;
+        Gesture gesture =  Gesture::NoGesture;
 
         
 //        while (1)
@@ -61,7 +59,7 @@ extern "C"
 //                lcd_printf("[%d,%d]\n", x1, y1);
 //            }
 //        }
-
+//
         
     }
 }

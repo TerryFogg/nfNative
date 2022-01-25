@@ -17,7 +17,6 @@
 #include "DisplayInterface.h"
 #include <nanoCLR_Interop.h>
 
-#include "stm32h735g_discovery_ospi.h"
 #include "BoardInit.h"
 
 #include "stm32h7xx_ll_bus.h"
@@ -27,19 +26,23 @@
 
 #include "RGB565_320x240.h"
 
-/* LCD Display control pin */
+// LCD Display control pin
 #define LCD_DISP_CTRL_PIN       GPIO_PIN_10
 #define LCD_DISP_CTRL_GPIO_PORT GPIOD
 
-/* LCD Display enable pin */
+// LCD Display enable pin
 #define LCD_DISP_EN_PIN                GPIO_PIN_13
 #define LCD_DISP_EN_GPIO_PORT          GPIOE
 #define LCD_DISP_EN_GPIO_CLK_ENABLE()  __HAL_RCC_GPIOE_CLK_ENABLE()
 #define LCD_DISP_EN_GPIO_CLK_DISABLE() __HAL_RCC_GPIOE_CLK_DISABLE()
 
-/* Back-light control pin */
+// Back-light control pin
 #define LCD_BL_CTRL_PIN       GPIO_PIN_15
 #define LCD_BL_CTRL_GPIO_PORT GPIOG
+
+#define LCD_LAYER_0_ADDRESS         0x70000000U
+#define PIXEL_FORMAT_RGB565         0x00000002U
+#define LTDC_BLENDING_FACTOR1_PAxCA 0x00000600U /*!< Blending factor : Cte Alpha x Pixel Alpha*/
 
 struct DisplayInterface g_DisplayInterface;
 extern CLR_UINT32 GraphicsVideoFrameBufferBegin; // Framebuffer set externally
@@ -49,17 +52,18 @@ extern DMA2D_HandleTypeDef Dma2dHandle;
 CLR_UINT32 lcd_x_size = 480;
 CLR_UINT32 lcd_y_size = 272;
 
-/* Timer handler declaration */
+// Timer handler declaration
 static TIM_HandleTypeDef hlcd_tim;
 
 uint32_t Width;
 uint32_t Height;
-uint32_t ltdc_pixel_format = LTDC_PIXEL_FORMAT_RGB565;
 
 void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
 {
     Width = config.VideoDisplay.width;
     Height = config.VideoDisplay.height;
+
+    LTDCClock_Config();
 
     // Enable THE CLOCKS
     LL_APB3_GRP1_EnableClock(LL_APB3_GRP1_PERIPH_LTDC);  //
@@ -144,82 +148,110 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
     LL_DMA2D_FGND_SetColorMode(DMA2D,
                                LL_DMA2D_INPUT_MODE_RGB565); // Foreground layer format is RGB565 (16 bpp)
 
-    // RK043FN48H LCD clock configuration
-    // LCD clock configuration
-    // PLL3_VCO Input = HSE_VALUE/PLL3M = 4 Mhz
-    // PLL3_VCO Output = PLL3_VCO Input * PLL3N = 800 Mhz
-    // PLLLCDCLK = PLL3_VCO Output/PLL3R = 800/83 = 9.63 Mhz
-    // LTDC clock frequency = PLLLCDCLK = 9.63 Mhz
-    RCC_PeriphCLKInitTypeDef PeriphClkInitStruct;
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
-    PeriphClkInitStruct.PLL3.PLL3M = 5;
-    PeriphClkInitStruct.PLL3.PLL3N = 160;
-    PeriphClkInitStruct.PLL3.PLL3P = 2;
-    PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 83;
-    PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
-    PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL1VCOWIDE;
-    PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL1VCIRANGE_0;
+    // Configure the HS, VS, DE and PC polarity
+    LTDC->GCR &= ~(LTDC_GCR_HSPOL | LTDC_GCR_VSPOL | LTDC_GCR_DEPOL | LTDC_GCR_PCPOL);
+    LTDC->GCR |= (uint32_t)(LTDC_HSPOLARITY_AL | LTDC_VSPOLARITY_AL | LTDC_DEPOLARITY_AL | LTDC_PCPOLARITY_IPC);
 
-    HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct);
+    // Set Synchronization size
+    LTDC->SSCR &= ~(LTDC_SSCR_VSH | LTDC_SSCR_HSW);
+    LTDC->SSCR |=
+        (((config.VideoDisplay.Horizontal_synchronization - 1U) << 16U) |
+         (config.VideoDisplay.Vertical_synchronization - 1U));
 
-    LTDC_HandleTypeDef hlcd_ltdc;
-    hlcd_ltdc.Instance = LTDC;
-    hlcd_ltdc.Init.HSPolarity = LTDC_HSPOLARITY_AL;
-    hlcd_ltdc.Init.VSPolarity = LTDC_VSPOLARITY_AL;
-    hlcd_ltdc.Init.DEPolarity = LTDC_DEPOLARITY_AL;
-    hlcd_ltdc.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
-    hlcd_ltdc.Init.HorizontalSync = config.VideoDisplay.Horizontal_synchronization - 1U;
-    hlcd_ltdc.Init.AccumulatedHBP =
-        (config.VideoDisplay.Horizontal_synchronization + (config.VideoDisplay.Horizontal_back_porch - 11U) - 1U);
-    hlcd_ltdc.Init.AccumulatedActiveW =
-        config.VideoDisplay.Horizontal_synchronization + Width + config.VideoDisplay.Horizontal_back_porch - 1U;
-    hlcd_ltdc.Init.TotalWidth = config.VideoDisplay.Horizontal_synchronization + Width +
-                                (config.VideoDisplay.Horizontal_back_porch - 11U) +
-                                config.VideoDisplay.Horizontal_front_porch - 1U;
-    hlcd_ltdc.Init.VerticalSync = config.VideoDisplay.Vertical_synchronization - 1U;
-    hlcd_ltdc.Init.AccumulatedVBP =
-        config.VideoDisplay.Vertical_synchronization + config.VideoDisplay.Vertical_back_porch - 1U;
-    hlcd_ltdc.Init.AccumulatedActiveH =
-        config.VideoDisplay.Vertical_synchronization + Height + config.VideoDisplay.Vertical_back_porch - 1U;
-    hlcd_ltdc.Init.TotalHeigh = config.VideoDisplay.Vertical_synchronization + Height +
-                                config.VideoDisplay.Vertical_back_porch + config.VideoDisplay.Vertical_front_porch - 1U;
-    hlcd_ltdc.Init.Backcolor.Blue = 0xFF;
-    hlcd_ltdc.Init.Backcolor.Green = 0xFF;
-    hlcd_ltdc.Init.Backcolor.Red = 0xFF;
-    HAL_LTDC_Init(&hlcd_ltdc);
+    // Set Accumulated Back porch
+    LTDC->BPCR &= ~(LTDC_BPCR_AVBP | LTDC_BPCR_AHBP);
+    LTDC->BPCR |=
+        (((config.VideoDisplay.Horizontal_synchronization + (config.VideoDisplay.Horizontal_back_porch - 11U) - 1U)
+          << 16U) |
+         (config.VideoDisplay.Vertical_synchronization + config.VideoDisplay.Vertical_back_porch - 1U));
+
+    // Set Accumulated Active Width
+    LTDC->AWCR &= ~(LTDC_AWCR_AAH | LTDC_AWCR_AAW);
+    LTDC->AWCR |=
+        (((config.VideoDisplay.Horizontal_synchronization + Width + config.VideoDisplay.Horizontal_back_porch - 1U)
+          << 16U) |
+         (config.VideoDisplay.Vertical_synchronization + Height + config.VideoDisplay.Vertical_back_porch - 1U));
+
+    // Set Total Width
+    LTDC->TWCR &= ~(LTDC_TWCR_TOTALH | LTDC_TWCR_TOTALW);
+    LTDC->TWCR |=
+        (((config.VideoDisplay.Horizontal_synchronization + Width + (config.VideoDisplay.Horizontal_back_porch - 11U) +
+           config.VideoDisplay.Horizontal_front_porch - 1U)
+          << 16U) |
+         (config.VideoDisplay.Vertical_synchronization + Height + config.VideoDisplay.Vertical_back_porch +
+          config.VideoDisplay.Vertical_front_porch - 1U));
+
+    // Set the background color value
+    LTDC->BCCR &= ~(LTDC_BCCR_BCBLUE | LTDC_BCCR_BCGREEN | LTDC_BCCR_BCRED);
+    LTDC->BCCR |= (0 | 0 | 0);
+
+    LTDC->IER |= (LTDC_IT_TE | LTDC_IT_FU); // Enable the Transfer Error and FIFO underrun interrupts
+    LTDC->GCR |= LTDC_GCR_LTDCEN;           // Enable LTDC by setting LTDCEN bit
 
     // Configure up a default LTDC Layer 0
     // We don't use the layer blending feature, all the 'smarts' are performed by
     // code on the graphics buffer before we DMA2D it to the graphics frame buffer
     //
-    LTDC_LayerCfgTypeDef LayerCfg;
-    LayerCfg.WindowX0 = 0;
-    LayerCfg.WindowX1 = Width;
-    LayerCfg.WindowY0 = 0;
-    LayerCfg.WindowY1 = Height;
-    LayerCfg.PixelFormat = ltdc_pixel_format;
-    LayerCfg.Alpha = 255;
-    LayerCfg.Alpha0 = 0;
-    LayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
-    LayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
-    LayerCfg.FBStartAdress = LCD_LAYER_0_ADDRESS;
-    LayerCfg.ImageWidth = Width;
-    LayerCfg.ImageHeight = Height;
-    LayerCfg.Backcolor.Blue = 0;
-    LayerCfg.Backcolor.Green = 0;
-    LayerCfg.Backcolor.Red = 0;
-    HAL_LTDC_ConfigLayer(&hlcd_ltdc, &LayerCfg, 0);
+    // Configure the LTDC Layer
+    //-------------------
+
+#define LAYER(__HANDLE__) ((LTDC_Layer_TypeDef *)((uint32_t)(((uint32_t)((__HANDLE__)->Instance)) + 0x84U)))
+
+    LTDC_HandleTypeDef hlcd_ltdc;
+    hlcd_ltdc.Instance = LTDC;
+
+    // Configure the horizontal start and stop position
+    LAYER(&hlcd_ltdc)->WHPCR &= ~(LTDC_LxWHPCR_WHSTPOS | LTDC_LxWHPCR_WHSPPOS);
+
+    LAYER(&hlcd_ltdc)->WHPCR =
+        ((0 + ((LTDC->BPCR & LTDC_BPCR_AHBP) >> 16U) + 1U) |
+         ((Width + ((LTDC->BPCR & LTDC_BPCR_AHBP) >> 16U)) << 16U));
+
+    // Configure the vertical start and stop position
+    LAYER(&hlcd_ltdc)->WVPCR &= ~(LTDC_LxWVPCR_WVSTPOS | LTDC_LxWVPCR_WVSPPOS);
+    LAYER(&hlcd_ltdc)->WVPCR =
+        ((0 + (LTDC->BPCR & LTDC_BPCR_AVBP) + 1U) |
+         ((Height + (LTDC->BPCR & LTDC_BPCR_AVBP)) << 16U));
+
+    // Specifies the pixel format
+    LAYER(&hlcd_ltdc)->PFCR &= ~(LTDC_LxPFCR_PF);
+    LAYER(&hlcd_ltdc)->PFCR = (PIXEL_FORMAT_RGB565);
+
+    // Configure the default color values
+    LAYER(&hlcd_ltdc)->DCCR &= ~(LTDC_LxDCCR_DCBLUE | LTDC_LxDCCR_DCGREEN | LTDC_LxDCCR_DCRED | LTDC_LxDCCR_DCALPHA);
+    LAYER(&hlcd_ltdc)->DCCR = (0 | 0 | 0 | 0);
+
+    // Specifies the constant alpha value
+    LAYER(&hlcd_ltdc)->CACR &= ~(LTDC_LxCACR_CONSTA);
+    LAYER(&hlcd_ltdc)->CACR = (255);
+
+    // Specifies the blending factors
+    LAYER(&hlcd_ltdc)->BFCR &= ~(LTDC_LxBFCR_BF2 | LTDC_LxBFCR_BF1);
+    LAYER(&hlcd_ltdc)->BFCR = (LTDC_BLENDING_FACTOR1_PAxCA | LTDC_BLENDING_FACTOR2_PAxCA);
+
+    // Configure the color frame buffer start address
+    LAYER(&hlcd_ltdc)->CFBAR &= ~(LTDC_LxCFBAR_CFBADD);
+    LAYER(&hlcd_ltdc)->CFBAR = (LCD_LAYER_0_ADDRESS);
+
+    // Configure the color frame buffer pitch in byte
+    LAYER(&hlcd_ltdc)->CFBLR &= ~(LTDC_LxCFBLR_CFBLL | LTDC_LxCFBLR_CFBP);
+    LAYER(&hlcd_ltdc)->CFBLR =
+        (((Width * 2) << 16U) | (((Width - 0) * 2) + 7U));
+    // Configure the frame buffer line number
+    LAYER(&hlcd_ltdc)->CFBLNR &= ~(LTDC_LxCFBLNR_CFBLNBR);
+    LAYER(&hlcd_ltdc)->CFBLNR = Height;
+
+    // Enable LTDC_Layer by setting LEN bit
+    LAYER(&hlcd_ltdc)->CR |= (uint32_t)LTDC_LxCR_LEN;
+
+    // Set the Immediate Reload type
+    hlcd_ltdc.Instance->SRCR = LTDC_SRCR_IMR;
 
     return;
 }
 
 void DisplayInterface::GetTransferBuffer(CLR_UINT8 *&TransferBuffer, CLR_UINT32 &TransferBufferSize)
 {
-
-    //     *(__IO uint16_t*)(hlcd_ltdc.LayerCfg[Lcd_Ctx[Instance].ActiveLayer].FBStartAdress +
-    //     (2U*((Ypos*Lcd_Ctx[Instance].XSize) + Xpos))) = (uint16_t)Color;
-
     TransferBuffer = (CLR_UINT8 *)&GraphicsVideoFrameBufferBegin;
     TransferBufferSize = (lcd_x_size * lcd_y_size * 2);
 }
@@ -237,7 +269,7 @@ void DisplayInterface::ClearFrameBuffer()
     LL_DMA2D_SetOutputColor(DMA2D, LCD_COLOR_RGB565_WHITE);                     // Clear screen colour
     LL_DMA2D_SetOutputMemAddr(DMA2D, (uint32_t)&GraphicsVideoFrameBufferBegin); // LCD data address
     LL_DMA2D_SetLineOffset(DMA2D, 0);     // Configure DMA2D output line offset to LCD width - image width for display
-    DMA2D->OPFCCR = ltdc_pixel_format;    // Format color
+    DMA2D->OPFCCR = PIXEL_FORMAT_RGB565;  // Format color
     LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D transfer number of lines and number of pixels per line
     LL_DMA2D_Start(DMA2D);                // Start the transfer
     while (DMA2D->CR & DMA2D_CR_START)
@@ -286,16 +318,14 @@ void DisplayInterface::SendCommand(CLR_UINT8 NbrParams, ...)
 int32_t BSP_LCD_SetBrightness(uint32_t Instance, uint32_t Brightness)
 {
     //    __HAL_TIM_SET_COMPARE(&hlcd_tim, LCD_TIMx_CHANNEL, 2U*Brightness);
-    return BSP_ERROR_NONE;
+    return 1;
 }
 
-/**
- * @brief  Set the brightness value
- * @param  Instance    LCD Instance
- * @param  Brightness [00: Min (black), 100 Max]
- * @retval BSP status
- */
+//
+// brief Set the brightness value *@param Instance LCD Instance *@param Brightness [00:Min(black), 100 Max] *
+//    @retval BSP status
+
 int32_t BSP_LCD_GetBrightness(uint32_t Instance, uint32_t *Brightness)
 {
-    return BSP_ERROR_NONE;
+    return 1;
 }
