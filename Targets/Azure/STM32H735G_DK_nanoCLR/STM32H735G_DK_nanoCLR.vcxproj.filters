@@ -250,6 +250,9 @@
     <Filter Include="STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc\Legacy">
       <UniqueIdentifier>{a28a9493-f8aa-425e-b358-90b39ddad8d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Target Features">
+      <UniqueIdentifier>{0c615ae4-48e8-4840-9ddb-eb0fb9d65bac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
@@ -1379,6 +1382,12 @@
     </ClInclude>
     <ClInclude Include="Specific\stm32h7xx_hal_conf.h">
       <Filter>Specific</Filter>
+    </ClInclude>
+    <ClInclude Include="Target Features\TargetFeatures.h">
+      <Filter>Target Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Target Features\HyperbusRam.h">
+      <Filter>Target Features</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2870,6 +2879,12 @@
     </ClCompile>
     <ClCompile Include="Specific\Memory.cpp">
       <Filter>Specific</Filter>
+    </ClCompile>
+    <ClCompile Include="Target Features\HyperbusRam.c">
+      <Filter>Target Features</Filter>
+    </ClCompile>
+    <ClCompile Include="RealTimeClock.c">
+      <Filter>Target Features</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
