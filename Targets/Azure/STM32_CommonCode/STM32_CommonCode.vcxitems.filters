@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Logo.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_App_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wpUSART_Communications.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform_BlockStorage.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Device_BlockStorage.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Target_BlockStorage_STM32FlashDriver.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wpUSART_Communications.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Target_BlockStorage_STM32FlashDriver.h" />
+  </ItemGroup>
+</Project>

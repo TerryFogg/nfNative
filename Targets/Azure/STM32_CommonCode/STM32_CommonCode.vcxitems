@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{a72d32cc-3f6c-4456-8b07-533a9fd39591}</ItemsProjectGuid>
+    <ItemsProjectName>STM32_CommonCode</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Device_BlockStorage.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Logo.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)platform_BlockStorage.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Target_BlockStorage_STM32FlashDriver.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_App_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wpUSART_Communications.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Target_BlockStorage_STM32FlashDriver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wpUSART_Communications.h" />
+  </ItemGroup>
+</Project>

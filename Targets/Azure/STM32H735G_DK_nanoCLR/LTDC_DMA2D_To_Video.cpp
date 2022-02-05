@@ -46,7 +46,7 @@
 
 struct DisplayInterface g_DisplayInterface;
 extern CLR_UINT32 GraphicsVideoFrameBufferBegin; // Framebuffer set externally
-extern DMA2D_HandleTypeDef Dma2dHandle;
+//extern DMA2D_HandleTypeDef Dma2dHandle;
 
 // Default to landscape
 CLR_UINT32 lcd_x_size = 480;
@@ -329,3 +329,4 @@ int32_t BSP_LCD_GetBrightness(uint32_t Instance, uint32_t *Brightness)
 {
     return 1;
 }
+

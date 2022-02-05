@@ -43,11 +43,11 @@ extern "C"
         g_TouchPanelDriver.Initialize();
         
         
-        CLR_INT16 x1 = 0;
-        CLR_INT16 y1 = 0;
-        CLR_INT16 x2 = 0;
-        CLR_INT16 y2 = 0;
-        Gesture gesture =  Gesture::NoGesture;
+//        CLR_INT16 x1 = 0;
+//        CLR_INT16 y1 = 0;
+//        CLR_INT16 x2 = 0;
+//        CLR_INT16 y2 = 0;
+//        Gesture gesture =  Gesture::NoGesture;
 
         
 //        while (1)
@@ -59,7 +59,7 @@ extern "C"
 //                lcd_printf("[%d,%d]\n", x1, y1);
 //            }
 //        }
-//
+
         
     }
 }

@@ -23,7 +23,6 @@
     <ProjectFile>STM32H735G_DK_nanoBooter.vcxproj</ProjectFile>
     <RemoteBuildEnvironment>
       <Records />
-      <EnvironmentSetupFiles />
     </RemoteBuildEnvironment>
     <ParallelJobCount>1</ParallelJobCount>
     <SuppressDirectoryChangeMessages>true</SuppressDirectoryChangeMessages>

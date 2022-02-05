@@ -377,7 +377,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c" />
-    <ClCompile Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.c" />
     <ClCompile Include="Platform\BlockStorage\Device_BlockStorage.c" />
     <ClCompile Include="Platform\BlockStorage\platform_BlockStorage.c" />
     <ClCompile Include="Platform\BlockStorage\targetHAL_ConfigurationManager.cpp" />

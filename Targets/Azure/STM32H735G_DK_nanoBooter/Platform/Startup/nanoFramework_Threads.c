@@ -42,25 +42,16 @@ void tx_application_define(void* first_unused_memory)
     
     
     // Create receiver thread
-    status = tx_thread_create(&receiverThread,
-        // Pointer to a thread control block.
-                "Receiver Thread",
-        // Pointer to the name of the thread.
-                   ReceiverThread_entry,
-        // Specifies the initial C function for thread execution
-                       0,
-        // A 32-bit value that is passed to the thread's entry function when it first executes
-    receiverThreadStack,
-        // Starting address of the stack's memory area.
-                      RECEIVER_THREAD_STACK_SIZE,
-        // Number bytes in the stack memory area.
-                             RECEIVER_THREAD_PRIORITY,
-        // Numerical priority of thread.
-                           RECEIVER_THREAD_PRIORITY,
-        // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
-                           TX_NO_TIME_SLICE,
-        // Number of timer-ticks this thread is allowed to run before other ready threads of the same priority are given a chance to run.
-                   TX_AUTO_START);                       // Specifies whether the thread starts immediately or is placed in a suspended state.
+    status = tx_thread_create(&receiverThread,                     // Pointer to a thread control block.
+                "Receiver Thread",                                 // Pointer to the name of the thread.
+                   ReceiverThread_entry,                           // Specifies the initial C function for thread execution
+                       0,                                          // A 32-bit value that is passed to the thread's entry function when it first executes
+    receiverThreadStack,                                           // Starting address of the stack's memory area.
+                      RECEIVER_THREAD_STACK_SIZE,                  // Number bytes in the stack memory area.
+                             RECEIVER_THREAD_PRIORITY,             // Numerical priority of thread.
+                           RECEIVER_THREAD_PRIORITY,               // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
+                           TX_NO_TIME_SLICE,                       // Number of timer-ticks this thread is allowed to run before other ready threads of the same priority are given a chance to run.
+                   TX_AUTO_START);                                 // Specifies whether the thread starts immediately or is placed in a suspended state.
                if(status != TX_SUCCESS)
     {
         while (1)
@@ -72,24 +63,15 @@ void tx_application_define(void* first_unused_memory)
    
         
     // Create blink thread
-status = tx_thread_create(&blinkThread,
-        // Pointer to a thread control block.
-    "Blink Thread",
-        // Pointer to the name of the thread.
-    nanoBooterStatus,
-        // Specifies the initial C function for thread execution
-    nanoBooterState,
-        // A 32-bit value that is passed to the thread's entry function when it first executes
-    blinkThreadStack,
-        // Starting address of the stack's memory area.
-    BLINK_THREAD_STACK_SIZE,
-        // Number bytes in the stack memory area. 
-    BLINK_THREAD_PRIORITY,
-        // Numerical priority of thread.
-    BLINK_THREAD_PRIORITY,
-        // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
-    TX_NO_TIME_SLICE,
-        // Number of timer-ticks this thread is allowed to run before other ready threads of the same priority are given a chance to run.
+status = tx_thread_create(&blinkThread,                      // Pointer to a thread control block.
+    "Blink Thread",                                          // Pointer to the name of the thread.
+    nanoBooterStatus,                                        // Specifies the initial C function for thread execution
+    nanoBooterState,                                         // A 32-bit value that is passed to the thread's entry function when it first executes
+    blinkThreadStack,                                        // Starting address of the stack's memory area.
+    BLINK_THREAD_STACK_SIZE,                                 // Number bytes in the stack memory area. 
+    BLINK_THREAD_PRIORITY,                                   // Numerical priority of thread.
+    BLINK_THREAD_PRIORITY,                                   // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
+    TX_NO_TIME_SLICE,                                        // Number of timer-ticks this thread is allowed to run before other ready threads of the same priority are given a chance to run.
     TX_AUTO_START);                     // Specifies whether the thread starts immediately or is placed in a suspended state. 
 
 if(status != TX_SUCCESS)

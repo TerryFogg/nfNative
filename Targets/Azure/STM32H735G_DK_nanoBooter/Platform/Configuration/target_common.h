@@ -22,12 +22,12 @@
 // RAM base address 
 #define RAM1_MEMORY_StartAddress        ((uint32_t)0x24000000)
 // RAM size 
-#define RAM1_MEMORY_Size                ((uint32_t)0x00080000)
+#define RAM1_MEMORY_Size                ((uint32_t)0x00050000)
 
 // FLASH base address
 #define FLASH1_MEMORY_StartAddress      ((uint32_t)0x08000000)
 // FLASH size
-#define FLASH1_MEMORY_Size              ((uint32_t)0x00200000)
+#define FLASH1_MEMORY_Size              ((uint32_t)0x00100000)
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -40,8 +40,5 @@
 #define PLATFORM_HAS_RNG       TRUE
 /////////////////////////////////////
 
-/////////////////////////////////////
-//#define EVENTS_HEART_BEAT       palToggleLine(LINE_LED2_GREEN)
-/////////////////////////////////////
 
 #endif /* _TARGET_COMMON_H_ */

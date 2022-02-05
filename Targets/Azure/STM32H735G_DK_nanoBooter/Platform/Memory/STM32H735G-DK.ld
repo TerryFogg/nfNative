@@ -3,12 +3,14 @@
 // See LICENSE file in the project root for full license information.
 */
 
-
 /* Entry Point */
 ENTRY(Reset_Handler)
 
-/* Highest address of the user mode stack */
-_estack = ORIGIN(RAM_D1) + LENGTH(RAM_D1);    /* end of RAM */
+ /* set stack pointer */
+_estack = ORIGIN(RAM_D1) + LENGTH(RAM_D1);    /* Highest address of the user mode stack */
+
+
+
 /* Generate a link error if heap and stack don't fit into RAM */
 _Min_Heap_Size = 0x200 ;      /* required amount of heap  */
 _Min_Stack_Size = 0x400 ; /* required amount of stack */
@@ -17,69 +19,120 @@ __main_stack_size__     = 0x400;
 __process_stack_size__  = 0x800;
 __crt_heap_size__       = 0x800;
 
-/* Specify the memory areas */
+
+/* The STM32H7 device consists of three bus matrix domains */
+/* - D1, D2 and D3 */
+/* - The D1 and D2 are connected through bus bridges, both can also access data in D3 domain. */
+/* - There is no connection from D3 domain to D1 or D2 domain. */
+/* The DMA1 and DMA2 controllers are located in D2 domain and can access almost all memories */
+/* with exception of ITCM and DTCM RAM (located at 0x20000000).*/
+/* From performance point of view it is better to put DMA buffers inside D2 domain  */
+/* since the D2-to-D1 bridge can add additional delay.*/
+
+/* BDMA controller is located in D3 domain and can access only SRAM4 and backup SRAM in the D3 domain. */
+
+/* MDMA controller is located in D1 domain and can access all memories, including ITCM/DTCM. */
+
+/* Some peripherals are D1 or D2 domain while others are D3 */
+
+
+_nanoBooterImageSize = 35K;
+_nanoCLRImageSize = 550K;
+
 MEMORY
 {
-/*--------------------------------------------------------------------|*/
-/* STM32H735IG Physical memory location and size for reference        |*/
-/* NOT accessible by DMA1 or DMA2 */                                /*|*/
-/*--------------------------------------------------------------------|*/
-
- itcm_ram        (xrw) : ORIGIN = 0x00000000, LENGTH = 64K
- flash_system    (r) : ORIGIN = 0x1FF000000,LENGTH = 128K            /* System flash definitions for reference */
- flash_bank_1    (xrw) : ORIGIN = 0x08000000, LENGTH = 1024K         /* 8 Sectors of 128k */
- dtcm_ram        (xrw) : ORIGIN = 0x20000000, LENGTH = 128K  
-
- /* accessible by DMA1 and DMA2 */                               /*|*/
- axi_sram1       (xrw) : ORIGIN = 0x24000000, LENGTH = 192K      /* NOTE: This RAM can be re-mapped as extra ITCM RAM */
- axi_sram2       (xrw) : ORIGIN = 0x24030000, LENGTH = 128K
-
- ahb_sram1       (xrw) : ORIGIN = 0x30000000, LENGTH = 16K
- ahb_sram2       (xrw) : ORIGIN = 0x30040000, LENGTH = 16K
-
- ahb_sram4       (xrw) : ORIGIN = 0x38000000, LENGTH = 16K
-
- backup_ram      (xrw) : ORIGIN = 0x30010000, LENGTH = 4k    
-
- octospi1_flash  (xrw) : ORIGIN = 0x09000000, LENGTH = 64M      /* OSPI flash */
- octospi2_RAM    (xrw) : ORIGIN = 0x70000000, LENGTH = 16M             /* Hyperam -  */
-
-
-
- FLASH_1 (xrw) : ORIGIN = 0x08000000, LENGTH = 1024K
- FLASH_EXTERNAL_1 (xrw) : ORIGIN = 0x09000000, LENGTH = 64M          /* STM32H735G-DK on board external to SOC */
- RAM_INSTRUCTION_CACHE        (xrw) : ORIGIN = 0x00000000, LENGTH = 64K
- RAM_DATA_CACHE (xrw) : ORIGIN = 0x20000000, LENGTH = 128K
- RAM_DOMAIN_1 (xrw) : ORIGIN = 0x24000000, LENGTH = 320K
- RAM_DOMAIN_2 (xrw) : ORIGIN = 0x24000000, LENGTH = 32K
- RAM_DOMAIN_3 (xrw) : ORIGIN = 0x38000000, LENGTH = 16K
- RAM_EXTERNAL_1 (xrw) : ORIGIN = 0x70000000, LENGTH = 16M
-/*----------------------------------------------------------------------------------------------------------------*/
-
-
-  ITCMRAM (xrw)    : ORIGIN = 0x00000000,   LENGTH = 64K
-      ramvt      (wx) : org = 0x00000000, len = 0                     /* initial RAM address is reserved for a copy of the vector table */
-        config     (rw) : org = 0x00000000, len = 0                     /* space reserved for configuration block */
-
-  FLASH    (rx)    : ORIGIN = 0x08000000,   LENGTH = 1024k
-  
-  DTCMRAM (xrw)    : ORIGIN = 0x20000000,   LENGTH = 128K
-  RAM_D1    (xrw)  : ORIGIN = 0x24000000,   LENGTH = 192K
-  RAM_D2    (xrw)  : ORIGIN = 0x24030000,   LENGTH = 128K
-  RAM_D1_D2 (xrw)  : ORIGIN = 0x24000000,   LENGTH = 320K
-
-  RAM_D3    (xrw)    : ORIGIN = 0x30000000,   LENGTH = 16K
-  RAM_D4    (xrw)    : ORIGIN = 0x30040000,   LENGTH = 16K
-  RAM_D3_D4 (xrw)    : ORIGIN = 0x30000000,   LENGTH =32K
-
-
-  graphics_vfb (xrw): ORIGIN = ORIGIN(RAM_EXTERNAL_1), len = 255k                /* One screen size frame buffer for video output mode  (480x272x2) bytes ( 16 bits RGB565 )*/
-  graphics_ram (xrw): ORIGIN = ORIGIN(graphics_vfb) + LENGTH(graphics_vfb), LENGTH = 8M       /* For storing expanding images,jpeg etc */
-  external_ram (xrw): ORIGIN = ORIGIN(graphics_ram) + LENGTH(graphics_ram), LENGTH = LENGTH(RAM_EXTERNAL_1) - LENGTH(graphics_vfb) - LENGTH(graphics_ram) 
-
-  bootclpbrd   (wx)  : ORIGIN = ORIGIN(RAM_D3), LENGTH = 48
-
+/*--------------------------------------*/
+/* STM32H735G-DK Physical memory        */
+/* location and size for reference      |   Usage by nanoFramework                               */
+/*--------------------------------------|--------------------------------------------------------*/
+/*                                      */   
+/* ITCM-RAM  can be used to host        */
+/* critical real-time code such as      */
+/* interrupt handlers                   */
+/*--------------------------------------*/
+/* 0x00000000 : 64K ITCM SRAM           */   ramvt      (wx) : org = 0x00000000, LENGTH = 0                     /* initial RAM address is reserved for a copy of the vector table */
+/*                                      */   /* To be investigated: maybe ThreadX, and ISR's and Execution engine? */
+/*                                      */ 
+/*                                      */ 
+/* 0x08FFF000 : 1K Flash User OTP       */  /* Possible one time programmable use ?*/
+/* 0x08FFFC00 : 512 Flash STM Read      */  /* System Not useable */
+/*                                      */ 
+/*--------------------------------------*/
+/* Smallest erase 1 Sector, so align    */ 
+/* deployment on sector boundary        */ 
+/* 8 x Sectors, each 128K               */ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 0x08000000 : 1024K AXI Flash         */  FLASH      (rx) : ORIGIN = 0x08000000,         LENGTH = 1024k
+/*  Sector 0 : 128K                     */  nanoBooter (rx) : ORIGIN = ORIGIN(FLASH),      LENGTH = _nanoBooterImageSize
+/*  Sector 1 : 128K                     */  nanoCLR    (rx) : ORIGIN = ORIGIN(nanoBooter), LENGTH = _nanoCLRImageSize
+/*  Sector 2 : 128K                     */  
+/*  Sector 3 : 128K                     */  
+/*  Sector 4 : 128K                     */  
+/*                                          Config parameters are stored in a 2K user option byte area that is accessed by registers
+/*                                      */  config     (rw) : ORIGIN = 0, LENGTH = 0  /* NOT USED for consistency with other platforms only */
+/*                                      */
+/*  Sector 5 : 128K                     */  deployment (rx) : ORIGIN = 0x08000000 + (3*128K), LENGTH = (3*128K)
+/*  Sector 6 : 128K                     */ 
+/*  Sector 7 : 128K                     */ 
+/*                                      */
+/*                                      */
+/*  Bootloader or Secure bootloader and */ 
+/*  secure library if option secure     */ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 0x1FF00000 : 128K System memory      */  /* 128 Kbytes contain the factory bootloader firmware */
+/*                                      */ 
+/*                                      */
+/* DTCM-RAM can be used as read-write   */
+/* segment to host critical real-time   */
+/* data (such as stack and heap)        */
+/*--------------------------------------*/
+/* 0x20000000 : 128K DTCM SRAM          */  /* To be investigated */
+/*                                      */ 
+/*--------------------------------------*/
+/* Power Domain 1                       */  /* Use both RAM banks contiguously */
+/* 0x24000000 : 192K AXI SRAM           */  RAM_D1   (xrw) : ORIGIN = 0x24000000,   LENGTH = 320K
+/* 0x24030000 : 128K AXI SRAM           */  
+/*                                      */  
+/*--------------------------------------*/
+/* Power Domain 2                       */  /* Use both RAM banks contiguously, accessible by DMA 1 and DMA 2 controllers */
+/* 0x30000000 : 16K AHB SRAM1           */  RAM_D2   (xrw) : ORIGIN = 0x30000000,     LENGTH = 32K
+/* 0x30040000 : 16K AHB SRAM2           */  RAM_DMA  (xrw) : ORIGIN = ORIGIN(RAM_D2), LENGTH = LENGTH(RAM_D2)
+/*                                      */  
+/*--------------------------------------*/
+/* Power Domain 3                       */
+/* Retains power when D1 and D2 domain  */
+/* enter DStandby mode                  */
+/* 0x38000000 : 16K SRAM4               */  RAM_D4     (xrw) : ORIGIN = 0x38000000,     LENGTH = 16K
+/*                                      */  bootclpbrd (xrw) : ORIGIN = ORIGIN(RAM_D4), LENGTH = 48
+/*                                      */  
+/*--------------------------------------*/
+/* With a battery connected to the      */
+/* VBAT pin,the backup SRAM can be used */
+/* to retain data during low-power mode */
+/*--------------------------------------*/
+/* 0x38800000 : 4K Backup SRAM          */  /* Possible RAM backup */
+/*                                      */ 
+/*--------------------------------------*/
+/* 0x70000000 : 16M OCTOSPI2 (Hyperram) */  OCTOSPI2_RAM (xrw) : ORIGIN = 0x70000000,                                  LENGTH = 16M
+/*                                      */  graphics_vfb (xrw) : ORIGIN = 0x70000000,                                  LENGTH = 255k     /* 272*400*2 - pixels */
+/*                                      */  graphics_ram (xrw) : ORIGIN = ORIGIN(graphics_vfb) + LENGTH(graphics_vfb), LENGTH = 8M       /* Working bitmaps etc */
+/*                                      */  external_ram (xrw) : ORIGIN = ORIGIN(graphics_ram) + LENGTH(graphics_ram), LENGTH = LENGTH(OCTOSPI2_RAM) - LENGTH(graphics_vfb) - LENGTH(graphics_ram)
+/*                                      */
+/*                                      */ 
+/*                                      */  
+/*                                      */  
+/*                                      */  
+/*--------------------------------------*/
+/* 0x09000000 : 64M OCTOSPI1 (Flash)    */  /* Uses for OCTOSPI1 Flash? */
+/*                                      */  /* Local drive? */
+/*                                      */  /* Load static resources? */
+/*                                      */
+/*                                      */ 
+/*                                      */ 
+/*--------------------------------------*/
 }
+
+
 
 REGION_ALIAS("SECTION_FOR_BOOTCLIPBOARD", bootclpbrd);        /* boot clipboard */
 
@@ -88,9 +141,8 @@ REGION_ALIAS("GRAPHICS_HEAP_RAM", graphics_ram);              /* nanoFramework g
 REGION_ALIAS("GRAPHICS_VIDEO_FRAME_BUFFER", graphics_vfb);    /* nanoFramework graphics video frame buffer */
 REGION_ALIAS("CLR_MANAGED_HEAP_RAM", external_ram);           /* nanoFramework CLR managed heap */
 
-/* Regions accessible by DMA controllers */
-REGION_ALIAS("DMA1_RAM", ahb_sram1);
-REGION_ALIAS("DMA2_RAM", ahb_sram2);
+/* Regions accessible by DMA1 and DMA 2 controllers */
+REGION_ALIAS("DMA_ACCESSIBLE", RAM_D2);
 
 
 
@@ -176,7 +228,7 @@ SECTIONS
     *(.RamFunc*)       /* .RamFunc* sections */
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */
-  } >RAM_D1_D2 AT> FLASH
+  } >RAM_D1 AT> FLASH
 
   /* Uninitialized data section */
   . = ALIGN(4);
@@ -192,7 +244,7 @@ SECTIONS
     . = ALIGN(4);
     _ebss = .;         /* define a global symbol at bss end */
     __bss_end__ = _ebss;
-  } >RAM_D1_D2
+  } >RAM_D1
 
 
   /* Not using "DYNAMIC_MEMORY" so no need for a ._threadx_heap here.
@@ -207,7 +259,12 @@ SECTIONS
     . = . + _Min_Stack_Size;
     . = ALIGN(8);
         __RAM_segment_used_end__ = .;
-  } >RAM_D1_D2
+  } >RAM_D1
+
+  .dma_buffer : /* DMA1 and DMA2 memory accessible and in same domain, highest performance */
+{
+  *(.dma_buffer)
+} >RAM_DMA
 
   /* Remove information from the standard libraries */
   /DISCARD/ :
@@ -229,7 +286,9 @@ __nanoImage_end__       = __nanoImage_start__ + __nanoImage_size__;
 __nanoConfig_start__    = ORIGIN(config);
 __nanoConfig_size__     = LENGTH(config);
 __nanoConfig_end__      = __nanoConfig_start__ + __nanoConfig_size__;
-
+__deployment_start__    = ORIGIN(deployment);
+__deployment_size__     = LENGTH(deployment);
+__deployment_end__      = __deployment_start__ + __deployment_size__;
 
 
 

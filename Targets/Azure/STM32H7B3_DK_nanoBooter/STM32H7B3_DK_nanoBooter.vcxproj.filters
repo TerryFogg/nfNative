@@ -438,24 +438,6 @@
     <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
       <Filter>nf-interpreter\src\CLR\Include</Filter>
     </None>
@@ -1901,9 +1883,6 @@
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="Platform\WireProtocol\WireProtocol_MonitorCommands.c">
-      <Filter>Platform\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\SharedCode\STM32_CommonCode\lwrb.c">
       <Filter>Platform\WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c">
