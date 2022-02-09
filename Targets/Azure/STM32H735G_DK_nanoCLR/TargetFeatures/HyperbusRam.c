@@ -10,7 +10,7 @@
 
 void init2(void);
 
-#define HAL_OSPI_FLAG_BUSY OCTOSPI_SR_BUSY /*!< Busy flag: operation is ongoing */
+#define OSPI_FLAG_BUSY OCTOSPI_SR_BUSY /*!< Busy flag: operation is ongoing */
 
 int32_t S70KL1281_ReadCfgReg0(OSPI_HandleTypeDef *Ctx, uint16_t *Value);
 int32_t S70KL1281_WriteCfgReg0(OSPI_HandleTypeDef *Ctx, uint16_t Value, uint32_t LatencyMode, uint32_t InitialLatency);
@@ -105,6 +105,7 @@ void Initialize_OPSPI_Hyperam()
 
     HAL_StatusTypeDef status;
     OSPI_HandleTypeDef hopspi_config = {0};
+    
     hopspi_config.Instance = OCTOSPI2;
     hopspi_config.Init.FifoThreshold = 4;
     hopspi_config.Init.DualQuad = HAL_OSPI_DUALQUAD_DISABLE;
@@ -190,17 +191,21 @@ void Initialize_OPSPI_Hyperam()
     tickstart = HAL_GetTick();
 
     /* Wait till busy flag is reset */
-    status = OSPI_WaitFlagStateUntilTimeout(&hopspi_config, HAL_OSPI_FLAG_BUSY,
-                                            RESET, tickstart,
-                                            HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
+    status = OSPI_WaitFlagStateUntilTimeout(
+        &hopspi_config,
+        HAL_OSPI_FLAG_BUSY,
+        RESET,
+        tickstart,
+        HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
 
     /* Configure Hyperbus configuration Latency register */
-    WRITE_REG(hopspi_config.Instance->HLCR,
-              ((sHyperbusCfg.RWRecoveryTime << OCTOSPI_HLCR_TRWR_Pos) |
-               (sHyperbusCfg.AccessTime << OCTOSPI_HLCR_TACC_Pos) |
-               sHyperbusCfg.WriteZeroLatency | sHyperbusCfg.LatencyMode));
+    WRITE_REG(
+        hopspi_config.Instance->HLCR,
+        ((sHyperbusCfg.RWRecoveryTime << OCTOSPI_HLCR_TRWR_Pos) | (sHyperbusCfg.AccessTime << OCTOSPI_HLCR_TACC_Pos) |
+         sHyperbusCfg.WriteZeroLatency | sHyperbusCfg.LatencyMode));
 
-    S70KL1281_ReadCfgReg0(&hopspi_config, &reg); // Reading the configuration of the HyperRAM
+    //    S70KL1281_ReadCfgReg0(&hopspi_config, &reg); // Reading the configuration of the HyperRAM
+    ///
 
     OSPI_HyperbusCmdTypeDef sCommand;
 
@@ -211,22 +216,32 @@ void Initialize_OPSPI_Hyperam()
     sCommand.DQSMode = HAL_OSPI_DQS_ENABLE;
     sCommand.NbData = 2U;
 
-//    /* Configure the command */
-//    HAL_OSPI_HyperbusCmd(&hopspi_config, &sCommand, HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
+    /* Configure the command */
+    HAL_OSPI_HyperbusCmd(&hopspi_config, &sCommand, HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
+
+    /* Reception of the data */
+    HAL_OSPI_Receive(&hopspi_config, (uint8_t *)&reg, HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
+
+    /* Initialize the read command */
+    sCommand.AddressSpace = HAL_OSPI_REGISTER_ADDRESS_SPACE;
+    sCommand.AddressSize = HAL_OSPI_ADDRESS_32_BITS;
+    sCommand.Address = S70KL1281_CR0_ADDRESS;
+    sCommand.DQSMode = HAL_OSPI_DQS_ENABLE;
+    sCommand.NbData = 2U;
+
+    /* Configure the command */
+    HAL_OSPI_HyperbusCmd(&hopspi_config, &sCommand, HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
 
     /* Reception of the data */
     HAL_OSPI_Receive(&hopspi_config, (uint8_t *)&sCommand, HAL_OSPI_TIMEOUT_DEFAULT_VALUE);
 
-    SET_BIT(reg, S70KL1281_CR0_FLE);             // Latency Type
+    SET_BIT(reg, S70KL1281_CR0_FLE); // Latency Type
     MODIFY_REG(reg, (uint16_t)S70KL1281_CR0_IL, (uint16_t)OPTIMAL_FIXED_INITIAL_LATENCY_REG_VAL);
     SET_BIT(reg, S70KL1281_CR0_HBE); // Burst type
 
     MODIFY_REG(reg, (uint16_t)S70KL1281_CR0_BLENGTH,
                (uint16_t)BSP_OSPI_RAM_BURST_32_BYTES); // Burst length
     S70KL1281_WriteCfgReg0(&hopspi_config, reg, HAL_OSPI_FIXED_LATENCY, DEFAULT_INITIAL_LATENCY);
-    
-    
-    
     S70KL1281_EnableMemoryMappedMode(&hopspi_config);
 }
 
@@ -310,8 +325,7 @@ HAL_StatusTypeDef HAL_OSPI_HyperbusCmd(OSPI_HandleTypeDef *hospi, OSPI_HyperbusC
     /* Wait till busy flag is reset */
     status = OSPI_WaitFlagStateUntilTimeout(hospi, HAL_OSPI_FLAG_BUSY, RESET, tickstart, Timeout);
 
-    /* Re-initialize the value of the functional mode */
-    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_FMODE, 0U);
+    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_FMODE, 0U); /* Re-initialize the value of the functional mode */
 
     /* Configure the address space in the DCR1 register */
     MODIFY_REG(hospi->Instance->DCR1, OCTOSPI_DCR1_MTYP_0, cmd->AddressSpace);
