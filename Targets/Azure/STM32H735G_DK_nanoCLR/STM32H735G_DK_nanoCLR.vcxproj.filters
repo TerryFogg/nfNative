@@ -181,14 +181,8 @@
     <Filter Include="Azure-RTOS\threadx\ports\cortex_m7\gnu\src">
       <UniqueIdentifier>{18c92333-5ba4-4034-8f9a-d9301a0aa252}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32CommonCode">
-      <UniqueIdentifier>{775f1282-30e0-4b52-b3c4-e454805bda80}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Specific">
       <UniqueIdentifier>{9b772fd9-8f7f-4d99-8624-f77a9c37d6bc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="STM32H7_CommonCode">
-      <UniqueIdentifier>{3cf80e30-6393-4be4-857e-097739d107e6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Specific\CoreIO">
       <UniqueIdentifier>{0f03e3cd-e4a4-44aa-9eeb-cdc46595ae35}</UniqueIdentifier>
@@ -220,37 +214,46 @@
     <Filter Include="Specific\PAL">
       <UniqueIdentifier>{f1202824-d6be-4a38-9d44-8d2e9e4b0710}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS">
+    <Filter Include="SharedCode">
+      <UniqueIdentifier>{e162b44e-0dae-4644-bc4d-3d092ef6cacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedCode\STM32CommonCode">
+      <UniqueIdentifier>{775f1282-30e0-4b52-b3c4-e454805bda80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedCode\STM32H7_CommonCode">
+      <UniqueIdentifier>{3cf80e30-6393-4be4-857e-097739d107e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS">
       <UniqueIdentifier>{56b1ae00-4767-40f4-ac84-20cf2e485227}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS\Include">
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS\Include">
       <UniqueIdentifier>{dd1017fe-090d-4163-8a5e-f772d729e44d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS\Device">
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS\Device">
       <UniqueIdentifier>{ac7bf478-28c3-4c8f-86e6-8f25f87671b7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS\Device\ST">
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS\Device\ST">
       <UniqueIdentifier>{e32c4f58-e774-4efa-9226-05caa15eb87d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx">
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx">
       <UniqueIdentifier>{86c73a17-04e0-4d1a-bac4-3deada54cf54}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include">
+    <Filter Include="SharedCode\STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include">
       <UniqueIdentifier>{35b6e7f5-fdd6-4b9f-9be4-d549f132cb99}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\STM32H7xx_HAL_Driver">
+    <Filter Include="SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver">
       <UniqueIdentifier>{33b4824b-b435-4079-b7f7-4bcefd25c7c2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\STM32H7xx_HAL_Driver\src">
+    <Filter Include="SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src">
       <UniqueIdentifier>{07876c21-b88a-4884-895c-eba488e93f5c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc">
+    <Filter Include="SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc">
       <UniqueIdentifier>{b475d26f-d876-42b9-8077-9b0bb3526ee4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc\Legacy">
+    <Filter Include="SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc\Legacy">
       <UniqueIdentifier>{a28a9493-f8aa-425e-b358-90b39ddad8d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Target Features">
+    <Filter Include="TargetFeatures">
       <UniqueIdentifier>{0c615ae4-48e8-4840-9ddb-eb0fb9d65bac}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -265,205 +268,205 @@
       <Filter>VisualGDB settings</Filter>
     </None>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cordic.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_crc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_crc_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cryp.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cryp_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dcmi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dfsdm.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dfsdm_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma2d.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dsi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dts.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_fmac.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gfxmmu.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hash.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hash_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hcd.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hrtim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2s.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2s_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_lptim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ltdc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ltdc_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdios.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mmc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mmc_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_nand.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_nor.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ospi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_otfdec.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pssi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_ramecc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spdifrx.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sram.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_swpmi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_wwdg.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
       <Filter>nf-interpreter\src\CLR\Include</Filter>
@@ -478,316 +481,316 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32_assert_template.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cec.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_comp.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cordic.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma2d.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dsi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dts.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fmac.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gfxmmu.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hrtim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hsem.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_iwdg.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_jpeg.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_lptim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdios.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nand.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nor.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ospi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_otfdec.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pssi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ramecc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spdifrx.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sram.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_swpmi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_wwdg.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc\Legacy</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc\Legacy</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_armcc.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_armclang.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_compiler.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_gcc.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_iccarm.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\cmsis_version.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_armv8mbl.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_armv8mml.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm0.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm0plus.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm1.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm23.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm3.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm33.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm4.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_cm7.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_sc000.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\core_sc300.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\mpu_armv7.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\mpu_armv8.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\CMSIS\Include\tz_context.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h">
       <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\inc</Filter>
@@ -838,160 +841,160 @@
       <Filter>Azure-RTOS\threadx\common\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_conf_template.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\inc</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h735xx.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
-      <Filter>STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\CMSIS\Device\ST\STM32H7xx\Include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
       <Filter>Azure-RTOS\threadx\common\inc</Filter>
@@ -1345,10 +1348,10 @@
       <Filter>Specific\STM32H735G-DK</Filter>
     </ClInclude>
     <ClInclude Include="..\STM32_CommonCode\WireProtocol_ReceiverThread.h">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClInclude>
     <ClInclude Include="..\STM32_CommonCode\wpUSART_Communications.h">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClInclude>
     <ClInclude Include="Specific\Target_BlockStorage_STM32FlashDriver.h">
       <Filter>Specific</Filter>
@@ -1383,22 +1386,25 @@
     <ClInclude Include="Specific\stm32h7xx_hal_conf.h">
       <Filter>Specific</Filter>
     </ClInclude>
-    <ClInclude Include="Target Features\TargetFeatures.h">
-      <Filter>Target Features</Filter>
+    <ClInclude Include="TargetFeatures\TargetFeatures.h">
+      <Filter>TargetFeatures</Filter>
     </ClInclude>
-    <ClInclude Include="Target Features\HyperbusRam.h">
-      <Filter>Target Features</Filter>
+    <ClInclude Include="TargetFeatures\HyperbusRam.h">
+      <Filter>TargetFeatures</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetFeatures\MicroSD.h">
+      <Filter>TargetFeatures</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cec.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_comp.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_timer_interrupt.S">
       <Filter>Azure-RTOS\threadx\ports\cortex_m7\gnu\src</Filter>
@@ -2001,97 +2007,97 @@
       <Filter>Azure-RTOS\threadx\common\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_bdma.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_comp.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_cordic.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_crs.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dac.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_dma2d.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_exti.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmac.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_gpio.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_hrtim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_i2c.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lptim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_lpuart.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_mdma.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_opamp.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_pwr.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rcc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rng.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_rtc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_spi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_swpmi.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_tim.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usart.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c">
-      <Filter>STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
+      <Filter>SharedCode\STM32H7_CommonCode\STM32H7xx_HAL_Driver\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Cache.cpp">
       <Filter>nf-interpreter\src\CLR\Core</Filter>
@@ -2848,22 +2854,22 @@
     </ClCompile>
     <ClCompile Include="Platform\main.c" />
     <ClCompile Include="..\STM32_CommonCode\WireProtocol_App_Interface.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="..\STM32_CommonCode\WireProtocol_HAL_Interface.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="..\STM32_CommonCode\WireProtocol_ReceiverThread.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="..\STM32_CommonCode\wpUSART_Communications.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="..\STM32_CommonCode\Device_BlockStorage.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="..\STM32_CommonCode\platform_BlockStorage.c">
-      <Filter>STM32CommonCode</Filter>
+      <Filter>SharedCode\STM32CommonCode</Filter>
     </ClCompile>
     <ClCompile Include="Specific\target_BlockStorage.c">
       <Filter>Specific</Filter>
@@ -2880,11 +2886,35 @@
     <ClCompile Include="Specific\Memory.cpp">
       <Filter>Specific</Filter>
     </ClCompile>
-    <ClCompile Include="Target Features\HyperbusRam.c">
-      <Filter>Target Features</Filter>
+    <ClCompile Include="TargetFeatures\HyperbusRam.c">
+      <Filter>TargetFeatures</Filter>
     </ClCompile>
-    <ClCompile Include="RealTimeClock.c">
-      <Filter>Target Features</Filter>
+    <ClCompile Include="TargetFeatures\AudioFeatures.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\MicroSD.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\OSPIFlash.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\RealTimeClock.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\Usb.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\Ethernet.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\CyclicRedundacyCheck.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetFeatures\FDCAN.c">
+      <Filter>TargetFeatures</Filter>
+    </ClCompile>
+    <ClCompile Include="Target Features\init2.c">
+      <Filter>TargetFeatures</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

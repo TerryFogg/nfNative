@@ -7,45 +7,37 @@
 #include <BoardInit.h>
 
 
+void init2();
+
 void BoardInit()
 {
     CPU_CACHE_Enable();
     //  MPU_Config();
 
-    //   HAL_InitTick() is called from HAL_Init() to setup 1ms tick rate for
-    //   HAL_DELAY()
-    HAL_Init(); // STM32H7xx HAL library initialization
-
     SystemClock_Config();                    // Configure the system clock to 520 MHz
     FMC_Bank1_R->BTCR[0] &= ~FMC_BCRx_MBKEN; // Disabling FMC Bank1 ? To prevent this CortexM7
                                              // speculative read accesses on FMC bank1, it is
                                              // recommended to disable it when it is not used
-
-    Board_LED_Initialization();
+    Initialize_DWT_Counter();                // Counter used for microsecond delays (blocking)
+    Initialize_board_LEDS();
     Initialize_OPSPI_Hyperam();
-
-    // init2();
+  //   init2();
     Initialize_OPSPI_Flash();
-    // Can we use the following code in an update to flash only?
-    HAL_FLASH_Unlock();
-
-    Configure_RTC();
-    ConfigureCRC();
+    Initialize_RTC();
+    Initialize_CRC();
     InitializeGraphics();
-    Initialize_AudioConnector_MEMS();
+    Initialize_Audio_Features();
     Initialize_microSD();
-    Initialize_MEMS_Microphone_Onboard();
     Initialize_USB();
     Initialize_Ethernet();
-    Initialize_Stereo();
     Initialize_FDCAN();
 }
 void CPU_CACHE_Enable(void)
 {
     SCB_EnableICache(); // Enable I-Cache
-    // SCB_EnableDCache(); // Enable D-Cache
+                        // SCB_EnableDCache(); // Enable D-Cache
 }
-void Board_LED_Initialization()
+void Initialize_board_LEDS()
 {
     // LEDs and user button of the STM32H7B3I-DK board
     __GPIOG_CLK_ENABLE();
@@ -56,21 +48,14 @@ void Board_LED_Initialization()
     GPIO_InitStructure.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(LED_GPIO_PORT, &GPIO_InitStructure);
 }
-void ConfigureCRC()
+void Initialize_DWT_Counter()
 {
-
-    // At boot time (reset) the following are the defaults
-    // that may need to be changed
-    // LL_CRC_DEFAULT_CRC32_POLY
-    // LL_CRC_POLYLENGTH_32B
-    // LL_CRC_DEFAULT_CRC_INITVALUE
-    // LL_CRC_INDATA_REVERSE_NONE
-    // LL_CRC_OUTDATA_REVERSE_NONE
-    // Enable peripheral clock for CRC
-    LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_CRC);
+    CoreDebug->DEMCR &= ~CoreDebug_DEMCR_TRCENA_Msk; // Disable TRC
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;  // Enable TRC
+    DWT->CTRL &= ~DWT_CTRL_CYCCNTENA_Msk;            // Disable clock cycle counter
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;             // Enable  clock cycle counter
+    DWT->CYCCNT = 0;                                 // Reset the clock cycle counter value
 }
-
-
 void MPU_Config(void)
 {
     //  MPU_Region_InitTypeDef MPU_InitStruct;
@@ -95,60 +80,7 @@ void MPU_Config(void)
     //  /* Enable the MPU */
     //  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
 }
-void Initialize_OPSPI_Flash()
-{
-    return;
-}
-void Initialize_AudioConnector_MEMS()
-{
-    return;
-}
-void Initialize_microSD()
-{
-    SDMMC_InitTypeDef Init;
-    Init.ClockEdge = SDMMC_CLOCK_EDGE_RISING;
-    Init.ClockPowerSave = SDMMC_CLOCK_POWER_SAVE_DISABLE;
-    Init.BusWide = SDMMC_BUS_WIDE_4B;
-    Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
-    Init.ClockDiv = 0;
-
-    uint32_t tmpreg = 0;
-    /* Set SDMMC configuration parameters */
-    tmpreg |= (Init.ClockEdge | Init.ClockPowerSave | Init.BusWide | Init.HardwareFlowControl | Init.ClockDiv);
-    /* Write to SDMMC CLKCR */
-    MODIFY_REG(SDMMC1->CLKCR, CLKCR_CLEAR_MASK, tmpreg);
-}
-
-void Initialize_MEMS_Microphone_Onboard()
-{
-    return;
-}
-
-USBD_HandleTypeDef hUsbDeviceHS;
-extern USBD_DescriptorsTypeDef DFU_Desc;
-
-void Initialize_USB()
-{
-    USBD_Clock_Config();
-    //        USBD_Init(&hUsbDeviceHS, &DFU_Desc, DEVICE_HS);
-    //        USBD_RegisterClass(&hUsbDeviceHS, &USBD_DFU);
-    //        USBD_DFU_RegisterMedia(&hUsbDeviceHS, &USBD_DFU_Flash_fops);
-    //        USBD_Start(&hUsbDeviceHS);
-}
-void Initialize_Ethernet()
-{
-    return;
-}
-void Initialize_Stereo()
-{
-    return;
-}
-void Initialize_FDCAN()
-{
-    return;
-}
-
-void nanosecond64bitTimer()
+void Initialize_64bit_timer()
 {
     // Although we setup a "nanosecond" timer, the real resolution is less than
     // 1ns. To get 1ns resolution would require a clock speed of 1GHz.
@@ -204,4 +136,3 @@ void nanosecond64bitTimer()
     //    } while (true);
 }
 
-//-----------------------------

@@ -9,7 +9,7 @@
 #include "stm32h7xx_ll_rcc.h"
 #include <stm32h7xx_ll_rtc.h>
 
-void Configure_RTC(void)
+void Initialize_RTC(void)
 {
 
     // Enable the PWR Clock and Enable access to the backup domain

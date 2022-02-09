@@ -10,7 +10,6 @@
 #include "stm32h7xx_ll_rcc.h"
 #include "stm32h7xx_ll_bus.h"
 #include <stm32h7xx_ll_tim.h>
-#include <stm32h7xx_ll_sdmmc.h>
 #include "stm32h7xx.h" // Includes    "stm32h735xx.h"
 #include <stm32h7xx_ll_pwr.h>
 #include <stm32h7xx_ll_rtc.h>
@@ -26,11 +25,30 @@
 #include "usbd_dfu_flash.h"
 #include "tx_port.h"
 
+#include "TargetFeatures.h"
+
 void BoardInit();
+void Initialize_DWT_Counter();
 
 void CPU_CACHE_Enable(void);
 void MPU_Config(void);
 void SystemClock_Config();
+
+static inline void DWT_Delay_us(volatile uint32_t micro_seconds)
+{
+    LL_RCC_ClocksTypeDef RCC_Clocks;
+    LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
+    uint32_t au32_initial_ticks = DWT->CYCCNT;
+    uint32_t au32_ticks = RCC_Clocks.SYSCLK_Frequency / 1000000;
+    micro_seconds *= au32_ticks;
+    while ((DWT->CYCCNT - au32_initial_ticks) < micro_seconds - au32_ticks)
+        ;
+}
+
+static inline uint32_t DWT_Get_us() {
+  return  DWT->CYCCNT;
+}
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -41,11 +59,10 @@ extern "C"
 #endif
 void USBD_Clock_Config(void);
 
-void Board_LED_Initialization();
+void Initialize_board_LEDS();
 void Initialize_OPSPI_Hyperam();
 void Initialize_OPSPI_Flash();
 
-void Configure_RTC(void);
 void InitializeGraphics(void);
 void Initialize_AudioConnector_MEMS(void);
 void Initialize_microSD(void);
@@ -54,8 +71,7 @@ void Initialize_USB();
 void Initialize_Ethernet();
 void Initialize_Stereo();
 void Initialize_FDCAN();
-void nanosecond64bitTimer();
-void ConfigureCRC();
+void Initialize_64bit_timer();
 void System_IniRtc(void);
 void Startup_Rtos();
 
@@ -252,7 +268,6 @@ typedef struct
     __IO HAL_LTDC_StateTypeDef State;         /*!< LTDC state */
     __IO uint32_t ErrorCode;                  /*!< LTDC Error code                           */
 } LTDC_HandleTypeDef;
-
 
 // Definition for Graphics on the board
 

@@ -15,113 +15,19 @@
 //---------------------------------------------------------------------------------------------
 // Definition for hyperam
 
-//------------------------------------------------------------------------------
-#define OSPI_HYPERRAM_SIZE      24
-#define OSPI_HYPERRAM_INCR_SIZE 256
 
-// Timing of the HyperRAM
-#define OSPI_HYPERRAM_RW_REC_TIME 3
-#define OSPI_HYPERRAM_LATENCY     6
+#define OSPI_RAM_CS_PIN LL_GPIO_PIN_12
+#define OSPI_RAM_DQS_PIN LL_GPIO_PIN_12
+#define OSPI_RAM_CLK_PIN LL_GPIO_PIN_4
+#define OSPI_RAM_D0_PIN LL_GPIO_PIN_0
+#define OSPI_RAM_D1_PIN LL_GPIO_PIN_1
+#define OSPI_RAM_D2_PIN LL_GPIO_PIN_2
+#define OSPI_RAM_D3_PIN LL_GPIO_PIN_3
+#define OSPI_RAM_D4_PIN LL_GPIO_PIN_0
+#define OSPI_RAM_D5_PIN LL_GPIO_PIN_1
+#define OSPI_RAM_D6_PIN LL_GPIO_PIN_10
+#define OSPI_RAM_D7_PIN LL_GPIO_PIN_11
 
-// End address of the OSPI memory
-#define OSPI_HYPERRAM_END_ADDR (1 << OSPI_HYPERRAM_SIZE)
-
-// Definition for OCTOSPI2 Pins
-#define OSPI2_CS_PIN       GPIO_PIN_12
-#define OSPI2_CS_GPIO_PORT GPIOG
-
-#define OSPI2_CLK_PIN       GPIO_PIN_4
-#define OSPI2_CLK_GPIO_PORT GPIOF
-
-#define OSPI2_D0_PIN       GPIO_PIN_0
-#define OSPI2_D0_GPIO_PORT GPIOF
-
-#define OSPI2_D1_PIN       GPIO_PIN_1
-#define OSPI2_D1_GPIO_PORT GPIOF
-
-#define OSPI2_D2_PIN       GPIO_PIN_2
-#define OSPI2_D2_GPIO_PORT GPIOF
-
-#define OSPI2_D3_PIN       GPIO_PIN_3
-#define OSPI2_D3_GPIO_PORT GPIOF
-
-#define OSPI2_D4_PIN       GPIO_PIN_0
-#define OSPI2_D4_GPIO_PORT GPIOG
-
-#define OSPI2_D5_PIN       GPIO_PIN_1
-#define OSPI2_D5_GPIO_PORT GPIOG
-
-#define OSPI2_D6_PIN       GPIO_PIN_10
-#define OSPI2_D6_GPIO_PORT GPIOG
-
-#define OSPI2_D7_PIN       GPIO_PIN_11
-#define OSPI2_D7_GPIO_PORT GPIOG
-
-#define OSPI2_DQS_PIN       GPIO_PIN_12
-#define OSPI2_DQS_GPIO_PORT GPIOF
-
-/* Definition for OSPI clock resources */
-#define OSPI_RAM_CLK_ENABLE()  __HAL_RCC_OSPI2_CLK_ENABLE()
-#define OSPI_RAM_CLK_DISABLE() __HAL_RCC_OSPI2_CLK_DISABLE()
-
-#define OSPI_RAM_FORCE_RESET()   __HAL_RCC_OSPI2_FORCE_RESET()
-#define OSPI_RAM_RELEASE_RESET() __HAL_RCC_OSPI2_RELEASE_RESET()
-
-/* Definition for OSPI RAM Pins */
-#define OSPI_RAM_CS_GPIO_CLK_ENABLE() __HAL_RCC_GPIOG_CLK_ENABLE()
-#define OSPI_RAM_CS_PIN               GPIO_PIN_12
-#define OSPI_RAM_CS_GPIO_PORT         GPIOG
-#define OSPI_RAM_CS_PIN_AF            GPIO_AF3_OCTOSPIM_P2
-
-#define OSPI_RAM_CLK_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_CLK_PIN               GPIO_PIN_4
-#define OSPI_RAM_CLK_GPIO_PORT         GPIOF
-#define OSPI_RAM_CLK_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_DQS_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_DQS_PIN               GPIO_PIN_12
-#define OSPI_RAM_DQS_GPIO_PORT         GPIOF
-#define OSPI_RAM_DQS_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D0_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_D0_PIN               GPIO_PIN_0
-#define OSPI_RAM_D0_GPIO_PORT         GPIOF
-#define OSPI_RAM_D0_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D1_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_D1_PIN               GPIO_PIN_1
-#define OSPI_RAM_D1_GPIO_PORT         GPIOF
-#define OSPI_RAM_D1_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D2_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_D2_PIN               GPIO_PIN_2
-#define OSPI_RAM_D2_GPIO_PORT         GPIOF
-#define OSPI_RAM_D2_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D3_GPIO_CLK_ENABLE() __HAL_RCC_GPIOF_CLK_ENABLE()
-#define OSPI_RAM_D3_PIN               GPIO_PIN_3
-#define OSPI_RAM_D3_GPIO_PORT         GPIOF
-#define OSPI_RAM_D3_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D4_GPIO_CLK_ENABLE() __HAL_RCC_GPIOG_CLK_ENABLE()
-#define OSPI_RAM_D4_PIN               GPIO_PIN_0
-#define OSPI_RAM_D4_GPIO_PORT         GPIOG
-#define OSPI_RAM_D4_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D5_GPIO_CLK_ENABLE() __HAL_RCC_GPIOG_CLK_ENABLE()
-#define OSPI_RAM_D5_PIN               GPIO_PIN_1
-#define OSPI_RAM_D5_GPIO_PORT         GPIOG
-#define OSPI_RAM_D5_PIN_AF            GPIO_AF9_OCTOSPIM_P2
-
-#define OSPI_RAM_D6_GPIO_CLK_ENABLE() __HAL_RCC_GPIOG_CLK_ENABLE()
-#define OSPI_RAM_D6_PIN               GPIO_PIN_10
-#define OSPI_RAM_D6_GPIO_PORT         GPIOG
-#define OSPI_RAM_D6_PIN_AF            GPIO_AF3_OCTOSPIM_P2
-
-#define OSPI_RAM_D7_GPIO_CLK_ENABLE() __HAL_RCC_GPIOG_CLK_ENABLE()
-#define OSPI_RAM_D7_PIN               GPIO_PIN_11
-#define OSPI_RAM_D7_GPIO_PORT         GPIOG
-#define OSPI_RAM_D7_PIN_AF            GPIO_AF9_OCTOSPIM_P2
 
 #define S70KL1281_RAM_SIZE         0x1000000 /* 128 MBits => 16 MBytes */
 #define BSP_OSPI_RAM_BurstLength_t S70KL1281_BurstLength_t
@@ -142,6 +48,9 @@ typedef enum
 #define S70KL1281_CR0_BLENGTH_32 0x0003U /*!< 32 bytes burst length */
 
 #define BSP_OSPI_RAM_BURST_32_BYTES         (BSP_OSPI_RAM_BurstLength_t) S70KL1281_CR0_BLENGTH_32
+
+
+
 #define OSPI_FUNCTIONAL_MODE_INDIRECT_READ  ((uint32_t)OCTOSPI_CR_FMODE_0) /*!< Indirect read mode     */
 #define OSPI_FUNCTIONAL_MODE_MEMORY_MAPPED  ((uint32_t)OCTOSPI_CR_FMODE)   /*!< Memory-mapped mode     */
 #define OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE ((uint32_t)0x00000000)         /*!< Indirect write mode    */
