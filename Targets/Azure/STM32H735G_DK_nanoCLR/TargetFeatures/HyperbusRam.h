@@ -55,50 +55,50 @@ typedef enum
 #define OSPI_FUNCTIONAL_MODE_MEMORY_MAPPED  ((uint32_t)OCTOSPI_CR_FMODE)   /*!< Memory-mapped mode     */
 #define OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE ((uint32_t)0x00000000)         /*!< Indirect write mode    */
 
-#define __HAL_OSPI_ENABLE(__HANDLE__)                   SET_BIT((__HANDLE__)->Instance->CR, OCTOSPI_CR_EN)
-#define HAL_OSPI_DUALQUAD_DISABLE                       ((uint32_t)0x00000000U)         // Dual-Quad mode disabled */
-#define HAL_OSPI_MEMTYPE_HYPERBUS                       ((uint32_t)OCTOSPI_DCR1_MTYP_2) // Hyperbus mode     */
-#define HAL_OSPI_FREERUNCLK_DISABLE                     ((uint32_t)0x00000000U) // CLK is not free running               */
-#define HAL_OSPI_CLOCK_MODE_0                           ((uint32_t)0x00000000U) // CLK must stay low while nCS is high  */
-#define HAL_OSPI_WRAP_NOT_SUPPORTED                     ((uint32_t)0x00000000U) // wrapped reads are not supported by the memory
-#define HAL_OSPI_SAMPLE_SHIFTING_NONE                   ((uint32_t)0x00000000U)      /*!< No shift        */
-#define HAL_OSPI_DHQC_ENABLE                            ((uint32_t)OCTOSPI_TCR_DHQC) /*!< Delay Hold 1/4 cycle */
+#define OSPI_ENABLE(__HANDLE__)                   SET_BIT((__HANDLE__)->Instance->CR, OCTOSPI_CR_EN)
+#define OSPI_DUALQUAD_DISABLE                       ((uint32_t)0x00000000U)         // Dual-Quad mode disabled */
+#define OSPI_MEMTYPE_HYPERBUS                       ((uint32_t)OCTOSPI_DCR1_MTYP_2) // Hyperbus mode     */
+#define OSPI_FREERUNCLK_DISABLE                     ((uint32_t)0x00000000U) // CLK is not free running               */
+#define OSPI_CLOCK_MODE_0                           ((uint32_t)0x00000000U) // CLK must stay low while nCS is high  */
+#define OSPI_WRAP_NOT_SUPPORTED                     ((uint32_t)0x00000000U) // wrapped reads are not supported by the memory
+#define OSPI_SAMPLE_SHIFTING_NONE                   ((uint32_t)0x00000000U)      /*!< No shift        */
+#define OSPI_DHQC_ENABLE                            ((uint32_t)OCTOSPI_TCR_DHQC) /*!< Delay Hold 1/4 cycle */
 #define HAL_OSPI_ADDRESS_NONE                           ((uint32_t)0x00000000U)      /*!< No address               */
-#define HAL_OSPI_LATENCY_ON_WRITE                       ((uint32_t)0x00000000U)     /*!< Latency on write accesses    */
-#define HAL_OSPI_FIXED_LATENCY                          ((uint32_t)OCTOSPI_HLCR_LM) /*!< Fixed latency            */
-#define HAL_OSPI_TIMEOUT_DEFAULT_VALUE                  ((uint32_t)5000U)           /* 5 s */
+#define OSPI_LATENCY_ON_WRITE                       ((uint32_t)0x00000000U)     /*!< Latency on write accesses    */
+#define OSPI_FIXED_LATENCY                          ((uint32_t)OCTOSPI_HLCR_LM) /*!< Fixed latency            */
+#define OSPI_TIMEOUT_DEFAULT_VALUE                  ((uint32_t)5000U)           /* 5 s */
 #define __HAL_OSPI_ENABLE_IT(__HANDLE__, __INTERRUPT__) SET_BIT((__HANDLE__)->Instance->CR, (__INTERRUPT__))
-#define HAL_OSPI_FLAG_TC                                OCTOSPI_SR_TCF // Programmed number of data have been transferred or aborted
-#define HAL_OSPI_FLAG_FT                                                                                               \
+#define OSPI_FLAG_TC                                OCTOSPI_SR_TCF // Programmed number of data have been transferred or aborted
+#define OSPI_FLAG_FT                                                                                               \
     OCTOSPI_SR_FTF // Fifo threshold reached or data left after read from memory
                    // is complete
 #define HAL_OSPI_ERROR_INVALID_PARAM     ((uint32_t)0x00000008U) /*!< Invalid parameters error                   */
-#define HAL_OSPI_REGISTER_ADDRESS_SPACE  ((uint32_t)OCTOSPI_DCR1_MTYP_0) /*!< HyperBus register mode */
-#define HAL_OSPI_NO_LATENCY_ON_WRITE     ((uint32_t)OCTOSPI_HLCR_WZL)    /*!< No latency on write accesses */
+#define OSPI_REGISTER_ADDRESS_SPACE  ((uint32_t)OCTOSPI_DCR1_MTYP_0) /*!< HyperBus register mode */
+#define OSPI_NO_LATENCY_ON_WRITE     ((uint32_t)OCTOSPI_HLCR_WZL)    /*!< No latency on write accesses */
 #define HAL_OSPI_MEMORY_ADDRESS_SPACE    ((uint32_t)0x00000000U)         /*!< HyperBus memory mode   */
-#define HAL_OSPI_ADDRESS_32_BITS         ((uint32_t)OCTOSPI_CCR_ADSIZE)  /*!< 32-bit address */
-#define HAL_OSPI_DQS_ENABLE              ((uint32_t)OCTOSPI_CCR_DQSE)    /*!< DQS enabled  */
-#define HAL_OSPI_TIMEOUT_COUNTER_DISABLE ((uint32_t)0x00000000U) /*!< Timeout counter disabled, nCS remains active */
+#define OSPI_ADDRESS_32_BITS         ((uint32_t)OCTOSPI_CCR_ADSIZE)  /*!< 32-bit address */
+#define OSPI_DQS_ENABLE              ((uint32_t)OCTOSPI_CCR_DQSE)    /*!< DQS enabled  */
+#define OSPI_TIMEOUT_COUNTER_DISABLE ((uint32_t)0x00000000U) /*!< Timeout counter disabled, nCS remains active */
 #define HAL_OSPI_ERROR_INVALID_SEQUENCE  ((uint32_t)0x00000010U) /*!< Sequence of the state machine is incorrect */
 #define HAL_OSPI_ERROR_NONE              ((uint32_t)0x00000000U) /*!< No error                                   */
 #define HAL_OSPI_STATE_RESET             ((uint32_t)0x00000000U) /*!< Initial state */
-#define HAL_OSPI_FREERUNCLK_ENABLE       ((uint32_t)OCTOSPI_DCR1_FRCK) /*!< CLK is free running (always provided) */
+#define OSPI_FREERUNCLK_ENABLE       ((uint32_t)OCTOSPI_DCR1_FRCK) /*!< CLK is free running (always provided) */
 #define HAL_OSPI_STATE_HYPERBUS_INIT                                                                                   \
     ((uint32_t)0x00000001U)                                    // Initialization done in hyperbus mode but timing
                                                                // configuration not done
 #define HAL_OSPI_STATE_BUSY_MEM_MAPPED ((uint32_t)0x00000088U) /*!< Memory-mapped on-going */
-#define HAL_OSPI_TIMEOUT_COUNTER_ENABLE                                                                                \
+#define OSPI_TIMEOUT_COUNTER_ENABLE                                                                                \
     ((uint32_t)OCTOSPI_CR_TCEN)                        // Timeout counter enabled, nCS released when
                                                        // timeout expires
-#define HAL_OSPI_FLAG_TO       OCTOSPI_SR_TOF          /*!< Timeout flag: timeout occurs in memory-mapped mode */
-#define HAL_OSPI_IT_TO         OCTOSPI_CR_TOIE         /*!< Interrupt on the timeout flag           */
+#define OSPI_FLAG_TO       OCTOSPI_SR_TOF          /*!< Timeout flag: timeout occurs in memory-mapped mode */
+#define OSPI_IT_TO         OCTOSPI_CR_TOIE         /*!< Interrupt on the timeout flag           */
 #define HAL_OSPI_STATE_ERROR   ((uint32_t)0x00000200U) // Blocking error, driver should be re-initialized
 #define HAL_OSPI_ERROR_TIMEOUT ((uint32_t)0x00000001U) /*!< Timeout error                              */
 #define __HAL_OSPI_GET_FLAG(__HANDLE__, __FLAG__)                                                                      \
     ((READ_BIT((__HANDLE__)->Instance->SR, (__FLAG__)) != 0U) ? SET : RESET)
-#define __HAL_OSPI_CLEAR_FLAG(__HANDLE__, __FLAG__) WRITE_REG((__HANDLE__)->Instance->FCR, (__FLAG__))
+#define OSPI_CLEAR_FLAG(__HANDLE__, __FLAG__) WRITE_REG((__HANDLE__)->Instance->FCR, (__FLAG__))
 #define HAL_OSPI_STATE_READY                        ((uint32_t)0x00000002U) /*!< Driver ready to be used */
-#define HAL_OSPI_FLAG_BUSY                          OCTOSPI_SR_BUSY         /*!< Busy flag: operation is ongoing */
+#define OSPI_FLAG_BUSY                          OCTOSPI_SR_BUSY         /*!< Busy flag: operation is ongoing */
 #define HAL_OSPI_STATE_CMD_CFG                                                                                         \
     ((uint32_t)0x00000004U) // Command (regular or hyperbus) configured, ready for
                             // an action

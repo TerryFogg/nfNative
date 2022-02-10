@@ -34,20 +34,34 @@ void CPU_CACHE_Enable(void);
 void MPU_Config(void);
 void SystemClock_Config();
 
-static inline void DWT_Delay_us(volatile uint32_t micro_seconds)
+
+
+// DWT is connected to the system clock
+static inline void DWT_Delay_us(volatile uint32_t microsecond_delay)
 {
     LL_RCC_ClocksTypeDef RCC_Clocks;
     LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
-    uint32_t au32_initial_ticks = DWT->CYCCNT;
-    uint32_t au32_ticks = RCC_Clocks.SYSCLK_Frequency / 1000000;
-    micro_seconds *= au32_ticks;
-    while ((DWT->CYCCNT - au32_initial_ticks) < micro_seconds - au32_ticks)
+    uint32_t initial_microseconds = DWT->CYCCNT;
+    uint32_t tick_rate = RCC_Clocks.SYSCLK_Frequency / 1000000;
+    microsecond_delay *= tick_rate;
+    while ((DWT->CYCCNT - initial_microseconds) < microsecond_delay - tick_rate)
         ;
 }
 
-static inline uint32_t DWT_Get_us() {
-  return  DWT->CYCCNT;
+static inline bool OSPI2_WaitUntilState(uint32_t Flag, FlagStatus State) {
+  int loopCounter = 10; // 10 loops, 10 microseconds maximum
+  while (READ_BIT(OCTOSPI2->SR, Flag) !=
+         State) // Wait until flag is in expected state
+  {
+    DWT_Delay_us(1); // Wait a microsecond;
+    loopCounter--;
+    if (loopCounter == 0) {
+      return false;
+    }
+  }
+  return true;
 }
+
 
 #ifdef __cplusplus
 extern "C"
