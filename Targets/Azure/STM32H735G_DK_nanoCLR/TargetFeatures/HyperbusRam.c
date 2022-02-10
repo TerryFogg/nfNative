@@ -14,12 +14,12 @@ void init2(void);
 
 int32_t S70KL1281_WriteCfgReg0(OSPI_HandleTypeDef *Ctx, uint16_t Value, uint32_t LatencyMode, uint32_t InitialLatency);
 int32_t S70KL1281_EnableMemoryMappedMode(OSPI_HandleTypeDef *Ctx);
-HAL_StatusTypeDef OCTOSPI2_HyperbusCmd( OSPI_HyperbusCmdTypeDef *cmd, uint32_t Timeout);
-HAL_StatusTypeDef OSPI_Init(OSPI_HandleTypeDef *hospi);
-HAL_StatusTypeDef OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMappedTypeDef *cfg);
-HAL_StatusTypeDef OSPI_HyperbusCfg(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCfgTypeDef *cfg, uint32_t Timeout);
-HAL_StatusTypeDef OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout);
-HAL_StatusTypeDef OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout);
+void OCTOSPI2_HyperbusCmd(OSPI_HyperbusCmdTypeDef *cmd, uint32_t Timeout);
+//void OSPI_Init(OSPI_HandleTypeDef *hospi);
+void OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMappedTypeDef *cfg);
+void OSPI_HyperbusCfg(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCfgTypeDef *cfg, uint32_t Timeout);
+void OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout);
+void OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout);
 
 void Initialize_OPSPI_Hyperam()
 {
@@ -95,7 +95,6 @@ void Initialize_OPSPI_Hyperam()
     {
     }
 
-    //    HAL_StatusTypeDef status;
     OSPI_HandleTypeDef hopspi_config = {0};
     hopspi_config.Instance = OCTOSPI2;
     hopspi_config.Init.FifoThreshold = 4;
@@ -111,13 +110,12 @@ void Initialize_OPSPI_Hyperam()
     hopspi_config.Init.DelayHoldQuarterCycle = OSPI_DHQC_ENABLE;
     hopspi_config.Init.Refresh = 400;           // 4us @100MHz
     hopspi_config.Init.ChipSelectBoundary = 23; // memory die boundary 2^23=8MBs
-    hopspi_config.Init.WrapSize = OSPI_WRAP_NOT_SUPPORTED;
     ////
 
     /* Configure memory type, device size, chip select high time, clocked chip
      * select high time, delay block bypass, free running clock, clock mode */
     MODIFY_REG(
-        hopspi_config.Instance->DCR1,
+        OCTOSPI2->DCR1,
         (OCTOSPI_DCR1_MTYP | OCTOSPI_DCR1_DEVSIZE | OCTOSPI_DCR1_CSHT | OCTOSPI_DCR1_CKCSHT | OCTOSPI_DCR1_DLYBYP |
          OCTOSPI_DCR1_FRCK | OCTOSPI_DCR1_CKMODE),
         (hopspi_config.Init.MemoryType | ((hopspi_config.Init.DeviceSize - 1U) << OCTOSPI_DCR1_DEVSIZE_Pos) |
@@ -126,48 +124,44 @@ void Initialize_OPSPI_Hyperam()
          hopspi_config.Init.ClockMode));
 
     /* Configure wrap size */
-    MODIFY_REG(hopspi_config.Instance->DCR2, OCTOSPI_DCR2_WRAPSIZE, hopspi_config.Init.WrapSize);
+    MODIFY_REG(OCTOSPI2->DCR2, OCTOSPI_DCR2_WRAPSIZE, hopspi_config.Init.WrapSize);
 
     /* Configure chip select boundary and maximun transfer */
-    hopspi_config.Instance->DCR3 =
+    OCTOSPI2->DCR3 =
         ((hopspi_config.Init.ChipSelectBoundary << OCTOSPI_DCR3_CSBOUND_Pos) |
          (hopspi_config.Init.MaxTran << OCTOSPI_DCR3_MAXTRAN_Pos));
 
     /* Configure refresh */
-    hopspi_config.Instance->DCR4 = hopspi_config.Init.Refresh;
+    OCTOSPI2->DCR4 = hopspi_config.Init.Refresh;
 
     /* Configure FIFO threshold */
-    MODIFY_REG(
-        hopspi_config.Instance->CR,
-        OCTOSPI_CR_FTHRES,
-        ((hopspi_config.Init.FifoThreshold - 1U) << OCTOSPI_CR_FTHRES_Pos));
+    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_FTHRES, ((hopspi_config.Init.FifoThreshold - 1U) << OCTOSPI_CR_FTHRES_Pos));
 
     OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
 
     /* Configure clock prescaler */
     MODIFY_REG(
-        hopspi_config.Instance->DCR2,
+        OCTOSPI2->DCR2,
         OCTOSPI_DCR2_PRESCALER,
         ((hopspi_config.Init.ClockPrescaler - 1U) << OCTOSPI_DCR2_PRESCALER_Pos));
 
     /* Configure Dual Quad mode */
-    MODIFY_REG(hopspi_config.Instance->CR, OCTOSPI_CR_DQM, hopspi_config.Init.DualQuad);
+    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_DQM, hopspi_config.Init.DualQuad);
 
     /* Configure sample shifting and delay hold quarter cycle */
     MODIFY_REG(
-        hopspi_config.Instance->TCR,
+        OCTOSPI2->TCR,
         (OCTOSPI_TCR_SSHIFT | OCTOSPI_TCR_DHQC),
         (hopspi_config.Init.SampleShifting | hopspi_config.Init.DelayHoldQuarterCycle));
 
     /* Enable OctoSPI */
     OSPI_ENABLE(&hopspi_config);
 
-    /* Enable free running clock if needed : must be done after OSPI enable
-     */
+    /* Enable free running clock if needed : must be done after OSPI enable      */
 
     if (hopspi_config.Init.FreeRunningClock == OSPI_FREERUNCLK_ENABLE)
     {
-        SET_BIT(hopspi_config.Instance->DCR1, OCTOSPI_DCR1_FRCK);
+        SET_BIT(OCTOSPI2->DCR1, OCTOSPI_DCR1_FRCK);
     }
 
     OSPI_HyperbusCfgTypeDef sHyperbusCfg;
@@ -180,7 +174,7 @@ void Initialize_OPSPI_Hyperam()
 
     /* Configure Hyperbus configuration Latency register */
     WRITE_REG(
-        hopspi_config.Instance->HLCR,
+        OCTOSPI2->HLCR,
         ((sHyperbusCfg.RWRecoveryTime << OCTOSPI_HLCR_TRWR_Pos) | (sHyperbusCfg.AccessTime << OCTOSPI_HLCR_TACC_Pos) |
          sHyperbusCfg.WriteZeroLatency | sHyperbusCfg.LatencyMode));
 
@@ -191,7 +185,7 @@ void Initialize_OPSPI_Hyperam()
     sCommand.Address = S70KL1281_CR0_ADDRESS;
     sCommand.DQSMode = OSPI_DQS_ENABLE;
     sCommand.NbData = 2U;
-    OCTOSPI2_HyperbusCmd( &sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
+    OCTOSPI2_HyperbusCmd(&sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
     OSPI_Receive(&hopspi_config, (uint8_t *)&reg, OSPI_TIMEOUT_DEFAULT_VALUE);
 
     /* Initialize the read command */
@@ -200,7 +194,7 @@ void Initialize_OPSPI_Hyperam()
     sCommand.Address = S70KL1281_CR0_ADDRESS;
     sCommand.DQSMode = OSPI_DQS_ENABLE;
     sCommand.NbData = 2U;
-    OCTOSPI2_HyperbusCmd( &sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
+    OCTOSPI2_HyperbusCmd(&sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
     OSPI_Receive(&hopspi_config, (uint8_t *)&sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
 
     SET_BIT(reg, S70KL1281_CR0_FLE); // Latency Type
@@ -215,7 +209,6 @@ void Initialize_OPSPI_Hyperam()
 
 int32_t S70KL1281_WriteCfgReg0(OSPI_HandleTypeDef *Ctx, uint16_t Value, uint32_t LatencyMode, uint32_t InitialLatency)
 {
-
     /* Reconfigure peripheral as no write latency to write in registers */
     OSPI_HyperbusCfgTypeDef sHyperbusCfg;
     sHyperbusCfg.RWRecoveryTime = RW_RECOVERY_TIME;
@@ -232,10 +225,9 @@ int32_t S70KL1281_WriteCfgReg0(OSPI_HandleTypeDef *Ctx, uint16_t Value, uint32_t
     sCommand.DQSMode = OSPI_DQS_ENABLE;
     sCommand.NbData = 2U;
 
-    OCTOSPI2_HyperbusCmd( &sCommand, OSPI_TIMEOUT_DEFAULT_VALUE); /* Configure the command */
-    OSPI_Transmit(Ctx, (uint8_t *)(&Value), OSPI_TIMEOUT_DEFAULT_VALUE); /* Transmission of the data */
-    sHyperbusCfg.WriteZeroLatency = OSPI_LATENCY_ON_WRITE; /* Reconfigure peripheral for correct write
-                                                              access */
+    OCTOSPI2_HyperbusCmd(&sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);         // Configure the command
+    OSPI_Transmit(Ctx, (uint8_t *)(&Value), OSPI_TIMEOUT_DEFAULT_VALUE); // Transmission of the data
+    sHyperbusCfg.WriteZeroLatency = OSPI_LATENCY_ON_WRITE; // Reconfigure peripheral for correct write access
     OSPI_HyperbusCfg(Ctx, &sHyperbusCfg, OSPI_TIMEOUT_DEFAULT_VALUE);
     return S70KL1281_OK;
 }
@@ -243,29 +235,25 @@ int32_t S70KL1281_EnableMemoryMappedMode(OSPI_HandleTypeDef *Ctx)
 {
     OSPI_HyperbusCmdTypeDef sCommand;
     OSPI_MemoryMappedTypeDef sMemMappedCfg;
-
-    /* OctoSPI Hyperbus command configuration */
-    sCommand.AddressSpace = HAL_OSPI_MEMORY_ADDRESS_SPACE;
+    sCommand.AddressSpace = OSPI_MEMORY_ADDRESS_SPACE;
     sCommand.AddressSize = OSPI_ADDRESS_32_BITS;
     sCommand.Address = 0;
     sCommand.DQSMode = OSPI_DQS_ENABLE;
     sCommand.NbData = 1;
-    OCTOSPI2_HyperbusCmd( &sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
+    OCTOSPI2_HyperbusCmd(&sCommand, OSPI_TIMEOUT_DEFAULT_VALUE);
 
     /* OctoSPI activation of memory-mapped mode */
     sMemMappedCfg.TimeOutActivation = OSPI_TIMEOUT_COUNTER_DISABLE;
     OSPI_MemoryMapped(Ctx, &sMemMappedCfg);
     return S70KL1281_OK;
 }
-HAL_StatusTypeDef OCTOSPI2_HyperbusCmd( OSPI_HyperbusCmdTypeDef *cmd, uint32_t Timeout)
+void OCTOSPI2_HyperbusCmd(OSPI_HyperbusCmdTypeDef *cmd, uint32_t Timeout)
 {
-    HAL_StatusTypeDef status;
     OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
 
     MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_FMODE, 0U); /* Re-initialize the value of the functional mode */
     MODIFY_REG(OCTOSPI2->DCR1, OCTOSPI_DCR1_MTYP_0, cmd->AddressSpace); /* Configure the address space in the DCR1
                                                                            register */
-
     /* Configure the CCR and WCCR registers with the address size and the
        following configuration :
        - DQS signal enabled (used as RWDS)
@@ -280,82 +268,65 @@ HAL_StatusTypeDef OCTOSPI2_HyperbusCmd( OSPI_HyperbusCmdTypeDef *cmd, uint32_t T
         (cmd->DQSMode | OCTOSPI_WCCR_DDTR | OCTOSPI_WCCR_DMODE_2 | cmd->AddressSize | OCTOSPI_WCCR_ADDTR |
          OCTOSPI_WCCR_ADMODE_2));
     WRITE_REG(OCTOSPI2->DLR, (cmd->NbData - 1U)); /* Configure the DLR register with the number of data */
-    WRITE_REG(OCTOSPI2->AR, cmd->Address);               /* Configure the AR register with the address value */
-
+    WRITE_REG(OCTOSPI2->AR, cmd->Address);        /* Configure the AR register with the address value */
     /* Return function status */
-    return status;
 }
-HAL_StatusTypeDef OSPI_Init(OSPI_HandleTypeDef *hospi)
+//void OSPI_Init(OSPI_HandleTypeDef *hospi)
+//{
+//    /* Configure memory type, device size, chip select high time, clocked chip
+//     * select high time, delay block bypass, free running clock, clock mode */
+//    MODIFY_REG(
+//        OCTOSPI2->DCR1,
+//        (OCTOSPI_DCR1_MTYP | OCTOSPI_DCR1_DEVSIZE | OCTOSPI_DCR1_CSHT | OCTOSPI_DCR1_CKCSHT | OCTOSPI_DCR1_DLYBYP |
+//         OCTOSPI_DCR1_FRCK | OCTOSPI_DCR1_CKMODE),
+//        (hospi->Init.MemoryType | ((hospi->Init.DeviceSize - 1U) << OCTOSPI_DCR1_DEVSIZE_Pos) |
+//         ((hospi->Init.ChipSelectHighTime - 1U) << OCTOSPI_DCR1_CSHT_Pos) |
+//         (hospi->Init.ClkChipSelectHighTime << OCTOSPI_DCR1_CKCSHT_Pos) | hospi->Init.DelayBlockBypass |
+//         hospi->Init.ClockMode));
+//    /* Configure wrap size */
+//    MODIFY_REG(OCTOSPI2->DCR2, OCTOSPI_DCR2_WRAPSIZE, hospi->Init.WrapSize);
+//    /* Configure chip select boundary and maximun transfer */
+//    OCTOSPI2->DCR3 =
+//        ((hospi->Init.ChipSelectBoundary << OCTOSPI_DCR3_CSBOUND_Pos) |
+//         (hospi->Init.MaxTran << OCTOSPI_DCR3_MAXTRAN_Pos));
+//
+//    OCTOSPI2->DCR4 = hospi->Init.Refresh; // Configure refresh
+//    /* Configure FIFO threshold */
+//    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_FTHRES, ((hospi->Init.FifoThreshold - 1U) << OCTOSPI_CR_FTHRES_Pos));
+//
+//    OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
+//
+//    /* Configure clock prescaler */
+//    MODIFY_REG(
+//        OCTOSPI2->DCR2,
+//        OCTOSPI_DCR2_PRESCALER,
+//        ((hospi->Init.ClockPrescaler - 1U) << OCTOSPI_DCR2_PRESCALER_Pos));
+//
+//    /* Configure Dual Quad mode */
+//    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_DQM, hospi->Init.DualQuad);
+//
+//    /* Configure sample shifting and delay hold quarter cycle */
+//    MODIFY_REG(
+//        OCTOSPI2->TCR,
+//        (OCTOSPI_TCR_SSHIFT | OCTOSPI_TCR_DHQC),
+//        (hospi->Init.SampleShifting | hospi->Init.DelayHoldQuarterCycle));
+//
+//    OSPI_ENABLE(hospi); // Enable OctoSPI
+//
+//    // Enable free running clock if needed : must be done after OSPI enable
+//    if (hospi->Init.FreeRunningClock == OSPI_FREERUNCLK_ENABLE)
+//    {
+//        SET_BIT(OCTOSPI2->DCR1, OCTOSPI_DCR1_FRCK);
+//    }
+//}
+void OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMappedTypeDef *cfg)
 {
-    HAL_StatusTypeDef status = HAL_OK;
-    uint32_t tickstart = HAL_GetTick();
-
-    /* Configure memory type, device size, chip select high time, clocked chip
-     * select high time, delay block bypass, free running clock, clock mode */
-    MODIFY_REG(
-        hospi->Instance->DCR1,
-        (OCTOSPI_DCR1_MTYP | OCTOSPI_DCR1_DEVSIZE | OCTOSPI_DCR1_CSHT | OCTOSPI_DCR1_CKCSHT | OCTOSPI_DCR1_DLYBYP |
-         OCTOSPI_DCR1_FRCK | OCTOSPI_DCR1_CKMODE),
-        (hospi->Init.MemoryType | ((hospi->Init.DeviceSize - 1U) << OCTOSPI_DCR1_DEVSIZE_Pos) |
-         ((hospi->Init.ChipSelectHighTime - 1U) << OCTOSPI_DCR1_CSHT_Pos) |
-         (hospi->Init.ClkChipSelectHighTime << OCTOSPI_DCR1_CKCSHT_Pos) | hospi->Init.DelayBlockBypass |
-         hospi->Init.ClockMode));
-
-    /* Configure wrap size */
-    MODIFY_REG(hospi->Instance->DCR2, OCTOSPI_DCR2_WRAPSIZE, hospi->Init.WrapSize);
-
-    /* Configure chip select boundary and maximun transfer */
-    hospi->Instance->DCR3 =
-        ((hospi->Init.ChipSelectBoundary << OCTOSPI_DCR3_CSBOUND_Pos) |
-         (hospi->Init.MaxTran << OCTOSPI_DCR3_MAXTRAN_Pos));
-
-    /* Configure refresh */
-    hospi->Instance->DCR4 = hospi->Init.Refresh;
-
-    /* Configure FIFO threshold */
-    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_FTHRES, ((hospi->Init.FifoThreshold - 1U) << OCTOSPI_CR_FTHRES_Pos));
-
-    OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
-
-    /* Configure clock prescaler */
-    MODIFY_REG(
-        hospi->Instance->DCR2,
-        OCTOSPI_DCR2_PRESCALER,
-        ((hospi->Init.ClockPrescaler - 1U) << OCTOSPI_DCR2_PRESCALER_Pos));
-
-    /* Configure Dual Quad mode */
-    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_DQM, hospi->Init.DualQuad);
-
-    /* Configure sample shifting and delay hold quarter cycle */
-    MODIFY_REG(
-        hospi->Instance->TCR,
-        (OCTOSPI_TCR_SSHIFT | OCTOSPI_TCR_DHQC),
-        (hospi->Init.SampleShifting | hospi->Init.DelayHoldQuarterCycle));
-
-    /* Enable OctoSPI */
-    OSPI_ENABLE(hospi);
-
-    /* Enable free running clock if needed : must be done after OSPI enable
-     */
-
-    if (hospi->Init.FreeRunningClock == OSPI_FREERUNCLK_ENABLE)
-    {
-        SET_BIT(hospi->Instance->DCR1, OCTOSPI_DCR1_FRCK);
-    }
-
-    /* Return function status */
-    return status;
-}
-HAL_StatusTypeDef OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMappedTypeDef *cfg)
-{
-    HAL_StatusTypeDef status;
     OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
 
     if (cfg->TimeOutActivation == OSPI_TIMEOUT_COUNTER_ENABLE)
     {
-
         /* Configure register */
-        WRITE_REG(hospi->Instance->LPTR, cfg->TimeOutPeriod);
+        WRITE_REG(OCTOSPI2->LPTR, cfg->TimeOutPeriod);
 
         /* Clear flags related to interrupt */
         OSPI_CLEAR_FLAG(hospi, OSPI_FLAG_TO);
@@ -363,43 +334,32 @@ HAL_StatusTypeDef OSPI_MemoryMapped(OSPI_HandleTypeDef *hospi, OSPI_MemoryMapped
         /* Enable the timeout interrupt */
         __HAL_OSPI_ENABLE_IT(hospi, OSPI_IT_TO);
     }
-
     /* Configure CR register with functional mode as memory-mapped */
     MODIFY_REG(
-        hospi->Instance->CR,
+        OCTOSPI2->CR,
         (OCTOSPI_CR_TCEN | OCTOSPI_CR_FMODE),
         (cfg->TimeOutActivation | OSPI_FUNCTIONAL_MODE_MEMORY_MAPPED));
-
-    /* Return function status */
-    return status;
 }
-HAL_StatusTypeDef OSPI_HyperbusCfg(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCfgTypeDef *cfg, uint32_t Timeout)
+void OSPI_HyperbusCfg(OSPI_HandleTypeDef *hospi, OSPI_HyperbusCfgTypeDef *cfg, uint32_t Timeout)
 {
-    HAL_StatusTypeDef status;
     OSPI2_WaitUntilState(OSPI_FLAG_BUSY, RESET);
 
     /* Configure Hyperbus configuration Latency register */
     WRITE_REG(
-        hospi->Instance->HLCR,
+        OCTOSPI2->HLCR,
         ((cfg->RWRecoveryTime << OCTOSPI_HLCR_TRWR_Pos) | (cfg->AccessTime << OCTOSPI_HLCR_TACC_Pos) |
          cfg->WriteZeroLatency | cfg->LatencyMode));
-
-    /* Return function status */
-    return status;
 }
-HAL_StatusTypeDef OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
+void OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
 {
-    HAL_StatusTypeDef status;
-    __IO uint32_t *data_reg = &hospi->Instance->DR;
+  __IO uint32_t *data_reg = &OCTOSPI2->DR;
 
     /* Configure counters and size */
-    hospi->XferCount = READ_REG(hospi->Instance->DLR) + 1U;
+    hospi->XferCount = READ_REG(OCTOSPI2->DLR) + 1U;
     hospi->XferSize = hospi->XferCount;
     hospi->pBuffPtr = pData;
-
     /* Configure CR register with functional mode as indirect write */
-    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_FMODE, OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE);
-
+    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_FMODE, OSPI_FUNCTIONAL_MODE_INDIRECT_WRITE);
     do
     {
         /* Wait till fifo threshold flag is set to send data */
@@ -409,54 +369,30 @@ HAL_StatusTypeDef OSPI_Transmit(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint3
         hospi->pBuffPtr++;
         hospi->XferCount--;
     } while (hospi->XferCount > 0U);
-
     /* Wait till transfer complete flag is set to go back in idle state */
     OSPI2_WaitUntilState(OSPI_FLAG_TC, SET);
-
     /* Clear transfer complete flag */
     OSPI_CLEAR_FLAG(hospi, OSPI_FLAG_TC);
-
-    /* Return function status */
-    return status;
 }
-HAL_StatusTypeDef OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
+void OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32_t Timeout)
 {
-    HAL_StatusTypeDef status;
-    __IO uint32_t *data_reg = &hospi->Instance->DR;
-    uint32_t addr_reg = hospi->Instance->AR;
-    uint32_t ir_reg = hospi->Instance->IR;
+  __IO uint32_t *data_reg = &OCTOSPI2->DR;
+    uint32_t addr_reg = OCTOSPI2->AR;
+    uint32_t ir_reg = OCTOSPI2->IR;
 
     /* Configure counters and size */
-    hospi->XferCount = READ_REG(hospi->Instance->DLR) + 1U;
+    hospi->XferCount = READ_REG(OCTOSPI2->DLR) + 1U;
     hospi->XferSize = hospi->XferCount;
     hospi->pBuffPtr = pData;
 
     /* Configure CR register with functional mode as indirect read */
-    MODIFY_REG(hospi->Instance->CR, OCTOSPI_CR_FMODE, OSPI_FUNCTIONAL_MODE_INDIRECT_READ);
-
-    //    /* Trig the transfer by re-writing address or instruction register */
-    //    if (hospi->Init.MemoryType == HAL_OSPI_MEMTYPE_HYPERBUS)
-    //    {
-    WRITE_REG(hospi->Instance->AR, addr_reg);
-    //    }
-    //    else
-    //    {
-    //        if (READ_BIT(hospi->Instance->CCR, OCTOSPI_CCR_ADMODE) != HAL_OSPI_ADDRESS_NONE)
-    //        {
-    //            WRITE_REG(hospi->Instance->AR, addr_reg);
-    //        }
-    //        else
-    //        {
-    //            WRITE_REG(hospi->Instance->IR, ir_reg);
-    //        }
-    //    }
-
+    MODIFY_REG(OCTOSPI2->CR, OCTOSPI_CR_FMODE, OSPI_FUNCTIONAL_MODE_INDIRECT_READ);
+    WRITE_REG(OCTOSPI2->AR, addr_reg); // Trigger the transfer by re-writing
+                                       // address or instruction register
     do
     {
-        /* Wait till fifo threshold or transfer complete flags are set to read
-         * received data */
+        // Wait till fifo threshold or transfer complete flags are set to read  received data
         OSPI2_WaitUntilState((OSPI_FLAG_FT | OSPI_FLAG_TC), SET);
-
         *hospi->pBuffPtr = *((__IO uint8_t *)data_reg);
         hospi->pBuffPtr++;
         hospi->XferCount--;
@@ -464,10 +400,5 @@ HAL_StatusTypeDef OSPI_Receive(OSPI_HandleTypeDef *hospi, uint8_t *pData, uint32
 
     /* Wait till transfer complete flag is set to go back in idle state */
     OSPI2_WaitUntilState(OSPI_FLAG_TC, SET);
-
-    /* Clear transfer complete flag */
-    OSPI_CLEAR_FLAG(hospi, OSPI_FLAG_TC);
-
-    /* Return function status */
-    return status;
+    OSPI_CLEAR_FLAG(hospi, OSPI_FLAG_TC); // Clear transfer complete flag
 }

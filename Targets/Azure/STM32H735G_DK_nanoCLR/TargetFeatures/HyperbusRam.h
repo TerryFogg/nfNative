@@ -75,7 +75,7 @@ typedef enum
 #define HAL_OSPI_ERROR_INVALID_PARAM     ((uint32_t)0x00000008U) /*!< Invalid parameters error                   */
 #define OSPI_REGISTER_ADDRESS_SPACE  ((uint32_t)OCTOSPI_DCR1_MTYP_0) /*!< HyperBus register mode */
 #define OSPI_NO_LATENCY_ON_WRITE     ((uint32_t)OCTOSPI_HLCR_WZL)    /*!< No latency on write accesses */
-#define HAL_OSPI_MEMORY_ADDRESS_SPACE    ((uint32_t)0x00000000U)         /*!< HyperBus memory mode   */
+#define OSPI_MEMORY_ADDRESS_SPACE    ((uint32_t)0x00000000U)         /*!< HyperBus memory mode   */
 #define OSPI_ADDRESS_32_BITS         ((uint32_t)OCTOSPI_CCR_ADSIZE)  /*!< 32-bit address */
 #define OSPI_DQS_ENABLE              ((uint32_t)OCTOSPI_CCR_DQSE)    /*!< DQS enabled  */
 #define OSPI_TIMEOUT_COUNTER_DISABLE ((uint32_t)0x00000000U) /*!< Timeout counter disabled, nCS remains active */
