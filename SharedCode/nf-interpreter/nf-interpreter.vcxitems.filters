@@ -2733,6 +2733,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\targets\ChibiOS\ST_STM32F769I_DISCOVERY\target_windows_devices_spi_config.cpp">
       <Filter>targets\ChibiOS\ST_STM32F769I_DISCOVERY</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable.cpp">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable__HashtableEnumerator.cpp">
+      <Filter>src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_System_Environment.cpp">
+      <Filter>src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">

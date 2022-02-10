@@ -24,8 +24,6 @@
         <string>CORE_CM7</string>
         <string>STM32H735IG</string>
         <string>STM32H735xx</string>
-        <string>USE_HAL_DRIVER</string>
-        <string />
       </PreprocessorMacros>
       <IncludeDirectories />
       <LDFLAGS>--specs=nano.specs --specs=nosys.specs</LDFLAGS>

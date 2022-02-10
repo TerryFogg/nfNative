@@ -25,6 +25,12 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)wpUSART_Communications.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)cmsis_compiler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cmsis_gcc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cmsis_os.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)cmsis_version.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)core_cm7.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mpu_armv7.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Target_BlockStorage_STM32FlashDriver.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WireProtocol_ReceiverThread.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)wpUSART_Communications.h" />

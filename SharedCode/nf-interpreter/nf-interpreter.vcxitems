@@ -273,7 +273,10 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_GC.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Power.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc_stubs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_System_Environment.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable__HashtableEnumerator.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Queue.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Stack.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text.cpp" />

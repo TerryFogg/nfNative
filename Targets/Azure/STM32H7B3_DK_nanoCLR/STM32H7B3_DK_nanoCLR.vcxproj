@@ -630,6 +630,7 @@
     <ClCompile Include="Platform\main.c">
       <FileType>CppCode</FileType>
     </ClCompile>
+    <ClCompile Include="Platform\Startup\platform_heap.c" />
     <ClCompile Include="Platform\STM32CubeH7\Components\ft5336\ft5336.c" />
     <ClCompile Include="Platform\STM32CubeH7\Components\ft5336\ft5336_reg.c" />
     <ClCompile Include="Platform\STM32CubeH7\Components\is42s16800j\is42s16800j.c" />

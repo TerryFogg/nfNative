@@ -24,8 +24,6 @@
         <string>CORE_CM7</string>
         <string>STM32H735IG</string>
         <string>STM32H735xx</string>
-        <string>USE_HAL_DRIVER</string>
-        <string />
       </PreprocessorMacros>
       <IncludeDirectories />
       <LDFLAGS>--specs=nano.specs --specs=nosys.specs</LDFLAGS>
@@ -401,52 +399,9 @@
     <AdditionalSourcesRequiredForTesting>false</AdditionalSourcesRequiredForTesting>
   </InPlaceMCU>
   <MCUMakFile>stm32.mak</MCUMakFile>
-  <ReferencedFrameworks>
-    <string>com.sysprogs.embedded.semihosting_and_profiler</string>
-  </ReferencedFrameworks>
+  <ReferencedFrameworks />
   <FrameworkProperties>
-    <Entries>
-      <KeyValue>
-        <Key>com.sysprogs.efp.semihosting.buffer_size</Key>
-        <Value>4096</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.semihosting.stdio</Key>
-        <Value>1</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.semihosting.blocking_mode</Key>
-        <Value>1</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.semihosting_driver</Key>
-        <Value>1</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.counter</Key>
-        <Value />
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.address_validators</Key>
-        <Value />
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.nosampling</Key>
-        <Value>1</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.debugger_check</Key>
-        <Value />
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.rtos</Key>
-        <Value />
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.efp.profiling.hold_interrupts</Key>
-        <Value>FAST_SEMIHOSTING_HOLD_INTERRUPTS=0</Value>
-      </KeyValue>
-    </Entries>
+    <Entries />
   </FrameworkProperties>
   <TestFrameworkProperties>
     <Entries />
