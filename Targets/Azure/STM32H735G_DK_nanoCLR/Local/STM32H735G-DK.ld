@@ -45,8 +45,7 @@
 /*       |------------------------------------|     */
 /*       | Configuration are to store         |     */   
 /*       | persistent information             |     */   
-/*       | Number of flash words for config   |CLR>>*/   config_flash_words = 100;
-/*       | Allow 100 flash words, 3200 bytes  |CLR>>*/   config_size =  config_flash_words * flash_word_size;
+/*       |                                    |CLR>>*/   config_size =  20K;
 /*       | Keep in sync with                  |     */   
 /*       | "targetHAL_ConfigurationManger.cpp"|     */   
 /*       \------------------------------------/     */
@@ -97,10 +96,9 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | Since minimum flash erase is the   |     */ 
 /*       | complete sector (128K), config     |     */   
 /*       | erased, so rewrite it              |     */ 
-/*       | Sector 5 : 128K                    |CLR>>*/  deployment (rx) : ORIGIN = nanoCLR + LENGTH(nanoCLR), LENGTH = 3*flash_sector_size - config_size
+/*       | Sector 5 : 128K                    |CLR>>*/  deployment (rx) : ORIGIN = nanoCLR + LENGTH(nanoCLR), LENGTH = 3*flash_sector_size
 /*       | Sector 6 : 128K                    |     */
 /*       | Sector 7 : 128K                    |     */
-/*       |                                    |CLR>>*/  config     (rx) : ORIGIN = ORIGIN(deployment) + LENGTH(deployment), LENGTH = (config_size)
 /*       |                                    |     */
 /*       | 0x080FFFFF : FLASH END             |     */
 /*       |------------------------------------|     */
@@ -186,7 +184,8 @@ MEMORY    /*   Usage by nanoFramework */
 /*       |                                    |     */ 
 /*       |                                    |     */ 
 /*       |------------------------------------|     */
-/*       | 0x09000000 : 64M OCTOSPI1 (Flash)  |CLR>>*/  /* FUTURE USE */
+/*       | 0x09000000 : 64M OCTOSPI1 (Flash)  |SYS>>*/  OCTOSPI1_FLASH (xrw) : ORIGIN = 0x09000000, LENGTH = 64M
+/*       |                                    |CLR>>*/  config     (rx) : ORIGIN = ORIGIN(OCTOSPI1_FLASH), LENGTH = (config_size)
 /*       |                                    |     */
 /*       |                                    |     */ 
 /*       \------------------------------------/     */
@@ -353,6 +352,14 @@ SECTIONS
 /* Not using "DYNAMIC_MEMORY" so no need for a ._threadx_heap here.
 /* -----------------------------------------------------------------*/
 
+/* ------------------------------------------------------------------*/
+/* Application defined for use as memory accessible by DMA1 and DMA2 */
+/* ------------------------------------------------------------------*/
+  .dma_buffer :
+{
+  *(.dma_buffer)
+} >RAM_DMA
+
 /* ---------------------------------------------------------------------*/
 /* User_heap_stack section, used to check that there is enough RAM left */
 /* ---------------------------------------------------------------------*/
@@ -367,13 +374,6 @@ SECTIONS
         __RAM_segment_used_end__ = .;
   } >RAM_D1
 
-/* ------------------------------------------------------------------*/
-/* Application defined for use as memory accessible by DMA1 and DMA2 */
-/* ------------------------------------------------------------------*/
-  .dma_buffer :
-{
-  *(.dma_buffer)
-} >RAM_DMA
 
   /* -----------------------------------------------*/
   /* Remove information from the standard libraries */

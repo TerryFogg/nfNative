@@ -5,9 +5,9 @@
 #include <CLR_Startup_Thread.h>
 
 // byte pool configuration and definitions
-#define DEFAULT_BYTE_POOL_SIZE 6000
-#define CLR_THREAD_STACK_SIZE 1024
-#define RECEIVER_THREAD_STACK_SIZE 1024
+#define DEFAULT_BYTE_POOL_SIZE 16000
+#define CLR_THREAD_STACK_SIZE 6000
+#define RECEIVER_THREAD_STACK_SIZE 4096
 
 TX_BYTE_POOL byte_pool_0;
 uint8_t memory_area[DEFAULT_BYTE_POOL_SIZE];

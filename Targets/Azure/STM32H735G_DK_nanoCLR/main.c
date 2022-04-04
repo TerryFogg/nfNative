@@ -11,6 +11,5 @@
 int main(void)
 {
     BoardInit();
-    InitBootClipboard();
     Startup_Rtos();
 }

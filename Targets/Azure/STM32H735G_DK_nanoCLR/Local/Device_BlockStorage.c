@@ -16,7 +16,7 @@ const BlockRange BlockRange1[] = {
 
 const BlockRegionInfo BlockRegions[] = {
     {
-        (BlockRegionAttribute_ProgramWidthIs64bits), // SHOULD BE 256 BITS, but this helps
+        (BlockRegionAttribute_ProgramWidthIs256bits),
         0x08000000,                        // start address for block region
         8,                                 // total number of blocks in this region
         0x20000,                           // total number of bytes per block
