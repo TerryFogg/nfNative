@@ -27,10 +27,10 @@ __attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
 uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
 
 CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for Transmit data
-uint8_t wp_ReceiveData[1024];                   // Circular buffer data array for Receive DMA
+uint8_t wp_ReceiveData[2048];                   // Circular buffer data array for Receive DMA
 
 CircularBuffer_t wp_UsartTransmitCircularBuffer; // Circular buffer instance for Transmit data
-uint8_t wp_TransmitData[1024];                   // Circular buffer data array for Transmit DMA
+uint8_t wp_TransmitData[2048];                   // Circular buffer data array for Transmit DMA
 
 volatile size_t usart_tx_dma_current_len; //  Length of currently active TX DMA transfer
 

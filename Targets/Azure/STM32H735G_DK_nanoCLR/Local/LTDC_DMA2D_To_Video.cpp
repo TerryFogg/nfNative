@@ -247,21 +247,20 @@ void DisplayInterface::GetTransferBuffer(CLR_UINT8 *&TransferBuffer, CLR_UINT32 
 
 void DisplayInterface::ClearFrameBuffer()
 {
-    while (LL_DMA2D_IsTransferOngoing(DMA2D))
-        ; // DMA2D is asynchronous, we may return here from a previous call before it was finished
+    while (LL_DMA2D_IsTransferOngoing(DMA2D))  ; // DMA2D is asynchronous, we may return here from a previous call before it was finished
 
     LL_DMA2D_SetMode(DMA2D, LL_DMA2D_MODE_R2M);                         // Configured as register to memory mode
     LL_DMA2D_SetOutputColor(DMA2D, LCD_COLOR_RGB565_WHITE);             // Clear screen colour
     LL_DMA2D_SetOutputMemAddr(DMA2D, (uint32_t)&Graphics_frame_buffer); // LCD data address
     LL_DMA2D_SetLineOffset(DMA2D, 0);     // Configure DMA2D output line offset to LCD width - image width for display
+    LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D
     DMA2D->OPFCCR = PIXEL_FORMAT_RGB565;  // Format color
-    LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D transfer number of lines and number of pixels per line
     LL_DMA2D_Start(DMA2D);                // Start the transfer
-    while (DMA2D->CR & DMA2D_CR_START)
-    {
-    } // Wait for dma2d transmission to complete
+//    while (DMA2D->CR & DMA2D_CR_START)
+//    {
+//    } // Wait for dma2d transmission to complete
 
-    WriteToFrameBuffer(0, (CLR_UINT8 *)RGB565_320x240, 0, 0);
+//    WriteToFrameBuffer(0, (CLR_UINT8 *)RGB565_320x240, 0, 0);
 }
 
 void DisplayInterface::WriteToFrameBuffer(
@@ -271,24 +270,21 @@ void DisplayInterface::WriteToFrameBuffer(
     CLR_UINT32 frameOffset)
 {
 
-    while (LL_DMA2D_IsTransferOngoing(DMA2D))
-        ; // DMA2D is asynchronous, so we may return here from a previous call before it was finished
+    while (LL_DMA2D_IsTransferOngoing(DMA2D)) ; // DMA2D is asynchronous, so we may return here from a previous call before it was finished
 
     LL_DMA2D_SetMode(DMA2D, LL_DMA2D_MODE_M2M);                         // Configured as memory to memory mode
     LL_DMA2D_FGND_SetMemAddr(DMA2D, (uint32_t)data);                    // Source buffer in format RGB565
     LL_DMA2D_SetOutputMemAddr(DMA2D, (uint32_t)&Graphics_frame_buffer); // LCD data address
-    LL_DMA2D_ConfigSize(DMA2D, 240, 320); // Configure DMA2D transfer number of lines and number of pixels per line
-    LL_DMA2D_SetLineOffset(
-        DMA2D,
-        Width - 320);            // Configure DMA2D output line offset to LCD width - image width for display
+    LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D
+    LL_DMA2D_SetLineOffset(   DMA2D,  0);            // Configure DMA2D output line offset to LCD width - image width for display
     LL_DMA2D_EnableIT_TC(DMA2D); // Enable the transfer complete
     LL_DMA2D_Start(DMA2D);       // Start the transfer
-    while (DMA2D->CR & DMA2D_CR_START)
-    {
-    }
+//    while (DMA2D->CR & DMA2D_CR_START)
+//    {
+//    }
 
-    //   SCB_InvalidateDCache_by_Addr((uint32_t *)GraphicsVideoFrameBufferBegin, 272 * 480 * 2);
-    // SCB_CleanInvalidateDCache();
+//    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
+//     SCB_CleanInvalidateDCache();
     // Wait for dma2d transmission to complete
 }
 
