@@ -19,6 +19,7 @@ extern const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_nanoFramework_System
 extern const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_nanoFramework_Runtime_Events;
 extern const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_nanoFramework_Runtime_Events_EventSink_DriverProcs;
 extern const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_System_Math;
+extern const CLR_RT_NativeAssemblyData g_CLR_AssemblyNative_System_Device_Gpio;
 
 const CLR_RT_NativeAssemblyData *g_CLR_InteropAssembliesNativeData[] = {
     &g_CLR_AssemblyNative_mscorlib,
@@ -30,7 +31,8 @@ const CLR_RT_NativeAssemblyData *g_CLR_InteropAssembliesNativeData[] = {
     &g_CLR_AssemblyNative_nanoFramework_Runtime_Events,
     &g_CLR_AssemblyNative_nanoFramework_Runtime_Events_EventSink_DriverProcs,
     &g_CLR_AssemblyNative_System_Math,
+    &g_CLR_AssemblyNative_System_Device_Gpio,
     NULL
 };
 
-uint16_t g_CLR_InteropAssembliesCount = (7 + 2);
+uint16_t g_CLR_InteropAssembliesCount = (8 + 2);
