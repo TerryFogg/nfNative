@@ -15,7 +15,7 @@
 #include "stm32h7xx_ll_usart.h"
 
 
-#define wpUSART_DMA_Receive_Buffer_size 2000
+#define wpUSART_DMA_Receive_Buffer_size 2048
 //----------------------------------------------------------------------------------------------
 // Definition for USART wire protocol receive
 //----------------------------------------------------------------------------------------------

@@ -13,6 +13,7 @@
 #include "stm32h735xx.h"
 #include <stm32h7xx_ll_pwr.h>
 #include <stm32h7xx_ll_rtc.h>
+#include <stm32h7xx_ll_cortex.h>
 
 #include <nanoHAL_v2.h>
 #include <nanoCLR_Headers.h>

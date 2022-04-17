@@ -279,12 +279,10 @@ void DisplayInterface::WriteToFrameBuffer(
     LL_DMA2D_SetLineOffset(   DMA2D,  0);            // Configure DMA2D output line offset to LCD width - image width for display
     LL_DMA2D_EnableIT_TC(DMA2D); // Enable the transfer complete
     LL_DMA2D_Start(DMA2D);       // Start the transfer
-//    while (DMA2D->CR & DMA2D_CR_START)
-//    {
-//    }
 
 //    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
-//     SCB_CleanInvalidateDCache();
+//    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
+     SCB_CleanInvalidateDCache();
     // Wait for dma2d transmission to complete
 }
 

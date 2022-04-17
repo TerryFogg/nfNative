@@ -3,13 +3,12 @@
 // Portions Copyright (c) 2021 STMicroelectronics.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
-
-
 #include <BoardInit.h>
+
 void BoardInit()
 {
     CPU_CACHE_Enable();
-    //  MPU_Config();
+    //MPU_Config();
     SystemClock_Config();                    // Configure the system clock to 520 MHz
     FMC_Bank1_R->BTCR[0] &= ~FMC_BCRx_MBKEN; // Disabling FMC Bank1 ? To prevent this CortexM7
                                              // speculative read accesses on FMC bank1, it is
@@ -23,11 +22,11 @@ void BoardInit()
 void CPU_CACHE_Enable(void)
 {
     SCB_EnableICache(); // Enable I-Cache
-                        // SCB_EnableDCache(); // Enable D-Cache
+    //SCB_EnableDCache(); // Enable D-Cache
 }
 void Initialize_board_LEDS()
 {
-    // LEDs and user button of the STM32H7B3I-DK board
+    // LEDs and user button of the STM32H735G-DK Board
     LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_GPIOC);
     LL_GPIO_InitTypeDef gpio_InitStruct = {0};
     gpio_InitStruct.Pin = LED_GREEN | LED_RED;
@@ -37,7 +36,6 @@ void Initialize_board_LEDS()
     gpio_InitStruct.Pull = LL_GPIO_PULL_NO;
     LL_GPIO_Init(LED_GPIO_PORT, &gpio_InitStruct);
 }
-
 void Initialize_DWT_Counter()
 {
     CoreDebug->DEMCR &= ~CoreDebug_DEMCR_TRCENA_Msk; // Disable TRC
@@ -48,27 +46,79 @@ void Initialize_DWT_Counter()
 }
 void MPU_Config(void)
 {
-    //  MPU_Region_InitTypeDef MPU_InitStruct;
+    // The MPU can be used to protect up to sixteen memory regions.
+    // Each region in turn can have eight subregions, if the region is at least
+    // 256 bytes.
     //
-    //  /* Disable the MPU */
-    //  HAL_MPU_Disable();
+    // The subregions are always of equal size, and can be enabled or disabled by
+    // a subregion number. Because the  minimum region size is driven by the cache
+    // line length of 32 bytes, eight subregions of 32 bytes corresponds to a 256
+    // byte size. The regions are numbered 0 to 15. There is also a default region
+    // with an id of 1. All of the (0 -15) memory regions take priority over the
+    // default region. The regions can overlap,and can be nested.
+    // Region 15 has the highest priority and region 0 the lowest.
+
     //
-    //  /* Configure the MPU attributes as write through for OctoSPI RAM */
-    //  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
-    //  MPU_InitStruct.BaseAddress = OSPI_RAM_WRITE_READ_ADDR;
-    //  MPU_InitStruct.Size = MPU_REGION_SIZE_16MB;
-    //  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
-    //  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
-    //  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
-    //  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
-    //  MPU_InitStruct.Number = MPU_REGION_NUMBER0;
-    //  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
-    //  MPU_InitStruct.SubRegionDisable = 0x00;
-    //  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
-    //  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+    // Modifies the following registers
     //
-    //  /* Enable the MPU */
-    //  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
+    // MPU->RNR  - region
+    // MPU->RBAR - Base Address
+    //
+    // MPU->RASR  register bits
+    // Bits      Name  Description
+    // 28        XN    Execute never
+    // 26:24     AP    Data access permission field(RO, RW or No  access)
+
+    //____________________________________________________________________________________
+    // 21:19     TEX   Type extension field ( Cache properties and shareability)
+    // 17        C     Cacheable
+    // 16        B     Bufferable
+    //
+    // 18        S     Shareable (The S field is equivalent to non-cacheable memory.)
+    // *S bit - (Shareable/Not Shareable)
+    // /---------------------------------------------------------------------------------\
+    // | TEX | C | B | Memory Type      | Description                        | Shareable |
+    // | ----| --| --| -----------------| --------------------               |           |
+    // | 000 | 0 | 0 | Strongly Ordered | Strongly Ordered                   | Yes       |
+    // | 000 | 0 | 1 | Device           | Shared Device                      |           |
+    // | 000 | 1 | 0 | Normal           | Write through, no write allocate   | *S bit    |
+    // | 000 | 1 | 1 | Normal           | Write-back, no write allocate      | *S bit    |
+    // | 001 | 0 | 0 | Normal           | Non-cacheable                      | *S bit    |
+    // | 001 | 0 | 1 | Reserved         | Reserved                           | Reserved  |
+    // | 001 | 1 | 0 | Undefined        | Undefined                          | Undefined |
+    // | 001 | 1 | 1 | Normal           | Write-back, write and read allocate| *S bit    |
+    // | 010 | 0 | 0 | Device           | Non-shareable device               | No        |
+    // | 010 | 0 | 1 | Reserved         | Reserved                           | Reserved  |
+    // \---------------------------------------------------------------------------------/
+
+    // 15:8      SRD   Subregion disabled.For each subregion 1 = disabled, 0 = enabled.
+    // 5:1       SIZE  Specifies the size of the MPU protection region.
+
+    // Write-back: the cache does not write the cache contents to the memory until a clean operation is done.
+    // Write-through: triggers a write to the memory as soon as the contents on the cache line are written to. This
+    // is safer for the data coherency, but it requires more bus accesses. In practice, the write to the memory is
+    // done in the background and has a little effect unless the same cache set is being accessed repeatedly and
+    // very quickly. It is always a tradeoff.
+
+    LL_MPU_Disable();
+
+    uint32_t Region = LL_MPU_REGION_NUMBER0;
+    uint32_t SubRegionDisable = 0;
+    uint32_t Address = D2_AHBSRAM_BASE;                       // On CHIP Ram designated as .dma_buffer
+    uint32_t Attributes = LL_MPU_REGION_NUMBER0 |             // Use Region 0
+                          LL_MPU_REGION_SIZE_32KB |           // 32KB
+                          LL_MPU_REGION_FULL_ACCESS |         // Full permissions
+                          LL_MPU_INSTRUCTION_ACCESS_DISABLE | // Data buffers, no code execution
+                                                              // --------------------------------
+                          LL_MPU_TEX_LEVEL0 |                 //
+                          LL_MPU_ACCESS_SHAREABLE |           //
+                          LL_MPU_ACCESS_CACHEABLE |           //
+                          LL_MPU_ACCESS_NOT_BUFFERABLE;       //
+
+    LL_MPU_ConfigRegion(Region, SubRegionDisable, Address, Attributes);
+    LL_MPU_EnableRegion(LL_MPU_REGION_NUMBER0);
+
+    LL_MPU_Enable(LL_MPU_CTRL_PRIVILEGED_DEFAULT);
 }
 void Initialize_64bit_timer()
 {

@@ -1,3 +1,4 @@
+#include <assert.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -25,12 +26,15 @@ Board: STM32H735G-DK
 // Also, check alignment
 __attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
 uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
-
-CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for Transmit data
+static_assert((sizeof(wpUSART_DMA_Receive_Buffer) % 32) == 0, "Must be a multiple by 32");
+CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for receive data
 uint8_t wp_ReceiveData[2048];                   // Circular buffer data array for Receive DMA
 
+__attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
 CircularBuffer_t wp_UsartTransmitCircularBuffer; // Circular buffer instance for Transmit data
-uint8_t wp_TransmitData[2048];                   // Circular buffer data array for Transmit DMA
+__attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
+uint8_t wp_TransmitData[2048]; // Circular buffer data array for Transmit
+static_assert((sizeof(wp_TransmitData) % 32) == 0, "Must be a multiple by 32");
 
 volatile size_t usart_tx_dma_current_len; //  Length of currently active TX DMA transfer
 
@@ -146,6 +150,9 @@ void InitWireProtocolCommunications()
 bool wp_WriteToUsartBuffer(uint8_t *ptr, uint16_t size)
 {
     wp_WriteBuffer(&wp_UsartTransmitCircularBuffer, ptr, size); // Write data to transmit buffer
+    SCB_CleanInvalidateDCache_by_Addr(
+        (uint32_t *)&wp_UsartTransmitCircularBuffer,
+        sizeof(wp_UsartTransmitCircularBuffer));
     wp_UsartStartTxDmaTransfer();
     return true;
 }
@@ -154,6 +161,9 @@ int wp_ReadFromUsartBuffer(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
     ULONG actual_flags;
     uint32_t requestedSize = *size;
     tx_event_flags_get(&wpUartReceivedBytesEvent, 0x1, TX_OR_CLEAR, &actual_flags, wait_time);
+    SCB_CleanInvalidateDCache_by_Addr(
+        (uint32_t *)&wp_UsartReceiveCircularBuffer,
+        sizeof(wp_UsartReceiveCircularBuffer));
     ULONG read = wp_ReadBuffer(
         &wp_UsartReceiveCircularBuffer,
         *ptr,
@@ -170,6 +180,8 @@ void wp_UsartDataReceived(void)
 
     if (position != old_position)
     {
+        SCB_CleanInvalidateDCache_by_Addr((uint32_t *)&wpUSART_DMA_Receive_Buffer, sizeof(wpUSART_DMA_Receive_Buffer));
+
         if (position > old_position)
         {
             wp_WriteBuffer(
@@ -247,6 +259,11 @@ uint8_t wp_UsartStartTxDmaTransfer(void)
 
     if (usart_tx_dma_current_len == 0 && (usart_tx_dma_current_len = length) > 0)
     {
+        // Wait for any previous DMA to finish
+        // Wait for any previous DMA / stream 1 transfers to complete
+        while (LL_DMA_IsActiveFlag_TC1(wpDMA))
+        {
+        };
         // Disable channel if enabled
         LL_DMA_DisableStream(wpDMA, wpDMA_TransmitStream);
 
