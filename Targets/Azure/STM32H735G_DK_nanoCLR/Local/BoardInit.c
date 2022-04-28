@@ -8,13 +8,13 @@
 void BoardInit()
 {
     CPU_CACHE_Enable();
-    //MPU_Config();
+    // MPU_Config();
     SystemClock_Config();                    // Configure the system clock to 520 MHz
     FMC_Bank1_R->BTCR[0] &= ~FMC_BCRx_MBKEN; // Disabling FMC Bank1 ? To prevent this CortexM7
                                              // speculative read accesses on FMC bank1, it is
                                              // recommended to disable it when it is not used
     Initialize_DWT_Counter();                // Counter used for microsecond delays (blocking)
-    Initialize_board_LEDS();
+    Initialize_Board_LEDS_And_Buttons();
     Initialize_OCTOSPI2_Hyperam();
     Initialize_OPSPI_Flash();
     Initialize_RTC();
@@ -22,19 +22,35 @@ void BoardInit()
 void CPU_CACHE_Enable(void)
 {
     SCB_EnableICache(); // Enable I-Cache
-    //SCB_EnableDCache(); // Enable D-Cache
+    SCB_EnableDCache(); // Enable D-Cache
 }
-void Initialize_board_LEDS()
+void Initialize_Board_LEDS_And_Buttons()
 {
-    // LEDs and user button of the STM32H735G-DK Board
+    // STM32H735G-DK Board
+    // ===================
+    // LED's
     LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_GPIOC);
     LL_GPIO_InitTypeDef gpio_InitStruct = {0};
     gpio_InitStruct.Pin = LED_GREEN | LED_RED;
     gpio_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
     gpio_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
     gpio_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
-    gpio_InitStruct.Pull = LL_GPIO_PULL_NO;
+    gpio_InitStruct.Pull = LL_GPIO_PULL_UP;
     LL_GPIO_Init(LED_GPIO_PORT, &gpio_InitStruct);
+    // Turn them off
+    LL_GPIO_SetOutputPin(LED_GPIO_PORT, LED_GREEN);
+    LL_GPIO_SetOutputPin(LED_GPIO_PORT, LED_RED);
+
+    // USER button
+    //-- Same port clock, already enabled
+    gpio_InitStruct.Pin = BUTTON_USER_PIN;
+    gpio_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+    gpio_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
+    gpio_InitStruct.Pull = LL_GPIO_PULL_DOWN;
+    LL_GPIO_Init(LED_GPIO_PORT, &gpio_InitStruct);
+
+    //    LL_EXTI_EnableRisingTrig_0_31(BUTTON_USER_PIN);
+    //    LL_EXTI_EnableIT_0_31(BUTTON_USER_PIN);
 }
 void Initialize_DWT_Counter()
 {
@@ -75,30 +91,33 @@ void MPU_Config(void)
     // 16        B     Bufferable
     //
     // 18        S     Shareable (The S field is equivalent to non-cacheable memory.)
-    // *S bit - (Shareable/Not Shareable)
+    //     *S bit - (Shareable/Not Shareable)
     // /---------------------------------------------------------------------------------\
-    // | TEX | C | B | Memory Type      | Description                        | Shareable |
-    // | ----| --| --| -----------------| --------------------               |           |
-    // | 000 | 0 | 0 | Strongly Ordered | Strongly Ordered                   | Yes       |
-    // | 000 | 0 | 1 | Device           | Shared Device                      |           |
-    // | 000 | 1 | 0 | Normal           | Write through, no write allocate   | *S bit    |
-    // | 000 | 1 | 1 | Normal           | Write-back, no write allocate      | *S bit    |
-    // | 001 | 0 | 0 | Normal           | Non-cacheable                      | *S bit    |
-    // | 001 | 0 | 1 | Reserved         | Reserved                           | Reserved  |
-    // | 001 | 1 | 0 | Undefined        | Undefined                          | Undefined |
-    // | 001 | 1 | 1 | Normal           | Write-back, write and read allocate| *S bit    |
-    // | 010 | 0 | 0 | Device           | Non-shareable device               | No        |
-    // | 010 | 0 | 1 | Reserved         | Reserved                           | Reserved  |
+    // | TEX | C | B | Memory Type      | Description                        |
+    // Shareable | | ----| --| --| -----------------| -------------------- | | |
+    // 000 | 0 | 0 | Strongly Ordered | Strongly Ordered                   | Yes |
+    // | 000 | 0 | 1 | Device           | Shared Device                      | |
+    // | 000 | 1 | 0 | Normal           | Write through, no write allocate   | *S
+    // bit    | | 000 | 1 | 1 | Normal           | Write-back, no write allocate
+    // | *S bit    | | 001 | 0 | 0 | Normal           | Non-cacheable | *S bit |
+    // | 001 | 0 | 1 | Reserved         | Reserved                           |
+    // Reserved  | | 001 | 1 | 0 | Undefined        | Undefined | Undefined | |
+    // 001 | 1 | 1 | Normal           | Write-back, write and read allocate| *S
+    // bit    | | 010 | 0 | 0 | Device           | Non-shareable device | No | |
+    // 010 | 0 | 1 | Reserved         | Reserved                           |
+    // Reserved  |
     // \---------------------------------------------------------------------------------/
 
-    // 15:8      SRD   Subregion disabled.For each subregion 1 = disabled, 0 = enabled.
-    // 5:1       SIZE  Specifies the size of the MPU protection region.
+    // 15:8      SRD   Subregion disabled.For each subregion 1 = disabled, 0 =
+    // enabled. 5:1       SIZE  Specifies the size of the MPU protection region.
 
-    // Write-back: the cache does not write the cache contents to the memory until a clean operation is done.
-    // Write-through: triggers a write to the memory as soon as the contents on the cache line are written to. This
-    // is safer for the data coherency, but it requires more bus accesses. In practice, the write to the memory is
-    // done in the background and has a little effect unless the same cache set is being accessed repeatedly and
-    // very quickly. It is always a tradeoff.
+    // Write-back: the cache does not write the cache contents to the memory until
+    // a clean operation is done. Write-through: triggers a write to the memory as
+    // soon as the contents on the cache line are written to. This is safer for
+    // the data coherency, but it requires more bus accesses. In practice, the
+    // write to the memory is done in the background and has a little effect
+    // unless the same cache set is being accessed repeatedly and very quickly. It
+    // is always a tradeoff.
 
     LL_MPU_Disable();
 
@@ -174,4 +193,34 @@ void Initialize_64bit_timer()
     //        uint64_t nanoSeconds = ((nanoSeconds & upper32bits) << 32) &
     //        lower32bits;
     //    } while (true);
+}
+void BoardLed_ON(uint32_t led)
+{
+    LL_GPIO_ResetOutputPin(LED_GPIO_PORT, led);
+};
+void BoardLed_OFF(uint32_t led)
+{
+    LL_GPIO_SetOutputPin(LED_GPIO_PORT, led);
+};
+void BoardLed_Toggle(uint32_t led)
+{
+    if ((LED_GPIO_PORT->ODR & led) == led)
+    {
+        LED_GPIO_PORT->BSRR = led << 16;
+    }
+    else
+    {
+        LED_GPIO_PORT->BSRR = led;
+    }
+}
+bool BoardUserButton_Pressed()
+{
+    if (LL_GPIO_IsInputPinSet(BUTTON_USER_GPIO_PORT, BUTTON_USER_PIN))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }

@@ -27,14 +27,12 @@ Board: STM32H735G-DK
 __attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
 uint8_t wpUSART_DMA_Receive_Buffer[wpUSART_DMA_Receive_Buffer_size];
 static_assert((sizeof(wpUSART_DMA_Receive_Buffer) % 32) == 0, "Must be a multiple by 32");
+
 CircularBuffer_t wp_UsartReceiveCircularBuffer; // Circular buffer instance for receive data
 uint8_t wp_ReceiveData[2048];                   // Circular buffer data array for Receive DMA
 
-__attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
 CircularBuffer_t wp_UsartTransmitCircularBuffer; // Circular buffer instance for Transmit data
-__attribute__((section(".dma_buffer"))) __attribute__((aligned(32)))
-uint8_t wp_TransmitData[2048]; // Circular buffer data array for Transmit
-static_assert((sizeof(wp_TransmitData) % 32) == 0, "Must be a multiple by 32");
+uint8_t wp_TransmitData[2048];                   // Circular buffer data array for Transmit
 
 volatile size_t usart_tx_dma_current_len; //  Length of currently active TX DMA transfer
 
@@ -149,10 +147,10 @@ void InitWireProtocolCommunications()
 }
 bool wp_WriteToUsartBuffer(uint8_t *ptr, uint16_t size)
 {
+    SCB_CleanInvalidateDCache();
     wp_WriteBuffer(&wp_UsartTransmitCircularBuffer, ptr, size); // Write data to transmit buffer
-    SCB_CleanInvalidateDCache_by_Addr(
-        (uint32_t *)&wp_UsartTransmitCircularBuffer,
-        sizeof(wp_UsartTransmitCircularBuffer));
+    SCB_CleanInvalidateDCache();
+
     wp_UsartStartTxDmaTransfer();
     return true;
 }
@@ -161,9 +159,9 @@ int wp_ReadFromUsartBuffer(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
     ULONG actual_flags;
     uint32_t requestedSize = *size;
     tx_event_flags_get(&wpUartReceivedBytesEvent, 0x1, TX_OR_CLEAR, &actual_flags, wait_time);
-    SCB_CleanInvalidateDCache_by_Addr(
-        (uint32_t *)&wp_UsartReceiveCircularBuffer,
-        sizeof(wp_UsartReceiveCircularBuffer));
+//    SCB_CleanInvalidateDCache_by_Addr(
+//        (uint32_t *)&wp_UsartReceiveCircularBuffer,
+//        sizeof(wp_UsartReceiveCircularBuffer));
     ULONG read = wp_ReadBuffer(
         &wp_UsartReceiveCircularBuffer,
         *ptr,

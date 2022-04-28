@@ -8,14 +8,14 @@
 
 __attribute__((noreturn)) void CLRStartupThread(void const *argument) {
 
-  (void)argument; // not used
+  bool userRequestedWaitForDebugger = (bool)argument; // not used
 
   // CLR settings to launch CLR thread
   CLR_SETTINGS clrSettings;
   (void)memset(&clrSettings, 0, sizeof(CLR_SETTINGS));
   clrSettings.MaxContextSwitches = 50;
-  clrSettings.WaitForDebugger = false;
   clrSettings.EnterDebuggerLoopAfterExit = true;
+  clrSettings.WaitForDebugger = userRequestedWaitForDebugger;
 
   nanoHAL_Initialize_C(); // Initialize nanoHAL
   ClrStartup(clrSettings);

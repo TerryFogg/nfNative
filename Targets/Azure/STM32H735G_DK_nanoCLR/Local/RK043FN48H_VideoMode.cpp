@@ -182,4 +182,5 @@ void DisplayDriver::WriteChar(unsigned char c, int row, int col)
             ScreenBuffer[(pixelCol + y) * Attributes.Width + (pixelRow + x)] = pixelColour;
         }
     }
+    SCB_CleanInvalidateDCache();
 }

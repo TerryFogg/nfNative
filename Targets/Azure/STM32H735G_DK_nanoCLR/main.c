@@ -11,5 +11,5 @@
 int main(void)
 {
     BoardInit();
-    Startup_Rtos();
+    Startup_Rtos(BoardUserButton_Pressed());
 }

@@ -40,6 +40,16 @@
 #define PIXEL_FORMAT_RGB565         0x00000002U
 #define LTDC_BLENDING_FACTOR1_PAxCA 0x00000600U /*!< Blending factor : Cte Alpha x Pixel Alpha*/
 
+// Board Specific Graphics
+#define LTDC_HSPOLARITY_AL          0x00000000U     /*!< Horizontal Synchronization is active low. */
+#define LTDC_VSPOLARITY_AL          0x00000000U     /*!< Vertical Synchronization is active low. */
+#define LTDC_DEPOLARITY_AL          0x00000000U     /*!< Data Enable, is active low. */
+#define LTDC_PCPOLARITY_IPC         0x00000000U     /*!< input pixel clock. */
+#define LTDC_IT_TE                  LTDC_IER_TERRIE /*!< LTDC Transfer Error Interrupt  */
+#define LTDC_IT_FU                  LTDC_IER_FUIE   /*!< LTDC FIFO Underrun Interrupt   */
+#define MAX_LAYER                   2U
+#define LTDC_BLENDING_FACTOR2_PAxCA 0x00000007U /*!< Blending factor : Cte Alpha x Pixel Alpha*/
+
 struct DisplayInterface g_DisplayInterface;
 extern CLR_UINT32 Graphics_frame_buffer; // Framebuffer set externally
 
@@ -247,7 +257,8 @@ void DisplayInterface::GetTransferBuffer(CLR_UINT8 *&TransferBuffer, CLR_UINT32 
 
 void DisplayInterface::ClearFrameBuffer()
 {
-    while (LL_DMA2D_IsTransferOngoing(DMA2D))  ; // DMA2D is asynchronous, we may return here from a previous call before it was finished
+    while (LL_DMA2D_IsTransferOngoing(DMA2D))
+        ; // DMA2D is asynchronous, we may return here from a previous call before it was finished
 
     LL_DMA2D_SetMode(DMA2D, LL_DMA2D_MODE_R2M);                         // Configured as register to memory mode
     LL_DMA2D_SetOutputColor(DMA2D, LCD_COLOR_RGB565_WHITE);             // Clear screen colour
@@ -256,11 +267,11 @@ void DisplayInterface::ClearFrameBuffer()
     LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D
     DMA2D->OPFCCR = PIXEL_FORMAT_RGB565;  // Format color
     LL_DMA2D_Start(DMA2D);                // Start the transfer
-//    while (DMA2D->CR & DMA2D_CR_START)
-//    {
-//    } // Wait for dma2d transmission to complete
+    //    while (DMA2D->CR & DMA2D_CR_START)
+    //    {
+    //    } // Wait for dma2d transmission to complete
 
-//    WriteToFrameBuffer(0, (CLR_UINT8 *)RGB565_320x240, 0, 0);
+    //    WriteToFrameBuffer(0, (CLR_UINT8 *)RGB565_320x240, 0, 0);
 }
 
 void DisplayInterface::WriteToFrameBuffer(
@@ -270,19 +281,20 @@ void DisplayInterface::WriteToFrameBuffer(
     CLR_UINT32 frameOffset)
 {
 
-    while (LL_DMA2D_IsTransferOngoing(DMA2D)) ; // DMA2D is asynchronous, so we may return here from a previous call before it was finished
+    while (LL_DMA2D_IsTransferOngoing(DMA2D))
+        ; // DMA2D is asynchronous, so we may return here from a previous call before it was finished
 
     LL_DMA2D_SetMode(DMA2D, LL_DMA2D_MODE_M2M);                         // Configured as memory to memory mode
     LL_DMA2D_FGND_SetMemAddr(DMA2D, (uint32_t)data);                    // Source buffer in format RGB565
     LL_DMA2D_SetOutputMemAddr(DMA2D, (uint32_t)&Graphics_frame_buffer); // LCD data address
-    LL_DMA2D_ConfigSize(DMA2D, 272, 480); // Configure DMA2D
-    LL_DMA2D_SetLineOffset(   DMA2D,  0);            // Configure DMA2D output line offset to LCD width - image width for display
-    LL_DMA2D_EnableIT_TC(DMA2D); // Enable the transfer complete
-    LL_DMA2D_Start(DMA2D);       // Start the transfer
+    LL_DMA2D_ConfigSize(DMA2D, 272, 480);                               // Configure DMA2D
+    LL_DMA2D_SetLineOffset(DMA2D, 0); // Configure DMA2D output line offset to LCD width - image width for display
+    LL_DMA2D_EnableIT_TC(DMA2D);      // Enable the transfer complete
+    LL_DMA2D_Start(DMA2D);            // Start the transfer
 
-//    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
-//    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
-     SCB_CleanInvalidateDCache();
+    //    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
+    //    SCB_InvalidateDCache_by_Addr((uint32_t *)Graphics_frame_buffer, 272 * 480 * 2);
+    SCB_CleanInvalidateDCache();
     // Wait for dma2d transmission to complete
 }
 

@@ -26,12 +26,16 @@
 void BoardInit();
 void Initialize_DWT_Counter();
 void USBD_Clock_Config(void);
-void Initialize_board_LEDS();
+void Initialize_Board_LEDS_And_Buttons();
 void Initialize_64bit_timer();
 void CPU_CACHE_Enable(void);
 void MPU_Config(void);
 void SystemClock_Config();
-void Startup_Rtos();
+void Startup_Rtos(bool buttonPressed);
+void BoardLed_ON(uint32_t led);
+void BoardLed_OFF(uint32_t led);
+void BoardLed_Toggle(uint32_t led);
+bool BoardUserButton_Pressed();
 static inline uint32_t Get_SYSTICK();
 
 // DWT is connected to the system clock
