@@ -6,8 +6,7 @@
 #include <nanoHAL.h>
 #include <tx_api.h>
 #include "Diagnostics.h"
-
-
+#include <targetHAL_Time.h>
 
 #ifdef __cplusplus
 extern "C"
@@ -25,11 +24,11 @@ uint64_t HAL_Time_SysTicksToTime(uint64_t sysTicks)
 }
 
 
-uint32_t HAL_GetTick(void)           // Provides a tick value in millisecond.
+ uint32_t HAL_GetTick(void)           // Provides a tick value in millisecond.
 {
     const int ticksPerMillisecond = 10;
-   return tx_time_get() * ticksPerMillisecond;
-
+    return tx_time_get() * ticksPerMillisecond;
+    
 }
 
 // This function provides minimum delay (in milliseconds).
@@ -39,24 +38,25 @@ void HAL_Delay(uint32_t delayMilliseconds)
     tx_thread_sleep(nearestGreaterOrEqualTenMilliseconds);
 }
 
-// Returns the current date time from the system tick or from the RTC if it's available (this depends on the respective configuration option)
-uint64_t  HAL_Time_CurrentDateTime(bool datePartOnly)
+// Returns the current date time from the system tick or from the RTC if it's available (this depends on the respective
+// configuration option)
+uint64_t HAL_Time_CurrentDateTime(bool datePartOnly)
 {
 #if (HAL_USE_RTC == TRUE)
 
     // use RTC to get date time
-    SYSTEMTIME st; 
+    SYSTEMTIME st;
     RTCDateTime _dateTime;
 
     rtcGetTime(&RTCD1, &_dateTime);
 
-    st.wDay = (unsigned short) _dateTime.day;
-    st.wMonth = (unsigned short) _dateTime.month;
-    st.wYear = (unsigned short)(_dateTime.year + 1980);     // ChibiOS is counting years since 1980
-    st.wDayOfWeek = (unsigned short) _dateTime.dayofweek;
+    st.wDay = (unsigned short)_dateTime.day;
+    st.wMonth = (unsigned short)_dateTime.month;
+    st.wYear = (unsigned short)(_dateTime.year + 1980); // ChibiOS is counting years since 1980
+    st.wDayOfWeek = (unsigned short)_dateTime.dayofweek;
 
     // zero 'time' fields if date part only is required
-    if(datePartOnly)
+    if (datePartOnly)
     {
         st.wMilliseconds = 0;
         st.wSecond = 0;
@@ -66,7 +66,7 @@ uint64_t  HAL_Time_CurrentDateTime(bool datePartOnly)
     else
     {
         // full date&time required, fill in 'time' fields too
-        
+
         st.wMilliseconds = (unsigned short)(_dateTime.millisecond % 1000);
         _dateTime.millisecond /= 1000;
         st.wSecond = (unsigned short)(_dateTime.millisecond % 60);
@@ -98,8 +98,7 @@ uint64_t  HAL_Time_CurrentDateTime(bool datePartOnly)
     }
 
 #endif
-}
-;
+};
 
 void HAL_Time_SetUtcTime(uint64_t utcTime)
 {
@@ -112,13 +111,13 @@ void HAL_Time_SetUtcTime(uint64_t utcTime)
     // set RTC
     RTCDateTime newTime;
 
-    newTime.year = systemTime.wYear - 1980;   // ChibiOS time base is 1980-01-01
+    newTime.year = systemTime.wYear - 1980; // ChibiOS time base is 1980-01-01
     newTime.month = systemTime.wMonth;
     newTime.day = systemTime.wDay;
     newTime.dayofweek = systemTime.wDayOfWeek;
-    newTime.millisecond = ((((uint32_t)systemTime.wHour * 3600) + 
-                            ((uint32_t)systemTime.wMinute * 60) + 
-                            (uint32_t)systemTime.wSecond) * 1000);
+    newTime.millisecond =
+        ((((uint32_t)systemTime.wHour * 3600) + ((uint32_t)systemTime.wMinute * 60) + (uint32_t)systemTime.wSecond) *
+         1000);
 
     // set RTC time
     rtcSetTime(&RTCD1, &newTime);
@@ -132,7 +131,7 @@ void HAL_Time_SetUtcTime(uint64_t utcTime)
 #endif
 }
 
-bool HAL_Time_TimeSpanToStringEx(const int64_t& ticks, char * & buf, size_t& len)
+bool HAL_Time_TimeSpanToStringEx(const int64_t &ticks, char *&buf, size_t &len)
 {
     uint64_t ticksAbs;
     uint64_t rest;
@@ -148,17 +147,21 @@ bool HAL_Time_TimeSpanToStringEx(const int64_t& ticks, char * & buf, size_t& len
         ticksAbs = ticks;
     }
 
-    rest      = ticksAbs % (1000 * TIME_CONVERSION__TICKUNITS);
-    ticksAbs  = ticksAbs / (1000 * TIME_CONVERSION__TICKUNITS);   // Convert to seconds.
+    rest = ticksAbs % (1000 * TIME_CONVERSION__TICKUNITS);
+    ticksAbs = ticksAbs / (1000 * TIME_CONVERSION__TICKUNITS); // Convert to seconds.
 
-    if(ticksAbs > TIME_CONVERSION__ONEDAY) // More than one day.
+    if (ticksAbs > TIME_CONVERSION__ONEDAY) // More than one day.
     {
-        CLR_SafeSprintf(buf, len, "%d.", (int32_t)(ticksAbs / TIME_CONVERSION__ONEDAY)); ticksAbs %= TIME_CONVERSION__ONEDAY;
+        CLR_SafeSprintf(buf, len, "%d.", (int32_t)(ticksAbs / TIME_CONVERSION__ONEDAY));
+        ticksAbs %= TIME_CONVERSION__ONEDAY;
     }
 
-    CLR_SafeSprintf(buf, len, "%02d:", (int32_t)(ticksAbs / TIME_CONVERSION__ONEHOUR)); ticksAbs %= TIME_CONVERSION__ONEHOUR;
-    CLR_SafeSprintf(buf, len, "%02d:", (int32_t)(ticksAbs / TIME_CONVERSION__ONEMINUTE)); ticksAbs %= TIME_CONVERSION__ONEMINUTE;
-    CLR_SafeSprintf(buf, len, "%02d", (int32_t)(ticksAbs / TIME_CONVERSION__ONESECOND)); ticksAbs %= TIME_CONVERSION__ONESECOND;
+    CLR_SafeSprintf(buf, len, "%02d:", (int32_t)(ticksAbs / TIME_CONVERSION__ONEHOUR));
+    ticksAbs %= TIME_CONVERSION__ONEHOUR;
+    CLR_SafeSprintf(buf, len, "%02d:", (int32_t)(ticksAbs / TIME_CONVERSION__ONEMINUTE));
+    ticksAbs %= TIME_CONVERSION__ONEMINUTE;
+    CLR_SafeSprintf(buf, len, "%02d", (int32_t)(ticksAbs / TIME_CONVERSION__ONESECOND));
+    ticksAbs %= TIME_CONVERSION__ONESECOND;
 
     ticksAbs = (uint32_t)rest;
     if (ticksAbs)
@@ -169,27 +172,37 @@ bool HAL_Time_TimeSpanToStringEx(const int64_t& ticks, char * & buf, size_t& len
     return len != 0;
 }
 
-bool DateTimeToString(const uint64_t& time, char * & buf, size_t& len)
+bool DateTimeToString(const uint64_t &time, char *&buf, size_t &len)
 {
     SYSTEMTIME st;
 
     HAL_Time_ToSystemTime(time, &st);
 
-    return CLR_SafeSprintf(buf, len, "%4d/%02d/%02d %02d:%02d:%02d.%03d", st.wYear, st.wMonth, st.wDay, st.wHour, st.wMinute, st.wSecond, st.wMilliseconds);
+    return CLR_SafeSprintf(
+        buf,
+        len,
+        "%4d/%02d/%02d %02d:%02d:%02d.%03d",
+        st.wYear,
+        st.wMonth,
+        st.wDay,
+        st.wHour,
+        st.wMinute,
+        st.wSecond,
+        st.wMilliseconds);
 }
 
-char* DateTimeToString(const uint64_t& time)
+char *DateTimeToString(const uint64_t &time)
 {
     static char rgBuffer[128];
-    char*  szBuffer =           rgBuffer;
-    size_t iBuffer  = ARRAYSIZE(rgBuffer);
+    char *szBuffer = rgBuffer;
+    size_t iBuffer = ARRAYSIZE(rgBuffer);
 
     DateTimeToString(time, szBuffer, iBuffer);
 
     return rgBuffer;
 }
 
-const char* HAL_Time_CurrentDateTimeToString()
+const char *HAL_Time_CurrentDateTimeToString()
 {
     return DateTimeToString(HAL_Time_CurrentDateTime(false));
 }
@@ -197,4 +210,9 @@ const char* HAL_Time_CurrentDateTimeToString()
 uint64_t CPU_MillisecondsToTicks(uint64_t ticks)
 {
     return ((ticks * (uint64_t)TX_TIMER_TICKS_PER_SECOND) / 1000);
+}
+
+uint64_t CPU_MicrosecondsToTicks(uint64_t microseconds)
+{
+    return PLATFORM_MICROSECONDS_TO_TICKS(microseconds);
 }

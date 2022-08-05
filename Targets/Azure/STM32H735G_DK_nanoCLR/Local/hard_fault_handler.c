@@ -4,6 +4,7 @@
 //
 
 #include <nanoCLR_Headers.h>
+#include <BoardInit.h>
 
 #ifdef STM32H735xx
 #include "stm32h735xx.h"
@@ -125,6 +126,9 @@ void HardFault_Handler(void) {
     volatile uint32_t faultAddress = SCB->BFAR;
 
 #endif
+
+    // Record Hard Fault
+    g_HardFault.count += 1;
 
     // forces a breakpoint causing the debugger to stop
     // if no debugger is attached this is ignored

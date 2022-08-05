@@ -19,17 +19,15 @@ void Initialize_I2C();
 void Initialize_TouchInterrupt();
 static bool I2C_WaitOnTXISFlagUntilTimeout();
 static bool I2C_IsAcknowledgeFailed();
-
 #define I2C_MEMADD_SIZE_8BIT (0x00000001U)
-#define MAX_NBYTE_SIZE       255U
 
 // Touch screen interrupt signal
-#define TS_INT_PIN           LL_GPIO_PIN_2
-#define TS_INT_GPIO_PORT     GPIOG
-#define TS_INT_EXTI_IRQn     EXTI2_IRQn
-#define TS_INTERRUPT_ROUTINE EXTI2_IRQHandler
-#define TS_IT_PRIORITY       15U
-
+#define TS_INT_PIN             LL_GPIO_PIN_2
+#define TS_INT_GPIO_PORT       GPIOG
+#define TS_INT_EXTI_IRQn       EXTI2_IRQn
+#define TS_INTERRUPT_ROUTINE() void EXTI2_IRQHandler(void)
+#define TS_IT_PRIORITY         15U
+#define MILLISECONDS25         25000 // 25 thousand microseconds
 static CLR_UINT16 touchScreenAddress;
 static CLR_UINT16 i2cBusNumber;
 TouchInterface g_TouchInterface;
@@ -130,57 +128,37 @@ void TouchInterface::SetTouchInterruptCallback(TOUCH_INTERRUPT_SERVICE_ROUTINE t
     touchInterruptRoutine = touchIsrProc;
     Initialize_TouchInterrupt();
 }
-#define MILLISECONDS25 25000 // 25 thousand microseconds
 bool TouchInterface::WriteCommand(uint8_t touchRegister, uint8_t touchCommand)
 {
-    int Timeout25Milliseconds = MILLISECONDS25;
-    int numberofBytesForCommand = 1;
-    // Check bus busy flag
-    while (LL_I2C_IsActiveFlag_BUSY(I2C4))
-    {
+
+  return true;
+  while (LL_I2C_IsActiveFlag_BUSY(I2C4)) // Check bus busy flag
+  {
     }
     LL_I2C_HandleTransfer(
         I2C4,
         touchScreenAddress,
         LL_I2C_ADDRSLAVE_7BIT,
-        I2C_MEMADD_SIZE_8BIT,
-        LL_I2C_MODE_RELOAD,
+        2,
+        LL_I2C_MODE_AUTOEND,
         LL_I2C_GENERATE_START_WRITE);
-    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
+
+    while (!LL_I2C_IsActiveFlag_TXE(I2C4))
     {
-        return false;
     }
-    // Send register
+    //
+    //    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
+    //    {
+    //        return false;
+    //    }
     LL_I2C_TransmitData8(I2C4, touchRegister);
-    while (LL_I2C_IsActiveFlag_BUSY(I2C4))
+    while (LL_I2C_IsActiveFlag_TC(I2C4))
     {
-    }
-
-    LL_I2C_HandleTransfer(
-        I2C4,
-        touchScreenAddress,
-        LL_I2C_ADDRSLAVE_7BIT,
-        numberofBytesForCommand,
-        LL_I2C_MODE_SMBUS_AUTOEND_NO_PEC,
-        LL_I2C_GENERATE_NOSTARTSTOP);
-    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
-    {
-        return false;
-    }
-    // Send a 1 byte command
+    };
     LL_I2C_TransmitData8(I2C4, touchCommand);
-    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
+    while (LL_I2C_IsActiveFlag_TC(I2C4))
     {
-        return false;
-    }
-    // Clear STOP Flag
-    LL_I2C_ClearFlag_STOP(I2C4);
-
-    //    ((I2C_ISR_STOPF == I2C_ISR_TXE) ? (I2C4->ISR |= I2C_ISR_STOPF) : (I2C4->ICR = I2C_ISR_STOPF));
-
-    // Clear Configuration Register 2
-    (I2C4->CR2 &=
-     (uint32_t) ~((uint32_t)(I2C_CR2_SADD | I2C_CR2_HEAD10R | I2C_CR2_NBYTES | I2C_CR2_RELOAD | I2C_CR2_RD_WRN)));
+    };
 
     return true;
 }
@@ -265,47 +243,26 @@ static bool I2C_IsAcknowledgeFailed()
 }
 void Initialize_TouchInterrupt()
 {
-    // Touch Screen interrupt pin as :
+    // Peripheral clock already enabled in "Clock_configuration.c"
     LL_GPIO_SetPinMode(GPIOG, TS_INT_PIN, LL_GPIO_MODE_INPUT);
-    LL_GPIO_SetPinSpeed(GPIOG, TS_INT_PIN, LL_GPIO_SPEED_FREQ_HIGH);
     LL_GPIO_SetPinPull(GPIOG, TS_INT_PIN, LL_GPIO_PULL_NO);
-    LL_AHB4_GRP1_EnableClock(LL_AHB4_GRP1_PERIPH_GPIOG);
-    LL_EXTI_EnableFallingTrig_0_31(LL_SYSCFG_EXTI_LINE2);
-    LL_EXTI_DisableRisingTrig_0_31(LL_SYSCFG_EXTI_LINE2);
-
+    LL_GPIO_SetPinSpeed(GPIOG, TS_INT_PIN, LL_GPIO_SPEED_FREQ_HIGH);
+    LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_2);
+    LL_EXTI_DisableEvent_0_31(LL_EXTI_LINE_2);
+    LL_EXTI_DisableRisingTrig_0_31(LL_EXTI_LINE_2);
+    LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_2);
     LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTG, LL_SYSCFG_EXTI_LINE2);
-    LL_EXTI_EnableIT_0_31(LL_SYSCFG_EXTI_LINE2);
-    LL_EXTI_EnableEvent_0_31(LL_SYSCFG_EXTI_LINE2);
-
+    LL_APB4_GRP1_EnableClock(LL_APB4_GRP1_PERIPH_SYSCFG);
     NVIC_SetPriority(TS_INT_EXTI_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), TS_IT_PRIORITY, 0));
-    NVIC_EnableIRQ((TS_INT_EXTI_IRQn)); // Re-enabled when Touch is initialized for use
+    NVIC_EnableIRQ((TS_INT_EXTI_IRQn));
 }
-void TS_INTERRUPT_ROUTINE(uint16_t interruptingPin)
+
+extern "C"
 {
-    if (interruptingPin == TS_INT_PIN)
+    TS_INTERRUPT_ROUTINE()
     {
-        touchInterruptRoutine();
+      // Clear interrupt and call registered callback
+      touchInterruptRoutine();
+      LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_2);
     }
-}
-
-/////////////////
-bool WriteCommand2(uint8_t touchRegister, uint8_t touchCommand)
-{
-    LL_I2C_GenerateStartCondition(I2C4); // START
-    while (!LL_I2C_IsActiveFlag_SB(I2C4))
-        ;
-
-    LL_I2C_TransmitData8(I2C4, touchScreenAddress);
-    while (!LL_I2C_IsActiveFlag_ADDR(I2C4))
-        ;
-    LL_I2C_ClearFlag_ADDR(I2C4);
-
-    LL_I2C_TransmitData8(I2C4, touchRegister);
-    while (!LL_I2C_IsActiveFlag_TXE(I2C4))
-        ;
-
-    LL_I2C_TransmitData8(I2C4, touchCommand);
-    while (!LL_I2C_IsActiveFlag_TXE(I2C4))
-        ;
-    LL_I2C_GenerateStopCondition(I2C4); // STOP
 }

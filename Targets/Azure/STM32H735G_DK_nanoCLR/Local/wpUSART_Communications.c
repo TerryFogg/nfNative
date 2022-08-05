@@ -159,9 +159,9 @@ int wp_ReadFromUsartBuffer(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
     ULONG actual_flags;
     uint32_t requestedSize = *size;
     tx_event_flags_get(&wpUartReceivedBytesEvent, 0x1, TX_OR_CLEAR, &actual_flags, wait_time);
-//    SCB_CleanInvalidateDCache_by_Addr(
-//        (uint32_t *)&wp_UsartReceiveCircularBuffer,
-//        sizeof(wp_UsartReceiveCircularBuffer));
+    //    SCB_CleanInvalidateDCache_by_Addr(
+    //        (uint32_t *)&wp_UsartReceiveCircularBuffer,
+    //        sizeof(wp_UsartReceiveCircularBuffer));
     ULONG read = wp_ReadBuffer(
         &wp_UsartReceiveCircularBuffer,
         *ptr,
@@ -447,7 +447,20 @@ wpDMA_TransmitStream_IRQHandler()
 }
 wpUSART_IRQHANDLER()
 {
-    if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
+    if (LL_USART_IsActiveFlag_PE(wpUSART) || LL_USART_IsActiveFlag_FE(wpUSART) || LL_USART_IsActiveFlag_NE(wpUSART) ||
+        LL_USART_IsActiveFlag_ORE(wpUSART) || LL_USART_IsActiveFlag_PE(wpUSART))
+    {
+          LL_USART_ClearFlag_PE(wpUSART);    // Parity Error
+          LL_USART_ClearFlag_FE(wpUSART);    // Framing Error
+          LL_USART_ClearFlag_NE(wpUSART);    // Noise Error
+          LL_USART_ClearFlag_ORE(wpUSART);   // Overrun Error
+
+          wp_InitializeBuffer(
+              &wp_UsartReceiveCircularBuffer, wp_ReceiveData,
+              sizeof(wp_ReceiveData));       // Initialize ringbuffer for RX
+
+    }
+    else if (LL_USART_IsActiveFlag_IDLE(wpUSART)) // Check for IDLE line interrupt
     {
         LL_USART_ClearFlag_IDLE(wpUSART); // Clear IDLE line flag
         wp_UsartDataReceived();           // Check for data to process

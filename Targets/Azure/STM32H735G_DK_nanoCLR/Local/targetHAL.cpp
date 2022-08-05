@@ -39,9 +39,6 @@ void nanoHAL_Initialize()
     // initialize global mutex
     // chMtxObjectInit(&interpreterGlobalMutex);
 
-#if (NANOCLR_GRAPHICS == TRUE)
-    InitializeGraphics();
-#endif
     Initialize_Audio_Features();
     Initialize_microSD();
     Initialize_USB();

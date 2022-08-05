@@ -238,6 +238,30 @@
     <Filter Include="External\STM32H7\STM32H7xx\Include">
       <UniqueIdentifier>{712b8d67-65ec-45cc-a67a-38b10390a035}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\Azure-RTOS\FileX">
+      <UniqueIdentifier>{9a20da76-76ed-4729-bf5b-77bb225f2c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\common">
+      <UniqueIdentifier>{a2b6320a-8c35-44df-aa96-6087e8bef9db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\common\inc">
+      <UniqueIdentifier>{cd40aab8-d117-45d9-98d5-fb2a1761f193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\common\src">
+      <UniqueIdentifier>{2b6c4895-30fa-45a4-afa0-b001363665b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\ports">
+      <UniqueIdentifier>{0f787994-d6e2-4e26-a6e4-0d67097aa647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\ports\cortex_m7">
+      <UniqueIdentifier>{ff6cbaae-3de2-4d72-978b-5fc735c82b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\ports\cortex_m7\gnu">
+      <UniqueIdentifier>{8072e925-7e61-4a97-bba3-f2fffb829b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\FileX\ports\cortex_m7\gnu\inc">
+      <UniqueIdentifier>{ebf308b4-3162-40ed-b249-cd48e3d85cf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
@@ -259,534 +283,6 @@
       <Filter>VisualGDB settings</Filter>
     </None>
     <None Include="..\..\..\SharedCode\.clang-format" />
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\RTOS\Template\cmsis_os.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\croutine.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\deprecated_definitions.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\event_groups.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\FreeRTOS.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\list.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\message_buffer.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_prototypes.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\mpu_wrappers.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\portable.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\projdefs.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\queue.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\semphr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\StackMacros.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stack_macros.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\stream_buffer.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\task.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\include\timers.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cec.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_comp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cordic.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_crc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cryp_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dac_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dcmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dfsdm_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma2d.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dsi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dts.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_eth_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fdcan.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_fmac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gfxmmu.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hash_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hrtim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hsem.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2s_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_irda_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_iwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_jpeg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_lptim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdios.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mmc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nand.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_nor.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_opamp_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ospi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_otfdec.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pssi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ramecc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rng_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sai_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smartcard_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_smbus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spdifrx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_spi_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sram.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_swpmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart_ex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_wwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_armclang.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_compiler.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_gcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_iccarm.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\cmsis_version.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mbl.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_armv8mml.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm0plus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm1.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm23.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm3.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm33.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm4.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_cm7.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc000.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\core_sc300.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv7.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\mpu_armv8.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Include\tz_context.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h730xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7a3xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b0xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7b3xxq.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\stm32h7xx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\CMSIS_HAL\Device\ST\STM32H7xx\Include\system_stm32h7xx.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_bus.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_comp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cordic.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_cortex.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_crs.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_delayblock.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dma2d.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_dmamux.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_exti.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmac.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_gpio.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hrtim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_hsem.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_i2c.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_iwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lptim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_lpuart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_mdma.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_opamp.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_pwr.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rcc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rng.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_rtc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_sdmmc.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_spi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_swpmi.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_system.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_tim.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usart.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
-    <ClInclude Include="$(BSP_ROOT)\STM32H7xxxx\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h">
-      <Filter>Device-specific files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
@@ -1352,6 +848,39 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h735xx.h">
       <Filter>External\STM32H7\STM32H7xx\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_api.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory_exFAT.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_fault_tolerant.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_file.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_media.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_system.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_unicode.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_user_sample.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_utility.h">
+      <Filter>External\Azure-RTOS\FileX\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m7\gnu\inc\fx_port.h">
+      <Filter>External\Azure-RTOS\FileX\ports\cortex_m7\gnu\inc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2648,9 +2177,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncContinuations.cpp">
       <Filter>External\nf-interpreter\src\PAL\AsyncProcCall</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\Async_stubs.cpp">
-      <Filter>External\nf-interpreter\src\PAL\AsyncProcCall</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
       <Filter>External\nf-interpreter\src\PAL\BlockStorage</Filter>
     </ClCompile>
@@ -2840,6 +2366,717 @@
     </ClCompile>
     <ClCompile Include="Local\system_stm32h7xx.c">
       <Filter>Local\STM32H7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_attributes_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_attributes_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_default_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_default_get_copy.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_default_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_delete.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_first_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_first_full_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_information_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_local_path_clear.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_local_path_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_local_path_get_copy.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_local_path_restore.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_local_path_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_long_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_long_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_name_test.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_next_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_next_full_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_short_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_directory_short_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_fault_tolerant_enable.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_attributes_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_attributes_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_best_effort_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_close.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_date_time_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_delete.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_best_effort_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_relative_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_truncate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_extended_truncate_release.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_open.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_relative_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_truncate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_truncate_release.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_file_write_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_abort.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_cache_invalidate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_check.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_close.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_close_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_exFAT_format.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_extended_space_available.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_format.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_open.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_open_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_space_available.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_volume_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_volume_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_volume_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_media_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_system_date_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_system_date_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_system_time_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_system_time_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_directory_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_directory_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_file_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_file_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_short_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fxe_unicode_short_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_attributes_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_attributes_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_default_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_default_get_copy.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_default_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_delete.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_entry_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_entry_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_exFAT_entry_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_exFAT_entry_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_exFAT_free_search.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_exFAT_unicode_entry_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_first_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_first_full_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_free_search.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_information_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_local_path_clear.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_local_path_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_local_path_get_copy.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_local_path_restore.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_local_path_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_long_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_long_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_name_extract.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_name_test.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_next_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_next_full_entry_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_search.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_short_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_directory_short_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_add_bitmap_log.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_add_checksum_log.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_add_dir_log.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_add_FAT_log.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_apply_logs.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_calculate_checksum.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_cleanup_FAT_chain.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_create_log_file.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_enable.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_read_directory_sector.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_read_FAT.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_read_log_file.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_recover.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_reset_log_file.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_set_FAT_chain.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_transaction_end.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_transaction_fail.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_transaction_start.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_fault_tolerant_write_log_file.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_attributes_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_attributes_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_best_effort_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_close.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_date_time_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_delete.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_best_effort_allocate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_relative_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_truncate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_extended_truncate_release.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_open.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_relative_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_seek.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_truncate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_truncate_release.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_file_write_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_abort.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_boot_info_extract.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_cache_invalidate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_check.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_check_FAT_chain_check.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_check_lost_cluster_check.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_close.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_close_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_exFAT_format.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_extended_space_available.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_format.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_format_oem_name_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_format_type_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_format_volume_id_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_open.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_open_notify_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_space_available.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_volume_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_volume_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_volume_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_media_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_partition_offset_calculate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_ram_driver.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_date_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_date_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_initialize.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_timer_entry.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_time_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_system_time_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_trace_event_insert.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_trace_event_update.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_trace_object_register.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_trace_object_unregister.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_directory_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_directory_entry_change.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_directory_entry_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_directory_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_directory_search.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_file_create.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_file_rename.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_length_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_length_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_short_name_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_unicode_short_name_get_extended.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_16_unsigned_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_16_unsigned_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_32_unsigned_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_32_unsigned_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_64_unsigned_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_64_unsigned_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_absolute_path_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_allocate_new_cluster.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_cache_prepare.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_cache_update.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_free_cluster_find.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_initialize.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_bitmap_start_sector_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_cluster_free.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_cluster_state_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_cluster_state_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_geometry_check.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_name_hash_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_size_calculate.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_system_area_checksum_verify.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_system_area_checksum_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_system_area_format.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_system_sector_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_unicode_name_hash_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_exFAT_upcase_table.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_FAT_entry_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_FAT_entry_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_FAT_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_FAT_map_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_FAT_sector_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_logical_sector_cache_entry_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_logical_sector_flush.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_logical_sector_read.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_logical_sector_write.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_memory_copy.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_memory_set.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_string_length_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_token_length_get.c">
+      <Filter>External\Azure-RTOS\FileX\common\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

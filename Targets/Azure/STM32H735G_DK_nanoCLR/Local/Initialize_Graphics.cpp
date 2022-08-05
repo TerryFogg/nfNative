@@ -44,12 +44,12 @@ extern "C"
         g_TouchDevice.Initialize();
         g_TouchPanelDriver.Initialize();
 
-        CLR_INT16 x1 = 0;
-        CLR_INT16 y1 = 0;
-        CLR_INT16 x2 = 0;
-        CLR_INT16 y2 = 0;
-        Gesture gesture = Gesture::NoGesture;
-
+//        CLR_INT16 x1 = 0;
+//        CLR_INT16 y1 = 0;
+//        CLR_INT16 x2 = 0;
+//        CLR_INT16 y2 = 0;
+//        Gesture gesture = Gesture::NoGesture;
+//
 //                while (1)
 //                {
 //                    CLR_INT32 numberOfTouchPoints =

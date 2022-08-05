@@ -4,6 +4,9 @@
 // See LICENSE file in the project root for full license information.
 //
 #include <BoardInit.h>
+#include <target_board.h>
+
+struct HardFaultReporting __attribute__((section(".hard_fault_count"))) g_HardFault;
 
 void BoardInit()
 {
@@ -18,6 +21,10 @@ void BoardInit()
     Initialize_OCTOSPI2_Hyperam();
     Initialize_OPSPI_Flash();
     Initialize_RTC();
+
+#if (NANOCLR_GRAPHICS == TRUE)
+    InitializeGraphics();
+#endif
 }
 void CPU_CACHE_Enable(void)
 {

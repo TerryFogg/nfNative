@@ -23,6 +23,12 @@
 
 #include "TargetFeatures.h"
 
+typedef struct __nfpack HardFaultReporting {
+  int count;
+} HardFaultReporting;
+
+extern HardFaultReporting g_HardFault;
+
 void BoardInit();
 void Initialize_DWT_Counter();
 void USBD_Clock_Config(void);
@@ -41,7 +47,7 @@ static inline uint32_t Get_SYSTICK();
 // DWT is connected to the system clock
 static inline void DWT_Delay_us(volatile uint32_t microsecond_delay)
 {
-
+  
     // TODO - At boot time not relevant, but Important  WRAP AROUND counter !!!! to fix
     LL_RCC_ClocksTypeDef RCC_Clocks;
     LL_RCC_GetSystemClocksFreq(&RCC_Clocks);
@@ -97,15 +103,14 @@ extern "C"
 #define BUTTON_USER_PIN       LL_GPIO_PIN_13
 
 // Board Specific Graphics
-#define LTDC_HSPOLARITY_AL          0x00000000U     /*!< Horizontal Synchronization is active low. */
-#define LTDC_VSPOLARITY_AL          0x00000000U     /*!< Vertical Synchronization is active low. */
-#define LTDC_DEPOLARITY_AL          0x00000000U     /*!< Data Enable, is active low. */
-#define LTDC_PCPOLARITY_IPC         0x00000000U     /*!< input pixel clock. */
-#define LTDC_IT_TE                  LTDC_IER_TERRIE /*!< LTDC Transfer Error Interrupt  */
-#define LTDC_IT_FU                  LTDC_IER_FUIE   /*!< LTDC FIFO Underrun Interrupt   */
+#define LTDC_HSPOLARITY_AL          0x00000000U     // Horizontal Synchronization is active low.
+#define LTDC_VSPOLARITY_AL          0x00000000U     // Vertical Synchronization is active low.
+#define LTDC_DEPOLARITY_AL          0x00000000U     // Data Enable, is active low.
+#define LTDC_PCPOLARITY_IPC         0x00000000U     // input pixel clock.
+#define LTDC_IT_TE                  LTDC_IER_TERRIE // LTDC Transfer Error Interrupt
+#define LTDC_IT_FU                  LTDC_IER_FUIE   // LTDC FIFO Underrun Interrupt
 #define MAX_LAYER                   2U
-#define LTDC_BLENDING_FACTOR2_PAxCA 0x00000007U /*!< Blending factor : Cte Alpha x Pixel Alpha*/
-
+#define LTDC_BLENDING_FACTOR2_PAxCA 0x00000007U     // Blending factor : Cte Alpha x Pixel Alpha
 
 // Definition for Graphics on the board
 

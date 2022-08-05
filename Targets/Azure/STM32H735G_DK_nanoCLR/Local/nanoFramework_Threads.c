@@ -95,9 +95,9 @@ void tx_application_define(void *first_unused_memory)
         }
     }
 }
-void Startup_Rtos(bool buttonPressed)
+void Startup_Rtos(bool waitForDebuggerRequesed)
 {
-    if (buttonPressed)
+  if (waitForDebuggerRequesed)
     {
         WaitForDebugger = (uint32_t) true;
     }
