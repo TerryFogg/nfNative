@@ -10,14 +10,14 @@
 #include <nanoCLR_Headers.h>
 #include "GraphicsMemoryHeap.h"
 #include <nanoHAL_Graphics.h>
-#include "Debug_To_Display.h"
 #include "BoardInit.h"
 
 extern "C"
 {
-    void InitializeGraphics()
+    void Initialize_Graphics()
     {
-        g_GraphicsMemoryHeap.Initialize( 0); // Initialize graphics ram heap size to all available as defined in the memory map
+        g_GraphicsMemoryHeap.Initialize(
+            0); // Initialize graphics ram heap size to all available as defined in the memory map
 
         DisplayInterfaceConfig display_config;
         display_config.VideoDisplay.width = 480;  // g_DisplayDriver.Attributes.LongerSide;
@@ -44,22 +44,6 @@ extern "C"
         g_TouchDevice.Initialize();
         g_TouchPanelDriver.Initialize();
 
-//        CLR_INT16 x1 = 0;
-//        CLR_INT16 y1 = 0;
-//        CLR_INT16 x2 = 0;
-//        CLR_INT16 y2 = 0;
-//        Gesture gesture = Gesture::NoGesture;
-//
-//                while (1)
-//                {
-//                    CLR_INT32 numberOfTouchPoints =
-//                    g_TouchDevice.GetPoint(&x1, &y1, &x2, &y2); bool
-//                    ContactInProgress = (numberOfTouchPoints >= 1); if
-//                    (ContactInProgress)
-//                    {
-//                        lcd_printf("[%d,%d]\n", x1, y1);
-//                    }
-//                }
 
         // Test Flash Write
         //        uint32_t startAddress = 0x080A0000U + 27;

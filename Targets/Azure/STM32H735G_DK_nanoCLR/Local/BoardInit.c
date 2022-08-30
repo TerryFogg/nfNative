@@ -23,7 +23,7 @@ void BoardInit()
     Initialize_RTC();
 
 #if (NANOCLR_GRAPHICS == TRUE)
-    InitializeGraphics();
+    Initialize_Graphics();
 #endif
 }
 void CPU_CACHE_Enable(void)

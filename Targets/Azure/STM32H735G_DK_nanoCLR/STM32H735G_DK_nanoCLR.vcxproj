@@ -761,12 +761,12 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_stack_build.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_system_return.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_timer_interrupt.S" />
-    <ClCompile Include="Local\AudioFeatures.c" />
+    <ClCompile Include="Local\Audio.c" />
     <ClCompile Include="Local\BoardInit.c" />
     <ClCompile Include="Local\Clock_configuration.c" />
     <ClCompile Include="Local\CLR_RT_InteropAssembliesTable.cpp" />
     <ClCompile Include="Local\CLR_Startup_Thread.c" />
-    <ClCompile Include="Local\cpu_gpio.cpp" />
+    <ClCompile Include="Local\GPIO.cpp" />
     <ClCompile Include="Local\Device_BlockStorage.c" />
     <ClCompile Include="Local\Ethernet.c" />
     <ClCompile Include="Local\FDCAN.c" />

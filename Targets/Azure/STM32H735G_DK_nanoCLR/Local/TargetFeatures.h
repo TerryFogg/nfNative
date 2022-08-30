@@ -11,12 +11,8 @@
 extern "C" {
 #endif
 
-void Initialize_OCTOSPI2_Hyperam();
-void InitializeGraphics(void);
-void Initialize_OPSPI_Hyperam();
-void Initialize_RTC(void);
-void Initialize_OPSPI_Flash();
-void Initialize_Audio_Features();
+void Initialize_Graphics(void);
+void Initialize_Audio();
 void Initialize_microSD();
 void Initialize_USB();
 void Initialize_Ethernet();

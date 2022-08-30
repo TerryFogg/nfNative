@@ -262,6 +262,24 @@
     <Filter Include="External\Azure-RTOS\FileX\ports\cortex_m7\gnu\inc">
       <UniqueIdentifier>{ebf308b4-3162-40ed-b249-cd48e3d85cf3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Local\Features\CAN">
+      <UniqueIdentifier>{84faee95-f02a-4af4-8c2b-00702f83f726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Audio">
+      <UniqueIdentifier>{d94c38f2-06ab-4fda-8166-04c56963e0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Ethernet">
+      <UniqueIdentifier>{99a839c9-d98e-43c8-bfb1-7f3368c28fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\MemoryStorage">
+      <UniqueIdentifier>{e0015a0f-25bb-4ac4-8733-7e05df3bfe79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\USB">
+      <UniqueIdentifier>{7b605a61-1d3f-4af3-9ca5-f8bd4510dddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Clock">
+      <UniqueIdentifier>{850c1300-faaa-4a18-a004-d539cf99fa3a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
@@ -738,9 +756,6 @@
     <ClInclude Include="Local\RGB565_320x240.h">
       <Filter>Local\Features\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Local\MicroSD.h">
-      <Filter>Local\Features</Filter>
-    </ClInclude>
     <ClInclude Include="Local\TargetFeatures.h">
       <Filter>Local\Features</Filter>
     </ClInclude>
@@ -881,6 +896,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m7\gnu\inc\fx_port.h">
       <Filter>External\Azure-RTOS\FileX\ports\cortex_m7\gnu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\MicroSD.h">
+      <Filter>Local\Features\MemoryStorage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2214,15 +2232,6 @@
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
     </ClCompile>
     <ClCompile Include="main.c" />
-    <ClCompile Include="Local\FDCAN.c">
-      <Filter>Local\Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Ethernet.c">
-      <Filter>Local\Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\AudioFeatures.c">
-      <Filter>Local\Features</Filter>
-    </ClCompile>
     <ClCompile Include="Local\Graphics_Memory.cpp">
       <Filter>Local\Features\Graphics</Filter>
     </ClCompile>
@@ -2237,12 +2246,6 @@
     </ClCompile>
     <ClCompile Include="Local\RK043FN48H_VideoMode.cpp">
       <Filter>Local\Features\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\MicroSD.c">
-      <Filter>Local\Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\RealTimeClock.c">
-      <Filter>Local\Features</Filter>
     </ClCompile>
     <ClCompile Include="Local\nanoHAL.cpp">
       <Filter>Local\Adaption Layer</Filter>
@@ -2313,9 +2316,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\targetHAL_time.cpp">
       <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="Local\USB.c">
-      <Filter>Local\Features</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
       <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
@@ -2358,7 +2358,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp">
       <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
     </ClCompile>
-    <ClCompile Include="Local\cpu_gpio.cpp">
+    <ClCompile Include="Local\GPIO.cpp">
       <Filter>Local\Features\IO</Filter>
     </ClCompile>
     <ClCompile Include="Local\targetPAL.c">
@@ -3077,6 +3077,24 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\src\fx_utility_token_length_get.c">
       <Filter>External\Azure-RTOS\FileX\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Audio.c">
+      <Filter>Local\Features\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Ethernet.c">
+      <Filter>Local\Features\Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\FDCAN.c">
+      <Filter>Local\Features\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\MicroSD.c">
+      <Filter>Local\Features\MemoryStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\USB.c">
+      <Filter>Local\Features\USB</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\RealTimeClock.c">
+      <Filter>Local\Features\Clock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

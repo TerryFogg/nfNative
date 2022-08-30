@@ -39,7 +39,7 @@ void nanoHAL_Initialize()
     // initialize global mutex
     // chMtxObjectInit(&interpreterGlobalMutex);
 
-    Initialize_Audio_Features();
+    Initialize_Audio();
     Initialize_microSD();
     Initialize_USB();
     Initialize_Ethernet();
