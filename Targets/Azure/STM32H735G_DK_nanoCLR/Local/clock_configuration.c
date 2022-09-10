@@ -3,7 +3,7 @@
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
-#include "BoardInit.h"
+#include "Board_STM32H735G-DK.h"
 
 #include <stm32h7xx_ll_rcc.h>
 #include <stm32h7xx_ll_system.h>

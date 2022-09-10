@@ -1,13 +1,15 @@
-#include <BoardInit.h>
+#include <Board_STM32H735G-DK.h>
 #include <stm32h735xx.h>
 #include <tx_api.h>
 #include <nanoCLR_Application.h>
 #include <CLR_Startup_Thread.h>
 
 // byte pool configuration and definitions
-#define DEFAULT_BYTE_POOL_SIZE     16000
-#define CLR_THREAD_STACK_SIZE      6000
+#define DEFAULT_BYTE_POOL_SIZE 16000
+#define CLR_THREAD_STACK_SIZE 6000
 #define RECEIVER_THREAD_STACK_SIZE 4096
+
+extern bool g_waitForDebuggerRequested;
 
 TX_BYTE_POOL byte_pool_0;
 uint8_t memory_area[DEFAULT_BYTE_POOL_SIZE];
@@ -27,7 +29,6 @@ extern void ReceiverThread_entry(uint32_t parameter);
 TX_THREAD CLRThread;
 uint32_t CLRThreadStack[CLR_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void CLRStartupThread(uint32_t parameter);
-uint32_t WaitForDebugger;
 
 void tx_application_define(void *first_unused_memory)
 {
@@ -74,11 +75,11 @@ void tx_application_define(void *first_unused_memory)
 
     // Create CLR thread
     status = tx_thread_create(
-        &CLRThread,            // Pointer to a thread control block.
-        "CLR_Thread",          // Pointer to the name of the thread.
-        CLRStartupThread,      // Specifies the initial C function for thread
-                               // execution
-        WaitForDebugger,       // A 32-bit value that is passed to the thread's entry
+        &CLRThread,       // Pointer to a thread control block.
+        "CLR_Thread",     // Pointer to the name of the thread.
+        CLRStartupThread, // Specifies the initial C function for thread
+                          // execution
+        g_waitForDebuggerRequested,       // A 32-bit value that is passed to the thread's entry
                                // function when it first executes
         CLRThreadStack,        // Starting address of the stack's memory area.
         CLR_THREAD_STACK_SIZE, // Number bytes in the stack memory area.
@@ -95,15 +96,7 @@ void tx_application_define(void *first_unused_memory)
         }
     }
 }
-void Startup_Rtos(bool waitForDebuggerRequesed)
+void Startup_Rtos()
 {
-  if (waitForDebuggerRequesed)
-    {
-        WaitForDebugger = (uint32_t) true;
-    }
-    else
-    {
-        WaitForDebugger = (uint32_t) false;
-    }
     tx_kernel_enter();
 }

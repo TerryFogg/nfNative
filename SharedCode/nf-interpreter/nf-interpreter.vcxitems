@@ -164,7 +164,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate2_stubs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native_System_Security_Cryptography_X509Certificates_X509Certificate_stubs.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager_stubs.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemEvents.c" />
@@ -746,7 +745,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net\sys_net_native.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Graphics.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Network.h" />

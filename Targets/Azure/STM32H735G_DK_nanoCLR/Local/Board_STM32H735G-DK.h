@@ -27,9 +27,8 @@ typedef struct __nfpack HardFaultReporting {
   int count;
 } HardFaultReporting;
 
-extern HardFaultReporting g_HardFault;
 
-void BoardInit();
+void Initialize_Board();
 void Initialize_DWT_Counter();
 void USBD_Clock_Config(void);
 void Initialize_Board_LEDS_And_Buttons();
@@ -37,7 +36,7 @@ void Initialize_64bit_timer();
 void CPU_CACHE_Enable(void);
 void MPU_Config(void);
 void SystemClock_Config();
-void Startup_Rtos(bool buttonPressed);
+void Startup_Rtos();
 void BoardLed_ON(uint32_t led);
 void BoardLed_OFF(uint32_t led);
 void BoardLed_Toggle(uint32_t led);

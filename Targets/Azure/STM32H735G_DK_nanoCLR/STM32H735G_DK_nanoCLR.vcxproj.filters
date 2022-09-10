@@ -34,6 +34,48 @@
     <Filter Include="External">
       <UniqueIdentifier>{8e12ebc7-34bf-43d5-8fab-f618ce8a4353}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Local\STM32H7">
+      <UniqueIdentifier>{53fe6f2d-68a5-4048-bd58-d4712bba9f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\CAN">
+      <UniqueIdentifier>{84faee95-f02a-4af4-8c2b-00702f83f726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Audio">
+      <UniqueIdentifier>{d94c38f2-06ab-4fda-8166-04c56963e0ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Ethernet">
+      <UniqueIdentifier>{99a839c9-d98e-43c8-bfb1-7f3368c28fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\MemoryStorage">
+      <UniqueIdentifier>{e0015a0f-25bb-4ac4-8733-7e05df3bfe79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\USB">
+      <UniqueIdentifier>{7b605a61-1d3f-4af3-9ca5-f8bd4510dddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Clock">
+      <UniqueIdentifier>{850c1300-faaa-4a18-a004-d539cf99fa3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7">
+      <UniqueIdentifier>{3cf80e30-6393-4be4-857e-097739d107e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver">
+      <UniqueIdentifier>{33b4824b-b435-4079-b7f7-4bcefd25c7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\src">
+      <UniqueIdentifier>{07876c21-b88a-4884-895c-eba488e93f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\inc">
+      <UniqueIdentifier>{b475d26f-d876-42b9-8077-9b0bb3526ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\inc\Legacy">
+      <UniqueIdentifier>{a28a9493-f8aa-425e-b358-90b39ddad8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx">
+      <UniqueIdentifier>{b4f0ecf2-068e-42f5-ac43-14a1f32b10ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\STM32H7\STM32H7xx\Include">
+      <UniqueIdentifier>{712b8d67-65ec-45cc-a67a-38b10390a035}</UniqueIdentifier>
+    </Filter>
     <Filter Include="External\nf-interpreter">
       <UniqueIdentifier>{ace8be4a-19c2-41a8-8faa-2a2a8a502de4}</UniqueIdentifier>
     </Filter>
@@ -214,30 +256,6 @@
     <Filter Include="External\Azure-RTOS\threadx\ports\cortex_m7\gnu\src">
       <UniqueIdentifier>{18c92333-5ba4-4034-8f9a-d9301a0aa252}</UniqueIdentifier>
     </Filter>
-    <Filter Include="External\STM32H7">
-      <UniqueIdentifier>{3cf80e30-6393-4be4-857e-097739d107e6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver">
-      <UniqueIdentifier>{33b4824b-b435-4079-b7f7-4bcefd25c7c2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\src">
-      <UniqueIdentifier>{07876c21-b88a-4884-895c-eba488e93f5c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\inc">
-      <UniqueIdentifier>{b475d26f-d876-42b9-8077-9b0bb3526ee4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx_HAL_Driver\inc\Legacy">
-      <UniqueIdentifier>{a28a9493-f8aa-425e-b358-90b39ddad8d3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\STM32H7">
-      <UniqueIdentifier>{53fe6f2d-68a5-4048-bd58-d4712bba9f22}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx">
-      <UniqueIdentifier>{b4f0ecf2-068e-42f5-ac43-14a1f32b10ed}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\STM32H7\STM32H7xx\Include">
-      <UniqueIdentifier>{712b8d67-65ec-45cc-a67a-38b10390a035}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\Azure-RTOS\FileX">
       <UniqueIdentifier>{9a20da76-76ed-4729-bf5b-77bb225f2c8f}</UniqueIdentifier>
     </Filter>
@@ -261,24 +279,6 @@
     </Filter>
     <Filter Include="External\Azure-RTOS\FileX\ports\cortex_m7\gnu\inc">
       <UniqueIdentifier>{ebf308b4-3162-40ed-b249-cd48e3d85cf3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\CAN">
-      <UniqueIdentifier>{84faee95-f02a-4af4-8c2b-00702f83f726}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Audio">
-      <UniqueIdentifier>{d94c38f2-06ab-4fda-8166-04c56963e0ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Ethernet">
-      <UniqueIdentifier>{99a839c9-d98e-43c8-bfb1-7f3368c28fb3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\MemoryStorage">
-      <UniqueIdentifier>{e0015a0f-25bb-4ac4-8733-7e05df3bfe79}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\USB">
-      <UniqueIdentifier>{7b605a61-1d3f-4af3-9ca5-f8bd4510dddb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Clock">
-      <UniqueIdentifier>{850c1300-faaa-4a18-a004-d539cf99fa3a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -573,9 +573,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h">
       <Filter>External\nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
-      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
       <Filter>External\nf-interpreter\src\HAL\Include</Filter>
     </ClInclude>
@@ -786,9 +783,6 @@
     <ClInclude Include="Local\targetPAL_Time.h">
       <Filter>Local\Adaption Layer</Filter>
     </ClInclude>
-    <ClInclude Include="Local\BoardInit.h">
-      <Filter>Local\Startup</Filter>
-    </ClInclude>
     <ClInclude Include="Local\CLR_Startup_Thread.h">
       <Filter>Local\Startup</Filter>
     </ClInclude>
@@ -899,6 +893,12 @@
     </ClInclude>
     <ClInclude Include="Local\MicroSD.h">
       <Filter>Local\Features\MemoryStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\Board_STM32H735G-DK.h">
+      <Filter>Local\Adaption Layer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1910,9 +1910,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c">
       <Filter>External\nf-interpreter\src\HAL</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
-      <Filter>External\nf-interpreter\src\HAL</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
       <Filter>External\nf-interpreter\src\HAL</Filter>
     </ClCompile>
@@ -2270,9 +2267,6 @@
     </ClCompile>
     <ClCompile Include="Local\targetPAL_Time.cpp">
       <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\BoardInit.c">
-      <Filter>Local\Startup</Filter>
     </ClCompile>
     <ClCompile Include="Local\Clock_configuration.c">
       <Filter>Local\Startup</Filter>
@@ -3095,6 +3089,12 @@
     </ClCompile>
     <ClCompile Include="Local\RealTimeClock.c">
       <Filter>Local\Features\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Board_STM32H735G-DK.c">
+      <Filter>Local\Adaption Layer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

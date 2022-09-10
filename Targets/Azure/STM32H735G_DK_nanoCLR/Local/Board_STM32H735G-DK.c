@@ -3,12 +3,11 @@
 // Portions Copyright (c) 2021 STMicroelectronics.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
-#include <BoardInit.h>
+#include <Board_STM32H735G-DK.h>
 #include <target_board.h>
 
-struct HardFaultReporting __attribute__((section(".hard_fault_count"))) g_HardFault;
 
-void BoardInit()
+void Initialize_Board()
 {
     CPU_CACHE_Enable();
     // MPU_Config();

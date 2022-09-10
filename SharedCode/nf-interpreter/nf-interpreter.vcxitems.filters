@@ -1059,9 +1059,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c">
       <Filter>src\HAL</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
-      <Filter>src\HAL</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
       <Filter>src\HAL</Filter>
     </ClCompile>
@@ -2859,9 +2856,6 @@
       <Filter>src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h">
-      <Filter>src\HAL\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
       <Filter>src\HAL\Include</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">

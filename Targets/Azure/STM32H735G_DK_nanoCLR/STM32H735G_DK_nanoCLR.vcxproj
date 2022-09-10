@@ -762,7 +762,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_thread_system_return.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\src\tx_timer_interrupt.S" />
     <ClCompile Include="Local\Audio.c" />
-    <ClCompile Include="Local\BoardInit.c" />
+    <ClCompile Include="Local\Board_STM32H735G-DK.c" />
     <ClCompile Include="Local\Clock_configuration.c" />
     <ClCompile Include="Local\CLR_RT_InteropAssembliesTable.cpp" />
     <ClCompile Include="Local\CLR_Startup_Thread.c" />
@@ -970,7 +970,7 @@
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\\azure-rtos\threadx\ports\cortex_m7\gnu\inc\tx_port.h" />
     <ClInclude Include="Local\Adaption.h" />
-    <ClInclude Include="Local\BoardInit.h" />
+    <ClInclude Include="Local\Board_STM32H735G-DK.h" />
     <ClInclude Include="Local\CLR_Startup_Thread.h" />
     <ClInclude Include="Local\cmsis_compiler.h" />
     <ClInclude Include="Local\cmsis_gcc.h" />
