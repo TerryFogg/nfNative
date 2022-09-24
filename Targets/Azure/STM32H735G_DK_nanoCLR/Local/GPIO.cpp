@@ -11,6 +11,14 @@
 #include <targetPAL.h>
 #include <Adaption.h>
 
+
+
+// The STM32H735 MCU has registers A,B,C,D,E,F,G,H,_,J,K
+
+
+
+
+
 #define GPIO_MAX_PIN     256
 #define TOTAL_GPIO_PORTS ((GPIO_MAX_PIN + 15) / 16)
 GPIO_TypeDef *GpioPorts[] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOF, GPIOG, GPIOH, GPIOJ, GPIOK};
@@ -41,16 +49,6 @@ static HAL_DblLinkedList<gpio_input_state> gpioInputList; // Double Linked list 
 static uint16_t pinReserved[TOTAL_GPIO_PORTS];            //  reserved - 1 bit per pin
 
 TX_INTERRUPT_SAVE_AREA
-
-//  move this to sys_dev_gpio_native_System_Device_Gpio_GpioPin when
-//  Windows.Devices.Gpio is removed
-void Gpio_Interupt_ISR(GPIO_PIN pinNumber, bool pinState, void *pArg)
-{
-    (void)pArg;
-
-    // if handle registered then post a managed event with the current pin reading
-    PostManagedEvent(EVENT_GPIO, 0, (uint16_t)pinNumber, (uint32_t)pinState);
-}
 
 bool IsValidGpioPin(GPIO_PIN pinNumber)
 {
@@ -315,12 +313,12 @@ bool CPU_GPIO_EnableInputPin(
     GPIO_INTERRUPT_SERVICE_ROUTINE pinISR,
     void *isrParam,
     GPIO_INT_EDGE intEdge,
-    GpioPinDriveMode driveMode)
+    PinMode driveMode)
 {
     gpio_input_state *pState;
 
     // Check Input drive mode
-    if (driveMode >= (int)GpioPinDriveMode_Output)
+    if (driveMode >= (int)PinMode_Output)
     {
         return false;
     }
@@ -406,10 +404,10 @@ bool CPU_GPIO_EnableInputPin(
 // return       -   True if succesful, false invalid pin, pin not putput,
 // invalid drive mode for ouptput
 //
-bool CPU_GPIO_EnableOutputPin(GPIO_PIN pinNumber, GpioPinValue InitialState, GpioPinDriveMode driveMode)
+bool CPU_GPIO_EnableOutputPin(GPIO_PIN pinNumber, GpioPinValue InitialState, PinMode driveMode)
 {
     // check not an output drive mode
-    if (driveMode < (int)GpioPinDriveMode_Output)
+    if (driveMode < (int)PinMode_Output)
     {
         return false;
     }
@@ -432,7 +430,7 @@ bool CPU_GPIO_EnableOutputPin(GPIO_PIN pinNumber, GpioPinValue InitialState, Gpi
 #define PAL_STM32_ALTERNATE(n)   ((n) << 7U)
 #define PAL_MODE_ALTERNATE(n)    (PAL_STM32_MODE_ALTERNATE | PAL_STM32_ALTERNATE(n))
 
-void CPU_GPIO_DisablePin(GPIO_PIN pinNumber, GpioPinDriveMode driveMode, uint32_t alternateFunction)
+void CPU_GPIO_DisablePin(GPIO_PIN pinNumber, PinMode driveMode, uint32_t alternateFunction)
 {
     DeleteInputState(pinNumber);
 
@@ -452,7 +450,7 @@ void CPU_GPIO_DisablePin(GPIO_PIN pinNumber, GpioPinDriveMode driveMode, uint32_
 
 // Validate pin and set drive mode
 // return true if ok
-bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, GpioPinDriveMode driveMode)
+bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, PinMode driveMode)
 {
     GPIO_TypeDef *GPIO_port = GPIO_PORT(pinNumber);
     uint32_t PinMask = GPIO_PIN(pinNumber);
@@ -474,26 +472,26 @@ bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, GpioPinDriveMode driveMode)
 
     switch (driveMode)
     {
-        case GpioPinDriveMode_Input:
+        case PinMode_Input:
             LL_GPIO_SetPinOutputType(GPIO_port, PinMask, LL_GPIO_MODE_INPUT);
             LL_GPIO_SetPinPull(GPIO_port, PinMask, LL_GPIO_PULL_NO);
             break;
 
-        case GpioPinDriveMode_InputPullDown:
+        case PinMode_InputPullDown:
             LL_GPIO_SetPinOutputType(GPIO_port, PinMask, LL_GPIO_MODE_INPUT);
             LL_GPIO_SetPinPull(GPIO_port, PinMask, LL_GPIO_PULL_DOWN);
             break;
 
-        case GpioPinDriveMode_InputPullUp:
+        case PinMode_InputPullUp:
             LL_GPIO_SetPinOutputType(GPIO_port, PinMask, LL_GPIO_MODE_INPUT);
             LL_GPIO_SetPinPull(GPIO_port, PinMask, LL_GPIO_PULL_UP);
             break;
 
-        case GpioPinDriveMode_Output:
+        case PinMode_Output:
             LL_GPIO_SetPinOutputType(GPIO_port, PinMask, LL_GPIO_OUTPUT_PUSHPULL);
             break;
 
-        case GpioPinDriveMode_OutputOpenDrain:
+        case PinMode_OutputOpenDrain:
             LL_GPIO_SetPinOutputType(GPIO_port, PinMask, LL_GPIO_OUTPUT_OPENDRAIN);
             break;
 
@@ -505,7 +503,7 @@ bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, GpioPinDriveMode driveMode)
     return true;
 }
 
-bool CPU_GPIO_DriveModeSupported(GPIO_PIN pinNumber, GpioPinDriveMode driveMode)
+bool CPU_GPIO_DriveModeSupported(GPIO_PIN pinNumber, PinMode driveMode)
 {
     (void)pinNumber;
     return true;

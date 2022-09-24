@@ -35,4 +35,4 @@ const CLR_RT_NativeAssemblyData *g_CLR_InteropAssembliesNativeData[] = {
     NULL
 };
 
-uint16_t g_CLR_InteropAssembliesCount = (8 + 2);
+const uint16_t g_CLR_InteropAssembliesCount = (8 + 2);

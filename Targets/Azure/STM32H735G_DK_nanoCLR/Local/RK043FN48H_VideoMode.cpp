@@ -10,35 +10,35 @@
 #include "InternalFont.h"
 
 //
-// RK043FN02H 
-// Description : 4.3 inch TFT 480 * 272 pixels with LED 
+// RK043FN02H
+// Description : 4.3 inch TFT 480 * 272 pixels with LED
 // Backlight and capacitive touch panel
 //
 //
-// This display is a video memory less (I think, little information available) display that relies on the microcontroller sending out the information
-// with horizontal and vertical sync
+// This display is a video memory less (I think, little information available) display that relies on the
+// microcontroller sending out the information with horizontal and vertical sync
 //
 
 struct DisplayDriver g_DisplayDriver;
 extern DisplayInterface g_DisplayInterface;
-int lcd_with;
+int lcd_width;
 int lcd_height;
-
-bool DisplayDriver::Initialize(int initial_lcd_width, int initial_lcd_height)
+bool DisplayDriver::Initialize(DisplayInterfaceConfig &config)
 {
-    lcd_with =  initial_lcd_width;
-    lcd_height =  initial_lcd_height;
-    SetupDisplayAttributes();
-    SetDefaultOrientation();
+  lcd_width = config.Screen.width;
+  lcd_height = config.Screen.height;
 
-    Clear();
-    return 0;
+  SetupDisplayAttributes();
+  SetDefaultOrientation();
+
+  Clear();
+  return 0;
 }
 
 void DisplayDriver::SetupDisplayAttributes()
 {
     // Define the LCD/TFT resolution
-    Attributes.LongerSide = lcd_with;
+    Attributes.LongerSide = lcd_width;
     Attributes.ShorterSide = lcd_height;
     Attributes.PowerSave = PowerSaveState::NORMAL;
     Attributes.BitsPerPixel = 16;
@@ -50,24 +50,24 @@ bool DisplayDriver::ChangeOrientation(DisplayOrientation orientation)
 {
     switch (orientation)
     {
-    case PORTRAIT:
-        Attributes.Height = Attributes.LongerSide;
-        Attributes.Width = Attributes.ShorterSide;
+        case PORTRAIT:
+            Attributes.Height = Attributes.LongerSide;
+            Attributes.Width = Attributes.ShorterSide;
 
-        break;
-    case PORTRAIT180:
-        Attributes.Height = Attributes.LongerSide;
-        Attributes.Width = Attributes.ShorterSide;
-        // Landscape only at the moment
             break;
-    case LANDSCAPE:
-        Attributes.Height = Attributes.ShorterSide;
-        Attributes.Width = Attributes.LongerSide;
-        break;
-    case LANDSCAPE180:
-        Attributes.Height = Attributes.ShorterSide;
-        Attributes.Width = Attributes.LongerSide;
-        break;
+        case PORTRAIT180:
+            Attributes.Height = Attributes.LongerSide;
+            Attributes.Width = Attributes.ShorterSide;
+            // Landscape only at the moment
+            break;
+        case LANDSCAPE:
+            Attributes.Height = Attributes.ShorterSide;
+            Attributes.Width = Attributes.LongerSide;
+            break;
+        case LANDSCAPE180:
+            Attributes.Height = Attributes.ShorterSide;
+            Attributes.Width = Attributes.LongerSide;
+            break;
     }
     return true;
 }
@@ -87,14 +87,14 @@ void DisplayDriver::PowerSave(PowerSaveState powerState)
 {
     switch (powerState)
     {
-    default:
-        // Illegal fall through to Power on
-case PowerSaveState::NORMAL :
-    //        ??
-    break;
-    case PowerSaveState::SLEEP:
-        //       ??
-        break;
+        default:
+            // Illegal fall through to Power on
+        case PowerSaveState::NORMAL:
+            //        ??
+            break;
+        case PowerSaveState::SLEEP:
+            //       ??
+            break;
     }
     return;
 }
@@ -109,7 +109,7 @@ void DisplayDriver::DisplayBrightness(CLR_INT16 brightness)
     _ASSERTE(brightness >= 0 && brightness <= 100);
 }
 
-void DisplayDriver::BitBlt(int x, int y, int width, int height, CLR_UINT32 data[])
+void DisplayDriver::BitBlt(int x, int y, int width, int height, int stride, int screenX, int screenY, CLR_UINT32 data[])
 {
     CLR_UINT32 dataSize = width * height * 2;
     if (dataSize == (Attributes.Width * Attributes.Height * 2))
@@ -124,12 +124,12 @@ void DisplayDriver::BitBlt(int x, int y, int width, int height, CLR_UINT32 data[
         CLR_UINT32 srcOffset = (y * (CLR_UINT32)Attributes.Width) + x;
         p16data += srcOffset;
         dataSize = width * 2;
-        CLR_UINT32 targetOffset = srcOffset;                 // Target 16bit offset in frame
+        CLR_UINT32 targetOffset = srcOffset; // Target 16bit offset in frame
         while (height--)
         {
             g_DisplayInterface.WriteToFrameBuffer(0, (CLR_UINT8 *)p16data, dataSize, targetOffset);
-            p16data += Attributes.Width;                    // Next display row in data[]
-            targetOffset += Attributes.Width;               // Next offset in target frame
+            p16data += Attributes.Width;      // Next display row in data[]
+            targetOffset += Attributes.Width; // Next offset in target frame
         }
     }
 }
@@ -137,7 +137,7 @@ void DisplayDriver::BitBlt(int x, int y, int width, int height, CLR_UINT32 data[
 void DisplayDriver::SendDataDirect(CLR_INT16 x, CLR_INT16 y, CLR_INT16 width, CLR_INT16 height, CLR_UINT16 data[])
 {
     // This driver is written to use the "video mode" of the controller, so we just write to the memory buffer.
-    BitBlt(x, y, width, height, (CLR_UINT32 *)data);
+    BitBlt(x, y, width, height, 0, 0, 0, (CLR_UINT32 *)data);
 }
 
 CLR_INT16 DisplayDriver::PixelsPerWord()

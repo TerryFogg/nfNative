@@ -23,3 +23,5 @@ HAL_SYSTEM_CONFIG HalSystemConfig = {
 	{FLASH1_MEMORY_StartAddress, FLASH1_MEMORY_Size} };
 
 HAL_TARGET_CONFIGURATION g_TargetConfiguration;
+
+bool Target_CanChangeMacAddress() { return false; }

@@ -53,10 +53,6 @@
 struct DisplayInterface g_DisplayInterface;
 extern CLR_UINT32 Graphics_frame_buffer; // Framebuffer set externally
 
-// Default to landscape
-CLR_UINT32 lcd_x_size = 480;
-CLR_UINT32 lcd_y_size = 272;
-
 // Timer handler declaration
 // static TIM_HandleTypeDef hlcd_tim;
 
@@ -65,8 +61,8 @@ uint32_t Height;
 
 void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
 {
-    Width = config.VideoDisplay.width;
-    Height = config.VideoDisplay.height;
+    Width = config.Screen.width;
+    Height = config.Screen.height;
 
     LTDCClock_Config();
 
@@ -250,7 +246,7 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
 void DisplayInterface::GetTransferBuffer(CLR_UINT8 *&TransferBuffer, CLR_UINT32 &TransferBufferSize)
 {
     TransferBuffer = (CLR_UINT8 *)&Graphics_frame_buffer;
-    TransferBufferSize = (lcd_x_size * lcd_y_size * 2);
+    TransferBufferSize = (Width * Height * 2);
 }
 
 #define LCD_COLOR_RGB565_WHITE 0xFFFFU
@@ -264,10 +260,10 @@ void DisplayInterface::ClearFrameBuffer()
     LL_DMA2D_SetMode(DMA2D, LL_DMA2D_MODE_R2M);                         // Configured as register to memory mode
     LL_DMA2D_SetOutputColor(DMA2D, LCD_COLOR_RGB565_BLACK);             // Clear screen colour
     LL_DMA2D_SetOutputMemAddr(DMA2D, (uint32_t)&Graphics_frame_buffer); // LCD data address
-    LL_DMA2D_SetLineOffset(DMA2D, 0);                                   // Configure DMA2D output line offset to LCD width - image width for display
-    LL_DMA2D_ConfigSize(DMA2D, 272, 480);                               // Configure DMA2D
-    DMA2D->OPFCCR = PIXEL_FORMAT_RGB565;                                // Format color
-    LL_DMA2D_Start(DMA2D);                                              // Start the transfer
+    LL_DMA2D_SetLineOffset(DMA2D, 0);     // Configure DMA2D output line offset to LCD width - image width for display
+    LL_DMA2D_ConfigSize(DMA2D, Height, Width); // Configure DMA2D
+    DMA2D->OPFCCR = PIXEL_FORMAT_RGB565;  // Format color
+    LL_DMA2D_Start(DMA2D);                // Start the transfer
 }
 
 void DisplayInterface::WriteToFrameBuffer(

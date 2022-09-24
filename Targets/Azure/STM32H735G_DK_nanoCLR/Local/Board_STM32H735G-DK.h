@@ -29,6 +29,9 @@ typedef struct __nfpack HardFaultReporting {
 
 
 void Initialize_Board();
+void Initialize_OCTOSPI2_Hyperam();
+void Initialize_OPSPI_Flash();
+void Initialize_RTC();
 void Initialize_DWT_Counter();
 void USBD_Clock_Config(void);
 void Initialize_Board_LEDS_And_Buttons();
