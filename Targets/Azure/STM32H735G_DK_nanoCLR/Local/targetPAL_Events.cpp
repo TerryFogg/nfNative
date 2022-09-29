@@ -12,33 +12,46 @@
 uint64_t CPU_MillisecondsToTicks(uint64_t ticks);
 
 // timer for bool events
-//static virtual_timer_t boolEventsTimer;
+// static virtual_timer_t boolEventsTimer;
 
-static TX_TIMER boolEventsTimer;
+TX_TIMER boolEventsTimer;
+static bool *saveTimerCompleteFlag = 0;
 
+static void local_Events_SetBoolTimer_Callback(ULONG input)
+{
+  (void)input;
+
+  *saveTimerCompleteFlag = true;
+}
+
+bool Events_Initialize_Platform()
+{
+    return tx_timer_create(
+               &boolEventsTimer,
+               (char *)"BoolEvents Timer",
+               local_Events_SetBoolTimer_Callback,
+               0,
+               1,
+               0,
+               TX_NO_ACTIVATE) == TX_SUCCESS;
+}
 bool Events_Uninitialize_Platform()
 {
     tx_timer_delete(&boolEventsTimer);
     return true;
 }
 
-static void local_Events_SetBoolTimer_Callback(ULONG input)
-{
-    // This seems to be do nothing code
-    // Part of the PAL events which may not be needed
-    // or was it used in the win32 emulator?
-    
-  (void)input;
-
-}
-
 void Events_SetBoolTimer(bool *timerCompleteFlag, uint32_t millisecondsFromNow)
 {
     if (timerCompleteFlag != NULL)
     {
-        int numberTicks = millisecondsFromNow*10;
-        tx_timer_create(&boolEventsTimer, (char*)"PALEVENTS_BoolTimer", local_Events_SetBoolTimer_Callback, numberTicks, 0, numberTicks, TX_AUTO_ACTIVATE);
-    
+        // As only one timer running at a time we will just save it
+        saveTimerCompleteFlag = timerCompleteFlag;
+
+        // need to stop the timer first
+        tx_timer_deactivate(&boolEventsTimer);
+        tx_timer_change(&boolEventsTimer, 0, TX_TICKS_PER_MILLISEC(millisecondsFromNow));
+        tx_timer_activate(&boolEventsTimer);
     }
 }
 
@@ -72,7 +85,7 @@ uint32_t Events_WaitForEvents(uint32_t powerLevel, uint32_t wakeupSystemEvents, 
 
         // first check and possibly run any continuations
         // but only if we have slept after stalling
-        if(runContinuations && !SystemState_QueryNoLock(SYSTEM_STATE_NO_CONTINUATIONS))
+        if (runContinuations && !SystemState_QueryNoLock(SYSTEM_STATE_NO_CONTINUATIONS))
         {
             // if we stall on time, don't check again until after we sleep
             runContinuations = HAL_CONTINUATION::Dequeue_And_Execute();
@@ -89,7 +102,7 @@ uint32_t Events_WaitForEvents(uint32_t powerLevel, uint32_t wakeupSystemEvents, 
         tx_thread_relinquish();
 
         // check if reboot or exit flags were set when the other OS threads executed
-        if(CLR_EE_DBG_IS(RebootPending) || CLR_EE_DBG_IS(ExitPending))
+        if (CLR_EE_DBG_IS(RebootPending) || CLR_EE_DBG_IS(ExitPending))
         {
             break;
         }

@@ -13,6 +13,8 @@
 #include <target_board.h>
 #include <nanoHAL_v2.h>
 
+#define TX_TICKS_PER_MILLISEC(milliSecs) ((milliSecs * TX_TIMER_TICKS_PER_SECOND) / 1000)
+
 // platform dependent delay
 #define PLATFORM_DELAY(milliSecs) tx_thread_sleep(milliSecs / 10);
 
@@ -21,6 +23,7 @@
 
 // get number of sockets from lwIP options
 // Network not platform dependent -- #define PLATFORM_DEPENDENT__SOCKETS_MAX_COUNT MEMP_NUM_NETCONN
+#define PLATFORM_DEPENDENT__SOCKETS_MAX_COUNT 16
 
 #define LPCSTR const char *
 
@@ -69,9 +72,9 @@ extern uint32_t __nanoConfig_end__;
 extern uint32_t __deployment_start__;
 extern uint32_t __deployment_end__;
 
-#define GLOBAL_LOCK()                                                                                                  \
-    TX_INTERRUPT_SAVE_AREA                                                                                             \
-    TX_DISABLE
+#define GLOBAL_LOCK()                                                          \
+  TX_INTERRUPT_SAVE_AREA                                                       \
+  TX_DISABLE
 #define GLOBAL_UNLOCK() TX_RESTORE
 
 #endif //_TARGET_HAL_H_

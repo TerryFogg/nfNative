@@ -2304,9 +2304,6 @@
     <ClCompile Include="Local\wpUSART_Communications.c">
       <Filter>Local\WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="Local\hard_fault_handler.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\targetHAL_time.cpp">
       <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>
@@ -3094,6 +3091,9 @@
       <Filter>External\nf-interpreter\src\HAL</Filter>
     </ClCompile>
     <ClCompile Include="Local\Board_STM32H735G-DK.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\hard_fault_handler.c">
       <Filter>Local\Adaption Layer</Filter>
     </ClCompile>
   </ItemGroup>

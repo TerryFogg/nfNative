@@ -16,11 +16,12 @@ __attribute__((noreturn)) void ReceiverThread_entry(uint32_t parameter)
     InitWireProtocolCommunications(); // NOTE: Don't call  Scheduler type calls in this module
     tx_thread_sleep(50);
 
+    WP_Message_Initialize(&inboundMessage);
+    WP_Message_PrepareReception(&inboundMessage);
     while (1) // loop until thread receives a request to terminate
     {
-        WP_Message_Initialize(&inboundMessage);
-        WP_Message_PrepareReception(&inboundMessage);
         WP_Message_Process(&inboundMessage);
+        tx_thread_relinquish();
     }
 }
 

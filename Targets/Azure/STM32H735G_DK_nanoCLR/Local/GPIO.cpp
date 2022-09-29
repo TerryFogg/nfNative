@@ -12,16 +12,14 @@
 #include <Adaption.h>
 
 
+// The STM32H735 MCU has registers A,B,C,D,E,F,G,H,J,K (No I)
+GPIO_TypeDef *GpioPorts[] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE,
+                             GPIOF, GPIOG, GPIOH, GPIOJ, GPIOK};
 
-// The STM32H735 MCU has registers A,B,C,D,E,F,G,H,_,J,K
+#define PINS_PER_PORT 16
+#define GPIO_MAX_PIN sizeof(GpioPorts) * PINS_PER_PORT
+#define TOTAL_GPIO_PORTS sizeof(GpioPorts)
 
-
-
-
-
-#define GPIO_MAX_PIN     256
-#define TOTAL_GPIO_PORTS ((GPIO_MAX_PIN + 15) / 16)
-GPIO_TypeDef *GpioPorts[] = {GPIOA, GPIOB, GPIOC, GPIOD, GPIOE, GPIOF, GPIOG, GPIOH, GPIOJ, GPIOK};
 typedef uint32_t ioline_t;
 #define GPIO_PORT(pin) (GpioPorts[pin / 16])   // Gets the GPIO port according to a pin number
 #define GPIO_PIN(pin)  (pin - (pin % 16) * 16) // Gets the GPIO port according to a pin number

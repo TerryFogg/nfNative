@@ -130,10 +130,8 @@ void TouchInterface::SetTouchInterruptCallback(TOUCH_INTERRUPT_SERVICE_ROUTINE t
 }
 bool TouchInterface::WriteCommand(uint8_t touchRegister, uint8_t touchCommand)
 {
-
-  return true;
-  while (LL_I2C_IsActiveFlag_BUSY(I2C4)) // Check bus busy flag
-  {
+    while (LL_I2C_IsActiveFlag_BUSY(I2C4)) // Check bus busy flag
+    {
     }
     LL_I2C_HandleTransfer(
         I2C4,
@@ -147,10 +145,10 @@ bool TouchInterface::WriteCommand(uint8_t touchRegister, uint8_t touchCommand)
     {
     }
     //
-    //    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
-    //    {
-    //        return false;
-    //    }
+    if (I2C_WaitOnTXISFlagUntilTimeout() != true) // Wait until TXIS flag is set
+    {
+        return false;
+    }
     LL_I2C_TransmitData8(I2C4, touchRegister);
     while (LL_I2C_IsActiveFlag_TC(I2C4))
     {
@@ -161,6 +159,12 @@ bool TouchInterface::WriteCommand(uint8_t touchRegister, uint8_t touchCommand)
     };
 
     return true;
+}
+void TouchInterface::Enable_TouchInterrupt() {
+  NVIC_EnableIRQ((TS_INT_EXTI_IRQn));
+}
+void TouchInterface::Disable_TouchInterrupt() {
+  NVIC_DisableIRQ((TS_INT_EXTI_IRQn));
 }
 void Initialize_I2C()
 {
@@ -243,26 +247,30 @@ static bool I2C_IsAcknowledgeFailed()
 }
 void Initialize_TouchInterrupt()
 {
+  I2C_IsAcknowledgeFailed();
     // Peripheral clock already enabled in "Clock_configuration.c"
     LL_GPIO_SetPinMode(GPIOG, TS_INT_PIN, LL_GPIO_MODE_INPUT);
     LL_GPIO_SetPinPull(GPIOG, TS_INT_PIN, LL_GPIO_PULL_NO);
     LL_GPIO_SetPinSpeed(GPIOG, TS_INT_PIN, LL_GPIO_SPEED_FREQ_HIGH);
     LL_EXTI_EnableIT_0_31(LL_EXTI_LINE_2);
     LL_EXTI_DisableEvent_0_31(LL_EXTI_LINE_2);
-    LL_EXTI_DisableRisingTrig_0_31(LL_EXTI_LINE_2);
-    LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_2);
+
+    LL_EXTI_EnableRisingTrig_0_31(LL_EXTI_LINE_2);  // Touch Down
+    LL_EXTI_EnableFallingTrig_0_31(LL_EXTI_LINE_2); // Touch Up
+
     LL_SYSCFG_SetEXTISource(LL_SYSCFG_EXTI_PORTG, LL_SYSCFG_EXTI_LINE2);
     LL_APB4_GRP1_EnableClock(LL_APB4_GRP1_PERIPH_SYSCFG);
     NVIC_SetPriority(TS_INT_EXTI_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(), TS_IT_PRIORITY, 0));
-    NVIC_EnableIRQ((TS_INT_EXTI_IRQn));
+    // Disable the interrupt, enabled from a call from the c# code
+    NVIC_DisableIRQ((TS_INT_EXTI_IRQn));
 }
 
 extern "C"
 {
     TS_INTERRUPT_ROUTINE()
     {
-      // Clear interrupt and call registered callback
-      touchInterruptRoutine();
-      LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_2);
+        // Clear interrupt and call registered callback
+        touchInterruptRoutine();
+        LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_2);
     }
 }

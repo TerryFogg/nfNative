@@ -294,6 +294,7 @@ uint8_t wp_InitializeBuffer(CircularBuffer_t *buffer, void *data, size_t size)
     memset((void *)buffer, 0x00, sizeof(*buffer));
     buffer->size = size;
     buffer->buffer = data;
+    memset(data, 0x00, size);
     return 1;
 }
 size_t wp_WriteBuffer(CircularBuffer_t *buffer, const void *data, size_t btw)

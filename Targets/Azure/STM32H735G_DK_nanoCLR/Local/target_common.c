@@ -25,3 +25,7 @@ HAL_SYSTEM_CONFIG HalSystemConfig = {
 HAL_TARGET_CONFIGURATION g_TargetConfiguration;
 
 bool Target_CanChangeMacAddress() { return false; }
+
+// this target can use JTAG for updates
+inline GET_TARGET_CAPABILITIES(TargetCapabilities_JtagUpdate);
+inline TARGET_HAS_PROPRIETARY_BOOTER(true);
