@@ -611,7 +611,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup\CLRStartup.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math_System_Math.cpp" />
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\targetHAL_time.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_Message.c" />

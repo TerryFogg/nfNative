@@ -2304,9 +2304,6 @@
     <ClCompile Include="Local\wpUSART_Communications.c">
       <Filter>Local\WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\targetHAL_time.cpp">
-      <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
       <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
     </ClCompile>

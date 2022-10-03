@@ -42,7 +42,10 @@ extern "C"
         touch_config.I2c_bus_number = 0;
 
         g_TouchInterface.Initialize(touch_config);
-        g_TouchDevice.Initialize();
+        g_TouchDevice.Initialize(
+            display_config.Screen.width,
+            display_config.Screen.height,
+            TranslateCoordinates::SWAP_X_Y);
         g_TouchPanelDriver.Initialize();
 
         // Test Flash Write

@@ -11,6 +11,5 @@
 
 #define HAL_Time_CurrentSysTicks                     tx_time_get
 #define PLATFORM_MILLISECONDS_TO_TICKS(milliSecs)    (milliSecs / (1000 / TX_TIMER_TICKS_PER_SECOND ) )
-#define PLATFORM_MICROSECONDS_TO_TICKS(microSeconds) PLATFORM_MILLISECONDS_TO_TICKS(microSeconds / 1000)
 
 #endif //_TARGET_HAL_TIME_H_

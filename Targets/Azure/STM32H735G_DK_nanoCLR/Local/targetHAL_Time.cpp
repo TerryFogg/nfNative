@@ -19,8 +19,13 @@ extern "C"
 // Converts CMSIS sysTicks to .NET ticks (100 nanoseconds)
 uint64_t HAL_Time_SysTicksToTime(uint64_t sysTicks)
 {
-    const int multiplier = 100 * 1000*(1000 / 10);    // 100 ticks per millisecond * 1000 for microsecond * (1000/10) for 100 nanosecond units
-    return multiplier* sysTicks;
+    // need to convert Azure RTOS ticks to 100 nanoseconds
+    return (((int64_t)sysTicks * (int64_t)1000000 +
+             (int64_t)TX_TIMER_TICKS_PER_SECOND - 1) /
+            (int64_t)TX_TIMER_TICKS_PER_SECOND) *
+           10;
+    
+    
 }
 
 
@@ -212,7 +217,3 @@ uint64_t CPU_MillisecondsToTicks(uint64_t ticks)
     return ((ticks * (uint64_t)TX_TIMER_TICKS_PER_SECOND) / 1000);
 }
 
-uint64_t CPU_MicrosecondsToTicks(uint64_t microseconds)
-{
-    return PLATFORM_MICROSECONDS_TO_TICKS(microseconds);
-}
