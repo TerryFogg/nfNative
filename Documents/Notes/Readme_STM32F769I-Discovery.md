@@ -1,1 +1,0 @@
-TODO add VisualGDB embedded projects for nanobooter and nanoCLR for this board

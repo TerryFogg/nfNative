@@ -1,0 +1,784 @@
+1000d000 t ____aeabi_idiv0_veneer
+1000cff0 t ____aeabi_ldiv0_veneer
+20000618 t ____assert_func_veneer
+1000c860 t __aeabi_bits_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S:38
+1000cdb2 t __aeabi_dfcmple_guts	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:293
+10009148 T __aeabi_double_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_init_rom.c:24
+1000928c T __aeabi_float_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:22
+20000614 W __aeabi_idiv0
+20000614 W __aeabi_ldiv0
+1000cf48 T __aeabi_mem_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S:46
+1000ad2c T __assert_func	c:\sysgcc\arm-eabi\arm-none-eabi\include/assert.h:41
+20000638 t __best_effort_wfe_or_timeout_veneer
+1000d04c r __bi_121.1
+1000d040 r __bi_131.3
+100001e8 t __bi_22	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:22
+100001f4 t __bi_30	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:30
+10000200 t __bi_38	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:38
+1000ecf0 r __bi_44	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:44
+1000020c t __bi_50	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:50
+1000ecfc r __bi_75	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:75
+1000ed08 r __bi_84	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:84
+1000edd8 d __bi_ptr121.5
+1000eddc d __bi_ptr131.4
+1000ede0 d __bi_ptr22	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:22
+1000ede4 d __bi_ptr30	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:30
+1000ede8 d __bi_ptr38	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:38
+1000edec d __bi_ptr44	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:44
+1000edf0 d __bi_ptr50	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:50
+1000edf4 d __bi_ptr75	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:75
+1000edf8 d __bi_ptr84	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:84
+1000edfc D __binary_info_end
+100001e8 T __binary_info_header_end
+1000edd8 D __binary_info_start
+10000100 T __boot2_end__
+10000000 T __boot2_start__
+1000ab68 t __breakpoint	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:268
+20009448 B __bss_end__
+20000750 B __bss_start__
+1000edb8 r __compound_literal.0
+20000750 T __data_end__
+200000c0 T __data_start__	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:29
+100001cc T __default_isrs_end	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001c0 T __default_isrs_start	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:96
+100002c4 t __do_global_dtors_aux
+1000d040 t __EH_FRAME_BEGIN__
+20009448 N __end__
+1000edfc D __etext
+1000edd8 R __exidx_end
+1000edd8 R __exidx_start
+1000f48c N __flash_binary_end
+10000000 T __flash_binary_start
+1000cfd0 t __flash_do_cmd_veneer
+20000748 t __frame_dummy_init_array_entry
+1000d094 r __func__.0
+1000d6a4 r __func__.0
+1000e95c r __func__.0
+1000d0cc r __func__.0
+1000ddc4 r __func__.0
+1000e06c r __func__.0
+1000e328 r __func__.0
+1000d27c r __func__.0
+1000d3d4 r __func__.0
+1000d51c r __func__.0
+1000e8b4 r __func__.0
+1000e5fc r __func__.0
+1000e7c0 r __func__.0
+1000d698 r __func__.1
+1000ddb0 r __func__.1
+1000d268 r __func__.1
+1000dbe4 r __func__.1
+1000eca4 r __func__.1
+1000deec r __func__.1
+1000d7f8 r __func__.1
+1000e48c r __func__.1
+1000d3c4 r __func__.1
+1000d088 r __func__.1
+1000d0bc r __func__.1
+1000e314 r __func__.1
+1000d1b0 r __func__.10
+1000db40 r __func__.10
+1000db34 r __func__.11
+1000db20 r __func__.12
+1000d240 r __func__.2
+1000dda4 r __func__.2
+1000d070 r __func__.2
+1000e304 r __func__.2
+1000d230 r __func__.3
+1000dd90 r __func__.3
+1000d7e0 r __func__.3
+1000dbd0 r __func__.3
+1000d3b4 r __func__.3
+1000d21c r __func__.4
+1000d7c8 r __func__.4
+1000dbc0 r __func__.4
+1000e2ec r __func__.4
+1000e2e0 r __func__.5
+1000d3a4 r __func__.5
+1000d20c r __func__.5
+1000dba8 r __func__.5
+1000d398 r __func__.6
+1000d1f4 r __func__.6
+1000db8c r __func__.6
+1000e2c4 r __func__.6
+1000db7c r __func__.7
+1000d384 r __func__.7
+1000d1e0 r __func__.7
+1000d1c8 r __func__.8
+1000db64 r __func__.8
+1000d1bc r __func__.9
+1000db4c r __func__.9
+10000296 T __get_current_exception	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:331
+20009c48 N __HeapLimit
+20000750 t __init_array_end
+20000748 t __init_array_start
+10000100 T __logical_binary_start
+20000628 t __make_timeout_time_ms_veneer
+20000738 t __mutex_array_end
+20000730 t __mutex_array_start
+1000d030 t __mutex_enter_blocking_veneer
+1000d020 t __mutex_enter_timeout_ms_veneer
+1000cfe0 t __mutex_exit_veneer
+1000d010 t __mutex_try_enter_veneer
+20000748 t __preinit_array_end
+20000738 t __preinit_array_start
+20040000 ? __scratch_x_end__
+1000f48c A __scratch_x_source__
+20040000 ? __scratch_x_start__
+20041000 ? __scratch_y_end__
+1000f48c A __scratch_y_source__
+20041000 ? __scratch_y_start__
+20009441 b __selected_debug_pins	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:48
+20042000 A __stack
+20041800 A __StackBottom
+20040000 B __StackLimit
+20041000 A __StackOneBottom
+20041000 B __StackOneTop
+20042000 B __StackTop
+100001cc T __unhandled_user_irq	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+10000100 T __VECTOR_TABLE
+10000100 T __vectors
+1000cdb0 T __wrap___aeabi_cdcmpeq	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:291
+1000cdb0 T __wrap___aeabi_cdcmple	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:291
+1000cda0 T __wrap___aeabi_cdrcmple	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:274
+1000ce88 T __wrap___aeabi_d2iz	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:464
+1000ced0 T __wrap___aeabi_d2uiz	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:513
+1000cd50 T __wrap___aeabi_dadd	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:171
+1000ce18 T __wrap___aeabi_dcmpge	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:385
+1000ce28 T __wrap___aeabi_dcmpgt	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:398
+1000ce0c T __wrap___aeabi_dcmplt	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:363
+1000ce32 T __wrap___aeabi_dcmpun	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:407
+1000cd5a T __wrap___aeabi_ddiv	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:183
+1000cd8e T __wrap___aeabi_dmul	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:268
+1000cd40 T __wrap___aeabi_drsub	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:147
+1000cd46 T __wrap___aeabi_dsub	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:168
+1000ce58 T __wrap___aeabi_i2d	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:438
+1000c870 T __wrap___aeabi_idiv	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:106
+1000c870 T __wrap___aeabi_idivmod	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:106
+1000c90c T __wrap___aeabi_ldivmod	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:229
+1000cf14 T __wrap___aeabi_lmul	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S:24
+1000cf64 T __wrap___aeabi_memcpy	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S:96
+1000ce50 T __wrap___aeabi_ui2d	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:431
+1000c8c0 T __wrap___aeabi_uidiv	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:170
+1000c8c0 T __wrap___aeabi_uidivmod	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:170
+1000c944 T __wrap___aeabi_uldivmod	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:257
+1000cf64 T __wrap_memcpy	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S:96
+1000cf58 T __wrap_memset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S:89
+1000b1e0 T __wrap_printf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:261
+1000b000 T __wrap_puts	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:153
+1000b17c T __wrap_vprintf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:235
+2000086c b _app_driver	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:246
+20009442 b _app_driver_count	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:247
+1000941a t _atoi	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:190
+20000870 b _cdcd_itf	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:81
+200009c8 b _ctrl_xfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:56
+10003ed4 t _data_stage_xact	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:87
+200009dc b _desc_str	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:113
+10000218 T _entry_point	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:203
+10009cf4 t _etoa	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:467
+1000ad0c T _exit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_runtime/runtime.c:178
+100014e6 t _ff_lock	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:40
+100015ca t _ff_mod	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:94
+100019a4 t _ff_pull	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:234
+100016d4 t _ff_pull_const_addr	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:126
+100019d8 t _ff_pull_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:240
+1000176a t _ff_push	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:150
+10001604 t _ff_push_const_addr	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:103
+1000179e t _ff_push_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:156
+1000150a t _ff_unlock	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:45
+1000cfcc T _fini
+10009860 t _ftoa	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:342
+100043a4 t _hw_endpoint_alloc	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:70
+100042ee t _hw_endpoint_buffer_control_clear_mask32	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:84
+10004bf0 t _hw_endpoint_buffer_control_get_value32	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:75
+10004c06 t _hw_endpoint_buffer_control_set_value32	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:78
+100042d2 t _hw_endpoint_buffer_control_set_value32	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:78
+10004ca4 T _hw_endpoint_buffer_control_update32	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:76
+10004c22 t _hw_endpoint_lock_update	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:41
+10004e38 t _hw_endpoint_start_next_buffer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:142
+10005088 t _hw_endpoint_xfer_sync	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:240
+100002c0 T _init
+100093e8 t _is_digit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:184
+100094fa t _ntoa_format	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:228
+100096a6 t _ntoa_long	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:279
+10009778 t _ntoa_long_long	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:305
+100024d0 t _osal_q_lock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:124
+100024ea t _osal_q_unlock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:130
+1000937c t _out_fct	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:163
+10009360 t _out_null	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:144
+10009460 t _out_rev	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:200
+100081b4 t _pio_add_program_at_offset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:104
+1000814c t _pio_can_add_program_at_offset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:88
+10007c20 t _pio_encode_instr_and_args	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:82
+1000bb1c t _pio_encode_instr_and_args	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:82
+10007c4c t _pio_encode_instr_and_src_dest	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:95
+10008080 t _pio_find_offset_for_program	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:63
+10007c08 t _pio_major_instr_bits	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:78
+10000436 t _prep_out_transaction	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:83
+10000f68 t _prep_out_transaction	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:85
+10000226 t _reset_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:223
+1000b4d4 t _retrieve_unique_id_on_boot	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:14
+10003e44 t _status_stage_xact	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:66
+100093b2 t _strnlen_s	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:175
+10001da0 t _tu_fifo_correct_read_pointer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:396
+10001ce6 t _tu_fifo_count	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:361
+10001d36 t _tu_fifo_empty	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:372
+10001d60 t _tu_fifo_full	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:378
+10001dce t _tu_fifo_peek	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:403
+10001e5a t _tu_fifo_peek_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:427
+10002086 t _tu_fifo_read_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:498
+10001f24 t _tu_fifo_remaining	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:454
+10001f5e t _tu_fifo_write_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:459
+20000a1c b _ubsd_mutexdef	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:281
+20000a24 b _usbd_ctrl_buf	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:59
+20000a64 b _usbd_dev	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:84
+1000d0f4 r _usbd_driver	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:96
+20009443 b _usbd_initialized	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:272
+20000ab8 b _usbd_mutex	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:282
+20000abc b _usbd_q	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:277
+20000648 T _usbd_qdef	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:276
+20000ac0 B _usbd_qdef_buf	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:276
+20000b80 b _used_instruction_space	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:61
+20000b88 b _vendord_itf	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:62
+1000a288 t _vsnprintf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:581
+1000577e t absolute_time_diff_us	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:154
+100057be t add_alarm_at	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:526
+10005d38 t add_alarm_under_lock	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:97
+10007410 t add_thumb_bit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:24
+10001be2 t advance_pointer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:321
+20000710 T aeabi_bits_funcs
+20000720 T aeabi_bits_funcs_end
+20000720 T aeabi_mem_funcs
+20000730 T aeabi_mem_funcs_end
+20004c54 b alarm_callbacks	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:14
+100062d8 T alarm_pool_add_alarm_at	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:214
+10005e60 t alarm_pool_alarm_callback	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:122
+1000646c T alarm_pool_cancel_alarm	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:261
+10005d08 T alarm_pool_get_default	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:91
+10005cbc T alarm_pool_init_default	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:77
+10006274 t alarm_pool_post_alloc_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:187
+10001c54 t backward_pointer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:338
+10006614 T best_effort_wfe_or_timeout	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:396
+100001d4 t binary_info_header
+00000004 a BITS_FUNC_COUNT
+1000039c T board_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c:118
+20004c64 b boot2_copyout	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:31
+20009444 b boot2_copyout_valid	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:32
+10000244 t bss_fill_loop	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:249
+10000246 t bss_fill_test	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:251
+100057f2 t cancel_alarm	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:588
+1000b73c T cdc_task	C:\repos\nfNative\Tools\PicoProbe/Local/src/cdc_uart.c:39
+1000b710 T cdc_uart_init	C:\repos\nfNative\Tools\PicoProbe/Local/src/cdc_uart.c:32
+10000ae8 T cdcd_control_xfer_cb	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:336
+10000760 T cdcd_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:224
+100008e8 T cdcd_open	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:270
+10000870 T cdcd_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:255
+10000d1c T cdcd_xfer_cb	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:418
+100072bc t check_gpio_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:171
+1000872c t check_hardware_alarm_num_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:53
+100073ea t check_irq_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:125
+10007cd6 t check_pio_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:118
+1000bb76 t check_pio_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:118
+1000bb66 t check_sm_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:109
+10007cc6 t check_sm_param	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:109
+20004d64 b claimed	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.c:12
+20009445 b claimed	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:19
+10006e6c T clock_configure	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:42
+10007228 T clock_get_hz	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:208
+100070e0 T clocks_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:121
+00000004 a CLZ32
+20000850 b completed.1
+100027a8 t configuration_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:447
+20004d68 b configured_freq	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:21
+100023f8 t critical_section_enter_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:61
+1000243e t critical_section_exit	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:70
+10005402 T critical_section_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/critical_section.c:13
+10005428 T critical_section_init_with_lock_num	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/critical_section.c:17
+1000ed14 r crlf_str.3
+00000008 a CTZ32
+1000025e t data_cpy	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:278
+1000025a t data_cpy_loop	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:275
+10000264 t data_cpy_table	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:280
+1000495c W dcd_connect	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:404
+10004b04 T dcd_edpt_clear_stall	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:465
+10004a2c T dcd_edpt_close_all	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:433
+100049cc T dcd_edpt_open	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:426
+10004aa0 T dcd_edpt_stall	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:448
+10004a44 T dcd_edpt_xfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:441
+1000497c W dcd_edpt0_status_complete	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:414
+1000364a T dcd_event_bus_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1143
+100035f4 T dcd_event_bus_signal	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1137
+100034c8 T dcd_event_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1087
+100036a6 T dcd_event_setup_received	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1150
+10003700 T dcd_event_xfer_complete	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1158
+10004834 T dcd_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:331
+100048d4 T dcd_int_enable	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:368
+10004734 t dcd_rp2040_irq	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:230
+10004914 T dcd_set_address	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:380
+1000cd8e t ddiv_dsub_nan_helper	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:268
+1000cd70 t ddiv_save_state	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:203
+1000cd66 t ddiv_shim_call	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:199
+20000684 t default_alarm_pool	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:43
+20000750 b default_alarm_pool_entries	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:39
+20004d90 b default_alarm_pool_entry_ids_high	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:40
+20000674 t default_alarm_pool_heap	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:38
+20004da0 b default_alarm_pool_heap_nodes	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:38
+10005b5c t default_alarm_pool_initialized	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:49
+1000550c t delayed_by_ms	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:112
+1000570c t delayed_by_us	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:94
+1000ed54 R desc_configuration	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:79
+1000ed40 R desc_device	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:33
+1000c870 T div_s32s32	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:106
+1000c90c T div_s64s64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:229
+1000c8c0 T div_u32u32	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:170
+1000c944 T div_u64u64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:257
+1000c870 T divmod_s32s32	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:106
+1000c8a4 T divmod_s32s32_savestate	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:157
+1000c878 T divmod_s32s32_unsafe	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:121
+1000c90c T divmod_s64s64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:229
+1000c91c t divmod_s64s64_savestate	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:238
+1000c97c T divmod_s64s64_unsafe	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:289
+1000c8c0 T divmod_u32u32	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:170
+1000c8f0 T divmod_u32u32_savestate	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:216
+1000c8c8 T divmod_u32u32_unsafe	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:185
+1000c944 T divmod_u64u64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:257
+1000c954 T divmod_u64u64_savestate	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:266
+1000ca04 T divmod_u64u64_unsafe	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:348
+1000cee0 T double_table_shim_on_use_helper	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S:35
+1000ce88 T double2int_z	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:464
+1000ced0 T double2uint	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.S:513
+20004dd0 b drivers	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:36
+20009448 N end
+2000066c T ep_dir_string	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:36
+1000ad1a T exit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_runtime/runtime.c:216
+20004dd4 b filter	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:37
+2000045c t flash_cs_force	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:114
+200004b8 T flash_do_cmd	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:124
+20000448 t flash_enable_xip_via_boot2	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:43
+1000724c T flash_get_unique_id	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:164
+200003f8 t flash_init_boot2_copyout	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.c:34
+100002ec t frame_dummy
+100054e0 t get_absolute_time	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:61
+100056e0 t get_absolute_time	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:61
+100025cc t get_driver	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:251
+10005b74 t get_entry	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:58
+10005bd0 t get_entry_id_high	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:63
+10001cbe t get_relative_pointer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:355
+100077a8 t get_slot_index	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:191
+100073fc t get_vtable	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:20
+1000ba9a t gpio_clr_mask	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:706
+1000b8dc t gpio_clr_mask	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:706
+100073b4 T gpio_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:246
+1000ba66 t gpio_pull_up	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:213
+1000b8f4 t gpio_put	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:749
+1000bae2 t gpio_set_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:831
+1000b95e t gpio_set_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:831
+1000033c t gpio_set_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:831
+1000baca t gpio_set_dir_in_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:797
+10000324 t gpio_set_dir_in_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:797
+1000b946 t gpio_set_dir_in_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:797
+1000030c t gpio_set_dir_out_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:788
+1000bab2 t gpio_set_dir_out_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:788
+1000b92e t gpio_set_dir_out_masked	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:788
+100072cc T gpio_set_function	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:32
+1000b8c4 t gpio_set_mask	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:697
+1000ba82 t gpio_set_mask	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:697
+10007338 T gpio_set_pulls	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:53
+10008c18 T hardware_alarm_cancel	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:220
+10008760 T hardware_alarm_claim	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:21
+10008800 t hardware_alarm_irq_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:109
+10008920 T hardware_alarm_set_callback	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:144
+10008a54 T hardware_alarm_set_target	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:171
+100087ec t harware_alarm_irq_number	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:105
+10006e3a t has_glitchless_mux	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:31
+00000800 a HeapSize
+1000028e t hold_non_core0_in_bootrom	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:324
+10006c60 T hw_claim_lock	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.c:9
+10006d2e T hw_claim_or_assert	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.c:21
+10006cb0 T hw_claim_unlock	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.c:13
+10006d94 T hw_claim_unused_from_range	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.c:31
+1000430c t hw_data_offset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:88
+10004358 t hw_endpoint_get_by_addr	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:63
+10004328 t hw_endpoint_get_by_num	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:58
+10004470 t hw_endpoint_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:115
+10004c7c T hw_endpoint_reset_transfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:68
+1000458c t hw_endpoint_xfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:169
+100050dc T hw_endpoint_xfer_continue	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:291
+10004f00 T hw_endpoint_xfer_start	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:180
+20004dd8 b hw_endpoints	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:56
+100045c8 t hw_handle_buff_status	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:175
+10006cfc T hw_is_claimed	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.c:17
+100076a8 t insert_branch_and_link	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:157
+10002b0c t invoke_class_control	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:626
+10007a18 T irq_add_tail_to_free_list	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:386
+1000873c t irq_clear	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:281
+10007568 T irq_get_vtable_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:113
+20009446 b irq_hander_chain_free_slot_head	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:93
+200006f4 T irq_handler_chain_first_slot
+200006fe T irq_handler_chain_remove_tail
+200006c4 T irq_handler_chain_slots
+10007bcc T irq_init_priorities	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:417
+100074d4 T irq_is_enabled	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:44
+100077cc T irq_remove_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:270
+100074a4 T irq_set_enabled	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:39
+10007590 T irq_set_exclusive_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:118
+10007504 T irq_set_mask_enabled	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:49
+10007544 t is_shared_irq_raw_handler	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:95
+100001c4 W isr_hardfault	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:98
+100001c0 W isr_invalid	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:96
+100001cc W isr_irq0	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq10	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq11	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq12	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq13	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq14	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq15	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq16	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq17	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq18	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq19	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq2	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq20	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq21	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq22	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq23	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq24	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq25	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq26	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq27	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq28	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq29	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq3	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq30	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq31	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq4	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq5	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq6	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq7	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq8	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001cc W isr_irq9	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:150
+100001c2 W isr_nmi	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:97
+100001c8 W isr_pendsv	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:100
+100001c6 W isr_svcall	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:99
+100001ca W isr_systick	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:101
+1000c990 t l39_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:299
+1000c99c t l40_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:301
+1000c9a4 t l41_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:302
+1000c9d8 t l42_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:335
+1000c9e4 t l43_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:337
+1000c9ee t l44_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:342
+1000c9f6 t l45_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:343
+1000ca02 t l46_1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:345
+1000cb7c t last0	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:588
+1000ccd0 t last1	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:809
+200051d8 b led_count	C:\repos\nfNative\Tools\PicoProbe/Local/src/led.c:34
+1000b998 T led_init	C:\repos\nfNative\Tools\PicoProbe/Local/src/led.c:36
+1000b9fc T led_signal_activity	C:\repos\nfNative\Tools\PicoProbe/Local/src/led.c:53
+1000b9c4 T led_task	C:\repos\nfNative\Tools\PicoProbe/Local/src/led.c:46
+1000545c T lock_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/lock_core.c:9
+1000ba38 T main	C:\repos\nfNative\Tools\PicoProbe/Local/src/main.c:42
+10007634 t make_branch	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:149
+10005c96 t make_public_id	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:73
+10005598 t make_timeout_time_ms	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_time/include/pico/time.h:139
+1000100c t maybe_transmit	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:116
+00000004 a MEM_FUNC_COUNT
+00000004 a MEMCPY
+0000000c a MEMCPY4
+00000000 a MEMSET
+00000008 a MEMSET4
+10009138 t missing_double_func_shim	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_init_rom.c:16
+1000927c t missing_float_func_shim	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:17
+20000264 T mutex_enter_block_until	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:116
+200000c0 T mutex_enter_blocking	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:29
+20000236 T mutex_enter_timeout_ms	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:100
+2000035c T mutex_exit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:161
+100055c2 T mutex_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:10
+20000184 T mutex_try_enter	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:64
+200051dc b next_buffer_ptr	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:53
+00000005 a next_slot_number
+100086b4 T next_striped_spin_lock_num	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.c:31
+20000854 b object.0
+10000f18 t osal_mutex_create	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:81
+1000247c t osal_mutex_create	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:81
+1000041c t osal_mutex_create	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:81
+10002496 t osal_mutex_lock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:87
+100014ac t osal_mutex_lock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:87
+100014cc t osal_mutex_unlock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:92
+100024b6 t osal_mutex_unlock	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:92
+10002504 t osal_queue_create	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:135
+10002528 t osal_queue_receive	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:142
+10002564 t osal_queue_send	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:156
+1000ad78 T panic	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_runtime/runtime.c:265
+10005868 t ph_add_child_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:109
+100066c4 t ph_add_child_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:109
+10006868 T ph_clear	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:27
+10005aa4 t ph_contains_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:234
+10005aec t ph_free_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:245
+10006670 t ph_get_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:103
+10005814 t ph_get_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:103
+10005a14 t ph_insert_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:164
+1000592c t ph_merge_nodes	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:125
+10006788 t ph_merge_nodes	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:125
+100068e0 T ph_merge_two_pass	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:42
+100059aa t ph_new_node	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:143
+10006806 t ph_peek_head	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:179
+10005a90 t ph_peek_head	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:179
+10006836 T ph_post_alloc_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:19
+1000681a t ph_remove_and_free_head	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_util/include/pico/util/pheap.h:212
+10006b0c T ph_remove_and_free_node	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:78
+100069b0 t ph_remove_any_head	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:55
+10006ac8 T ph_remove_head	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.c:72
+1000b4ec T pico_get_unique_board_id	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:26
+1000828c T pio_add_program	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:117
+1000bb48 t pio_encode_jmp	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:161
+10007c80 t pio_encode_jmp	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:161
+10007c9e t pio_encode_set	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:463
+10007e18 t pio_get_default_sm_config	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:385
+1000bdd0 t pio_get_default_sm_config	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:385
+10007ef8 t pio_get_index	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:416
+1000be2c t pio_gpio_init	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:433
+10008012 t pio_sm_clear_fifos	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1186
+10007fa2 t pio_sm_clkdiv_restart	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:622
+1000beac t pio_sm_exec	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:849
+10007fd8 t pio_sm_exec	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:849
+1000bf16 t pio_sm_get	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1017
+1000bff6 t pio_sm_get_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1125
+100083c8 T pio_sm_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:222
+1000bf42 t pio_sm_is_rx_fifo_empty	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1043
+1000bf7a t pio_sm_is_tx_fifo_full	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1071
+1000bee6 t pio_sm_put	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:996
+1000bfb2 t pio_sm_put_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1112
+10007f6c t pio_sm_restart	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:580
+1000c03a t pio_sm_set_clkdiv_int_frac	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:1155
+10007e74 t pio_sm_set_config	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:401
+100082e0 T pio_sm_set_consecutive_pindirs	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.c:205
+10007f24 t pio_sm_set_enabled	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:546
+1000be64 t pio_sm_set_enabled	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:546
+1000024a t platform_entry	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:257
+100084c8 T pll_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pll/pll.c:13
+200051e0 b pools	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:54
+00000000 a POPCOUNT32
+1000eb68 r pow10.0
+10004d4c t prepare_ep_buffer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:107
+20000730 t print_mutex	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:40
+200051f0 b probe	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:68
+1000c16c t probe_assert_reset	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:97
+1000c4f8 T probe_handle_pkt	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:237
+1000c3fc T probe_handle_read	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:186
+1000c45c T probe_handle_write	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:205
+1000c318 T probe_init	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:140
+1000c4b4 T probe_prepare_read_header	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:226
+1000ed38 r probe_program	C:\repos\nfNative\Tools\PicoProbe/Local/include/probe.pio.h:43
+1000c08c t probe_program_get_default_config	C:\repos\nfNative\Tools\PicoProbe/Local/include/probe.pio.h:49
+1000ed18 r probe_program_instructions	C:\repos\nfNative\Tools\PicoProbe/Local/include/probe.pio.h:21
+1000c218 t probe_read_bits	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:115
+1000c298 t probe_read_mode	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:130
+1000c124 T probe_set_swclk_freq	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:89
+1000c6cc T probe_task	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:285
+1000c18c t probe_write_bits	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:103
+1000c2d8 t probe_write_mode	C:\repos\nfNative\Tools\PicoProbe/Local/src/probe.c:135
+10002b44 t process_control_request	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:635
+100032e4 t process_get_descriptor	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:982
+1000306c t process_set_config	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:887
+20000000 ? ram_vector_table	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_runtime/runtime.c:37
+100055f0 T recursive_mutex_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_sync/mutex.c:19
+10007426 t remove_thumb_bit	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:28
+1000ab74 t reset_block	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:70
+10008d90 t reset_block	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:70
+10004b88 t reset_block	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:70
+10008460 t reset_block	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:70
+10004684 t reset_ep0_pid	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:204
+100046c8 t reset_non_control_endpoints	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:216
+1000771c t resolve_branch	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:166
+200091fc b retrieved_id	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:12
+0000000c a REVERSE32
+10009074 T rom_data_lookup	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:19
+10009048 T rom_func_lookup	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:15
+1000909c T rom_funcs_lookup	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:26
+10009112 t rom_table_code	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:82
+10009256 t rom_table_code	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:82
+10009104 t rp2040_rom_version	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:338
+10009248 t rp2040_rom_version	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:338
+10004c34 T rp2040_usb_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:54
+10009344 T running_on_fpga	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_platform/platform.c:21
+1000abdc T runtime_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_runtime/runtime.c:64
+20009204 B sd_table	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_init_rom.c:13
+1000743c t set_raw_irq_handler_and_unlock	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:32
+20009304 V sf_clz_func	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:14
+20009308 B sf_table	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_init_rom.c:13
+00000002 a SIO_DIV_CSR_DIRTY_SHIFT_FOR_CARRY
+00000002 a SIO_DIV_CSR_DIRTY_SHIFT_FOR_CARRY
+00000002 a SIO_DIV_CSR_DIRTY_SHIFT_FOR_CARRY
+00000001 a SIO_DIV_CSR_READY_SHIFT_FOR_CARRY
+00000001 a SIO_DIV_CSR_READY_SHIFT_FOR_CARRY
+00000001 a SIO_DIV_CSR_READY_SHIFT_FOR_CARRY
+20009408 b sleep_notifier	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:41
+10006594 t sleep_until_callback	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:338
+10007778 t slot_diff	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.c:174
+10007ce6 t sm_config_set_clkdiv_int_frac	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:216
+1000bc9c t sm_config_set_clkdiv_int_frac	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:216
+1000bbe8 t sm_config_set_in_pins	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:164
+10007d48 t sm_config_set_in_shift	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:291
+1000bd00 t sm_config_set_in_shift	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:291
+1000bb88 t sm_config_set_out_pins	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:131
+1000bd68 t sm_config_set_out_shift	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:310
+10007db0 t sm_config_set_out_shift	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:310
+1000bbb8 t sm_config_set_set_pins	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:148
+1000bc38 t sm_config_set_sideset	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:192
+1000bc10 t sm_config_set_sideset_pins	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:178
+1000bcd0 t sm_config_set_wrap	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:263
+10007d18 t sm_config_set_wrap	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:263
+100086e4 T spin_lock_claim_unused	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.c:56
+1000866c T spin_locks_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.c:18
+00000800 a StackSize
+1000b13c t stdio_buffered_printer	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:227
+1000b098 T stdio_flush	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:205
+1000ae40 t stdio_out_chars_crlf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:72
+1000ae20 t stdio_out_chars_no_crlf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:68
+1000af34 t stdio_put_string	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:101
+1000b030 T stdio_set_driver_enabled	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:188
+1000b0d0 t stdio_stack_buffer_flush	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:216
+200006a0 T stdio_uart	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:93
+1000b478 T stdio_uart_in_chars	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:85
+1000b3dc T stdio_uart_init_full	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:71
+1000b438 t stdio_uart_out_chars	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:79
+1000adb8 T stdout_serialize_begin	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:42
+1000ae08 T stdout_serialize_end	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.c:57
+200006b4 T string_desc_arr	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:105
+2000069c t striped_spin_lock_num	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.c:11
+1000cf70 T strlen
+10004f94 t sync_ep_buffer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:204
+2000940c b target_hi	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:15
+1000567c t time_reached	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:114
+1000878c T time_us_64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:37
+20009447 b timer_callbacks_pending	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_timer/timer.c:16
+10005c20 T timer_pool_entry_comparator	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/common/pico_time/time.c:68
+10008714 t to_us_since_boot	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_base/include/pico/types.h:44
+10005488 t to_us_since_boot	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_base/include/pico/types.h:44
+10005624 t to_us_since_boot	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_base/include/pico/types.h:44
+10000408 t tu_desc_len	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:538
+100051ce t tu_desc_len	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:538
+1000519a t tu_desc_next	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:527
+100003d4 t tu_desc_next	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:527
+10000ee4 t tu_desc_next	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:527
+100023c4 t tu_desc_next	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:527
+100003f2 t tu_desc_type	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:533
+100051b8 t tu_desc_type	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:533
+100023e2 t tu_desc_type	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:533
+10000f02 t tu_desc_type	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:533
+10005364 T tu_edpt_bind_driver	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/tusb.c:109
+10005160 t tu_edpt_dir	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:508
+1000238a t tu_edpt_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:508
+10003e28 t tu_edpt_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:508
+10004298 t tu_edpt_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:508
+10004b4e t tu_edpt_dir	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:508
+100042b4 t tu_edpt_number	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:514
+100023a6 t tu_edpt_number	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:514
+10004b6a t tu_edpt_number	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:514
+1000517c t tu_edpt_number	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_types.h:514
+10005258 T tu_edpt_validate	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/tusb.c:70
+100022de T tu_fifo_clear	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:808
+10001528 T tu_fifo_config	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:67
+10002100 T tu_fifo_count	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:528
+1000214c T tu_fifo_empty	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:546
+10002198 T tu_fifo_read	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:637
+100021fc T tu_fifo_read_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:668
+10002172 T tu_fifo_remaining	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:582
+10002342 T tu_fifo_set_overwritable	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:832
+10002222 T tu_fifo_write	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:740
+100022b8 T tu_fifo_write_n	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:775
+1000b6a8 t tud_cdc_available	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:189
+1000b696 t tud_cdc_connected	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:169
+1000b804 W tud_cdc_line_coding_cb	C:\repos\nfNative\Tools\PicoProbe/Local/src/cdc_uart.c:66
+10000558 T tud_cdc_n_available	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:138
+100004d0 T tud_cdc_n_connected	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:113
+1000058c T tud_cdc_n_read	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:143
+100005d8 T tud_cdc_n_write	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:166
+1000b66c t tud_cdc_n_write_char	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:159
+10000640 T tud_cdc_n_write_flush	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:180
+1000b6ba t tud_cdc_read	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:199
+1000b6da t tud_cdc_write_char	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:214
+1000b6fc t tud_cdc_write_flush	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:229
+10003e88 T tud_control_status	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:74
+10003f84 T tud_control_xfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:104
+1000c768 T tud_descriptor_configuration_cb	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:94
+1000c758 T tud_descriptor_device_cb	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:54
+1000c784 T tud_descriptor_string_cb	C:\repos\nfNative\Tools\PicoProbe/Local/src/usb_descriptors.c:117
+10002690 T tud_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:405
+1000267c T tud_inited	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:400
+10002640 T tud_mounted	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:365
+1000265c T tud_suspended	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:370
+10002850 T tud_task	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:491
+1000c0d0 t tud_vendor_available	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:89
+10000f34 T tud_vendor_n_available	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:72
+10000fbc T tud_vendor_n_read	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:98
+10001098 T tud_vendor_n_write	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:129
+1000c0e2 t tud_vendor_read	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:94
+1000c102 t tud_vendor_write	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:109
+100051e4 T tusb_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/tusb.c:38
+1000521c T tusb_inited	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/tusb.c:51
+20009424 B uart_char_to_line_feed	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:23
+10008cf4 t uart_get_hw	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:111
+1000b534 t uart_get_hw	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:111
+1000b234 t uart_get_hw	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:111
+1000b210 t uart_get_index	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:100
+1000b510 t uart_get_index	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:100
+10008cd0 t uart_get_index	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:100
+10000378 t uart_get_instance	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:105
+1000b64a t uart_getc	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:389
+1000b3b8 t uart_getc	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:389
+10008e50 T uart_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:39
+20009428 b uart_inst	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c:115
+2000942c b uart_instance	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:12
+1000b574 t uart_is_readable	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:285
+1000b274 t uart_is_readable	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:285
+1000b54e t uart_is_writable	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:264
+1000b24e t uart_is_writable	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:264
+1000b36c t uart_putc	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:347
+1000b34a t uart_putc_raw	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:335
+1000b5f2 t uart_read_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:316
+1000b2f2 t uart_read_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:316
+10008df8 t uart_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:27
+10008ee8 T uart_set_baudrate	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:73
+10008d0e t uart_set_format	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:187
+10008fa4 T uart_set_translate_crlf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:102
+10008e24 t uart_unreset	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/uart.c:32
+1000b59a t uart_write_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:299
+1000b29a t uart_write_blocking	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:299
+1000ca2e t udiv0	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:370
+2000941c b uID	C:\repos\nfNative\Tools\PicoProbe/Local/src/get_serial.c:35
+100001d2 T unhandled_user_irq_num_in_r0	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.S:154
+10008dbc t unreset_block_wait	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:88
+1000aba0 t unreset_block_wait	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:88
+1000848c t unreset_block_wait	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:88
+10004bb4 t unreset_block_wait	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:88
+100054a0 t update_us_since_boot	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_base/include/pico/types.h:59
+1000563c t update_us_since_boot	C:\repos\nfNative\Tools\PicoProbe/../../ExternalRepositories/pico-sdk/src/common/pico_base/include/pico/types.h:59
+20009430 B usb_serial	C:\repos\nfNative\Tools\PicoProbe/Local/src/get_serial.c:32
+1000b840 T usb_serial_init	C:\repos\nfNative\Tools\PicoProbe/Local/src/get_serial.c:37
+10004090 T usbd_control_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:141
+100040ac T usbd_control_set_complete_callback	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:147
+100040c8 T usbd_control_set_request	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:153
+10004100 T usbd_control_xfer_cb	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.c:164
+10003c04 T usbd_edpt_busy	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1343
+100038d4 T usbd_edpt_claim	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1224
+10003d18 T usbd_edpt_clear_stall	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1369
+1000384c T usbd_edpt_open	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1216
+10003a10 T usbd_edpt_release	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1254
+10003c64 T usbd_edpt_stall	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1353
+10003dc8 T usbd_edpt_stalled	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1384
+10003afc T usbd_edpt_xfer	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1279
+10003770 T usbd_open_edpt_pair	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:1174
+1000282c t usbd_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.c:459
+100010ec T vendord_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:145
+10001240 T vendord_open	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:178
+100011d4 T vendord_reset	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:164
+100013d4 T vendord_xfer_cb	C:/repos/nfNative/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:223
+1000ab28 T vfctprintf	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_printf/printf.c:916
+10008fe0 T watchdog_start_tick	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:14
+10009000 T xosc_init	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:27
+1000ca50 t y64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:393
+1000caac t y64_x32	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:440
+1000cbd6 t y64_x48	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:646
+1000cce0 t y64_x64	C:/repos/nfNative/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.S:820

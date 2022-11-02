@@ -415,3 +415,10 @@ healthchecksdb
 /Targets/Azure/STM32H735G_DK_nanoBooter/.visualgdb/CodeDB/STM32H735G_DK_nanoBooter-Debug-VisualGDB
 /Targets/ESP32/.visualgdb/VisualGDBCache/ESP32-Debug-VisualGDB
 /Targets/RIOS/STM32H735G-DK/.visualgdb
+/Targets/Azure/RaspberryPiPico_nanoCLR/.visualgdb
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.uf2
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.size
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.progstat
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.nm
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.lst
+/Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.bin

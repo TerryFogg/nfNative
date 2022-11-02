@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{7c215ecd-5f36-4e74-8f02-7dd3c49162ca}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{a6b9f24f-7613-4dca-80b5-55d37470406c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk">
+      <UniqueIdentifier>{c66f1b2f-5dfa-475f-a04b-317b30f59dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src">
+      <UniqueIdentifier>{59c630d5-0336-4598-b37f-9f96e811267f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards">
+      <UniqueIdentifier>{5b61e29a-920f-4818-91ed-b2d9efaff7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards\include">
+      <UniqueIdentifier>{550086f0-50bf-4ff3-9915-2b7fc3018660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards\include\boards">
+      <UniqueIdentifier>{8314f972-d5df-4092-8ca0-e66df0bd6b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common">
+      <UniqueIdentifier>{48530f29-64bb-4459-9963-1c59cf97b0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common">
+      <UniqueIdentifier>{3e8763c8-223c-4fb5-b82a-d3ed0befa7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq">
+      <UniqueIdentifier>{dc7eca7a-1731-4977-b9a6-9b0ec39b888a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform">
+      <UniqueIdentifier>{9681e294-8ba2-4b3e-a8ab-908579551b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync">
+      <UniqueIdentifier>{08109035-0476-4e09-899b-e1d24032bb92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim">
+      <UniqueIdentifier>{8729597d-145b-4297-aa99-5ac06d510ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdlib">
+      <UniqueIdentifier>{3af098e8-3aa1-4cc2-8d6b-6ca1e36b3a86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio">
+      <UniqueIdentifier>{b16f4439-7708-4a86-afb4-1b16b5819b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync">
+      <UniqueIdentifier>{24902319-8b02-413b-85b2-10092a63bec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time">
+      <UniqueIdentifier>{586a2c00-89c7-489d-b3c1-f3cfb746a07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util">
+      <UniqueIdentifier>{9ce5564c-eb52-4935-8511-6e3a8d99260d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks">
+      <UniqueIdentifier>{844b8425-70e3-4732-a305-12ff18c2ba2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider">
+      <UniqueIdentifier>{5df639b4-35b7-40a6-8e00-cd20b989070b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll">
+      <UniqueIdentifier>{a256f7ac-973b-41f7-b7a7-4793a60cf235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer">
+      <UniqueIdentifier>{ed74d141-30e2-41ae-8805-f9b39d3301a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart">
+      <UniqueIdentifier>{de8891af-113a-404e-b1da-f763bf6a6c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg">
+      <UniqueIdentifier>{1f1d4505-ffd3-4de8-b5e0-c78dd36714bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog">
+      <UniqueIdentifier>{3a0ffef9-ed09-418f-93e8-defad0b9cd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc">
+      <UniqueIdentifier>{93397edb-6c9d-498a-af2a-1dbcabaffd8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom">
+      <UniqueIdentifier>{3e443b55-ae85-4acf-8095-0115c60e24d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_divider">
+      <UniqueIdentifier>{fce7e1b0-7eae-48f6-b04d-7ba2edab58d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double">
+      <UniqueIdentifier>{f0021092-8c66-40cf-aff1-3aa8a4bfe95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float">
+      <UniqueIdentifier>{5e70d32c-a370-47e1-b7fb-08dbee2f78f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc">
+      <UniqueIdentifier>{c4b7fcdd-f3ab-4e6c-ab34-5b5ae7946bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops">
+      <UniqueIdentifier>{21440956-448e-4ea2-bd5f-20d6d7a1509d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf">
+      <UniqueIdentifier>{5f6ded69-d35c-4806-aea0-f1b77b3e75d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime">
+      <UniqueIdentifier>{ff29b2f4-d06f-4b30-8eba-f4396d8d9045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_standard_link">
+      <UniqueIdentifier>{3db8fecb-4842-4c14-be2e-752505c69f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio">
+      <UniqueIdentifier>{4bec84c2-4735-44b3-8e59-f87851ab4a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart">
+      <UniqueIdentifier>{40beb16b-0fce-452f-bb94-b4db5f25f6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2">
+      <UniqueIdentifier>{bc51eb62-cfac-4187-8bbb-bfbd237fc4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include">
+      <UniqueIdentifier>{deec58d0-dc4f-4947-b48c-1e7c2d715cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2">
+      <UniqueIdentifier>{e7f9e792-878f-4320-bd15-e20114203cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\asminclude">
+      <UniqueIdentifier>{bab9c55b-8c14-4a5f-bcc2-717fb06df86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\asminclude\boot2_helpers">
+      <UniqueIdentifier>{a7cf86be-48b1-42dc-bf3f-1e037fc448e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim\include">
+      <UniqueIdentifier>{44d978a9-7e94-4659-9d38-0bcc3e11fe00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim\include\hardware">
+      <UniqueIdentifier>{95daba5a-12c7-43c6-ad47-7c71236c04af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks\include">
+      <UniqueIdentifier>{ecfd68a2-bee5-4760-9029-83c928960d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks\include\hardware">
+      <UniqueIdentifier>{7f28b478-4575-47db-831a-5b441f336ede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider\include">
+      <UniqueIdentifier>{be15e33c-12bf-489a-ab5f-96af873daa0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider\include\hardware">
+      <UniqueIdentifier>{11401fe8-b001-4223-96ab-3b70daca3466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio\include">
+      <UniqueIdentifier>{c2c6d792-7734-4733-91a1-226b8b540f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio\include\hardware">
+      <UniqueIdentifier>{911cf620-f55e-4cf3-93b4-3e05d73b2e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq\hardware">
+      <UniqueIdentifier>{91eadc40-41c2-4cf8-80ca-f519be913ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq\hardware\hadware">
+      <UniqueIdentifier>{095274e6-ccc1-49d8-a1f7-583671b90e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll\include">
+      <UniqueIdentifier>{82f2084f-381f-40d1-9953-083d1aba3581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll\include\hardware">
+      <UniqueIdentifier>{823a9a26-e066-4155-b46a-5365d9362049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync\include">
+      <UniqueIdentifier>{c81cfe84-69de-4d9b-bbf8-210c506f04ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync\include\hardware">
+      <UniqueIdentifier>{8b40d5dc-74dd-466a-968d-38c757d4fe52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer\include">
+      <UniqueIdentifier>{6988719d-0c36-4444-b1f0-4e04f637042b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer\include\hardware">
+      <UniqueIdentifier>{713c7ab3-c548-48b6-b51c-61da8c85d6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart\include">
+      <UniqueIdentifier>{c878beb8-58c3-44a3-8671-6c69b2e034a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart\include\hardware">
+      <UniqueIdentifier>{292024ac-ff1b-4dae-bdb3-61868c1a26ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg\include">
+      <UniqueIdentifier>{73fd5c5b-b2e6-413e-a131-5dfa9024eaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg\include\hardware">
+      <UniqueIdentifier>{42f44c96-39d3-4078-a34b-4f49a685847a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog\include">
+      <UniqueIdentifier>{e74d3761-ac9a-4deb-a3ab-0a5c2ec53a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware">
+      <UniqueIdentifier>{6dbd218b-8329-4234-b79b-4e66c688fd26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc\include">
+      <UniqueIdentifier>{cfbd5ba4-37d3-49ca-9eb9-f6808d2b96a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc\include\hardware">
+      <UniqueIdentifier>{4a8e61bf-0b13-44fd-8dcf-0b02861c70ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include">
+      <UniqueIdentifier>{882bfcfd-d4f8-4d5b-8451-401550d3827f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include\pico">
+      <UniqueIdentifier>{498e7b71-8563-4fd7-8fef-1023129c351b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom">
+      <UniqueIdentifier>{544e13f6-387a-4a33-af8b-6a2225ca245c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double\include">
+      <UniqueIdentifier>{edb3506f-d313-48ec-a512-a6f18b227c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double\include\pico">
+      <UniqueIdentifier>{b4b5729c-b4e5-4297-8c39-b26d6788c130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\include">
+      <UniqueIdentifier>{feb34e8b-f1a6-4898-93b0-d0f0ef900a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\include\pico">
+      <UniqueIdentifier>{0c8417ab-89e0-49a7-9e6d-91611d64bc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc\include">
+      <UniqueIdentifier>{ef795db7-8bb7-4e0e-9cb8-f33e056ff3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc\include\pico">
+      <UniqueIdentifier>{59647706-b18d-4a49-8a1a-afbf8f8e0d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform\include">
+      <UniqueIdentifier>{833c5695-ec13-4291-b97c-a8b9814ad533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform\include\pico">
+      <UniqueIdentifier>{4ae10ddc-b2fa-4ab0-a46a-b4c87ddb4562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf\include">
+      <UniqueIdentifier>{65593e5c-f653-4405-83e9-1b67bd48df60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf\include\pico">
+      <UniqueIdentifier>{9ee184dd-f9b9-457a-848f-0920d2cd0140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime\include">
+      <UniqueIdentifier>{05b97b69-959f-4157-8afb-860d1c92a3c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime\include\pico">
+      <UniqueIdentifier>{1bea5c78-885e-4641-9229-c96d0b6bfa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include">
+      <UniqueIdentifier>{64ffe3af-5892-4f97-a99f-5d5149905441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico">
+      <UniqueIdentifier>{ec71e070-d227-406c-8888-61a0a5003c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver">
+      <UniqueIdentifier>{fac7f483-a361-4ecc-8815-4ee29c3360dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart\include">
+      <UniqueIdentifier>{668be697-93bd-4608-a403-ecdb67b24024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico">
+      <UniqueIdentifier>{1defbf72-9358-4770-bb3c-80555dd2cf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base">
+      <UniqueIdentifier>{5046124c-c4e6-4827-ac91-b3b4e1c2f5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base\include">
+      <UniqueIdentifier>{0740aa26-0eb9-4c8f-893b-9813bdcd1169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base\include\hardware">
+      <UniqueIdentifier>{8e270335-dcfe-4cf4-8fd4-b15021babc4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma">
+      <UniqueIdentifier>{d80cb1b1-e8aa-4faa-bcec-6073e030e36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma\include">
+      <UniqueIdentifier>{df571e81-4c59-4be2-aeb9-6f4ad00bc58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma\include\hardware">
+      <UniqueIdentifier>{e9971d95-f9c1-4cfb-963b-2de89bd9e3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops\include">
+      <UniqueIdentifier>{069d3933-2425-4844-87f8-57ad86183d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops\include\hardware">
+      <UniqueIdentifier>{eeb8f984-1a6f-4a96-ae1c-2c432ffbe587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot">
+      <UniqueIdentifier>{49ef972e-d93b-4b13-931b-7177f3296582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot\include">
+      <UniqueIdentifier>{a4fe36db-e728-40a6-bac6-fdf68b27df1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot\include\boot">
+      <UniqueIdentifier>{5cae06f8-43de-40bf-b65c-aceca7533d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider">
+      <UniqueIdentifier>{3c06322d-4631-410e-96f1-969b7bf04680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider\include">
+      <UniqueIdentifier>{21188f10-47c2-428d-9ffd-78728c4b30bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider\include\pico">
+      <UniqueIdentifier>{89df5a5a-b4e6-4295-88dc-9ba62d34de96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib">
+      <UniqueIdentifier>{aba2cb77-2699-4872-b01a-e7cc184a7d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib\include">
+      <UniqueIdentifier>{962707fd-51b1-4677-8df0-ed3d235eb951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib\include\pico">
+      <UniqueIdentifier>{24693ff4-ffc8-4b6d-976f-1c2411d93bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops">
+      <UniqueIdentifier>{7018a634-9ffa-467d-a34e-cfddc2227ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops\include">
+      <UniqueIdentifier>{80137161-7587-4891-8533-0b4e192a268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops\include\pico">
+      <UniqueIdentifier>{74bb5f02-9568-4b6e-b72d-451541fd4e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info">
+      <UniqueIdentifier>{e99a8027-7ed5-41e9-9318-57cd6d20a7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include">
+      <UniqueIdentifier>{bdf2f37f-b04d-4332-aea6-17220a833ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include\pico">
+      <UniqueIdentifier>{5464f9ed-d80e-4a72-8654-3467eb8b9dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info">
+      <UniqueIdentifier>{8d91cc21-4e9e-4043-ae29-712ecdc21e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base">
+      <UniqueIdentifier>{d41e5f85-5862-4fc0-8cef-6c91c6070399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base\include">
+      <UniqueIdentifier>{b87428b3-72a0-47b7-92c3-6e835e4cae4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base\include\pico">
+      <UniqueIdentifier>{45e489c9-bd8e-4f6c-8cef-e1a5e2d6216a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync\include">
+      <UniqueIdentifier>{5ab28b72-ba0c-4a71-a8eb-10daced3e4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync\include\pico">
+      <UniqueIdentifier>{838e063a-8d46-4be8-be26-7b250e8c67c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include">
+      <UniqueIdentifier>{687c9fb8-ef85-4752-b77f-68f7f213be44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include\pico">
+      <UniqueIdentifier>{3d24b03e-4259-4bcc-b01a-841efc8ee4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include\pico\util">
+      <UniqueIdentifier>{ac4365b6-5f15-4f45-9ea9-25462fa2b332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time\include">
+      <UniqueIdentifier>{f638c8e0-1504-40d7-9899-2a83b1a918fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time\include\pico">
+      <UniqueIdentifier>{66a2140f-9aab-4944-a201-33ba05c1258a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops">
+      <UniqueIdentifier>{b037d493-496a-4853-86d8-ec97b0d101b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include">
+      <UniqueIdentifier>{9a940b16-c569-4b85-9f5c-f72fcfb2f589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include\pico">
+      <UniqueIdentifier>{528e44a0-6f42-4b63-b400-d22530d035b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis">
+      <UniqueIdentifier>{2beb6fe1-e5d0-4361-b250-cd410b2e9e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis\include">
+      <UniqueIdentifier>{ce20fb1d-59dc-4e9e-aa01-afe445fdba05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis\include\cmsis">
+      <UniqueIdentifier>{72abbe12-7038-4cd5-9b5e-75114fc55615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local">
+      <UniqueIdentifier>{2a80e063-417a-43ca-aae0-a10349419333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\include">
+      <UniqueIdentifier>{7b4004d3-f48e-450c-8661-cc6f5be99366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\include\pico">
+      <UniqueIdentifier>{3fbc6d4a-6954-4972-b101-f6a42f5e9a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Build">
+      <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_unique_id">
+      <UniqueIdentifier>{0c95e043-b81f-42c1-9398-593810d8794d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_unique_id\include">
+      <UniqueIdentifier>{a0cc0142-a984-46cf-9929-731c01e70ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_unique_id\include\pico">
+      <UniqueIdentifier>{82b6ca41-16e6-4eda-9fbb-2534b5beca20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_flash">
+      <UniqueIdentifier>{dfd285aa-2b61-48bd-9789-a8d21c70cb2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_flash\include">
+      <UniqueIdentifier>{21cc01a3-55a6-41f0-aadf-f3f119b4d905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_flash\include\hardware">
+      <UniqueIdentifier>{6f5923c5-cd39-43f7-ac39-28daf9dde1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib">
+      <UniqueIdentifier>{5d7611a3-0f82-4762-915c-f3fb35eb792d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb">
+      <UniqueIdentifier>{6dbb9065-bf1f-4077-b68f-e20ed2d568c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src">
+      <UniqueIdentifier>{364fd82c-300b-4347-941f-ff1d6655a950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\hw">
+      <UniqueIdentifier>{8d3a2230-39ba-492d-8d27-83ecb33ddde1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\hw\bsp">
+      <UniqueIdentifier>{b32e8c3b-5e2e-411f-b895-9ef973557383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pio">
+      <UniqueIdentifier>{cb6417b4-caac-401c-bed8-bd2369ce501e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bit_ops">
+      <UniqueIdentifier>{d7f03232-dff9-4f6e-b4d0-297d4c0b1e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pio\include">
+      <UniqueIdentifier>{c5886b93-dfc5-41eb-a86f-7899410c7d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pio\include\hardware">
+      <UniqueIdentifier>{a4d275d9-5363-4279-be4a-0bd2ba56e3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\device">
+      <UniqueIdentifier>{fece6e1c-8a16-465e-8cbd-6a03a3d95a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\common">
+      <UniqueIdentifier>{5c1ef67b-65bb-41fa-9b86-a05cb1b95e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\osal">
+      <UniqueIdentifier>{30bd097d-4573-4e7e-82ca-9f0325e8daa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\class">
+      <UniqueIdentifier>{123c24ec-6f4b-4a4b-8eb5-db8aa5c0d0f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\class\cdc">
+      <UniqueIdentifier>{973dc7be-302c-469a-a29e-2c5e4a82ee4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\class\vendor">
+      <UniqueIdentifier>{c5f1cd78-ce56-4e1d-bdb8-688b32420f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\portable">
+      <UniqueIdentifier>{36a12ff9-2694-4276-a254-66aa787ea375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\portable\raspberrypi">
+      <UniqueIdentifier>{528419e3-5e6a-4105-843d-c7741e9c946c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040">
+      <UniqueIdentifier>{b20faffc-75aa-48a1-95c6-331811b2b398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\lib\tinyusb\hw\bsp\rp2040">
+      <UniqueIdentifier>{ad2c99e6-8ba6-472e-b37d-b1949308f4cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\src">
+      <UniqueIdentifier>{cb4abfff-e95e-405d-b6e2-840a5e58321d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\critical_section.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\lock_core.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\mutex.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\sem.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_time\time.c">
+      <Filter>External\pico-sdk\src\common\pico_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_time\timeout_helper.c">
+      <Filter>External\pico-sdk\src\common\pico_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\datetime.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\pheap.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\queue.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\clocks.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_clocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\divider.S">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_divider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\gpio.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\pll.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\sync.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\timer.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\uart.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\vreg.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_vreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_watchdog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\xosc.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_xosc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bit_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_divider\divider.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_divider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_init_rom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_math.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_init_rom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_math.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_mem_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\platform.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\printf.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_printf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\runtime.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\claim.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_claim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="bs2_default_padded_checksummed.s">
+      <Filter>Local</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_unique_id</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_flash\flash.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\class\cdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd_control.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\class\vendor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\pio.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\hw\bsp\rp2040\family.c">
+      <Filter>External\pico-sdk\lib\tinyusb\hw\bsp\rp2040</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\cdc_uart.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\get_serial.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\led.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\main.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\probe.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\src\usb_descriptors.c">
+      <Filter>Local\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PostBuild.bat">
+      <Filter>Local</Filter>
+    </None>
+    <None Include="Local\ELF2UF2.exe">
+      <Filter>Local</Filter>
+    </None>
+    <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="Local\Build\PicoProbe.elf">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\PicoProbe.lst">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\PicoProbe.nm">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\PicoProbe.size">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\PicoProbe.uf2">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\src\probe.pio">
+      <Filter>Local\src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2\config.h">
+      <Filter>External\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_clocks\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\include\hardware\divider.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_divider\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_gpio\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\include\hardware\irq.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq\hardware\hadware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\include\hardware\pll.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pll\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\include\hardware\sync.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_sync\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\include\hardware\timer.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_timer\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_uart\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\include\hardware\vreg.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_vreg\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware\watchdog.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\include\hardware\xosc.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_xosc\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom\sf_table.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\include\pico\double.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\include\pico\float.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\include\pico\int64_ops.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\include\pico\malloc.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_malloc\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\include\pico\platform.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_platform\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\include\pico\printf.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_printf\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include\pico\runtime.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_runtime\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_base\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\include\hardware\dma.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_dma\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\include\hardware\claim.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_claim\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\include\pico\mem_ops.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_mem_ops\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\boot_picoboot\include\boot\picoboot.h">
+      <Filter>External\pico-sdk\src\common\boot_picoboot\include\boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\assert.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\config.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\error.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\types.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\defs.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\structure.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_bit_ops\include\pico\bit_ops.h">
+      <Filter>External\pico-sdk\src\common\pico_bit_ops\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_divider\include\pico\divider.h">
+      <Filter>External\pico-sdk\src\common\pico_divider\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_stdlib\include\pico\stdlib.h">
+      <Filter>External\pico-sdk\src\common\pico_stdlib\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\critical_section.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\lock_core.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\mutex.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\sem.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\sync.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\datetime.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\pheap.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\queue.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_util\doc.h">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\time.h">
+      <Filter>External\pico-sdk\src\common\pico_time\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\timeout_helper.h">
+      <Filter>External\pico-sdk\src\common\pico_time\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h">
+      <Filter>External\pico-sdk\src\rp2_common\cmsis\include\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\include\pico\version.h">
+      <Filter>Local\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\include\pico\config_autogen.h">
+      <Filter>Local\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\include\pico\unique_id.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_unique_id\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_flash\include\hardware\flash.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_flash\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb_option.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\hw\bsp\board.h">
+      <Filter>External\pico-sdk\lib\tinyusb\hw\bsp</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\include\probe.pio.h">
+      <Filter>Local\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\include\hardware\pio.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pio\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\include\hardware\pio_instructions.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pio\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\dcd.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd_pvt.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\osal\osal.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\class\cdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\class\vendor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExternalRepositories\pico-sdk\src\boards\include\boards\seeed_xiao_rp2040.h">
+      <Filter>External\pico-sdk\src\boards\include\boards</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\cdc_uart.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\get_serial.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\led.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\picoprobe_config.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\probe.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\src\tusb_config.h">
+      <Filter>Local\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="memmap_default.ld" />
+  </ItemGroup>
+</Project>

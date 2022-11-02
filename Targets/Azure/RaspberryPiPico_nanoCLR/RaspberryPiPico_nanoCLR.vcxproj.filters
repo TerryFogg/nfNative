@@ -1,0 +1,3022 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{7c215ecd-5f36-4e74-8f02-7dd3c49162ca}</UniqueIdentifier>
+      <Extensions>vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{a6b9f24f-7613-4dca-80b5-55d37470406c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS">
+      <UniqueIdentifier>{b7eaa0b3-0860-4e42-80f8-36b920000135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter">
+      <UniqueIdentifier>{5729b9de-50ba-492c-baa4-40eabeea1639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk">
+      <UniqueIdentifier>{c66f1b2f-5dfa-475f-a04b-317b30f59dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src">
+      <UniqueIdentifier>{59c630d5-0336-4598-b37f-9f96e811267f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards">
+      <UniqueIdentifier>{5b61e29a-920f-4818-91ed-b2d9efaff7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards\include">
+      <UniqueIdentifier>{550086f0-50bf-4ff3-9915-2b7fc3018660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\boards\include\boards">
+      <UniqueIdentifier>{8314f972-d5df-4092-8ca0-e66df0bd6b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common">
+      <UniqueIdentifier>{48530f29-64bb-4459-9963-1c59cf97b0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common">
+      <UniqueIdentifier>{3e8763c8-223c-4fb5-b82a-d3ed0befa7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq">
+      <UniqueIdentifier>{dc7eca7a-1731-4977-b9a6-9b0ec39b888a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform">
+      <UniqueIdentifier>{9681e294-8ba2-4b3e-a8ab-908579551b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync">
+      <UniqueIdentifier>{08109035-0476-4e09-899b-e1d24032bb92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim">
+      <UniqueIdentifier>{8729597d-145b-4297-aa99-5ac06d510ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdlib">
+      <UniqueIdentifier>{3af098e8-3aa1-4cc2-8d6b-6ca1e36b3a86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio">
+      <UniqueIdentifier>{b16f4439-7708-4a86-afb4-1b16b5819b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync">
+      <UniqueIdentifier>{24902319-8b02-413b-85b2-10092a63bec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time">
+      <UniqueIdentifier>{586a2c00-89c7-489d-b3c1-f3cfb746a07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util">
+      <UniqueIdentifier>{9ce5564c-eb52-4935-8511-6e3a8d99260d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks">
+      <UniqueIdentifier>{844b8425-70e3-4732-a305-12ff18c2ba2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider">
+      <UniqueIdentifier>{5df639b4-35b7-40a6-8e00-cd20b989070b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll">
+      <UniqueIdentifier>{a256f7ac-973b-41f7-b7a7-4793a60cf235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer">
+      <UniqueIdentifier>{ed74d141-30e2-41ae-8805-f9b39d3301a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart">
+      <UniqueIdentifier>{de8891af-113a-404e-b1da-f763bf6a6c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg">
+      <UniqueIdentifier>{1f1d4505-ffd3-4de8-b5e0-c78dd36714bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog">
+      <UniqueIdentifier>{3a0ffef9-ed09-418f-93e8-defad0b9cd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc">
+      <UniqueIdentifier>{93397edb-6c9d-498a-af2a-1dbcabaffd8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom">
+      <UniqueIdentifier>{3e443b55-ae85-4acf-8095-0115c60e24d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_divider">
+      <UniqueIdentifier>{fce7e1b0-7eae-48f6-b04d-7ba2edab58d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double">
+      <UniqueIdentifier>{f0021092-8c66-40cf-aff1-3aa8a4bfe95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float">
+      <UniqueIdentifier>{5e70d32c-a370-47e1-b7fb-08dbee2f78f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc">
+      <UniqueIdentifier>{c4b7fcdd-f3ab-4e6c-ab34-5b5ae7946bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops">
+      <UniqueIdentifier>{21440956-448e-4ea2-bd5f-20d6d7a1509d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf">
+      <UniqueIdentifier>{5f6ded69-d35c-4806-aea0-f1b77b3e75d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime">
+      <UniqueIdentifier>{ff29b2f4-d06f-4b30-8eba-f4396d8d9045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_standard_link">
+      <UniqueIdentifier>{3db8fecb-4842-4c14-be2e-752505c69f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio">
+      <UniqueIdentifier>{4bec84c2-4735-44b3-8e59-f87851ab4a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart">
+      <UniqueIdentifier>{40beb16b-0fce-452f-bb94-b4db5f25f6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2">
+      <UniqueIdentifier>{bc51eb62-cfac-4187-8bbb-bfbd237fc4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bit_ops">
+      <UniqueIdentifier>{d7f03232-dff9-4f6e-b4d0-297d4c0b1e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include">
+      <UniqueIdentifier>{deec58d0-dc4f-4947-b48c-1e7c2d715cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2">
+      <UniqueIdentifier>{e7f9e792-878f-4320-bd15-e20114203cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\asminclude">
+      <UniqueIdentifier>{bab9c55b-8c14-4a5f-bcc2-717fb06df86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\boot_stage2\include\asminclude\boot2_helpers">
+      <UniqueIdentifier>{a7cf86be-48b1-42dc-bf3f-1e037fc448e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim\include">
+      <UniqueIdentifier>{44d978a9-7e94-4659-9d38-0bcc3e11fe00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_claim\include\hardware">
+      <UniqueIdentifier>{95daba5a-12c7-43c6-ad47-7c71236c04af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks\include">
+      <UniqueIdentifier>{ecfd68a2-bee5-4760-9029-83c928960d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_clocks\include\hardware">
+      <UniqueIdentifier>{7f28b478-4575-47db-831a-5b441f336ede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider\include">
+      <UniqueIdentifier>{be15e33c-12bf-489a-ab5f-96af873daa0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_divider\include\hardware">
+      <UniqueIdentifier>{11401fe8-b001-4223-96ab-3b70daca3466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio\include">
+      <UniqueIdentifier>{c2c6d792-7734-4733-91a1-226b8b540f9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_gpio\include\hardware">
+      <UniqueIdentifier>{911cf620-f55e-4cf3-93b4-3e05d73b2e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq\hardware">
+      <UniqueIdentifier>{91eadc40-41c2-4cf8-80ca-f519be913ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_irq\hardware\hadware">
+      <UniqueIdentifier>{095274e6-ccc1-49d8-a1f7-583671b90e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll\include">
+      <UniqueIdentifier>{82f2084f-381f-40d1-9953-083d1aba3581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_pll\include\hardware">
+      <UniqueIdentifier>{823a9a26-e066-4155-b46a-5365d9362049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync\include">
+      <UniqueIdentifier>{c81cfe84-69de-4d9b-bbf8-210c506f04ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_sync\include\hardware">
+      <UniqueIdentifier>{8b40d5dc-74dd-466a-968d-38c757d4fe52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer\include">
+      <UniqueIdentifier>{6988719d-0c36-4444-b1f0-4e04f637042b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_timer\include\hardware">
+      <UniqueIdentifier>{713c7ab3-c548-48b6-b51c-61da8c85d6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart\include">
+      <UniqueIdentifier>{c878beb8-58c3-44a3-8671-6c69b2e034a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_uart\include\hardware">
+      <UniqueIdentifier>{292024ac-ff1b-4dae-bdb3-61868c1a26ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg\include">
+      <UniqueIdentifier>{73fd5c5b-b2e6-413e-a131-5dfa9024eaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_vreg\include\hardware">
+      <UniqueIdentifier>{42f44c96-39d3-4078-a34b-4f49a685847a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog\include">
+      <UniqueIdentifier>{e74d3761-ac9a-4deb-a3ab-0a5c2ec53a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware">
+      <UniqueIdentifier>{6dbd218b-8329-4234-b79b-4e66c688fd26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc\include">
+      <UniqueIdentifier>{cfbd5ba4-37d3-49ca-9eb9-f6808d2b96a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_xosc\include\hardware">
+      <UniqueIdentifier>{4a8e61bf-0b13-44fd-8dcf-0b02861c70ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include">
+      <UniqueIdentifier>{882bfcfd-d4f8-4d5b-8451-401550d3827f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include\pico">
+      <UniqueIdentifier>{498e7b71-8563-4fd7-8fef-1023129c351b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom">
+      <UniqueIdentifier>{544e13f6-387a-4a33-af8b-6a2225ca245c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double\include">
+      <UniqueIdentifier>{edb3506f-d313-48ec-a512-a6f18b227c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_double\include\pico">
+      <UniqueIdentifier>{b4b5729c-b4e5-4297-8c39-b26d6788c130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\include">
+      <UniqueIdentifier>{feb34e8b-f1a6-4898-93b0-d0f0ef900a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\include\pico">
+      <UniqueIdentifier>{0c8417ab-89e0-49a7-9e6d-91611d64bc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc\include">
+      <UniqueIdentifier>{ef795db7-8bb7-4e0e-9cb8-f33e056ff3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_malloc\include\pico">
+      <UniqueIdentifier>{59647706-b18d-4a49-8a1a-afbf8f8e0d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform\include">
+      <UniqueIdentifier>{833c5695-ec13-4291-b97c-a8b9814ad533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_platform\include\pico">
+      <UniqueIdentifier>{4ae10ddc-b2fa-4ab0-a46a-b4c87ddb4562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf\include">
+      <UniqueIdentifier>{65593e5c-f653-4405-83e9-1b67bd48df60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_printf\include\pico">
+      <UniqueIdentifier>{9ee184dd-f9b9-457a-848f-0920d2cd0140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime\include">
+      <UniqueIdentifier>{05b97b69-959f-4157-8afb-860d1c92a3c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime\include\pico">
+      <UniqueIdentifier>{1bea5c78-885e-4641-9229-c96d0b6bfa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include">
+      <UniqueIdentifier>{64ffe3af-5892-4f97-a99f-5d5149905441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico">
+      <UniqueIdentifier>{ec71e070-d227-406c-8888-61a0a5003c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver">
+      <UniqueIdentifier>{fac7f483-a361-4ecc-8815-4ee29c3360dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart\include">
+      <UniqueIdentifier>{668be697-93bd-4608-a403-ecdb67b24024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico">
+      <UniqueIdentifier>{1defbf72-9358-4770-bb3c-80555dd2cf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base">
+      <UniqueIdentifier>{5046124c-c4e6-4827-ac91-b3b4e1c2f5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base\include">
+      <UniqueIdentifier>{0740aa26-0eb9-4c8f-893b-9813bdcd1169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_base\include\hardware">
+      <UniqueIdentifier>{8e270335-dcfe-4cf4-8fd4-b15021babc4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma">
+      <UniqueIdentifier>{d80cb1b1-e8aa-4faa-bcec-6073e030e36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma\include">
+      <UniqueIdentifier>{df571e81-4c59-4be2-aeb9-6f4ad00bc58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\hardware_dma\include\hardware">
+      <UniqueIdentifier>{e9971d95-f9c1-4cfb-963b-2de89bd9e3dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops\include">
+      <UniqueIdentifier>{069d3933-2425-4844-87f8-57ad86183d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_mem_ops\include\hardware">
+      <UniqueIdentifier>{eeb8f984-1a6f-4a96-ae1c-2c432ffbe587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot">
+      <UniqueIdentifier>{49ef972e-d93b-4b13-931b-7177f3296582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot\include">
+      <UniqueIdentifier>{a4fe36db-e728-40a6-bac6-fdf68b27df1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\boot_picoboot\include\boot">
+      <UniqueIdentifier>{5cae06f8-43de-40bf-b65c-aceca7533d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider">
+      <UniqueIdentifier>{3c06322d-4631-410e-96f1-969b7bf04680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider\include">
+      <UniqueIdentifier>{21188f10-47c2-428d-9ffd-78728c4b30bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_divider\include\pico">
+      <UniqueIdentifier>{89df5a5a-b4e6-4295-88dc-9ba62d34de96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib">
+      <UniqueIdentifier>{aba2cb77-2699-4872-b01a-e7cc184a7d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib\include">
+      <UniqueIdentifier>{962707fd-51b1-4677-8df0-ed3d235eb951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_stdlib\include\pico">
+      <UniqueIdentifier>{24693ff4-ffc8-4b6d-976f-1c2411d93bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops">
+      <UniqueIdentifier>{7018a634-9ffa-467d-a34e-cfddc2227ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops\include">
+      <UniqueIdentifier>{80137161-7587-4891-8533-0b4e192a268e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_bit_ops\include\pico">
+      <UniqueIdentifier>{74bb5f02-9568-4b6e-b72d-451541fd4e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info">
+      <UniqueIdentifier>{e99a8027-7ed5-41e9-9318-57cd6d20a7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include">
+      <UniqueIdentifier>{bdf2f37f-b04d-4332-aea6-17220a833ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include\pico">
+      <UniqueIdentifier>{5464f9ed-d80e-4a72-8654-3467eb8b9dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info">
+      <UniqueIdentifier>{8d91cc21-4e9e-4043-ae29-712ecdc21e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base">
+      <UniqueIdentifier>{d41e5f85-5862-4fc0-8cef-6c91c6070399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base\include">
+      <UniqueIdentifier>{b87428b3-72a0-47b7-92c3-6e835e4cae4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_base\include\pico">
+      <UniqueIdentifier>{45e489c9-bd8e-4f6c-8cef-e1a5e2d6216a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync\include">
+      <UniqueIdentifier>{5ab28b72-ba0c-4a71-a8eb-10daced3e4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_sync\include\pico">
+      <UniqueIdentifier>{838e063a-8d46-4be8-be26-7b250e8c67c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include">
+      <UniqueIdentifier>{687c9fb8-ef85-4752-b77f-68f7f213be44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include\pico">
+      <UniqueIdentifier>{3d24b03e-4259-4bcc-b01a-841efc8ee4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_util\include\pico\util">
+      <UniqueIdentifier>{ac4365b6-5f15-4f45-9ea9-25462fa2b332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time\include">
+      <UniqueIdentifier>{f638c8e0-1504-40d7-9899-2a83b1a918fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\common\pico_time\include\pico">
+      <UniqueIdentifier>{66a2140f-9aab-4944-a201-33ba05c1258a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops">
+      <UniqueIdentifier>{b037d493-496a-4853-86d8-ec97b0d101b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include">
+      <UniqueIdentifier>{9a940b16-c569-4b85-9f5c-f72fcfb2f589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include\pico">
+      <UniqueIdentifier>{528e44a0-6f42-4b63-b400-d22530d035b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis">
+      <UniqueIdentifier>{2beb6fe1-e5d0-4361-b250-cd410b2e9e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis\include">
+      <UniqueIdentifier>{ce20fb1d-59dc-4e9e-aa01-afe445fdba05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\cmsis\include\cmsis">
+      <UniqueIdentifier>{72abbe12-7038-4cd5-9b5e-75114fc55615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local">
+      <UniqueIdentifier>{2a80e063-417a-43ca-aae0-a10349419333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Build">
+      <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx">
+      <UniqueIdentifier>{43054f03-2896-4324-bc53-1239d1dc2841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\common">
+      <UniqueIdentifier>{bbe52b90-e3c3-4f0c-b038-eddca35b3410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\common\src">
+      <UniqueIdentifier>{b2158f42-a0b9-4396-8fe8-a0fa1f709f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\common\inc">
+      <UniqueIdentifier>{37653e6f-0a76-46e7-8122-057633ad20c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\ports">
+      <UniqueIdentifier>{66647606-8f23-4789-8ddc-4d003373fedc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\ports\cortex_m0">
+      <UniqueIdentifier>{00911211-226f-417c-941b-1867d5e45d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\ports\cortex_m0\gnu">
+      <UniqueIdentifier>{587c3655-6317-4f76-ba86-f2df726af1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src">
+      <UniqueIdentifier>{8c0bd9bf-356e-4675-be21-9309a139d66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Azure-RTOS\threadx\ports\cortex_m0\gnu\inc">
+      <UniqueIdentifier>{bfe63944-2618-4b3c-a735-e521b185ae86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src">
+      <UniqueIdentifier>{85dae57b-906e-4fbc-b2ca-e1b8ac17f463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR">
+      <UniqueIdentifier>{30f46ef6-b847-4a50-9cf2-275a995d0880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core">
+      <UniqueIdentifier>{56f5b076-a2aa-4411-90ba-5d4781112084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core\Hardware">
+      <UniqueIdentifier>{b090010b-6708-4175-9563-ee761c0046b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core\InterruptHandler">
+      <UniqueIdentifier>{5b4be2e6-fbb7-43a3-900e-60ec0ee983b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core\NativeEventDispatcher">
+      <UniqueIdentifier>{65273c91-338f-4acc-bf23-e7dd37bcbe95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core\RPC">
+      <UniqueIdentifier>{95d68fc7-9a66-456e-baa4-4bca8da87be8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Core\Serialization">
+      <UniqueIdentifier>{606e0a44-1fb2-4a23-b311-5c1b53689ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\CoreLib">
+      <UniqueIdentifier>{19a25953-9d08-4e92-82ac-3cb61d62953c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Diagnostics">
+      <UniqueIdentifier>{9c287df0-70fb-4625-b17c-0e22634b2298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Helpers">
+      <UniqueIdentifier>{89aa541e-b474-4bab-af63-2fc7aa29dd8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Helpers\Base64">
+      <UniqueIdentifier>{c98c9def-81f0-4f11-be53-152d218aeb02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Helpers\nanoprintf">
+      <UniqueIdentifier>{604b0291-18ca-4b76-b5cb-65b69940e44f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Include">
+      <UniqueIdentifier>{2596c93e-285c-44ca-8318-69eef0f67a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Messaging">
+      <UniqueIdentifier>{bcc66d8d-8901-41af-8986-804da673d5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Startup">
+      <UniqueIdentifier>{562c8fa5-b352-4044-90e7-8c870dbd7856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\WireProtocol">
+      <UniqueIdentifier>{e8134595-6951-4f44-b802-cdb5c0c17a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\System.Math">
+      <UniqueIdentifier>{470ea2f2-291d-49c2-a746-47a29b902cba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\CLR\Debugger">
+      <UniqueIdentifier>{bbb40007-ed46-47c4-8fb3-2b277a45227c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\HAL">
+      <UniqueIdentifier>{6a0556d9-21b4-45c8-9ef5-d0e0142a71ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\HAL\Include">
+      <UniqueIdentifier>{ed05a1fb-da17-459a-9e62-8b3ca188c315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics">
+      <UniqueIdentifier>{d1a7c68b-0b27-4198-aa83-63b9dfe394f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics">
+      <UniqueIdentifier>{33e5bf12-2b77-4cad-a1fc-dcb0b108640b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core">
+      <UniqueIdentifier>{f020c6eb-f160-4adb-8701-84ce6414a3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support">
+      <UniqueIdentifier>{b9728bec-5425-41d5-b83c-12444759a4e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp">
+      <UniqueIdentifier>{2c1a3cea-b7f7-4234-af83-c33f57d432b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts">
+      <UniqueIdentifier>{60c519a5-fa02-40a7-b88e-21fb246d7d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif">
+      <UniqueIdentifier>{cfef1973-5708-4839-8793-3a7b36435e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg">
+      <UniqueIdentifier>{4dafe05b-2180-4690-814e-8c22974fee6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays">
+      <UniqueIdentifier>{1f7c12c6-0545-4970-9d83-45d76084ec10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native">
+      <UniqueIdentifier>{56604f0d-a5c5-41b6-b98d-a452d6f8121e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel">
+      <UniqueIdentifier>{7f69590a-a348-4904-9e60-b75ddb66f2d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core">
+      <UniqueIdentifier>{36864c71-7e99-4445-88d3-736922d5f9fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices">
+      <UniqueIdentifier>{3cb43fa6-d813-4195-be3f-994b01dfca5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.ResourceManager">
+      <UniqueIdentifier>{014fe7af-d65a-4c60-b621-9b9ff1caffd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Runtime.Events">
+      <UniqueIdentifier>{b5ab79f6-c339-4500-971f-6d07d4b129da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.Runtime.Native">
+      <UniqueIdentifier>{f851447e-6b8c-4973-bdad-59e117e4f4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.System.Collections">
+      <UniqueIdentifier>{4d996f4b-287c-424c-8b4d-b5a6936d69c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\nanoFramework.System.Text">
+      <UniqueIdentifier>{167f6d15-8718-4660-b787-f02a18ad92a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL">
+      <UniqueIdentifier>{bfa92e53-b213-4309-977d-9e161ca611a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\AsyncProcCall">
+      <UniqueIdentifier>{c4613871-cc4c-4195-a93a-91a575b69a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\BlockStorage">
+      <UniqueIdentifier>{64697438-ba37-4fd7-887b-1d95f3cb79bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\COM">
+      <UniqueIdentifier>{b27920c0-8ae6-45ed-be6d-22fce2a394c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\Double">
+      <UniqueIdentifier>{f386283b-5c8f-4d15-a96f-2eab42c0eac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\Events">
+      <UniqueIdentifier>{3c34beb7-a966-4759-a665-c96bf4736ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\Include">
+      <UniqueIdentifier>{371e410f-a01c-4f07-9d6f-7600292c30ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\PAL\Profiler">
+      <UniqueIdentifier>{93be6df5-6d65-4a00-94be-586475ad39eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\System.Device.Gpio">
+      <UniqueIdentifier>{c2b389c5-05fe-492d-ba31-b9eb6b0dadbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Tools">
+      <UniqueIdentifier>{713119dd-6988-4c0f-9dc7-2d02751b6374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features">
+      <UniqueIdentifier>{be88a385-c4b8-423b-8ec0-9dbdba8b68c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Adaption Layer">
+      <UniqueIdentifier>{ca4f0bc5-9762-4347-a34a-1f71ea44b3ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Audio">
+      <UniqueIdentifier>{e59f5e66-232c-42c2-b8ac-a1382bbc42dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\CAN">
+      <UniqueIdentifier>{f546ea18-e32e-4599-9bda-eb9eed5500c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Clock">
+      <UniqueIdentifier>{ffda2709-47f3-4dab-ad19-ee23c9b88a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Ethernet">
+      <UniqueIdentifier>{b03e1fc8-d8f8-42f9-9246-d93410717fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\MemoryStorage">
+      <UniqueIdentifier>{fe06b8e3-be0b-4642-ab18-0958c22b8844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\USB">
+      <UniqueIdentifier>{5cf710c9-7ca8-4c52-88a9-70d1a118f7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Startup">
+      <UniqueIdentifier>{fff25b60-0162-4ef7-861e-9755775a560c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\WireProtocol">
+      <UniqueIdentifier>{f42adfab-d966-4106-99e7-6fc25c9b9245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\Memory">
+      <UniqueIdentifier>{c8cebbcb-aa9f-411a-9abc-739bc37ac3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\RP2040">
+      <UniqueIdentifier>{430659d3-db94-463b-8b71-1ecbec2d8c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\RP2040\include">
+      <UniqueIdentifier>{7b4004d3-f48e-450c-8661-cc6f5be99366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Local\Features\RP2040\include\pico">
+      <UniqueIdentifier>{3fbc6d4a-6954-4972-b101-f6a42f5e9a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040">
+      <UniqueIdentifier>{e87cc9e4-f2e8-4199-a2ce-a431750299f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_structs">
+      <UniqueIdentifier>{01ae0fbe-f981-41da-b923-5216618c5e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_regs">
+      <UniqueIdentifier>{48511253-3d52-429d-a0b3-9e9a95ce9583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_structs\include">
+      <UniqueIdentifier>{b470caa1-7425-4a73-b92f-e8b4ced31cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_regs\include">
+      <UniqueIdentifier>{b55f4183-4520-4e67-9d81-8e8641481349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_structs\include\hardware">
+      <UniqueIdentifier>{6e7c277e-d4f0-4796-bb0c-1f2927fbab31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_regs\include\hardware">
+      <UniqueIdentifier>{606e0476-91f6-49be-8e32-f8ba41dbe4e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs">
+      <UniqueIdentifier>{b972f86f-9cec-4692-ba67-c2f8de500cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs">
+      <UniqueIdentifier>{c5407e60-998d-41f3-a6b3-28cf594186f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\nf-interpreter\src\System.Device.Spi">
+      <UniqueIdentifier>{949ad584-4528-4835-b938-629723828866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{1f5b4706-d418-4409-bc82-a78d92bbf117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{c6f070c9-5b3e-4b7d-8a5b-479de90d0a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AdaptionLayer">
+      <UniqueIdentifier>{73d0ef6d-37c4-4c18-8283-0fc9871d80ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{94aa3174-cac1-4be3-bebb-bf4ec8af9c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Graphics">
+      <UniqueIdentifier>{a17ef52b-7c7e-4cb5-a80d-bed0d8919d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\IO">
+      <UniqueIdentifier>{04d2ee47-cd52-426d-8def-979211b5b1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Storage">
+      <UniqueIdentifier>{4c188002-b76b-4e0f-8102-8cd266c38451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\critical_section.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\lock_core.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\mutex.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\sem.c">
+      <Filter>External\pico-sdk\src\common\pico_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\time.c">
+      <Filter>External\pico-sdk\src\common\pico_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\timeout_helper.c">
+      <Filter>External\pico-sdk\src\common\pico_time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\datetime.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\pheap.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\queue.c">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\clocks.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_clocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\divider.S">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_divider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\gpio.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\pll.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\sync.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_sync</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\timer.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\uart.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\vreg.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_vreg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_watchdog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\xosc.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_xosc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bit_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_divider\divider.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_divider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_init_rom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_math.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_init_rom.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_math.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_mem_ops</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\platform.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\printf.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_printf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\runtime.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\claim.c">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_claim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp">
+      <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
+    </ClCompile>
+    <ClCompile Include="bs2_default_padded_checksummed.s">
+      <Filter>Local</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_release.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_allocate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_pool_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_byte_release.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_event_flags_set_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_mutex_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_flush.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_front_send.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_receive.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_queue_send_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_ceiling_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_semaphore_put_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_entry_exit_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_preemption_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_priority_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_relinquish.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_reset.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_resume.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_suspend.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_terminate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_time_slice_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_thread_wait_abort.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_activate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_deactivate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_timer_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_allocate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_pool_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_block_release.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_allocate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_pool_search.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_byte_release.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_event_flags_set_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_high_level.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_enter.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_initialize_kernel_setup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_misra.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_priority_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_mutex_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_flush.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_front_send.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_receive.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_queue_send_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_ceiling_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_cleanup.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_prioritize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_semaphore_put_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_entry_exit_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_identify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_preemption_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_priority_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_relinquish.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_reset.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_resume.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_shell_entry.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_sleep.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_analyze.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_handler.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_stack_error_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_suspend.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_preempt_check.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_resume.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_system_suspend.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_terminate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_timeout.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_time_slice_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_thread_wait_abort.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_activate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_change.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_create.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_deactivate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_delete.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_expiration_process.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_performance_system_info_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_activate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_system_deactivate.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_timer_thread_entry.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_get.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_time_set.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_buffer_full_notify.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_disable.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_enable.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_filter.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_event_unfilter.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_initialize.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_interrupt_control.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_enter_insert.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_isr_exit_insert.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_register.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_object_unregister.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\tx_trace_user_event_insert.c">
+      <Filter>External\Azure-RTOS\threadx\common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_context_restore.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_context_save.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_control.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_disable.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_interrupt_restore.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_schedule.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_stack_build.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_system_return.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_timer_interrupt.S">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Cache.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Checks.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_DblLinkedList.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Array.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_ArrayList.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_BinaryBlob.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Delegate_List.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Finalizer.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Lock.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_LockRequest.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Node.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Queue.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Stack.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_String.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_Timer.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapBlock_WaitForObject.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_HeapCluster.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_Interop.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_Memory.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Destination.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_ObjectToEvent_Source.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_RuntimeMemory.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_StackFrame.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_SystemAssembliesTable.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_UnicodeHelper.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Execution.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_Compaction.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_ComputeReachabilityGraph.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\GarbageCollector_Info.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Interpreter.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\nanoSupport_CRC32.c">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Random.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Streams.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\StringTable.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\StringTableData.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Thread.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\TypeSystem.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\TypeSystemLookup.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Various.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Hardware\Hardware.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Hardware\Hardware_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\Hardware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\InterruptHandler\InterruptHandler.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\InterruptHandler\InterruptHandler_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\InterruptHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\NativeEventDispatcher\NativeEventDispatcher.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\NativeEventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\NativeEventDispatcher\NativeEventDispatcher_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\NativeEventDispatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\RPC\CLR_RT_HeapBlock_EndPoint.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\RPC\RPC_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Serialization\BinaryFormatter.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Serialization\BinaryFormatter_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Core\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_AppDomain.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Array.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Attribute.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_BitConverter.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Collections_ArrayList.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Convert.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_DateTime.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Delegate.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debug.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Diagnostics_Debugger.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Double.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Enum.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Exception.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_GC.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_CultureInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Globalization_DateTimeFormat.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Guid.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MarshalByRefObject.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MathInternal.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_MulticastDelegate.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Number.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Object.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Random.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Assembly.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_Binder.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_ConstructorInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_FieldInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MemberInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_MethodBase.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_PropertyInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeFieldInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Reflection_RuntimeMethodInfo.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_RuntimeType.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_CompilerServices_RuntimeHelpers.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Runtime_Remoting_RemotingServices.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_String.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_AutoResetEvent.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Interlocked.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_ManualResetEvent.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Monitor.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_SpinWait.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Thread.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_Timer.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Threading_WaitHandle.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_TimeSpan.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_Type.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_ValueType.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native_System_WeakReference.cpp">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Diagnostics_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Info.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Profile.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Profiler.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64\base64.c">
+      <Filter>External\nf-interpreter\src\CLR\Helpers\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.c">
+      <Filter>External\nf-interpreter\src\CLR\Helpers\nanoprintf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Messaging\Messaging_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup\CLRStartup.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_App_Interface.c">
+      <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_Message.c">
+      <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\WireProtocol\WireProtocol_MonitorCommands.c">
+      <Filter>External\nf-interpreter\src\CLR\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math.cpp">
+      <Filter>External\nf-interpreter\src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math_System_Math.cpp">
+      <Filter>External\nf-interpreter\src\CLR\System.Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger_full.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger_stub.cpp">
+      <Filter>External\nf-interpreter\src\CLR\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Boot.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Capabilites.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_ConfigurationManager.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemEvents.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_SystemInformation.cpp">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Time.cpp">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\nanoHAL_Watchdog.c">
+      <Filter>External\nf-interpreter\src\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsDriver.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp\Bitmap_Decoder.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\Font.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\font8x8.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\Gif.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\GifDecoder.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jbytearraydatasrc.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapimin.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcapistd.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccoefct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jccolor.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcdctmgr.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcinit.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmainct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmarker.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcmaster.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcomapi.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcparam.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcphuff.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcprepct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jcsample.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jctrans.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapimin.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdapistd.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcoefct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdcolor.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jddctmgr.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdinput.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmainct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmarker.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmaster.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdmerge.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdphuff.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdpostct.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdsample.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdtrans.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctflt.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctfst.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jfdctint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctflt.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctfst.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jidctred.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemmgr.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemnanoclr.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\Jpeg.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant1.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jquant2.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jutils.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mfint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\miint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\pfint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\piint.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.c">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Bitmap.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_DisplayControl.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Font.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_nanoFramework_Runtime_Native_ResourceUtility.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager_System_Resources_ResourceManager.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_EventSink.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_NativeEventDispatcher.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native_nanoFramework_Runtime_Events_WeakDelegate.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Hardware_SystemInfo.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_ExecutionConstraint.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_GC.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Power.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_nanoFramework_Runtime_Native_Rtc_stubs.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native_System_Environment.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Hashtable__HashtableEnumerator.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Queue.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections_System_Collections_Stack.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Decoder.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text_System_Text_UTF8Encoding.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\nanoPAL_Network_stubs.cpp">
+      <Filter>External\nf-interpreter\src\PAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncCompletions.cpp">
+      <Filter>External\nf-interpreter\src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncContinuations.cpp">
+      <Filter>External\nf-interpreter\src\PAL\AsyncProcCall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c">
+      <Filter>External\nf-interpreter\src\PAL\BlockStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\COM_stubs.c">
+      <Filter>External\nf-interpreter\src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stubs.c">
+      <Filter>External\nf-interpreter\src\PAL\COM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Double\nanoPAL_NativeDouble.cpp">
+      <Filter>External\nf-interpreter\src\PAL\Double</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events.cpp">
+      <Filter>External\nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_driver.cpp">
+      <Filter>External\nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_functions.cpp">
+      <Filter>External\nf-interpreter\src\PAL\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Profiler\nanoPAL_PerformanceCounters_stubs.cpp">
+      <Filter>External\nf-interpreter\src\PAL\Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.cpp">
+      <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp">
+      <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp">
+      <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Board_PICO.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\nanoCRT.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\nanoHAL.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\platform_heap.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\target_common.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetHAL.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetHAL_ConfigurationManager.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetHAL_Power.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetHAL_Time.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetPAL.c">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetPAL_Events.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\targetPAL_Time.cpp">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Audio.c">
+      <Filter>Local\Features\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\FDCAN.c">
+      <Filter>Local\Features\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\RealTimeClock.c">
+      <Filter>Local\Features\Clock</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Ethernet.c">
+      <Filter>Local\Features\Ethernet</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\MicroSD.c">
+      <Filter>Local\Features\MemoryStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\USB.c">
+      <Filter>Local\Features\USB</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Clock_configuration.c">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\CLR_RT_InteropAssembliesTable.cpp">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\CLR_Startup_Thread.c">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\nanoFramework_Threads.c">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\startup_stm32h735igkx.s">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\tx_initialize_low_level.S">
+      <Filter>Local\Features\Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\WireProtocol_HAL_Interface.c">
+      <Filter>Local\Features\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\WireProtocol_ReceiverThread.c">
+      <Filter>Local\Features\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\wpUSART_Communications.c">
+      <Filter>Local\Features\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Device_BlockStorage.c">
+      <Filter>Local\Features\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Memory.cpp">
+      <Filter>Local\Features\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\platform_BlockStorage.c">
+      <Filter>Local\Features\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\target_BlockStorage.c">
+      <Filter>Local\Features\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Local\Target_BlockStorage_STM32FlashDriver.c">
+      <Filter>Local\Features\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7789_240x240.cpp">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp">
+      <Filter>External\nf-interpreter\src\System.Device.Spi</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\Graphics_Memory.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\Initialize_Graphics.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\Spi_To_Display.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\GPIO.cpp">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="PostBuild.bat">
+      <Filter>Local</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.elf">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.link.rsp">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.lst">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.nm">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.size">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="Local\Build\RaspberryPiPico_nanoCLR.uf2">
+      <Filter>Local\Build</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </None>
+    <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics</Filter>
+    </None>
+    <None Include="Local\Tools\ELF2UF2.exe">
+      <Filter>Local\Tools</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\boards\include\boards\pico.h">
+      <Filter>External\pico-sdk\src\boards\include\boards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2\config.h">
+      <Filter>External\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_clocks\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\include\hardware\divider.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_divider\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_gpio\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\include\hardware\irq.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_irq\hardware\hadware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\include\hardware\pll.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_pll\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\include\hardware\sync.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_sync\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\include\hardware\timer.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_timer\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_uart\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\include\hardware\vreg.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_vreg\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware\watchdog.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_watchdog\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\include\hardware\xosc.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_xosc\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom\sf_table.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\include\pico\double.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_double\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\include\pico\float.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\include\pico\int64_ops.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_float\pico_int64_ops\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\include\pico\malloc.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_malloc\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\include\pico\platform.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_platform\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\include\pico\printf.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_printf\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include\pico\runtime.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_runtime\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_base\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\include\hardware\dma.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_dma\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\include\hardware\claim.h">
+      <Filter>External\pico-sdk\src\rp2_common\hardware_claim\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\include\pico\mem_ops.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_mem_ops\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\boot_picoboot\include\boot\picoboot.h">
+      <Filter>External\pico-sdk\src\common\boot_picoboot\include\boot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\assert.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\config.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\error.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico\types.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\code.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\defs.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info\structure.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico\binary_info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info.h">
+      <Filter>External\pico-sdk\src\common\pico_binary_info\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_bit_ops\include\pico\bit_ops.h">
+      <Filter>External\pico-sdk\src\common\pico_bit_ops\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_divider\include\pico\divider.h">
+      <Filter>External\pico-sdk\src\common\pico_divider\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_stdlib\include\pico\stdlib.h">
+      <Filter>External\pico-sdk\src\common\pico_stdlib\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\critical_section.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\lock_core.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\mutex.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\sem.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\sync.h">
+      <Filter>External\pico-sdk\src\common\pico_sync\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\datetime.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\pheap.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\queue.h">
+      <Filter>External\pico-sdk\src\common\pico_util\include\pico\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\doc.h">
+      <Filter>External\pico-sdk\src\common\pico_util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\time.h">
+      <Filter>External\pico-sdk\src\common\pico_time\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\timeout_helper.h">
+      <Filter>External\pico-sdk\src\common\pico_time\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h">
+      <Filter>External\pico-sdk\src\rp2_common\cmsis\include\cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico.h">
+      <Filter>External\pico-sdk\src\common\pico_base\include</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h" />
+    <ClInclude Include="Local\include\pico\version.h">
+      <Filter>Local\Features\RP2040\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\include\pico\config_autogen.h">
+      <Filter>Local\Features\RP2040\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_block_pool.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_byte_pool.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_event_flags.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_initialize.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_mutex.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_queue.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_semaphore.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_thread.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_timer.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_trace.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_user_sample.h">
+      <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc\tx_port.h">
+      <Filter>External\Azure-RTOS\threadx\ports\cortex_m0\gnu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Core.h">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\corhdr_private.h">
+      <Filter>External\nf-interpreter\src\CLR\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\CorLib.h">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib\corlib_native.h">
+      <Filter>External\nf-interpreter\src\CLR\CoreLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics\Diagnostics.h">
+      <Filter>External\nf-interpreter\src\CLR\Diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64\base64.h">
+      <Filter>External\nf-interpreter\src\CLR\Helpers\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf\nanoprintf.h">
+      <Filter>External\nf-interpreter\src\CLR\Helpers\nanoprintf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Application.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Checks.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Debugging.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ErrorCodes.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Hardware.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Headers.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Interop.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Messaging.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_ParseOptions.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_PlatformDef.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Profiling.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__HeapBlock.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Runtime__Serialization.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Types.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoCLR_Win32.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoPackStruct.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoSupport.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoVersion.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nanoWeak.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\nf_errors_exceptions.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\stdafx.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_App_Interface.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_HAL_Interface.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_Message.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\WireProtocol_MonitorCommands.h">
+      <Filter>External\nf-interpreter\src\CLR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup\CLRStartup.h">
+      <Filter>External\nf-interpreter\src\CLR\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math\nf_native_system_math.h">
+      <Filter>External\nf-interpreter\src\CLR\System.Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger\Debugger.h">
+      <Filter>External\nf-interpreter\src\CLR\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Boot.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Capabilites.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ConfigurationManager.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Graphics.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Network.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Power.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_ReleaseInfo.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Spi.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Time.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Types.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_v2.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Watchdog.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include\nanoHAL_Windows_Storage.h">
+      <Filter>External\nf-interpreter\src\HAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Debug_To_Display.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Graphics.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\GraphicsMemoryHeap.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts\InternalFont.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\gif.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\giffile.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzw.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwread.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif\lzwutil.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jchuff.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jconfig.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdct.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jdhuff.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jerror.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jinclude.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmemsys.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jmorecfg.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpegint.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jpeglib.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\jversion.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\mcbcr.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg\transupp.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\Display.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\DisplayInterface.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events\nf_rt_events_native.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native\nf_rt_native.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.Runtime.Native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections\nf_system_collections.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text\nf_system_text.h">
+      <Filter>External\nf-interpreter\src\nanoFramework.System.Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_GPIO_decl.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\CPU_SPI_decl.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoCRT.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_AsyncProcCalls_decl.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_BlockStorage.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_COM.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Events.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_GPIO.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_NativeDouble.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Network.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_PerformanceCounters.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Sockets.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Time.h">
+      <Filter>External\nf-interpreter\src\PAL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h">
+      <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\Adaption.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\Board_PICO.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\platform_target_capabilities.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\target_board.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\target_common.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\target_os.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\target_platform.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\Target_Windows_Storage.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\targetHAL.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\targetHAL_Power.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\targetHAL_Time.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\targetPAL.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\targetPAL_Time.h">
+      <Filter>Local\Adaption Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\TargetFeatures.h">
+      <Filter>Local\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\MicroSD.h">
+      <Filter>Local\Features\MemoryStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\CLR_Startup_Thread.h">
+      <Filter>Local\Features\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\tx_user.h">
+      <Filter>Local\Features\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\tx_user_nanoCLR.h">
+      <Filter>Local\Features\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\vectors.h">
+      <Filter>Local\Features\Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\WireProtocol_ReceiverThread.h">
+      <Filter>Local\Features\WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\wpUSART_Communications.h">
+      <Filter>Local\Features\WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\target_BlockStorage.h">
+      <Filter>Local\Features\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>Local\Features\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Local\TargetPAL_BlockStorage.h">
+      <Filter>Local\Features\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\platform_defs.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\adc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\addressmap.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\busctrl.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\clocks.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dma.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\dreq.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\i2c.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\intctrl.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\io_bank0.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\io_qspi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\m0plus.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pads_bank0.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pads_qspi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pio.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pll.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\psm.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\pwm.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\resets.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\rosc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\rtc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\sio.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\spi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\ssi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\syscfg.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\sysinfo.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\tbman.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\timer.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\uart.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\usb.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\usb_device_dpram.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\vreg_and_chip_reset.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\watchdog.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\xip.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs\xosc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware\regs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\i2c.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\interp.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\iobank0.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\ioqspi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\mpu.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pads_qspi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\padsbank0.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pio.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pll.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\psm.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\pwm.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\resets.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\rosc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\rtc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\scb.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\sio.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\spi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\ssi.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\syscfg.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\systick.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\timer.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\uart.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\usb.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\vreg_and_chip_reset.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\watchdog.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\xip_ctrl.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\xosc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\adc.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\bus_ctrl.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\clocks.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\dma.h">
+      <Filter>External\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h">
+      <Filter>External\nf-interpreter\src\System.Device.Spi</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h">
+      <Filter>Features\IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="memmap_default.ld" />
+    <LinkerScript Include="Local\STM32H735G-DK.ld">
+      <Filter>Local\Features\Memory</Filter>
+    </LinkerScript>
+  </ItemGroup>
+</Project>

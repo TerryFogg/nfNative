@@ -1,0 +1,28 @@
+C:\repos\nfNative\Targets\Azure\RaspberryPiPico_nanoCLR\Local\Build\RaspberryPiPico_nanoCLR.elf  :
+section                  size         addr
+.boot2                  0x100   0x10000000
+.text                  0x6bd0   0x10000100
+.rodata                0x1290   0x10006cd0
+.ARM.exidx                0x8   0x10007f60
+.binary_info             0x1c   0x10007f68
+.ram_vector_table        0xc0   0x20000000
+.data                   0xb30   0x200000c0
+.uninitialized_data       0x0   0x20000bf0
+.scratch_x                0x0   0x20040000
+.scratch_y                0x0   0x20041000
+.bss                    0xa70   0x20000bf0
+.heap                   0x800   0x20001660
+.stack_dummy            0x800   0x20041000
+.ARM.attributes          0x2d          0x0
+.comment                 0x49          0x0
+.debug_info           0x3a403          0x0
+.debug_abbrev          0x4f44          0x0
+.debug_aranges         0x12e0          0x0
+.debug_ranges          0x1158          0x0
+.debug_line            0xbf4c          0x0
+.debug_str            0x177a7          0x0
+.debug_frame           0x33a8          0x0
+.stabstr                0x14f          0x0
+Total                 0x729c3
+
+
