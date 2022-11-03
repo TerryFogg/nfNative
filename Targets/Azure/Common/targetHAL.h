@@ -6,10 +6,9 @@
 #ifndef _TARGET_HAL_H_
 #define _TARGET_HAL_H_
 
-#include <stm32h735xx.h>
 
 #include <tx_api.h>
-
+//#include <stm32h735xx.h>
 #include <target_board.h>
 #include <nanoHAL_v2.h>
 
@@ -56,7 +55,7 @@
 #define EVENTS_HEART_BEAT
 #else
 #ifndef EVENTS_HEART_BEAT
-#define EVENTS_HEART_BEAT __NOP()
+#define EVENTS_HEART_BEAT
 #endif // EVENTS_HEART_BEAT
 #endif
 

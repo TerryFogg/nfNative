@@ -8,6 +8,8 @@
 #include "DisplayInterface.h"
 #include "Display.h"
 #include "InternalFont.h"
+#include <stm32h735xx.h>
+#include <core_cm7.h>
 
 //
 // RK043FN02H

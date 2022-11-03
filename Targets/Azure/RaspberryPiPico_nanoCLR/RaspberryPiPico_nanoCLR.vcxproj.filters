@@ -392,9 +392,6 @@
     <Filter Include="Local">
       <UniqueIdentifier>{2a80e063-417a-43ca-aae0-a10349419333}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Local\Build">
-      <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\Azure-RTOS\threadx">
       <UniqueIdentifier>{43054f03-2896-4324-bc53-1239d1dc2841}</UniqueIdentifier>
     </Filter>
@@ -566,51 +563,6 @@
     <Filter Include="External\nf-interpreter\src\System.Device.Gpio">
       <UniqueIdentifier>{c2b389c5-05fe-492d-ba31-b9eb6b0dadbc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Local\Tools">
-      <UniqueIdentifier>{713119dd-6988-4c0f-9dc7-2d02751b6374}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features">
-      <UniqueIdentifier>{be88a385-c4b8-423b-8ec0-9dbdba8b68c4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Adaption Layer">
-      <UniqueIdentifier>{ca4f0bc5-9762-4347-a34a-1f71ea44b3ff}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Audio">
-      <UniqueIdentifier>{e59f5e66-232c-42c2-b8ac-a1382bbc42dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\CAN">
-      <UniqueIdentifier>{f546ea18-e32e-4599-9bda-eb9eed5500c2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Clock">
-      <UniqueIdentifier>{ffda2709-47f3-4dab-ad19-ee23c9b88a90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Ethernet">
-      <UniqueIdentifier>{b03e1fc8-d8f8-42f9-9246-d93410717fc9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\MemoryStorage">
-      <UniqueIdentifier>{fe06b8e3-be0b-4642-ab18-0958c22b8844}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\USB">
-      <UniqueIdentifier>{5cf710c9-7ca8-4c52-88a9-70d1a118f7f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Startup">
-      <UniqueIdentifier>{fff25b60-0162-4ef7-861e-9755775a560c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\WireProtocol">
-      <UniqueIdentifier>{f42adfab-d966-4106-99e7-6fc25c9b9245}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\Memory">
-      <UniqueIdentifier>{c8cebbcb-aa9f-411a-9abc-739bc37ac3c4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\RP2040">
-      <UniqueIdentifier>{430659d3-db94-463b-8b71-1ecbec2d8c31}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\RP2040\include">
-      <UniqueIdentifier>{7b4004d3-f48e-450c-8661-cc6f5be99366}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Local\Features\RP2040\include\pico">
-      <UniqueIdentifier>{3fbc6d4a-6954-4972-b101-f6a42f5e9a6d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\pico-sdk\src\rp2040">
       <UniqueIdentifier>{e87cc9e4-f2e8-4199-a2ce-a431750299f3}</UniqueIdentifier>
     </Filter>
@@ -661,6 +613,27 @@
     </Filter>
     <Filter Include="Features\Storage">
       <UniqueIdentifier>{4c188002-b76b-4e0f-8102-8cd266c38451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{713119dd-6988-4c0f-9dc7-2d02751b6374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{668ac409-f30d-4a75-b9b3-6fd7a8bb4b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\WireProtocol">
+      <UniqueIdentifier>{43506a78-1ec0-47b6-bb03-8280a827b547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RP2040">
+      <UniqueIdentifier>{430659d3-db94-463b-8b71-1ecbec2d8c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RP2040\include">
+      <UniqueIdentifier>{7b4004d3-f48e-450c-8661-cc6f5be99366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RP2040\include\pico">
+      <UniqueIdentifier>{3fbc6d4a-6954-4972-b101-f6a42f5e9a6d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -798,9 +771,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp">
       <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
-    </ClCompile>
-    <ClCompile Include="bs2_default_padded_checksummed.s">
-      <Filter>Local</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c">
       <Filter>External\Azure-RTOS\threadx\common\src</Filter>
@@ -2071,102 +2041,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp">
       <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
     </ClCompile>
-    <ClCompile Include="Local\Board_PICO.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\nanoCRT.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\nanoHAL.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\platform_heap.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\target_common.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetHAL.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetHAL_ConfigurationManager.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetHAL_Power.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetHAL_Time.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetPAL.c">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetPAL_Events.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\targetPAL_Time.cpp">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Audio.c">
-      <Filter>Local\Features\Audio</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\FDCAN.c">
-      <Filter>Local\Features\CAN</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\RealTimeClock.c">
-      <Filter>Local\Features\Clock</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Ethernet.c">
-      <Filter>Local\Features\Ethernet</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\MicroSD.c">
-      <Filter>Local\Features\MemoryStorage</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\USB.c">
-      <Filter>Local\Features\USB</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Clock_configuration.c">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\CLR_RT_InteropAssembliesTable.cpp">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\CLR_Startup_Thread.c">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\nanoFramework_Threads.c">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\startup_stm32h735igkx.s">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\tx_initialize_low_level.S">
-      <Filter>Local\Features\Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\WireProtocol_HAL_Interface.c">
-      <Filter>Local\Features\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\WireProtocol_ReceiverThread.c">
-      <Filter>Local\Features\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\wpUSART_Communications.c">
-      <Filter>Local\Features\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Device_BlockStorage.c">
-      <Filter>Local\Features\Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Memory.cpp">
-      <Filter>Local\Features\Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\platform_BlockStorage.c">
-      <Filter>Local\Features\Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\target_BlockStorage.c">
-      <Filter>Local\Features\Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="Local\Target_BlockStorage_STM32FlashDriver.c">
-      <Filter>Local\Features\Memory</Filter>
-    </ClCompile>
     <ClCompile Include="main.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7789_240x240.cpp">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
@@ -2186,6 +2060,108 @@
     <ClCompile Include="Features\IO\GPIO.cpp">
       <Filter>Features\IO</Filter>
     </ClCompile>
+    <ClCompile Include="AdaptionLayer\target_common.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\targetHAL.cpp">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\targetHAL_ConfigurationManager.cpp">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\targetHAL_Power.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\targetPAL.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\wpUSART_Communications.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\CLR_Startup_Thread.c">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\nanoFramework_Threads.c">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\system_stm32h7xx.c">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\tx_initialize_low_level.S">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\Clock_configuration.c">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\CLR_RT_InteropAssembliesTable.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\startup_stm32h735igkx.s">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\target_BlockStorage.c">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\Target_BlockStorage_STM32FlashDriver.c">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\Device_BlockStorage.c">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\platform_BlockStorage.c">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\USB.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Audio.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Ethernet.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\FDCAN.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\MicroSD.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\RealTimeClock.c">
+      <Filter>Features</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\Board_PICO.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\nanoCRT.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\nanoHAL.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\platform_heap.c">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\targetHAL_Time.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\targetPAL_Events.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\targetPAL_Time.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>Common\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.c">
+      <Filter>Common\WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\bs2_default_padded_checksummed.s">
+      <Filter>Startup</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">
@@ -2194,26 +2170,23 @@
     <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <None Include="PostBuild.bat">
-      <Filter>Local</Filter>
-    </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.elf">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.link.rsp">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.lst">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.nm">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.size">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="Local\Build\RaspberryPiPico_nanoCLR.uf2">
-      <Filter>Local\Build</Filter>
+      <Filter>Build</Filter>
     </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
       <Filter>External\nf-interpreter\src\CLR\Include</Filter>
@@ -2221,8 +2194,11 @@
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics</Filter>
     </None>
-    <None Include="Local\Tools\ELF2UF2.exe">
-      <Filter>Local\Tools</Filter>
+    <None Include="Tools\ELF2UF2.exe">
+      <Filter>Tools</Filter>
+    </None>
+    <None Include="Tools\PostBuild.bat">
+      <Filter>Tools</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -2394,12 +2370,6 @@
       <Filter>External\pico-sdk\src\common\pico_base\include</Filter>
     </ClInclude>
     <ClInclude Include="version.h" />
-    <ClInclude Include="Local\include\pico\version.h">
-      <Filter>Local\Features\RP2040\include\pico</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\include\pico\config_autogen.h">
-      <Filter>Local\Features\RP2040\include\pico</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc\tx_api.h">
       <Filter>External\Azure-RTOS\threadx\common\inc</Filter>
     </ClInclude>
@@ -2736,78 +2706,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h">
       <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
     </ClInclude>
-    <ClInclude Include="Local\Adaption.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\Board_PICO.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\platform_target_capabilities.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\target_board.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\target_common.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\target_os.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\target_platform.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\Target_Windows_Storage.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\targetHAL.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\targetHAL_Power.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\targetHAL_Time.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\targetPAL.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\targetPAL_Time.h">
-      <Filter>Local\Adaption Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\TargetFeatures.h">
-      <Filter>Local\Features</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\MicroSD.h">
-      <Filter>Local\Features\MemoryStorage</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\CLR_Startup_Thread.h">
-      <Filter>Local\Features\Startup</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\tx_user.h">
-      <Filter>Local\Features\Startup</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\tx_user_nanoCLR.h">
-      <Filter>Local\Features\Startup</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\vectors.h">
-      <Filter>Local\Features\Startup</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\WireProtocol_ReceiverThread.h">
-      <Filter>Local\Features\WireProtocol</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\wpUSART_Communications.h">
-      <Filter>Local\Features\WireProtocol</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\target_BlockStorage.h">
-      <Filter>Local\Features\Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\Target_BlockStorage_STM32FlashDriver.h">
-      <Filter>Local\Features\Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="Local\TargetPAL_BlockStorage.h">
-      <Filter>Local\Features\Memory</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include\hardware\platform_defs.h">
       <Filter>External\pico-sdk\src\rp2040\hardware_regs\include\hardware</Filter>
     </ClInclude>
@@ -3012,11 +2910,89 @@
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h">
       <Filter>Features\IO</Filter>
     </ClInclude>
+    <ClInclude Include="AdaptionLayer\platform_target_capabilities.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\target_board.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\target_common.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\target_os.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\target_platform.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\targetHAL_Power.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\TargetHAL_Spi.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\targetPAL.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\wpUSART_Communications.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Startup\CLR_Startup_Thread.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Startup\tx_user.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Startup\tx_user_nanoCLR.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Startup\vectors.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\target_BlockStorage.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\Target_BlockStorage_STM32FlashDriver.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\TargetPAL_BlockStorage.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\MicroSD.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\TargetFeatures.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptionLayer\Board_PICO.h">
+      <Filter>AdaptionLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Target_Windows_Storage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\targetHAL.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\targetHAL_Time.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\targetPAL_Time.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.h">
+      <Filter>Common\WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="RP2040\include\pico\config_autogen.h">
+      <Filter>RP2040\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="RP2040\include\pico\version.h">
+      <Filter>RP2040\include\pico</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="memmap_default.ld" />
-    <LinkerScript Include="Local\STM32H735G-DK.ld">
-      <Filter>Local\Features\Memory</Filter>
+    <LinkerScript Include="Memory\STM32H735G-DK.ld">
+      <Filter>Memory</Filter>
     </LinkerScript>
   </ItemGroup>
 </Project>
