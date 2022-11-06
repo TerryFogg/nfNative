@@ -422,3 +422,4 @@ healthchecksdb
 /Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.nm
 /Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.lst
 /Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.bin
+/PicoSDKProject1/.visualgdb/VisualGDBCache/PicoSDKProject1-Debug-VisualGDB
