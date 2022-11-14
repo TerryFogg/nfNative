@@ -129,6 +129,3 @@ echo crt0.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_2_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.gcc.rsp" || exit 1
 echo bs2_default_padded_checksummed.s
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/bs2_default_padded_checksummed.gcc.rsp" || exit 1
-echo Linking Local/Build/PicoProbe.elf...
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Local/Build/PicoProbe.link.rsp || exit 1
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Local/Build/PicoProbe.mkbin.rsp || exit 1

@@ -283,6 +283,9 @@
     <Filter Include="Features\Storage">
       <UniqueIdentifier>{42c99380-a520-4e51-be1b-359c546259e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Features\Other">
+      <UniqueIdentifier>{26ef8de3-14ee-4430-a647-a8e3ed6a35ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
@@ -870,10 +873,7 @@
     <ClInclude Include="..\Common\targetHAL_Time.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="Features\MicroSD.h">
-      <Filter>Features</Filter>
-    </ClInclude>
-    <ClInclude Include="AdaptionLayer\target_STM32H735G-DK.h">
+    <ClInclude Include="AdaptionLayer\BOARD.h">
       <Filter>AdaptionLayer</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.h">
@@ -917,6 +917,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c\sys_dev_i2c_native.h">
       <Filter>ExternalRepositories\nf-interpreter\src\System.Device.I2c</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\Storage\MicroSD.h">
+      <Filter>Features\Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h">
+      <Filter>Features\IO</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -3078,28 +3084,10 @@
     <ClCompile Include="..\Common\targetHAL_Time.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="Features\Audio.c">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Features\FDCAN.c">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Features\RealTimeClock.c">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Features\Ethernet.c">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Features\USB.c">
-      <Filter>Features</Filter>
-    </ClCompile>
-    <ClCompile Include="Features\MicroSD.c">
-      <Filter>Features</Filter>
-    </ClCompile>
     <ClCompile Include="AdaptionLayer\system_stm32h7xx.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
-    <ClCompile Include="AdaptionLayer\target_STM32H735G-DK.c">
+    <ClCompile Include="AdaptionLayer\BOARD.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
     <ClCompile Include="..\Common\WireProtocol\WireProtocol_HAL_Interface.c">
@@ -3119,9 +3107,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native.cpp">
       <Filter>ExternalRepositories\nf-interpreter\src\System.Device.Adc</Filter>
-    </ClCompile>
-    <ClCompile Include="ADC.cpp">
-      <Filter>Features\IO</Filter>
     </ClCompile>
     <ClCompile Include="Features\IO\SPI.cpp">
       <Filter>Features\IO</Filter>
@@ -3162,8 +3147,29 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports\sys_io_ser_native.cpp">
       <Filter>ExternalRepositories\nf-interpreter\src\System.IO.Ports</Filter>
     </ClCompile>
-    <ClCompile Include="Features\Storage\SERIAL.cpp">
+    <ClCompile Include="Features\IO\SERIAL.cpp">
       <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\ADC.cpp">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\ETHERNET.c">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Storage\MicroSD.c">
+      <Filter>Features\Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\USB.c">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\FDCAN.c">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Other\RealTimeClock.c">
+      <Filter>Features\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Other\Audio.c">
+      <Filter>Features\Other</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

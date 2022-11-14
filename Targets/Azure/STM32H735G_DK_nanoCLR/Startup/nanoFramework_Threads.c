@@ -1,4 +1,4 @@
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 
 #include <stm32h735xx.h>
 #include <tx_api.h>

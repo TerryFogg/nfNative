@@ -6,7 +6,7 @@
 //
 
 /* Includes ------------------------------------------------------------------*/
-#include "Board_PICO.h"
+#include "BOARD.h"
 #include <stdbool.h>
 #include <hardware/uart.h>
 #include "hardware/dma.h"

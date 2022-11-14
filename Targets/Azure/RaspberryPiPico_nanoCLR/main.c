@@ -3,7 +3,7 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include "Board_PICO.h"
+#include "BOARD.h"
 #include "wpUSART_Communications.h"
 #include <nanoHAL_v2.h>
 #include <nanoPAL_BlockStorage.h>

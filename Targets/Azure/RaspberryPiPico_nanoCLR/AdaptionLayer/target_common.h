@@ -8,8 +8,8 @@
 // Any changes you make here will be overwritten when it's generated again. //
 //////////////////////////////////////////////////////////////////////////////
 
-#ifndef _TARGET_COMMON_H_
-#define _TARGET_COMMON_H_
+#pragma once
+
 
 #include <target_os.h>
 //#include <target_lwipopts.h>
@@ -19,26 +19,24 @@
 // The following addresses and sizes should be filled in according to the SoC data-sheet
 // they also must be coherent with what's in the linker file for nanoBooter and nanoCLR
 
-// RAM base address 
-#define RAM1_MEMORY_StartAddress        ((uint32_t)0x24000000)
+// RAM base address
+#define RAM1_MEMORY_StartAddress        ((uint32_t)0x20000000)
 // RAM size 
 #define RAM1_MEMORY_Size                ((uint32_t)0x00050000)
 
 // FLASH base address
-#define FLASH1_MEMORY_StartAddress      ((uint32_t)0x08000000)
+#define FLASH1_MEMORY_StartAddress      ((uint32_t)0x10000000)
 // FLASH size
-#define FLASH1_MEMORY_Size              ((uint32_t)0x00100000) 
+#define FLASH1_MEMORY_Size              ((uint32_t)0x00200000)
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////
-#define TARGETNAMESTRING "STM32H735G-DK"
-#define PLATFORMNAMESTRING "STM32H7"
+#define TARGETNAMESTRING "RASPBERRYPI_PICO"
+#define PLATFORMNAMESTRING "RP2040"
 //////////////////////////////////////////////
 
 /////////////////////////////////////
 #define PLATFORM_HAS_RNG       TRUE
 /////////////////////////////////////
 
-
-#endif /* _TARGET_COMMON_H_ */

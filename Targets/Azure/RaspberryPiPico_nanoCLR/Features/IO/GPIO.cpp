@@ -5,7 +5,6 @@
 //
 
 #include "sys_dev_gpio_native_target.h"
-#include <Adaption.h>
 #include <targetPAL.h>
 #include <tx_api.h>
 #include <tx_port.h>

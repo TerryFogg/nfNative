@@ -757,8 +757,6 @@ echo nanoFramework_Graphics_nanoFramework_UI_DisplayControl.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Native/nanoFramework_Graphics_nanoFramework_UI_DisplayControl.gcc.rsp" || exit 1
 echo nanoFramework_Graphics_nanoFramework_UI_Font.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Native/nanoFramework_Graphics_nanoFramework_UI_Font.gcc.rsp" || exit 1
-echo TouchPanel.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/TouchPanel/Core/TouchPanel.gcc.rsp" || exit 1
 echo nf_system_resourcemanager.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.ResourceManager/nf_system_resourcemanager.gcc.rsp" || exit 1
 echo nf_system_resourcemanager_nanoFramework_Runtime_Native_ResourceUtility.cpp
@@ -917,8 +915,10 @@ echo WireProtocol_HAL_Interface.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/Common/WireProtocol/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
 echo WireProtocol_ReceiverThread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/Common/WireProtocol/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
-echo Board_PICO.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/Board_PICO.gcc.rsp" || exit 1
+echo BOARD.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/BOARD.gcc.rsp" || exit 1
+echo hard_fault_handler.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/hard_fault_handler.gcc.rsp" || exit 1
 echo targetHAL.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/AdaptionLayer/targetHAL.gcc.rsp" || exit 1
 echo targetHAL_ConfigurationManager.cpp
@@ -943,6 +943,10 @@ echo Initialize_Graphics.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Initialize_Graphics.gcc.rsp" || exit 1
 echo Spi_To_Display.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Spi_To_Display.gcc.rsp" || exit 1
+echo TouchTemporary.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/TouchTemporary.gcc.rsp" || exit 1
+echo cpu_spi.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/IO/cpu_spi.gcc.rsp" || exit 1
 echo GPIO.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/IO/GPIO.gcc.rsp" || exit 1
 echo MicroSD.c
@@ -955,14 +959,14 @@ echo main.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/main.gcc.rsp" || exit 1
 echo Device_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/Device_BlockStorage.gcc.rsp" || exit 1
+echo FlashDriver.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/FlashDriver.gcc.rsp" || exit 1
 echo Memory.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Memory/Memory.gcc.rsp" || exit 1
 echo platform_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/platform_BlockStorage.gcc.rsp" || exit 1
 echo target_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/target_BlockStorage.gcc.rsp" || exit 1
-echo Target_BlockStorage_STM32FlashDriver.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/Target_BlockStorage_STM32FlashDriver.gcc.rsp" || exit 1
 echo Clock_configuration.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/Clock_configuration.gcc.rsp" || exit 1
 echo CLR_RT_InteropAssembliesTable.cpp
@@ -971,5 +975,50 @@ echo CLR_Startup_Thread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/CLR_Startup_Thread.gcc.rsp" || exit 1
 echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
-echo system_stm32h7xx.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/system_stm32h7xx.gcc.rsp" || exit 1
+echo tx_thread_context_restore.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
+echo tx_thread_context_save.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_save.gcc.rsp" || exit 1
+echo tx_thread_interrupt_control.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_control.gcc.rsp" || exit 1
+echo tx_thread_interrupt_disable.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_disable.gcc.rsp" || exit 1
+echo tx_thread_interrupt_restore.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_restore.gcc.rsp" || exit 1
+echo tx_thread_schedule.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_schedule.gcc.rsp" || exit 1
+echo tx_thread_stack_build.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_stack_build.gcc.rsp" || exit 1
+echo tx_thread_system_return.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_system_return.gcc.rsp" || exit 1
+echo tx_timer_interrupt.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_timer_interrupt.gcc.rsp" || exit 1
+echo divider.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_divider/divider.gcc.rsp" || exit 1
+echo irq_handler_chain.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.gcc.rsp" || exit 1
+echo bit_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.gcc.rsp" || exit 1
+echo divider.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.gcc.rsp" || exit 1
+echo double_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.gcc.rsp" || exit 1
+echo double_v1_rom_shim.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.gcc.rsp" || exit 1
+echo float_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_aeabi.gcc.rsp" || exit 1
+echo float_v1_rom_shim.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.gcc.rsp" || exit 1
+echo pico_int64_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.gcc.rsp" || exit 1
+echo mem_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.gcc.rsp" || exit 1
+echo crt0.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.gcc.rsp" || exit 1
+echo bs2_default_padded_checksummed.s
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/bs2_default_padded_checksummed.gcc.rsp" || exit 1
+echo tx_initialize_low_level.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/tx_initialize_low_level.gcc.rsp" || exit 1
+echo Linking Local/Build/RaspberryPiPico_nanoCLR.elf...
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Local/Build/RaspberryPiPico_nanoCLR.link.rsp || exit 1
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Local/Build/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1

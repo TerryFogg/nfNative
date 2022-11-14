@@ -3,7 +3,7 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 #include "wpUSART_Communications.h"
 #include <nanoHAL_v2.h>
 #include <nanoPAL_BlockStorage.h>

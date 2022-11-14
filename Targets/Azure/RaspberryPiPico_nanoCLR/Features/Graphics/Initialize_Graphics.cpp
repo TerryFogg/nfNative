@@ -1,4 +1,4 @@
-#include <Target_BlockStorage_STM32FlashDriver.h>
+#include <Target_BlockStorage.h>
 //
 // Copyright (c) 2017 The nanoFramework project contributors
 // See LICENSE file in the project root for full license information.
@@ -10,7 +10,7 @@
 #include <nanoCLR_Headers.h>
 #include "GraphicsMemoryHeap.h"
 #include <nanoHAL_Graphics.h>
-#include "Board_PICO.h"
+#include "BOARD.h"
 #include "Debug_To_Display.h"
 
 extern "C"

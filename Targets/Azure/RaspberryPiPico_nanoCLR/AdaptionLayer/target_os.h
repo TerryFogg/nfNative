@@ -2,6 +2,7 @@
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
 //
+#pragma once
 
 #include <tx_api.h>
 
@@ -10,8 +11,6 @@
 // Any changes you make here will be overwritten when it's generated again. //
 //////////////////////////////////////////////////////////////////////////////
 
-#ifndef _TARGET_OS_H_
-#define _TARGET_OS_H_
 
 #define STR_HELPER(x) #x
 #define STR(x)        STR_HELPER(x)
@@ -32,5 +31,3 @@
 #define TARGET_HAS_NANOBOOTER       false
 #define NANOCLR_ENABLE_SOURCELEVELDEBUGGING false
 
-
-#endif /* _TARGET_OS_H_ */

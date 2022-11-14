@@ -4,7 +4,7 @@
 //
 
 #include <nanoCLR_Headers.h>
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 
 #ifdef STM32H735xx
 #include "stm32h735xx.h"

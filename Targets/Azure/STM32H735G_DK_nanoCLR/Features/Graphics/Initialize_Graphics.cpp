@@ -10,7 +10,7 @@
 #include <nanoCLR_Headers.h>
 #include "GraphicsMemoryHeap.h"
 #include <nanoHAL_Graphics.h>
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 #include "Debug_To_Display.h"
 
 extern "C"

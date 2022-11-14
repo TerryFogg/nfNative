@@ -389,9 +389,6 @@
     <Filter Include="External\pico-sdk\src\rp2_common\cmsis\include\cmsis">
       <UniqueIdentifier>{72abbe12-7038-4cd5-9b5e-75114fc55615}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Local">
-      <UniqueIdentifier>{2a80e063-417a-43ca-aae0-a10349419333}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\Azure-RTOS\threadx">
       <UniqueIdentifier>{43054f03-2896-4324-bc53-1239d1dc2841}</UniqueIdentifier>
     </Filter>
@@ -511,15 +508,6 @@
     </Filter>
     <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native">
       <UniqueIdentifier>{56604f0d-a5c5-41b6-b98d-a452d6f8121e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel">
-      <UniqueIdentifier>{7f69590a-a348-4904-9e60-b75ddb66f2d8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core">
-      <UniqueIdentifier>{36864c71-7e99-4445-88d3-736922d5f9fa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices">
-      <UniqueIdentifier>{3cb43fa6-d813-4195-be3f-994b01dfca5b}</UniqueIdentifier>
     </Filter>
     <Filter Include="External\nf-interpreter\src\nanoFramework.ResourceManager">
       <UniqueIdentifier>{014fe7af-d65a-4c60-b621-9b9ff1caffd1}</UniqueIdentifier>
@@ -1930,9 +1918,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics_nanoFramework_UI_Font.cpp">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.cpp">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.cpp">
       <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
     </ClCompile>
@@ -2084,25 +2069,13 @@
     <ClCompile Include="Startup\nanoFramework_Threads.c">
       <Filter>Startup</Filter>
     </ClCompile>
-    <ClCompile Include="Startup\system_stm32h7xx.c">
-      <Filter>Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Startup\tx_initialize_low_level.S">
-      <Filter>Startup</Filter>
-    </ClCompile>
     <ClCompile Include="Startup\Clock_configuration.c">
       <Filter>Startup</Filter>
     </ClCompile>
     <ClCompile Include="Startup\CLR_RT_InteropAssembliesTable.cpp">
       <Filter>Startup</Filter>
     </ClCompile>
-    <ClCompile Include="Startup\startup_stm32h735igkx.s">
-      <Filter>Startup</Filter>
-    </ClCompile>
     <ClCompile Include="Memory\target_BlockStorage.c">
-      <Filter>Memory</Filter>
-    </ClCompile>
-    <ClCompile Include="Memory\Target_BlockStorage_STM32FlashDriver.c">
       <Filter>Memory</Filter>
     </ClCompile>
     <ClCompile Include="Memory\Device_BlockStorage.c">
@@ -2132,7 +2105,7 @@
     <ClCompile Include="Features\RealTimeClock.c">
       <Filter>Features</Filter>
     </ClCompile>
-    <ClCompile Include="AdaptionLayer\Board_PICO.c">
+    <ClCompile Include="AdaptionLayer\BOARD.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
     <ClCompile Include="..\Common\nanoCRT.cpp">
@@ -2161,6 +2134,21 @@
     </ClCompile>
     <ClCompile Include="Startup\bs2_default_padded_checksummed.s">
       <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\IO\cpu_spi.cpp">
+      <Filter>Features\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\FlashDriver.c">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Startup\tx_initialize_low_level.S">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="AdaptionLayer\hard_fault_handler.c">
+      <Filter>AdaptionLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\TouchTemporary.cpp">
+      <Filter>Features\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2637,15 +2625,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native\nanoFramework_Graphics.h">
       <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core\TouchPanel.h">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchDevice.h">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices\TouchInterface.h">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager\nf_system_resourcemanager.h">
       <Filter>External\nf-interpreter\src\nanoFramework.ResourceManager</Filter>
     </ClInclude>
@@ -2952,9 +2931,6 @@
     <ClInclude Include="Memory\target_BlockStorage.h">
       <Filter>Memory</Filter>
     </ClInclude>
-    <ClInclude Include="Memory\Target_BlockStorage_STM32FlashDriver.h">
-      <Filter>Memory</Filter>
-    </ClInclude>
     <ClInclude Include="Memory\TargetPAL_BlockStorage.h">
       <Filter>Memory</Filter>
     </ClInclude>
@@ -2964,7 +2940,7 @@
     <ClInclude Include="Features\TargetFeatures.h">
       <Filter>Features</Filter>
     </ClInclude>
-    <ClInclude Include="AdaptionLayer\Board_PICO.h">
+    <ClInclude Include="AdaptionLayer\BOARD.h">
       <Filter>AdaptionLayer</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\Target_Windows_Storage.h">
@@ -2988,10 +2964,16 @@
     <ClInclude Include="RP2040\include\pico\version.h">
       <Filter>RP2040\include\pico</Filter>
     </ClInclude>
+    <ClInclude Include="Features\IO\sys_dev_spi_native_target.h">
+      <Filter>Features\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\FlashDriver.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <LinkerScript Include="memmap_default.ld" />
-    <LinkerScript Include="Memory\STM32H735G-DK.ld">
+    <LinkerScript Include="memmap_default.ld.text" />
+    <LinkerScript Include="Memory\RaspberryPiPico.ld">
       <Filter>Memory</Filter>
     </LinkerScript>
   </ItemGroup>

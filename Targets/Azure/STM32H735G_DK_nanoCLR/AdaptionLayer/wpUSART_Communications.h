@@ -6,7 +6,7 @@
 //
 
 /* Includes ------------------------------------------------------------------*/
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 
 #include <stdbool.h>
 #include "stm32h7xx_ll_bus.h"

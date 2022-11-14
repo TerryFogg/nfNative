@@ -1,4 +1,4 @@
-#include <Board_PICO.h>
+#include "BOARD.h"
 #include <tx_api.h>
 #include <nanoCLR_Application.h>
 #include <CLR_Startup_Thread.h>

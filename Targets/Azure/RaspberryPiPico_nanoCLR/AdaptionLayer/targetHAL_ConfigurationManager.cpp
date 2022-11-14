@@ -3,10 +3,10 @@
 // See LICENSE file in the project root for full license information.
 //
 
+#include "FlashDriver.h"
 #include <nanoHAL.h>
 #include <nanoHAL_v2.h>
 #include <nanoWeak.h>
-#include <Target_BlockStorage_STM32FlashDriver.h>
 
 uint32_t GetExistingConfigSize() {
   uint32_t currentConfigSize = 0;
@@ -319,7 +319,7 @@ __nfweak bool ConfigurationManager_StoreConfigurationBlock(
       }
 
       // now check if memory is erase, so the block can be stored
-      if (!STM32FlashDriver_IsBlockErased(NULL, storageAddress, blockSize)) {
+      if (!FlashDriver_IsBlockErased(NULL, storageAddress, blockSize)) {
         // memory not erased, can't store
         return FALSE;
       }
@@ -364,7 +364,7 @@ __nfweak bool ConfigurationManager_StoreConfigurationBlock(
       }
 
       // now check if memory is erase, so the block can be stored
-      if (!STM32FlashDriver_IsBlockErased(NULL, storageAddress, blockSize)) {
+      if (!FlashDriver_IsBlockErased(NULL, storageAddress, blockSize)) {
         // memory not erased, can't store
         return FALSE;
       }
@@ -390,8 +390,8 @@ __nfweak bool ConfigurationManager_StoreConfigurationBlock(
   }
 
   // copy the config block content to the config block storage
-  success = STM32FlashDriver_Write(NULL, storageAddress, blockSize,
-                                   (unsigned char *)configurationBlock, true);
+  success = FlashDriver_Write(NULL, storageAddress, blockSize,
+                              (unsigned char *)configurationBlock, true);
 
   // enumeration is required after we are DONE with SUCCESSFULLY storing all the
   // config chunks
@@ -578,8 +578,7 @@ __nfweak bool ConfigurationManager_UpdateConfigurationBlock(
     }
 
     // erase config sector
-    if (STM32FlashDriver_EraseBlock(NULL, (uint32_t)&__nanoConfig_start__) ==
-        TRUE) {
+    if (FlashDriver_EraseBlock(NULL, (uint32_t)&__nanoConfig_start__) == TRUE) {
       // flash block is erased
 
       // subtract the start address of config sector to get the offset
@@ -592,9 +591,9 @@ __nfweak bool ConfigurationManager_UpdateConfigurationBlock(
       memcpy(blockAddressInCopy, configurationBlock, blockSize);
 
       // copy the config block copy back to the config block storage
-      success = STM32FlashDriver_Write(NULL, (uint32_t)&__nanoConfig_start__,
-                                       sizeOfConfigSector,
-                                       (unsigned char *)configSectorCopy, true);
+      success = FlashDriver_Write(NULL, (uint32_t)&__nanoConfig_start__,
+                                  sizeOfConfigSector,
+                                  (unsigned char *)configSectorCopy, true);
     }
 
     // free memory
@@ -635,221 +634,210 @@ InitialiseNetworkDefaultConfig(HAL_Configuration_NetworkInterface *pconfig,
 #define VALID_PERSISTENT_STORAGE_CONFIG 44 // Random chosen constant
 #define CONFIG_BASE __nanoConfig_start__
 
-typedef struct __nfpack
-{
-    uint8_t ValidConfiguration;
-    HAL_Configuration_NetworkInterface *Data;
+typedef struct __nfpack {
+  uint8_t ValidConfiguration;
+  HAL_Configuration_NetworkInterface *Data;
 } NetworkInterfaceDataLocation;
 
-typedef struct __nfpack
-{
-    uint8_t ValidConfiguration;
-    HAL_Configuration_Wireless80211 *Data;
+typedef struct __nfpack {
+  uint8_t ValidConfiguration;
+  HAL_Configuration_Wireless80211 *Data;
 } Wireless80211DataLocation;
 
-typedef struct __nfpack
-{
-    uint8_t ValidConfiguration;
-    HAL_Configuration_WirelessAP *Data;
+typedef struct __nfpack {
+  uint8_t ValidConfiguration;
+  HAL_Configuration_WirelessAP *Data;
 } WirelessAPDataLocation;
 
-typedef struct __nfpack
-{
-    uint8_t ValidConfiguration;
-    HAL_Configuration_X509DeviceCertificate *Data;
+typedef struct __nfpack {
+  uint8_t ValidConfiguration;
+  HAL_Configuration_X509DeviceCertificate *Data;
 } X509DeviceCertificateDataLocation;
 
-typedef struct __nfpack
-{
-    uint8_t ValidConfiguration;
-    HAL_Configuration_X509CaRootBundle *Data;
+typedef struct __nfpack {
+  uint8_t ValidConfiguration;
+  HAL_Configuration_X509CaRootBundle *Data;
 } X509CaRootBundleDataLocation;
 
-#define PERSISTENCE_HEADER          CONFIG_BASE
-#define NetworkInterfaceConfig      PERSISTENCE_HEADER + sizeof(PersistenceHeader)
-#define Wireless80211Config         (NetworkInterfaceConfig + sizeof(NetworkInterfaceDataLocation))
-#define WirelessAPConfig            (Wireless80211Config + sizeof(Wireless80211DataLocation))
-#define X509DeviceCertificateConfig (X509RootBundleConfig + sizeof(WirelessAPDataLocation))
-#define X509RootBundleConfig        (WirelessAPConfig + sizeof(X509DeviceCertificateDataLocation))
+#define PERSISTENCE_HEADER CONFIG_BASE
+#define NetworkInterfaceConfig PERSISTENCE_HEADER + sizeof(PersistenceHeader)
+#define Wireless80211Config                                                    \
+  (NetworkInterfaceConfig + sizeof(NetworkInterfaceDataLocation))
+#define WirelessAPConfig                                                       \
+  (Wireless80211Config + sizeof(Wireless80211DataLocation))
+#define X509DeviceCertificateConfig                                            \
+  (X509RootBundleConfig + sizeof(WirelessAPDataLocation))
+#define X509RootBundleConfig                                                   \
+  (WirelessAPConfig + sizeof(X509DeviceCertificateDataLocation))
 
-typedef struct __nfpack
-{
-    NetworkInterfaceDataLocation NetworkInterface;           // HAL_Configuration_NetworkInterface
-    Wireless80211DataLocation Wireless80211;                 // HAL_Configuration_Wireless80211
-    WirelessAPDataLocation WirelessAP;                       // HAL_Configuration_WirelessAP
-    X509CaRootBundleDataLocation X509RootBundle;             // HAL_Configuration_X509CaRootBundle
-    X509DeviceCertificateDataLocation X509DeviceCertificate; // HAL_Configuration_X509DeviceCertificate
+typedef struct __nfpack {
+  NetworkInterfaceDataLocation
+      NetworkInterface;                    // HAL_Configuration_NetworkInterface
+  Wireless80211DataLocation Wireless80211; // HAL_Configuration_Wireless80211
+  WirelessAPDataLocation WirelessAP;       // HAL_Configuration_WirelessAP
+  X509CaRootBundleDataLocation
+      X509RootBundle; // HAL_Configuration_X509CaRootBundle
+  X509DeviceCertificateDataLocation
+      X509DeviceCertificate; // HAL_Configuration_X509DeviceCertificate
 } PersistenceHeader;
 
 PersistenceHeader ph;
 
-uint32_t GetExistingConfigSize()
-{
-    return 0;
-}
+uint32_t GetExistingConfigSize() { return 0; }
 
 void ConfigurationManager_Initialize(){};
 
-void ConfigurationManager_EnumerateConfigurationBlocks()
-{
-    // No Enumeration
+void ConfigurationManager_EnumerateConfigurationBlocks() {
+  // No Enumeration
 }
 
 bool ConfigurationManager_GetConfigurationBlock(
-    void *configurationBlock,
-    DeviceConfigurationOption configuration,
-    uint32_t configurationIndex)
-{
-    bool status = false; // False, unless success
+    void *configurationBlock, DeviceConfigurationOption configuration,
+    uint32_t configurationIndex) {
+  bool status = false; // False, unless success
 
-    // Read the Persistence Header information
-    EmbeddedFlashReadBytes(CONFIG_BASE, sizeof(PersistenceHeader), (uint8_t *)&ph);
+  // Read the Persistence Header information
+  EmbeddedFlashReadBytes(CONFIG_BASE, sizeof(PersistenceHeader),
+                         (uint8_t *)&ph);
 
-    switch (configuration)
-    {
-        case DeviceConfigurationOption_Network:
-            if (ph.NetworkInterface.ValidConfiguration)
-            {
-                EmbeddedFlashReadBytes(
-                    (uint32_t)ph.NetworkInterface.Data,
-                    sizeof(HAL_Configuration_NetworkInterface),
-                    (uint8_t *)configurationBlock);
-                status = true;
-            }
-            break;
-        case DeviceConfigurationOption_Wireless80211Network:
-            if (ph.Wireless80211.ValidConfiguration)
-            {
-                EmbeddedFlashReadBytes(
-                    (uint32_t)ph.Wireless80211.Data,
-                    sizeof(HAL_Configuration_Wireless80211),
-                    (uint8_t *)configurationBlock);
-                status = true;
-            }
-            break;
-        case DeviceConfigurationOption_WirelessNetworkAP:
-            if (ph.WirelessAP.ValidConfiguration)
-            {
-                EmbeddedFlashReadBytes(
-                    (uint32_t)ph.WirelessAP.Data,
-                    sizeof(HAL_Configuration_WirelessAP),
-                    (uint8_t *)configurationBlock);
-                status = true;
-            }
-            break;
-        case DeviceConfigurationOption_X509CaRootBundle:
-            if (ph.X509RootBundle.ValidConfiguration)
-            {
-                EmbeddedFlashReadBytes(
-                    (uint32_t)ph.X509RootBundle.Data,
-                    sizeof(HAL_Configuration_X509CaRootBundle),
-                    (uint8_t *)configurationBlock);
-                status = true;
-            }
-            break;
-        case DeviceConfigurationOption_X509DeviceCertificates:
-            if (ph.X509DeviceCertificate.ValidConfiguration)
-            {
-                EmbeddedFlashReadBytes(
-                    (uint32_t)ph.X509DeviceCertificate.Data,
-                    sizeof(HAL_Configuration_X509DeviceCertificate),
-                    (uint8_t *)configurationBlock);
-                status = true;
-            }
-            break;
-        case DeviceConfigurationOption_All:
-            break;
+  switch (configuration) {
+  case DeviceConfigurationOption_Network:
+    if (ph.NetworkInterface.ValidConfiguration) {
+      EmbeddedFlashReadBytes((uint32_t)ph.NetworkInterface.Data,
+                             sizeof(HAL_Configuration_NetworkInterface),
+                             (uint8_t *)configurationBlock);
+      status = true;
     }
-    return status;
+    break;
+  case DeviceConfigurationOption_Wireless80211Network:
+    if (ph.Wireless80211.ValidConfiguration) {
+      EmbeddedFlashReadBytes((uint32_t)ph.Wireless80211.Data,
+                             sizeof(HAL_Configuration_Wireless80211),
+                             (uint8_t *)configurationBlock);
+      status = true;
+    }
+    break;
+  case DeviceConfigurationOption_WirelessNetworkAP:
+    if (ph.WirelessAP.ValidConfiguration) {
+      EmbeddedFlashReadBytes((uint32_t)ph.WirelessAP.Data,
+                             sizeof(HAL_Configuration_WirelessAP),
+                             (uint8_t *)configurationBlock);
+      status = true;
+    }
+    break;
+  case DeviceConfigurationOption_X509CaRootBundle:
+    if (ph.X509RootBundle.ValidConfiguration) {
+      EmbeddedFlashReadBytes((uint32_t)ph.X509RootBundle.Data,
+                             sizeof(HAL_Configuration_X509CaRootBundle),
+                             (uint8_t *)configurationBlock);
+      status = true;
+    }
+    break;
+  case DeviceConfigurationOption_X509DeviceCertificates:
+    if (ph.X509DeviceCertificate.ValidConfiguration) {
+      EmbeddedFlashReadBytes((uint32_t)ph.X509DeviceCertificate.Data,
+                             sizeof(HAL_Configuration_X509DeviceCertificate),
+                             (uint8_t *)configurationBlock);
+      status = true;
+    }
+    break;
+  case DeviceConfigurationOption_All:
+    break;
+  }
+  return status;
 }
 
 bool ConfigurationManager_StoreConfigurationBlock(
-    void *configurationBlock,
-    DeviceConfigurationOption configuration,
-    uint32_t configurationIndex,
-    uint32_t blockSize,
-    uint32_t offset,
-    bool done)
-{
-    bool status = false; // False, unless success
+    void *configurationBlock, DeviceConfigurationOption configuration,
+    uint32_t configurationIndex, uint32_t blockSize, uint32_t offset,
+    bool done) {
+  bool status = false; // False, unless success
 
-    // Read the Persistence Header information
-    EmbeddedFlashReadBytes(PERSISTENCE_HEADER, sizeof(PersistenceHeader), (uint8_t *)&ph);
+  // Read the Persistence Header information
+  EmbeddedFlashReadBytes(PERSISTENCE_HEADER, sizeof(PersistenceHeader),
+                         (uint8_t *)&ph);
 
-    switch (configuration)
-    {
-        case DeviceConfigurationOption_Network:
-            ph.NetworkInterface.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
-            EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader), (uint8_t *)&ph);
-            EmbeddedFlashWrite(NetworkInterfaceConfig, sizeof(HAL_Configuration_NetworkInterface), (uint8_t *)&ph);
-            status = true;
-            break;
-        case DeviceConfigurationOption_Wireless80211Network:
-            ph.Wireless80211.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
-            EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader), (uint8_t *)&ph);
-            EmbeddedFlashWrite(Wireless80211Config, sizeof(HAL_Configuration_Wireless80211), (uint8_t *)&ph);
-            status = true;
-            break;
-        case DeviceConfigurationOption_WirelessNetworkAP:
-            ph.WirelessAP.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
-            EmbeddedFlashWrite(WirelessAPConfig, sizeof(PersistenceHeader), (uint8_t *)&ph);
-            EmbeddedFlashWrite(WirelessAPConfig, sizeof(HAL_Configuration_WirelessAP), (uint8_t *)&ph);
-            status = true;
-            break;
-        case DeviceConfigurationOption_X509CaRootBundle:
-            ph.X509RootBundle.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
-            EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader), (uint8_t *)&ph);
-            EmbeddedFlashWrite(X509RootBundleConfig, sizeof(HAL_Configuration_X509CaRootBundle), (uint8_t *)&ph);
-            status = true;
-            break;
-        case DeviceConfigurationOption_X509DeviceCertificates:
-            ph.X509DeviceCertificate.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
-            EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader), (uint8_t *)&ph);
-            EmbeddedFlashWrite(
-                X509DeviceCertificateConfig,
-                sizeof(HAL_Configuration_X509DeviceCertificate),
-                (uint8_t *)&ph);
-            status = true;
-            break;
-        case DeviceConfigurationOption_All:
-            break;
-    }
-    return true;
+  switch (configuration) {
+  case DeviceConfigurationOption_Network:
+    ph.NetworkInterface.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
+    EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader),
+                       (uint8_t *)&ph);
+    EmbeddedFlashWrite(NetworkInterfaceConfig,
+                       sizeof(HAL_Configuration_NetworkInterface),
+                       (uint8_t *)&ph);
+    status = true;
+    break;
+  case DeviceConfigurationOption_Wireless80211Network:
+    ph.Wireless80211.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
+    EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader),
+                       (uint8_t *)&ph);
+    EmbeddedFlashWrite(Wireless80211Config,
+                       sizeof(HAL_Configuration_Wireless80211), (uint8_t *)&ph);
+    status = true;
+    break;
+  case DeviceConfigurationOption_WirelessNetworkAP:
+    ph.WirelessAP.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
+    EmbeddedFlashWrite(WirelessAPConfig, sizeof(PersistenceHeader),
+                       (uint8_t *)&ph);
+    EmbeddedFlashWrite(WirelessAPConfig, sizeof(HAL_Configuration_WirelessAP),
+                       (uint8_t *)&ph);
+    status = true;
+    break;
+  case DeviceConfigurationOption_X509CaRootBundle:
+    ph.X509RootBundle.ValidConfiguration = VALID_PERSISTENT_STORAGE_CONFIG;
+    EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader),
+                       (uint8_t *)&ph);
+    EmbeddedFlashWrite(X509RootBundleConfig,
+                       sizeof(HAL_Configuration_X509CaRootBundle),
+                       (uint8_t *)&ph);
+    status = true;
+    break;
+  case DeviceConfigurationOption_X509DeviceCertificates:
+    ph.X509DeviceCertificate.ValidConfiguration =
+        VALID_PERSISTENT_STORAGE_CONFIG;
+    EmbeddedFlashWrite(PERSISTENCE_HEADER, sizeof(PersistenceHeader),
+                       (uint8_t *)&ph);
+    EmbeddedFlashWrite(X509DeviceCertificateConfig,
+                       sizeof(HAL_Configuration_X509DeviceCertificate),
+                       (uint8_t *)&ph);
+    status = true;
+    break;
+  case DeviceConfigurationOption_All:
+    break;
+  }
+  return true;
 
-    return true;
+  return true;
 }
 bool ConfigurationManager_UpdateConfigurationBlock(
-    void *configurationBlock,
-    DeviceConfigurationOption configuration,
-    uint32_t configurationIndex)
-{
-    switch (configuration)
-    {
-        case DeviceConfigurationOption_Network:
-            break;
-        case DeviceConfigurationOption_Wireless80211Network:
-            break;
-        case DeviceConfigurationOption_WirelessNetworkAP:
-            break;
-        case DeviceConfigurationOption_X509CaRootBundle:
-            break;
-        case DeviceConfigurationOption_X509DeviceCertificates:
-            break;
-        case DeviceConfigurationOption_All:
-            break;
-    }
+    void *configurationBlock, DeviceConfigurationOption configuration,
+    uint32_t configurationIndex) {
+  switch (configuration) {
+  case DeviceConfigurationOption_Network:
+    break;
+  case DeviceConfigurationOption_Wireless80211Network:
+    break;
+  case DeviceConfigurationOption_WirelessNetworkAP:
+    break;
+  case DeviceConfigurationOption_X509CaRootBundle:
+    break;
+  case DeviceConfigurationOption_X509DeviceCertificates:
+    break;
+  case DeviceConfigurationOption_All:
+    break;
+  }
 
-    return true;
+  return true;
 }
-void InitialiseWirelessDefaultConfig(HAL_Configuration_Wireless80211 *pconfig, uint32_t configurationIndex)
-{
-    (void)pconfig;
-    (void)configurationIndex;
+void InitialiseWirelessDefaultConfig(HAL_Configuration_Wireless80211 *pconfig,
+                                     uint32_t configurationIndex) {
+  (void)pconfig;
+  (void)configurationIndex;
 }
-bool InitialiseNetworkDefaultConfig(HAL_Configuration_NetworkInterface *pconfig, uint32_t configurationIndex)
-{
-    (void)pconfig;
-    (void)configurationIndex;
-    return FALSE;
+bool InitialiseNetworkDefaultConfig(HAL_Configuration_NetworkInterface *pconfig,
+                                    uint32_t configurationIndex) {
+  (void)pconfig;
+  (void)configurationIndex;
+  return FALSE;
 }
 #endif

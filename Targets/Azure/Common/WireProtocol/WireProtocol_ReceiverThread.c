@@ -5,7 +5,7 @@
 
 #include <WireProtocol_Message.h>
 #include "wpUSART_Communications.h"
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 #include <tx_api.h>
 
 extern WP_Message inboundMessage;

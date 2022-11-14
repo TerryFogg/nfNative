@@ -15,7 +15,7 @@
 #include <platform_target_capabilities.h>
 #include <TargetFeatures.h>
 #include "Debug_To_Display.h"
-#include "target_STM32H735G-DK.h"
+#include "BOARD.h"
 
 extern bool g_waitForDebuggerRequested;
 extern HardFaultReporting g_HardFault;

@@ -4,19 +4,19 @@
 //
 
 #include <nanoPAL_BlockStorage.h>
-#include <Target_BlockStorage_STM32FlashDriver.h>
+#include <FlashDriver.h>
 
 // map here the Block Storage Interface to the STM32 driver
 IBlockStorageDevice STM32Flash_BlockStorageInterface =
 {                          
-    &STM32FlashDriver_InitializeDevice,
-    &STM32FlashDriver_UninitializeDevice,
-    &STM32FlashDriver_GetDeviceInfo,
-    &STM32FlashDriver_Read,
-    &STM32FlashDriver_Write,
+    &FlashDriver_InitializeDevice,
+    &FlashDriver_UninitializeDevice,
+    &FlashDriver_GetDeviceInfo,
+    &FlashDriver_Read,
+    &FlashDriver_Write,
     NULL,
-    &STM32FlashDriver_IsBlockErased,    
-    &STM32FlashDriver_EraseBlock,
+    &FlashDriver_IsBlockErased,    
+    &FlashDriver_EraseBlock,
     NULL,
     NULL
 };
