@@ -975,6 +975,16 @@ echo CLR_Startup_Thread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/CLR_Startup_Thread.gcc.rsp" || exit 1
 echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
+echo FastSemihosting.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/FastSemihosting.gcc.rsp" || exit 1
+echo SamplingProfiler.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/SamplingProfiler.gcc.rsp" || exit 1
+echo InstrumentingProfiler.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/InstrumentingProfiler.gcc.rsp" || exit 1
+echo TestResourceManager.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/TestResourceManager.gcc.rsp" || exit 1
+echo ProfilerRTOS_FreeRTOS.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/ProfilerRTOS_FreeRTOS.gcc.rsp" || exit 1
 echo tx_thread_context_restore.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
 echo tx_thread_context_save.S
@@ -1019,6 +1029,3 @@ echo bs2_default_padded_checksummed.s
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/bs2_default_padded_checksummed.gcc.rsp" || exit 1
 echo tx_initialize_low_level.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/tx_initialize_low_level.gcc.rsp" || exit 1
-echo Linking Local/Build/RaspberryPiPico_nanoCLR.elf...
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Local/Build/RaspberryPiPico_nanoCLR.link.rsp || exit 1
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Local/Build/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1

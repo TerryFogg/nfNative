@@ -34,7 +34,7 @@
 /*       |                                    |     */   
 /*       |                                    |     */   
 /*       |  Graphics Frame buffer not used    |     */  graphics_Frame_Buffer_not_used = -77; 
-/*       |  Direct drawing from graphics      |     */  graphics_Frame_Buffer_not_used = 1;  
+/*       |  Direct drawing from graphics      |     */  
 /*       |  screen memory                     |     */   
 /*       |                                    |     */   
 /*       | Used during debugging to stop      |     */  Hard_Fault_Count = ORIGIN(HardFaultCount);
@@ -86,7 +86,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | 0x15000000 : 4kB                   |SYS>>*/  XIP_CACHING (xrw) : ORIGIN = 0x15000000,   LENGTH = 16k
 /*       |                                    |     */   
 /*       | If USB is not used                 |     */   
-/*       | 0x50100000 : 4kB                   |SYS>>*/   DPRAM      (xrw) : ORIGIN = 0x50100000,   LENGTH = 4k
+/*       | 0x50100000 : 4kB                   |SYS>>*/  DPRAM       (xrw) : ORIGIN = 0x50100000,   LENGTH = 4k
 /*       |                                    |     */   
 /*       |------------------------------------|     */
 /*       | External Flash                     |     */
@@ -109,19 +109,21 @@ MEMORY    /*   Usage by nanoFramework */
 /*       |------------------------------------|     */
 /*       | Stage 2 boot is prepended at the   |     */   
 /*       | start                              |     */   
-/*       |                                    |     */
-/*       | Sector  0                          |SYS>>*/  STAGE2_BOOT  (rx)  : ORIGIN = ORIGIN(FLASH), LENGTH = 252 + 4
-/*       | Sectors 0.. - 160                  |CLR>>*/  nanoCLR      (rx)  : ORIGIN = ORIGIN(STAGE2_BOOT) + LENGTH(STAGE2_BOOT), LENGTH = (160*flash_sector_size - LENGTH(STAGE2_BOOT))
-/*       | Sectors 161 - 161                  |CLR>>*/  config       (rx)  : ORIGIN = ORIGIN(nanoCLR) + LENGTH(nanoCLR) , LENGTH = config_size
-/*       | Sectors 162 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(config)+ LENGTH(config), LENGTH = flash_page_count*flash_sector_size - (LENGTH(STAGE2_BOOT) + LENGTH(nanoCLR) + LENGTH(config))
+/*       | .................................. |     */
+/*       | Sectors counting from 0            |     */
+/*       | .................................. |     */
+/*       | Sector  0 (First 256 bytes)        |SYS>>*/  STAGE2_BOOT  (rx)  : ORIGIN = ORIGIN(FLASH), LENGTH = 252 + 4  /* bs2_default_padded_checksummed.S */
+/*       | .................................. |     */
+/*       | Sectors   0 - 159                  |CLR>>*/  nanoCLR      (rx)  : ORIGIN = ORIGIN(STAGE2_BOOT) + LENGTH(STAGE2_BOOT), LENGTH = (160*flash_sector_size - LENGTH(STAGE2_BOOT))
+/*       | Sectors 160 - 160                  |CLR>>*/  config       (rx)  : ORIGIN = ORIGIN(nanoCLR) + LENGTH(nanoCLR) , LENGTH = config_size
+/*       | Sectors 161 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(config)+ LENGTH(config), LENGTH = flash_page_count*flash_sector_size - (LENGTH(STAGE2_BOOT) + LENGTH(nanoCLR) + LENGTH(config))
 /*       |                                    |     */
 /*       |------------------------------------|     */
-/*       |                                    |     */
 /*       | RAM LAYOUT                         |     */
 /*       |------------------------------------|     */
 /*       |                                    |     */
 /*       | Native code ram (Azure, nativeCLR) |CLR>>*/  RAM            (xrw) : ORIGIN = ORIGIN(RAM_STRIPED), LENGTH = 80k
-/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 76K
+/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 160K
 /*       |                                    |CLR>>*/  HardFaultCount (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = 32
 /*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(HardFaultCount) + LENGTH(HardFaultCount), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) + LENGTH(HardFaultCount) )
 /*       | drawing surfaces                   |     */
@@ -186,7 +188,7 @@ SECTIONS
     /* The second stage will always enter the image at the start of .text.   */
     /* The debugger will use the ELF entry point, which is the _entry_point  */
     /* symbol if present, otherwise defaults to start of .text               */
-    /* This can be used to transfer control back to the bootrom on debugger  */
+    /* This can be used to transfer control back to the boot rom on debugger */
     /* launches only, to perform proper flash setup                          */
     /*                                                                       */
 
