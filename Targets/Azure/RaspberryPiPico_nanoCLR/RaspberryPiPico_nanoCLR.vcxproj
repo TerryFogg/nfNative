@@ -72,6 +72,7 @@
     </ToolchainSettingsContainer>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\PicoSDK\1.4.0-Package\src\rp2_common\pico_stdio\stdio.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_allocate.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_create.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\common\src\txe_block_pool_delete.c" />
@@ -485,7 +486,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\AsyncProcCall\AsyncContinuations.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\BlockStorage\nanoPAL_BlockStorage.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\COM_stubs.c" />
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stubs.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stdio.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Double\nanoPAL_NativeDouble.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Events\nanoPAL_Events_driver.cpp" />
@@ -538,7 +539,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp" />
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c" />
     <ClCompile Include="..\Common\nanoCRT.cpp" />
@@ -581,18 +581,6 @@
     <ClCompile Include="Startup\CLR_Startup_Thread.c" />
     <ClCompile Include="Startup\nanoFramework_Threads.c" />
     <ClCompile Include="Startup\tx_initialize_low_level.S" />
-    <None Include="mcu.props" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp" />
-    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_FreeRTOS.c" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h" />
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
@@ -873,7 +861,6 @@
     <ClInclude Include="version.h" />
   </ItemGroup>
   <ItemGroup>
-    <LinkerScript Include="memmap_default.ld.text" />
     <LinkerScript Include="Memory\RaspberryPiPico.ld" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

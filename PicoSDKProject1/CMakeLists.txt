@@ -2,8 +2,12 @@ cmake_minimum_required(VERSION 3.12)
 include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
 
 project(PicoSDKProject1 C CXX ASM)
+include(PicoSDKConfig.cmake)
 pico_sdk_init()
 
+if(DEFINED SYSPROGS_FRAMEWORKS_FILE)
+include(${SYSPROGS_FRAMEWORKS_FILE})
+endif()
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 add_executable(hello_gpio_irq
@@ -11,7 +15,7 @@ add_executable(hello_gpio_irq
         )
 
 # pull in common dependencies
-target_link_libraries(hello_gpio_irq pico_stdlib)
+target_link_libraries(hello_gpio_irq pico_stdlib Profiler)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(hello_gpio_irq)

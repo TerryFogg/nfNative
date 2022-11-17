@@ -123,7 +123,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       |------------------------------------|     */
 /*       |                                    |     */
 /*       | Native code ram (Azure, nativeCLR) |CLR>>*/  RAM            (xrw) : ORIGIN = ORIGIN(RAM_STRIPED), LENGTH = 80k
-/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 160K
+/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 70K
 /*       |                                    |CLR>>*/  HardFaultCount (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = 32
 /*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(HardFaultCount) + LENGTH(HardFaultCount), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) + LENGTH(HardFaultCount) )
 /*       | drawing surfaces                   |     */

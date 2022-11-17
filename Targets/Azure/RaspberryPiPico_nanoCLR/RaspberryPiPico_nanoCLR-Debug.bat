@@ -1,6 +1,8 @@
 @echo off
 REM Run this file to build the project outside of the IDE.
 REM WARNING: if using a different machine, copy the .rsp files together with this script.
+echo stdio.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/PicoSDK/1.4.0-Package/src/rp2_common/pico_stdio/stdio.gcc.rsp" || exit 1
 echo txe_block_allocate.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/txe_block_allocate.gcc.rsp" || exit 1
 echo txe_block_pool_create.c
@@ -809,8 +811,8 @@ echo nanoPAL_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/BlockStorage/nanoPAL_BlockStorage.gcc.rsp" || exit 1
 echo COM_stubs.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/COM/COM_stubs.gcc.rsp" || exit 1
-echo GenericPort_stubs.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/COM/GenericPort_stubs.gcc.rsp" || exit 1
+echo GenericPort_stdio.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/COM/GenericPort_stdio.gcc.rsp" || exit 1
 echo nanoPAL_NativeDouble.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/Double/nanoPAL_NativeDouble.gcc.rsp" || exit 1
 echo nanoPAL_Events.cpp
@@ -893,8 +895,6 @@ echo binary_info.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.gcc.rsp" || exit 1
 echo new_delete.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/new_delete.gcc.rsp" || exit 1
-echo stdio.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.gcc.rsp" || exit 1
 echo stdio_uart.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.gcc.rsp" || exit 1
 echo stdlib.c
@@ -975,16 +975,6 @@ echo CLR_Startup_Thread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/CLR_Startup_Thread.gcc.rsp" || exit 1
 echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
-echo FastSemihosting.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/FastSemihosting.gcc.rsp" || exit 1
-echo SamplingProfiler.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/SamplingProfiler.gcc.rsp" || exit 1
-echo InstrumentingProfiler.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/InstrumentingProfiler.gcc.rsp" || exit 1
-echo TestResourceManager.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/TestResourceManager.gcc.rsp" || exit 1
-echo ProfilerRTOS_FreeRTOS.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/ProfilerRTOS_FreeRTOS.gcc.rsp" || exit 1
 echo tx_thread_context_restore.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
 echo tx_thread_context_save.S
@@ -1029,3 +1019,6 @@ echo bs2_default_padded_checksummed.s
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/bs2_default_padded_checksummed.gcc.rsp" || exit 1
 echo tx_initialize_low_level.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/tx_initialize_low_level.gcc.rsp" || exit 1
+echo Linking Build/RaspberryPiPico_nanoCLR.elf...
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Build/RaspberryPiPico_nanoCLR.link.rsp || exit 1
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Build/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1

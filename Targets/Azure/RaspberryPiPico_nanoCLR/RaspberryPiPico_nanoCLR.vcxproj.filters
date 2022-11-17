@@ -623,12 +623,6 @@
     <Filter Include="RP2040\include\pico">
       <UniqueIdentifier>{3fbc6d4a-6954-4972-b101-f6a42f5e9a6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Device-specific files">
-      <UniqueIdentifier>{7b02729b-1389-40b7-8887-5bd53fac69b0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Device-specific files\Semihosting/Profiler">
-      <UniqueIdentifier>{613bbf00-d7e3-4001-8a84-bd87ff5a9310}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\critical_section.c">
@@ -750,9 +744,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S">
       <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c">
       <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart</Filter>
@@ -2005,9 +1996,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\COM_stubs.c">
       <Filter>External\nf-interpreter\src\PAL\COM</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stubs.c">
-      <Filter>External\nf-interpreter\src\PAL\COM</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Double\nanoPAL_NativeDouble.cpp">
       <Filter>External\nf-interpreter\src\PAL\Double</Filter>
     </ClCompile>
@@ -2156,42 +2144,12 @@
     <ClCompile Include="Features\Graphics\TouchTemporary.cpp">
       <Filter>Features\Graphics</Filter>
     </ClCompile>
-    <None Include="mcu.props">
-      <Filter>Device-specific files</Filter>
-    </None>
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stdio.c">
+      <Filter>External\nf-interpreter\src\PAL\COM</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\PicoSDK\1.4.0-Package\src\rp2_common\pico_stdio\stdio.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_FreeRTOS.c">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClCompile>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Device-specific files\Semihosting/Profiler</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">
@@ -3014,7 +2972,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <LinkerScript Include="memmap_default.ld.text" />
     <LinkerScript Include="Memory\RaspberryPiPico.ld">
       <Filter>Memory</Filter>
     </LinkerScript>
