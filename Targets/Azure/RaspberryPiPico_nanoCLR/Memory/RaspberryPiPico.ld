@@ -37,8 +37,6 @@
 /*       |  Direct drawing from graphics      |     */  
 /*       |  screen memory                     |     */   
 /*       |                                    |     */   
-/*       | Used during debugging to stop      |     */  Hard_Fault_Count = ORIGIN(HardFaultCount);
-/*       | reboot loop if multiple hard faults|     */  
 /*       |                                    |     */   
 /*       \------------------------------------/     */
 
@@ -115,20 +113,19 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | Sector  0 (First 256 bytes)        |SYS>>*/  STAGE2_BOOT  (rx)  : ORIGIN = ORIGIN(FLASH), LENGTH = 252 + 4  /* bs2_default_padded_checksummed.S */
 /*       | .................................. |     */
 /*       | Sectors   0 - 159                  |CLR>>*/  nanoCLR      (rx)  : ORIGIN = ORIGIN(STAGE2_BOOT) + LENGTH(STAGE2_BOOT), LENGTH = (160*flash_sector_size - LENGTH(STAGE2_BOOT))
-/*       | Sectors 160 - 160                  |CLR>>*/  config       (rx)  : ORIGIN = ORIGIN(nanoCLR) + LENGTH(nanoCLR) , LENGTH = config_size
-/*       | Sectors 161 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(config)+ LENGTH(config), LENGTH = flash_page_count*flash_sector_size - (LENGTH(STAGE2_BOOT) + LENGTH(nanoCLR) + LENGTH(config))
+/*       | Sectors 160 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(nanoCLR)+ LENGTH(nanoCLR), LENGTH = flash_page_count*flash_sector_size - (LENGTH(STAGE2_BOOT) + LENGTH(nanoCLR) )
 /*       |                                    |     */
+/*       | Sectors 160 - 160                  |CLR>>*/  /* not used yet */ /* config       (rx)  : ORIGIN = ORIGIN(nanoCLR) + LENGTH(nanoCLR) , LENGTH = config_size */
 /*       |------------------------------------|     */
 /*       | RAM LAYOUT                         |     */
 /*       |------------------------------------|     */
 /*       |                                    |     */
 /*       | Native code ram (Azure, nativeCLR) |CLR>>*/  RAM            (xrw) : ORIGIN = ORIGIN(RAM_STRIPED), LENGTH = 80k
 /*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 70K
-/*       |                                    |CLR>>*/  HardFaultCount (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = 32
-/*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(HardFaultCount) + LENGTH(HardFaultCount), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) + LENGTH(HardFaultCount) )
+/*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) )
 /*       | drawing surfaces                   |     */
 /*       |                                    |     */
-/*       | Video frame buffer                 |CLR>>*/  /** NO FRAME BUFFER **/ /* NOT USED *//*graphics_vfb (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 64800*/
+/*       | Video frame buffer                 |CLR>>*/  /** NO FRAME BUFFER **/ /* NOT USED */  /*graphics_vfb (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 64800*/
 /*       | Sized to the display on the        |     */  /** NO FRAME BUFFER **/
 /*       | RaspberryPi Pico extension board   |     */  /** NO FRAME BUFFER **/
 /*       | Pico-LCD-1.14 240x135x2 -> 64800   |     */  /** NO FRAME BUFFER **/
@@ -150,8 +147,8 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | Portable Executable (PE) file      |CLR>>*/  __deployment_size__   = LENGTH(deployment); 
 /*       | is stored                          |CLR>>*/  __deployment_end__    = __deployment_start__ + __deployment_size__; 
 /*       |------------------------------------|     */   
-/*       | Small area of persistent storage   |     */  __nanoConfig_start__  = ORIGIN(config);
-/*       |                                    |     */  __nanoConfig_end__    = ORIGIN(config) + config_size;
+/*       | Small area of persistent storage   |     */  __nanoConfig_start__  = 0; /* ORIGIN(config); */
+/*       |                                    |     */  __nanoConfig_end__    = 0; /* ORIGIN(config) + config_size; */
 /*       |------------------------------------|     */   
 /*       | Bit pixel copy of the screen       |CLR>>*/  Graphics_frame_buffer = graphics_Frame_Buffer_not_used;
 /*       | Updated by DMA                     |     */    

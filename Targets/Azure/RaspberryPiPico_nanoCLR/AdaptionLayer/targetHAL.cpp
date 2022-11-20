@@ -18,7 +18,6 @@
 #include "BOARD.h"
 
 extern bool g_waitForDebuggerRequested;
-extern HardFaultReporting g_HardFault;
 
 // global mutex protecting the internal state of the interpreter, including event flags
 // mutex_t interpreterGlobalMutex;
@@ -74,23 +73,16 @@ void nanoHAL_Initialize()
     Network_Initialize();
     
     // Display Debug status if requested
-    if (g_waitForDebuggerRequested || g_HardFault.count != 0) {
+    if (g_waitForDebuggerRequested ) {
       g_waitForDebuggerRequested = true;
 
       lcd_printf("\f");
       lcd_printf("      |-------------------------------------------------|\n");
-      if (g_HardFault.count != 0) {
-        lcd_printf(
-            "      | HARD Fault recorded                             |\n");
-        lcd_printf(
-            "      | ...................                             |\n");
-      }
       lcd_printf("      |                                                 |\n");
       lcd_printf("      | Waiting for the debugger                        |\n");
       lcd_printf("      |                                                 |\n");
       lcd_printf("      |-------------------------------------------------|\n");
 
-      g_HardFault.count = 0;
     }
 }
 

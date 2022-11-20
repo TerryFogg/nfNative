@@ -1,15 +1,14 @@
 C:\repos\nfNative\Targets\Azure\RaspberryPiPico_nanoCLR\Build\RaspberryPiPico_nanoCLR.elf  :
 section                   size         addr
 .boot2                   0x100   0x10000000
-.text                  0x6bc58   0x10000100
-.rodata                 0xe224   0x1006bd58
-.ARM.extab              0x34c4   0x10079f7c
-.ARM                    0x29f8   0x1007d440
-.binary_info              0x1c   0x1007fe38
+.text                  0x6bbe8   0x10000100
+.rodata                 0xe19c   0x1006bce8
+.ARM.extab              0x34c4   0x10079e84
+.ARM                    0x29f8   0x1007d348
+.binary_info              0x1c   0x1007fd40
 .ram_vector_table         0xc0   0x20000000
 .data                   0x263c   0x200000c0
-.hard_fault_count          0x4   0x200026fc
-.uninitialized_data        0x0   0x20002700
+.uninitialized_data        0x0   0x200026fc
 .scratch_x                 0x0   0x20040000
 .scratch_y                 0x0   0x20041000
 .bss                    0xeac4   0x20002700
@@ -17,15 +16,15 @@ section                   size         addr
 .stack_dummy             0x800   0x20041000
 .ARM.attributes           0x28          0x0
 .comment                  0x49          0x0
-.debug_info           0x60a6ac          0x0
-.debug_abbrev          0x4bb51          0x0
-.debug_aranges          0xa1a0          0x0
-.debug_ranges           0xaa68          0x0
-.debug_line            0x739c5          0x0
-.debug_str             0x4a645          0x0
-.debug_frame           0x23fdc          0x0
+.debug_info           0x60a42c          0x0
+.debug_abbrev          0x4ba62          0x0
+.debug_aranges          0xa180          0x0
+.debug_ranges           0xaa58          0x0
+.debug_line            0x73837          0x0
+.debug_str             0x4a58f          0x0
+.debug_frame           0x23fac          0x0
 .stab                     0x9c          0x0
 .stabstr                 0x14f          0x0
-Total                 0x7df05f
+Total                 0x7de950
 
 
