@@ -111,48 +111,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildOutput", "BuildOutput"
 		VisualGDB\Debug\STM32H735G_DK_nanoCLR.size = VisualGDB\Debug\STM32H735G_DK_nanoCLR.size
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeReference", "CodeReference", "{F7E7A726-2B28-411C-8417-B4BE160A2241}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetMF_WP", "NetMF_WP", "{90FD3A53-324A-496A-9BB4-58C0877166D2}"
-	ProjectSection(SolutionItems) = preProject
-		Documents\CodeReference\NetMF_WP\Compression.cpp = Documents\CodeReference\NetMF_WP\Compression.cpp
-		Documents\CodeReference\NetMF_WP\TinySupport.h = Documents\CodeReference\NetMF_WP\TinySupport.h
-		Documents\CodeReference\NetMF_WP\WireProtocol.cpp = Documents\CodeReference\NetMF_WP\WireProtocol.cpp
-		Documents\CodeReference\NetMF_WP\WireProtocol.h = Documents\CodeReference\NetMF_WP\WireProtocol.h
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetMF_USB", "NetMF_USB", "{33437A44-EECA-4BF1-B286-4245C0DF941B}"
-	ProjectSection(SolutionItems) = preProject
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb.h = Documents\CodeReference\NetMF_USB\spot_hardware_usb.h
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_fastcompile.cpp = Documents\CodeReference\NetMF_USB\spot_hardware_usb_fastcompile.cpp
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_native.cpp = Documents\CodeReference\NetMF_USB\spot_hardware_usb_native.cpp
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_native.h = Documents\CodeReference\NetMF_USB\spot_hardware_usb_native.h
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbController.cpp = Documents\CodeReference\NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbController.cpp
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbStream.cpp = Documents\CodeReference\NetMF_USB\spot_hardware_usb_native_Microsoft_SPOT_Hardware_UsbClient_UsbStream.cpp
-		Documents\CodeReference\NetMF_USB\spot_hardware_usb_stub.cpp = Documents\CodeReference\NetMF_USB\spot_hardware_usb_stub.cpp
-		Documents\CodeReference\NetMF_USB\STM32F4_usb_functions.cpp = Documents\CodeReference\NetMF_USB\STM32F4_usb_functions.cpp
-		Documents\CodeReference\NetMF_USB\usb.cpp = Documents\CodeReference\NetMF_USB\usb.cpp
-		Documents\CodeReference\NetMF_USB\usb.h = Documents\CodeReference\NetMF_USB\usb.h
-		Documents\CodeReference\NetMF_USB\UsbClient.cs = Documents\CodeReference\NetMF_USB\UsbClient.cs
-		Documents\CodeReference\NetMF_USB\usb_config.cpp = Documents\CodeReference\NetMF_USB\usb_config.cpp
-		Documents\CodeReference\NetMF_USB\usb_config_SAM9RL64_EK.cpp = Documents\CodeReference\NetMF_USB\usb_config_SAM9RL64_EK.cpp
-		Documents\CodeReference\NetMF_USB\USB_decl.h = Documents\CodeReference\NetMF_USB\USB_decl.h
-		Documents\CodeReference\NetMF_USB\usb_def.h = Documents\CodeReference\NetMF_USB\usb_def.h
-		Documents\CodeReference\NetMF_USB\usb_stubs.cpp = Documents\CodeReference\NetMF_USB\usb_stubs.cpp
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WireProtocol", "WireProtocol", "{1A14A105-B194-4ADE-B5CD-B52FFEB289A8}"
-	ProjectSection(SolutionItems) = preProject
-		Documents\CodeReference\WireProtocol\WireProtocol_App_Interface.c = Documents\CodeReference\WireProtocol\WireProtocol_App_Interface.c
-		Documents\CodeReference\WireProtocol\WireProtocol_HAL_Interface.c = Documents\CodeReference\WireProtocol\WireProtocol_HAL_Interface.c
-		Documents\CodeReference\WireProtocol\WireProtocol_MonitorCommands.c = Documents\CodeReference\WireProtocol\WireProtocol_MonitorCommands.c
-		Documents\CodeReference\WireProtocol\WireProtocol_ReceiverThread.c = Documents\CodeReference\WireProtocol\WireProtocol_ReceiverThread.c
-		Documents\CodeReference\WireProtocol\WireProtocol_ReceiverThread.h = Documents\CodeReference\WireProtocol\WireProtocol_ReceiverThread.h
-		Documents\CodeReference\WireProtocol\wpUSART_Communications.c = Documents\CodeReference\WireProtocol\wpUSART_Communications.c
-		Documents\CodeReference\WireProtocol\wpUSART_Communications.h = Documents\CodeReference\WireProtocol\wpUSART_Communications.h
-		Documents\CodeReference\WireProtocol\wp_hal.h = Documents\CodeReference\WireProtocol\wp_hal.h
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayAndTouch", "DisplayAndTouch", "{7F9FBCC8-0F0E-448D-A360-80EC3D048D62}"
 	ProjectSection(SolutionItems) = preProject
 		Documents\DisplayAndTouch\FT5336GQQ_v0.6 (1).pdf = Documents\DisplayAndTouch\FT5336GQQ_v0.6 (1).pdf
@@ -15329,10 +15287,6 @@ Global
 		{A6AE73ED-45C3-45E5-9514-F26C6950FEE8} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
 		{241DB077-4927-4785-B9C9-EAE02E1DCAB1} = {A6AE73ED-45C3-45E5-9514-F26C6950FEE8}
 		{67BB65B9-9185-4030-AA00-36038CCA9214} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
-		{F7E7A726-2B28-411C-8417-B4BE160A2241} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
-		{90FD3A53-324A-496A-9BB4-58C0877166D2} = {F7E7A726-2B28-411C-8417-B4BE160A2241}
-		{33437A44-EECA-4BF1-B286-4245C0DF941B} = {F7E7A726-2B28-411C-8417-B4BE160A2241}
-		{1A14A105-B194-4ADE-B5CD-B52FFEB289A8} = {F7E7A726-2B28-411C-8417-B4BE160A2241}
 		{7F9FBCC8-0F0E-448D-A360-80EC3D048D62} = {D218DB76-E812-4C72-A4A6-A64F3B87B87D}
 		{03C68FC8-DA73-41BA-9BB6-39FBC9348F37} = {76EDBB78-A685-41D3-8898-32D75F43C265}
 		{67C33B72-4EB0-414B-984C-46502ADD5453} = {76EDBB78-A685-41D3-8898-32D75F43C265}

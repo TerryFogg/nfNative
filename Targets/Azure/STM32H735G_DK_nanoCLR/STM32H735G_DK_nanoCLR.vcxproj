@@ -780,8 +780,6 @@
     <ClCompile Include="..\Common\targetHAL_Time.cpp" />
     <ClCompile Include="..\Common\targetPAL_Events.cpp" />
     <ClCompile Include="..\Common\targetPAL_Time.cpp" />
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_HAL_Interface.c" />
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.c" />
     <ClCompile Include="AdaptionLayer\BOARD.c" />
     <ClCompile Include="Features\IO\ADC.cpp" />
     <ClCompile Include="Features\IO\DAC.cpp" />
@@ -821,8 +819,10 @@
     <ClCompile Include="Memory\Target_BlockStorage_STM32FlashDriver.c" />
     <ClCompile Include="AdaptionLayer\target_common.c" />
     <ClCompile Include="Startup\tx_initialize_low_level.S" />
-    <ClCompile Include="AdaptionLayer\wpUSART_Communications.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="WireProtocol\wpUSART_Communications.c" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_api.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory_exFAT.h" />
@@ -998,7 +998,6 @@
     <ClInclude Include="..\Common\STM32\ST_Hal_Gpio_Helpers.h" />
     <ClInclude Include="..\Common\targetHAL_Time.h" />
     <ClInclude Include="..\Common\targetPAL_Time.h" />
-    <ClInclude Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="AdaptionLayer\BOARD.h" />
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h" />
     <ClInclude Include="Features\Storage\MicroSD.h" />
@@ -1026,15 +1025,12 @@
     <ClInclude Include="Startup\tx_user.h" />
     <ClInclude Include="Startup\tx_user_nanoCLR.h" />
     <ClInclude Include="Startup\vectors.h" />
-    <ClInclude Include="AdaptionLayer\wpUSART_Communications.h" />
+    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h" />
+    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="WireProtocol\wpUSART_Communications.h" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md" />
-    <None Include="..\..\..\SharedCode\.clang-format" />
-    <None Include="stm32.props" />
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
-    <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings" />
-    <None Include="STM32H7B3_DK_nanoCLR-Release.vgdbsettings" />
-    <None Include="stm32.xml" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Memory\STM32H735G-DK.ld" />

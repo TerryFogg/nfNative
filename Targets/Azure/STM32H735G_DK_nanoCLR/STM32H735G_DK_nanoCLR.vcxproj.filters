@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="VisualGDB settings">
-      <UniqueIdentifier>{f12d8741-fe50-45be-89cf-ac9c923f4f7e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Common">
       <UniqueIdentifier>{7149a75d-e37b-46e8-a1f0-62ffec0317ab}</UniqueIdentifier>
     </Filter>
@@ -24,9 +21,6 @@
     </Filter>
     <Filter Include="Startup">
       <UniqueIdentifier>{71c0b618-2dae-4170-a8e6-32ee5249d7d4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Common\WireProtocol">
-      <UniqueIdentifier>{c239f964-4d79-4e0e-9855-688c430ad52e}</UniqueIdentifier>
     </Filter>
     <Filter Include="ExternalRepositories">
       <UniqueIdentifier>{8e12ebc7-34bf-43d5-8fab-f618ce8a4353}</UniqueIdentifier>
@@ -286,27 +280,17 @@
     <Filter Include="Features\Other">
       <UniqueIdentifier>{26ef8de3-14ee-4430-a647-a8e3ed6a35ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="WireProtocol">
+      <UniqueIdentifier>{998d414b-5c1c-4e0f-822b-cb8e03639b03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="STM32H7B3_DK_nanoCLR-Debug.vgdbsettings">
-      <Filter>VisualGDB settings</Filter>
-    </None>
-    <None Include="STM32H7B3_DK_nanoCLR-Release.vgdbsettings">
-      <Filter>VisualGDB settings</Filter>
-    </None>
-    <None Include="stm32.xml">
-      <Filter>VisualGDB settings</Filter>
-    </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
       <Filter>ExternalRepositories\nf-interpreter\src\CLR\Include</Filter>
     </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
       <Filter>ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics</Filter>
     </None>
-    <None Include="stm32.props">
-      <Filter>VisualGDB settings</Filter>
-    </None>
-    <None Include="..\..\..\SharedCode\.clang-format" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
@@ -876,12 +860,6 @@
     <ClInclude Include="AdaptionLayer\BOARD.h">
       <Filter>AdaptionLayer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.h">
-      <Filter>Common\WireProtocol</Filter>
-    </ClInclude>
-    <ClInclude Include="AdaptionLayer\wpUSART_Communications.h">
-      <Filter>AdaptionLayer</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\STM32\Register_Modifications.h">
       <Filter>Common\STM32</Filter>
     </ClInclude>
@@ -923,6 +901,15 @@
     </ClInclude>
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h">
       <Filter>Features\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h">
+      <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="WireProtocol\wpUSART_Communications.h">
+      <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h">
+      <Filter>WireProtocol</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -3090,15 +3077,6 @@
     <ClCompile Include="AdaptionLayer\BOARD.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>Common\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.c">
-      <Filter>Common\WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="AdaptionLayer\wpUSART_Communications.c">
-      <Filter>AdaptionLayer</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\STM32\hard_fault_handler.c">
       <Filter>Common\STM32</Filter>
     </ClCompile>
@@ -3170,6 +3148,15 @@
     </ClCompile>
     <ClCompile Include="Features\Other\Audio.c">
       <Filter>Features\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c">
+      <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c">
+      <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\wpUSART_Communications.c">
+      <Filter>WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

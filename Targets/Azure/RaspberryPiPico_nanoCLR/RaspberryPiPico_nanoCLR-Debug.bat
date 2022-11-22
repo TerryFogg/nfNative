@@ -833,6 +833,22 @@ echo sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Gpio/sys_dev_gpio_native_System_Device_Gpio_GpioPin.gcc.rsp" || exit 1
 echo nanoHAL_Spi.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Spi/nanoHAL_Spi.gcc.rsp" || exit 1
+echo cdc_device.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.gcc.rsp" || exit 1
+echo tusb_fifo.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/common/tusb_fifo.gcc.rsp" || exit 1
+echo usbd.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd.gcc.rsp" || exit 1
+echo usbd_control.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.gcc.rsp" || exit 1
+echo dcd_rp2040.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.gcc.rsp" || exit 1
+echo hcd_rp2040.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.gcc.rsp" || exit 1
+echo rp2040_usb.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.gcc.rsp" || exit 1
+echo tusb.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/tusb.gcc.rsp" || exit 1
 echo critical_section.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/common/pico_sync/critical_section.gcc.rsp" || exit 1
 echo lock_core.c
@@ -851,16 +867,34 @@ echo pheap.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/common/pico_util/pheap.gcc.rsp" || exit 1
 echo queue.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/common/pico_util/queue.gcc.rsp" || exit 1
+echo adc.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_adc/adc.gcc.rsp" || exit 1
 echo claim.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_claim/claim.gcc.rsp" || exit 1
 echo clocks.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_clocks/clocks.gcc.rsp" || exit 1
+echo dma.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_dma/dma.gcc.rsp" || exit 1
+echo exception.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_exception/exception.gcc.rsp" || exit 1
+echo flash.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_flash/flash.gcc.rsp" || exit 1
 echo gpio.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_gpio/gpio.gcc.rsp" || exit 1
+echo i2c.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_i2c/i2c.gcc.rsp" || exit 1
+echo interp.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_interp/interp.gcc.rsp" || exit 1
 echo irq.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq.gcc.rsp" || exit 1
+echo pio.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pio/pio.gcc.rsp" || exit 1
 echo pll.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_pll/pll.gcc.rsp" || exit 1
+echo rtc.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_rtc/rtc.gcc.rsp" || exit 1
+echo spi.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_spi/spi.gcc.rsp" || exit 1
 echo sync.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_sync/sync.gcc.rsp" || exit 1
 echo timer.c
@@ -879,12 +913,16 @@ echo double_init_rom.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_init_rom.gcc.rsp" || exit 1
 echo double_math.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_math.gcc.rsp" || exit 1
+echo rp2040_usb_device_enumeration.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.gcc.rsp" || exit 1
 echo float_init_rom.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_init_rom.gcc.rsp" || exit 1
 echo float_math.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_math.gcc.rsp" || exit 1
 echo pico_malloc.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.gcc.rsp" || exit 1
+echo multicore.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_multicore/multicore.gcc.rsp" || exit 1
 echo platform.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_platform/platform.gcc.rsp" || exit 1
 echo printf.c
@@ -897,8 +935,16 @@ echo new_delete.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/new_delete.gcc.rsp" || exit 1
 echo stdio_uart.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.gcc.rsp" || exit 1
+echo reset_interface.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.gcc.rsp" || exit 1
+echo stdio_usb.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.gcc.rsp" || exit 1
+echo stdio_usb_descriptors.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.gcc.rsp" || exit 1
 echo stdlib.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdlib/stdlib.gcc.rsp" || exit 1
+echo unique_id.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_unique_id/unique_id.gcc.rsp" || exit 1
 echo nanoCRT.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/Common/nanoCRT.gcc.rsp" || exit 1
 echo nanoHAL.cpp
@@ -911,10 +957,6 @@ echo targetPAL_Events.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/Common/targetPAL_Events.gcc.rsp" || exit 1
 echo targetPAL_Time.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/Common/targetPAL_Time.gcc.rsp" || exit 1
-echo WireProtocol_HAL_Interface.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/Common/WireProtocol/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
-echo WireProtocol_ReceiverThread.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/Common/WireProtocol/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
 echo BOARD.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/BOARD.gcc.rsp" || exit 1
 echo hard_fault_handler.c
@@ -929,8 +971,6 @@ echo targetPAL.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/targetPAL.gcc.rsp" || exit 1
 echo target_common.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/target_common.gcc.rsp" || exit 1
-echo wpUSART_Communications.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/wpUSART_Communications.gcc.rsp" || exit 1
 echo Audio.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Features/Audio.gcc.rsp" || exit 1
 echo Ethernet.c
@@ -975,6 +1015,10 @@ echo CLR_Startup_Thread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/CLR_Startup_Thread.gcc.rsp" || exit 1
 echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
+echo WireProtocol_HAL_Interface.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
+echo WireProtocol_ReceiverThread.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
 echo tx_thread_context_restore.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
 echo tx_thread_context_save.S

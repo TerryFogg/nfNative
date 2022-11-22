@@ -45,8 +45,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Features;Features\IO;Features\Graphics;Startup;AdaptionLayer;Memory;..\Common;RP2040\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_bit_ops\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_divider\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_stdlib\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\boot_stage2\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\cmsis\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_base\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_resets\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include;..\..\..\ExternalRepositories\pico-sdk\src\boards\include;..\..\..\ExternalRepositories\azure-rtos\filex\common\inc;..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m0\gnu\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\NativeEventDispatcher;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem;..\..\..\ExternalRepositories\nf-interpreter\src\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Wifi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>__CM0_CMSIS_VERSION;PLATFORM_ARM=1;DEBUG=1;LIB_PICO_BIT_OPS=1;LIB_PICO_BIT_OPS_PICO=1;LIB_PICO_DIVIDER=1;LIB_PICO_DIVIDER_HARDWARE=1;LIB_PICO_DOUBLE=1;LIB_PICO_DOUBLE_PICO=1;LIB_PICO_FLOAT=1;LIB_PICO_FLOAT_PICO=1;LIB_PICO_INT64_OPS=1;LIB_PICO_INT64_OPS_PICO=1;LIB_PICO_MALLOC=1;LIB_PICO_MEM_OPS=1;LIB_PICO_MEM_OPS_PICO=1;LIB_PICO_PLATFORM=1;LIB_PICO_PRINTF=1;LIB_PICO_PRINTF_PICO=1;LIB_PICO_RUNTIME=1;LIB_PICO_STANDARD_LINK=1;LIB_PICO_STDIO=1;LIB_PICO_STDIO_UART=1;LIB_PICO_STDLIB=1;LIB_PICO_SYNC=1;LIB_PICO_SYNC_CORE=1;LIB_PICO_SYNC_CRITICAL_SECTION=1;LIB_PICO_SYNC_MUTEX=1;LIB_PICO_SYNC_SEM=1;LIB_PICO_TIME=1;LIB_PICO_UTIL=1;PICO_BOARD=\"pico\";PICO_BUILD=1;PICO_COPY_TO_RAM=0;PICO_CXX_ENABLE_EXCEPTIONS=0;PICO_NO_FLASH=0;PICO_NO_HARDWARE=0;PICO_ON_DEVICE=1;PICO_TARGET_NAME=\"blink\";PICO_USE_BLOCKED_RAM=0;PendSV_Handler=isr_pendsv;SysTick_Handler=isr_systick;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>AdaptionLayer;Features;Features\IO;Features\Graphics;Memory;Startup;WireProtocol;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio;..\Common;..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src;RP2040\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include\pico\binary_info;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_binary_info\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_bit_ops\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_divider\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_stdlib\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_usb_reset_interface\include;..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_regs\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\boot_stage2\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\cmsis\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_adc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_base\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_exception\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_flash\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_i2c\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_interp\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pwm\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_resets\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_rtc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_spi\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_vreg\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_watchdog\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_xosc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_multicore\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include;..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\include;..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device;..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common;..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040;..\..\..\ExternalRepositories\pico-sdk\src\boards\include;..\..\..\ExternalRepositories\azure-rtos\filex\common\inc;..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m0\gnu\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\NativeEventDispatcher;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem;..\..\..\ExternalRepositories\nf-interpreter\src\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.SerialCommunication;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Devices.Wifi;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage;.;../../../ExternalRepositories/pico-sdk;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__CM0_CMSIS_VERSION;PLATFORM_ARM=1;DEBUG=1;LIB_PICO_BIT_OPS=1;LIB_PICO_BIT_OPS_PICO=1;LIB_PICO_DIVIDER=1;LIB_PICO_DIVIDER_HARDWARE=1;LIB_PICO_DOUBLE=1;LIB_PICO_DOUBLE_PICO=1;LIB_PICO_FLOAT=1;LIB_PICO_FLOAT_PICO=1;LIB_PICO_INT64_OPS=1;LIB_PICO_INT64_OPS_PICO=1;LIB_PICO_MALLOC=1;LIB_PICO_MEM_OPS=1;LIB_PICO_MEM_OPS_PICO=1;LIB_PICO_PLATFORM=1;LIB_PICO_PRINTF=1;LIB_PICO_PRINTF_PICO=1;LIB_PICO_RUNTIME=1;LIB_PICO_STANDARD_LINK=1;LIB_PICO_STDIO=1;LIB_PICO_STDIO_UART=1;LIB_PICO_STDLIB=1;LIB_PICO_SYNC=1;LIB_PICO_SYNC_CORE=1;LIB_PICO_SYNC_CRITICAL_SECTION=1;LIB_PICO_SYNC_MUTEX=1;LIB_PICO_SYNC_SEM=1;LIB_PICO_TIME=1;LIB_PICO_UTIL=1;PICO_BOARD=\"pico\";PICO_BUILD=1;PICO_COPY_TO_RAM=0;PICO_CXX_ENABLE_EXCEPTIONS=0;PICO_NO_FLASH=0;PICO_NO_HARDWARE=0;PICO_ON_DEVICE=1;PICO_TARGET_NAME=\"blink\";PICO_USE_BLOCKED_RAM=0;PendSV_Handler=isr_pendsv;SysTick_Handler=isr_systick;CFG_TUSB_MCU=OPT_MCU_RP2040;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>
       </AdditionalOptions>
       <CLanguageStandard>GNU11</CLanguageStandard>
@@ -56,9 +56,9 @@
       </AdditionalCPPOptions>
     </ClCompile>
     <Link>
-      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
-      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
-      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
       <LinkerScript>Memory/RaspberryPiPico.ld</LinkerScript>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -497,6 +497,14 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd_control.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\hcd_rp2040.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\critical_section.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\lock_core.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\mutex.c" />
@@ -506,13 +514,22 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\datetime.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\pheap.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\queue.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_adc\adc.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\claim.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\clocks.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\divider.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\dma.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_exception\exception.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_flash\flash.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\gpio.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_i2c\i2c.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_interp\interp.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\pio.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\pll.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_rtc\rtc.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_spi\spi.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\sync.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\timer.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\uart.c" />
@@ -526,6 +543,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_init_rom.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_math.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_aeabi.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_init_rom.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\float_math.c" />
@@ -533,6 +551,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_multicore\multicore.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\platform.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\printf.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\runtime.c" />
@@ -540,15 +559,17 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c" />
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c" />
     <ClCompile Include="..\Common\nanoCRT.cpp" />
     <ClCompile Include="..\Common\nanoHAL.cpp" />
     <ClCompile Include="..\Common\platform_heap.c" />
     <ClCompile Include="..\Common\targetHAL_Time.cpp" />
     <ClCompile Include="..\Common\targetPAL_Events.cpp" />
     <ClCompile Include="..\Common\targetPAL_Time.cpp" />
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_HAL_Interface.c" />
-    <ClCompile Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.c" />
     <ClCompile Include="AdaptionLayer\BOARD.c" />
     <ClCompile Include="AdaptionLayer\hard_fault_handler.c" />
     <ClCompile Include="AdaptionLayer\targetHAL.cpp" />
@@ -556,7 +577,6 @@
     <ClCompile Include="AdaptionLayer\targetHAL_Power.c" />
     <ClCompile Include="AdaptionLayer\targetPAL.c" />
     <ClCompile Include="AdaptionLayer\target_common.c" />
-    <ClCompile Include="AdaptionLayer\wpUSART_Communications.c" />
     <ClCompile Include="Features\Audio.c" />
     <ClCompile Include="Features\Ethernet.c" />
     <ClCompile Include="Features\FDCAN.c" />
@@ -581,6 +601,8 @@
     <ClCompile Include="Startup\CLR_Startup_Thread.c" />
     <ClCompile Include="Startup\nanoFramework_Threads.c" />
     <ClCompile Include="Startup\tx_initialize_low_level.S" />
+    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
@@ -710,6 +732,12 @@
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include\nanoPAL_Time.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio\sys_dev_gpio_native.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\sys_dev_spi_native.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\dcd.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\boards\include\boards\pico.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\boot_picoboot\include\boot\picoboot.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_base\include\pico.h" />
@@ -731,6 +759,7 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\include\pico\sync.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\time.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_time\include\pico\timeout_helper.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_usb_reset_interface\include\pico\usb_reset_interface.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\doc.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\datetime.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_util\include\pico\util\pheap.h" />
@@ -803,14 +832,25 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2040\hardware_structs\include\hardware\structs\xosc.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\boot_stage2\include\boot_stage2\config.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\cmsis\include\cmsis\rename_exceptions.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_adc\include\hardware\adc.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_base\include\hardware\address_mapped.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_claim\include\hardware\claim.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_clocks\include\hardware\clocks.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_divider\include\hardware\divider.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\include\hardware\dma.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_exception\include\hardware\exception.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_flash\include\hardware\flash.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_gpio\include\hardware\gpio.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_i2c\include\hardware\i2c.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_interp\include\hardware\interp.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_irq\include\hardware\irq.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\include\hardware\pio.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pio\include\hardware\pio_instructions.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pll\include\hardware\pll.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_pwm\include\hardware\pwm.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_resets\include\hardware\resets.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_rtc\include\hardware\rtc.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_spi\include\hardware\spi.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_sync\include\hardware\sync.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_timer\include\hardware\timer.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_uart\include\hardware\uart.h" />
@@ -820,21 +860,27 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_bootrom\include\pico\bootrom\sf_table.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_double\include\pico\double.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\include\pico\fix\rp2040_usb_device_enumeration.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_float\include\pico\float.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_int64_ops\include\pico\int64_ops.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_malloc\include\pico\malloc.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_mem_ops\include\pico\mem_ops.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_multicore\include\pico\multicore.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_platform\include\pico\platform.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_printf\include\pico\printf.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include\pico\runtime.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb\reset_interface.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\tusb_config.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\include\pico\unique_id.h" />
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\tinyusb\doc.h" />
     <ClInclude Include="..\Common\targetHAL.h" />
     <ClInclude Include="..\Common\targetHAL_Time.h" />
     <ClInclude Include="..\Common\targetPAL_Time.h" />
     <ClInclude Include="..\Common\Target_Windows_Storage.h" />
-    <ClInclude Include="..\Common\WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="AdaptionLayer\BOARD.h" />
     <ClInclude Include="AdaptionLayer\platform_target_capabilities.h" />
     <ClInclude Include="AdaptionLayer\targetHAL_Power.h" />
@@ -844,7 +890,6 @@
     <ClInclude Include="AdaptionLayer\target_common.h" />
     <ClInclude Include="AdaptionLayer\target_os.h" />
     <ClInclude Include="AdaptionLayer\target_platform.h" />
-    <ClInclude Include="AdaptionLayer\wpUSART_Communications.h" />
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h" />
     <ClInclude Include="Features\IO\sys_dev_spi_native_target.h" />
     <ClInclude Include="Features\MicroSD.h" />
@@ -859,6 +904,9 @@
     <ClInclude Include="Startup\tx_user_nanoCLR.h" />
     <ClInclude Include="Startup\vectors.h" />
     <ClInclude Include="version.h" />
+    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h" />
+    <ClInclude Include="WireProtocol\wp_Communications.h" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Memory\RaspberryPiPico.ld" />

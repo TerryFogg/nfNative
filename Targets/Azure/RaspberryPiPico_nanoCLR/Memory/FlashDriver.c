@@ -34,8 +34,7 @@ bool FlashDriver_Write(void *context, ByteAddress startAddress,
   return true;
 }
 bool FlashDriver_IsBlockErased(void *context, ByteAddress blockAddress,
-                                    unsigned int length) 
-{
+                               unsigned int length) {
   return false;
 }
 bool FlashDriver_EraseBlock(void *context, ByteAddress address) { return true; }

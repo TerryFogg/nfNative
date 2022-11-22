@@ -8,16 +8,11 @@
 #include <nanoHAL_v2.h>
 #include <nanoPAL_BlockStorage.h>
 
-
-
 bool g_waitForDebuggerRequested = false;
 extern HardFaultReporting g_HardFault;
 
-int main(void)
-{
-
-
-    Initialize_Board();
-    g_waitForDebuggerRequested = BoardUserButton_Pressed();
-    Startup_Rtos();
+int main(void) {
+  Initialize_Board();
+  g_waitForDebuggerRequested = BoardUserButton_Pressed();
+  Startup_Rtos();
 }

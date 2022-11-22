@@ -1,15 +1,20 @@
-//
+
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) 2021 STMicroelectronics.  All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 #include "BOARD.h"
 #include "target_board.h"
-
+#include "pico\multicore.h"
+#include "pico\binary_info\code.h"
+#include "hardware\gpio.h"
+#include "pico/stdio_usb.h"
 
 void Initialize_Board()
 {
-    SystemClock_Config();                    // Configure the system clock to 520 MHz
+    SystemClock_Config(); // Configure the system clock to 520 MHz
+
+
     Initialize_Board_LEDS_And_Buttons();
     Initialize_RTC();
 
@@ -17,8 +22,12 @@ void Initialize_Board()
     Initialize_Graphics();
 #endif
 }
+
 void Initialize_Board_LEDS_And_Buttons()
 {
+  bi_decl(bi_1pin_with_name(PICO_DEFAULT_LED_PIN, "LED"));
+  gpio_init(PICO_DEFAULT_LED_PIN);
+  gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
 }
 void Initialize_DWT_Counter()
 {
@@ -36,35 +45,28 @@ void Initialize_64bit_timer()
     // nanosecond,  ~ 584 years before overflowing
 
     // In upcounting mode, the counter counts from 0 to the auto-reload value
-
 }
-void BoardLed_ON(uint32_t led)
-{
-//    LL_GPIO_ResetOutputPin(LED_GPIO_PORT, led);
-};
-void BoardLed_OFF(uint32_t led)
-{
-//    LL_GPIO_SetOutputPin(LED_GPIO_PORT, led);
-};
+void BoardLed_ON(uint32_t led){
+  gpio_put(LED_PIN, LED_STATE_ON);
+  }
+void BoardLed_OFF(uint32_t led){
+  gpio_put(LED_PIN, LED_STATE_OFF);
+
+  }
 void BoardLed_Toggle(uint32_t led)
 {
-//    if ((LED_GPIO_PORT->ODR & led) == led)
-//    {
-//        LED_GPIO_PORT->BSRR = led << 16;
-//    }
-//    else
-//    {
-//        LED_GPIO_PORT->BSRR = led;
-//    }
-}
+
+  }
 bool BoardUserButton_Pressed()
 {
-//    if (LL_GPIO_IsInputPinSet(BUTTON_USER_GPIO_PORT, BUTTON_USER_PIN))
-//    {
-//        return true;
-//    }
-//    else
-//    {
-//        return false;
-//    }
+    //    if (BootSel pressed)
+    //    {
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+    return false;
 }
+

@@ -423,3 +423,11 @@ healthchecksdb
 /Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.lst
 /Targets/Azure/RaspberryPiPico_nanoCLR/Local/Build/RaspberryPiPico_nanoCLR.bin
 /PicoSDKProject1/.visualgdb/VisualGDBCache/PicoSDKProject1-Debug-VisualGDB
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/GlobalFileTable.001
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/GlobalFileTable.000
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/family.rdb
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/family.npd
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/family.npa00
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/dcd_rp2040.rdb
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/codedb.lck
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB

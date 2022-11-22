@@ -12,6 +12,7 @@
 #include "tx_port.h"
 
 #include "TargetFeatures.h"
+#include "boards/pico.h"
 
 typedef struct __nfpack HardFaultReporting {
   int count;
@@ -19,6 +20,7 @@ typedef struct __nfpack HardFaultReporting {
 
 
 void Initialize_Board();
+void InitializeSerialOverUSB();
 void Initialize_RTC();
 void Initialize_DWT_Counter();
 void USBD_Clock_Config(void);
@@ -67,28 +69,10 @@ extern "C"
 // PICO board Leds
 // ========================
 
-#define LED_GPIO_PORT GPIOC
-#define LED_GREEN     LL_GPIO_PIN_3
-#define LED_RED       LL_GPIO_PIN_2
+#define LED_PIN PICO_DEFAULT_LED_PIN
+#define LED_STATE_OFF 0
+#define LED_STATE_ON 1
 
 // ===============================
-// STM32H735G-DK board push button
+// PICO board push button
 // ===============================
-
-#define BUTTON_USER_GPIO_PORT GPIOC
-#define BUTTON_USER_PIN       LL_GPIO_PIN_13
-
-// Board Specific Graphics
-#define LTDC_HSPOLARITY_AL          0x00000000U     // Horizontal Synchronization is active low.
-#define LTDC_VSPOLARITY_AL          0x00000000U     // Vertical Synchronization is active low.
-#define LTDC_DEPOLARITY_AL          0x00000000U     // Data Enable, is active low.
-#define LTDC_PCPOLARITY_IPC         0x00000000U     // input pixel clock.
-#define LTDC_IT_TE                  LTDC_IER_TERRIE // LTDC Transfer Error Interrupt
-#define LTDC_IT_FU                  LTDC_IER_FUIE   // LTDC FIFO Underrun Interrupt
-#define MAX_LAYER                   2U
-#define LTDC_BLENDING_FACTOR2_PAxCA 0x00000007U     // Blending factor : Cte Alpha x Pixel Alpha
-
-// Definition for Graphics on the board
-
-#define TS_INT_PIN LL_GPIO_PIN_2
-
