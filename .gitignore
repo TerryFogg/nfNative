@@ -431,3 +431,8 @@ healthchecksdb
 /Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/dcd_rp2040.rdb
 /Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/codedb.lck
 /Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/PreviousBinaryVersions/_Auto1.vgdb.elf
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/PreviousBinaryVersions/_Auto0.vgdb.elf
+/.visualgdb/CodeExplorer/FilterHistory.txt
+/.visualgdb/CodeExplorer/NodeFlags.dat
+/.visualgdb/CodeExplorer/NodeFlags.dat
