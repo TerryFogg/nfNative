@@ -1,30 +1,30 @@
 C:\repos\nfNative\Targets\Azure\RaspberryPiPico_nanoCLR\Build\RaspberryPiPico_nanoCLR.elf  :
 section                   size         addr
 .boot2                   0x100   0x10000000
-.text                  0x70328   0x10000100
-.rodata                 0xe794   0x10070428
-.ARM.extab              0x34c4   0x1007ebbc
-.ARM                    0x29f8   0x10082080
-.binary_info              0x24   0x10084a78
+.text                  0x6fe48   0x10000100
+.rodata                 0xe97c   0x1006ff48
+.ARM.extab              0x34c4   0x1007e8c4
+.ARM                    0x29f8   0x10081d88
+.binary_info              0x20   0x10084780
 .ram_vector_table         0xc0   0x20000000
-.data                   0x2890   0x200000c0
-.uninitialized_data        0x0   0x20002950
+.data                   0x2cc0   0x200000c0
+.uninitialized_data        0x0   0x20002d80
 .scratch_x                 0x0   0x20040000
 .scratch_y                 0x0   0x20041000
-.bss                    0xdc28   0x20002960
-.heap                    0x800   0x20010588
+.bss                    0xec4c   0x20002d80
+.heap                    0x800   0x200119cc
 .stack_dummy             0x800   0x20041000
 .ARM.attributes           0x28          0x0
 .comment                  0x49          0x0
-.debug_info           0x611495          0x0
-.debug_abbrev          0x4d3a4          0x0
-.debug_aranges          0xa7b0          0x0
-.debug_ranges           0xb020          0x0
-.debug_line            0x7774e          0x0
-.debug_str             0x4d266          0x0
-.debug_frame           0x25588          0x0
-.stab                     0x9c          0x0
-.stabstr                 0x14f          0x0
-Total                 0x7f41b5
+.debug_info           0x60af5e          0x0
+.debug_abbrev          0x4c949          0x0
+.debug_aranges          0xa6f8          0x0
+.debug_ranges           0xafe8          0x0
+.debug_line            0x76ad5          0x0
+.debug_str             0x4cf37          0x0
+.debug_frame           0x254f0          0x0
+.stab                     0x84          0x0
+.stabstr                 0x117          0x0
+Total                 0x7ed1fb
 
 

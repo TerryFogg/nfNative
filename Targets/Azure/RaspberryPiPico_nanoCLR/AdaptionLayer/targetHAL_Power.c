@@ -11,8 +11,14 @@
 
 uint32_t WakeupReasonStore;
 
+void software_reset()
+{
+    watchdog_enable(1, 1);
+    while(1);
+}
 inline void CPU_Reset()
 {
+software_reset();
 }
 
 inline bool CPU_IsSoftRebootSupported()

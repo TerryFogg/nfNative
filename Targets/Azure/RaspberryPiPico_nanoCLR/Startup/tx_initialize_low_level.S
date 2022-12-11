@@ -40,7 +40,7 @@
     .global  ram_vector_table
 @
 @
-SYSTEM_CLOCK      =   125000000
+SYSTEM_CLOCK      =   133000000
 SYSTICK_CYCLES    =   ((SYSTEM_CLOCK / 100) -1)
 
     .text

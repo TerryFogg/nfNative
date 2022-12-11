@@ -1025,7 +1025,6 @@
     <ClInclude Include="Startup\tx_user.h" />
     <ClInclude Include="Startup\tx_user_nanoCLR.h" />
     <ClInclude Include="Startup\vectors.h" />
-    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h" />
     <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="WireProtocol\wpUSART_Communications.h" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />

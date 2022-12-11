@@ -110,9 +110,6 @@
     <Filter Include="External\pico-sdk\src\rp2_common\pico_standard_link">
       <UniqueIdentifier>{3db8fecb-4842-4c14-be2e-752505c69f14}</UniqueIdentifier>
     </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio">
-      <UniqueIdentifier>{4bec84c2-4735-44b3-8e59-f87851ab4a49}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart">
       <UniqueIdentifier>{40beb16b-0fce-452f-bb94-b4db5f25f6d8}</UniqueIdentifier>
     </Filter>
@@ -238,15 +235,6 @@
     </Filter>
     <Filter Include="External\pico-sdk\src\rp2_common\pico_runtime\include\pico">
       <UniqueIdentifier>{1bea5c78-885e-4641-9229-c96d0b6bfa1e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include">
-      <UniqueIdentifier>{64ffe3af-5892-4f97-a99f-5d5149905441}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico">
-      <UniqueIdentifier>{ec71e070-d227-406c-8888-61a0a5003c48}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver">
-      <UniqueIdentifier>{fac7f483-a361-4ecc-8815-4ee29c3360dd}</UniqueIdentifier>
     </Filter>
     <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_uart\include">
       <UniqueIdentifier>{668be697-93bd-4608-a403-ecdb67b24024}</UniqueIdentifier>
@@ -584,9 +572,6 @@
     <Filter Include="Common">
       <UniqueIdentifier>{668ac409-f30d-4a75-b9b3-6fd7a8bb4b95}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Common\WireProtocol">
-      <UniqueIdentifier>{43506a78-1ec0-47b6-bb03-8280a827b547}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Build">
       <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
     </Filter>
@@ -698,18 +683,6 @@
     <Filter Include="External\pico-sdk\src\rp2_common\hardware_spi\include\hardware">
       <UniqueIdentifier>{a878ba68-2206-4b21-a87c-596d8ac9f906}</UniqueIdentifier>
     </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_usb">
-      <UniqueIdentifier>{0f85e006-5e1b-4c8d-89ec-915d909ae8d0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_usb\include">
-      <UniqueIdentifier>{f913b636-5a39-4bf5-89c8-8aa18ab79a3a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico">
-      <UniqueIdentifier>{33bcec20-4a9a-465c-a83c-3f680c552671}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb">
-      <UniqueIdentifier>{47f622fa-ed2d-4309-9c4f-86e339f3acfa}</UniqueIdentifier>
-    </Filter>
     <Filter Include="External\pico-sdk\src\rp2_common\pico_unique_id">
       <UniqueIdentifier>{c9a8ab50-3234-4580-b031-51a5fbd19370}</UniqueIdentifier>
     </Filter>
@@ -793,6 +766,27 @@
     </Filter>
     <Filter Include="WireProtocol">
       <UniqueIdentifier>{10d794fd-f6a2-4b83-acfd-c59b60bb6e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\osal">
+      <UniqueIdentifier>{42d58476-c2ee-4342-8c34-45b6ed0768ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio">
+      <UniqueIdentifier>{7e72d158-8110-48d1-bd7f-05eb503c8eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include">
+      <UniqueIdentifier>{f83c89ef-dcd1-4d04-8a93-4aa90264df52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico">
+      <UniqueIdentifier>{989f0da5-3fd0-4531-9ee9-fceab9431a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio">
+      <UniqueIdentifier>{815e9d69-6885-4229-b9fb-bb4b5bd941c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device-specific files">
+      <UniqueIdentifier>{b111f2a6-6dca-4c3b-a4f7-2fc8ac6918a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Device-specific files\Semihosting/Profiler">
+      <UniqueIdentifier>{3bbd8320-f1c5-405f-a589-52812dbe8d53}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -915,9 +909,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_standard_link\crt0.S">
       <Filter>External\pico-sdk\src\rp2_common\pico_standard_link</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\stdio_uart.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c">
       <Filter>External\pico-sdk\src\rp2_common\pico_stdlib</Filter>
@@ -2192,9 +2183,6 @@
       <Filter>External\nf-interpreter\src\System.Device.Gpio</Filter>
     </ClCompile>
     <ClCompile Include="main.c" />
-    <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays\ST7789_240x240.cpp">
-      <Filter>External\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi\nanoHAL_Spi.cpp">
       <Filter>External\nf-interpreter\src\System.Device.Spi</Filter>
     </ClCompile>
@@ -2204,7 +2192,7 @@
     <ClCompile Include="Features\Graphics\Initialize_Graphics.cpp">
       <Filter>Features\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Features\Graphics\Spi_To_Display.cpp">
+    <ClCompile Include="Features\Graphics\Spi_To_Display_Pico.cpp">
       <Filter>Features\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Features\IO\GPIO.cpp">
@@ -2309,9 +2297,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\GenericPort_stdio.c">
       <Filter>External\nf-interpreter\src\PAL\COM</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Users\Terry\AppData\Local\VisualGDB\PicoSDK\1.4.0-Package\src\rp2_common\pico_stdio\stdio.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_adc\adc.c">
       <Filter>External\pico-sdk\src\rp2_common\hardware_adc</Filter>
     </ClCompile>
@@ -2336,15 +2321,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_spi\spi.c">
       <Filter>External\pico-sdk\src\rp2_common\hardware_spi</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c">
       <Filter>External\pico-sdk\src\rp2_common\pico_unique_id</Filter>
     </ClCompile>
@@ -2360,16 +2336,10 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.c">
       <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c">
-      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd_control.c">
       <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c">
-      <Filter>External\pico-sdk\lib\tinyusb\src\portable\rp2040</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\hcd_rp2040.c">
       <Filter>External\pico-sdk\lib\tinyusb\src\portable\rp2040</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c">
@@ -2387,6 +2357,66 @@
     <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\usb_descriptors.c">
+      <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\pico-LCD-1.14V2-ST7789VW.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <None Include="mcu.props">
+      <Filter>Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClCompile>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">
@@ -2497,12 +2527,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_runtime\include\pico\runtime.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_runtime\include\pico</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico\driver</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico\stdio_uart.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_stdio_uart\include\pico</Filter>
@@ -3234,12 +3258,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_spi\include\hardware\spi.h">
       <Filter>External\pico-sdk\src\rp2_common\hardware_spi\include\hardware</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb\reset_interface.h">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\tusb_config.h">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb\include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\include\pico\unique_id.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_unique_id\include\pico</Filter>
     </ClInclude>
@@ -3261,9 +3279,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd.h">
       <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.h">
-      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.h">
       <Filter>External\pico-sdk\lib\tinyusb\src\portable\rp2040</Filter>
     </ClInclude>
@@ -3273,17 +3288,56 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_multicore\include\pico\multicore.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_multicore\include\pico</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico\stdio_usb.h">
-      <Filter>External\pico-sdk\src\rp2_common\pico_stdio_usb\include\pico</Filter>
-    </ClInclude>
-    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h">
-      <Filter>WireProtocol</Filter>
-    </ClInclude>
-    <ClInclude Include="WireProtocol\wp_Communications.h">
-      <Filter>Common\WireProtocol</Filter>
-    </ClInclude>
     <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h">
       <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="WireProtocol\tusb_config.h">
+      <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_common.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_compiler.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_error.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_timeout.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_types.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_verify.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\dcd_attr.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\device\usbd_pvt.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\class\cdc\cdc.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src\class\cdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\osal\osal.h">
+      <Filter>External\pico-sdk\src\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\osal\osal_pico.h">
+      <Filter>External\pico-sdk\src\osal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\tusb_option.h">
+      <Filter>External\pico-sdk\lib\tinyusb\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio\driver.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
+      <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -4,9 +4,6 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#ifndef _INITIALIZE_GRAPHICS_H_
-#define _INITIALIZE_GRAPHICS_H_ 1
-
 #include <nanoCLR_Headers.h>
 #include "GraphicsMemoryHeap.h"
 #include <nanoHAL_Graphics.h>
@@ -48,22 +45,6 @@ extern "C"
             TranslateCoordinates::SWAP_X_Y);
         g_TouchPanelDriver.Initialize();
 
-        // Test Flash Write
-        //        uint32_t startAddress = 0x080A0000U + 27;
-        //        uint32_t flashWords = 30;
-        //        uint32_t flashWordSize = 32;
-        //        uint32_t lengthInBytes = flashWords * flashWordSize;
-        //
-        //        uint32_t endAddress = startAddress + lengthInBytes;
-        //        uint8_t buffer[lengthInBytes];
-        //
-        //        for (int i = 0; i < lengthInBytes; i++)
-        //        {
-        //            buffer[i] = i;
-        //        }
-        //
-        //        bool result = EmbeddedFlashWrite(startAddress, lengthInBytes, buffer);
     }
 }
 
-#endif //_INITIALIZE_GRAPHICS_H_

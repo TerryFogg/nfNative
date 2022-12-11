@@ -8,14 +8,13 @@
 
 
 #include <tx_api.h>
-//#include <stm32h735xx.h>
 #include <target_board.h>
 #include <nanoHAL_v2.h>
 
 #define TX_TICKS_PER_MILLISEC(milliSecs) ((milliSecs * TX_TIMER_TICKS_PER_SECOND) / 1000)
 
 // platform dependent delay
-#define PLATFORM_DELAY(milliSecs) tx_thread_sleep(milliSecs / 10);
+#define PLATFORM_DELAY(milliSecs) tx_thread_sleep(milliSecs / 10)
 
 // Definitions for Sockets/Network
 #define GLOBAL_LOCK_SOCKETS(x)

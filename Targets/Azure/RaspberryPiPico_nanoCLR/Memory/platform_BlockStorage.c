@@ -7,7 +7,7 @@
 #include <FlashDriver.h>
 
 // map here the Block Storage Interface to the STM32 driver
-IBlockStorageDevice STM32Flash_BlockStorageInterface =
+IBlockStorageDevice Flash_BlockStorageInterface =
 {                          
     &FlashDriver_InitializeDevice,
     &FlashDriver_UninitializeDevice,

@@ -8,6 +8,7 @@
 
 // declaration of RTOS thread
 void ReceiverThread(void const * argument);
+void InitWireProtocolCommunications();
 
 #endif //_WIREPROTOCOL_RECEIVERTHREAD_H_
 

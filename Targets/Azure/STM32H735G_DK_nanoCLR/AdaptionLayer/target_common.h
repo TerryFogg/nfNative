@@ -8,8 +8,8 @@
 // Any changes you make here will be overwritten when it's generated again. //
 //////////////////////////////////////////////////////////////////////////////
 
-#ifndef _TARGET_COMMON_H_
-#define _TARGET_COMMON_H_
+#pragma once
+
 
 #include <target_os.h>
 //#include <target_lwipopts.h>
@@ -40,5 +40,3 @@
 #define PLATFORM_HAS_RNG       TRUE
 /////////////////////////////////////
 
-
-#endif /* _TARGET_COMMON_H_ */

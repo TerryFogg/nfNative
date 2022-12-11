@@ -8,12 +8,11 @@
 #include "pico\multicore.h"
 #include "pico\binary_info\code.h"
 #include "hardware\gpio.h"
-#include "pico/stdio_usb.h"
 
 void Initialize_Board()
 {
     SystemClock_Config(); // Configure the system clock to 520 MHz
-
+ //   bool success = stdio_usb_init();
 
     Initialize_Board_LEDS_And_Buttons();
     Initialize_RTC();

@@ -3,19 +3,19 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include <nanoPAL.h>
-#include <nanoHAL_Time.h>
-#include <nanoHAL_Types.h>
-#include <target_platform.h>
-#include <nanoPAL_Events.h>
-#include <nanoPAL_BlockStorage.h>
+#include "BOARD.h"
+#include "Debug_To_Display.h"
+#include <TargetFeatures.h>
 #include <nanoHAL_ConfigurationManager.h>
 #include <nanoHAL_Graphics.h>
+#include <nanoHAL_Time.h>
+#include <nanoHAL_Types.h>
 #include <nanoHAL_v2.h>
+#include <nanoPAL.h>
+#include <nanoPAL_BlockStorage.h>
+#include <nanoPAL_Events.h>
 #include <platform_target_capabilities.h>
-#include <TargetFeatures.h>
-#include "Debug_To_Display.h"
-#include "BOARD.h"
+#include <target_platform.h>
 
 extern bool g_waitForDebuggerRequested;
 
@@ -24,23 +24,22 @@ extern bool g_waitForDebuggerRequested;
 
 // because nanoHAL_Initialize/Uninitialize needs to be called in both C and C++ we need a proxy to allow it to be called
 // in 'C'
-extern "C"
+extern "C" {
+
+void nanoHAL_Initialize_C()
 {
+    nanoHAL_Initialize();
+}
 
-    void nanoHAL_Initialize_C()
-    {
-        nanoHAL_Initialize();
-    }
-
-    void nanoHAL_Uninitialize_C()
-    {
-        nanoHAL_Uninitialize();
-    }
+void nanoHAL_Uninitialize_C()
+{
+    nanoHAL_Uninitialize();
+}
 }
 
 void nanoHAL_Initialize()
 {
-  // initialize global mutex
+    // initialize global mutex
     // chMtxObjectInit(&interpreterGlobalMutex);
 
     Initialize_Audio();
@@ -63,7 +62,7 @@ void nanoHAL_Initialize()
     ::HeapLocation(heapStart, heapSize);
     memset(heapStart, 0, heapSize);
 
-//    ConfigurationManager_Initialize();
+    //    ConfigurationManager_Initialize();
 
     Events_Initialize();
 
@@ -71,19 +70,6 @@ void nanoHAL_Initialize()
 
     // Initialise Network Stack
     Network_Initialize();
-    
-    // Display Debug status if requested
-    if (g_waitForDebuggerRequested ) {
-      g_waitForDebuggerRequested = true;
-
-      lcd_printf("\f");
-      lcd_printf("      |-------------------------------------------------|\n");
-      lcd_printf("      |                                                 |\n");
-      lcd_printf("      | Waiting for the debugger                        |\n");
-      lcd_printf("      |                                                 |\n");
-      lcd_printf("      |-------------------------------------------------|\n");
-
-    }
 }
 
 void nanoHAL_Uninitialize()
@@ -106,7 +92,6 @@ void nanoHAL_Uninitialize()
 
     SOCKETS_CloseConnections();
 
-
     BlockStorageList_UnInitializeDevices();
 
     // need to be sure that:
@@ -120,8 +105,6 @@ void nanoHAL_Uninitialize()
     HAL_CONTINUATION::Uninitialize();
     HAL_COMPLETION::Uninitialize();
 }
-
-
 
 void HAL_AssertEx()
 {
@@ -141,8 +124,6 @@ void HARD_Breakpoint()
     {
         /*nop*/
     }
-}
-;
+};
 
 #endif // !defined(BUILD_RTM)
-

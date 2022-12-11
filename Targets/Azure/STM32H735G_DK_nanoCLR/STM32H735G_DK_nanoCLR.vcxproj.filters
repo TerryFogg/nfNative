@@ -908,9 +908,6 @@
     <ClInclude Include="WireProtocol\wpUSART_Communications.h">
       <Filter>WireProtocol</Filter>
     </ClInclude>
-    <ClInclude Include="WireProtocol\WireProtocol_HAL_Interface.h">
-      <Filter>WireProtocol</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_adc.c">

@@ -1,8 +1,6 @@
 @echo off
 REM Run this file to build the project outside of the IDE.
 REM WARNING: if using a different machine, copy the .rsp files together with this script.
-echo stdio.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/PicoSDK/1.4.0-Package/src/rp2_common/pico_stdio/stdio.gcc.rsp" || exit 1
 echo txe_block_allocate.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/txe_block_allocate.gcc.rsp" || exit 1
 echo txe_block_pool_create.c
@@ -749,8 +747,6 @@ echo piint.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Core/Support/Jpeg/piint.gcc.rsp" || exit 1
 echo transupp.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Core/Support/Jpeg/transupp.gcc.rsp" || exit 1
-echo ST7789_240x240.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Displays/ST7789_240x240.gcc.rsp" || exit 1
 echo nanoFramework_Graphics.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/nanoFramework.Graphics/Graphics/Native/nanoFramework_Graphics.gcc.rsp" || exit 1
 echo nanoFramework_Graphics_nanoFramework_UI_Bitmap.cpp
@@ -843,8 +839,6 @@ echo usbd_control.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/device/usbd_control.gcc.rsp" || exit 1
 echo dcd_rp2040.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.gcc.rsp" || exit 1
-echo hcd_rp2040.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.gcc.rsp" || exit 1
 echo rp2040_usb.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.gcc.rsp" || exit 1
 echo tusb.c
@@ -933,14 +927,8 @@ echo binary_info.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/binary_info.gcc.rsp" || exit 1
 echo new_delete.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/new_delete.gcc.rsp" || exit 1
-echo stdio_uart.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.gcc.rsp" || exit 1
-echo reset_interface.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.gcc.rsp" || exit 1
-echo stdio_usb.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.gcc.rsp" || exit 1
-echo stdio_usb_descriptors.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.gcc.rsp" || exit 1
+echo stdio.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdio/stdio.gcc.rsp" || exit 1
 echo stdlib.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdlib/stdlib.gcc.rsp" || exit 1
 echo unique_id.c
@@ -981,8 +969,10 @@ echo Graphics_Memory.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Graphics_Memory.gcc.rsp" || exit 1
 echo Initialize_Graphics.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Initialize_Graphics.gcc.rsp" || exit 1
-echo Spi_To_Display.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Spi_To_Display.gcc.rsp" || exit 1
+echo Spi_To_Display_Pico.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Spi_To_Display_Pico.gcc.rsp" || exit 1
+echo pico-LCD-1.14V2-ST7789VW.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/pico-LCD-1.14V2-ST7789VW.gcc.rsp" || exit 1
 echo TouchTemporary.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/TouchTemporary.gcc.rsp" || exit 1
 echo cpu_spi.cpp
@@ -1015,10 +1005,18 @@ echo CLR_Startup_Thread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/CLR_Startup_Thread.gcc.rsp" || exit 1
 echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
+echo usb_descriptors.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/usb_descriptors.gcc.rsp" || exit 1
 echo WireProtocol_HAL_Interface.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
 echo WireProtocol_ReceiverThread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
+echo FastSemihosting.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/FastSemihosting.gcc.rsp" || exit 1
+echo InstrumentingProfiler.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/InstrumentingProfiler.gcc.rsp" || exit 1
+echo TestResourceManager.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/TestResourceManager.gcc.rsp" || exit 1
 echo tx_thread_context_restore.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
 echo tx_thread_context_save.S

@@ -27,6 +27,7 @@ DeviceBlockInfo *STM32FlashDriver_GetDeviceInfo(void *context)
 bool STM32FlashDriver_Read(void *context, ByteAddress startAddress, unsigned int numBytes, unsigned char *buffer)
 {
     (void)context;
+    // Read each byte, if it fails the MCU will fault and not return
     EmbeddedFlashReadBytes(startAddress, numBytes, buffer);
     return true;
 }
@@ -110,81 +111,6 @@ bool EmbeddedFlashLock(void)
 
 static int entry = 0;
 
-#if defined(nothing)
-bool EmbeddedFlashWrite(uint32_t flashStartAddress, uint32_t lengthInBytes, uint8_t *buffer)
-{
-    // This routine only writes complete flash words and preserves existing data
-
-    // STM32H735 flash write capability has
-    //  - Single Flash word write (256-bit granularity)
-    //  - The application can decide to write as little as 8 bits to a Flash word.
-    //    In this case, a force write mechanism to the 256 bits + ECC is used.
-    //
-    // It is not recommended to overwrite a Flash word that is not "virgin".
-    // (ie. not previously erased), which requires erasing the entire sector.
-
-    uint8_t flash_word_buffer[NUMBER_OF_BYTES_IN_FLASH_WORD]; // 256Bit flash word buffer
-    uint8_t *data_buffer = buffer;
-    uint8_t *flash_address = (uint8_t *)(flashStartAddress);
-    uint32_t byte_offset_into_flash_word;
-
-    if (entry == 1)
-    {
-        EmbeddedFlashUnlock();
-    }
-    entry++;
-
-    // Check the starting address and calculate if it is aligned on a flash word
-    // boundary
-    byte_offset_into_flash_word = ((uint32_t)flash_address - FLASH_BANK1_BASE) % NUMBER_OF_BYTES_IN_FLASH_WORD;
-
-    if (byte_offset_into_flash_word > 0) // If the starting address is not aligned on a flash word boundary
-    {
-        uint32_t flashWordBoundary = (uint32_t)flash_address - byte_offset_into_flash_word;
-//        EmbeddedFlashReadBytes(
-//            flashWordBoundary,             // Address aligned to flash word boundary
-//            NUMBER_OF_BYTES_IN_FLASH_WORD, // Read the complete flash word
-//            flash_word_buffer);            // Store into a temporary buffer
-        int newBytesToWrite = NUMBER_OF_BYTES_IN_FLASH_WORD - byte_offset_into_flash_word;
-        memcpy(&flash_word_buffer[byte_offset_into_flash_word], data_buffer, newBytesToWrite);
-        WriteFlashWord((uint32_t *)flashWordBoundary, (uint32_t *)flash_word_buffer);
-        flash_address += newBytesToWrite;
-        lengthInBytes -= newBytesToWrite;
-        data_buffer += newBytesToWrite;
-    }
-
-    // Current flash address is now aligned on the flash word boundary
-    // Calculate the number of full flash words and any remaining bytes.
-    int number_flash_words = lengthInBytes / NUMBER_OF_BYTES_IN_FLASH_WORD;
-    int remaining_bytes = lengthInBytes % NUMBER_OF_BYTES_IN_FLASH_WORD;
-
-    for (int flash_word_index = 0; flash_word_index < number_flash_words; flash_word_index++)
-    {
-        memcpy(flash_word_buffer, data_buffer, NUMBER_OF_BYTES_IN_FLASH_WORD);
-        WriteFlashWord((uint32_t *)flash_address, (uint32_t *)flash_word_buffer);
-        flash_address += NUMBER_OF_BYTES_IN_FLASH_WORD;
-        lengthInBytes -= NUMBER_OF_BYTES_IN_FLASH_WORD;
-        data_buffer += NUMBER_OF_BYTES_IN_FLASH_WORD;
-    }
-
-    // Use the force write mechanism to the 256 bits to recreate the ECC
-    // It is not recommended to overwrite a Flash word that is not virgin.
-    // The result may lead to an inconsistent ECC code that will be systematically reported by the
-    // embedded Flash memory,
-
-    if (remaining_bytes > 0) // Write final remaining bytes merging with the flash word
-    {
-        EmbeddedFlashReadBytes((uint32_t)flash_address, NUMBER_OF_BYTES_IN_FLASH_WORD, flash_word_buffer);
-        int finalBytesToWrite = lengthInBytes;
-        memcpy(flash_word_buffer, data_buffer, finalBytesToWrite);
-        WriteFlashWord((uint32_t *)flash_address, (uint32_t *)flash_word_buffer);
-        lengthInBytes -= finalBytesToWrite;
-    }
-
-    return true;
-}
-#endif
-
 bool EmbeddedFlashWrite(uint32_t startAddress, uint32_t lengthInBytes, uint8_t *DataAddress)
 {
     // STM32H735 flash write capability has
@@ -203,8 +129,7 @@ bool EmbeddedFlashWrite(uint32_t startAddress, uint32_t lengthInBytes, uint8_t *
 
     EmbeddedFlashUnlock();
 
-    SET_BIT(FLASH->CR1,
-            FLASH_CR_PG); // Enable internal buffer for write operations
+    SET_BIT(FLASH->CR1, FLASH_CR_PG); // Enable internal buffer for write operations
 
     if (number_of_256bit_words != 0) // Program the full flash word ( 256-bits)
     {
@@ -242,14 +167,11 @@ bool EmbeddedFlashWrite(uint32_t startAddress, uint32_t lengthInBytes, uint8_t *
         } while (remaining_bytes != 0);
         __ISB();
         __DSB();
-        SET_BIT(
-            FLASH->CR1,
-            FLASH_CR_FW); // Force write mechanism
-                          // The unwritten bits are automatically set to 1.
+        SET_BIT(FLASH->CR1, FLASH_CR_FW); // Force write mechanism
+                                          // The unwritten bits are automatically set to 1.
     }
 
-    CLEAR_BIT(FLASH->CR1,
-              FLASH_CR_PG); // Disable internal buffer for write operations
+    CLEAR_BIT(FLASH->CR1, FLASH_CR_PG); // Disable internal buffer for write operations
 
     EmbeddedFlashLock();
     return true;
@@ -320,7 +242,6 @@ bool WaitForLastOperation(uint32_t Bank)
         WRITE_REG(FLASH->CCR1, errorflag); // Clear error programming flags
         return false;
     }
-    WRITE_REG(FLASH->CCR1,
-              FLASH_FLAG_EOP_BANK1); // Clear FLASH End of Operation pending bit
+    WRITE_REG(FLASH->CCR1, FLASH_FLAG_EOP_BANK1); // Clear FLASH End of Operation pending bit
     return true;
 }
