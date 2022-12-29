@@ -74,7 +74,8 @@ void nanoHAL_Initialize()
     Network_Initialize();
     
     // Display Debug status if requested
-    if (g_waitForDebuggerRequested || g_HardFault.count != 0) {
+    if (g_waitForDebuggerRequested || g_HardFault.count != 0) 
+    {
       g_waitForDebuggerRequested = true;
 
       lcd_printf("\f");
@@ -114,7 +115,6 @@ void nanoHAL_Uninitialize()
 
     SOCKETS_CloseConnections();
 
-
     BlockStorageList_UnInitializeDevices();
 
     // need to be sure that:
@@ -128,8 +128,6 @@ void nanoHAL_Uninitialize()
     HAL_CONTINUATION::Uninitialize();
     HAL_COMPLETION::Uninitialize();
 }
-
-
 
 void HAL_AssertEx()
 {
@@ -149,8 +147,6 @@ void HARD_Breakpoint()
     {
         /*nop*/
     }
-}
-;
+};
 
 #endif // !defined(BUILD_RTM)
-

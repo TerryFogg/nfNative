@@ -613,12 +613,12 @@
   <ItemGroup>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.elf" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.link.rsp" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.lst" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.nm" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.size" />
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.uf2" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.elf" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.link.rsp" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.lst" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.nm" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.size" />
+    <None Include="Build\RaspberryPiPico_nanoCLR.uf2" />
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings" />
     <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings" />
     <None Include="Tools\ELF2UF2.exe" />

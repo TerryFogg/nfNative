@@ -1,3 +1,4 @@
+#include <Debug_To_Display.h>
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
 
@@ -8,7 +9,7 @@
 
 __attribute__((noreturn)) void CLRStartupThread(void const *argument) {
 
-  bool userRequestedWaitForDebugger = (bool)argument; // not used
+    bool userRequestedWaitForDebugger = (bool)argument; // not used
 
   // CLR settings to launch CLR thread
   CLR_SETTINGS clrSettings;

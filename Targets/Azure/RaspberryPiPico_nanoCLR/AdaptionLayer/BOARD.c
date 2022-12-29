@@ -4,15 +4,24 @@
 // See LICENSE file in the project root for full license information.
 //
 #include "BOARD.h"
-#include "target_board.h"
-#include "pico\multicore.h"
-#include "pico\binary_info\code.h"
 #include "hardware\gpio.h"
+#include "pico\binary_info\code.h"
+#include "pico\multicore.h"
+#include "target_board.h"
 
+uint8_t keyA = 15;
+uint8_t keyB = 17;
+
+uint8_t up = 2;
+uint8_t dowm = 18;
+uint8_t left = 16;
+uint8_t right = 20;
+
+uint8_t ctrl = 3;
 void Initialize_Board()
 {
     SystemClock_Config(); // Configure the system clock to 520 MHz
- //   bool success = stdio_usb_init();
+                          //   bool success = stdio_usb_init();
 
     Initialize_Board_LEDS_And_Buttons();
     Initialize_RTC();
@@ -24,9 +33,15 @@ void Initialize_Board()
 
 void Initialize_Board_LEDS_And_Buttons()
 {
-  bi_decl(bi_1pin_with_name(PICO_DEFAULT_LED_PIN, "LED"));
-  gpio_init(PICO_DEFAULT_LED_PIN);
-  gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+    bi_decl(bi_1pin_with_name(PICO_DEFAULT_LED_PIN, "LED"));
+    gpio_init(PICO_DEFAULT_LED_PIN);
+    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+
+    gpio_init(keyA);
+    gpio_pull_up(keyA);
+    gpio_set_dir(keyA, GPIO_IN);
+    
+    
 }
 void Initialize_DWT_Counter()
 {
@@ -45,27 +60,28 @@ void Initialize_64bit_timer()
 
     // In upcounting mode, the counter counts from 0 to the auto-reload value
 }
-void BoardLed_ON(uint32_t led){
-  gpio_put(LED_PIN, LED_STATE_ON);
-  }
-void BoardLed_OFF(uint32_t led){
-  gpio_put(LED_PIN, LED_STATE_OFF);
-
-  }
+void BoardLed_ON(uint32_t led)
+{
+    gpio_put(LED_PIN, LED_STATE_ON);
+}
+void BoardLed_OFF(uint32_t led)
+{
+    gpio_put(LED_PIN, LED_STATE_OFF);
+}
 void BoardLed_Toggle(uint32_t led)
 {
-
-  }
+}
 bool BoardUserButton_Pressed()
 {
-    //    if (BootSel pressed)
-    //    {
-    //        return true;
-    //    }
-    //    else
-    //    {
-    //        return false;
-    //    }
-    return false;
-}
 
+    bool notPressed = gpio_get(keyA);
+
+    if (notPressed)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}

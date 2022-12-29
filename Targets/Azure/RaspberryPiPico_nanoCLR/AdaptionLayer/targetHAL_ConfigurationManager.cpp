@@ -3,10 +3,10 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include "FlashDriver.h"
 #include <nanoHAL.h>
 #include <nanoHAL_v2.h>
 #include <nanoWeak.h>
+#include "FlashDriver.h"
 
 uint32_t GetExistingConfigSize() {
   uint32_t currentConfigSize = 0;

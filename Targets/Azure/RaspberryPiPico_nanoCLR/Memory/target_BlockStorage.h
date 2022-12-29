@@ -6,4 +6,3 @@
 
 // this device has 1 block storage devices
 #define TARGET_BLOCKSTORAGE_COUNT 1
-

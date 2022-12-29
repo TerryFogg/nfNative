@@ -1,9 +1,9 @@
-#include "BOARD.h"
-
 #include <stm32h735xx.h>
-#include <tx_api.h>
+#include "BOARD.h"
 #include <nanoCLR_Application.h>
+#include <tx_api.h>
 #include <CLR_Startup_Thread.h>
+#include <Debug_To_Display.h>
 
 // byte pool configuration and definitions
 #define DEFAULT_BYTE_POOL_SIZE 16000
@@ -22,7 +22,6 @@ uint8_t memory_area[DEFAULT_BYTE_POOL_SIZE];
 
 TX_THREAD receiverThread;
 TX_THREAD CLRThread;
-
 
 uint32_t receiverThreadStack[RECEIVER_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void ReceiverThread_entry(uint32_t parameter);

@@ -17,6 +17,7 @@ void DISPLAY_PAYLOAD(WP_Message *message);
 
 #include <stdio.h>
 
+
 void PrintData(uint8_t *buf, int count, bool formfeed)
 {
     if (formfeed)
@@ -33,8 +34,6 @@ void PrintData(uint8_t *buf, int count, bool formfeed)
     lcd_printf("|\r\n");
 }
 
-
-
 void WP_ReceiveBytes(uint8_t **ptr, uint32_t *size)
 {
     if (*size != 0) // Required for the PING case where payload is 0
@@ -46,14 +45,9 @@ void WP_ReceiveBytes(uint8_t **ptr, uint32_t *size)
 }
 uint8_t WP_TransmitMessage(WP_Message *message)
 {
-    PrintData((char *)&message->m_header, sizeof(message->m_header), true);
-
     wp_WriteBytes((uint8_t *)&message->m_header, sizeof(message->m_header));
-    if (message->m_header.m_size && message->m_payload) // if there is anything on the payload send it to
-                                                        // the output stream
+    if (message->m_header.m_size && message->m_payload)
     {
-        lcd_printf("------------------\r\n");
-        PrintData((char *)&message->m_payload, message->m_header.m_size, false);
         wp_WriteBytes(message->m_payload, message->m_header.m_size);
     }
     return true;

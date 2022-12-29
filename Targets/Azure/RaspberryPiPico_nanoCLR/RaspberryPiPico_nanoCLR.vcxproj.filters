@@ -2425,22 +2425,22 @@
     <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.elf">
+    <None Include="Build\RaspberryPiPico_nanoCLR.elf">
       <Filter>Build</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.link.rsp">
+    <None Include="Build\RaspberryPiPico_nanoCLR.link.rsp">
       <Filter>Build</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.lst">
+    <None Include="Build\RaspberryPiPico_nanoCLR.lst">
       <Filter>Build</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.nm">
+    <None Include="Build\RaspberryPiPico_nanoCLR.nm">
       <Filter>Build</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.size">
+    <None Include="Build\RaspberryPiPico_nanoCLR.size">
       <Filter>Build</Filter>
     </None>
-    <None Include="Local\Build\RaspberryPiPico_nanoCLR.uf2">
+    <None Include="Build\RaspberryPiPico_nanoCLR.uf2">
       <Filter>Build</Filter>
     </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">

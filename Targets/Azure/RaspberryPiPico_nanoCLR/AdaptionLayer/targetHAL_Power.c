@@ -1,3 +1,4 @@
+#include <Debug_To_Display.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
@@ -8,21 +9,26 @@
 #include <target_platform.h>
 #include <target_common.h>
 
-
 uint32_t WakeupReasonStore;
 
 void software_reset()
 {
-    watchdog_enable(1, 1);
-    while(1);
+
+    volatile uint32_t *aircr = (volatile uint32_t *)0xE000ED0C;
+    *aircr = (0x05FA << 16) | 0x1 << 2;
+    for (;;) /* wait until reset */
+    {
+        __asm__ volatile("nop");
+    }
 }
 inline void CPU_Reset()
 {
-software_reset();
+    software_reset();
 }
 
 inline bool CPU_IsSoftRebootSupported()
 {
+    lcd_printf("IsSoftReboot,");
     return true;
 }
 

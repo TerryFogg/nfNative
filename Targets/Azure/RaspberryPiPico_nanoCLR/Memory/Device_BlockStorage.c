@@ -11,7 +11,8 @@ BlockStorageDevice Device_BlockStorage;
 // Block Size 4096 Bytes (Smallest erase size)
 const BlockRange BlockRange1[] = {
     {BlockRange_BLOCKTYPE_CODE, 0, 159},
-    {BlockRange_BLOCKTYPE_DEPLOYMENT, 160, 511},
+    {BlockRange_BLOCKTYPE_CONFIG, 160, 160},
+    {BlockRange_BLOCKTYPE_DEPLOYMENT, 161, 511},
 };
 
 const BlockRegionInfo BlockRegions[] = {

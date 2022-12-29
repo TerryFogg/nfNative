@@ -1,3 +1,4 @@
+#include <Debug_To_Display.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
@@ -19,6 +20,7 @@ inline void CPU_Reset()
 
 inline bool CPU_IsSoftRebootSupported()
 {
+    lcd_printf("IsSoftReboot,");
     return true;
 }
 

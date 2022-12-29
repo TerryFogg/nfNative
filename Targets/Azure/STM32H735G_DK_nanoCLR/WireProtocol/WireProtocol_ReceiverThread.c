@@ -3,8 +3,8 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include <WireProtocol_Message.h>
 #include "BOARD.h"
+#include <WireProtocol_Message.h>
 #include <tx_api.h>
 #include <wpUSART_Communications.h>
 

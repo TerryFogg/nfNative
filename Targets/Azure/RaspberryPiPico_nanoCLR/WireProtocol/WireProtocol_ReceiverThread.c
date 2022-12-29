@@ -3,12 +3,12 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include "WireProtocol_ReceiverThread.h"
 #include "targetHAL.h"
+#include "WireProtocol_ReceiverThread.h"
 #include <WireProtocol_Message.h>
+#include <tx_api.h>
 #include <lib/tinyusb/src/device/usbd.h>
 
-#include <tx_api.h>
 
 extern WP_Message inboundMessage;
 

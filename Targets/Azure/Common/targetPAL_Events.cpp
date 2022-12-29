@@ -1,3 +1,4 @@
+#include <Debug_To_Display.h>
 //
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
@@ -37,6 +38,7 @@ bool Events_Initialize_Platform()
 }
 bool Events_Uninitialize_Platform()
 {
+    lcd_printf("tp03,");
     tx_timer_delete(&boolEventsTimer);
     return true;
 }
@@ -57,6 +59,9 @@ void Events_SetBoolTimer(bool *timerCompleteFlag, uint32_t millisecondsFromNow)
 
 uint32_t Events_WaitForEvents(uint32_t powerLevel, uint32_t wakeupSystemEvents, uint32_t timeoutMilliseconds)
 {
+    if( timeoutMilliseconds != 100)
+     lcd_printf("wfe,");
+
     // schedule an interrupt for this far in the future
     // timeout is in milliseconds, need to convert to ticks
     uint64_t countsRemaining = CPU_MillisecondsToTicks(timeoutMilliseconds);
@@ -78,6 +83,7 @@ uint32_t Events_WaitForEvents(uint32_t powerLevel, uint32_t wakeupSystemEvents, 
             return events;
         }
 
+        volatile int ht = HAL_Time_CurrentSysTicks();
         if (expireTimeInTicks <= HAL_Time_CurrentSysTicks())
         {
             break;

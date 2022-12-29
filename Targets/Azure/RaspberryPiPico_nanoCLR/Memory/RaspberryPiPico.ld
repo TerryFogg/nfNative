@@ -24,11 +24,11 @@
 /*       | to a 256-byte boundary and count   |     */
 /*       | must be a multiple of 256.         |     */
 /*       |                                    |     */   
-/*       | Number of flash pages on the RP2040|SYS>>*/  flash_page_count   = 511;
+/*       | Number of flash pages on the RP2040|SYS>>*/  Total_flash_page_count   = 512;
 /*       |------------------------------------|     */
 /*       | Configuration to store             |     */   
 /*       | persistent information             |     */   
-/*       | Use the minimum erase size 1 sector|CLR>>*/  config_size =  flash_sector_size;
+/*       | Use the minimum erase size 1 sector|CLR>>*/  config_size =  1;
 /*       | Keep in sync with                  |     */   
 /*       | "targetHAL_ConfigurationManger.cpp"|     */   
 /*       |                                    |     */   
@@ -58,7 +58,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       |                                    |     */   
 /*       |------------------------------------|     */
 /*       | SRAM 256KB addressed as striped    |     */
-/*       | memory or non striped memory       |     */   
+/*       | memory OR non striped memory       |     */   
 /*       |....................................|     */
 /*       | STRIPED Bank     : 256KB           |SYS>>*/  RAM_STRIPED (xrw) : ORIGIN = 0x20000000, LENGTH = 256k  
 /*       |      OR                            |     */ 
@@ -110,27 +110,22 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | .................................. |     */
 /*       | Sectors counting from 0            |     */
 /*       | .................................. |     */
-/*       | Sector  0 (First 256 bytes)        |SYS>>*/  STAGE2_BOOT  (rx)  : ORIGIN = ORIGIN(FLASH), LENGTH = 252 + 4  /* bs2_default_padded_checksummed.S */
-/*       | .................................. |     */
-/*       | Sectors   0 - 159                  |CLR>>*/  nanoCLR      (rx)  : ORIGIN = ORIGIN(STAGE2_BOOT) + LENGTH(STAGE2_BOOT), LENGTH = (160*flash_sector_size - LENGTH(STAGE2_BOOT))
-/*       | Sectors 160 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(nanoCLR)+ LENGTH(nanoCLR), LENGTH = flash_page_count*flash_sector_size - (LENGTH(STAGE2_BOOT) + LENGTH(nanoCLR) )
+/*       | Sector  0 (First 256 bytes)        |SYS>>*/  STAGE2_BOOT  (rx)  : ORIGIN = ORIGIN(FLASH), LENGTH = 252 + 4  /* contains prepended bs2_default_padded_checksummed.S */
+/*       | Sectors   0 - 159                  |CLR>>*/  nanoCLR      (rx)  : ORIGIN = ORIGIN(STAGE2_BOOT) + LENGTH(STAGE2_BOOT), LENGTH = 160*flash_sector_size - LENGTH(STAGE2_BOOT)
+/*       | Sectors 160 - 160                  |CLR>>*/  config       (rx)  : ORIGIN = ORIGIN(nanoCLR)     + LENGTH(nanoCLR)    , LENGTH = config_size*flash_sector_size
+/*       | Sectors 161 - 511                  |CLR>>*/  deployment   (rx)  : ORIGIN = ORIGIN(config)      + LENGTH(config)     , LENGTH = Total_flash_page_count*flash_page_size - LENGTH(STAGE2_BOOT) - LENGTH(nanoCLR) - LENGTH(config)
 /*       |                                    |     */
-/*       | Sectors 160 - 160                  |CLR>>*/  /* not used yet */ /* config       (rx)  : ORIGIN = ORIGIN(nanoCLR) + LENGTH(nanoCLR) , LENGTH = config_size */
 /*       |------------------------------------|     */
+/*       |                                    |     */
 /*       | RAM LAYOUT                         |     */
 /*       |------------------------------------|     */
 /*       |                                    |     */
 /*       | Native code ram (Azure, nativeCLR) |CLR>>*/  RAM            (xrw) : ORIGIN = ORIGIN(RAM_STRIPED), LENGTH = 80k
-/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 70K
+/*       | CLR managed heap ram               |CLR>>*/  CLR_RAM        (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 70k
 /*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) )
 /*       | drawing surfaces                   |     */
 /*       |                                    |     */
-/*       | Video frame buffer                 |CLR>>*/  /** NO FRAME BUFFER **/ /* NOT USED */  /*graphics_vfb (xrw) : ORIGIN = ORIGIN(RAM) + LENGTH(RAM), LENGTH = 64800*/
-/*       | Sized to the display on the        |     */  /** NO FRAME BUFFER **/
-/*       | RaspberryPi Pico extension board   |     */  /** NO FRAME BUFFER **/
-/*       | Pico-LCD-1.14 240x135x2 -> 64800   |     */  /** NO FRAME BUFFER **/
-/*       |                                    |     */
-/*       |                                    |     */
+/*       | Video frame buffer                 |CLR>>*/  /* NO FRAME BUFFER - use SPI buffer to transfer graphics */
 /*       \------------------------------------/     */
 }
         
@@ -141,14 +136,14 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | objects                            |CLR>>*/  HeapEnd               = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM); 
 /*       |------------------------------------|     */   
 /*       | CLR Image                          |CLR>>*/  __nanoImage_start__   = ORIGIN(nanoCLR); 
-/*       |                                    |CLR>>*/  __nanoImage_end__     = LENGTH(nanoCLR); 
+/*       |                                    |CLR>>*/  __nanoImage_end__     = ORIGIN(nanoCLR) + LENGTH(nanoCLR); 
 /*       |------------------------------------|     */   
 /*       | Flash region where the C#          |CLR>>*/  __deployment_start__  = ORIGIN(deployment); 
-/*       | Portable Executable (PE) file      |CLR>>*/  __deployment_size__   = LENGTH(deployment); 
-/*       | is stored                          |CLR>>*/  __deployment_end__    = __deployment_start__ + __deployment_size__; 
+/*       | Portable Executable (PE) file      |CLR>>*/  __deployment_end__    = ORIGIN(deployment) + LENGTH(deployment); 
+/*       | is stored                          |CLR>>*/  __deployment_size__   = LENGTH(deployment); 
 /*       |------------------------------------|     */   
-/*       | Small area of persistent storage   |     */  __nanoConfig_start__  = 0; /* ORIGIN(config); */
-/*       |                                    |     */  __nanoConfig_end__    = 0; /* ORIGIN(config) + config_size; */
+/*       | Small area of persistent storage   |     */  __nanoConfig_start__  = ORIGIN(config);
+/*       |                                    |     */  __nanoConfig_end__    = ORIGIN(config) + LENGTH(config);
 /*       |------------------------------------|     */   
 /*       | Bit pixel copy of the screen       |CLR>>*/  Graphics_frame_buffer = graphics_Frame_Buffer_not_used;
 /*       | Updated by DMA                     |     */    
@@ -167,7 +162,7 @@ SECTIONS
   /* The startup code goes first into FLASH  */
   /* ----------------------------------------*/
   /* Second stage bootloader is prepended to the image. It must be 256 bytes   */
-  /* and checksummed. It is usually built by the boot_stage2 target            */
+  /* and check summed. It is usually built by the boot_stage2 target           */
   /* in the Raspberry Pi Pico SDK                                              */
 
     .flash_begin : {
@@ -382,8 +377,10 @@ SECTIONS
      *
      * stack1 section may be empty/missing if platform_launch_core1 is not used */
 
-    /* by default we put core 0 stack at the end of scratch Y, so that if core 1
-     * stack is not used then all of SCRATCH_X is free.
+    /* By default we put 
+       core 0 stack at the end of scratch Y
+       so that if core 1 stack is not used then all 
+       of SCRATCH_X is free.
      */
     .stack1_dummy (COPY):
     {
@@ -410,6 +407,8 @@ SECTIONS
     ASSERT(__StackLimit >= __HeapLimit, "region RAM overflowed")
 
     ASSERT( __binary_info_header_end - __logical_binary_start <= 256, "Binary info must be in first 256 bytes of the binary")
-    /* todo assert on extra code */
+    
+    
+    /* Add additional assert(s) on extra code below */
 }
 

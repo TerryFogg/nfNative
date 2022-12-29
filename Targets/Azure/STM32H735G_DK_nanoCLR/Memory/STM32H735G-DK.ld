@@ -100,7 +100,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       |------------------------------------|     */
 /*       |                                    |     */ 
 /*       |------------------------------------|     */
-/*       | 0x1FF00000 : 128K System memory    |SYS>>*/  /* SYSTEM Not available */ 
+/*       | 0x1FF00000 : 128K System memory    |SYS>>*/  /* SYSTEM Not available for user use*/ 
 /*       | Bootloader or Secure bootloader and|     */ 
 /*       | secure library if option secure    |     */ 
 /*       |------------------------------------|     */
@@ -196,7 +196,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | and drawn into                     |CLR>>*/  Graphics_managed_end  = ORIGIN(graphics_ram) + LENGTH(graphics_ram);   
 /*       |                                    |     */  
 /*       | Used during debugging to stop      |     */  Hard_Fault_Count      = ORIGIN(HardFaultCount);
-/*       | reboot loop if                     |     */  
+/*       | reboot loop if faulting            |     */  
 /*       \------------------------------------/     */
 
 
