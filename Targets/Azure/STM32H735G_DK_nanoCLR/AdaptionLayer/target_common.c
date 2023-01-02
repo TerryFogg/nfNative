@@ -13,7 +13,6 @@
 
 HAL_SYSTEM_CONFIG HalSystemConfig = {
 	{true}, // HAL_DRIVER_CONFIG_HEADER Header;
-
 	1, // ConvertCOM_DebugHandle(1),
 	0, // ConvertCOM_DebugHandle(0),
 	921600,

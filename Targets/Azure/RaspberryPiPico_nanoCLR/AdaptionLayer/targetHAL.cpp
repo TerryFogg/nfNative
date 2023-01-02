@@ -3,19 +3,19 @@
 // See LICENSE file in the project root for full license information.
 //
 
-#include "BOARD.h"
-#include "Debug_To_Display.h"
-#include <TargetFeatures.h>
-#include <nanoHAL_ConfigurationManager.h>
-#include <nanoHAL_Graphics.h>
+#include <nanoPAL.h>
 #include <nanoHAL_Time.h>
 #include <nanoHAL_Types.h>
-#include <nanoHAL_v2.h>
-#include <nanoPAL.h>
-#include <nanoPAL_BlockStorage.h>
-#include <nanoPAL_Events.h>
-#include <platform_target_capabilities.h>
 #include <target_platform.h>
+#include <nanoPAL_Events.h>
+#include <nanoPAL_BlockStorage.h>
+#include <nanoHAL_ConfigurationManager.h>
+#include <nanoHAL_Graphics.h>
+#include <nanoHAL_v2.h>
+#include <platform_target_capabilities.h>
+#include <TargetFeatures.h>
+#include "Debug_To_Display.h"
+#include "BOARD.h"
 
 extern bool g_waitForDebuggerRequested;
 extern HardFaultReporting g_HardFault;
@@ -43,11 +43,6 @@ void nanoHAL_Initialize()
     // initialize global mutex
     // chMtxObjectInit(&interpreterGlobalMutex);
 
-    Initialize_Audio();
-    Initialize_microSD();
-    Initialize_USB();
-    Initialize_Ethernet();
-    Initialize_FDCAN();
 
     PalEvent_Initialize();
 
@@ -77,19 +72,19 @@ void nanoHAL_Initialize()
     {
         g_waitForDebuggerRequested = true;
 
-        lcd_printf("\f");
-        lcd_printf("|-------------------------|\n");
-        if (g_HardFault.count != 0)
-        {
-            lcd_printf(
-                "| HARD Fault recorded        |\n");
-            lcd_printf(
-                "|...................         |\n");
-        }
-        lcd_printf("| Waiting for the debugger|\n");
-        lcd_printf("|-------------------------|\n");
-
-        g_HardFault.count = 0;
+//        lcd_printf("\f");
+//        lcd_printf("|-------------------------|\n");
+//        if (g_HardFault.count != 0)
+//        {
+//            lcd_printf(
+//                "| HARD Fault recorded        |\n");
+//            lcd_printf(
+//                "|...................         |\n");
+//        }
+//        lcd_printf("| Waiting for the debugger|\n");
+//        lcd_printf("|-------------------------|\n");
+//
+//        g_HardFault.count = 0;
     }
 }
 

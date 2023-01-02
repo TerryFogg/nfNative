@@ -41,7 +41,7 @@ extern "C"
         g_DisplayDriver.Initialize(displayConfig);
 
         // no PAL events required until now
-        PalEvent_Initialize();
+     //   PalEvent_Initialize();
 
     }
 }

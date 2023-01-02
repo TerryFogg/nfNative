@@ -371,6 +371,8 @@ echo tx_trace_object_unregister.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/tx_trace_object_unregister.gcc.rsp" || exit 1
 echo tx_trace_user_event_insert.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/tx_trace_user_event_insert.gcc.rsp" || exit 1
+echo ux_utility_descriptor_parse.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/usbx/common/core/src/ux_utility_descriptor_parse.gcc.rsp" || exit 1
 echo Cache.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/CLR/Core/Cache.gcc.rsp" || exit 1
 echo Checks.cpp
@@ -933,6 +935,8 @@ echo stdlib.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_stdlib/stdlib.gcc.rsp" || exit 1
 echo unique_id.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_unique_id/unique_id.gcc.rsp" || exit 1
+echo Memory.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/Common/Memory.gcc.rsp" || exit 1
 echo nanoCRT.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/Common/nanoCRT.gcc.rsp" || exit 1
 echo nanoHAL.cpp
@@ -991,8 +995,6 @@ echo Device_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/Device_BlockStorage.gcc.rsp" || exit 1
 echo FlashDriver.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/FlashDriver.gcc.rsp" || exit 1
-echo Memory.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Memory/Memory.gcc.rsp" || exit 1
 echo platform_BlockStorage.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Memory/platform_BlockStorage.gcc.rsp" || exit 1
 echo target_BlockStorage.c

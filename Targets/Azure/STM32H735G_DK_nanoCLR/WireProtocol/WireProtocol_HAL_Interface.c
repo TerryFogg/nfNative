@@ -18,22 +18,6 @@ void DISPLAY_PAYLOAD(WP_Message *message);
 #include <stdio.h>
 
 
-void PrintData(uint8_t *buf, int count, bool formfeed)
-{
-    if (formfeed)
-    {
-        lcd_printf("\f");
-    }
-    // each line is 16 bytes
-    for (uint16_t i = 0; i < count; i++)
-    {
-        const uint8_t byte = buf[i];
-        lcd_printf("%02X ", byte);
-    }
-
-    lcd_printf("|\r\n");
-}
-
 void WP_ReceiveBytes(uint8_t **ptr, uint32_t *size)
 {
     if (*size != 0) // Required for the PING case where payload is 0

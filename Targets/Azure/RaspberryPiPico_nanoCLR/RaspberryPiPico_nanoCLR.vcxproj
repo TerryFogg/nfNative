@@ -266,6 +266,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_stack_build.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_thread_system_return.S" />
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_timer_interrupt.S" />
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_descriptor_parse.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Cache.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\Checks.cpp" />
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core\CLR_RT_DblLinkedList.cpp" />
@@ -558,6 +559,7 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\stdio.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c" />
+    <ClCompile Include="..\Common\Memory.cpp" />
     <ClCompile Include="..\Common\nanoCRT.cpp" />
     <ClCompile Include="..\Common\nanoHAL.cpp" />
     <ClCompile Include="..\Common\platform_heap.c" />
@@ -587,7 +589,6 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="Memory\Device_BlockStorage.c" />
     <ClCompile Include="Memory\FlashDriver.c" />
-    <ClCompile Include="Memory\Memory.cpp" />
     <ClCompile Include="Memory\platform_BlockStorage.c" />
     <ClCompile Include="Memory\target_BlockStorage.c" />
     <ClCompile Include="Startup\bs2_default_padded_checksummed.s" />

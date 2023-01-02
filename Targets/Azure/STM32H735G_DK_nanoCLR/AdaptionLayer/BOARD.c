@@ -19,8 +19,25 @@ void Initialize_Board()
     Initialize_Board_LEDS_And_Buttons();
     Initialize_OCTOSPI2_Hyperam();
     Initialize_OPSPI_Flash();
-    Initialize_RTC();
 
+#if (NANOCLR_AUDIO == TRUE)
+    Initialize_Audio();
+#endif
+#if (NANOCLR_ETHERNET == TRUE)
+    Initialize_Ethernet();
+#endif
+#if (NANOCLR_FDCAN == TRUE)
+    Initialize_FDCAN();
+#endif
+#if (NANOCLR_MICROSD == TRUE)
+    Initialize_microSD();
+#endif
+#if (NANOCLR_RTC == TRUE)
+    Initialize_RTC();
+#endif
+#if (NANOCLR_USB == TRUE)
+    Initialize_USB();
+#endif
 #if (NANOCLR_GRAPHICS == TRUE)
     Initialize_Graphics();
 #endif

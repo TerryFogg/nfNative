@@ -86,6 +86,9 @@ bool DisplayDriver::Initialize(DisplayInterfaceConfig &config)
 
     SetupDisplayAttributes();
 
+    g_DisplayInterface.SendCommand(1, SOFTWARE_RESET);
+    OS_DELAY(20);
+
     g_DisplayInterface.SendCommand(2, Pixel_Format_Set, 0x55);
     g_DisplayInterface.SendCommand(6, Porch_Setting, 0x0c, 0x0c, 0x00, 0x33, 0x33);
 
@@ -138,7 +141,13 @@ bool DisplayDriver::Initialize(DisplayInterfaceConfig &config)
     
     g_DisplayInterface.SendCommand(1, Display_Inversion_On);
     g_DisplayInterface.SendCommand(1, Sleep_OUT);
+
+    OS_DELAY(20);
+
     g_DisplayInterface.SendCommand(1, Normal_Display_On);
+
+    OS_DELAY(20);
+
     g_DisplayInterface.SendCommand(1, Display_ON);
     OS_DELAY(50);
     g_DisplayInterface.SendCommand(1, NOP); // End of sequence

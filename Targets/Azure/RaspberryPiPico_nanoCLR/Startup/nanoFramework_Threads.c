@@ -26,7 +26,7 @@ uint32_t receiverThreadStack[RECEIVER_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void ReceiverThread_entry(uint32_t parameter);
 
 // 2. CLR thread
-#define CLR_THREAD_PRIORITY 5
+#define CLR_THREAD_PRIORITY 4
 
 uint32_t CLRThreadStack[CLR_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void CLRStartupThread(uint32_t parameter);

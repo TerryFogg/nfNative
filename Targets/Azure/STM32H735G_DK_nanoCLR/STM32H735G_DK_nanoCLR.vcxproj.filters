@@ -283,6 +283,42 @@
     <Filter Include="WireProtocol">
       <UniqueIdentifier>{998d414b-5c1c-4e0f-822b-cb8e03639b03}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx">
+      <UniqueIdentifier>{f159db16-8df2-46f7-9fd0-f3543e444ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common">
+      <UniqueIdentifier>{2fb4f590-3998-459d-84bb-53e964b698f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\core">
+      <UniqueIdentifier>{68bca63e-1f2b-4fb6-a6f5-486fb0d56e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\core\inc">
+      <UniqueIdentifier>{6f22639e-b6da-4b8c-a767-16d4c6b4dfb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\core\src">
+      <UniqueIdentifier>{5ccf00ac-f42e-4552-9a56-2aa2c93b1465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\usbx_device_classes">
+      <UniqueIdentifier>{d2befa99-e6e7-4204-ac35-0971b6b628de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\usbx_device_classes\inc">
+      <UniqueIdentifier>{cd8fa194-d4ab-4fb1-8b62-087e6b5ea5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\common\usbx_device_classes\src">
+      <UniqueIdentifier>{4b1dea19-98e5-47c6-bcd8-fd32fe477455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\ports">
+      <UniqueIdentifier>{1a423dcc-3fab-4d27-b82d-4ab54f58adc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\ports\cortex_m0">
+      <UniqueIdentifier>{96c3e8b1-e3c6-4feb-b976-bd5a0044de9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu">
+      <UniqueIdentifier>{3bfe9af4-c6b5-493a-a360-6b583dc4a908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc">
+      <UniqueIdentifier>{a5afe746-c8ad-4171-9e5f-90cbae4453ac}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
@@ -907,6 +943,21 @@
     </ClInclude>
     <ClInclude Include="WireProtocol\wpUSART_Communications.h">
       <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc\ux_api.h">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc\ux_device_stack.h">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc\ux_system.h">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc\ux_utility.h">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc\ux_port.h">
+      <Filter>ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1693,9 +1744,6 @@
     </ClCompile>
     <ClCompile Include="Startup\CLR_Startup_Thread.c">
       <Filter>Startup</Filter>
-    </ClCompile>
-    <ClCompile Include="Memory\Memory.cpp">
-      <Filter>Memory</Filter>
     </ClCompile>
     <ClCompile Include="Startup\nanoFramework_Threads.c">
       <Filter>Startup</Filter>
@@ -3154,6 +3202,462 @@
     </ClCompile>
     <ClCompile Include="WireProtocol\wpUSART_Communications.c">
       <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_address_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_endpoint_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_endpoint_destroy.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_endpoint_reset.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_endpoint_stall.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_endpoint_status.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_frame_number_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_function.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_initialize_complete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_state_change.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_transfer_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_transfer_request.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_activate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_change.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_deactivate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_entry.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_read.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_class_dpump_write.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_alternate_setting_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_alternate_setting_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_class_register.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_clear_feature.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_configuration_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_configuration_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_control_request_process.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_descriptor_send.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_disconnect.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_endpoint_stall.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_get_status.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_interface_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_interface_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_interface_start.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_set_feature.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_transfer_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_transfer_all_request_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_device_stack_transfer_request.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_asynchronous_endpoint_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_asynchronous_endpoint_destroy.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_asynch_queue_process.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_asynch_schedule.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_controller_disable.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_ed_obtain.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_endpoint_reset.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_entry.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_frame_number_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_interrupt_endpoint_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_isochronous_endpoint_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_isochronous_td_obtain.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_iso_queue_process.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_iso_schedule.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_least_traffic_list_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_periodic_endpoint_destroy.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_periodic_schedule.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_periodic_tree_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_port_reset.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_port_status_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_regular_td_obtain.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_request_bulk_transfer.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_request_control_transfer.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_request_interupt_transfer.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_request_isochronous_transfer.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_request_transfer.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_timer_function.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_transaction_schedule.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_transfer_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_hcd_sim_host_uninitialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_activate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_configure.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_deactivate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_endpoints_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_entry.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_read.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_class_dpump_write.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_call.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_device_scan.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_instance_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_instance_destroy.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_instance_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_instance_verify.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_interface_scan.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_class_register.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_descriptor_parse.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_enumerate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_instance_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_instance_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_interface_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_interface_scan.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_configuration_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_address_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_configuration_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_configuration_select.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_descriptor_read.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_remove.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_device_resources_free.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_endpoint_instance_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_endpoint_instance_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_endpoint_transfer_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_enum_thread_entry.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_hcd_register.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_hcd_thread_entry.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_interfaces_scan.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_interface_endpoint_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_interface_instance_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_interface_instance_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_new_configuration_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_new_device_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_new_device_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_new_endpoint_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_new_interface_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_rh_change_process.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_rh_device_extraction.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_rh_device_insertion.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_transfer_request.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_host_stack_transfer_request_abort.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_system_error_handler.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_system_initialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_system_uninitialize.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_delay_ms.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_long_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_allocate.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_allocate_mulc_safe.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_compare.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_copy.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_free.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_free_block_best_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_memory_set.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_mutex_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_mutex_off.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_mutex_on.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_semaphore_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_semaphore_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_semaphore_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_semaphore_put.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_short_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_short_put.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_string_length_check.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_string_length_get.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_identify.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_relinquish.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_schedule_other.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_thread_sleep.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_timer_create.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_timer_delete.c">
+      <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Memory.cpp">
+      <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

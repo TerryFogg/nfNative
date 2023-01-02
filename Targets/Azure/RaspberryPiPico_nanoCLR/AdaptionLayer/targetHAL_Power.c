@@ -28,7 +28,6 @@ inline void CPU_Reset()
 
 inline bool CPU_IsSoftRebootSupported()
 {
-    lcd_printf("IsSoftReboot,");
     return true;
 }
 
