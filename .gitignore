@@ -436,3 +436,13 @@ healthchecksdb
 /.visualgdb/CodeExplorer/FilterHistory.txt
 /.visualgdb/CodeExplorer/NodeFlags.dat
 /.visualgdb/CodeExplorer/NodeFlags.dat
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.uf2
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.size
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.progstat
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.nm
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.lst
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.elf
+/Targets/Azure/RaspberryPiPico_nanoCLR/Build/RaspberryPiPico_nanoCLR.bin
+/PicoSDKProject1/PicoSDKProject1.vgdbproj
+/PicoSDKProject1/CMakeLists.txt
+/PicoSDKProject1/blink.c
