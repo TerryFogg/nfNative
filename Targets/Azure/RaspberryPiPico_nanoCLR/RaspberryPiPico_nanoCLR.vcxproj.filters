@@ -569,9 +569,6 @@
     <Filter Include="Tools">
       <UniqueIdentifier>{713119dd-6988-4c0f-9dc7-2d02751b6374}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Common">
-      <UniqueIdentifier>{668ac409-f30d-4a75-b9b3-6fd7a8bb4b95}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Build">
       <UniqueIdentifier>{e2ac20b3-7671-40ab-8a5e-a0bdf74acb2e}</UniqueIdentifier>
     </Filter>
@@ -787,6 +784,9 @@
     </Filter>
     <Filter Include="Device-specific files\Semihosting/Profiler">
       <UniqueIdentifier>{3bbd8320-f1c5-405f-a589-52812dbe8d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AzureCommon">
+      <UniqueIdentifier>{668ac409-f30d-4a75-b9b3-6fd7a8bb4b95}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -2255,23 +2255,23 @@
     <ClCompile Include="AdaptionLayer\BOARD.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\nanoCRT.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\nanoCRT.cpp">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\nanoHAL.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\nanoHAL.cpp">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\platform_heap.c">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\platform_heap.c">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\targetHAL_Time.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\targetHAL_Time.cpp">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\targetPAL_Events.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\targetPAL_Events.cpp">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\targetPAL_Time.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\targetPAL_Time.cpp">
+      <Filter>AzureCommon</Filter>
     </ClCompile>
     <ClCompile Include="Startup\bs2_default_padded_checksummed.s">
       <Filter>Startup</Filter>
@@ -2415,8 +2415,14 @@
       <Filter>Device-specific files\Semihosting/Profiler</Filter>
     </ClInclude>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_descriptor_parse.c" />
-    <ClCompile Include="..\Common\Memory.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\Memory.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\wpCommunications.c">
+      <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\wpCommunications2.cpp">
+      <Filter>WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -3202,17 +3208,17 @@
     <ClInclude Include="AdaptionLayer\BOARD.h">
       <Filter>AdaptionLayer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\Target_Windows_Storage.h">
-      <Filter>Common</Filter>
+    <ClInclude Include="..\AzureCommon\Target_Windows_Storage.h">
+      <Filter>AzureCommon</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\targetHAL.h">
-      <Filter>Common</Filter>
+    <ClInclude Include="..\AzureCommon\targetHAL.h">
+      <Filter>AzureCommon</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\targetHAL_Time.h">
-      <Filter>Common</Filter>
+    <ClInclude Include="..\AzureCommon\targetHAL_Time.h">
+      <Filter>AzureCommon</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\targetPAL_Time.h">
-      <Filter>Common</Filter>
+    <ClInclude Include="..\AzureCommon\targetPAL_Time.h">
+      <Filter>AzureCommon</Filter>
     </ClInclude>
     <ClInclude Include="RP2040\include\pico\config_autogen.h">
       <Filter>RP2040\include\pico</Filter>
@@ -3339,6 +3345,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
+    </ClInclude>
+    <ClInclude Include="WireProtocol\wpCommunications.h">
+      <Filter>WireProtocol</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

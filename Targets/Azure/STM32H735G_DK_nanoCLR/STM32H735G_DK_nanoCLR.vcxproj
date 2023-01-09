@@ -41,7 +41,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\Common\STM32;..\Common\WireProtocol;..\STM32_CommonCode;..\Common\Sqlite;AdaptionLayer;Features;Features\Graphics;Features\IO;Memory;Other;Startup;WireProtocol;..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\NativeEventDispatcher;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports;..\..\..\ExternalRepositories\nf-interpreter\src\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\azure-rtos\filex\common\inc;..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m7\gnu\inc;..\Common;..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc;..\..\..\ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\AzureCommon\STM32;..\AzureCommon;..\STM32_CommonCode;AdaptionLayer;Features;Features\Graphics;Features\IO;Memory;Other;Startup;WireProtocol;..\..\..\ExternalRepositories\azure-rtos\threadx\common\inc;..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m7\gnu\inc;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Core;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\CorLib;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Debugger;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Diagnostics;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\Base64;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Helpers\nanoprintf;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\NativeEventDispatcher;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Startup;..\..\..\ExternalRepositories\nf-interpreter\src\CLR\System.Math;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Network\Enc28j60;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\Networking.Sntp;..\..\..\ExternalRepositories\nf-interpreter\src\DeviceInterfaces\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\HAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.Can;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Devices.OneWire;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Fonts;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Gif;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Core\Support\Jpeg;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Displays;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Graphics\Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Core;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\TouchPanel\Devices;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.ResourceManager;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Native;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Collections;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.System.Text;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Include;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl\mbedTLS;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets\ssl;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\COM\sockets;..\..\..\ExternalRepositories\nf-interpreter\src\PAL\Lwip;..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Runtime.Events;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Gpio;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.I2c;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Pwm;..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Spi;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.FileSystem;..\..\..\ExternalRepositories\nf-interpreter\src\System.IO.Ports;..\..\..\ExternalRepositories\nf-interpreter\src\System.Net;..\..\..\ExternalRepositories\nf-interpreter\src\Windows.Storage;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\CMSIS\Include;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc;..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy;..\..\..\ExternalRepositories\azure-rtos\filex\common\inc;..\..\..\ExternalRepositories\azure-rtos\filex\ports\cortex_m7\gnu\inc;..\Common;..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc;..\..\..\ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;STM32H735xx;PLATFORM_ARM;USE_FULL_LL_DRIVER;I_AM_NANOCLR;SQLITE_THREADSAFE=0;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <CLanguageStandard>C11</CLanguageStandard>
       <AdditionalOptions />
@@ -923,15 +923,18 @@
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_tim.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usart.c" />
     <ClCompile Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_utils.c" />
-    <ClCompile Include="..\Common\Memory.cpp" />
-    <ClCompile Include="..\Common\nanoCRT.cpp" />
-    <ClCompile Include="..\Common\nanoHAL.cpp" />
-    <ClCompile Include="..\Common\platform_heap.c" />
-    <ClCompile Include="..\Common\STM32\hard_fault_handler.c" />
-    <ClCompile Include="..\Common\STM32\ST_Hal_Gpio_Helpers.c" />
-    <ClCompile Include="..\Common\targetHAL_Time.cpp" />
-    <ClCompile Include="..\Common\targetPAL_Events.cpp" />
-    <ClCompile Include="..\Common\targetPAL_Time.cpp" />
+    <ClCompile Include="..\AzureCommon\Memory.cpp" />
+    <ClCompile Include="..\AzureCommon\nanoCRT.cpp" />
+    <ClCompile Include="..\AzureCommon\nanoHAL.cpp" />
+    <ClCompile Include="..\AzureCommon\platform_heap.c" />
+    <ClCompile Include="..\AzureCommon\STM32\hard_fault_handler.c" />
+    <ClCompile Include="..\AzureCommon\STM32\ST_Hal_Gpio_Helpers.c" />
+    <ClCompile Include="..\AzureCommon\targetHAL_Time.cpp" />
+    <ClCompile Include="..\AzureCommon\targetPAL_Events.cpp" />
+    <ClCompile Include="..\AzureCommon\targetPAL_Time.cpp" />
+    <ClCompile Include="..\AzureCommon\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="..\AzureCommon\WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="..\AzureCommon\wp_CircularBuffer.c" />
     <ClCompile Include="AdaptionLayer\BOARD.c" />
     <ClCompile Include="Features\IO\ADC.cpp" />
     <ClCompile Include="Features\IO\DAC.cpp" />
@@ -971,9 +974,7 @@
     <ClCompile Include="AdaptionLayer\target_common.c" />
     <ClCompile Include="Startup\tx_initialize_low_level.S" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c" />
-    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c" />
-    <ClCompile Include="WireProtocol\wpUSART_Communications.c" />
+    <ClCompile Include="WireProtocol\wp_Communications.c" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_api.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\filex\common\inc\fx_directory_exFAT.h" />
@@ -1149,11 +1150,15 @@
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_utils.h" />
     <ClInclude Include="..\..\..\ExternalRepositories\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_wwdg.h" />
-    <ClInclude Include="..\Common\STM32\Register_Modifications.h" />
-    <ClInclude Include="..\Common\STM32\Stm32Values.h" />
-    <ClInclude Include="..\Common\STM32\ST_Hal_Gpio_Helpers.h" />
-    <ClInclude Include="..\Common\targetHAL_Time.h" />
-    <ClInclude Include="..\Common\targetPAL_Time.h" />
+    <ClInclude Include="..\AzureCommon\STM32\Register_Modifications.h" />
+    <ClInclude Include="..\AzureCommon\STM32\Stm32Values.h" />
+    <ClInclude Include="..\AzureCommon\STM32\ST_Hal_Gpio_Helpers.h" />
+    <ClInclude Include="..\AzureCommon\targetHAL.h" />
+    <ClInclude Include="..\AzureCommon\targetHAL_Time.h" />
+    <ClInclude Include="..\AzureCommon\targetPAL_Time.h" />
+    <ClInclude Include="..\AzureCommon\Target_Windows_Storage.h" />
+    <ClInclude Include="..\AzureCommon\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="..\AzureCommon\wp_CircularBuffer.h" />
     <ClInclude Include="AdaptionLayer\BOARD.h" />
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h" />
     <ClInclude Include="Features\Storage\MicroSD.h" />
@@ -1167,7 +1172,6 @@
     <ClInclude Include="AdaptionLayer\platform_target_capabilities.h" />
     <ClInclude Include="Features\Graphics\RGB565_320x240.h" />
     <ClInclude Include="Features\TargetFeatures.h" />
-    <ClInclude Include="..\Common\targetHAL.h" />
     <ClInclude Include="AdaptionLayer\targetHAL_Power.h" />
     <ClInclude Include="AdaptionLayer\targetPAL.h" />
     <ClInclude Include="Memory\TargetPAL_BlockStorage.h" />
@@ -1177,12 +1181,10 @@
     <ClInclude Include="AdaptionLayer\target_common.h" />
     <ClInclude Include="AdaptionLayer\target_os.h" />
     <ClInclude Include="AdaptionLayer\target_platform.h" />
-    <ClInclude Include="..\Common\Target_Windows_Storage.h" />
     <ClInclude Include="Startup\tx_user.h" />
     <ClInclude Include="Startup\tx_user_nanoCLR.h" />
     <ClInclude Include="Startup\vectors.h" />
-    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h" />
-    <ClInclude Include="WireProtocol\wpUSART_Communications.h" />
+    <ClInclude Include="WireProtocol\wp_Communications.h" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md" />
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />

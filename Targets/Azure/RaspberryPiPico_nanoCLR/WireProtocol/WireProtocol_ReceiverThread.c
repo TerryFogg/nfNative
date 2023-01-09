@@ -7,8 +7,6 @@
 #include "WireProtocol_ReceiverThread.h"
 #include <WireProtocol_Message.h>
 #include <tx_api.h>
-#include <lib/tinyusb/src/device/usbd.h>
-
 
 extern WP_Message inboundMessage;
 

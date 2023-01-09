@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Common">
-      <UniqueIdentifier>{7149a75d-e37b-46e8-a1f0-62ffec0317ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Features">
       <UniqueIdentifier>{430bbcf9-7de6-4d7b-b429-a575d00a0873}</UniqueIdentifier>
     </Filter>
@@ -244,9 +241,6 @@
     <Filter Include="ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc">
       <UniqueIdentifier>{795397cc-75d1-434c-8ee2-5be139733afa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Common\STM32">
-      <UniqueIdentifier>{41e2b7f7-a197-4b8f-a645-4144a468e2a3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="AdaptionLayer">
       <UniqueIdentifier>{38a08389-6229-4a66-b019-f14aa983165f}</UniqueIdentifier>
     </Filter>
@@ -318,6 +312,12 @@
     </Filter>
     <Filter Include="ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc">
       <UniqueIdentifier>{a5afe746-c8ad-4171-9e5f-90cbae4453ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AzureCommon">
+      <UniqueIdentifier>{7149a75d-e37b-46e8-a1f0-62ffec0317ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AzureCommon\STM32">
+      <UniqueIdentifier>{41e2b7f7-a197-4b8f-a645-4144a468e2a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -887,32 +887,11 @@
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc\tx_port.h">
       <Filter>ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\inc</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\targetPAL_Time.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\targetHAL_Time.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="AdaptionLayer\BOARD.h">
       <Filter>AdaptionLayer</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\STM32\Register_Modifications.h">
-      <Filter>Common\STM32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\STM32\ST_Hal_Gpio_Helpers.h">
-      <Filter>Common\STM32</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\targetHAL.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\Target_Windows_Storage.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native.h">
       <Filter>ExternalRepositories\nf-interpreter\src\System.Device.Adc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\STM32\Stm32Values.h">
-      <Filter>Common\STM32</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Dac\sys_dev_dac_native.h">
       <Filter>ExternalRepositories\nf-interpreter\src\System.Device.Dac</Filter>
@@ -938,10 +917,7 @@
     <ClInclude Include="Features\IO\sys_dev_gpio_native_target.h">
       <Filter>Features\IO</Filter>
     </ClInclude>
-    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h">
-      <Filter>WireProtocol</Filter>
-    </ClInclude>
-    <ClInclude Include="WireProtocol\wpUSART_Communications.h">
+    <ClInclude Include="WireProtocol\wp_Communications.h">
       <Filter>WireProtocol</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\inc\ux_api.h">
@@ -958,6 +934,33 @@
     </ClInclude>
     <ClInclude Include="..\..\..\ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc\ux_port.h">
       <Filter>ExternalRepositories\azure-rtos\usbx\ports\cortex_m0\gnu\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\Target_Windows_Storage.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\targetHAL.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\targetHAL_Time.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\targetPAL_Time.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\WireProtocol_ReceiverThread.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\wp_CircularBuffer.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\STM32\Register_Modifications.h">
+      <Filter>AzureCommon\STM32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\STM32\ST_Hal_Gpio_Helpers.h">
+      <Filter>AzureCommon\STM32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\STM32\Stm32Values.h">
+      <Filter>AzureCommon\STM32</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -3098,35 +3101,11 @@
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src\tx_timer_interrupt.S">
       <Filter>ExternalRepositories\azure-rtos\threadx\ports\cortex_m0\gnu\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\nanoCRT.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\nanoHAL.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\platform_heap.c">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\targetPAL_Events.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\targetPAL_Time.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\targetHAL_Time.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="AdaptionLayer\system_stm32h7xx.c">
       <Filter>AdaptionLayer</Filter>
     </ClCompile>
     <ClCompile Include="AdaptionLayer\BOARD.c">
       <Filter>AdaptionLayer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\STM32\hard_fault_handler.c">
-      <Filter>Common\STM32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\STM32\ST_Hal_Gpio_Helpers.c">
-      <Filter>Common\STM32</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\nf-interpreter\src\System.Device.Adc\sys_dev_adc_native.cpp">
       <Filter>ExternalRepositories\nf-interpreter\src\System.Device.Adc</Filter>
@@ -3194,13 +3173,7 @@
     <ClCompile Include="Features\Other\Audio.c">
       <Filter>Features\Other</Filter>
     </ClCompile>
-    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c">
-      <Filter>WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="WireProtocol\wpUSART_Communications.c">
+    <ClCompile Include="WireProtocol\wp_Communications.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_dcd_sim_slave_address_set.c">
@@ -3656,8 +3629,41 @@
     <ClCompile Include="..\..\..\ExternalRepositories\azure-rtos\usbx\common\core\src\ux_utility_timer_delete.c">
       <Filter>ExternalRepositories\azure-rtos\usbx\common\core\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\Memory.cpp">
-      <Filter>Common</Filter>
+    <ClCompile Include="..\AzureCommon\Memory.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\nanoCRT.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\nanoHAL.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\platform_heap.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\targetHAL_Time.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\targetPAL_Events.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\targetPAL_Time.cpp">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\WireProtocol_HAL_Interface.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\WireProtocol_ReceiverThread.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\wp_CircularBuffer.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\STM32\hard_fault_handler.c">
+      <Filter>AzureCommon\STM32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\STM32\ST_Hal_Gpio_Helpers.c">
+      <Filter>AzureCommon\STM32</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

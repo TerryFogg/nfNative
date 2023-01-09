@@ -124,11 +124,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STM32H7B3_DK_nanoCLR", "Tar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "STM32H735G_DK_nanoCLR", "Targets\Azure\STM32H735G_DK_nanoCLR\STM32H735G_DK_nanoCLR.vcxproj", "{67C33B72-4EB0-414B-984C-46502ADD5453}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{3960F97E-6554-4B76-8EBC-F4F8DC20F0FF}"
-	ProjectSection(SolutionItems) = preProject
-		ClrStartup.dgml = ClrStartup.dgml
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{653B6F4B-4298-427D-B23E-70ABECD3B719}"
 	ProjectSection(SolutionItems) = preProject
 		Documents\PlantUmlDoc.pdf = Documents\PlantUmlDoc.pdf
@@ -15499,6 +15494,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{07319794-0E9
 		ExternalRepositories\azure-rtos\netx\ports\cortex_m0\gnu\inc\nx_port.h = ExternalRepositories\azure-rtos\netx\ports\cortex_m0\gnu\inc\nx_port.h
 	EndProjectSection
 EndProject
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "PicoSDKProject1", "PicoSDKProject1\PicoSDKProject1.vgdbproj", "{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -15613,6 +15610,30 @@ Global
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x64.Build.0 = Release|VisualGDB
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x86.ActiveCfg = Release|VisualGDB
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x86.Build.0 = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x64.ActiveCfg = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x64.Build.0 = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x86.ActiveCfg = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x86.Build.0 = Debug|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x64.ActiveCfg = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x64.Build.0 = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x86.ActiveCfg = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x86.Build.0 = MinSizeRel|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x64.ActiveCfg = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x64.Build.0 = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x86.ActiveCfg = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x86.Build.0 = Release|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|VisualGDB
+		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x86.Build.0 = RelWithDebInfo|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
