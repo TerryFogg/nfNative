@@ -566,6 +566,9 @@
     <ClCompile Include="..\AzureCommon\targetHAL_Time.cpp" />
     <ClCompile Include="..\AzureCommon\targetPAL_Events.cpp" />
     <ClCompile Include="..\AzureCommon\targetPAL_Time.cpp" />
+    <ClCompile Include="..\AzureCommon\WireProtocol_HAL_Interface.c" />
+    <ClCompile Include="..\AzureCommon\WireProtocol_ReceiverThread.c" />
+    <ClCompile Include="..\AzureCommon\wp_CircularBuffer.c" />
     <ClCompile Include="AdaptionLayer\BOARD.c" />
     <ClCompile Include="AdaptionLayer\hard_fault_handler.c" />
     <ClCompile Include="AdaptionLayer\targetHAL.cpp" />
@@ -598,11 +601,12 @@
     <ClCompile Include="Startup\nanoFramework_Threads.c" />
     <ClCompile Include="Startup\tx_initialize_low_level.S" />
     <ClCompile Include="WireProtocol\usb_descriptors.c" />
-    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c" />
-    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c" />
-    <ClCompile Include="WireProtocol\wpCommunications.c" />
+    <ClCompile Include="WireProtocol\wp.c" />
+    <ClCompile Include="WireProtocol\wp_Communications.c" />
     <ClCompile Include="WireProtocol\wpCommunications2.cpp" />
-    <ClInclude Include="WireProtocol\wpCommunications.h" />
+    <ClInclude Include="..\AzureCommon\WireProtocol_ReceiverThread.h" />
+    <ClInclude Include="..\AzureCommon\wp_CircularBuffer.h" />
+    <ClInclude Include="WireProtocol\wp_Communications.h" />
     <None Include="mcu.props" />
     <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
     <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />
@@ -924,7 +928,6 @@
     <ClInclude Include="Startup\vectors.h" />
     <ClInclude Include="version.h" />
     <ClInclude Include="WireProtocol\tusb_config.h" />
-    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Memory\RaspberryPiPico.ld" />

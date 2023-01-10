@@ -2348,12 +2348,6 @@
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\hardware_dma\dma.c">
       <Filter>External\pico-sdk\src\rp2_common\hardware_dma</Filter>
     </ClCompile>
-    <ClCompile Include="WireProtocol\WireProtocol_ReceiverThread.c">
-      <Filter>WireProtocol</Filter>
-    </ClCompile>
-    <ClCompile Include="WireProtocol\WireProtocol_HAL_Interface.c">
-      <Filter>WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c">
       <Filter>External\pico-sdk\lib\tinyusb\src\common</Filter>
     </ClCompile>
@@ -2418,10 +2412,22 @@
     <ClCompile Include="..\AzureCommon\Memory.cpp">
       <Filter>AzureCommon</Filter>
     </ClCompile>
-    <ClCompile Include="WireProtocol\wpCommunications.c">
+    <ClCompile Include="WireProtocol\wp_Communications.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
     <ClCompile Include="WireProtocol\wpCommunications2.cpp">
+      <Filter>WireProtocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\WireProtocol_HAL_Interface.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\WireProtocol_ReceiverThread.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AzureCommon\wp_CircularBuffer.c">
+      <Filter>AzureCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="WireProtocol\wp.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
@@ -3295,9 +3301,6 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_multicore\include\pico\multicore.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_multicore\include\pico</Filter>
     </ClInclude>
-    <ClInclude Include="WireProtocol\WireProtocol_ReceiverThread.h">
-      <Filter>WireProtocol</Filter>
-    </ClInclude>
     <ClInclude Include="WireProtocol\tusb_config.h">
       <Filter>WireProtocol</Filter>
     </ClInclude>
@@ -3346,8 +3349,14 @@
     <ClInclude Include="..\..\..\ExternalRepositories\pico-sdk\src\rp2_common\pico_stdio\include\pico\stdio.h">
       <Filter>External\pico-sdk\src\rp2_common\pico_stdio\include\pico</Filter>
     </ClInclude>
-    <ClInclude Include="WireProtocol\wpCommunications.h">
+    <ClInclude Include="WireProtocol\wp_Communications.h">
       <Filter>WireProtocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\WireProtocol_ReceiverThread.h">
+      <Filter>AzureCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AzureCommon\wp_CircularBuffer.h">
+      <Filter>AzureCommon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

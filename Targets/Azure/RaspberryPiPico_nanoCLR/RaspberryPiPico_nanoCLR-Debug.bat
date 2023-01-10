@@ -949,6 +949,12 @@ echo targetPAL_Events.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/AzureCommon/targetPAL_Events.gcc.rsp" || exit 1
 echo targetPAL_Time.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/AzureCommon/targetPAL_Time.gcc.rsp" || exit 1
+echo WireProtocol_HAL_Interface.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/AzureCommon/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
+echo WireProtocol_ReceiverThread.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/AzureCommon/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
+echo wp_CircularBuffer.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/AzureCommon/wp_CircularBuffer.gcc.rsp" || exit 1
 echo BOARD.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/AdaptionLayer/BOARD.gcc.rsp" || exit 1
 echo hard_fault_handler.c
@@ -1009,12 +1015,10 @@ echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
 echo usb_descriptors.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/usb_descriptors.gcc.rsp" || exit 1
-echo WireProtocol_HAL_Interface.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
-echo WireProtocol_ReceiverThread.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
-echo wpCommunications.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/wpCommunications.gcc.rsp" || exit 1
+echo wp.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/wp.gcc.rsp" || exit 1
+echo wp_Communications.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/wp_Communications.gcc.rsp" || exit 1
 echo wpCommunications2.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/WireProtocol/wpCommunications2.gcc.rsp" || exit 1
 echo FastSemihosting.cpp
@@ -1023,3 +1027,50 @@ echo InstrumentingProfiler.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/InstrumentingProfiler.gcc.rsp" || exit 1
 echo TestResourceManager.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/TestResourceManager.gcc.rsp" || exit 1
+echo tx_thread_context_restore.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_restore.gcc.rsp" || exit 1
+echo tx_thread_context_save.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_context_save.gcc.rsp" || exit 1
+echo tx_thread_interrupt_control.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_control.gcc.rsp" || exit 1
+echo tx_thread_interrupt_disable.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_disable.gcc.rsp" || exit 1
+echo tx_thread_interrupt_restore.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_interrupt_restore.gcc.rsp" || exit 1
+echo tx_thread_schedule.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_schedule.gcc.rsp" || exit 1
+echo tx_thread_stack_build.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_stack_build.gcc.rsp" || exit 1
+echo tx_thread_system_return.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_thread_system_return.gcc.rsp" || exit 1
+echo tx_timer_interrupt.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/ports/cortex_m0/gnu/src/tx_timer_interrupt.gcc.rsp" || exit 1
+echo divider.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_divider/divider.gcc.rsp" || exit 1
+echo irq_handler_chain.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.gcc.rsp" || exit 1
+echo bit_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.gcc.rsp" || exit 1
+echo divider.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_divider/divider.gcc.rsp" || exit 1
+echo double_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_aeabi.gcc.rsp" || exit 1
+echo double_v1_rom_shim.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.gcc.rsp" || exit 1
+echo float_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_aeabi.gcc.rsp" || exit 1
+echo float_v1_rom_shim.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.gcc.rsp" || exit 1
+echo pico_int64_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.gcc.rsp" || exit 1
+echo mem_ops_aeabi.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.gcc.rsp" || exit 1
+echo crt0.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/src/rp2_common/pico_standard_link/crt0.gcc.rsp" || exit 1
+echo bs2_default_padded_checksummed.s
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/bs2_default_padded_checksummed.gcc.rsp" || exit 1
+echo tx_initialize_low_level.S
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/tx_initialize_low_level.gcc.rsp" || exit 1
+echo Linking Build/RaspberryPiPico_nanoCLR.elf...
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Build/RaspberryPiPico_nanoCLR.link.rsp || exit 1
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Build/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1

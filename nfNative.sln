@@ -14,7 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		Documents\nanoFrameworkLOGO_96x54.bmp = Documents\nanoFrameworkLOGO_96x54.bmp
 		Documents\Readme.md = Documents\Readme.md
 		Documents\DisplayAndTouch\ST7789VW.pdf = Documents\DisplayAndTouch\ST7789VW.pdf
-		Targets\Azure\RaspberryPiPico_nanoCLR\temp.txt = Targets\Azure\RaspberryPiPico_nanoCLR\temp.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{A6AE73ED-45C3-45E5-9514-F26C6950FEE8}"
