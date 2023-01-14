@@ -15493,7 +15493,46 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{07319794-0E9
 		ExternalRepositories\azure-rtos\netx\ports\cortex_m0\gnu\inc\nx_port.h = ExternalRepositories\azure-rtos\netx\ports\cortex_m0\gnu\inc\nx_port.h
 	EndProjectSection
 EndProject
-Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "PicoSDKProject1", "PicoSDKProject1\PicoSDKProject1.vgdbproj", "{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ESP32", "ESP32", "{5B264960-B4F1-400E-B99F-CB01A7F4CE1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "esp-idf", "esp-idf", "{9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalRepositories\esp-idf\.editorconfig = ExternalRepositories\esp-idf\.editorconfig
+		ExternalRepositories\esp-idf\.flake8 = ExternalRepositories\esp-idf\.flake8
+		ExternalRepositories\esp-idf\.gitignore = ExternalRepositories\esp-idf\.gitignore
+		ExternalRepositories\esp-idf\.gitlab-ci.yml = ExternalRepositories\esp-idf\.gitlab-ci.yml
+		ExternalRepositories\esp-idf\.gitmodules = ExternalRepositories\esp-idf\.gitmodules
+		ExternalRepositories\esp-idf\.mypy.ini = ExternalRepositories\esp-idf\.mypy.ini
+		ExternalRepositories\esp-idf\.pre-commit-config.yaml = ExternalRepositories\esp-idf\.pre-commit-config.yaml
+		ExternalRepositories\esp-idf\.pylintrc = ExternalRepositories\esp-idf\.pylintrc
+		ExternalRepositories\esp-idf\.readthedocs.yml = ExternalRepositories\esp-idf\.readthedocs.yml
+		ExternalRepositories\esp-idf\add_path.sh = ExternalRepositories\esp-idf\add_path.sh
+		ExternalRepositories\esp-idf\CMakeLists.txt = ExternalRepositories\esp-idf\CMakeLists.txt
+		ExternalRepositories\esp-idf\conftest.py = ExternalRepositories\esp-idf\conftest.py
+		ExternalRepositories\esp-idf\CONTRIBUTING.md = ExternalRepositories\esp-idf\CONTRIBUTING.md
+		ExternalRepositories\esp-idf\export.bat = ExternalRepositories\esp-idf\export.bat
+		ExternalRepositories\esp-idf\export.fish = ExternalRepositories\esp-idf\export.fish
+		ExternalRepositories\esp-idf\export.ps1 = ExternalRepositories\esp-idf\export.ps1
+		ExternalRepositories\esp-idf\export.sh = ExternalRepositories\esp-idf\export.sh
+		ExternalRepositories\esp-idf\install.bat = ExternalRepositories\esp-idf\install.bat
+		ExternalRepositories\esp-idf\install.fish = ExternalRepositories\esp-idf\install.fish
+		ExternalRepositories\esp-idf\install.ps1 = ExternalRepositories\esp-idf\install.ps1
+		ExternalRepositories\esp-idf\install.sh = ExternalRepositories\esp-idf\install.sh
+		ExternalRepositories\esp-idf\Kconfig = ExternalRepositories\esp-idf\Kconfig
+		ExternalRepositories\esp-idf\LICENSE = ExternalRepositories\esp-idf\LICENSE
+		ExternalRepositories\esp-idf\pytest.ini = ExternalRepositories\esp-idf\pytest.ini
+		ExternalRepositories\esp-idf\README.md = ExternalRepositories\esp-idf\README.md
+		ExternalRepositories\esp-idf\README_CN.md = ExternalRepositories\esp-idf\README_CN.md
+		ExternalRepositories\esp-idf\sdkconfig.rename = ExternalRepositories\esp-idf\sdkconfig.rename
+		ExternalRepositories\esp-idf\SECURITY.md = ExternalRepositories\esp-idf\SECURITY.md
+		ExternalRepositories\esp-idf\sonar-project.properties = ExternalRepositories\esp-idf\sonar-project.properties
+		ExternalRepositories\esp-idf\SUPPORT_POLICY.md = ExternalRepositories\esp-idf\SUPPORT_POLICY.md
+		ExternalRepositories\esp-idf\SUPPORT_POLICY_CN.md = ExternalRepositories\esp-idf\SUPPORT_POLICY_CN.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{02A8E98E-D61D-42A4-8980-77C27D5DA867}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{80E2DEC9-8774-46A9-8417-BCE28029203F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15609,30 +15648,6 @@ Global
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x64.Build.0 = Release|VisualGDB
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x86.ActiveCfg = Release|VisualGDB
 		{7E7AB174-875A-4519-A6DE-D1AA20A4DD29}.RelWithDebInfo|x86.Build.0 = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x64.ActiveCfg = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x64.Build.0 = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x86.ActiveCfg = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Debug|x86.Build.0 = Debug|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x64.ActiveCfg = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x64.Build.0 = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x86.ActiveCfg = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.MinSizeRel|x86.Build.0 = MinSizeRel|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|VisualGDB.Build.0 = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x64.ActiveCfg = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x64.Build.0 = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x86.ActiveCfg = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.Release|x86.Build.0 = Release|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|VisualGDB
-		{50710C1C-8601-4C7F-9CEA-EEEBA64E2F8E}.RelWithDebInfo|x86.Build.0 = RelWithDebInfo|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -17468,6 +17483,10 @@ Global
 		{F3684E19-0232-4607-8211-CD2DDFCC5AFB} = {4E73D7C7-4578-4A45-AE4D-EF40AE36B8B6}
 		{30D77155-A90C-44E4-A225-32A01CD9C880} = {F3684E19-0232-4607-8211-CD2DDFCC5AFB}
 		{07319794-0E9A-46FB-B6B5-1631BE1CA77D} = {30D77155-A90C-44E4-A225-32A01CD9C880}
+		{5B264960-B4F1-400E-B99F-CB01A7F4CE1F} = {E7C69DE7-C5AF-4EA5-A186-05FCFA3D116C}
+		{9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761} = {D55C4CBC-3B3B-43D0-B036-FF20774E266D}
+		{02A8E98E-D61D-42A4-8980-77C27D5DA867} = {9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761}
+		{80E2DEC9-8774-46A9-8417-BCE28029203F} = {9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A66BD7CD-C93A-47C4-8DD8-F2C392511FC6}

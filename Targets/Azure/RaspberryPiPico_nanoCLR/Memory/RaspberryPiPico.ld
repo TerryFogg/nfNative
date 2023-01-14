@@ -92,7 +92,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | with address space to 16MB.        |     */   
 /*       | RP2040 has 2048K of QSPI flash     |     */   
 /*       |                                    |     */   
-/*       | 0x10000000 : 256KB                 |SYS>>*/  FLASH        (rx) : ORIGIN = 0x10000000,   LENGTH = 2048k
+/*       | 0x10000000 :                       |SYS>>*/  FLASH        (rx) : ORIGIN = 0x10000000,   LENGTH = 2048k
 /*       | Flash has 512 pages of 4096 Bytes  |     */   
 /*       | on the RP2040, smallest erase 1    |     */ 
 /*       | Sector,4096 bytes aligned on       |     */ 
@@ -124,7 +124,7 @@ MEMORY    /*   Usage by nanoFramework */
 /*       | nanoCLR graphics bitmaps,          |CLR>>*/  graphics_ram   (xrw) : ORIGIN = ORIGIN(CLR_RAM) + LENGTH(CLR_RAM), LENGTH = LENGTH(RAM_STRIPED) - ( LENGTH(RAM) + LENGTH(CLR_RAM) )
 /*       | drawing surfaces                   |     */
 /*       |                                    |     */
-/*       | Video frame buffer                 |CLR>>*/  /* NO FRAME BUFFER - use SPI buffer to transfer graphics */
+/*       | Video frame buffer                 |CLR>>*/  /* NO FRAME BUFFER - use SPI local buffer to transfer graphics */
 /*       \------------------------------------/     */
 }
         
@@ -227,17 +227,22 @@ SECTIONS
   /* Each function that can throw an exception will have entries in the following sections */
   /* used for C++ and for C programs that try to examine backtraces                        */
   /* --------------------------------------------------------------------------------------*/
-  .ARM.extab :                                   /* extab names sections containing exception unwinding information */
+ /* extab names sections containing exception unwinding information */
+ 
+ .ARM.extab :                                   
   {
    *(.ARM.extab* .gnu.linkonce.armextab.*) 
    } >FLASH
   
-  .ARM : 
-  {
-    __exidx_start = .;                            /* exidx is used to contain index entries for stack unwinding */
+/* exidx is used to contain index entries for stack unwinding */
+
+__exidx_start = .;
+    .ARM.exidx :
+    {
         *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-  } >FLASH
+    } > FLASH
     __exidx_end = .;
+
 
   /* --------------------------------------- */
   /* Machine inspectable binary information  */
@@ -344,8 +349,6 @@ SECTIONS
  
   /* -------------------------------------------------------------------*/
   /* This section holds uninitialized data                             */
-  /* By definition, and through the code in startup_st32h735igks.s, the */
-  /* system initializes the data with zeros at startup                  */
   /* -------------------------------------------------------------------*/
   .bss :       
   {
@@ -406,8 +409,5 @@ SECTIONS
     ASSERT(__StackLimit >= __HeapLimit, "region RAM overflowed")
 
     ASSERT( __binary_info_header_end - __logical_binary_start <= 256, "Binary info must be in first 256 bytes of the binary")
-    
-    
-    /* Add additional assert(s) on extra code below */
 }
 

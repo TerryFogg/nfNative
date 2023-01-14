@@ -41,11 +41,13 @@ int wp_ReadBytes(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
     while (!tud_cdc_n_available(0))
     {
         tud_task();
-        tx_thread_sleep(1);
+        tx_thread_relinquish();
     }
     ULONG read = tud_cdc_n_read(0, *ptr, requestedSize);
     tud_cdc_n_read_flush(0);
 
+    tx_thread_sleep(3);
+    //  tx_thread_relinquish();
     return read;
 }
 bool wp_WriteBytes(uint8_t *ptr, uint16_t size)
@@ -55,15 +57,21 @@ bool wp_WriteBytes(uint8_t *ptr, uint16_t size)
     while (!tud_cdc_write_available())
     {
         tud_task();
-        tx_thread_relinquish();
+        tx_thread_sleep(1);
     }
+
     uint32_t writeResult = tud_cdc_n_write(0, ptr, size);
     tud_cdc_n_write_flush(0);
+    tx_thread_sleep(2);
 
     return true;
 }
 
-void WireProtocolUsb_dcd_event_rp2040()
+void WireProtocolUsb_dcd_event_rp2040(int eventType)
 {
+    if (eventType == 2)
+    {
+        tx_event_flags_set(&wpReceivedEvent, 0x1, TX_OR);
+    }
 }
 

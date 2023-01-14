@@ -7,7 +7,7 @@
 // byte pool configuration and definitions
 #define DEFAULT_BYTE_POOL_SIZE 16000
 #define CLR_THREAD_STACK_SIZE 6000
-#define RECEIVER_THREAD_STACK_SIZE 4096
+#define RECEIVER_THREAD_STACK_SIZE 2048
 
 extern bool g_waitForDebuggerRequested;
 
@@ -17,7 +17,7 @@ uint8_t memory_area[DEFAULT_BYTE_POOL_SIZE];
 // Thread definitions and configurations
 
 // 1. Receiver thread
-#define RECEIVER_THREAD_PRIORITY 4
+#define RECEIVER_THREAD_PRIORITY 5
 
 TX_THREAD receiverThread;
 TX_THREAD CLRThread;
@@ -26,7 +26,7 @@ uint32_t receiverThreadStack[RECEIVER_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void ReceiverThread_entry(uint32_t parameter);
 
 // 2. CLR thread
-#define CLR_THREAD_PRIORITY 4
+#define CLR_THREAD_PRIORITY 5
 
 uint32_t CLRThreadStack[CLR_THREAD_STACK_SIZE / sizeof(uint32_t)];
 extern void CLRStartupThread(uint32_t parameter);
