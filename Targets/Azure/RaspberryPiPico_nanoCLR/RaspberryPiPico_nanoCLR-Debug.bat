@@ -949,8 +949,6 @@ echo targetPAL_Events.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/AzureCommon/targetPAL_Events.gcc.rsp" || exit 1
 echo targetPAL_Time.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_1_/AzureCommon/targetPAL_Time.gcc.rsp" || exit 1
-echo WireProtocol_HAL_Interface.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/AzureCommon/WireProtocol_HAL_Interface.gcc.rsp" || exit 1
 echo WireProtocol_ReceiverThread.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_1_/AzureCommon/WireProtocol_ReceiverThread.gcc.rsp" || exit 1
 echo wp_CircularBuffer.c
@@ -1015,12 +1013,10 @@ echo nanoFramework_Threads.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/Startup/nanoFramework_Threads.gcc.rsp" || exit 1
 echo usb_descriptors.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/usb_descriptors.gcc.rsp" || exit 1
-echo wp.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/wp.gcc.rsp" || exit 1
+echo Wire_Protocol_HAL_Interface.c
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/Wire_Protocol_HAL_Interface.gcc.rsp" || exit 1
 echo wp_Communications.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/WireProtocol/wp_Communications.gcc.rsp" || exit 1
-echo wpCommunications2.cpp
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/WireProtocol/wpCommunications2.gcc.rsp" || exit 1
 echo FastSemihosting.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/__LOCALAPPDATA__/VisualGDB/EmbeddedEFPs/Profiler/FastSemihosting.gcc.rsp" || exit 1
 echo InstrumentingProfiler.cpp

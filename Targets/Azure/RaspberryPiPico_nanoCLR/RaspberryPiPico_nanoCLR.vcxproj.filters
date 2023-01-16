@@ -2415,9 +2415,6 @@
     <ClCompile Include="WireProtocol\wp_Communications.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
-    <ClCompile Include="WireProtocol\wpCommunications2.cpp">
-      <Filter>WireProtocol</Filter>
-    </ClCompile>
     <ClCompile Include="..\AzureCommon\WireProtocol_HAL_Interface.c">
       <Filter>AzureCommon</Filter>
     </ClCompile>
@@ -2426,9 +2423,6 @@
     </ClCompile>
     <ClCompile Include="..\AzureCommon\wp_CircularBuffer.c">
       <Filter>AzureCommon</Filter>
-    </ClCompile>
-    <ClCompile Include="WireProtocol\wp.c">
-      <Filter>WireProtocol</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

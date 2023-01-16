@@ -22,13 +22,7 @@ uint8_t WP_TransmitMessage(WP_Message *message)
     wp_WriteBytes((uint8_t *)&message->m_header, sizeof(message->m_header));
     if (message->m_header.m_size && message->m_payload)
     {
-        int loops = message->m_header.m_size;
-
-        for (int i = 0; i < loops; i++)
-        {
-            //        wp_WriteBytes(message->m_payload, message->m_header.m_size);
-            wp_WriteBytes((message->m_payload + i), 1);
-        }
+        wp_WriteBytes(message->m_payload, message->m_header.m_size);
     }
     return true;
 }

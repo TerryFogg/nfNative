@@ -15534,6 +15534,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{02A8E98E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{80E2DEC9-8774-46A9-8417-BCE28029203F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlashAllPico", "FlashAllPico", "{AF6266AE-91FB-4154-ABBF-98BB4E2A01D7}"
+	ProjectSection(SolutionItems) = preProject
+		Tools\FlashAllPico\flash_nuke.uf2 = Tools\FlashAllPico\flash_nuke.uf2
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -17487,6 +17492,7 @@ Global
 		{9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761} = {D55C4CBC-3B3B-43D0-B036-FF20774E266D}
 		{02A8E98E-D61D-42A4-8980-77C27D5DA867} = {9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761}
 		{80E2DEC9-8774-46A9-8417-BCE28029203F} = {9F5C6EF2-FF9D-4C2C-A4A5-421E750EF761}
+		{AF6266AE-91FB-4154-ABBF-98BB4E2A01D7} = {152C5158-CD79-4557-A399-7562923308D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A66BD7CD-C93A-47C4-8DD8-F2C392511FC6}
