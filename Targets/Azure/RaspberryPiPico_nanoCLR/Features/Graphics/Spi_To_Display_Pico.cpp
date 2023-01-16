@@ -21,6 +21,8 @@
 #define LCD_CLK_PIN 10
 #define LCD_MOSI_PIN 11
 
+#define MAX_SPI_BAUD_RATE 62500000
+
 struct DisplayInterface g_DisplayInterface;
 DisplayInterfaceConfig g_DisplayInterfaceConfig;
 // Saved gpio pins
@@ -41,13 +43,9 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
 {
 
     lcdchipSelect = config.Spi.chipSelect;
-    // Configure SPI to use Motorola SPI Format (SPO=1, SPH=1)
-    // see section 4.4.3.13. of RP2040 data sheet build-date: 2022-06-17  build - version : 7028f9f - clean
-    spi_init(SPI_PORT, 40*1000*1000);
-    //    spi_set_format(SPI_PORT, 8, SPI_CPOL_1, SPI_CPHA_1, SPI_MSB_FIRST);
+    spi_init(SPI_PORT, MAX_SPI_BAUD_RATE);
     gpio_set_function(LCD_CLK_PIN, GPIO_FUNC_SPI);
     gpio_set_function(LCD_MOSI_PIN, GPIO_FUNC_SPI);
-    //    gpio_set_function(lcdchipSelect, GPIO_FUNC_SPI);
 
     // Configure GPIO
     // ==============

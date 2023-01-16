@@ -2444,9 +2444,6 @@
     <None Include="Build\RaspberryPiPico_nanoCLR.link.rsp">
       <Filter>Build</Filter>
     </None>
-    <None Include="Build\RaspberryPiPico_nanoCLR.lst">
-      <Filter>Build</Filter>
-    </None>
     <None Include="Build\RaspberryPiPico_nanoCLR.nm">
       <Filter>Build</Filter>
     </None>

@@ -1188,8 +1188,15 @@
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def" />
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md" />
     <ClInclude Include="..\..\..\ExternalRepositories\\STM32CubeH7\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR" />
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.lst" />
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.nm" />
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.size" />
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="Memory\STM32H735G-DK.ld" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedBinaryFile Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.bin" />
   </ItemGroup>
 </Project>

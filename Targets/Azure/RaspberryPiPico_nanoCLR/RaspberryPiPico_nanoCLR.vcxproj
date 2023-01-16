@@ -623,7 +623,6 @@
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md" />
     <None Include="Build\RaspberryPiPico_nanoCLR.elf" />
     <None Include="Build\RaspberryPiPico_nanoCLR.link.rsp" />
-    <None Include="Build\RaspberryPiPico_nanoCLR.lst" />
     <None Include="Build\RaspberryPiPico_nanoCLR.nm" />
     <None Include="Build\RaspberryPiPico_nanoCLR.size" />
     <None Include="Build\RaspberryPiPico_nanoCLR.uf2" />

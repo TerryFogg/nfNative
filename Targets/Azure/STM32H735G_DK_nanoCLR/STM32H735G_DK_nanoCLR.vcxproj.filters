@@ -319,6 +319,9 @@
     <Filter Include="AzureCommon\STM32">
       <UniqueIdentifier>{41e2b7f7-a197-4b8f-a645-4144a468e2a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{bd57c35b-0a2f-496c-b5d9-b246f4f329b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\CLR\Include\opcode.def">
@@ -326,6 +329,18 @@
     </None>
     <None Include="..\..\..\ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics\Readme.md">
       <Filter>ExternalRepositories\nf-interpreter\src\nanoFramework.Graphics</Filter>
+    </None>
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.lst">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.size">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.nm">
+      <Filter>Build</Filter>
+    </None>
+    <None Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR">
+      <Filter>Build</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -3670,5 +3685,10 @@
     <LinkerScript Include="Memory\STM32H735G-DK.ld">
       <Filter>Memory</Filter>
     </LinkerScript>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedBinaryFile Include="..\..\..\VisualGDB\Debug\STM32H735G_DK_nanoCLR.bin">
+      <Filter>Build</Filter>
+    </EmbeddedBinaryFile>
   </ItemGroup>
 </Project>

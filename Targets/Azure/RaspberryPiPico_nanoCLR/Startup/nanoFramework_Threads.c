@@ -58,7 +58,7 @@ void tx_application_define(void *first_unused_memory)
         RECEIVER_THREAD_STACK_SIZE, // Number bytes in the stack memory area.
         RECEIVER_THREAD_PRIORITY,   // Numerical priority of thread.
         RECEIVER_THREAD_PRIORITY,   // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
-        TX_NO_TIME_SLICE, // Number of timer-ticks this thread is allowed to run before other ready threads of the same
+        1,//TX_NO_TIME_SLICE, // Number of timer-ticks this thread is allowed to run before other ready threads of the same
                           // priority are given a chance to run.
         TX_AUTO_START);   // Specifies whether the thread starts immediately or is placed in a suspended state.
     if (status != TX_SUCCESS)
@@ -86,7 +86,7 @@ void tx_application_define(void *first_unused_memory)
         CLR_THREAD_STACK_SIZE, // Number bytes in the stack memory area.
         CLR_THREAD_PRIORITY,   // Numerical priority of thread.
         CLR_THREAD_PRIORITY,   // Highest priority level (0 through (TX_MAX_PRIORITIES-1)) of disabled preemption.
-        TX_NO_TIME_SLICE, // Number of timer-ticks this thread is allowed to run before other ready threads of the same
+        1,//TX_NO_TIME_SLICE, // Number of timer-ticks this thread is allowed to run before other ready threads of the same
                           // priority are given a chance to run.
         TX_AUTO_START);   // Specifies whether the thread starts immediately or is placed in a suspended state.
 
