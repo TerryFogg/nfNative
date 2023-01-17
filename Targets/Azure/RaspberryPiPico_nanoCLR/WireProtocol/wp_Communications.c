@@ -21,22 +21,24 @@ Board: RaspberryPiPico
 #include <lib/tinyusb/src/device/usbd.h>
 #include <tx_api.h>
 
+static bool UsbConnected = false;
+
 TX_EVENT_FLAGS_GROUP wpReceivedEvent;
 
 void InitWireProtocolCommunications()
 {
     // Initialize Tinyusb
     tusb_init();
-    
-    // Replace with connected and DtrEnabled on VS-Extension
-   // while (!tud_cdc_n_connected(0))
-        while (!tud_cdc_n_available(0))
-    {
-        tud_task();
-    }
+
+    // Uncomment out when DtrEnabled on VS-Extension
+    // Tinyusb connected depends on the host setting the Dtr bit
+    // while (!tud_cdc_n_connected(0))
+    // {
+    // tud_task();
+    // }
 
     // Create event based data synchronization
-  //  tx_event_flags_create(&wpReceivedEvent, "wpReceiveDataEvent");
+    tx_event_flags_create(&wpReceivedEvent, "wpReceiveDataEvent");
 }
 int wp_ReadBytes(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
 {
@@ -44,17 +46,20 @@ int wp_ReadBytes(uint8_t **ptr, uint32_t *size, uint32_t wait_time)
     uint32_t requestedSize = *size;
     tx_event_flags_get(&wpReceivedEvent, 0x1, TX_OR_CLEAR, &actual_flags, wait_time);
 
+    if (!UsbConnected)
+    {
+        while (!tud_cdc_n_available(0))
+        {
+            tud_task();
+        }
+        UsbConnected = true;
+    }
     // Bytes have arrived try to read what was requested
     while (!tud_cdc_n_available(0))
     {
         tud_task();
-//        tx_thread_relinquish();
     }
     ULONG read = tud_cdc_n_read(0, *ptr, requestedSize);
-//    tud_cdc_n_read_flush(0);
-
-   // tx_thread_sleep(3);
-//      tx_thread_relinquish();
     return read;
 }
 bool wp_WriteBytes(uint8_t *ptr, uint16_t size)
@@ -64,7 +69,7 @@ bool wp_WriteBytes(uint8_t *ptr, uint16_t size)
     while (!tud_cdc_write_available())
     {
         tud_task();
-//        tx_thread_sleep(1);
+        //        tx_thread_sleep(1);
     }
 
     uint32_t writeResult = tud_cdc_n_write(0, ptr, size);
@@ -75,9 +80,16 @@ bool wp_WriteBytes(uint8_t *ptr, uint16_t size)
 
 void WireProtocolUsb_dcd_event_rp2040(int eventType)
 {
-    if (eventType == 2)
+    switch (eventType)
     {
+    case 1:
         tx_event_flags_set(&wpReceivedEvent, 0x1, TX_OR);
+        break;
+    case 2:
+        tx_event_flags_set(&wpReceivedEvent, 0x1, TX_OR);
+        break;
+    case 3:
+        tx_event_flags_set(&wpReceivedEvent, 0x1, TX_OR);
+        break;
     }
 }
-

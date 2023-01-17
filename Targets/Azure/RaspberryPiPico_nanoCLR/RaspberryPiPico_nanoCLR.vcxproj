@@ -605,6 +605,7 @@
     <ClInclude Include="..\AzureCommon\WireProtocol_ReceiverThread.h" />
     <ClInclude Include="..\AzureCommon\wp_CircularBuffer.h" />
     <ClInclude Include="WireProtocol\wp_Communications.h" />
+    <None Include="..\..\..\VisualGDB\Debug\RaspberryPiPico_nanoCLR.lst" />
     <None Include="mcu.props" />
     <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp" />
     <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp" />

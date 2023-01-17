@@ -14,7 +14,7 @@
 #include "pico/binary_info.h"
 #include "pico/stdlib.h"
 
-#define NUMBER_OF_LINES 8
+#define NUMBER_OF_LINES 2
 #define SPI_MAX_TRANSFER_SIZE (240 * 2 * NUMBER_OF_LINES) // 240 pixels 2 words wide (16 bit colour)
 
 #define SPI_PORT spi1
@@ -76,18 +76,20 @@ void DisplayInterface::Initialize(DisplayInterfaceConfig &config)
     // Setup dma to write the data out, this allows the CPU to continue while the data is sent
     // We set the outbound DMA to transfer from a memory buffer to the SPI transmit FIFO paced by the SPI TX FIFO DREQ
 
-    /*
+#if defined DMA
+    // Rough out of code, not tested
+    //------------------------------
     dma_tx = dma_claim_unused_channel(true);
     dma_channel_config c = dma_channel_get_default_config(dma_tx);
     channel_config_set_transfer_data_size(&c, DMA_SIZE_8);
     channel_config_set_dreq(&c, spi_get_dreq(SPI_PORT, true));
     dma_channel_configure(dma_tx, &c,
                           &spi_get_hw(SPI_PORT)->dr, // write address
-                          spiBuffer,                     // read address
-                          DMA_SIZE_16,                   // element count (each element is of size transfer_data_size)
-                          false);                        // don't start yet
-    
-    */
+                          spiBuffer,                 // read address
+                          DMA_SIZE_16,               // element count (each element is of size transfer_data_size)
+                          false);                    // don't start yet
+
+#endif
 
     gpio_put(lcdReset, 1);
     PLATFORM_DELAY(100);
@@ -118,19 +120,20 @@ void DisplayInterface::WriteToFrameBuffer(CLR_UINT8 command, CLR_UINT8 data[],
                                           CLR_UINT32 frameOffset)
 {
     (void)frameOffset;
+    
+    
+    
     gpio_put(lcdchipSelect, GpioPinValue_Low);
     gpio_put(lcdDC, GpioPinValue_Low);
     SendBytes(&command, 1);
     gpio_put(lcdDC, GpioPinValue_High);
     SendBytes(data, dataCount);
-   // gpio_put(lcdchipSelect, GpioPinValue_High);
     return;
 }
 void DisplayInterface::SendCommand(CLR_UINT8 arg_count, ...)
 {
     va_list ap;
     va_start(ap, arg_count);
-
 
     // Parse arguments into parameters buffer
     CLR_UINT8 parameters[arg_count];
@@ -171,8 +174,9 @@ void DisplayInterface::SendBytes(CLR_UINT8 *data, CLR_UINT32 length)
 
     spi_write_blocking(SPI_PORT, data, length);
 
-    /*
-    
+#if defined DMA
+    // Rough out of code, not tested
+    //------------------------------
     // start the DMA
     while (dma_channel_is_busy(dma_tx))
     {
@@ -186,6 +190,5 @@ void DisplayInterface::SendBytes(CLR_UINT8 *data, CLR_UINT32 length)
     {
         tx_thread_relinquish();
     };
-
-*/
+#endif
 }

@@ -446,3 +446,5 @@ healthchecksdb
 /PicoSDKProject1/PicoSDKProject1.vgdbproj
 /PicoSDKProject1/CMakeLists.txt
 /PicoSDKProject1/blink.c
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/stdlib.rdb
+/Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/stdlib.rdb
