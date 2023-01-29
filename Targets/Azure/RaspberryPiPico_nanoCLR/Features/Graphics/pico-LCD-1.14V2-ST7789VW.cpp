@@ -1,3 +1,6 @@
+#ifdef PICO_LCD_114
+
+
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -138,7 +141,7 @@ bool DisplayDriver::Initialize(DisplayInterfaceConfig &config)
         0x23);
 
     SetDefaultOrientation();
-    
+
     g_DisplayInterface.SendCommand(1, Display_Inversion_On);
     g_DisplayInterface.SendCommand(1, Sleep_OUT);
 
@@ -427,3 +430,4 @@ void DisplayDriver::WriteChar(unsigned char c, int row, int col)
     SendDataDirect(row, col, width, height, fontdata);
 
 } // done
+#endif // ROUND_DISPLAY

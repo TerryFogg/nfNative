@@ -25,7 +25,6 @@
     <ProjectFile>RaspberryPiPico_nanoCLR.vcxproj</ProjectFile>
     <RemoteBuildEnvironment>
       <Records />
-      <EnvironmentSetupFiles />
     </RemoteBuildEnvironment>
     <ParallelJobCount>1</ParallelJobCount>
     <SuppressDirectoryChangeMessages>true</SuppressDirectoryChangeMessages>
@@ -157,7 +156,7 @@
     <DebugMethod>
       <ID>com.sysprogs.arm.openocd</ID>
       <Configuration xsi:type="com.visualgdb.edp.openocd.settings">
-        <CommandLine>-f interface/picoprobe.cfg -c "adapter speed 3000" -c "transport select swd" -f target/rp2040.cfg -c init -c "reset init"</CommandLine>
+        <CommandLine>-c "debug_level 3" -f interface/picoprobe.cfg -c "adapter speed 3000" -c "transport select swd" -f target/rp2040.cfg -c init -c "reset init"</CommandLine>
         <ExtraParameters>
           <Frequency xsi:nil="true" />
           <BoostedFrequency xsi:nil="true" />

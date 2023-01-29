@@ -438,9 +438,7 @@ bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, PinMode driveMode)
     switch (driveMode)
     {
         case PinMode_Input:
-            //            LL_GPIO_SetPinOutputType(GPIO_port, PinMask,
-            //            LL_GPIO_MODE_INPUT); LL_GPIO_SetPinPull(GPIO_port, PinMask,
-            //            LL_GPIO_PULL_NO);
+            gpio_set_dir(pinNumber, false);
             break;
 
         case PinMode_InputPullDown:
@@ -456,8 +454,7 @@ bool CPU_GPIO_SetDriveMode(GPIO_PIN pinNumber, PinMode driveMode)
             break;
 
         case PinMode_Output:
-            //            LL_GPIO_SetPinOutputType(GPIO_port, PinMask,
-            //            LL_GPIO_OUTPUT_PUSHPULL);
+            gpio_set_dir(pinNumber, true);
             break;
 
         case PinMode_OutputOpenDrain:

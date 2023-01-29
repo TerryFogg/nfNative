@@ -137,7 +137,6 @@
     <None Include="Local\Build\PicoProbe.uf2" />
     <None Include="Local\ELF2UF2.exe" />
     <None Include="Local\src\probe.pio" />
-    <None Include="PostBuild.bat" />
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings" />
     <None Include="RaspberryPiPico_nanoCLR-Release.vgdbsettings" />
   </ItemGroup>

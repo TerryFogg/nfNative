@@ -371,8 +371,6 @@ echo tx_trace_object_unregister.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/tx_trace_object_unregister.gcc.rsp" || exit 1
 echo tx_trace_user_event_insert.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/threadx/common/src/tx_trace_user_event_insert.gcc.rsp" || exit 1
-echo ux_utility_descriptor_parse.c
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/azure-rtos/usbx/common/core/src/ux_utility_descriptor_parse.gcc.rsp" || exit 1
 echo Cache.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/CLR/Core/Cache.gcc.rsp" || exit 1
 echo Checks.cpp
@@ -823,14 +821,28 @@ echo nanoPAL_Network_stubs.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/nanoPAL_Network_stubs.gcc.rsp" || exit 1
 echo nanoPAL_PerformanceCounters_stubs.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/PAL/Profiler/nanoPAL_PerformanceCounters_stubs.gcc.rsp" || exit 1
+echo sys_dev_adc_native.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Adc/sys_dev_adc_native.gcc.rsp" || exit 1
+echo sys_dev_adc_native_System_Device_Adc_AdcChannel_stubs.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Adc/sys_dev_adc_native_System_Device_Adc_AdcChannel_stubs.gcc.rsp" || exit 1
+echo sys_dev_adc_native_System_Device_Adc_AdcController_stubs.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Adc/sys_dev_adc_native_System_Device_Adc_AdcController_stubs.gcc.rsp" || exit 1
 echo sys_dev_gpio_native.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Gpio/sys_dev_gpio_native.gcc.rsp" || exit 1
 echo sys_dev_gpio_native_System_Device_Gpio_GpioController.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Gpio/sys_dev_gpio_native_System_Device_Gpio_GpioController.gcc.rsp" || exit 1
 echo sys_dev_gpio_native_System_Device_Gpio_GpioPin.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Gpio/sys_dev_gpio_native_System_Device_Gpio_GpioPin.gcc.rsp" || exit 1
+echo sys_dev_i2c_native.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.I2c/sys_dev_i2c_native.gcc.rsp" || exit 1
+echo sys_dev_pwm_native.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Pwm/sys_dev_pwm_native.gcc.rsp" || exit 1
 echo nanoHAL_Spi.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.Device.Spi/nanoHAL_Spi.gcc.rsp" || exit 1
+echo sys_io_ser_native.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.IO.Ports/sys_io_ser_native.gcc.rsp" || exit 1
+echo sys_io_ser_native_System_IO_Ports_SerialPort__.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/_3_/ExternalRepositories/nf-interpreter/src/System.IO.Ports/sys_io_ser_native_System_IO_Ports_SerialPort__.gcc.rsp" || exit 1
 echo cdc_device.c
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-gcc.exe @"VisualGDB/Debug/_3_/ExternalRepositories/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.gcc.rsp" || exit 1
 echo tusb_fifo.c
@@ -977,6 +989,10 @@ echo Graphics_Memory.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Graphics_Memory.gcc.rsp" || exit 1
 echo Initialize_Graphics.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Initialize_Graphics.gcc.rsp" || exit 1
+echo pico-LCD-Waveshare-GC9A01A.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/pico-LCD-Waveshare-GC9A01A.gcc.rsp" || exit 1
+echo SPI_ROUND.cpp
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/SPI_ROUND.gcc.rsp" || exit 1
 echo Spi_To_Display_Pico.cpp
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Features/Graphics/Spi_To_Display_Pico.gcc.rsp" || exit 1
 echo pico-LCD-1.14V2-ST7789VW.cpp

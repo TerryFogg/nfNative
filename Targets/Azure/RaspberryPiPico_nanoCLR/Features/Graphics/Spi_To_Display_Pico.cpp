@@ -1,3 +1,4 @@
+#ifdef PICO_LCD_114
 //
 // Copyright (c) .NET Foundation and Contributors
 // See LICENSE file in the project root for full license information.
@@ -192,3 +193,6 @@ void DisplayInterface::SendBytes(CLR_UINT8 *data, CLR_UINT32 length)
     };
 #endif
 }
+
+
+#endif

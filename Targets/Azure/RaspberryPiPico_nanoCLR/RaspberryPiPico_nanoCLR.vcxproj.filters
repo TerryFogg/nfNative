@@ -788,6 +788,9 @@
     <Filter Include="AzureCommon">
       <UniqueIdentifier>{668ac409-f30d-4a75-b9b3-6fd7a8bb4b95}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\nf-interpreter\src\System.Device.I2c">
+      <UniqueIdentifier>{daa80c1c-28e2-45a3-9929-10092c2ed047}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\ExternalRepositories\pico-sdk\src\common\pico_sync\critical_section.c">
@@ -2424,6 +2427,30 @@
     <ClCompile Include="WireProtocol\Wire_Protocol_HAL_Interface.c">
       <Filter>WireProtocol</Filter>
     </ClCompile>
+    <ClCompile Include="Features\Graphics\pico-LCD-Waveshare-GC9A01A.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Features\Graphics\SPI_ROUND.cpp">
+      <Filter>Features\Graphics</Filter>
+    </ClCompile>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
+      <Filter>Device-specific files\Semihosting/Profiler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="RaspberryPiPico_nanoCLR-Debug.vgdbsettings">

@@ -1,4 +1,5 @@
 #include <Target_BlockStorage.h>
+#include <hardware/spi.h>
 //
 // Copyright (c) 2017 The nanoFramework project contributors
 // See LICENSE file in the project root for full license information.
@@ -10,10 +11,6 @@
 #include "BOARD.h"
 #include "Debug_To_Display.h"
 
-#define LCD_RST_PIN 12
-#define LCD_DC_PIN 8
-#define LCD_BL_PIN 13
-#define LCD_CS_PIN 9
 
 extern "C"
 {
@@ -24,25 +21,45 @@ extern "C"
         g_GraphicsMemoryHeap.Initialize(0);
 
         DisplayInterfaceConfig displayConfig;
+        
+#ifdef PICO_LCD_114    
         displayConfig.Spi.spiBus = 1; // Index into array of pin values ( spiBus - 1) == 0
-        displayConfig.Spi.chipSelect = LCD_CS_PIN;
+        displayConfig.Spi.clock = 10;
+        displayConfig.Spi.MOSI = 11;
+        displayConfig.Spi.chipSelect = 9;
         displayConfig.Spi.chipSelectActiveLow = true;
-        displayConfig.Spi.dataCommand = LCD_DC_PIN;
+        displayConfig.Spi.dataCommand = 8;
         displayConfig.Spi.dataCommandActiveLow = true;
-        displayConfig.Spi.reset = LCD_RST_PIN;
+        displayConfig.Spi.reset = 12;
         displayConfig.Spi.backLightActiveLow = true;
-        displayConfig.Spi.backLight = LCD_BL_PIN;
+        displayConfig.Spi.backLight = 13;
         displayConfig.Spi.backLightActiveLow = true;
-        g_DisplayInterface.Initialize(displayConfig);
-
         displayConfig.Screen.width = 240;
         displayConfig.Screen.height = 135;
+#endif
 
+#ifdef ROUND_DISPLAY
+        displayConfig.Spi.clock = 10;
+        displayConfig.Spi.MOSI = 11;
+        displayConfig.Spi.chipSelect = 9;
+        displayConfig.Spi.chipSelectActiveLow = true;
+        displayConfig.Spi.dataCommand = 8;
+        displayConfig.Spi.dataCommandActiveLow = true;
+        displayConfig.Spi.reset = 12;
+        displayConfig.Spi.backLightActiveLow = true;
+        displayConfig.Spi.backLight = 25;
+        displayConfig.Spi.backLightActiveLow = true;
+        displayConfig.Screen.width = 240;
+        displayConfig.Screen.height = 240;
+#endif
+        
+        g_DisplayInterface.Initialize(displayConfig);
         g_DisplayDriver.Initialize(displayConfig);
 
-        // no PAL events required until now
-     //   PalEvent_Initialize();
-
+        //        for (int i = 0; i < 20; i++)
+//        {
+//            lcd_printf("Hello there how are you going today\r\n");
+//        }
     }
 }
 

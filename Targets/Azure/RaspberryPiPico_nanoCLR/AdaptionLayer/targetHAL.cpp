@@ -43,6 +43,9 @@ void nanoHAL_Initialize()
     // initialize global mutex
     // chMtxObjectInit(&interpreterGlobalMutex);
 
+#if (NANOCLR_GRAPHICS == TRUE)
+    Initialize_Graphics();
+#endif
 
     PalEvent_Initialize();
 

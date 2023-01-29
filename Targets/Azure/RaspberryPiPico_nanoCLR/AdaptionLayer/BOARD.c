@@ -42,9 +42,6 @@ void Initialize_Board()
 #if (NANOCLR_USB == TRUE)
     Initialize_USB();
 #endif
-#if (NANOCLR_GRAPHICS == TRUE)
-    Initialize_Graphics();
-#endif
 }
 
 void Initialize_Board_LEDS_And_Buttons()
@@ -67,7 +64,7 @@ void Initialize_64bit_timer()
     //
     // For this implementation, 100ns is the smallest precision.
 
-    // Not all counters on the STM32H7 are 32 bit
+    // Not all counters on the ARM Cortex are 32 bit
     // 32 bit counters used together to create a continuous 64 bit counter of
     // nanoseconds TIM 2  - the master, feeds TIM5 TIM 5  - the slave 2^64
     // nanosecond,  ~ 584 years before overflowing

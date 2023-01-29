@@ -666,9 +666,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="PostBuild.bat">
-      <Filter>Local</Filter>
-    </None>
     <None Include="Local\ELF2UF2.exe">
       <Filter>Local</Filter>
     </None>
