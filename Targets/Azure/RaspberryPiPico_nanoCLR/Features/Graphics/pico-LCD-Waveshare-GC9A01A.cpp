@@ -255,6 +255,7 @@ void DisplayDriver::Clear()
     {
         g_DisplayInterface.SendData(Attributes.TransferBuffer, remainderTransferBuffer);
     }
+    
 }
 void DisplayDriver::DisplayBrightness(CLR_INT16 brightness)
 {

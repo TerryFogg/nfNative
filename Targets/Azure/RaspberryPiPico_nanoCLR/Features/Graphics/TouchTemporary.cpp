@@ -16,6 +16,6 @@ HRESULT Library_nanoFramework_Graphics_nanoFramework_UI_TouchPanel::
     EnableInternal___VOID__BOOLEAN(CLR_RT_StackFrame &stack) 
 {
   NANOCLR_HEADER();
-
+                       
   NANOCLR_NOCLEANUP();
 }

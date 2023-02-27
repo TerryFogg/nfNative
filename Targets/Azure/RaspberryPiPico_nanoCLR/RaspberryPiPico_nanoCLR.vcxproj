@@ -36,7 +36,7 @@
     <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
     <GenerateBuildScript>true</GenerateBuildScript>
     <TargetExt>.elf</TargetExt>
-    <OutDir>$(ProjectDir)Build</OutDir>
+    <OutDir>$(SolutionDir)BuildOutput</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
@@ -63,8 +63,8 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <CustomPostLinkTool>$(ProjectDir)Tools\Postbuild.bat</CustomPostLinkTool>
-      <CustomPostLinkArguments>$(ProjectDir)Build\$(TargetName) $(ProjectDir)Build\$(TargetName)</CustomPostLinkArguments>
-      <OutputFile>$(ProjectDir)Build\$(TargetName).elf</OutputFile>
+      <CustomPostLinkArguments>$(SolutionDir)BuildOutput\$(TargetName) $(ProjectDir)</CustomPostLinkArguments>
+      <OutputFile>$(SolutionDir)BuildOutput\$(TargetName).elf</OutputFile>
     </Link>
     <ToolchainSettingsContainer>
       <ARMCPU>

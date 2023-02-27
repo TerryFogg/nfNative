@@ -1083,6 +1083,6 @@ echo bs2_default_padded_checksummed.s
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/bs2_default_padded_checksummed.gcc.rsp" || exit 1
 echo tx_initialize_low_level.S
 c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @"VisualGDB/Debug/Startup/tx_initialize_low_level.gcc.rsp" || exit 1
-echo Linking Build/RaspberryPiPico_nanoCLR.elf...
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @Build/RaspberryPiPico_nanoCLR.link.rsp || exit 1
-c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @Build/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1
+echo Linking ../../../BuildOutput/RaspberryPiPico_nanoCLR.elf...
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-g++.exe @../../../BuildOutput/RaspberryPiPico_nanoCLR.link.rsp || exit 1
+c:\sysgcc\arm-eabi\bin\arm-none-eabi-objcopy.exe @../../../BuildOutput/RaspberryPiPico_nanoCLR.mkbin.rsp || exit 1
