@@ -448,3 +448,6 @@ healthchecksdb
 /PicoSDKProject1/blink.c
 /Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/stdlib.rdb
 /Tools/PicoProbe/.visualgdb/CodeDB/PicoProbe-Debug-VisualGDB/stdlib.rdb
+/out/build/x64-debug/CMakeFiles
+/out/build/x64-debug
+/BuildOutput
